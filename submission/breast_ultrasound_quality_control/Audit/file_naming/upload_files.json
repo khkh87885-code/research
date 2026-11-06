@@ -1,0 +1,22 @@
+{
+  "zip": "Breast_Ultrasound_Quality_Control_Submission_Files.zip",
+  "files": [
+    "Breast_Ultrasound_Quality_Control_Manuscript.docx",
+    "Figures/Breast_Ultrasound_Quality_Control_Figure_1.png",
+    "Figures/Breast_Ultrasound_Quality_Control_Figure_2.png",
+    "Figures/Breast_Ultrasound_Quality_Control_Figure_3.png",
+    "Figures/Breast_Ultrasound_Quality_Control_Figure_4.png",
+    "Figures/Breast_Ultrasound_Quality_Control_Figure_5.png",
+    "Breast_Ultrasound_Quality_Control_Ethical_and_Legal_Declarations.docx",
+    "Breast_Ultrasound_Quality_Control_Cover_Letter.docx",
+    "Breast_Ultrasound_Quality_Control_Supplementary_Material.docx",
+    "Breast_Ultrasound_Quality_Control_Supplementary_Figure_S6.pdf",
+    "Breast_Ultrasound_Quality_Control_Data_and_Code_Availability.docx",
+    "Breast_Ultrasound_Quality_Control_Reviewer_Candidates.docx",
+    "Breast_Ultrasound_Quality_Control_Additional_Quality_Control_Metrics.csv",
+    "Analysis/table_data/Breast_Ultrasound_Quality_Control_Table_S13_Unrounded_Comparisons.csv",
+    "Breast_Ultrasound_Quality_Control_Submission_Guide.md"
+  ],
+  "bytes": 7071041,
+  "sha256": "30b80d3b675c5188c9696fe2276623282454d9ffa46f6709510d227a1c72d65f"
+}

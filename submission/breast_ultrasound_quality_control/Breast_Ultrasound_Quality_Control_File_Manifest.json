@@ -1,312 +1,338 @@
 {
+  "paper_title": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control",
   "files": [
     {
-      "path": "Additional_quality_control_metrics.csv",
-      "bytes": 7130,
-      "sha256": "b1778d9b785773a9c44b59ccd9c06e607f5c4f950171d6e3e1903d5c1eb9146e"
-    },
-    {
-      "path": "Analysis/equations_v10/README.md",
+      "path": "Analysis/equations/README.md",
       "bytes": 670,
       "sha256": "39cfe0d1c9633bc150ee20f6c63b391a58f0854b919b3bcdbc8e2e535aa02500"
     },
     {
-      "path": "Analysis/equations_v10/build_equation_revision.py",
+      "path": "Analysis/equations/build_equation_revision.py",
       "bytes": 11427,
       "sha256": "7defaf9ff6598d7934f425d95c556df52c75d6120afbc8a30023f708f66e87e3"
     },
     {
-      "path": "Analysis/equations_v10/equation_docx.py",
+      "path": "Analysis/equations/equation_docx.py",
       "bytes": 4601,
       "sha256": "06b006316a8766924d7025ca6348d0c8abc67632b663f17bc629947541c47ce8"
     },
     {
-      "path": "Analysis/equations_v10/independent_native_math_check.py",
+      "path": "Analysis/equations/independent_native_math_check.py",
       "bytes": 5856,
       "sha256": "237d66a9d0d4c8558d48bbb126a02a5bf4e440dc3b5fb69ff2722179249d412a"
     },
     {
-      "path": "Analysis/equations_v10/layout_qa/check_layout.py",
+      "path": "Analysis/equations/layout_qa/check_layout.py",
       "bytes": 8898,
       "sha256": "7937d193d3d667b50e9cb06a929cdd705a4826935b53687633f7b72e68825197"
     },
     {
-      "path": "Analysis/equations_v10/package_v10.py",
+      "path": "Analysis/equations/package.py",
       "bytes": 19251,
       "sha256": "5e2cabe81fce380fff21b2c1898b300dec5a40c361f7996c4716e5261a973b59"
     },
     {
-      "path": "Analysis/equations_v10/write_main_equation_plan.py",
+      "path": "Analysis/equations/write_main_equation_plan.py",
       "bytes": 13372,
       "sha256": "4bdda02eaf6b12d042f5538e7cb95234956ae6bc8cd57dcd32247a647cdcb27b"
     },
     {
-      "path": "Analysis/formal_equations_v12/README.md",
+      "path": "Analysis/file_preparation/independent_naming_check.py",
+      "bytes": 8067,
+      "sha256": "57d8b4fefd610bbc10dd506c4652f32d24cdc918f3c4c2bbd81d5b6f8862acb6"
+    },
+    {
+      "path": "Analysis/file_preparation/name_submission_files.py",
+      "bytes": 9866,
+      "sha256": "dd30e33d547268a186ad2cb51ee5246f9e6ac05f201cef0535813a1b56dcd544"
+    },
+    {
+      "path": "Analysis/file_preparation/seal_named_submission.py",
+      "bytes": 3340,
+      "sha256": "9746e94412fc573270ff133b5065fcc918450f86999d0484ef9af9bda76401f9"
+    },
+    {
+      "path": "Analysis/formal_equations/README.md",
       "bytes": 1137,
       "sha256": "8ef3cbd64a5ea56915ffa10c1e6b1da077b785f7fab7a2f4af7f0268c4f2b7f4"
     },
     {
-      "path": "Analysis/formal_equations_v12/build_concise_manuscript.py",
+      "path": "Analysis/formal_equations/build_concise_manuscript.py",
       "bytes": 8359,
       "sha256": "8a786ef84b16954e0b997ab58c7f651c3d061ab432c282908d91d65a061db9a4"
     },
     {
-      "path": "Analysis/formal_equations_v12/formal_equations.py",
+      "path": "Analysis/formal_equations/formal_equations.py",
       "bytes": 9107,
       "sha256": "0384a14d362f816731d3c769e8292739494e317f633167ce779d8cc5df374e25"
     },
     {
-      "path": "Analysis/formal_equations_v12/independent_concise_content_check.py",
+      "path": "Analysis/formal_equations/independent_concise_content_check.py",
       "bytes": 11274,
       "sha256": "ac029ccd2298991f535ee7a4069f32be37eb003b49f89b57734ae2a8eb7dc63e"
     },
     {
-      "path": "Analysis/formal_equations_v12/layout_qa/check_layout.py",
+      "path": "Analysis/formal_equations/layout_qa/check_layout.py",
       "bytes": 14633,
       "sha256": "1e6a4f454caf66f5ec1b05f12b88c91ac57944e580d85603d97b0ed72bf787a0"
     },
     {
-      "path": "Analysis/formal_equations_v12/normalizer_recommendation.py",
+      "path": "Analysis/formal_equations/normalizer_recommendation.py",
       "bytes": 2962,
       "sha256": "cba87237f9cd968a9686d04cd8477bd0a1eb5699e67674906a4a8abce22307ff"
     },
     {
-      "path": "Analysis/formal_equations_v12/package_v12.py",
+      "path": "Analysis/formal_equations/package.py",
       "bytes": 22854,
       "sha256": "5d9fdef0f5ebaa1e675c32ac40a17198a79c34591f29f39907b66f53f70cab02"
     },
     {
-      "path": "Analysis/graphics_v9/README.md",
+      "path": "Analysis/graphics/README.md",
       "bytes": 689,
       "sha256": "db14330e7c0d945b42c0a2802d71144cf7e0b8b1472728206b0b00cc1d1cc634"
     },
     {
-      "path": "Analysis/graphics_v9/independent_check.py",
+      "path": "Analysis/graphics/independent_check.py",
       "bytes": 19123,
       "sha256": "bf2af9a2f756d3d5b28086377597097cd05a7a9e7a4b1baa0ea6980bea03db6b"
     },
     {
-      "path": "Analysis/graphics_v9/package_v9.py",
+      "path": "Analysis/graphics/package.py",
       "bytes": 16873,
       "sha256": "134828004a8ee6b0712ddbcb0f8c1f4d8e88887e2947201cc8fb50ab66d683d9"
     },
     {
-      "path": "Analysis/graphics_v9/redraw_case_figures.py",
+      "path": "Analysis/graphics/redraw_case_figures.py",
       "bytes": 17383,
       "sha256": "425d3b395247dc5b6e6abc7add0669f5da89790e090e3e64cdd1981343858743"
     },
     {
-      "path": "Analysis/graphics_v9/redraw_case_layout_assets.py",
+      "path": "Analysis/graphics/redraw_case_layout_assets.py",
       "bytes": 9370,
       "sha256": "65a906602d669c62d30033bd37e367c9cf6f6b67de7915a5046da57dbaca14ab"
     },
     {
-      "path": "Analysis/graphics_v9/redraw_core_statistics.py",
+      "path": "Analysis/graphics/redraw_core_statistics.py",
       "bytes": 22949,
       "sha256": "449af164dcc2ac92d370196775eda386307a52c58bf8bc2d0410facbf4ca9009"
     },
     {
-      "path": "Analysis/graphics_v9/redraw_extended_statistics.py",
+      "path": "Analysis/graphics/redraw_extended_statistics.py",
       "bytes": 28351,
       "sha256": "54c7b4383dcbeb2d6ebb188a40a37d3c2e8ea1f68ee263a442708398afa246d7"
     },
     {
-      "path": "Analysis/graphics_v9/redraw_study_diagrams.py",
+      "path": "Analysis/graphics/redraw_study_diagrams.py",
       "bytes": 9590,
       "sha256": "8c56db865b81fcac9d725cfdf6836db45acfe9620eef264c4d0567c867f1d06b"
     },
     {
-      "path": "Analysis/graphics_v9/reformat_manuscript.py",
+      "path": "Analysis/graphics/reformat_manuscript.py",
       "bytes": 29167,
       "sha256": "1f946d7899b5de593efca3aa4c433c36bc6bab6a7ac616fec03edda004a4e239"
     },
     {
-      "path": "Analysis/graphics_v9/reformat_supplement.py",
+      "path": "Analysis/graphics/reformat_supplement.py",
       "bytes": 15403,
       "sha256": "155f7af031bcea31f1bb03d22cb68b92176a6a7bd9e41d68a8734d957df185d7"
     },
     {
-      "path": "Analysis/table_data/S10A.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S10A.csv",
       "bytes": 665,
       "sha256": "4a218dbd401711bd2dd455902b668b3b4d8e145dd67733ebb054f8a2adf304f1"
     },
     {
-      "path": "Analysis/table_data/S10B.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S10B.csv",
       "bytes": 1028,
       "sha256": "2a1ba45246aefe3b7bbe616ef1cd503167e9b7cba3d1775b7bc1d7b36ee63196"
     },
     {
-      "path": "Analysis/table_data/S10C.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S10C.csv",
       "bytes": 940,
       "sha256": "a5745b21fd41bcb906c29f8a118823dec35e805af960cee5ba1451c25e6bb557"
     },
     {
-      "path": "Analysis/table_data/S10D.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S10D.csv",
       "bytes": 1026,
       "sha256": "90aced0893e6a455655c099fff5c0baeb22e164fc8cde0e56234fc41055499b6"
     },
     {
-      "path": "Analysis/table_data/S10E.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S10E.csv",
       "bytes": 939,
       "sha256": "d3b077b2a786cef3eddc0a89528681d8086d8e3cb88010f9a29cfdc08a247d7a"
     },
     {
-      "path": "Analysis/table_data/S10_calibration_unrounded.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S10_calibration_unrounded.csv",
       "bytes": 2838,
       "sha256": "c360231b9ae7972799c957b9ff0564028158686063bd2fdca2cd957ba5033dfb"
     },
     {
-      "path": "Analysis/table_data/S10_paired_contrasts_unrounded.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S10_paired_contrasts_unrounded.csv",
       "bytes": 7318,
       "sha256": "dab3a8e53fd6e58a7ad07114b27928a87c9abfec91afbc827ef63f5e9b7a3c93"
     },
     {
-      "path": "Analysis/table_data/S10_performance_unrounded.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S10_performance_unrounded.csv",
       "bytes": 17355,
       "sha256": "2b35e41866b99745e3749c9016afea560a39f0eddbda4c0eff316d63df549200"
     },
     {
-      "path": "Analysis/table_data/S11A.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S11A.csv",
       "bytes": 1045,
       "sha256": "2eff4c0c240aae241781d0b352b0e3a821d9aef02f66c6a687801ebc6f007049"
     },
     {
-      "path": "Analysis/table_data/S11B.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S11B.csv",
       "bytes": 467,
       "sha256": "66f7eb400cfb718af108f0dbf5f58b1341bdcb95e123351658896ed600db8560"
     },
     {
-      "path": "Analysis/table_data/S11_direction_matrix_unrounded.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S11_direction_matrix_unrounded.csv",
       "bytes": 1586,
       "sha256": "8e82dbbe22a3e6c3cc05af9778924d8a8727a920b6d7cf9e2416d15e18a5b28a"
     },
     {
-      "path": "Analysis/table_data/S11_endpoints_unrounded.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S11_endpoints_unrounded.csv",
       "bytes": 1751,
       "sha256": "2e41e57bea5f77716062f36d3fe657c9f0d60d1420d6d9d93993874a396808b6"
     },
     {
-      "path": "Analysis/table_data/S12.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S12.csv",
       "bytes": 579,
       "sha256": "aa19a31e26367fc5f9a2b0f4c9cc177d98d4321a778c01b60cda7a746d68f3ae"
     },
     {
-      "path": "Analysis/table_data/S12_decomposition_unrounded.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S12_decomposition_unrounded.csv",
       "bytes": 3063,
       "sha256": "22447517ddb96381d48ba8518695032c2c4c3839dcaee92a02325eb1f50484f0"
     },
     {
-      "path": "Analysis/table_data/S13A.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S13A.csv",
       "bytes": 395,
       "sha256": "30e28698f38c812e4a91771e4bad8c16ac929a4c24119cac91b5213e551f3e46"
     },
     {
-      "path": "Analysis/table_data/S13B.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S13B.csv",
       "bytes": 563,
       "sha256": "daab67e5dc453a4cd97d9b5f3de24360b5a5b92a2704352966fa4f12a5e6f221"
     },
     {
-      "path": "Analysis/table_data/S13_all_48_comparisons_unrounded.csv",
-      "bytes": 4277,
-      "sha256": "af2c82c53c71420efd597ca19f29f324d04e102ef0732d7cb997ee13d15c9ad3"
-    },
-    {
-      "path": "Analysis/table_data/S13_cases_unrounded.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S13_cases_unrounded.csv",
       "bytes": 1495,
       "sha256": "2179d77ef34ff288545e046353f5d700d00b28f2beb1fab041cadf0c6e185b2a"
     },
     {
-      "path": "Analysis/table_data/S13_independent_array_recomputation.csv",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S13_independent_array_recomputation.csv",
       "bytes": 3992,
       "sha256": "5efae630ab73cb2894dd8e7928ae4be8a16f00d59aa184770051627b39b83137"
     },
     {
-      "path": "Analysis/typography_v11/README.md",
+      "path": "Analysis/table_data/Breast_Ultrasound_Quality_Control_Table_S13_Unrounded_Comparisons.csv",
+      "bytes": 4277,
+      "sha256": "af2c82c53c71420efd597ca19f29f324d04e102ef0732d7cb997ee13d15c9ad3"
+    },
+    {
+      "path": "Analysis/typography/README.md",
       "bytes": 912,
       "sha256": "5d3f7bed9753920fb72eb23a0f07efe78d17d3d9cbc898fee68f1122a1479698"
     },
     {
-      "path": "Analysis/typography_v11/build_equation_revision.py",
+      "path": "Analysis/typography/build_equation_revision.py",
       "bytes": 11712,
       "sha256": "1ed1aa4b3dc17b15897a7411bd2107e444fabb774eece304fe27e6a1f87e5609"
     },
     {
-      "path": "Analysis/typography_v11/equation_docx.py",
+      "path": "Analysis/typography/equation_docx.py",
       "bytes": 8638,
       "sha256": "f8355255f48e73e88cdd97af7c08ff03df4e8702c8b9f3c5f69d10a2f5535039"
     },
     {
-      "path": "Analysis/typography_v11/independent_content_check.py",
+      "path": "Analysis/typography/independent_content_check.py",
       "bytes": 9406,
       "sha256": "957ae6967a0c4e933f50e0c289296e02f71e42889bc20c54c13a0f0e6a072002"
     },
     {
-      "path": "Analysis/typography_v11/layout_qa/check_layout.py",
+      "path": "Analysis/typography/layout_qa/check_layout.py",
       "bytes": 15473,
       "sha256": "f2663d18b9b44fcc31015138c97928cf4c87175ffd0891dad04b253e0ef4c658"
     },
     {
-      "path": "Analysis/typography_v11/normalizer_recommendation.py",
+      "path": "Analysis/typography/normalizer_recommendation.py",
       "bytes": 2962,
       "sha256": "cba87237f9cd968a9686d04cd8477bd0a1eb5699e67674906a4a8abce22307ff"
     },
     {
-      "path": "Analysis/typography_v11/package_v11.py",
+      "path": "Analysis/typography/package.py",
       "bytes": 20828,
       "sha256": "a315a1ab69136989feffbd84fadea4bbfc2ec00bb523afc99822577bedff5350"
     },
     {
-      "path": "Analysis/wps_compatibility_v13/README.md",
+      "path": "Analysis/wps_compatibility/README.md",
       "bytes": 990,
       "sha256": "d33a893d2d24c11d4de4887b1316f4283d12ab36a778ea7fa875a124c0f7544b"
     },
     {
-      "path": "Analysis/wps_compatibility_v13/check_typography.py",
+      "path": "Analysis/wps_compatibility/check_typography.py",
       "bytes": 7833,
       "sha256": "82380415d4f05e8535a59cc9cfe0e25db01bc9c391b7d97ddc7fa909d4c79622"
     },
     {
-      "path": "Analysis/wps_compatibility_v13/independent_math_check.py",
+      "path": "Analysis/wps_compatibility/independent_math_check.py",
       "bytes": 11601,
       "sha256": "f53bbd4d620b5f666d9852c29a4d26e051e80501bebeca25ceffff5d001510ee"
     },
     {
-      "path": "Analysis/wps_compatibility_v13/lock_final_qa.py",
+      "path": "Analysis/wps_compatibility/lock_final_qa.py",
       "bytes": 1564,
       "sha256": "617f85f760885fd7b9d67aaaa9d24fb652df60aabee90bfdef41247bda40408a"
     },
     {
-      "path": "Analysis/wps_compatibility_v13/native_fence_helpers.py",
+      "path": "Analysis/wps_compatibility/native_fence_helpers.py",
       "bytes": 2768,
       "sha256": "b3be7fef3be1f17d22ac75e8b4ec6c49f54bba576c98f6f06821a29c0781f9ff"
     },
     {
-      "path": "Analysis/wps_compatibility_v13/package_v13.py",
+      "path": "Analysis/wps_compatibility/package.py",
       "bytes": 23767,
       "sha256": "8221faf25249261a6b719107dac9ee95bc05fe977a9c483f1bd1f39cffbdcd72"
     },
     {
-      "path": "Analysis/wps_compatibility_v13/repair_wps_equations.py",
+      "path": "Analysis/wps_compatibility/repair_wps_equations.py",
       "bytes": 5934,
       "sha256": "0559255a856d9e9a71ef5604330969ba49458b81d4545498197fabe72285bb4a"
     },
     {
-      "path": "Analysis/wps_compatibility_v13/validate_render.py",
+      "path": "Analysis/wps_compatibility/validate_render.py",
       "bytes": 1882,
       "sha256": "928a225b0aa28b93459931c5a1da9ad78a93e477204c577413a69ca795670a96"
     },
     {
-      "path": "Audit/prior_v12/FILE_MANIFEST_v12.json",
+      "path": "Audit/file_naming/independent_naming_qa.json",
+      "bytes": 27634,
+      "sha256": "0a7b307205c323d9ecd381b2d1b986e3ab96209fe4e719bf774411417576227c"
+    },
+    {
+      "path": "Audit/file_naming/naming_map.json",
+      "bytes": 14069,
+      "sha256": "0fe008663081a94d9a708562ef6798d9dfa2d2cde9674c348a5a3facc20af4ab"
+    },
+    {
+      "path": "Audit/file_naming/upload_files.json",
+      "bytes": 1205,
+      "sha256": "dd16787914198cb7121e9e808c59b16de0f8266e6115ad61c303b71c842c254e"
+    },
+    {
+      "path": "Audit/prior/FILE_MANIFEST.json",
       "bytes": 36532,
       "sha256": "337d02ee917eef2b724c4d2228c155c88ff5efb7c375dcd9e19ace47a94a9142"
     },
     {
-      "path": "Audit/prior_v12/README_v12_zh.md",
+      "path": "Audit/prior/README_zh.md",
       "bytes": 3109,
       "sha256": "2dc064097141ec6ede9aeb4f2a07db353b27d5ced0e5e389dc7413382f540a6e"
     },
     {
-      "path": "Audit/prior_v12/UPLOAD_FILE_MAP_v12.md",
+      "path": "Audit/prior/UPLOAD_FILE_MAP.md",
       "bytes": 1798,
       "sha256": "927abc987148dfc84d7a5815baa123d4f6019ae4e0e5a1dbc2ec14d549e3cde7"
     },
@@ -331,244 +357,254 @@
       "sha256": "02c610f62b1069bc4ccde98cfc44db9564802ac7c2e89832e1c2427c1373d57c"
     },
     {
-      "path": "Audit/wps_compatibility_v13/final_revision_qa.json",
+      "path": "Audit/wps_compatibility/final_revision_qa.json",
       "bytes": 2403,
       "sha256": "5e9d4481a8c182673dde8cb2bc161bae428c0f721bff63972481e66827864198"
     },
     {
-      "path": "Audit/wps_compatibility_v13/independent_math_qa.json",
+      "path": "Audit/wps_compatibility/independent_math_qa.json",
       "bytes": 16416,
       "sha256": "2e4e0df98904f6e839038f10733649c8d55a251350b6a0584d3881c7aaeda7ce"
     },
     {
-      "path": "Audit/wps_compatibility_v13/independent_math_qa.md",
+      "path": "Audit/wps_compatibility/independent_math_qa.md",
       "bytes": 1623,
       "sha256": "85ca74beb6dc191324a73064923a77489b6556d9cbe79f18dec579d00435603f"
     },
     {
-      "path": "Audit/wps_compatibility_v13/render_validation.json",
+      "path": "Audit/wps_compatibility/render_validation.json",
       "bytes": 1509,
       "sha256": "3f14f01a6726f7b291eb50691ccda0a19044196bfc403f04c17753c75ada3fee"
     },
     {
-      "path": "Audit/wps_compatibility_v13/repair_report.json",
+      "path": "Audit/wps_compatibility/repair_report.json",
       "bytes": 1747,
       "sha256": "6f8e13c9ef868061bfc501c35fbefaf6625d90eb38dd232e630a892c3d925d2f"
     },
     {
-      "path": "Audit/wps_compatibility_v13/typography_audit.json",
+      "path": "Audit/wps_compatibility/typography_audit.json",
       "bytes": 18942,
       "sha256": "533a108326c6b7d9c2820022d0beaccb614b3937063a4c403292941b39870b15"
     },
     {
-      "path": "Audit/wps_compatibility_v13/typography_audit.md",
+      "path": "Audit/wps_compatibility/typography_audit.md",
       "bytes": 1795,
       "sha256": "2959e479607a2707dd7dc2a1898036f32732da356bd368668f206b73d57ac792"
     },
     {
-      "path": "Audit/wps_compatibility_v13/version_status.json",
+      "path": "Audit/wps_compatibility/version_status.json",
       "bytes": 2798,
       "sha256": "1b1ebdc482ff043ffc02ae5f08d28f726d1e75952b1336a5ee351ce805fcf3da"
     },
     {
-      "path": "Audit/wps_compatibility_v13/wps_delimiter_diagnosis.md",
+      "path": "Audit/wps_compatibility/wps_delimiter_diagnosis.md",
       "bytes": 2436,
       "sha256": "cd145dd56802eba30daa224175adc83ec34c3bc2b31db1996e5e5d3299a1dd3e"
     },
     {
-      "path": "BMT_Ethical_and_Legal_Declarations_v13.docx",
-      "bytes": 26354,
-      "sha256": "575564276f29f046559b5bc8f2b04926ad9d550249e096bd6d0fb9a5a2e50162"
+      "path": "Breast_Ultrasound_Quality_Control_Additional_Quality_Control_Metrics.csv",
+      "bytes": 7130,
+      "sha256": "b1778d9b785773a9c44b59ccd9c06e607f5c4f950171d6e3e1903d5c1eb9146e"
     },
     {
-      "path": "BMT_cover_letter_v13.docx",
+      "path": "Breast_Ultrasound_Quality_Control_Cover_Letter.docx",
       "bytes": 39538,
       "sha256": "0bbdb5825fcb7810114e86b2a5378ff95979b8dc1f0e0e9ea5220dd9cf95704f"
     },
     {
-      "path": "BMT_data_and_code_availability_v13.docx",
+      "path": "Breast_Ultrasound_Quality_Control_Data_and_Code_Availability.docx",
       "bytes": 38730,
       "sha256": "01917dd2b95affeee61180540dc3b8ff534a2eb6aaafae96604969ba40786209"
     },
     {
-      "path": "BMT_formula_layout_proof_v13.pdf",
-      "bytes": 1015333,
-      "sha256": "6f8224945cb9bccf516c9f29356a1c90030709ea393da155a0ef38652350ba77"
+      "path": "Breast_Ultrasound_Quality_Control_Ethical_and_Legal_Declarations.docx",
+      "bytes": 26354,
+      "sha256": "575564276f29f046559b5bc8f2b04926ad9d550249e096bd6d0fb9a5a2e50162"
     },
     {
-      "path": "BMT_main_manuscript_v13.docx",
-      "bytes": 58197,
-      "sha256": "40be070a09074431a7ac09cfe7db0068e0d206312b761c64fce462f41502c8ad"
-    },
-    {
-      "path": "BMT_main_manuscript_v13_illustrated_preview.pdf",
-      "bytes": 1465931,
-      "sha256": "c35cf28d6b392898118660102eae1312a4acf029c44757cd044b9d2da0b58120"
-    },
-    {
-      "path": "BMT_main_manuscript_v13_preview.pdf",
-      "bytes": 222664,
-      "sha256": "52060b3ed9a89a0d0c7e377253ad83d59a74ca79b962b436b5042d4910a86e1b"
-    },
-    {
-      "path": "BMT_reviewer_candidates.docx",
-      "bytes": 41351,
-      "sha256": "df5e13fb4ab0c9a0139141e2aed60671d7e072fe29cea928661cb29a54b6b778"
-    },
-    {
-      "path": "BMT_revision_note_v13_zh.md",
-      "bytes": 1035,
-      "sha256": "2c48ee476b849a5b760f013370609012426df98a1a361b5afc239badbd705371"
-    },
-    {
-      "path": "BMT_submission_checklist_v13.docx",
-      "bytes": 38857,
-      "sha256": "f4c4e5c34bfc0758eefbf350a293dd85710920afefbaeaaeb0226adba748b42a"
-    },
-    {
-      "path": "BMT_supplementary_Figure_S6_v9.pdf",
-      "bytes": 1871819,
-      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd"
-    },
-    {
-      "path": "BMT_supplementary_material_v9.docx",
-      "bytes": 1533507,
-      "sha256": "39db16641c06b90ac0d9f2265cbd2bfa82a123c51cbb9e082e67a9b305cc2e1f"
-    },
-    {
-      "path": "BMT_supplementary_material_v9_preview.pdf",
-      "bytes": 1332781,
-      "sha256": "af52b88d82a71b4e4df1b5ddd932a3983fc05e4545791d4aad0faf5cfbb9ef86"
-    },
-    {
-      "path": "BMT_v13_all_figures.pdf",
+      "path": "Breast_Ultrasound_Quality_Control_Figures.pdf",
       "bytes": 2306285,
       "sha256": "9b5f96f1df2bd2e4140597b90d2b8e00fd0c904fd2e5f4eef05a0b423000f1b1"
     },
     {
-      "path": "Figures/Figure_1.pdf",
+      "path": "Breast_Ultrasound_Quality_Control_Formula_Proof.pdf",
+      "bytes": 1015503,
+      "sha256": "824885012f3b0e1ea1d6510e5a07280b9e3efd81fbd319115440727040ea71be"
+    },
+    {
+      "path": "Breast_Ultrasound_Quality_Control_Illustrated_Manuscript.pdf",
+      "bytes": 1465931,
+      "sha256": "c35cf28d6b392898118660102eae1312a4acf029c44757cd044b9d2da0b58120"
+    },
+    {
+      "path": "Breast_Ultrasound_Quality_Control_Manuscript.docx",
+      "bytes": 58197,
+      "sha256": "40be070a09074431a7ac09cfe7db0068e0d206312b761c64fce462f41502c8ad"
+    },
+    {
+      "path": "Breast_Ultrasound_Quality_Control_Manuscript.pdf",
+      "bytes": 222664,
+      "sha256": "52060b3ed9a89a0d0c7e377253ad83d59a74ca79b962b436b5042d4910a86e1b"
+    },
+    {
+      "path": "Breast_Ultrasound_Quality_Control_Preparation_Notes_zh.md",
+      "bytes": 701,
+      "sha256": "420f5a5074440cd2f6e858ec18192f13ec4901c7c73c31292659c8b67b7a7924"
+    },
+    {
+      "path": "Breast_Ultrasound_Quality_Control_Reviewer_Candidates.docx",
+      "bytes": 41351,
+      "sha256": "df5e13fb4ab0c9a0139141e2aed60671d7e072fe29cea928661cb29a54b6b778"
+    },
+    {
+      "path": "Breast_Ultrasound_Quality_Control_Submission_Checklist.docx",
+      "bytes": 38871,
+      "sha256": "2e321c27c5c360968196caa6212e279ad520ed8567583397f3c4122af055a94a"
+    },
+    {
+      "path": "Breast_Ultrasound_Quality_Control_Submission_Guide.md",
+      "bytes": 1609,
+      "sha256": "7713d9185d6acd67c261acaee1dc201039e08239db43e005021acbb7e81b830c"
+    },
+    {
+      "path": "Breast_Ultrasound_Quality_Control_Supplementary_Figure_S6.pdf",
+      "bytes": 1871819,
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd"
+    },
+    {
+      "path": "Breast_Ultrasound_Quality_Control_Supplementary_Material.docx",
+      "bytes": 1533560,
+      "sha256": "c2d43caf8a56c16e65d8bbe52955c5c8156471bca2686a2aaf3120211d6cf06f"
+    },
+    {
+      "path": "Breast_Ultrasound_Quality_Control_Supplementary_Material.pdf",
+      "bytes": 1333136,
+      "sha256": "bc3a9d0df46e645a51049918058ec0892e4c72067763549162f3b2f9e19c0d47"
+    },
+    {
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_1.pdf",
       "bytes": 23434,
       "sha256": "2bc396f9e9396101d333da8137a1c4e27963d22b7539dd992ec194332f78be8e"
     },
     {
-      "path": "Figures/Figure_1.png",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_1.png",
       "bytes": 446512,
       "sha256": "295e44479818fc08623a070b2a4179e1a8d1715f3bc5ee5095cf6b7c9739bf26"
     },
     {
-      "path": "Figures/Figure_2.pdf",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_2.pdf",
       "bytes": 286092,
       "sha256": "2b7671a3c670fa93e45d5a9fafff82d18e9a59c9640af68729d3914eac73f87f"
     },
     {
-      "path": "Figures/Figure_2.png",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_2.png",
       "bytes": 1033161,
       "sha256": "66ba502a0a7770acf6ecc4264e4604295b91fcfcec01742ce4c5dc48291ef7c9"
     },
     {
-      "path": "Figures/Figure_3.pdf",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_3.pdf",
       "bytes": 23625,
       "sha256": "8e9230ce2b1ae4a6ef81384b302dae0ebb5c03606340a232a5bb129783752ccb"
     },
     {
-      "path": "Figures/Figure_3.png",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_3.png",
       "bytes": 293852,
       "sha256": "a56dd46973a00b0719bbb492e28fc0846010aeac6e70398284416a09915306f3"
     },
     {
-      "path": "Figures/Figure_4.pdf",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_4.pdf",
       "bytes": 28613,
       "sha256": "48cb1b05b4e438681c826c2e79a791abd8bbf8bbe36ddcebd164fc9e545a569d"
     },
     {
-      "path": "Figures/Figure_4.png",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_4.png",
       "bytes": 517141,
       "sha256": "d940b1b6ab7025428a013421d7523e4e6fd36020e7042c21bb78b49d5515188d"
     },
     {
-      "path": "Figures/Figure_5.pdf",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_5.pdf",
       "bytes": 1888501,
       "sha256": "ab2b7427d590353f34cdf17b595b38dda14713efce01bbe66d650b617ec16e0a"
     },
     {
-      "path": "Figures/Figure_5.png",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_5.png",
       "bytes": 1785582,
       "sha256": "6a471c1f12195090ed4da6bb3bdffabb233dca76756bd9f734a28beb3c0da65d"
     },
     {
-      "path": "Figures/Figure_S1.pdf",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_S1.pdf",
       "bytes": 26175,
       "sha256": "d414d9e3212bcada18ef1bf96c7cc55b27fa307deb547c480b5a7185e447ccf8"
     },
     {
-      "path": "Figures/Figure_S1.png",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_S1.png",
       "bytes": 541100,
       "sha256": "f355bc525af902b2dadadf49a3c7c721945e9881dbd3bacb063466e92ab2d909"
     },
     {
-      "path": "Figures/Figure_S2.pdf",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_S2.pdf",
       "bytes": 21731,
       "sha256": "5abae83a6cef88890d656789e8ceb1b956dbe86ba7f959d621f08257fdc8a861"
     },
     {
-      "path": "Figures/Figure_S2.png",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_S2.png",
       "bytes": 197539,
       "sha256": "663b32f20e039490fa03deac5372a4f8cfb6e05a3e864acf2bea52ff4d4b3328"
     },
     {
-      "path": "Figures/Figure_S3.pdf",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_S3.pdf",
       "bytes": 27671,
       "sha256": "0b0743062f1e1a73b066217b817cb8c86311ea299033559ecb69b4560f0fbc64"
     },
     {
-      "path": "Figures/Figure_S3.png",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_S3.png",
       "bytes": 666209,
       "sha256": "f8c7d9ad705b0b1407bcb8aec1c31b499d5610895e9d10b819af36eb61271deb"
     },
     {
-      "path": "Figures/Figure_S4.pdf",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_S4.pdf",
       "bytes": 22632,
       "sha256": "4a6056fdee13ba0e0bd9a00a628a7fedc8aa70951b8352795cb8f9fc26e14296"
     },
     {
-      "path": "Figures/Figure_S4.png",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_S4.png",
       "bytes": 305182,
       "sha256": "d2ec79d27591a394ba7cbb73797b1eac6e8a5a80ad079a5e1f35cb8ba5ef1bd4"
     },
     {
-      "path": "Figures/Figure_S5.pdf",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_S5.pdf",
       "bytes": 20065,
       "sha256": "cf807c9c62d0f848134527c4be6230f24be1216ce022353862ae2c91864da75b"
     },
     {
-      "path": "Figures/Figure_S5.png",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_S5.png",
       "bytes": 130296,
       "sha256": "d47ca0615da5f1722f3b4b004a77cb1a08971d814a1c61f1b78af9e2605352e6"
     },
     {
-      "path": "Figures/Figure_S6A.pdf",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_S6A.pdf",
       "bytes": 3182451,
       "sha256": "8712c522e1b31058c116fd42aa162f84fb0f25509d57bda169da5bef967a6f86"
     },
     {
-      "path": "Figures/Figure_S6A.png",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_S6A.png",
       "bytes": 4380456,
       "sha256": "7ef86f64f2f76202956e6c9ab425dc3c55262a9e6aeccba3528e1b9700ffb5a9"
     },
     {
-      "path": "Figures/Figure_S6B.pdf",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_S6B.pdf",
       "bytes": 3451868,
       "sha256": "aa5e37dc2c10854145c2800c889c0c295464764f0a306e22cd7dc61d76bd5f64"
     },
     {
-      "path": "Figures/Figure_S6B.png",
+      "path": "Figures/Breast_Ultrasound_Quality_Control_Figure_S6B.png",
       "bytes": 5531792,
       "sha256": "93b6e14b4418e7d468eb3c1c7bdea299dc156088a8ceab547998e95ce3c856c3"
     },
     {
       "path": "README_zh.md",
-      "bytes": 2821,
-      "sha256": "fae0be5ac1f890587416e53adf2532d432b38c1a3091602b59604f72a702f98a"
+      "bytes": 2132,
+      "sha256": "2cdf98d6267901da59de92dad50526f1336554d6d0bd49f46b70e3ea2ac77132"
     },
     {
       "path": "Reproducibility/README.md",
@@ -649,11 +685,6 @@
       "path": "Reproducibility/verification.json",
       "bytes": 4054,
       "sha256": "87547d3c2060eefa606d98bb952b02c494288687f47d5e69305abc0aa376b4bf"
-    },
-    {
-      "path": "UPLOAD_FILE_MAP.md",
-      "bytes": 1751,
-      "sha256": "14efec07072b3d3a0ecdbb3ca75ac9b5d2e70ba27e84a2a4470e90c7912efaa4"
     }
   ]
 }

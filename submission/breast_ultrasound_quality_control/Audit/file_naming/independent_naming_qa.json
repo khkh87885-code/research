@@ -1,0 +1,869 @@
+{
+  "checked_utc": "2026-11-06T14:30:14.761664+00:00",
+  "status": "PASS",
+  "scope": "Limited naming and required attachment-pointer audit; no scientific recomputation",
+  "final_documents_pending": false,
+  "mapping_sha256": "0fe008663081a94d9a708562ef6798d9dfa2d2cde9674c348a5a3facc20af4ab",
+  "checks": [
+    {
+      "name": "Mapping destinations unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "All mapped candidate files present except pending manifest",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Current filenames and outer paths contain no internal version tokens",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "All artifacts outside allowed pointer/documentation derivatives byte-preserved",
+      "pass": true,
+      "detail": {
+        "files": 124
+      }
+    },
+    {
+      "name": "All current paper-facing filenames use topic prefix",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Supplement package parts exactly same",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Only one exact source pointer Additional_quality_control_metrics.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "New supplement pointer present exactly once Breast_Ultrasound_Quality_Control_Additional_Quality_Control_Metrics.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Only one exact source pointer S13_all_48_comparisons_unrounded.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "New supplement pointer present exactly once Breast_Ultrasound_Quality_Control_Table_S13_Unrounded_Comparisons.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Only one exact source pointer BMT_supplementary_Figure_S6_v9.pdf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "New supplement pointer present exactly once Breast_Ultrasound_Quality_Control_Supplementary_Figure_S6.pdf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Supplement document XML changed only three filename tokens",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "All non-document supplement XML/media parts byte-identical",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Breast_Ultrasound_Quality_Control_Manuscript.docx all scientific paragraphs exact after pointer normalization",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Breast_Ultrasound_Quality_Control_Manuscript.docx data cells exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Breast_Ultrasound_Quality_Control_Manuscript.docx native mathXML sequence exactly preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Breast_Ultrasound_Quality_Control_Manuscript.docx display groups3or2 remain",
+      "pass": true,
+      "detail": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "name": "Breast_Ultrasound_Quality_Control_Supplementary_Material.docx all scientific paragraphs exact after pointer normalization",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Breast_Ultrasound_Quality_Control_Supplementary_Material.docx data cells exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Breast_Ultrasound_Quality_Control_Supplementary_Material.docx native mathXML sequence exactly preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Breast_Ultrasound_Quality_Control_Supplementary_Material.docx display groups3or2 remain",
+      "pass": true,
+      "detail": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Submission ZIP CRC valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Submission ZIP exactly15 declared members",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Every ZIP member matches candidate named file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP members omit version labels and internal audit",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP name/hash/size matches upload listing",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "README_zh.md every local Markdown link resolves",
+      "pass": true,
+      "detail": [
+        "Breast_Ultrasound_Quality_Control_Manuscript.docx",
+        "Breast_Ultrasound_Quality_Control_Manuscript.pdf",
+        "Breast_Ultrasound_Quality_Control_Supplementary_Material.docx",
+        "Breast_Ultrasound_Quality_Control_Supplementary_Material.pdf",
+        "Breast_Ultrasound_Quality_Control_Supplementary_Figure_S6.pdf",
+        "Breast_Ultrasound_Quality_Control_Submission_Guide.md",
+        "../Breast_Ultrasound_Quality_Control_Submission_Files.zip"
+      ]
+    },
+    {
+      "name": "Breast_Ultrasound_Quality_Control_Submission_Guide.md every local Markdown link resolves",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "README and submission guide name every ZIP attachment",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "README current ZIP name correct",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Supplement PDF remains25pages",
+      "pass": true,
+      "detail": 25
+    },
+    {
+      "name": "Supplement PDF displays new pointer Breast_Ultrasound_Quality_Control_Additional_Quality_Control_Metrics.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Supplement PDF displays new pointer Breast_Ultrasound_Quality_Control_Table_S13_Unrounded_Comparisons.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Supplement PDF displays new pointer Breast_Ultrasound_Quality_Control_Supplementary_Figure_S6.pdf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Each new supplemental attachment pointer has an actual uploaded file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Supplement DOCX/PDF and separateS6 each<10MB",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Formula proof is current mainp5and suppp19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Three re-exported pointer pages visually reviewed",
+      "pass": true,
+      "detail": {
+        "pages": [
+          9,
+          20,
+          25
+        ],
+        "observation": "All three long new basenames are intact and readable in context, without overflow or crowding."
+      }
+    },
+    {
+      "name": "Checklist has no old filename or internal version labels",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "unmodified_mapped_files": [
+    {
+      "source": "BMT_main_manuscript_v13.docx",
+      "named": "Breast_Ultrasound_Quality_Control_Manuscript.docx",
+      "equal": true
+    },
+    {
+      "source": "BMT_cover_letter_v13.docx",
+      "named": "Breast_Ultrasound_Quality_Control_Cover_Letter.docx",
+      "equal": true
+    },
+    {
+      "source": "BMT_supplementary_Figure_S6_v9.pdf",
+      "named": "Breast_Ultrasound_Quality_Control_Supplementary_Figure_S6.pdf",
+      "equal": true
+    },
+    {
+      "source": "BMT_main_manuscript_v13_preview.pdf",
+      "named": "Breast_Ultrasound_Quality_Control_Manuscript.pdf",
+      "equal": true
+    },
+    {
+      "source": "BMT_reviewer_candidates.docx",
+      "named": "Breast_Ultrasound_Quality_Control_Reviewer_Candidates.docx",
+      "equal": true
+    },
+    {
+      "source": "Additional_quality_control_metrics.csv",
+      "named": "Breast_Ultrasound_Quality_Control_Additional_Quality_Control_Metrics.csv",
+      "equal": true
+    },
+    {
+      "source": "BMT_main_manuscript_v13_illustrated_preview.pdf",
+      "named": "Breast_Ultrasound_Quality_Control_Illustrated_Manuscript.pdf",
+      "equal": true
+    },
+    {
+      "source": "BMT_data_and_code_availability_v13.docx",
+      "named": "Breast_Ultrasound_Quality_Control_Data_and_Code_Availability.docx",
+      "equal": true
+    },
+    {
+      "source": "BMT_v13_all_figures.pdf",
+      "named": "Breast_Ultrasound_Quality_Control_Figures.pdf",
+      "equal": true
+    },
+    {
+      "source": "BMT_Ethical_and_Legal_Declarations_v13.docx",
+      "named": "Breast_Ultrasound_Quality_Control_Ethical_and_Legal_Declarations.docx",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_2.png",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_2.png",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_S5.png",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_S5.png",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_4.pdf",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_4.pdf",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_S1.png",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_S1.png",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_S1.pdf",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_S1.pdf",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_S6B.pdf",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_S6B.pdf",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_2.pdf",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_2.pdf",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_5.pdf",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_5.pdf",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_S2.pdf",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_S2.pdf",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_S4.pdf",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_S4.pdf",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_S4.png",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_S4.png",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_S3.png",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_S3.png",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_S3.pdf",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_S3.pdf",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_S6A.png",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_S6A.png",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_S6A.pdf",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_S6A.pdf",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_3.png",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_3.png",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_S2.png",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_S2.png",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_1.png",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_1.png",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_4.png",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_4.png",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_5.png",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_5.png",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_S6B.png",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_S6B.png",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_S5.pdf",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_S5.pdf",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_1.pdf",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_1.pdf",
+      "equal": true
+    },
+    {
+      "source": "Figures/Figure_3.pdf",
+      "named": "Figures/Breast_Ultrasound_Quality_Control_Figure_3.pdf",
+      "equal": true
+    },
+    {
+      "source": "Reproducibility/reproduce.py",
+      "named": "Reproducibility/reproduce.py",
+      "equal": true
+    },
+    {
+      "source": "Reproducibility/study_lock.json",
+      "named": "Reproducibility/study_lock.json",
+      "equal": true
+    },
+    {
+      "source": "Reproducibility/study_statistics.py",
+      "named": "Reproducibility/study_statistics.py",
+      "equal": true
+    },
+    {
+      "source": "Reproducibility/review_curve_counts.csv",
+      "named": "Reproducibility/review_curve_counts.csv",
+      "equal": true
+    },
+    {
+      "source": "Reproducibility/score_images.py",
+      "named": "Reproducibility/score_images.py",
+      "equal": true
+    },
+    {
+      "source": "Reproducibility/verification.json",
+      "named": "Reproducibility/verification.json",
+      "equal": true
+    },
+    {
+      "source": "Reproducibility/SHA256SUMS.txt",
+      "named": "Reproducibility/SHA256SUMS.txt",
+      "equal": true
+    },
+    {
+      "source": "Reproducibility/README.md",
+      "named": "Reproducibility/README.md",
+      "equal": true
+    },
+    {
+      "source": "Reproducibility/README_CURRENT_ACCESS.md",
+      "named": "Reproducibility/README_CURRENT_ACCESS.md",
+      "equal": true
+    },
+    {
+      "source": "Analysis/formal_equations_v12/formal_equations.py",
+      "named": "Analysis/formal_equations/formal_equations.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/formal_equations_v12/build_concise_manuscript.py",
+      "named": "Analysis/formal_equations/build_concise_manuscript.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/formal_equations_v12/normalizer_recommendation.py",
+      "named": "Analysis/formal_equations/normalizer_recommendation.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/formal_equations_v12/independent_concise_content_check.py",
+      "named": "Analysis/formal_equations/independent_concise_content_check.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/formal_equations_v12/package_v12.py",
+      "named": "Analysis/formal_equations/package.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/formal_equations_v12/README.md",
+      "named": "Analysis/formal_equations/README.md",
+      "equal": true
+    },
+    {
+      "source": "Analysis/equations_v10/package_v10.py",
+      "named": "Analysis/equations/package.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/equations_v10/write_main_equation_plan.py",
+      "named": "Analysis/equations/write_main_equation_plan.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/equations_v10/build_equation_revision.py",
+      "named": "Analysis/equations/build_equation_revision.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/equations_v10/equation_docx.py",
+      "named": "Analysis/equations/equation_docx.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/equations_v10/README.md",
+      "named": "Analysis/equations/README.md",
+      "equal": true
+    },
+    {
+      "source": "Analysis/equations_v10/independent_native_math_check.py",
+      "named": "Analysis/equations/independent_native_math_check.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/wps_compatibility_v13/validate_render.py",
+      "named": "Analysis/wps_compatibility/validate_render.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/wps_compatibility_v13/check_typography.py",
+      "named": "Analysis/wps_compatibility/check_typography.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/wps_compatibility_v13/lock_final_qa.py",
+      "named": "Analysis/wps_compatibility/lock_final_qa.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/wps_compatibility_v13/package_v13.py",
+      "named": "Analysis/wps_compatibility/package.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/wps_compatibility_v13/native_fence_helpers.py",
+      "named": "Analysis/wps_compatibility/native_fence_helpers.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/wps_compatibility_v13/repair_wps_equations.py",
+      "named": "Analysis/wps_compatibility/repair_wps_equations.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/wps_compatibility_v13/independent_math_check.py",
+      "named": "Analysis/wps_compatibility/independent_math_check.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/wps_compatibility_v13/README.md",
+      "named": "Analysis/wps_compatibility/README.md",
+      "equal": true
+    },
+    {
+      "source": "Analysis/graphics_v9/independent_check.py",
+      "named": "Analysis/graphics/independent_check.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/graphics_v9/redraw_extended_statistics.py",
+      "named": "Analysis/graphics/redraw_extended_statistics.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/graphics_v9/package_v9.py",
+      "named": "Analysis/graphics/package.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/graphics_v9/redraw_case_figures.py",
+      "named": "Analysis/graphics/redraw_case_figures.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/graphics_v9/redraw_study_diagrams.py",
+      "named": "Analysis/graphics/redraw_study_diagrams.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/graphics_v9/reformat_manuscript.py",
+      "named": "Analysis/graphics/reformat_manuscript.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/graphics_v9/reformat_supplement.py",
+      "named": "Analysis/graphics/reformat_supplement.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/graphics_v9/redraw_case_layout_assets.py",
+      "named": "Analysis/graphics/redraw_case_layout_assets.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/graphics_v9/README.md",
+      "named": "Analysis/graphics/README.md",
+      "equal": true
+    },
+    {
+      "source": "Analysis/graphics_v9/redraw_core_statistics.py",
+      "named": "Analysis/graphics/redraw_core_statistics.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/typography_v11/build_equation_revision.py",
+      "named": "Analysis/typography/build_equation_revision.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/typography_v11/package_v11.py",
+      "named": "Analysis/typography/package.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/typography_v11/equation_docx.py",
+      "named": "Analysis/typography/equation_docx.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/typography_v11/normalizer_recommendation.py",
+      "named": "Analysis/typography/normalizer_recommendation.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/typography_v11/independent_content_check.py",
+      "named": "Analysis/typography/independent_content_check.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/typography_v11/README.md",
+      "named": "Analysis/typography/README.md",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S13_all_48_comparisons_unrounded.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_Table_S13_Unrounded_Comparisons.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S11A.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S11A.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S10B.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S10B.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S13A.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S13A.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S10E.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S10E.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S11B.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S11B.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S10_performance_unrounded.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S10_performance_unrounded.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S13B.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S13B.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S13_independent_array_recomputation.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S13_independent_array_recomputation.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S12_decomposition_unrounded.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S12_decomposition_unrounded.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S10_calibration_unrounded.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S10_calibration_unrounded.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S12.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S12.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S13_cases_unrounded.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S13_cases_unrounded.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S11_endpoints_unrounded.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S11_endpoints_unrounded.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S10D.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S10D.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S10_paired_contrasts_unrounded.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S10_paired_contrasts_unrounded.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S11_direction_matrix_unrounded.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S11_direction_matrix_unrounded.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S10A.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S10A.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/table_data/S10C.csv",
+      "named": "Analysis/table_data/Breast_Ultrasound_Quality_Control_S10C.csv",
+      "equal": true
+    },
+    {
+      "source": "Analysis/formal_equations_v12/layout_qa/check_layout.py",
+      "named": "Analysis/formal_equations/layout_qa/check_layout.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/equations_v10/layout_qa/check_layout.py",
+      "named": "Analysis/equations/layout_qa/check_layout.py",
+      "equal": true
+    },
+    {
+      "source": "Analysis/typography_v11/layout_qa/check_layout.py",
+      "named": "Analysis/typography/layout_qa/check_layout.py",
+      "equal": true
+    },
+    {
+      "source": "Reproducibility/reference/primary.json",
+      "named": "Reproducibility/reference/primary.json",
+      "equal": true
+    },
+    {
+      "source": "Reproducibility/reference/supplementary.json",
+      "named": "Reproducibility/reference/supplementary.json",
+      "equal": true
+    },
+    {
+      "source": "Reproducibility/records/validation_cases.csv",
+      "named": "Reproducibility/records/validation_cases.csv",
+      "equal": true
+    },
+    {
+      "source": "Reproducibility/records/development_cases.csv",
+      "named": "Reproducibility/records/development_cases.csv",
+      "equal": true
+    },
+    {
+      "source": "Reproducibility/manifests/breast_external.csv",
+      "named": "Reproducibility/manifests/breast_external.csv",
+      "equal": true
+    },
+    {
+      "source": "Reproducibility/manifests/busbra_internal_holdout.csv",
+      "named": "Reproducibility/manifests/busbra_internal_holdout.csv",
+      "equal": true
+    },
+    {
+      "source": "Reproducibility/manifests/busbra_development.csv",
+      "named": "Reproducibility/manifests/busbra_development.csv",
+      "equal": true
+    },
+    {
+      "source": "Audit/wps_compatibility_v13/independent_math_qa.json",
+      "named": "Audit/wps_compatibility/independent_math_qa.json",
+      "equal": true
+    },
+    {
+      "source": "Audit/wps_compatibility_v13/typography_audit.json",
+      "named": "Audit/wps_compatibility/typography_audit.json",
+      "equal": true
+    },
+    {
+      "source": "Audit/wps_compatibility_v13/final_revision_qa.json",
+      "named": "Audit/wps_compatibility/final_revision_qa.json",
+      "equal": true
+    },
+    {
+      "source": "Audit/wps_compatibility_v13/wps_delimiter_diagnosis.md",
+      "named": "Audit/wps_compatibility/wps_delimiter_diagnosis.md",
+      "equal": true
+    },
+    {
+      "source": "Audit/wps_compatibility_v13/independent_math_qa.md",
+      "named": "Audit/wps_compatibility/independent_math_qa.md",
+      "equal": true
+    },
+    {
+      "source": "Audit/wps_compatibility_v13/typography_audit.md",
+      "named": "Audit/wps_compatibility/typography_audit.md",
+      "equal": true
+    },
+    {
+      "source": "Audit/wps_compatibility_v13/version_status.json",
+      "named": "Audit/wps_compatibility/version_status.json",
+      "equal": true
+    },
+    {
+      "source": "Audit/wps_compatibility_v13/render_validation.json",
+      "named": "Audit/wps_compatibility/render_validation.json",
+      "equal": true
+    },
+    {
+      "source": "Audit/wps_compatibility_v13/repair_report.json",
+      "named": "Audit/wps_compatibility/repair_report.json",
+      "equal": true
+    },
+    {
+      "source": "Audit/prior_v12/UPLOAD_FILE_MAP_v12.md",
+      "named": "Audit/prior/UPLOAD_FILE_MAP.md",
+      "equal": true
+    },
+    {
+      "source": "Audit/prior_v12/README_v12_zh.md",
+      "named": "Audit/prior/README_zh.md",
+      "equal": true
+    },
+    {
+      "source": "Audit/prior_v12/FILE_MANIFEST_v12.json",
+      "named": "Audit/prior/FILE_MANIFEST.json",
+      "equal": true
+    },
+    {
+      "source": "Audit/reference_sources/formal_equation_requirements.json",
+      "named": "Audit/reference_sources/formal_equation_requirements.json",
+      "equal": true
+    },
+    {
+      "source": "Audit/reference_sources/bmt_official_mathematics_source.md",
+      "named": "Audit/reference_sources/bmt_official_mathematics_source.md",
+      "equal": true
+    },
+    {
+      "source": "Audit/reference_sources/nist_official_mathematics_source.md",
+      "named": "Audit/reference_sources/nist_official_mathematics_source.md",
+      "equal": true
+    },
+    {
+      "source": "Audit/reference_sources/microsoft_official_equation_source.md",
+      "named": "Audit/reference_sources/microsoft_official_equation_source.md",
+      "equal": true
+    }
+  ],
+  "source_backup": "/workspace/paper_filenames/source",
+  "current_directory": "/workspace/research_source/submission/breast_ultrasound_quality_control",
+  "zip": {
+    "file": "/workspace/research_source/submission/Breast_Ultrasound_Quality_Control_Submission_Files.zip",
+    "sha256": "30b80d3b675c5188c9696fe2276623282454d9ffa46f6709510d227a1c72d65f",
+    "bytes": 7071041,
+    "members": 15
+  },
+  "supplement_new_sha256": "c2d43caf8a56c16e65d8bbe52955c5c8156471bca2686a2aaf3120211d6cf06f",
+  "supplement_pdf_sha256": "bc3a9d0df46e645a51049918058ec0892e4c72067763549162f3b2f9e19c0d47",
+  "limits": [
+    "The new manifest is deliberately pending seal and was not required to exist or verified in this pre-seal audit.",
+    "Historical analysis/audit contents and real software/dataset versions are intentionally preserved; their outer filenames are neutral. No direct Word/WPS or GitHub-push validation is claimed by this local audit."
+  ]
+}

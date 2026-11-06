@@ -1,0 +1,69 @@
+{
+  "title": "Post hoc cloud-feasible validation of fixed-threshold transfer and equal-review ranking",
+  "created_utc": "2026-11-06T09:07:02.483126+00:00",
+  "source_commit": "f9cfdc49b6e6a9e037443f6ce077006bc9377960",
+  "source_root": "/workspace/research_source",
+  "classification": "Post hoc exploratory; settings fixed before these new computations, not an original-study preregistration",
+  "original_analysis_preserved": true,
+  "quality_definition": "reference Dice < 0.70",
+  "budget_targets": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "budget_calibration": "Unique development score cutoffs plus zero-review option; risk>=cutoff; keep ties together; nearest target review fraction; equal distance chooses fewer reviews",
+  "equal_review": "For each target use nearest integer patient count in the cohort, choosing fewer if exactly tied; risk descending, official string case ID as tie-break; report actual count",
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 20261106,
+    "unit": "patient; independent resampling within development/internal/external cohorts, paired A/B and labels retained",
+    "routes": [
+      "fixed original cutoffs with test-cohort resampling",
+      "development calibration resampling with original test cohorts fixed",
+      "full development-and-test resampling"
+    ],
+    "external_equal_review_count": 50,
+    "strict_original_direction_reversal": "external B-minus-A detection >0 at fixed threshold AND <0 at equal-review; ties separate",
+    "intervals": "descriptive percentile 95%; not substitutes for original Newcombe intervals",
+    "zero_denominators": "NA; report count, do not impute"
+  },
+  "decomposition": {
+    "methods": [
+      "A",
+      "B"
+    ],
+    "outcomes": [
+      "low-quality detection",
+      "review fraction"
+    ],
+    "strata": [
+      "dataset-reported benign",
+      "dataset-reported malignant"
+    ],
+    "formula": "symmetric Kitagawa: sum((wE-wI)*(pE+pI)/2)+sum((pE-pI)*(wE+wI)/2)=overall E-I",
+    "standardization_weights": "arithmetic mean of internal and external diagnostic-stratum weights; event weights for detection, all-patient weights for review",
+    "bootstrap_replicates": 5000,
+    "seed": 20261107,
+    "interpretation": "descriptive accounting, not causal attribution"
+  },
+  "no_new_model_training_or_inference_in_score_experiments": true,
+  "planned_outputs": [
+    "machine-readable per-budget results",
+    "bootstrap estimates and valid-iteration counts",
+    "composition/within-stratum components",
+    "plots and concise report",
+    "actual runtime and source hashes"
+  ],
+  "prohibited_inferences": [
+    "new independent patients from bootstrap",
+    "equivalence from CI crossing zero",
+    "post hoc promotion to a prespecified primary result",
+    "causal pathology effects",
+    "unmeasured B/A runtime ratio"
+  ]
+}

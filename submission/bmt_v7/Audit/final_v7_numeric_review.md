@@ -4,7 +4,7 @@
 
 ## Checked copies
 
-- Main manuscript SHA-256: `0c434d6c04e4d111eccfb865dd71551ce59fd09e89e9697b1eab6c0b7943cdd3`
+- Main manuscript SHA-256: `279dd1b3692754054d1798f2f2b20715e1500f7e1415b52dc27e800c15726d3f`
 - Supplementary manuscript SHA-256: `a47cbc92341784c03060ed554dfbc48c8f10f79160389c0af60d4809aae2b97d`
 
 ## Numerical findings
@@ -28,7 +28,7 @@
 ## Updated author confirmations and source provenance
 
 - `author_confirmation_record.json` records the author-confirmed Jinyun campus, applicability of the statutory Article 32 ethics-review exemption and completion of human review of code, data, figures and text. These study-specific confirmations come from the user; they are not presented as independently issued institutional approvals.
-- `confirmed_address_ethics_sources.json` documents the official university admissions listing that pairs Jinyun Campus with No. 61 Daxuecheng Middle Road and postcode 401331, and the official college address identifying Building 6, Lanyuan. The college footer also lists 400016; that discrepancy is preserved in the evidence. The campus-specific 401331 is used without claiming that the other footer is demonstrably a template error. The current title page matches the documented address.
+- `confirmed_address_ethics_sources.json` preserves the university campus-specific 401331 source and the college footer 400016 source. The current title page follows the latest explicit author confirmation of correspondence postcode 400016 at Building 6, Lanyuan, No. 61 Daxuecheng Middle Road. Official source facts were not overwritten; the current author-selected address matches the confirmation record.
 - The official National Health Commission source establishes the text and scope of Article 32. Applicability to this particular secondary study is author-confirmed. The manuscript does not invent an IRB reference number or transfer the original BrEaST approval to the present study.
 - Informed consent reports the factual process: no new recruitment/contact and no additional consent obtained. It does not convert an ethics-review exemption into an invented IRB waiver of consent.
 - Methods and acknowledgments now state the completed human review. They candidly state that a precise underlying Codex model identifier was unavailable in archived study records; this is an archival limitation, not a remaining request to invent a version.

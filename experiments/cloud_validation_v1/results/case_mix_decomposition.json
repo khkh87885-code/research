@@ -1,0 +1,1138 @@
+{
+  "analysis": "post hoc diagnostic-composition standardization and symmetric Kitagawa decomposition",
+  "started_utc": "2026-11-06T09:13:50.435242+00:00",
+  "completed_utc": "2026-11-06T09:13:52.857187+00:00",
+  "provenance": {
+    "source_commit": "f9cfdc49b6e6a9e037443f6ce077006bc9377960",
+    "source_branch": "main",
+    "source_status_before": "",
+    "audit_source_commit": "9fc8f54a91216b80aba909ba6028078f7642e4a9",
+    "input_sha256": {
+      "reproducibility/records/validation_cases.csv": "6ac44d3d3557caceba1e47dab4f87bc3b180568195c0d0ecb6506fbb04d07961",
+      "reproducibility/manifests/busbra_internal_holdout.csv": "2727d11d0db4f41ddd70a915576e5273a9d0ecbd735f151ae2ae710d0963a026",
+      "reproducibility/manifests/breast_external.csv": "33db74c60e8ce242f82f5efcd1007c08151e6faf359a6204f68a251791dbda22",
+      "reproducibility/study_lock.json": "91189487ed1fa5328f33e5db4094f846f5619d73924329577f6a0d9e05ffc7d0",
+      "submission/bmt_v7/Audit/pathology_audit.json": "ce1a085b1306c8267f5aec737ae41fbcfbfd529b14cc5694f75b68ac22e5b7a5",
+      "data/raw/BUS-BRA/BUSBRA/bus_data.csv": "f218d0f10b0aeeb14ff4b2cfed8631b2f4a7cf608e564548b35bddd55f3aafb3",
+      "data/raw/BrEaST/BrEaST-Lesions-USG-clinical-data-Dec-15-2023.xlsx": "89a8874496a6f1f93960390b963f7369b90f7e72ee08a738f2d17e37f5eff8bf"
+    },
+    "thresholds": {
+      "A": 0.13705134391784668,
+      "B": 0.06972856653991777
+    },
+    "quality_cutoff": 0.7,
+    "stratum_counts": {
+      "internal_holdout": {
+        "benign": {
+          "A": {
+            "N": 577,
+            "low_quality": 53,
+            "review_count": 102,
+            "TP": 51
+          },
+          "B": {
+            "N": 577,
+            "low_quality": 53,
+            "review_count": 80,
+            "TP": 41
+          }
+        },
+        "malignant": {
+          "A": {
+            "N": 274,
+            "low_quality": 40,
+            "review_count": 72,
+            "TP": 20
+          },
+          "B": {
+            "N": 274,
+            "low_quality": 40,
+            "review_count": 70,
+            "TP": 27
+          }
+        }
+      },
+      "external_test": {
+        "benign": {
+          "A": {
+            "N": 154,
+            "low_quality": 8,
+            "review_count": 15,
+            "TP": 5
+          },
+          "B": {
+            "N": 154,
+            "low_quality": 8,
+            "review_count": 13,
+            "TP": 7
+          }
+        },
+        "malignant": {
+          "A": {
+            "N": 98,
+            "low_quality": 8,
+            "review_count": 20,
+            "TP": 5
+          },
+          "B": {
+            "N": 98,
+            "low_quality": 8,
+            "review_count": 20,
+            "TP": 6
+          }
+        }
+      }
+    },
+    "checks": "Score/manifest/official-metadata labels, patient uniqueness within each dataset namespace, quality labels, locked decisions and all v7 stratum counts matched exactly.",
+    "patient_id_scope": "Patient identifiers are dataset-local. No claim of independently established cross-dataset patient identity exclusion is made.",
+    "label_scope": "Dataset-reported benign/malignant classification; BrEaST includes follow-up-confirmed cases, so not all diagnoses are histopathologically confirmed.",
+    "protocol_sha256": "c34718732b856ab31d0d8ae19c88bbbf0f43a9614ea14433d8f62210cc1409c7",
+    "script_sha256": "818487d97e5ec9e34c594b724199b64f24d0590f2fed25c7c047dd5e9dc311ac",
+    "protocol_file": "/workspace/bmt_cloud_validation/protocol/analysis_plan.json",
+    "source_root": "/workspace/research_source"
+  },
+  "design": {
+    "methods": [
+      "A",
+      "B"
+    ],
+    "outcomes": [
+      "low-quality detection",
+      "review fraction"
+    ],
+    "strata": [
+      "dataset-reported benign",
+      "dataset-reported malignant"
+    ],
+    "formula": "symmetric Kitagawa: sum((wE-wI)*(pE+pI)/2)+sum((pE-pI)*(wE+wI)/2)=overall E-I",
+    "standardization_weights": "arithmetic mean of internal and external diagnostic-stratum weights; event weights for detection, all-patient weights for review",
+    "bootstrap_replicates": 5000,
+    "seed": 20261107,
+    "interpretation": "descriptive accounting, not causal attribution"
+  },
+  "direction": "external minus internal",
+  "rate_units": "raw fraction; multiply rates by 100 for percent and rate differences/components by 100 for percentage points",
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 20261107,
+    "generator": "NumPy PCG64",
+    "resampling": "Independently resample patients within internal then external in each repetition; A/B, quality and diagnosis kept paired. CSV row order retained.",
+    "weights": "Recomputed per draw; detection weights use low-quality denominators, review weights use all-patient denominators.",
+    "interval": "Unadjusted descriptive percentile 95%, NumPy linear quantiles over finite replicates only.",
+    "zero_denominators": "NA; undefined stratum rates propagate to dependent components and standardized rates, even with zero weight; overall rate is valid if total denominator is positive.",
+    "zero_stratum_denominator_counts": {
+      "detection": {
+        "internal_holdout": {
+          "benign": 0,
+          "malignant": 0
+        },
+        "external_test": {
+          "benign": 1,
+          "malignant": 0
+        }
+      },
+      "review_fraction": {
+        "internal_holdout": {
+          "benign": 0,
+          "malignant": 0
+        },
+        "external_test": {
+          "benign": 0,
+          "malignant": 0
+        }
+      }
+    }
+  },
+  "results": {
+    "A.detection": {
+      "statistics": {
+        "internal_rate": {
+          "estimate": 0.7634408602150538,
+          "percentile_ci95": [
+            0.6744186046511628,
+            0.8461711711711709
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "external_rate": {
+          "estimate": 0.625,
+          "percentile_ci95": [
+            0.36363636363636365,
+            0.8666666666666667
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "overall_difference": {
+          "estimate": -0.13844086021505375,
+          "percentile_ci95": [
+            -0.40847953599061165,
+            0.11398381773661233
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "composition_associated": {
+          "estimate": -0.016154392371677873,
+          "percentile_ci95": [
+            -0.10894420656704179,
+            0.05730686099849105
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "within_stratum_rate": {
+          "estimate": -0.12228646784337593,
+          "percentile_ci95": [
+            -0.3994389839233814,
+            0.14300074413347225
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "standardized_internal_rate": {
+          "estimate": 0.7472864678433759,
+          "percentile_ci95": [
+            0.639134505292919,
+            0.8421449756809569
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "standardized_external_rate": {
+          "estimate": 0.625,
+          "percentile_ci95": [
+            0.36509246880570406,
+            0.8643480409087422
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "standardized_difference": {
+          "estimate": -0.12228646784337593,
+          "percentile_ci95": [
+            -0.3994389839233813,
+            0.14300074413347225
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "identity_residual": {
+          "estimate": -5.551115123125783e-17,
+          "percentile_ci95": [
+            -1.3877787807814457e-16,
+            1.3877787807814457e-16
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "standardization_identity_residual": {
+          "estimate": 0.0,
+          "percentile_ci95": [
+            -1.1102230246251565e-16,
+            1.1102230246251565e-16
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "benign.internal_weight": {
+          "estimate": 0.5698924731182796,
+          "percentile_ci95": [
+            0.4666666666666667,
+            0.6739130434782609
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.external_weight": {
+          "estimate": 0.5,
+          "percentile_ci95": [
+            0.23518099547511315,
+            0.75
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.common_weight": {
+          "estimate": 0.5349462365591398,
+          "percentile_ci95": [
+            0.39545338589981455,
+            0.6691176470588236
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.internal_stratum_rate": {
+          "estimate": 0.9622641509433962,
+          "percentile_ci95": [
+            0.9038461538461539,
+            1.0
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.external_stratum_rate": {
+          "estimate": 0.625,
+          "percentile_ci95": [
+            0.25,
+            1.0
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "benign.composition_associated_term": {
+          "estimate": -0.05546890850071012,
+          "percentile_ci95": [
+            -0.27918951297906325,
+            0.16748414484451726
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "benign.within_stratum_rate_term": {
+          "estimate": -0.18041818827348347,
+          "percentile_ci95": [
+            -0.3857411239930216,
+            0.01588540949166555
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "malignant.internal_weight": {
+          "estimate": 0.43010752688172044,
+          "percentile_ci95": [
+            0.32608695652173914,
+            0.5333333333333333
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.external_weight": {
+          "estimate": 0.5,
+          "percentile_ci95": [
+            0.25,
+            0.7648190045248852
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.common_weight": {
+          "estimate": 0.46505376344086025,
+          "percentile_ci95": [
+            0.33088235294117646,
+            0.6045466141001856
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.internal_stratum_rate": {
+          "estimate": 0.5,
+          "percentile_ci95": [
+            0.34285714285714286,
+            0.6562723214285711
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.external_stratum_rate": {
+          "estimate": 0.625,
+          "percentile_ci95": [
+            0.25,
+            1.0
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.composition_associated_term": {
+          "estimate": 0.03931451612903225,
+          "percentile_ci95": [
+            -0.11681137813950315,
+            0.2043461358435615
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.within_stratum_rate_term": {
+          "estimate": 0.05813172043010753,
+          "percentile_ci95": [
+            -0.12626807201373869,
+            0.23409387997623282
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        }
+      },
+      "bootstrap_max_absolute_identity_residual": 2.220446049250313e-16,
+      "bootstrap_max_absolute_standardization_residual": 2.220446049250313e-16
+    },
+    "A.review_fraction": {
+      "statistics": {
+        "internal_rate": {
+          "estimate": 0.2044653349001175,
+          "percentile_ci95": [
+            0.17743830787309048,
+            0.23149236192714454
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "external_rate": {
+          "estimate": 0.1388888888888889,
+          "percentile_ci95": [
+            0.0992063492063492,
+            0.18253968253968253
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "overall_difference": {
+          "estimate": -0.06557644601122861,
+          "percentile_ci95": [
+            -0.11539178930483279,
+            -0.01311797045492703
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "composition_associated": {
+          "estimate": 0.00644644327818787,
+          "percentile_ci95": [
+            -5.2737326759549404e-05,
+            0.015429049419438477
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "within_stratum_rate": {
+          "estimate": -0.07202288928941648,
+          "percentile_ci95": [
+            -0.12145562337117073,
+            -0.020774461528217023
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "standardized_internal_rate": {
+          "estimate": 0.20734257818053395,
+          "percentile_ci95": [
+            0.18019896423695328,
+            0.23495637584779336
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "standardized_external_rate": {
+          "estimate": 0.13531968889111745,
+          "percentile_ci95": [
+            0.09454353842947748,
+            0.1790233374637846
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "standardized_difference": {
+          "estimate": -0.0720228892894165,
+          "percentile_ci95": [
+            -0.12145562337117072,
+            -0.02077446152821702
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "identity_residual": {
+          "estimate": 0.0,
+          "percentile_ci95": [
+            -2.7755575615628914e-17,
+            4.163336342344337e-17
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "standardization_identity_residual": {
+          "estimate": -1.3877787807814457e-17,
+          "percentile_ci95": [
+            -2.7755575615628914e-17,
+            2.7755575615628914e-17
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.internal_weight": {
+          "estimate": 0.6780258519388954,
+          "percentile_ci95": [
+            0.6474735605170387,
+            0.7085781433607521
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.external_weight": {
+          "estimate": 0.6111111111111112,
+          "percentile_ci95": [
+            0.5476190476190477,
+            0.6706349206349206
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.common_weight": {
+          "estimate": 0.6445684815250032,
+          "percentile_ci95": [
+            0.6099597462369202,
+            0.6786589773002817
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.internal_stratum_rate": {
+          "estimate": 0.17677642980935876,
+          "percentile_ci95": [
+            0.14685076016134035,
+            0.2084883724453008
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.external_stratum_rate": {
+          "estimate": 0.09740259740259741,
+          "percentile_ci95": [
+            0.05333333333333334,
+            0.14686279977691005
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.composition_associated_term": {
+          "estimate": -0.009173309273151029,
+          "percentile_ci95": [
+            -0.01941133443907273,
+            7.085380111883838e-05
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.within_stratum_rate_term": {
+          "estimate": -0.05116187062724626,
+          "percentile_ci95": [
+            -0.08650247842525179,
+            -0.012976984110441944
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.internal_weight": {
+          "estimate": 0.3219741480611046,
+          "percentile_ci95": [
+            0.29142185663924797,
+            0.3525264394829612
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.external_weight": {
+          "estimate": 0.3888888888888889,
+          "percentile_ci95": [
+            0.32936507936507936,
+            0.4523809523809524
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.common_weight": {
+          "estimate": 0.35543151847499677,
+          "percentile_ci95": [
+            0.3213410226997183,
+            0.3900402537630798
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.internal_stratum_rate": {
+          "estimate": 0.26277372262773724,
+          "percentile_ci95": [
+            0.2121185351750723,
+            0.3155896906938489
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.external_stratum_rate": {
+          "estimate": 0.20408163265306123,
+          "percentile_ci95": [
+            0.12744652406417112,
+            0.2857142857142857
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.composition_associated_term": {
+          "estimate": 0.015619752551338899,
+          "percentile_ci95": [
+            -0.00010587285568736438,
+            0.032863460115564735
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.within_stratum_rate_term": {
+          "estimate": -0.020861018662170227,
+          "percentile_ci95": [
+            -0.05504327662390343,
+            0.012938672539596229
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        }
+      },
+      "bootstrap_max_absolute_identity_residual": 5.551115123125783e-17,
+      "bootstrap_max_absolute_standardization_residual": 5.551115123125783e-17
+    },
+    "B.detection": {
+      "statistics": {
+        "internal_rate": {
+          "estimate": 0.7311827956989247,
+          "percentile_ci95": [
+            0.6373626373626373,
+            0.8202247191011236
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "external_rate": {
+          "estimate": 0.8125,
+          "percentile_ci95": [
+            0.6,
+            1.0
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "overall_difference": {
+          "estimate": 0.08131720430107525,
+          "percentile_ci95": [
+            -0.15089544340463454,
+            0.2818385270774976
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "composition_associated": {
+          "estimate": -0.007813451004260542,
+          "percentile_ci95": [
+            -0.06429805247266963,
+            0.03621105638212518
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "within_stratum_rate": {
+          "estimate": 0.08913065530533572,
+          "percentile_ci95": [
+            -0.14317421479471099,
+            0.286977991430143
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "standardized_internal_rate": {
+          "estimate": 0.7277376242645568,
+          "percentile_ci95": [
+            0.632702979550406,
+            0.8184832592569242
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "standardized_external_rate": {
+          "estimate": 0.8168682795698925,
+          "percentile_ci95": [
+            0.6048708902619001,
+            1.0
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "standardized_difference": {
+          "estimate": 0.0891306553053357,
+          "percentile_ci95": [
+            -0.1431742147947109,
+            0.2869779914301429
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "identity_residual": {
+          "estimate": -8.326672684688674e-17,
+          "percentile_ci95": [
+            -1.3877787807814457e-16,
+            1.3877787807814457e-16
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "standardization_identity_residual": {
+          "estimate": -1.3877787807814457e-17,
+          "percentile_ci95": [
+            -1.111090386363145e-16,
+            1.1119577481011397e-16
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "benign.internal_weight": {
+          "estimate": 0.5698924731182796,
+          "percentile_ci95": [
+            0.4666666666666667,
+            0.6739130434782609
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.external_weight": {
+          "estimate": 0.5,
+          "percentile_ci95": [
+            0.23518099547511315,
+            0.75
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.common_weight": {
+          "estimate": 0.5349462365591398,
+          "percentile_ci95": [
+            0.39545338589981455,
+            0.6691176470588236
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.internal_stratum_rate": {
+          "estimate": 0.7735849056603774,
+          "percentile_ci95": [
+            0.6585365853658537,
+            0.8846153846153846
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.external_stratum_rate": {
+          "estimate": 0.875,
+          "percentile_ci95": [
+            0.5714285714285714,
+            1.0
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "benign.composition_associated_term": {
+          "estimate": -0.057611838101034735,
+          "percentile_ci95": [
+            -0.2887981968959221,
+            0.16990299869800876
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "benign.within_stratum_rate_term": {
+          "estimate": 0.05425162304727122,
+          "percentile_ci95": [
+            -0.11305815336887444,
+            0.17035649090818056
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        "malignant.internal_weight": {
+          "estimate": 0.43010752688172044,
+          "percentile_ci95": [
+            0.32608695652173914,
+            0.5333333333333333
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.external_weight": {
+          "estimate": 0.5,
+          "percentile_ci95": [
+            0.25,
+            0.7648190045248852
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.common_weight": {
+          "estimate": 0.46505376344086025,
+          "percentile_ci95": [
+            0.33088235294117646,
+            0.6045466141001856
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.internal_stratum_rate": {
+          "estimate": 0.675,
+          "percentile_ci95": [
+            0.5238095238095238,
+            0.8205128205128205
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.external_stratum_rate": {
+          "estimate": 0.75,
+          "percentile_ci95": [
+            0.4,
+            1.0
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.composition_associated_term": {
+          "estimate": 0.04979838709677419,
+          "percentile_ci95": [
+            -0.1449881327039077,
+            0.25753110160556225
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.within_stratum_rate_term": {
+          "estimate": 0.0348790322580645,
+          "percentile_ci95": [
+            -0.1377461293268434,
+            0.1835599027409372
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        }
+      },
+      "bootstrap_max_absolute_identity_residual": 2.498001805406602e-16,
+      "bootstrap_max_absolute_standardization_residual": 2.220446049250313e-16
+    },
+    "B.review_fraction": {
+      "statistics": {
+        "internal_rate": {
+          "estimate": 0.1762632197414806,
+          "percentile_ci95": [
+            0.15041128084606345,
+            0.20211515863689777
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "external_rate": {
+          "estimate": 0.13095238095238096,
+          "percentile_ci95": [
+            0.0873015873015873,
+            0.1746031746031746
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "overall_difference": {
+          "estimate": -0.04531083878909964,
+          "percentile_ci95": [
+            -0.09306896181896183,
+            0.00406874265569907
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "composition_associated": {
+          "estimate": 0.00791241116866846,
+          "percentile_ci95": [
+            -6.411300620776048e-05,
+            0.017981379626852315
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "within_stratum_rate": {
+          "estimate": -0.053223249957768115,
+          "percentile_ci95": [
+            -0.10027621727516138,
+            -0.005579469743298582
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "standardized_internal_rate": {
+          "estimate": 0.18017191960830115,
+          "percentile_ci95": [
+            0.15433058131359761,
+            0.20678112523991102
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "standardized_external_rate": {
+          "estimate": 0.126948669650533,
+          "percentile_ci95": [
+            0.08656077900759156,
+            0.16975867160683988
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "standardized_difference": {
+          "estimate": -0.05322324995776814,
+          "percentile_ci95": [
+            -0.10027621727516138,
+            -0.00557946974329858
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "identity_residual": {
+          "estimate": -1.3877787807814457e-17,
+          "percentile_ci95": [
+            -2.7755575615628914e-17,
+            3.469446951953614e-17
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "standardization_identity_residual": {
+          "estimate": -2.7755575615628914e-17,
+          "percentile_ci95": [
+            -2.7755575615628914e-17,
+            2.7755575615628914e-17
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.internal_weight": {
+          "estimate": 0.6780258519388954,
+          "percentile_ci95": [
+            0.6474735605170387,
+            0.7085781433607521
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.external_weight": {
+          "estimate": 0.6111111111111112,
+          "percentile_ci95": [
+            0.5476190476190477,
+            0.6706349206349206
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.common_weight": {
+          "estimate": 0.6445684815250032,
+          "percentile_ci95": [
+            0.6099597462369202,
+            0.6786589773002817
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.internal_stratum_rate": {
+          "estimate": 0.1386481802426343,
+          "percentile_ci95": [
+            0.11130734367798432,
+            0.16722972972972974
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.external_stratum_rate": {
+          "estimate": 0.08441558441558442,
+          "percentile_ci95": [
+            0.042852787456445995,
+            0.13157894736842105
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.composition_associated_term": {
+          "estimate": -0.007463127000087284,
+          "percentile_ci95": [
+            -0.01595610939032595,
+            5.281973224630065e-05
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "benign.within_stratum_rate_term": {
+          "estimate": -0.03495662194140078,
+          "percentile_ci95": [
+            -0.06700093784612639,
+            -0.00037917684398936223
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.internal_weight": {
+          "estimate": 0.3219741480611046,
+          "percentile_ci95": [
+            0.29142185663924797,
+            0.3525264394829612
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.external_weight": {
+          "estimate": 0.3888888888888889,
+          "percentile_ci95": [
+            0.32936507936507936,
+            0.4523809523809524
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.common_weight": {
+          "estimate": 0.35543151847499677,
+          "percentile_ci95": [
+            0.3213410226997183,
+            0.3900402537630798
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.internal_stratum_rate": {
+          "estimate": 0.25547445255474455,
+          "percentile_ci95": [
+            0.20454545454545456,
+            0.3076923076923077
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.external_stratum_rate": {
+          "estimate": 0.20408163265306123,
+          "percentile_ci95": [
+            0.12380706921944036,
+            0.2857496463932102
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.composition_associated_term": {
+          "estimate": 0.015375538168755745,
+          "percentile_ci95": [
+            -0.0001169327384540698,
+            0.03217674493340073
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        "malignant.within_stratum_rate_term": {
+          "estimate": -0.018266628016367335,
+          "percentile_ci95": [
+            -0.051854527347648324,
+            0.01626261986355758
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        }
+      },
+      "bootstrap_max_absolute_identity_residual": 5.551115123125783e-17,
+      "bootstrap_max_absolute_standardization_residual": 4.5102810375396984e-17
+    }
+  },
+  "counts": {
+    "internal_holdout": {
+      "N": [
+        577.0,
+        274.0
+      ],
+      "low": [
+        53.0,
+        40.0
+      ],
+      "reviews": [
+        [
+          102.0,
+          72.0
+        ],
+        [
+          80.0,
+          70.0
+        ]
+      ],
+      "tp": [
+        [
+          51.0,
+          20.0
+        ],
+        [
+          41.0,
+          27.0
+        ]
+      ]
+    },
+    "external_test": {
+      "N": [
+        154.0,
+        98.0
+      ],
+      "low": [
+        8.0,
+        8.0
+      ],
+      "reviews": [
+        [
+          15.0,
+          20.0
+        ],
+        [
+          13.0,
+          20.0
+        ]
+      ],
+      "tp": [
+        [
+          5.0,
+          5.0
+        ],
+        [
+          7.0,
+          6.0
+        ]
+      ]
+    }
+  },
+  "runtime": {
+    "bootstrap_seconds": 1.1074270150002121,
+    "process_elapsed_seconds_through_exports": 2.8297529020001093
+  },
+  "resources": {
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "openpyxl": "3.1.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "cpu.max": "200000 100000",
+    "memory.max": "8589934592",
+    "observed_threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "SkylakeX"
+      }
+    ]
+  },
+  "interpretation_limits": [
+    "Post hoc descriptive accounting, not causal attribution. No percent-explained measures are reported.",
+    "Two diagnostic strata cannot remove acquisition/device, annotation or other confounding.",
+    "Only 16 external low-quality cases inform detection; bootstrap creates no independent new patients.",
+    "Percentile intervals do not replace the original H1–H3 Newcombe intervals; a CI crossing zero does not establish equivalence.",
+    "No development recalibration, model training or inference was run; no source manuscript or protocol was changed."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "qa_utc": "2026-11-06T09:30:59.147639+00:00",
+  "status": "PASS: author-confirmed 400016, numerical QA, PDF bounds, preview freshness and DOCX preservation",
+  "changed_documents": {
+    "BMT_main_manuscript_v7": {
+      "pages": 12,
+      "docx_sha256": "279dd1b3692754054d1798f2f2b20715e1500f7e1415b52dc27e800c15726d3f",
+      "pdf_sha256": "8ec8f5f2cec04166373c2a985f47bc7fd9c1a98b501ab6448b605f6d348886f6",
+      "current_postcode": "400016",
+      "pdf_occurrences_400016": 2,
+      "pdf_occurrences_401331": 0
+    },
+    "BMT_cover_letter": {
+      "pages": 1,
+      "docx_sha256": "7a9df106a4dedd902b58158df6d7354137374a65f3fc036a896de996d58d2a01",
+      "pdf_sha256": "6203da88b3f57d8d353585b338a1008abd79303e7aef54aaa3fd24919c94d4b3",
+      "current_postcode": "400016",
+      "pdf_occurrences_400016": 1,
+      "pdf_occurrences_401331": 0
+    },
+    "BMT_author_confirmation_required": {
+      "pages": 1,
+      "docx_sha256": "5a252cd65732e3439c698eff5315e35c11f8c058da766d9fde8a4d6e1e5cae03",
+      "pdf_sha256": "b082ec09f5a7700d75889b4dd079336fed95bb831eb743558a1c5ce7ad1f26ad",
+      "current_postcode": "400016",
+      "pdf_occurrences_400016": 1,
+      "pdf_occurrences_401331": 0
+    },
+    "BMT_revision_report": {
+      "pages": 2,
+      "docx_sha256": "3acf02b1c7796ed63351c252827723580ac6b6105159a456259fa46ecf88328e",
+      "pdf_sha256": "5b8934d4b5e6f8d6fae6830903f948325f04fa4279739c3bf4737e8b1dd55630",
+      "current_postcode": "400016",
+      "pdf_occurrences_400016": 2,
+      "pdf_occurrences_401331": 1
+    },
+    "BMT_submission_checklist": {
+      "pages": 1,
+      "docx_sha256": "4ccc3b82e25ce5a674c50a6705bc8bafa983df78bccc4106f7c95d1cb64d81d1",
+      "pdf_sha256": "3e63762c18ab6cc4a23915b2693a87090c185fe999f695cd931645b3f4e0078e",
+      "current_postcode": "400016",
+      "pdf_occurrences_400016": 1,
+      "pdf_occurrences_401331": 0
+    }
+  },
+  "all_nine_pdf_layout": {
+    "BMT_Ethical_and_Legal_Declarations_v7.pdf": {
+      "pages": 3,
+      "out_of_page_words": 0
+    },
+    "BMT_author_confirmation_required.pdf": {
+      "pages": 1,
+      "out_of_page_words": 0
+    },
+    "BMT_cover_letter.pdf": {
+      "pages": 1,
+      "out_of_page_words": 0
+    },
+    "BMT_data_and_code_availability.pdf": {
+      "pages": 1,
+      "out_of_page_words": 0
+    },
+    "BMT_main_manuscript_v7.pdf": {
+      "pages": 12,
+      "out_of_page_words": 0
+    },
+    "BMT_reviewer_candidates.pdf": {
+      "pages": 3,
+      "out_of_page_words": 0
+    },
+    "BMT_revision_report.pdf": {
+      "pages": 2,
+      "out_of_page_words": 0
+    },
+    "BMT_submission_checklist.pdf": {
+      "pages": 1,
+      "out_of_page_words": 0
+    },
+    "BMT_supplementary_material_v3.pdf": {
+      "pages": 6,
+      "out_of_page_words": 0
+    }
+  },
+  "docx_unchanged_by_archival_QA": true,
+  "official_401331_historical_source_preserved": true,
+  "read_only_numeric_review_json_sha256": "608eac356a3e7c35a166695be8eeab40d4a9defbad4cb7d3e2c9922adf88820d",
+  "numerical_review_status": "PASS within numerical and cross-reference scope. Both authors explicitly approved submission of the final v7 manuscript and accepted full-content responsibility; no actual journal submission has been performed.",
+  "visually_inspected_contact_sheet": "qa/postal_refresh_contact.png",
+  "visual_scope": "First page of all five changed documents; no clipped text or address wrapping defect observed",
+  "no_document_generation_logic_run": true,
+  "no_research_source_writes": true
+}

@@ -1,0 +1,655 @@
+{
+  "audit_utc": "2026-11-06T09:15:17.481220+00:00",
+  "check": "Independent raw-score count and paired-bootstrap replay of diagnostic composition/Kitagawa module",
+  "status": "PASS",
+  "method": "Point estimates use exact Fraction arithmetic on independently recomputed raw-score counts. Bootstrap draws replay PCG64 with the fixed seed, deriving aggregate composition and rate terms from cross-weighted means rather than importing the production function.",
+  "inputs_sha256": {
+    "results_json": "92e3ccd9d761117c25089a01c61c40f23674cf70b05a8e221cebbc29524e5543",
+    "bootstrap_csv": "3a126a9c1d82eb8f5fde9d6731ce74d9e6876205a6cbcc0acad4cd8e23fecf39",
+    "source_scores": "6ac44d3d3557caceba1e47dab4f87bc3b180568195c0d0ecb6506fbb04d07961",
+    "protocol": "c34718732b856ab31d0d8ae19c88bbbf0f43a9614ea14433d8f62210cc1409c7"
+  },
+  "thresholds": {
+    "A": 0.13705134391784668,
+    "B": 0.06972856653991777
+  },
+  "point_estimates": [
+    {
+      "method": "A",
+      "outcome": "detection",
+      "overall_difference_pp": -13.844086021505376,
+      "composition_associated_pp": -1.6154392371677824,
+      "within_stratum_rate_pp": -12.228646784337593,
+      "standardized_internal_percent": 74.7286467843376,
+      "standardized_external_percent": 62.5
+    },
+    {
+      "method": "A",
+      "outcome": "review_fraction",
+      "overall_difference_pp": -6.557644601122862,
+      "composition_associated_pp": 0.6446443278187862,
+      "within_stratum_rate_pp": -7.202288928941648,
+      "standardized_internal_percent": 20.734257818053393,
+      "standardized_external_percent": 13.531968889111745
+    },
+    {
+      "method": "B",
+      "outcome": "detection",
+      "overall_difference_pp": 8.131720430107526,
+      "composition_associated_pp": -0.7813451004260499,
+      "within_stratum_rate_pp": 8.913065530533578,
+      "standardized_internal_percent": 72.77376242645566,
+      "standardized_external_percent": 81.68682795698925
+    },
+    {
+      "method": "B",
+      "outcome": "review_fraction",
+      "overall_difference_pp": -4.531083878909966,
+      "composition_associated_pp": 0.7912411168668452,
+      "within_stratum_rate_pp": -5.32232499577681,
+      "standardized_internal_percent": 18.01719196083011,
+      "standardized_external_percent": 12.6948669650533
+    }
+  ],
+  "exact_count_checks": {
+    "A.detection": {
+      "counts_rederived_from_scores": [
+        {
+          "denominators": [
+            53,
+            40
+          ],
+          "numerators": [
+            51,
+            20
+          ]
+        },
+        {
+          "denominators": [
+            8,
+            8
+          ],
+          "numerators": [
+            5,
+            5
+          ]
+        }
+      ],
+      "internal_weights": [
+        "53/93",
+        "40/93"
+      ],
+      "external_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "common_weights": [
+        "199/372",
+        "173/372"
+      ],
+      "overall_difference_exact": "-103/744",
+      "composition_associated_exact": "-637/39432",
+      "within_stratum_rate_exact": "-2411/19716",
+      "composition_plus_within_equals_overall_exact": true,
+      "standardized_difference_equals_within_exact": true
+    },
+    "A.review_fraction": {
+      "counts_rederived_from_scores": [
+        {
+          "denominators": [
+            577,
+            274
+          ],
+          "numerators": [
+            102,
+            72
+          ]
+        },
+        {
+          "denominators": [
+            154,
+            98
+          ],
+          "numerators": [
+            15,
+            20
+          ]
+        }
+      ],
+      "internal_weights": [
+        "577/851",
+        "274/851"
+      ],
+      "external_weights": [
+        "11/18",
+        "7/18"
+      ],
+      "common_weights": [
+        "19747/30636",
+        "10889/30636"
+      ],
+      "overall_difference_exact": "-2009/30636",
+      "composition_associated_exact": "16829350975/2610641286792",
+      "within_stratum_rate_exact": "-188025928373/2610641286792",
+      "composition_plus_within_equals_overall_exact": true,
+      "standardized_difference_equals_within_exact": true
+    },
+    "B.detection": {
+      "counts_rederived_from_scores": [
+        {
+          "denominators": [
+            53,
+            40
+          ],
+          "numerators": [
+            41,
+            27
+          ]
+        },
+        {
+          "denominators": [
+            8,
+            8
+          ],
+          "numerators": [
+            7,
+            6
+          ]
+        }
+      ],
+      "internal_weights": [
+        "53/93",
+        "40/93"
+      ],
+      "external_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "common_weights": [
+        "199/372",
+        "173/372"
+      ],
+      "overall_difference_exact": "121/1488",
+      "composition_associated_exact": "-1027/131440",
+      "within_stratum_rate_exact": "17573/197160",
+      "composition_plus_within_equals_overall_exact": true,
+      "standardized_difference_equals_within_exact": true
+    },
+    "B.review_fraction": {
+      "counts_rederived_from_scores": [
+        {
+          "denominators": [
+            577,
+            274
+          ],
+          "numerators": [
+            80,
+            70
+          ]
+        },
+        {
+          "denominators": [
+            154,
+            98
+          ],
+          "numerators": [
+            13,
+            20
+          ]
+        }
+      ],
+      "internal_weights": [
+        "577/851",
+        "274/851"
+      ],
+      "external_weights": [
+        "11/18",
+        "7/18"
+      ],
+      "common_weights": [
+        "19747/30636",
+        "10889/30636"
+      ],
+      "overall_difference_exact": "-3239/71484",
+      "composition_associated_exact": "20656467275/2610641286792",
+      "within_stratum_rate_exact": "-138946813757/2610641286792",
+      "composition_plus_within_equals_overall_exact": true,
+      "standardized_difference_equals_within_exact": true
+    }
+  },
+  "bootstrap": {
+    "replicates": 5000,
+    "rows": 20000,
+    "seed": 20261107,
+    "all_replicate_method_outcome_keys_complete": true,
+    "patient_replay": true,
+    "all_exported_values_match_independent_replay_at_tolerance": true,
+    "maximum_absolute_difference_raw_fraction": 2.498001805406602e-16,
+    "all_percentile_CIs_and_valid_counts_match": true,
+    "maximum_absolute_percentile_ci_difference_raw_fraction": 1.3877787807814457e-16,
+    "zero_stratum_denominator_counts": {
+      "detection": {
+        "internal_holdout": {
+          "benign": 0,
+          "malignant": 0
+        },
+        "external_test": {
+          "benign": 1,
+          "malignant": 0
+        }
+      },
+      "review_fraction": {
+        "internal_holdout": {
+          "benign": 0,
+          "malignant": 0
+        },
+        "external_test": {
+          "benign": 0,
+          "malignant": 0
+        }
+      }
+    },
+    "valid_counts": {
+      "A.detection": {
+        "internal_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "external_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "overall_difference": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "composition_associated": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "within_stratum_rate": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "standardized_internal_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "standardized_external_rate": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "standardized_difference": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "identity_residual": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "standardization_identity_residual": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "benign.internal_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.external_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.common_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.internal_stratum_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.external_stratum_rate": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "benign.composition_associated_term": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "benign.within_stratum_rate_term": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "malignant.internal_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.external_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.common_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.internal_stratum_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.external_stratum_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.composition_associated_term": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.within_stratum_rate_term": {
+          "valid": 5000,
+          "invalid": 0
+        }
+      },
+      "A.review_fraction": {
+        "internal_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "external_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "overall_difference": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "composition_associated": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "within_stratum_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "standardized_internal_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "standardized_external_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "standardized_difference": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "identity_residual": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "standardization_identity_residual": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.internal_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.external_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.common_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.internal_stratum_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.external_stratum_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.composition_associated_term": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.within_stratum_rate_term": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.internal_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.external_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.common_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.internal_stratum_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.external_stratum_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.composition_associated_term": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.within_stratum_rate_term": {
+          "valid": 5000,
+          "invalid": 0
+        }
+      },
+      "B.detection": {
+        "internal_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "external_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "overall_difference": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "composition_associated": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "within_stratum_rate": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "standardized_internal_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "standardized_external_rate": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "standardized_difference": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "identity_residual": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "standardization_identity_residual": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "benign.internal_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.external_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.common_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.internal_stratum_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.external_stratum_rate": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "benign.composition_associated_term": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "benign.within_stratum_rate_term": {
+          "valid": 4999,
+          "invalid": 1
+        },
+        "malignant.internal_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.external_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.common_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.internal_stratum_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.external_stratum_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.composition_associated_term": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.within_stratum_rate_term": {
+          "valid": 5000,
+          "invalid": 0
+        }
+      },
+      "B.review_fraction": {
+        "internal_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "external_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "overall_difference": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "composition_associated": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "within_stratum_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "standardized_internal_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "standardized_external_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "standardized_difference": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "identity_residual": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "standardization_identity_residual": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.internal_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.external_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.common_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.internal_stratum_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.external_stratum_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.composition_associated_term": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "benign.within_stratum_rate_term": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.internal_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.external_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.common_weight": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.internal_stratum_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.external_stratum_rate": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.composition_associated_term": {
+          "valid": 5000,
+          "invalid": 0
+        },
+        "malignant.within_stratum_rate_term": {
+          "valid": 5000,
+          "invalid": 0
+        }
+      }
+    }
+  },
+  "notes": [
+    "Detection weights are the diagnostic composition among low-quality cases: internal 53/93 and 40/93; external 8/16 and 8/16. They are not all-patient diagnostic proportions.",
+    "One bootstrap replicate (2468) has no low-quality benign external case. Detection decomposition components and external standardized rates/differences are NA for both methods; overall rates and internal standardized rates remain defined.",
+    "A detection composition-associated component is negative (-1.615439237 pp), and the within-stratum-rate component is negative (-12.228646784 pp).",
+    "This is post hoc descriptive accounting, not causal attribution or removal of device/annotation confounding.",
+    "All calculations use archived scores; no model inference was run."
+  ],
+  "elapsed_seconds": 4.1642697989991575
+}

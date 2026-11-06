@@ -1,0 +1,165 @@
+{
+  "reviewed_at_utc": "2026-11-06T09:33:03.013565+00:00",
+  "verdict": "pass_with_documented_reproduction_path_conditions",
+  "scientific_result_blockers": [],
+  "scientific_scripts_modified": false,
+  "original_figures_modified": false,
+  "protocol_sha256": "c34718732b856ab31d0d8ae19c88bbbf0f43a9614ea14433d8f62210cc1409c7",
+  "all_result_metadata_script_hashes_match": true,
+  "all_result_metadata_protocol_hashes_match": true,
+  "bootstrap_iterations_hash_matches_summary": true,
+  "critical_interpretation_checks": {
+    "full_eight_budget_grid": true,
+    "bootstrap_empirical_support_constraint_explicit": true,
+    "bootstrap_not_pvalue_or_population_probability": true,
+    "no_new_independent_patients_claimed": true,
+    "original_Newcombe_interval_preserved": true,
+    "calibration_only_conditional_scope": true,
+    "diagnostic_components_noncausal": true,
+    "diagnostic_label_scope_accurate": true,
+    "zero_stratum_valid_counts_reported": true
+  },
+  "key_values": {
+    "full_bootstrap_H1_percentile95_pp": [
+      -39.03,
+      11.71
+    ],
+    "full_bootstrap_H2_percentile95_pp": [
+      -12.7,
+      -1.55
+    ],
+    "full_bootstrap_strict_original_reversal_count": 3094,
+    "full_bootstrap_joint_valid": 10000,
+    "decomposition_detection_component_valid": 4999,
+    "decomposition_detection_overall_valid": 5000
+  },
+  "figure_review": [
+    {
+      "name": "budget_transfer",
+      "pages": 1,
+      "pdf_sha256": "27c3caddda325de0aa75fdb838edecd29483a6a52631978de578faad5500d70e",
+      "png_sha256": "a370f872a00a248f92cefe5495b4be8957c115813e1b298231196fc76482933c",
+      "minimum_font_pt": 8.0,
+      "fonts": [
+        "DejaVuSans"
+      ],
+      "rendered_pdf_preview": "qa/budget_transfer_pdf_review.png",
+      "visually_inspected": true,
+      "readable": true,
+      "visible_clipping_or_overlap": false
+    },
+    {
+      "name": "bootstrap_stability",
+      "pages": 1,
+      "pdf_sha256": "2099257e7c1f5ec108f2b3590389ff5139a0c33436c0f623a99e34d6cf335e21",
+      "png_sha256": "d3eaa9e66e97b96c80bccd110014da5fe9cb340e6b559031c19ab8f01f67f93f",
+      "minimum_font_pt": 9.0,
+      "fonts": [
+        "DejaVuSans"
+      ],
+      "rendered_pdf_preview": "qa/bootstrap_stability_pdf_review.png",
+      "visually_inspected": true,
+      "readable": true,
+      "visible_clipping_or_overlap": false
+    },
+    {
+      "name": "case_mix_decomposition",
+      "pages": 1,
+      "pdf_sha256": "0681f22d8620b82b6f8c6df0344d47c1da1452aec68ae1dbbeb3b38ae8ab013e",
+      "png_sha256": "0ec07b420f2c8a25c672ed91b96043c76ccb2f34940d4e8fc45cf8ea57be137f",
+      "minimum_font_pt": 9.0,
+      "fonts": [
+        "DejaVuSans"
+      ],
+      "rendered_pdf_preview": "qa/case_mix_decomposition_pdf_review.png",
+      "visually_inspected": true,
+      "readable": true,
+      "visible_clipping_or_overlap": false
+    }
+  ],
+  "contact_sheet": {
+    "path": "qa/three_figures_contact_sheet.png",
+    "size_pixels": [
+      1080,
+      820
+    ],
+    "sha256": "8ce09dd572bb1077b3e767ab53c04888f4a937932f230808acaa7219b34c4562",
+    "viewed": true
+  },
+  "cosmetic_notes": [
+    "Decomposition title has tight top padding; font-metric bbox extends slightly above page, but rendered glyphs start at row4 and are fully readable."
+  ],
+  "cli_help": {
+    "budget_transfer": {
+      "exit_code": 0,
+      "checked": true
+    },
+    "bootstrap_stability": {
+      "exit_code": 0,
+      "checked": true
+    },
+    "case_mix_decomposition": {
+      "exit_code": 0,
+      "checked": true
+    }
+  },
+  "reproduction_conditions": [
+    {
+      "severity": "documentation",
+      "item": "All3 scripts require pinned input Git HEAD f9cfdc49b6e6a9e037443f6ce077006bc9377960; later main clone needs a separate detached source worktree."
+    },
+    {
+      "severity": "documentation",
+      "item": "Budget default source-root=/workspace/research_source is environment-specific; pass --source-root explicitly."
+    },
+    {
+      "severity": "documentation",
+      "item": "Budget default protocol comes from output-root/protocol; a new empty output directory needs --protocol explicitly."
+    },
+    {
+      "severity": "documentation",
+      "item": "Bootstrap default plan is script-relative; preserve bundle layout or pass --plan. Composition requires explicit source/protocol/output."
+    },
+    {
+      "severity": "documentation",
+      "item": "Python numpy matplotlib, plus openpyxl and frozen clinical metadata/audit for composition; no torch needed."
+    }
+  ],
+  "fresh_clone_full_run_performed": false,
+  "scope_note": "Final artifact/report/figure and CLI QA; prior independent numerical review retained rather than rerunning completed experiments.",
+  "reviewed_report_sha256": {
+    "reports/budget_transfer.md": "9f36b97e19a2a356b678f561155d0d36e15fdf228aacfe149d2fcd3d239b82b3",
+    "reports/bootstrap_stability.md": "70da030815a3e371e3f5a658a3463636187c5f28eb4618160208d278c08bbfa9",
+    "reports/case_mix_decomposition.md": "6d648f72d80e5275d19ef2c808c9987cae06c08d77d88397391ace97c556f75e"
+  },
+  "summary_report_review": {
+    "path_stem": "reports/BMT_cloud_validation_report_zh",
+    "versions_checked": [
+      "md",
+      "docx",
+      "pdf"
+    ],
+    "sha256": {
+      "md": "eb82b8486e5b69d90f8233644aa14cb866ab0a49b6a46a67292d2b7ac92483d3",
+      "docx": "035b2cbfe8dd64dbff785d24a73b0680aa980c4d882be686bfe11646616b35d2",
+      "pdf": "34588f5170ad6af7e344da8574501c859d99a6988c2c6b4a191e0331bda1be93"
+    },
+    "pdf_pages": 6,
+    "pdf_page_text_lengths": [
+      878,
+      757,
+      983,
+      774,
+      895,
+      1221
+    ],
+    "blank_pages_found": false,
+    "key_numeric_tokens_match_all_three_versions": true,
+    "conclusions_match_results": true,
+    "empirical_support_and_non_pvalue_limitations_retained": true,
+    "not_new_independent_patients": true,
+    "case_mix_noncausal": true,
+    "model_inference_not_claimed": true,
+    "archive_gzip_packaging_deferred_to_parent_final_manifest_check": true
+  }
+}

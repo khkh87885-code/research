@@ -1,0 +1,13 @@
+{
+  "figure_pdf_pages": 1,
+  "text_spans": 63,
+  "minimum_font_pt": 9.0,
+  "text_outside_page": [],
+  "PNG_ink_bbox": [
+    17,
+    13,
+    3884,
+    2626
+  ],
+  "visual_inspection": "Completed; labels, intervals, legend and support-constraint footnote readable; no observed clipping."
+}

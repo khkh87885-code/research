@@ -1,0 +1,18 @@
+{
+  "results/bootstrap_stability/iterations.csv": {
+    "bytes": 7064161,
+    "sha256": "c387d4964494b696f78171d202806767f21a594491ce1c9cfdf47f40f1e5d87e",
+    "compressed_file": "results/bootstrap_stability/iterations.csv.gz",
+    "compressed_bytes": 1065011,
+    "compressed_sha256": "57f3ae97cac132b971734378dadd5da1789587482d7f4bec1049894e6160f7dd",
+    "method": "gzip lossless; timestamp mtime=0"
+  },
+  "results/case_mix_decomposition_bootstrap.csv": {
+    "bytes": 9491528,
+    "sha256": "3a126a9c1d82eb8f5fde9d6731ce74d9e6876205a6cbcc0acad4cd8e23fecf39",
+    "compressed_file": "results/case_mix_decomposition_bootstrap.csv.gz",
+    "compressed_bytes": 2817769,
+    "compressed_sha256": "cda6f6cf2d07ea2272f888caa212ba16182c22d37a9dc39c3ff822401da05584",
+    "method": "gzip lossless; timestamp mtime=0"
+  }
+}

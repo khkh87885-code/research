@@ -1,0 +1,1 @@
+{"environment_id":"ccarenv_b64_Y2NhcmVudl9mZjgyYmUzNjlhOTg4MTkxYWFhNWUwZDBmODE5YWQzZg","observations_current":true,"observed_phase":"running","network_policy":{"mode":"restricted","state":"enforced","checkpoint_host_allowed":false,"cpu_wheel_host_allowed":true},"runtime_variables_count":0,"secrets_count":0}

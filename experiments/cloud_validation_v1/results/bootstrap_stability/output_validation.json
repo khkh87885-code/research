@@ -1,0 +1,11 @@
+{
+  "identical_iterations_csv_after_report_only_update": true,
+  "first_and_final_iterations_csv_sha256": "c387d4964494b696f78171d202806767f21a594491ce1c9cfdf47f40f1e5d87e",
+  "iteration_rows": 30000,
+  "each_route_rows": 10000,
+  "sample_record_counts_851_252_retained": true,
+  "equal_review_count_50_all_iterations": true,
+  "sign_matrices_recombine": true,
+  "script_hash_matches": true,
+  "protocol_hash_matches": true
+}

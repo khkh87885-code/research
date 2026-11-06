@@ -1,21 +1,13 @@
 {
-  "BMT_supplementary_material_v3.pdf": {
-    "pages": 6,
-    "out_of_page_words": 0
-  },
-  "BMT_submission_checklist.pdf": {
-    "pages": 1,
-    "out_of_page_words": 0
-  },
-  "BMT_main_manuscript_v7.pdf": {
-    "pages": 12,
-    "out_of_page_words": 0
-  },
-  "BMT_revision_report.pdf": {
-    "pages": 2,
+  "BMT_Ethical_and_Legal_Declarations_v7.pdf": {
+    "pages": 3,
     "out_of_page_words": 0
   },
   "BMT_author_confirmation_required.pdf": {
+    "pages": 1,
+    "out_of_page_words": 0
+  },
+  "BMT_cover_letter.pdf": {
     "pages": 1,
     "out_of_page_words": 0
   },
@@ -23,16 +15,24 @@
     "pages": 1,
     "out_of_page_words": 0
   },
-  "BMT_Ethical_and_Legal_Declarations_v7.pdf": {
-    "pages": 3,
-    "out_of_page_words": 0
-  },
-  "BMT_cover_letter.pdf": {
-    "pages": 1,
+  "BMT_main_manuscript_v7.pdf": {
+    "pages": 12,
     "out_of_page_words": 0
   },
   "BMT_reviewer_candidates.pdf": {
     "pages": 3,
+    "out_of_page_words": 0
+  },
+  "BMT_revision_report.pdf": {
+    "pages": 2,
+    "out_of_page_words": 0
+  },
+  "BMT_submission_checklist.pdf": {
+    "pages": 1,
+    "out_of_page_words": 0
+  },
+  "BMT_supplementary_material_v3.pdf": {
+    "pages": 6,
     "out_of_page_words": 0
   }
 }

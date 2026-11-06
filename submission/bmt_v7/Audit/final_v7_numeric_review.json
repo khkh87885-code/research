@@ -1,8 +1,8 @@
 {
-  "review_utc": "2026-11-06T08:46:29.730880+00:00",
+  "review_utc": "2026-11-06T09:30:58.894863+00:00",
   "review_scope": "Final DOCX numerical and cross-reference consistency; not a new full study audit or model inference run.",
   "source_files_sha256": {
-    "/workspace/bmt_v7/outputs/BMT_main_manuscript_v7.docx": "0c434d6c04e4d111eccfb865dd71551ce59fd09e89e9697b1eab6c0b7943cdd3",
+    "/workspace/bmt_v7/outputs/BMT_main_manuscript_v7.docx": "279dd1b3692754054d1798f2f2b20715e1500f7e1415b52dc27e800c15726d3f",
     "/workspace/bmt_v7/outputs/BMT_supplementary_material_v3.docx": "a47cbc92341784c03060ed554dfbc48c8f10f79160389c0af60d4809aae2b97d"
   },
   "manuscripts_unchanged_by_review": true,
@@ -1227,8 +1227,8 @@
   "journal_submission_performed": false,
   "unknowns_preserved": [],
   "author_confirmation_evidence_sha256": {
-    "/workspace/bmt_v7/evidence/author_confirmation_record.json": "f0301e923f6ee9ab3d8aa8802c4b0dfeff42795441823b64f747e9eab7737039",
-    "/workspace/bmt_v7/evidence/confirmed_address_ethics_sources.json": "1793e4345547093b3aeec330b90ee1d809ed036d9fd5d6657096496dfc19f9ab"
+    "/workspace/bmt_v7/evidence/author_confirmation_record.json": "ff908af3526ec1b03de55a8cfd760fc4bf601e4b67b5c2728262a2b84181713d",
+    "/workspace/bmt_v7/evidence/confirmed_address_ethics_sources.json": "c001cfdd3e6f1e57e1b9bb09d173054dfb5c5361d23113c53f0e9ba6fc976399"
   },
   "author_confirmation_and_official_source_roles": {
     "author_confirmations": {

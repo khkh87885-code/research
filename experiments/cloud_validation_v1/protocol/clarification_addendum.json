@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-11-06T09:13:13.731597+00:00",
+  "analysis_plan_sha256": "c34718732b856ab31d0d8ae19c88bbbf0f43a9614ea14433d8f62210cc1409c7",
+  "type": "Definition clarification to preserve original frozen implementation; no budget or endpoint change",
+  "tie_key": "str(patient_id), matching study_statistics.py equal_workload/curve ordering; not padded image_id and not numeric ID",
+  "bootstrap_duplicate_tie_key": [
+    "descending risk",
+    "str(original patient_id)",
+    "bootstrap occurrence index"
+  ],
+  "integer_budget_rounding": "nearest integer with half ties downward; N=851 and q=.50 gives425, not426",
+  "diagnostic_decomposition_weighting": "Detection weights F_s/F among low-quality cases; review weights N_s/N among all scored cases",
+  "reason": "Independent pre-result methodological audit identified ambiguous wording; definitions follow existing study implementation."
+}

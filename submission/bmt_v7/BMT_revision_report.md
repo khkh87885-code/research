@@ -4,11 +4,11 @@ Transfer of fixed review thresholds for breast ultrasound segmentation quality c
 
 ## Revision outcome
 
-v7 includes the unchanged prespecified results, new post hoc diagnostic-stratum and missed-case audits, corrected official requirements, and the populated original publisher declaration form. The user confirmed statutory ethics exemption and completed human review; verified Jinyun-campus correspondence details have been filled. Main-manuscript author-confirmation placeholders remaining: 0. Both authors confirmed acceptance of responsibility and approval of the exact final manuscript for submission.
+v7 includes the unchanged prespecified results, new post hoc diagnostic-stratum and missed-case audits, corrected official requirements, and the populated original publisher declaration form. The user confirmed statutory ethics exemption and completed human review; author-confirmed Jinyun-campus correspondence details have been filled. Main-manuscript author-confirmation placeholders remaining: 0. Both authors confirmed acceptance of responsibility and approval of the exact final manuscript for submission.
 
 ## Authors
 
-Haoze Lan is first and corresponding author; Ziyuan Zhu is second author. Haoze Lan ORCID is https://orcid.org/0009-0008-5089-5902. Both authors use: College of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Building 6, Lanyuan, No. 61 Daxuecheng Middle Road, Shapingba District, Chongqing 401331, China The postcode 401331 is explicitly assigned to Jinyun Campus on the university admissions website; the department supplies Building 6, Lanyuan. The authors confirmed completed review of code, data, figures and text, no funding and no conflicts of interest.
+Haoze Lan is first and corresponding author; Ziyuan Zhu is second author. Both authors use the correspondence address College of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Building 6, Lanyuan, No. 61 Daxuecheng Middle Road, Shapingba District, Chongqing 400016, China Haoze Lan ORCID is https://orcid.org/0009-0008-5089-5902. The latest user confirmation selects 400016, also listed by the college website. The campus-specific admissions source lists 401331 and is preserved in the source audit; this metadata correction follows the author-confirmed correspondence details. No scientific result changed.
 
 ## Exploratory diagnostic strata
 

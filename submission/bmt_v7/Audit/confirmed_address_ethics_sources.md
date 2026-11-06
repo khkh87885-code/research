@@ -1,3 +1,14 @@
+<!-- CURRENT_AUTHOR_POSTCODE_400016 -->
+# 当前通讯地址更新：以作者确认400016为准
+
+最新作者已明确确认通讯地址及邮编均适用。最终稿和附函使用 **400016**：
+
+> College of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Building 6, Lanyuan, No. 61 Daxuecheng Middle Road, Shapingba District, Chongqing 400016, China
+
+以下保留先前官方来源核对及当时401331候选建议，作为历史证据；其中“可直接用于题页/采用401331”的旧建议已被本次作者确认取代，不是当前稿件地址。
+
+---
+
 # 缙云校区地址已核实
 
 可直接用于英文题页：

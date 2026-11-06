@@ -1,0 +1,51 @@
+{
+  "all_source_lock_checksums_match": true,
+  "independent_calibration_checks": 16,
+  "independent_top_k_ranking_checks": 32,
+  "twenty_percent_cutoffs_exactly_reproduced": true,
+  "twenty_percent_development_counts": {
+    "A": 43,
+    "B": 43
+  },
+  "original_H1_H3_exact_json_match": true,
+  "development_N_F": [
+    213,
+    24
+  ],
+  "internal_N_F": [
+    851,
+    93
+  ],
+  "external_N_F": [
+    252,
+    16
+  ],
+  "grid_complete": true,
+  "boundary_cases": {
+    "internal_K_by_budget": [
+      43,
+      85,
+      128,
+      170,
+      213,
+      255,
+      340,
+      425
+    ],
+    "external_K_by_budget": [
+      13,
+      25,
+      38,
+      50,
+      63,
+      76,
+      101,
+      126
+    ],
+    "half_tie_851_times_0_5": 425,
+    "half_tie_3_times_0_5": 1,
+    "whole_score_tie_nearest_fewer_pass": true,
+    "zero_review_option_pass": true,
+    "unmodified_patient_id_string_tie_pass": true
+  }
+}

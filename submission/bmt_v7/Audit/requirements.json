@@ -208,6 +208,14 @@
     "underlying_Codex_model_identifier": "not available in archived study records",
     "final_exact_version_submission_approval": "Both authors explicitly confirmed approval and full-content responsibility for v7.",
     "submission_approved": true,
-    "approval_source_user_statement": "两位作者均已同意并承担全文责任"
+    "approval_source_user_statement": "两位作者均已同意并承担全文责任",
+    "confirmed_correspondence_address": "College of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Building 6, Lanyuan, No. 61 Daxuecheng Middle Road, Shapingba District, Chongqing 400016, China",
+    "correspondence_postcode": "400016",
+    "latest_correspondence_confirmation": {
+      "date": "2026-11-06",
+      "question_address": "重庆市沙坪坝区大学城中路61号兰园6号楼，邮编400016",
+      "user_answer": "确认地址和邮编均适用",
+      "source_scope": "author-confirmed institutional correspondence address; university campus-specific 401331 source retained as historical evidence"
+    }
   }
 }

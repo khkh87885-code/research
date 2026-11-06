@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-11-06T09:22:24.025319+00:00",
+  "reviewer": "independent bootstrap protocol review subagent",
+  "source_commit": "f9cfdc49b6e6a9e037443f6ce077006bc9377960",
+  "script_path": "/workspace/bmt_cloud_validation/scripts/bootstrap_stability.py",
+  "script_sha256": "86bd575634946c8810b22b962bf4ac73f83ced3751c4f9a30c348ef140728720",
+  "production_summary_sha256": "050c69a00dcd3709bec88f0182c0ce5229a078dbd9f0838167173f2ed3313446",
+  "production_iterations_sha256": "c387d4964494b696f78171d202806767f21a594491ce1c9cfdf47f40f1e5d87e",
+  "production_summary_script_sha_matches_current": true,
+  "scope": "Read-only protocol and implementation review, tiny independent synthetic checks, and read-only verification of realized production CSV/JSON. No independent 10,000-replicate bootstrap was run by this reviewer.",
+  "algorithm_review": {
+    "three_routes_and_common_draw_design": "PASS: independent cohort streams; development draw shared routes 2/3 and test draws shared routes 1/3",
+    "patient_pairing_and_repeated_occurrences": "PASS: A/B, quality and original CaseID travel together; no deduplication",
+    "ranking": "PASS: descending risk, original string CaseID, draw-position replica index",
+    "calibration": "PASS: entire equal-score groups, nearest 20 percent, integer abs(5R-N), equal-distance fewer reviews, zero-review option",
+    "missing_denominators": "PASS: undefined detection is NA; review remains valid; joint and endpoint denominators kept distinct",
+    "inference_cautions": "PASS: exploratory descriptive percentiles and frequencies; not p-values/posteriors/superiority, original Newcombe retained"
+  },
+  "synthetic_checks": {
+    "exhaustive_calibration_cases": 3279,
+    "calibration_score_alphabet": [
+      -1,
+      0,
+      1
+    ],
+    "calibration_cohort_sizes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "duplicate_sorting_cases": 150,
+    "duplicate_sorting_seed": 98,
+    "independent_oracle": "ordinary-Python candidate enumeration and sorted index ordering; no original study calculation module imported",
+    "zero_internal_denominator_external_signs_remain_valid": true,
+    "zero_external_denominator_detection_and_reversal_NA": true,
+    "mixed_NA_individual_sign_denominator": true,
+    "all_NA_distribution_schema_and_None_values": true,
+    "full_3x3_sign_matrix_plus_one_NA": "PASS: nine valid records, each cell count 1; original/opposite reversal 1 each; any ties 5; both ties 1",
+    "built_in_checks_also_pass": {
+      "calibration_ties_grouped": true,
+      "equidistant_calibration_fewer_reviews": true,
+      "CaseID_string_then_replica_index": true,
+      "duplicate_draws_retained": true,
+      "zero_quality_denominators_NA": true
+    }
+  },
+  "production_output_checks": {
+    "replicates_per_route": 10000,
+    "seed": 20261106,
+    "csv_rows": 30000,
+    "routes": {
+      "fixed_cutoffs_test_sampling": {
+        "rows": 10000,
+        "joint_valid": 10000,
+        "matrix_count_total": 10000,
+        "all_endpoint_percentiles_medians_and_sign_counts_match_csv": true
+      },
+      "development_calibration_only": {
+        "rows": 10000,
+        "joint_valid": 10000,
+        "matrix_count_total": 10000,
+        "all_endpoint_percentiles_medians_and_sign_counts_match_csv": true
+      },
+      "full_resampling": {
+        "rows": 10000,
+        "joint_valid": 10000,
+        "matrix_count_total": 10000,
+        "all_endpoint_percentiles_medians_and_sign_counts_match_csv": true
+      }
+    },
+    "route2_equal_top50_all_10000_values_pp": -6.25,
+    "route2_original_test_quality_denominators_fixed": [
+      93,
+      16
+    ],
+    "route1_and_route3_equal_review_values_match_by_iteration": true,
+    "all_equal_review_draw_counts": 50,
+    "external_patient_ids_are_original_unpadded_strings": true,
+    "observed_external_paired_low_quality": {
+      "both": 10,
+      "A_only": 0,
+      "B_only": 3,
+      "neither": 3
+    },
+    "route1_fixed_B_minus_A_all_nonnegative": true,
+    "route1_nonnegative_support_interpretation": "Observed A-only cell is zero; resampling cannot create new A-only support. Nonnegative empirical bootstrap results cannot exclude a population A advantage.",
+    "original_paired_Newcombe_H3_ci95_pp_preserved": [
+      -4.283595634090115,
+      40.038897959518025
+    ]
+  },
+  "resolved_issue": "An earlier all-NA distribution branch used an inconsistent CI key. It was corrected by the implementation owner before production; current unified schema and None values were independently rechecked.",
+  "limitations": [
+    "This reviewer did not independently rerun the 10,000-replicate production bootstrap.",
+    "Synthetic checks and production-output aggregation checks are validation, not additional inferential resamples.",
+    "No model training or inference was run, and no source script, protocol or original study data was modified by this reviewer.",
+    "Plot rendering and page layout were not part of this numerical receipt."
+  ]
+}

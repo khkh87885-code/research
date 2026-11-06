@@ -154,8 +154,13 @@ def main():
     confirmation_evidence_sha256={str(p):sha(p)for p in (author_path,sources_path)}
     assert author_record['interpreted_confirmations']['campus']=='Jinyun Campus'
     assert author_record['postcode']==confirmation_sources['address']['postcode']=='401331'
-    assert confirmation_sources['address']['title_page_full_english'] in '\n'.join(mainparas[:8])
-    assert confirmation_sources['address']['title_page_short_affiliation'] in mainparas[3]
+    selected_postcode=author_record.get('correspondence_postcode',author_record['postcode'])
+    selected_address=author_record.get('confirmed_correspondence_address',confirmation_sources['address']['title_page_full_english'])
+    if selected_postcode!='401331':
+        assert selected_postcode=='400016'
+        assert author_record['latest_correspondence_confirmation']['user_answer']=='确认地址和邮编均适用'
+    assert selected_address in '\n'.join(mainparas[:8])
+    assert confirmation_sources['address']['title_page_short_affiliation'].replace('401331',selected_postcode) in mainparas[3]
     ethics_para=next(t for t in mainparas if t.startswith('Research ethics.'))
     consent_para=next(t for t in mainparas if t.startswith('Informed consent.'))
     ai_methods=next(t for t in mainparas if t.startswith('OpenAI Codex assisted with protocol'))
@@ -279,7 +284,7 @@ def main():
             '- '+approval_placeholder_note+' The prior pending approval state is superseded by the recorded author confirmation.','',
             '## Updated author confirmations and source provenance','',
             '- `author_confirmation_record.json` records the author-confirmed Jinyun campus, applicability of the statutory Article 32 ethics-review exemption and completion of human review of code, data, figures and text. These study-specific confirmations come from the user; they are not presented as independently issued institutional approvals.',
-            '- `confirmed_address_ethics_sources.json` documents the official university admissions listing that pairs Jinyun Campus with No. 61 Daxuecheng Middle Road and postcode 401331, and the official college address identifying Building 6, Lanyuan. The college footer also lists 400016; that discrepancy is preserved in the evidence. The campus-specific 401331 is used without claiming that the other footer is demonstrably a template error. The current title page matches the documented address.',
+            '- `confirmed_address_ethics_sources.json` preserves the university campus-specific 401331 source and the college footer 400016 source. The current title page follows the latest explicit author confirmation of correspondence postcode '+selected_postcode+' at Building 6, Lanyuan, No. 61 Daxuecheng Middle Road. Official source facts were not overwritten; the current author-selected address matches the confirmation record.',
             '- The official National Health Commission source establishes the text and scope of Article 32. Applicability to this particular secondary study is author-confirmed. The manuscript does not invent an IRB reference number or transfer the original BrEaST approval to the present study.',
             '- Informed consent reports the factual process: no new recruitment/contact and no additional consent obtained. It does not convert an ethics-review exemption into an invented IRB waiver of consent.',
             '- Methods and acknowledgments now state the completed human review. They candidly state that a precise underlying Codex model identifier was unavailable in archived study records; this is an archival limitation, not a remaining request to invent a version.',

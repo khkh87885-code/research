@@ -1,0 +1,867 @@
+{
+  "classification": "Post hoc exploratory; settings fixed before these new computations, not an original-study preregistration",
+  "source_commit": "f9cfdc49b6e6a9e037443f6ce077006bc9377960",
+  "source_inputs_sha256": {
+    "reproducibility/study_lock.json": "91189487ed1fa5328f33e5db4094f846f5619d73924329577f6a0d9e05ffc7d0",
+    "reproducibility/records/development_cases.csv": "3c1375a5546a3af48de72339cc6a519f1f981d5431a38fcd2ccc6765ec43a9ce",
+    "reproducibility/records/validation_cases.csv": "6ac44d3d3557caceba1e47dab4f87bc3b180568195c0d0ecb6506fbb04d07961",
+    "reproducibility/manifests/busbra_development.csv": "6db10ea5bae1095dba26ce70b3b376ad1390c94de1645c546320310de8d55274",
+    "reproducibility/manifests/busbra_internal_holdout.csv": "2727d11d0db4f41ddd70a915576e5273a9d0ecbd735f151ae2ae710d0963a026",
+    "reproducibility/manifests/breast_external.csv": "33db74c60e8ce242f82f5efcd1007c08151e6faf359a6204f68a251791dbda22",
+    "reproducibility/reference/primary.json": "8ec31efd157814246d1a0ef46549090645381ea9df3382c6fab93156044e9a79"
+  },
+  "protocol_sha256": "c34718732b856ab31d0d8ae19c88bbbf0f43a9614ea14433d8f62210cc1409c7",
+  "script_sha256": "86bd575634946c8810b22b962bf4ac73f83ced3751c4f9a30c348ef140728720",
+  "replicates_per_route": 10000,
+  "seed": 20261106,
+  "RNG": {
+    "bit_generator": "PCG64",
+    "root_seed": 20261106,
+    "SeedSequence_spawn_keys": {
+      "development": [
+        0
+      ],
+      "internal": [
+        1
+      ],
+      "external": [
+        2
+      ]
+    },
+    "common_draws_across_routes": "development draws shared R2/R3; test draws shared R1/R3; cohort streams independent"
+  },
+  "bootstrap_unit": "patient; every sampled draw retained including duplicates; A/B/quality paired",
+  "ranking_rule": "descending risk, original CaseID string, draw-position replica index; exactly 50 draw records",
+  "calibration_rule": "all risk ties grouped; abs(5R-N) minimized; fewer reviews if equally close; zero-review candidate included",
+  "interval_method": "2.5th and 97.5th percentiles of valid replicates; NumPy quantile method=linear",
+  "undefined_detection": "NA for zero low-quality denominator; no imputation",
+  "direction_fraction_denominator": "jointly valid fixed and equal external contrasts; individual endpoint sign fractions use that endpoint valid count",
+  "observed": {
+    "N_internal": 851,
+    "F_internal": 93,
+    "N_external": 252,
+    "F_external": 16,
+    "internal_reviews_A": 174,
+    "internal_reviews_B": 150,
+    "internal_TP_A": 71,
+    "internal_TP_B": 68,
+    "external_reviews_A": 35,
+    "external_reviews_B": 33,
+    "external_TP_A": 10,
+    "external_TP_B": 13,
+    "external_equal_TP_A": 14,
+    "external_equal_TP_B": 13,
+    "external_equal_count": 50,
+    "H1_A_external_minus_internal_detection_pp": -13.844086021505376,
+    "H2_A_external_minus_internal_review_pp": -6.5576446011228615,
+    "external_fixed_B_minus_A_detection_pp": 18.75,
+    "external_equal_B_minus_A_detection_pp": -6.25,
+    "original_direction_reversal": 1,
+    "opposite_direction_reversal": 0,
+    "any_strict_reversal": 1,
+    "fixed_difference_tie": 0,
+    "equal_difference_tie": 0,
+    "internal_risk_equals_cutoff_A": 0,
+    "internal_risk_equals_cutoff_B": 0,
+    "external_risk_equals_cutoff_A": 0,
+    "external_risk_equals_cutoff_B": 0,
+    "equal_A_boundary_tie_records": 1,
+    "equal_A_selected_at_boundary": 1,
+    "equal_A_boundary_split": 0,
+    "equal_A_boundary_unique_patients": 1,
+    "equal_B_boundary_tie_records": 1,
+    "equal_B_selected_at_boundary": 1,
+    "equal_B_boundary_split": 0,
+    "equal_B_boundary_unique_patients": 1,
+    "threshold_A": 0.13705134391784668,
+    "threshold_B": 0.06972856653991777,
+    "development_reviews_A": 43,
+    "development_reviews_B": 43
+  },
+  "edge_case_checks": {
+    "calibration_ties_grouped": true,
+    "equidistant_calibration_fewer_reviews": true,
+    "CaseID_string_then_replica_index": true,
+    "duplicate_draws_retained": true,
+    "zero_quality_denominators_NA": true
+  },
+  "routes": {
+    "fixed_cutoffs_test_sampling": {
+      "label": "1. Fixed cutoffs; test sampling",
+      "endpoints_pp": {
+        "H1_A_external_minus_internal_detection_pp": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": -13.744461636931954,
+          "percentile_95": [
+            -40.15960117064,
+            11.824486209606823
+          ],
+          "negative_count": 8490,
+          "zero_count": 22,
+          "positive_count": 1488,
+          "negative_fraction": 0.849,
+          "zero_fraction": 0.0022,
+          "positive_fraction": 0.1488
+        },
+        "H2_A_external_minus_internal_review_pp": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": -6.513345643780427,
+          "percentile_95": [
+            -11.53917893048328,
+            -1.311797045492703
+          ],
+          "negative_count": 9915,
+          "zero_count": 0,
+          "positive_count": 85,
+          "negative_fraction": 0.9915,
+          "zero_fraction": 0.0,
+          "positive_fraction": 0.0085
+        },
+        "external_fixed_B_minus_A_detection_pp": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": 18.181818181818183,
+          "percentile_95": [
+            0.0,
+            40.0
+          ],
+          "negative_count": 0,
+          "zero_count": 469,
+          "positive_count": 9531,
+          "negative_fraction": 0.0,
+          "zero_fraction": 0.0469,
+          "positive_fraction": 0.9531
+        },
+        "external_equal_B_minus_A_detection_pp": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": 0.0,
+          "percentile_95": [
+            -25.0,
+            21.428571428571427
+          ],
+          "negative_count": 4304,
+          "zero_count": 2176,
+          "positive_count": 3520,
+          "negative_fraction": 0.4304,
+          "zero_fraction": 0.2176,
+          "positive_fraction": 0.352
+        }
+      },
+      "joint_direction_patterns": {
+        "valid_replicates": 10000,
+        "NA_replicates": 0,
+        "original_direction_reversal": {
+          "count": 3961,
+          "fraction": 0.3961
+        },
+        "opposite_direction_reversal": {
+          "count": 0,
+          "fraction": 0.0
+        },
+        "any_strict_reversal": {
+          "count": 3961,
+          "fraction": 0.3961
+        },
+        "fixed_difference_tie": {
+          "count": 469,
+          "fraction": 0.0469
+        },
+        "equal_difference_tie": {
+          "count": 2176,
+          "fraction": 0.2176
+        },
+        "any_difference_tie": {
+          "count": 2519,
+          "fraction": 0.2519
+        },
+        "both_differences_tie": {
+          "count": 126,
+          "fraction": 0.0126
+        },
+        "sign_matrix": {
+          "negative": {
+            "negative": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "zero": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "positive": {
+              "count": 0,
+              "fraction": 0.0
+            }
+          },
+          "zero": {
+            "negative": {
+              "count": 343,
+              "fraction": 0.0343
+            },
+            "zero": {
+              "count": 126,
+              "fraction": 0.0126
+            },
+            "positive": {
+              "count": 0,
+              "fraction": 0.0
+            }
+          },
+          "positive": {
+            "negative": {
+              "count": 3961,
+              "fraction": 0.3961
+            },
+            "zero": {
+              "count": 2050,
+              "fraction": 0.205
+            },
+            "positive": {
+              "count": 3520,
+              "fraction": 0.352
+            }
+          }
+        }
+      },
+      "tie_accounting": {
+        "A": {
+          "equal_boundary_split_count": 3629,
+          "equal_boundary_multiple_records_count": 6291,
+          "equal_boundary_tie_record_count_distribution": {
+            "1": 3709,
+            "2": 3699,
+            "3": 1788,
+            "4": 597,
+            "5": 164,
+            "6": 34,
+            "7": 9
+          },
+          "development_cutoff_tie_record_distribution": {
+            "1": 10000
+          },
+          "development_review_count_distribution": {
+            "43": 10000
+          }
+        },
+        "B": {
+          "equal_boundary_split_count": 3662,
+          "equal_boundary_multiple_records_count": 6342,
+          "equal_boundary_tie_record_count_distribution": {
+            "1": 3658,
+            "2": 3680,
+            "3": 1837,
+            "4": 615,
+            "5": 168,
+            "6": 32,
+            "7": 8,
+            "8": 2
+          },
+          "development_cutoff_tie_record_distribution": {
+            "1": 10000
+          },
+          "development_review_count_distribution": {
+            "43": 10000
+          }
+        }
+      },
+      "thresholds": {
+        "A": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": 0.13705134391784668,
+          "percentile_95": [
+            0.13705134391784668,
+            0.13705134391784668
+          ],
+          "negative_count": 0,
+          "zero_count": 0,
+          "positive_count": 10000,
+          "negative_fraction": 0.0,
+          "zero_fraction": 0.0,
+          "positive_fraction": 1.0
+        },
+        "B": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": 0.06972856653991777,
+          "percentile_95": [
+            0.06972856653991777,
+            0.06972856653991777
+          ],
+          "negative_count": 0,
+          "zero_count": 0,
+          "positive_count": 10000,
+          "negative_fraction": 0.0,
+          "zero_fraction": 0.0,
+          "positive_fraction": 1.0
+        }
+      },
+      "zero_low_quality_denominators": {
+        "internal": 0,
+        "external": 0
+      },
+      "unique_original_patient_counts": {
+        "development": {
+          "minimum": 213,
+          "median": 213.0,
+          "maximum": 213
+        },
+        "internal": {
+          "minimum": 495,
+          "median": 538.0,
+          "maximum": 571
+        },
+        "external": {
+          "minimum": 139,
+          "median": 160.0,
+          "maximum": 178
+        }
+      }
+    },
+    "development_calibration_only": {
+      "label": "2. Development calibration only",
+      "endpoints_pp": {
+        "H1_A_external_minus_internal_detection_pp": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": -13.844086021505376,
+          "percentile_95": [
+            -15.994623655913976,
+            -2.822580645161288
+          ],
+          "negative_count": 10000,
+          "zero_count": 0,
+          "positive_count": 0,
+          "negative_fraction": 1.0,
+          "zero_fraction": 0.0,
+          "positive_fraction": 0.0
+        },
+        "H2_A_external_minus_internal_review_pp": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": -6.5576446011228615,
+          "percentile_95": [
+            -9.021599238990541,
+            -5.823680823680824
+          ],
+          "negative_count": 10000,
+          "zero_count": 0,
+          "positive_count": 0,
+          "negative_fraction": 1.0,
+          "zero_fraction": 0.0,
+          "positive_fraction": 0.0
+        },
+        "external_fixed_B_minus_A_detection_pp": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": 18.75,
+          "percentile_95": [
+            -6.25,
+            18.75
+          ],
+          "negative_count": 525,
+          "zero_count": 435,
+          "positive_count": 9040,
+          "negative_fraction": 0.0525,
+          "zero_fraction": 0.0435,
+          "positive_fraction": 0.904
+        },
+        "external_equal_B_minus_A_detection_pp": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": -6.25,
+          "percentile_95": [
+            -6.25,
+            -6.25
+          ],
+          "negative_count": 10000,
+          "zero_count": 0,
+          "positive_count": 0,
+          "negative_fraction": 1.0,
+          "zero_fraction": 0.0,
+          "positive_fraction": 0.0
+        }
+      },
+      "joint_direction_patterns": {
+        "valid_replicates": 10000,
+        "NA_replicates": 0,
+        "original_direction_reversal": {
+          "count": 9040,
+          "fraction": 0.904
+        },
+        "opposite_direction_reversal": {
+          "count": 0,
+          "fraction": 0.0
+        },
+        "any_strict_reversal": {
+          "count": 9040,
+          "fraction": 0.904
+        },
+        "fixed_difference_tie": {
+          "count": 435,
+          "fraction": 0.0435
+        },
+        "equal_difference_tie": {
+          "count": 0,
+          "fraction": 0.0
+        },
+        "any_difference_tie": {
+          "count": 435,
+          "fraction": 0.0435
+        },
+        "both_differences_tie": {
+          "count": 0,
+          "fraction": 0.0
+        },
+        "sign_matrix": {
+          "negative": {
+            "negative": {
+              "count": 525,
+              "fraction": 0.0525
+            },
+            "zero": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "positive": {
+              "count": 0,
+              "fraction": 0.0
+            }
+          },
+          "zero": {
+            "negative": {
+              "count": 435,
+              "fraction": 0.0435
+            },
+            "zero": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "positive": {
+              "count": 0,
+              "fraction": 0.0
+            }
+          },
+          "positive": {
+            "negative": {
+              "count": 9040,
+              "fraction": 0.904
+            },
+            "zero": {
+              "count": 0,
+              "fraction": 0.0
+            },
+            "positive": {
+              "count": 0,
+              "fraction": 0.0
+            }
+          }
+        }
+      },
+      "tie_accounting": {
+        "A": {
+          "equal_boundary_split_count": 0,
+          "equal_boundary_multiple_records_count": 0,
+          "equal_boundary_tie_record_count_distribution": {
+            "1": 10000
+          },
+          "development_cutoff_tie_record_distribution": {
+            "1": 5363,
+            "2": 2656,
+            "3": 1471,
+            "4": 380,
+            "5": 109,
+            "6": 19,
+            "7": 2
+          },
+          "development_review_count_distribution": {
+            "40": 5,
+            "41": 227,
+            "42": 2665,
+            "43": 6299,
+            "44": 776,
+            "45": 28
+          }
+        },
+        "B": {
+          "equal_boundary_split_count": 0,
+          "equal_boundary_multiple_records_count": 0,
+          "equal_boundary_tie_record_count_distribution": {
+            "1": 10000
+          },
+          "development_cutoff_tie_record_distribution": {
+            "1": 5337,
+            "2": 2614,
+            "3": 1531,
+            "4": 388,
+            "5": 113,
+            "6": 17
+          },
+          "development_review_count_distribution": {
+            "40": 4,
+            "41": 224,
+            "42": 2614,
+            "43": 6268,
+            "44": 851,
+            "45": 39
+          }
+        }
+      },
+      "thresholds": {
+        "A": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": 0.13705134391784668,
+          "percentile_95": [
+            0.09577977657318115,
+            0.15341567993164062
+          ],
+          "negative_count": 0,
+          "zero_count": 0,
+          "positive_count": 10000,
+          "negative_fraction": 0.0,
+          "zero_fraction": 0.0,
+          "positive_fraction": 1.0
+        },
+        "B": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": 0.06972856653991777,
+          "percentile_95": [
+            0.059505981665422314,
+            0.07587817443770706
+          ],
+          "negative_count": 0,
+          "zero_count": 0,
+          "positive_count": 10000,
+          "negative_fraction": 0.0,
+          "zero_fraction": 0.0,
+          "positive_fraction": 1.0
+        }
+      },
+      "zero_low_quality_denominators": {
+        "internal": 0,
+        "external": 0
+      },
+      "unique_original_patient_counts": {
+        "development": {
+          "minimum": 115,
+          "median": 135.0,
+          "maximum": 151
+        },
+        "internal": {
+          "minimum": 851,
+          "median": 851.0,
+          "maximum": 851
+        },
+        "external": {
+          "minimum": 252,
+          "median": 252.0,
+          "maximum": 252
+        }
+      }
+    },
+    "full_resampling": {
+      "label": "3. Full development + test sampling",
+      "endpoints_pp": {
+        "H1_A_external_minus_internal_detection_pp": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": -12.121212121212121,
+          "percentile_95": [
+            -39.03164791557648,
+            11.711880804953537
+          ],
+          "negative_count": 8283,
+          "zero_count": 22,
+          "positive_count": 1695,
+          "negative_fraction": 0.8283,
+          "zero_fraction": 0.0022,
+          "positive_fraction": 0.1695
+        },
+        "H2_A_external_minus_internal_review_pp": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": -7.039337474120083,
+          "percentile_95": [
+            -12.699217074217076,
+            -1.5468146718146791
+          ],
+          "negative_count": 9935,
+          "zero_count": 0,
+          "positive_count": 65,
+          "negative_fraction": 0.9935,
+          "zero_fraction": 0.0,
+          "positive_fraction": 0.0065
+        },
+        "external_fixed_B_minus_A_detection_pp": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": 14.285714285714286,
+          "percentile_95": [
+            -13.333333333333334,
+            37.5
+          ],
+          "negative_count": 860,
+          "zero_count": 996,
+          "positive_count": 8144,
+          "negative_fraction": 0.086,
+          "zero_fraction": 0.0996,
+          "positive_fraction": 0.8144
+        },
+        "external_equal_B_minus_A_detection_pp": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": 0.0,
+          "percentile_95": [
+            -25.0,
+            21.428571428571427
+          ],
+          "negative_count": 4304,
+          "zero_count": 2176,
+          "positive_count": 3520,
+          "negative_fraction": 0.4304,
+          "zero_fraction": 0.2176,
+          "positive_fraction": 0.352
+        }
+      },
+      "joint_direction_patterns": {
+        "valid_replicates": 10000,
+        "NA_replicates": 0,
+        "original_direction_reversal": {
+          "count": 3094,
+          "fraction": 0.3094
+        },
+        "opposite_direction_reversal": {
+          "count": 90,
+          "fraction": 0.009
+        },
+        "any_strict_reversal": {
+          "count": 3184,
+          "fraction": 0.3184
+        },
+        "fixed_difference_tie": {
+          "count": 996,
+          "fraction": 0.0996
+        },
+        "equal_difference_tie": {
+          "count": 2176,
+          "fraction": 0.2176
+        },
+        "any_difference_tie": {
+          "count": 2808,
+          "fraction": 0.2808
+        },
+        "both_differences_tie": {
+          "count": 364,
+          "fraction": 0.0364
+        },
+        "sign_matrix": {
+          "negative": {
+            "negative": {
+              "count": 668,
+              "fraction": 0.0668
+            },
+            "zero": {
+              "count": 102,
+              "fraction": 0.0102
+            },
+            "positive": {
+              "count": 90,
+              "fraction": 0.009
+            }
+          },
+          "zero": {
+            "negative": {
+              "count": 542,
+              "fraction": 0.0542
+            },
+            "zero": {
+              "count": 364,
+              "fraction": 0.0364
+            },
+            "positive": {
+              "count": 90,
+              "fraction": 0.009
+            }
+          },
+          "positive": {
+            "negative": {
+              "count": 3094,
+              "fraction": 0.3094
+            },
+            "zero": {
+              "count": 1710,
+              "fraction": 0.171
+            },
+            "positive": {
+              "count": 3340,
+              "fraction": 0.334
+            }
+          }
+        }
+      },
+      "tie_accounting": {
+        "A": {
+          "equal_boundary_split_count": 3629,
+          "equal_boundary_multiple_records_count": 6291,
+          "equal_boundary_tie_record_count_distribution": {
+            "1": 3709,
+            "2": 3699,
+            "3": 1788,
+            "4": 597,
+            "5": 164,
+            "6": 34,
+            "7": 9
+          },
+          "development_cutoff_tie_record_distribution": {
+            "1": 5363,
+            "2": 2656,
+            "3": 1471,
+            "4": 380,
+            "5": 109,
+            "6": 19,
+            "7": 2
+          },
+          "development_review_count_distribution": {
+            "40": 5,
+            "41": 227,
+            "42": 2665,
+            "43": 6299,
+            "44": 776,
+            "45": 28
+          }
+        },
+        "B": {
+          "equal_boundary_split_count": 3662,
+          "equal_boundary_multiple_records_count": 6342,
+          "equal_boundary_tie_record_count_distribution": {
+            "1": 3658,
+            "2": 3680,
+            "3": 1837,
+            "4": 615,
+            "5": 168,
+            "6": 32,
+            "7": 8,
+            "8": 2
+          },
+          "development_cutoff_tie_record_distribution": {
+            "1": 5337,
+            "2": 2614,
+            "3": 1531,
+            "4": 388,
+            "5": 113,
+            "6": 17
+          },
+          "development_review_count_distribution": {
+            "40": 4,
+            "41": 224,
+            "42": 2614,
+            "43": 6268,
+            "44": 851,
+            "45": 39
+          }
+        }
+      },
+      "thresholds": {
+        "A": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": 0.13705134391784668,
+          "percentile_95": [
+            0.09577977657318115,
+            0.15341567993164062
+          ],
+          "negative_count": 0,
+          "zero_count": 0,
+          "positive_count": 10000,
+          "negative_fraction": 0.0,
+          "zero_fraction": 0.0,
+          "positive_fraction": 1.0
+        },
+        "B": {
+          "valid_replicates": 10000,
+          "NA_replicates": 0,
+          "median": 0.06972856653991777,
+          "percentile_95": [
+            0.059505981665422314,
+            0.07587817443770706
+          ],
+          "negative_count": 0,
+          "zero_count": 0,
+          "positive_count": 10000,
+          "negative_fraction": 0.0,
+          "zero_fraction": 0.0,
+          "positive_fraction": 1.0
+        }
+      },
+      "zero_low_quality_denominators": {
+        "internal": 0,
+        "external": 0
+      },
+      "unique_original_patient_counts": {
+        "development": {
+          "minimum": 115,
+          "median": 135.0,
+          "maximum": 151
+        },
+        "internal": {
+          "minimum": 495,
+          "median": 538.0,
+          "maximum": 571
+        },
+        "external": {
+          "minimum": 139,
+          "median": 160.0,
+          "maximum": 178
+        }
+      }
+    }
+  },
+  "observed_external_low_quality_paired_table": {
+    "both": 10,
+    "A_only": 0,
+    "B_only": 3,
+    "neither": 3
+  },
+  "original_paired_Newcombe_H3_ci95_pp": [
+    -4.283595634090115,
+    40.038897959518025
+  ],
+  "fixed_cutoff_empirical_support_constraint": "The observed A-only cell is zero. Route 1 fixed-cutoff patient resampling cannot create A-only detections and therefore B-minus-A is structurally >=0; its [0,40] pp percentile interval does not rule out a population A advantage or replace the original paired Newcombe interval [-4.28,+40.04] pp.",
+  "runtime": {
+    "started_utc": "2026-11-06T09:20:17.062359+00:00",
+    "bootstrap_wall_seconds": 4.041842069000268,
+    "bootstrap_cpu_seconds": 4.037029552,
+    "single_process": true,
+    "BLAS_thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "implementation": "independent code; no original study modules imported",
+    "completed_utc": "2026-11-06T09:20:22.976832+00:00",
+    "total_wall_seconds": 5.914485833000072,
+    "total_cpu_seconds": 5.897148958,
+    "peak_RSS_MiB": 189.4921875
+  },
+  "iterations_csv_sha256": "c387d4964494b696f78171d202806767f21a594491ce1c9cfdf47f40f1e5d87e",
+  "iterations_csv_rows": 30000,
+  "source_files_unchanged": true,
+  "cautions": [
+    "Post hoc exploratory resampling of observed patients, not independent new patients.",
+    "Empirical sign/reversal fractions are not p-values, posterior probabilities or proof of method superiority.",
+    "Descriptive percentile intervals do not replace original Newcombe confidence intervals.",
+    "Risk-rank selections may split bootstrap duplicate ties by the stated stable rule; calibration ties remain grouped.",
+    "Observed A-only=0 means route 1 cannot generate A-only detections; its nonnegative fixed B-minus-A distribution is an empirical-support constraint, not evidence excluding an A advantage.",
+    "Route 2 equal-top50 is necessarily constant because original test cohorts remain fixed."
+  ]
+}

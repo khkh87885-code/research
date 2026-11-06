@@ -1,0 +1,319 @@
+{
+  "started_utc": "2026-11-06T09:37:59.333003+00:00",
+  "README_sha256": "8da57da80aa7e5e8dec0bea64f891f074e5ee5b9cf0916138103e7bb02d8ba6d",
+  "source_commit": "f9cfdc49b6e6a9e037443f6ce077006bc9377960",
+  "test_scope": "Documented three CLI entrypoints using a fresh fixed-commit detached worktree and a new output directory in the existing pinned environment; no algorithm changes.",
+  "preflight_history": "portable_reproduction_preflight_failure.json preserves the initial over-broad tracked-tree comparison failure before any analysis command ran. Expected postal/packaging edits are excluded from the scientific-input scope.",
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/bmt_cloud_validation/scripts/budget_transfer.py",
+        "--source-root",
+        "/workspace/bmt_validation_source_tmp",
+        "--output-root",
+        "/workspace/bmt_validation_rerun_tmp",
+        "--protocol",
+        "/workspace/bmt_cloud_validation/protocol/analysis_plan.json"
+      ],
+      "wall_seconds": 1.5060653830005322,
+      "exit_code": 0,
+      "stdout": "{\"output\": \"/workspace/bmt_validation_rerun_tmp/results/budget_transfer\", \"analysis_seconds\": 1.041459964999376, \"verification\": {\"all_source_lock_checksums_match\": true, \"independent_calibration_checks\": 16, \"independent_top_k_ranking_checks\": 32, \"twenty_percent_cutoffs_exactly_reproduced\": true, \"twenty_percent_development_counts\": {\"A\": 43, \"B\": 43}, \"original_H1_H3_exact_json_match\": true, \"development_N_F\": [213, 24], \"internal_N_F\": [851, 93], \"external_N_F\": [252, 16], \"grid_complete\": true, \"boundary_cases\": {\"internal_K_by_budget\": [43, 85, 128, 170, 213, 255, 340, 425], \"external_K_by_budget\": [13, 25, 38, 50, 63, 76, 101, 126], \"half_tie_851_times_0_5\": 425, \"half_tie_3_times_0_5\": 1, \"whole_score_tie_nearest_fewer_pass\": true, \"zero_review_option_pass\": true, \"unmodified_patient_id_string_tie_pass\": true}}}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/bmt_cloud_validation/scripts/bootstrap_stability.py",
+        "--repo",
+        "/workspace/bmt_validation_source_tmp",
+        "--output",
+        "/workspace/bmt_validation_rerun_tmp",
+        "--replicates",
+        "10000",
+        "--seed",
+        "20261106",
+        "--plan",
+        "/workspace/bmt_cloud_validation/protocol/analysis_plan.json"
+      ],
+      "wall_seconds": 6.4339476990007824,
+      "exit_code": 0,
+      "stdout": "{\"observed_pp\": {\"H1_A_external_minus_internal_detection_pp\": -13.844086021505376, \"H2_A_external_minus_internal_review_pp\": -6.5576446011228615, \"external_fixed_B_minus_A_detection_pp\": 18.75, \"external_equal_B_minus_A_detection_pp\": -6.25}, \"routes\": {\"fixed_cutoffs_test_sampling\": {\"original_reversal\": {\"count\": 3961, \"fraction\": 0.3961}, \"joint_valid\": 10000}, \"development_calibration_only\": {\"original_reversal\": {\"count\": 9040, \"fraction\": 0.904}, \"joint_valid\": 10000}, \"full_resampling\": {\"original_reversal\": {\"count\": 3094, \"fraction\": 0.3094}, \"joint_valid\": 10000}}, \"bootstrap_wall_seconds\": 4.260446308999235, \"total_wall_seconds\": 6.248766046999663, \"iterations_csv\": \"/workspace/bmt_validation_rerun_tmp/results/bootstrap_stability/iterations.csv\", \"summary_json\": \"/workspace/bmt_validation_rerun_tmp/results/bootstrap_stability/summary.json\"}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/bmt_cloud_validation/scripts/case_mix_decomposition.py",
+        "--source-root",
+        "/workspace/bmt_validation_source_tmp",
+        "--output-root",
+        "/workspace/bmt_validation_rerun_tmp",
+        "--protocol",
+        "/workspace/bmt_cloud_validation/protocol/analysis_plan.json"
+      ],
+      "wall_seconds": 3.3165598699997645,
+      "exit_code": 0,
+      "stdout": "{\"status\": \"completed\", \"bootstrap_seconds\": 1.1296011610011192, \"process_elapsed_seconds_through_exports\": 3.2161832010006037, \"results\": {\"A.detection\": {\"overall_difference\": {\"estimate\": -0.13844086021505375, \"percentile_ci95\": [-0.40847953599061165, 0.11398381773661233], \"valid_replicates\": 5000, \"invalid_replicates\": 0}, \"composition_associated\": {\"estimate\": -0.016154392371677873, \"percentile_ci95\": [-0.10894420656704179, 0.05730686099849105], \"valid_replicates\": 4999, \"invalid_replicates\": 1}, \"within_stratum_rate\": {\"estimate\": -0.12228646784337593, \"percentile_ci95\": [-0.3994389839233814, 0.14300074413347225], \"valid_replicates\": 4999, \"invalid_replicates\": 1}}, \"A.review_fraction\": {\"overall_difference\": {\"estimate\": -0.06557644601122861, \"percentile_ci95\": [-0.11539178930483279, -0.01311797045492703], \"valid_replicates\": 5000, \"invalid_replicates\": 0}, \"composition_associated\": {\"estimate\": 0.00644644327818787, \"percentile_ci95\": [-5.2737326759549404e-05, 0.015429049419438477], \"valid_replicates\": 5000, \"invalid_replicates\": 0}, \"within_stratum_rate\": {\"estimate\": -0.07202288928941648, \"percentile_ci95\": [-0.12145562337117073, -0.020774461528217023], \"valid_replicates\": 5000, \"invalid_replicates\": 0}}, \"B.detection\": {\"overall_difference\": {\"estimate\": 0.08131720430107525, \"percentile_ci95\": [-0.15089544340463454, 0.2818385270774976], \"valid_replicates\": 5000, \"invalid_replicates\": 0}, \"composition_associated\": {\"estimate\": -0.007813451004260542, \"percentile_ci95\": [-0.06429805247266963, 0.03621105638212518], \"valid_replicates\": 4999, \"invalid_replicates\": 1}, \"within_stratum_rate\": {\"estimate\": 0.08913065530533572, \"percentile_ci95\": [-0.14317421479471099, 0.286977991430143], \"valid_replicates\": 4999, \"invalid_replicates\": 1}}, \"B.review_fraction\": {\"overall_difference\": {\"estimate\": -0.04531083878909964, \"percentile_ci95\": [-0.09306896181896183, 0.00406874265569907], \"valid_replicates\": 5000, \"invalid_replicates\": 0}, \"composition_associated\": {\"estimate\": 0.00791241116866846, \"percentile_ci95\": [-6.411300620776048e-05, 0.017981379626852315], \"valid_replicates\": 5000, \"invalid_replicates\": 0}, \"within_stratum_rate\": {\"estimate\": -0.053223249957768115, \"percentile_ci95\": [-0.10027621727516138, -0.005579469743298582], \"valid_replicates\": 5000, \"invalid_replicates\": 0}}}}\n",
+      "stderr": ""
+    }
+  ],
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.14",
+    "dependencies": {
+      "numpy": {
+        "required": "2.3.5",
+        "installed": "2.3.5",
+        "matches": true
+      },
+      "matplotlib": {
+        "required": "3.10.8",
+        "installed": "3.10.8",
+        "matches": true
+      },
+      "openpyxl": {
+        "required": "3.1.5",
+        "installed": "3.1.5",
+        "matches": true
+      }
+    },
+    "fresh_pip_install_executed": false,
+    "dependency_note": "Existing versions match all exact requirements; package installation and a new isolated venv were not retested."
+  },
+  "original_source_before": {
+    "scientific_input_files": 13,
+    "scientific_input_bytes": 913812,
+    "scientific_input_aggregate_sha256": "63f40bfc4abcceb38f6e32e9450a2d9c0c13bed1fb3d223c63a2f1767aa6617c",
+    "files_sha256": {
+      "reproducibility/study_lock.json": "91189487ed1fa5328f33e5db4094f846f5619d73924329577f6a0d9e05ffc7d0",
+      "reproducibility/manifests/busbra_development.csv": "6db10ea5bae1095dba26ce70b3b376ad1390c94de1645c546320310de8d55274",
+      "reproducibility/manifests/busbra_internal_holdout.csv": "2727d11d0db4f41ddd70a915576e5273a9d0ecbd735f151ae2ae710d0963a026",
+      "reproducibility/manifests/breast_external.csv": "33db74c60e8ce242f82f5efcd1007c08151e6faf359a6204f68a251791dbda22",
+      "reproducibility/records/development_cases.csv": "3c1375a5546a3af48de72339cc6a519f1f981d5431a38fcd2ccc6765ec43a9ce",
+      "reproducibility/records/validation_cases.csv": "6ac44d3d3557caceba1e47dab4f87bc3b180568195c0d0ecb6506fbb04d07961",
+      "reproducibility/reference/primary.json": "8ec31efd157814246d1a0ef46549090645381ea9df3382c6fab93156044e9a79",
+      "reproducibility/reference/supplementary.json": "ee187cb902e1de7967379bc505cbd98811bc637f296cde29adb66be12e74733c",
+      "reproducibility/study_statistics.py": "d74c6de1d41bb27c337981024d256c398bd0426bf90dab23f2be23798d5d2128",
+      "reproducibility/reproduce.py": "f982dfffc0ae3954d81cc23a46cef4098daf869b188ab411263292560576c868",
+      "submission/bmt_v7/Audit/pathology_audit.json": "ce1a085b1306c8267f5aec737ae41fbcfbfd529b14cc5694f75b68ac22e5b7a5",
+      "data/raw/BUS-BRA/BUSBRA/bus_data.csv": "f218d0f10b0aeeb14ff4b2cfed8631b2f4a7cf608e564548b35bddd55f3aafb3",
+      "data/raw/BrEaST/BrEaST-Lesions-USG-clinical-data-Dec-15-2023.xlsx": "89a8874496a6f1f93960390b963f7369b90f7e72ee08a738f2d17e37f5eff8bf"
+    }
+  },
+  "detached_worktree_before": {
+    "scientific_input_files": 13,
+    "scientific_input_bytes": 913812,
+    "scientific_input_aggregate_sha256": "63f40bfc4abcceb38f6e32e9450a2d9c0c13bed1fb3d223c63a2f1767aa6617c",
+    "files_sha256": {
+      "reproducibility/study_lock.json": "91189487ed1fa5328f33e5db4094f846f5619d73924329577f6a0d9e05ffc7d0",
+      "reproducibility/manifests/busbra_development.csv": "6db10ea5bae1095dba26ce70b3b376ad1390c94de1645c546320310de8d55274",
+      "reproducibility/manifests/busbra_internal_holdout.csv": "2727d11d0db4f41ddd70a915576e5273a9d0ecbd735f151ae2ae710d0963a026",
+      "reproducibility/manifests/breast_external.csv": "33db74c60e8ce242f82f5efcd1007c08151e6faf359a6204f68a251791dbda22",
+      "reproducibility/records/development_cases.csv": "3c1375a5546a3af48de72339cc6a519f1f981d5431a38fcd2ccc6765ec43a9ce",
+      "reproducibility/records/validation_cases.csv": "6ac44d3d3557caceba1e47dab4f87bc3b180568195c0d0ecb6506fbb04d07961",
+      "reproducibility/reference/primary.json": "8ec31efd157814246d1a0ef46549090645381ea9df3382c6fab93156044e9a79",
+      "reproducibility/reference/supplementary.json": "ee187cb902e1de7967379bc505cbd98811bc637f296cde29adb66be12e74733c",
+      "reproducibility/study_statistics.py": "d74c6de1d41bb27c337981024d256c398bd0426bf90dab23f2be23798d5d2128",
+      "reproducibility/reproduce.py": "f982dfffc0ae3954d81cc23a46cef4098daf869b188ab411263292560576c868",
+      "submission/bmt_v7/Audit/pathology_audit.json": "ce1a085b1306c8267f5aec737ae41fbcfbfd529b14cc5694f75b68ac22e5b7a5",
+      "data/raw/BUS-BRA/BUSBRA/bus_data.csv": "f218d0f10b0aeeb14ff4b2cfed8631b2f4a7cf608e564548b35bddd55f3aafb3",
+      "data/raw/BrEaST/BrEaST-Lesions-USG-clinical-data-Dec-15-2023.xlsx": "89a8874496a6f1f93960390b963f7369b90f7e72ee08a738f2d17e37f5eff8bf"
+    }
+  },
+  "CSV_comparisons": [
+    {
+      "file": "results/budget_transfer/calibration.csv",
+      "original_read_from": "/workspace/bmt_cloud_validation/results/budget_transfer/calibration.csv",
+      "original_sha256": "c360231b9ae7972799c957b9ff0564028158686063bd2fdca2cd957ba5033dfb",
+      "rerun_sha256": "c360231b9ae7972799c957b9ff0564028158686063bd2fdca2cd957ba5033dfb",
+      "byte_identical": true,
+      "data_rows": 16,
+      "header_columns": 17,
+      "exactly_equal_cells": 289,
+      "format_only_numeric_cells": 0,
+      "all_cells_numerically_or_textually_equal": true
+    },
+    {
+      "file": "results/budget_transfer/performance.csv",
+      "original_read_from": "/workspace/bmt_cloud_validation/results/budget_transfer/performance.csv",
+      "original_sha256": "2b35e41866b99745e3749c9016afea560a39f0eddbda4c0eff316d63df549200",
+      "rerun_sha256": "2b35e41866b99745e3749c9016afea560a39f0eddbda4c0eff316d63df549200",
+      "byte_identical": true,
+      "data_rows": 64,
+      "header_columns": 24,
+      "exactly_equal_cells": 1560,
+      "format_only_numeric_cells": 0,
+      "all_cells_numerically_or_textually_equal": true
+    },
+    {
+      "file": "results/budget_transfer/paired_contrasts.csv",
+      "original_read_from": "/workspace/bmt_cloud_validation/results/budget_transfer/paired_contrasts.csv",
+      "original_sha256": "dab3a8e53fd6e58a7ad07114b27928a87c9abfec91afbc827ef63f5e9b7a3c93",
+      "rerun_sha256": "dab3a8e53fd6e58a7ad07114b27928a87c9abfec91afbc827ef63f5e9b7a3c93",
+      "byte_identical": true,
+      "data_rows": 32,
+      "header_columns": 21,
+      "exactly_equal_cells": 693,
+      "format_only_numeric_cells": 0,
+      "all_cells_numerically_or_textually_equal": true
+    },
+    {
+      "file": "results/bootstrap_stability/iterations.csv",
+      "original_read_from": "/workspace/bmt_cloud_validation/results/bootstrap_stability/iterations.csv",
+      "original_sha256": "c387d4964494b696f78171d202806767f21a594491ce1c9cfdf47f40f1e5d87e",
+      "rerun_sha256": "c387d4964494b696f78171d202806767f21a594491ce1c9cfdf47f40f1e5d87e",
+      "byte_identical": true,
+      "data_rows": 30000,
+      "header_columns": 47,
+      "exactly_equal_cells": 1410047,
+      "format_only_numeric_cells": 0,
+      "all_cells_numerically_or_textually_equal": true
+    },
+    {
+      "file": "results/case_mix_decomposition.csv",
+      "original_read_from": "/workspace/bmt_cloud_validation/results/case_mix_decomposition.csv",
+      "original_sha256": "22447517ddb96381d48ba8518695032c2c4c3839dcaee92a02325eb1f50484f0",
+      "rerun_sha256": "22447517ddb96381d48ba8518695032c2c4c3839dcaee92a02325eb1f50484f0",
+      "byte_identical": true,
+      "data_rows": 4,
+      "header_columns": 34,
+      "exactly_equal_cells": 170,
+      "format_only_numeric_cells": 0,
+      "all_cells_numerically_or_textually_equal": true
+    },
+    {
+      "file": "results/case_mix_decomposition_strata.csv",
+      "original_read_from": "/workspace/bmt_cloud_validation/results/case_mix_decomposition_strata.csv",
+      "original_sha256": "75b704e64a1acce1ca7cbe3fecf00a3d755e71ba033cdf30dafc6b72668b762f",
+      "rerun_sha256": "75b704e64a1acce1ca7cbe3fecf00a3d755e71ba033cdf30dafc6b72668b762f",
+      "byte_identical": true,
+      "data_rows": 16,
+      "header_columns": 11,
+      "exactly_equal_cells": 187,
+      "format_only_numeric_cells": 0,
+      "all_cells_numerically_or_textually_equal": true
+    },
+    {
+      "file": "results/case_mix_decomposition_bootstrap.csv",
+      "original_read_from": "/workspace/bmt_cloud_validation/results/case_mix_decomposition_bootstrap.csv",
+      "original_sha256": "3a126a9c1d82eb8f5fde9d6731ce74d9e6876205a6cbcc0acad4cd8e23fecf39",
+      "rerun_sha256": "3a126a9c1d82eb8f5fde9d6731ce74d9e6876205a6cbcc0acad4cd8e23fecf39",
+      "byte_identical": true,
+      "data_rows": 20000,
+      "header_columns": 27,
+      "exactly_equal_cells": 540027,
+      "format_only_numeric_cells": 0,
+      "all_cells_numerically_or_textually_equal": true
+    }
+  ],
+  "budget_selected_case_ids_identical": true,
+  "deterministic_JSON_comparisons": {
+    "results/budget_transfer/results.json": {
+      "fields_checked": {
+        "calibration": true,
+        "performance": true,
+        "paired_contrasts": true,
+        "verification": true
+      },
+      "all_deterministic_fields_equal": true,
+      "excluded_provenance": "Timestamps, runtime, process memory, absolute source/output paths and detached/main branch labels may differ."
+    },
+    "results/bootstrap_stability/summary.json": {
+      "fields_checked": {
+        "classification": true,
+        "source_commit": true,
+        "source_inputs_sha256": true,
+        "protocol_sha256": true,
+        "script_sha256": true,
+        "replicates_per_route": true,
+        "seed": true,
+        "RNG": true,
+        "observed": true,
+        "edge_case_checks": true,
+        "routes": true,
+        "observed_external_low_quality_paired_table": true,
+        "original_paired_Newcombe_H3_ci95_pp": true,
+        "fixed_cutoff_empirical_support_constraint": true,
+        "iterations_csv_sha256": true,
+        "iterations_csv_rows": true,
+        "source_files_unchanged": true
+      },
+      "all_deterministic_fields_equal": true,
+      "excluded_provenance": "Timestamps, runtime, process memory, absolute source/output paths and detached/main branch labels may differ."
+    },
+    "results/case_mix_decomposition.json": {
+      "fields_checked": {
+        "analysis": true,
+        "design": true,
+        "direction": true,
+        "rate_units": true,
+        "bootstrap": true,
+        "results": true,
+        "counts": true,
+        "interpretation_limits": true
+      },
+      "all_deterministic_fields_equal": true,
+      "excluded_provenance": "Timestamps, runtime, process memory, absolute source/output paths and detached/main branch labels may differ."
+    }
+  },
+  "original_source_after": {
+    "scientific_input_files": 13,
+    "scientific_input_bytes": 913812,
+    "scientific_input_aggregate_sha256": "63f40bfc4abcceb38f6e32e9450a2d9c0c13bed1fb3d223c63a2f1767aa6617c",
+    "files_sha256": {
+      "reproducibility/study_lock.json": "91189487ed1fa5328f33e5db4094f846f5619d73924329577f6a0d9e05ffc7d0",
+      "reproducibility/manifests/busbra_development.csv": "6db10ea5bae1095dba26ce70b3b376ad1390c94de1645c546320310de8d55274",
+      "reproducibility/manifests/busbra_internal_holdout.csv": "2727d11d0db4f41ddd70a915576e5273a9d0ecbd735f151ae2ae710d0963a026",
+      "reproducibility/manifests/breast_external.csv": "33db74c60e8ce242f82f5efcd1007c08151e6faf359a6204f68a251791dbda22",
+      "reproducibility/records/development_cases.csv": "3c1375a5546a3af48de72339cc6a519f1f981d5431a38fcd2ccc6765ec43a9ce",
+      "reproducibility/records/validation_cases.csv": "6ac44d3d3557caceba1e47dab4f87bc3b180568195c0d0ecb6506fbb04d07961",
+      "reproducibility/reference/primary.json": "8ec31efd157814246d1a0ef46549090645381ea9df3382c6fab93156044e9a79",
+      "reproducibility/reference/supplementary.json": "ee187cb902e1de7967379bc505cbd98811bc637f296cde29adb66be12e74733c",
+      "reproducibility/study_statistics.py": "d74c6de1d41bb27c337981024d256c398bd0426bf90dab23f2be23798d5d2128",
+      "reproducibility/reproduce.py": "f982dfffc0ae3954d81cc23a46cef4098daf869b188ab411263292560576c868",
+      "submission/bmt_v7/Audit/pathology_audit.json": "ce1a085b1306c8267f5aec737ae41fbcfbfd529b14cc5694f75b68ac22e5b7a5",
+      "data/raw/BUS-BRA/BUSBRA/bus_data.csv": "f218d0f10b0aeeb14ff4b2cfed8631b2f4a7cf608e564548b35bddd55f3aafb3",
+      "data/raw/BrEaST/BrEaST-Lesions-USG-clinical-data-Dec-15-2023.xlsx": "89a8874496a6f1f93960390b963f7369b90f7e72ee08a738f2d17e37f5eff8bf"
+    }
+  },
+  "detached_worktree_after": {
+    "scientific_input_files": 13,
+    "scientific_input_bytes": 913812,
+    "scientific_input_aggregate_sha256": "63f40bfc4abcceb38f6e32e9450a2d9c0c13bed1fb3d223c63a2f1767aa6617c",
+    "files_sha256": {
+      "reproducibility/study_lock.json": "91189487ed1fa5328f33e5db4094f846f5619d73924329577f6a0d9e05ffc7d0",
+      "reproducibility/manifests/busbra_development.csv": "6db10ea5bae1095dba26ce70b3b376ad1390c94de1645c546320310de8d55274",
+      "reproducibility/manifests/busbra_internal_holdout.csv": "2727d11d0db4f41ddd70a915576e5273a9d0ecbd735f151ae2ae710d0963a026",
+      "reproducibility/manifests/breast_external.csv": "33db74c60e8ce242f82f5efcd1007c08151e6faf359a6204f68a251791dbda22",
+      "reproducibility/records/development_cases.csv": "3c1375a5546a3af48de72339cc6a519f1f981d5431a38fcd2ccc6765ec43a9ce",
+      "reproducibility/records/validation_cases.csv": "6ac44d3d3557caceba1e47dab4f87bc3b180568195c0d0ecb6506fbb04d07961",
+      "reproducibility/reference/primary.json": "8ec31efd157814246d1a0ef46549090645381ea9df3382c6fab93156044e9a79",
+      "reproducibility/reference/supplementary.json": "ee187cb902e1de7967379bc505cbd98811bc637f296cde29adb66be12e74733c",
+      "reproducibility/study_statistics.py": "d74c6de1d41bb27c337981024d256c398bd0426bf90dab23f2be23798d5d2128",
+      "reproducibility/reproduce.py": "f982dfffc0ae3954d81cc23a46cef4098daf869b188ab411263292560576c868",
+      "submission/bmt_v7/Audit/pathology_audit.json": "ce1a085b1306c8267f5aec737ae41fbcfbfd529b14cc5694f75b68ac22e5b7a5",
+      "data/raw/BUS-BRA/BUSBRA/bus_data.csv": "f218d0f10b0aeeb14ff4b2cfed8631b2f4a7cf608e564548b35bddd55f3aafb3",
+      "data/raw/BrEaST/BrEaST-Lesions-USG-clinical-data-Dec-15-2023.xlsx": "89a8874496a6f1f93960390b963f7369b90f7e72ee08a738f2d17e37f5eff8bf"
+    }
+  },
+  "all_scientific_source_input_file_bytes_unchanged": true,
+  "algorithm_script_sha256": {
+    "budget_transfer.py": "9b509403ae6e3a8cce3a1a8872fc17ad7e126674e05bd607bbaa4e60cee53579",
+    "bootstrap_stability.py": "86bd575634946c8810b22b962bf4ac73f83ced3751c4f9a30c348ef140728720",
+    "case_mix_decomposition.py": "818487d97e5ec9e34c594b724199b64f24d0590f2fed25c7c047dd5e9dc311ac"
+  },
+  "protocol_sha256": "c34718732b856ab31d0d8ae19c88bbbf0f43a9614ea14433d8f62210cc1409c7",
+  "archive_result_files_unchanged": 18,
+  "original_source_git_status_after": "M README.md\n M submission/BMT_revision_review_package_v7.zip\n M submission/bmt_v7/Analysis/final_v7_numeric_review.py\n M submission/bmt_v7/Audit/FINAL_PACKAGING_NOTE.txt\n M submission/bmt_v7/Audit/author_confirmation_record.json\n M submission/bmt_v7/Audit/confirmed_address_ethics_sources.json\n M submission/bmt_v7/Audit/confirmed_address_ethics_sources.md\n M submission/bmt_v7/Audit/final_layout_review.json\n M submission/bmt_v7/Audit/final_v7_numeric_review.json\n M submission/bmt_v7/Audit/final_v7_numeric_review.md\n M submission/bmt_v7/Audit/requirements.json\n M submission/bmt_v7/Audit/revision_provenance.json\n M submission/bmt_v7/BMT_author_confirmation_required.docx\n M submission/bmt_v7/BMT_cover_letter.docx\n M submission/bmt_v7/BMT_main_manuscript_v7.docx\n M submission/bmt_v7/BMT_main_manuscript_v7_preview.pdf\n M submission/bmt_v7/BMT_revision_report.docx\n M submission/bmt_v7/BMT_revision_report.md\n M submission/bmt_v7/BMT_revision_report_preview.pdf\n M submission/bmt_v7/BMT_submission_checklist.docx\n M submission/bmt_v7/FILE_MANIFEST.json\n M submission/bmt_v7/README_zh.md\n?? submission/bmt_v7/Analysis/finalize_postal_package.py\n?? submission/bmt_v7/Audit/postal_archive_qa.json\n?? submission/bmt_v7/Audit/postal_confirmation_20261106.json",
+  "detached_source_git_status_after": "",
+  "original_point_H1_H2_fixed_equal_pp": {
+    "H1_A_external_minus_internal_detection_pp": -13.844086021505376,
+    "H2_A_external_minus_internal_review_pp": -6.5576446011228615,
+    "external_fixed_B_minus_A_detection_pp": 18.75,
+    "external_equal_B_minus_A_detection_pp": -6.25
+  },
+  "temporary_worktree_and_outputs_removed": true,
+  "completed_utc": "2026-11-06T09:38:12.956152+00:00",
+  "total_check_wall_seconds": 13.623169137999867
+}

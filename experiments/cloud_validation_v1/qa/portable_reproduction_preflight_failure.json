@@ -1,0 +1,40 @@
+{
+  "started_utc": "2026-11-06T09:36:22.474952+00:00",
+  "README_sha256": "ba87707bd9237c335d439f2428f7df805caf07cd62c87427cf7737cc1fe30b03",
+  "source_commit": "f9cfdc49b6e6a9e037443f6ce077006bc9377960",
+  "test_scope": "Documented three CLI entrypoints using a fresh fixed-commit detached worktree and a new output directory in the existing pinned environment; no algorithm changes.",
+  "commands": [],
+  "status": "FAIL",
+  "environment": {
+    "python": "3.12.14",
+    "dependencies": {
+      "numpy": {
+        "required": "2.3.5",
+        "installed": "2.3.5",
+        "matches": true
+      },
+      "matplotlib": {
+        "required": "3.10.8",
+        "installed": "3.10.8",
+        "matches": true
+      },
+      "openpyxl": {
+        "required": "3.1.5",
+        "installed": "3.1.5",
+        "matches": true
+      }
+    },
+    "fresh_pip_install_executed": false,
+    "dependency_note": "Existing versions match all exact requirements; package installation and a new isolated venv were not retested."
+  },
+  "original_source_before": {
+    "tracked_files": 4542,
+    "tracked_bytes": 247756440,
+    "tracked_tree_byte_sha256": "105483d77183b209f857047777e895c055701e5e7034a7cb021e29056670a0c5"
+  },
+  "error": "AssertionError()",
+  "temporary_worktree_and_outputs_removed": false,
+  "completed_utc": "2026-11-06T09:36:24.660839+00:00",
+  "total_check_wall_seconds": 2.1859075859993027,
+  "diagnosis": "An over-broad preflight compared every tracked file in the active source checkout with the detached commit; expected postal/README/package edits differed. No analysis command had executed. The check is narrowed to all actual scientific inputs and helper files; no algorithm change."
+}

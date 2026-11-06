@@ -1,0 +1,117 @@
+{
+  "reviewed_at_utc": "2026-11-06T09:14:59.188960+00:00",
+  "plan_sha256": "c34718732b856ab31d0d8ae19c88bbbf0f43a9614ea14433d8f62210cc1409c7",
+  "source_commit": "f9cfdc49b6e6a9e037443f6ce077006bc9377960",
+  "design_verdict": "No design-level blocker; valid as post hoc exploratory score-based sensitivity/stability/descriptive accounting subject to implementation checks.",
+  "reviewer_changed_protocol_or_scripts": false,
+  "findings": [
+    {
+      "topic": "equal_review_half_tie",
+      "requirement": "For N=851,target=0.50 choose425, not426."
+    },
+    {
+      "topic": "bootstrap_duplicates",
+      "requirement": "Keep occurrences with paired A/B and labels; no patient_id set/deduplication."
+    },
+    {
+      "topic": "lexicographic_ties",
+      "requirement": "Use original patient_id string; stable sampled occurrence index as tertiary tie-break."
+    },
+    {
+      "topic": "equal_review_resampling",
+      "requirement": "Rerank resampled scores and select50 occurrences; calibration-only equal50 external remains -6.25pp."
+    },
+    {
+      "topic": "reversal_frequency",
+      "requirement": "Use joint-valid draws, ties separate; descriptive resampling frequency, not posterior superiority probability."
+    },
+    {
+      "topic": "decomposition_weights",
+      "requirement": "Detection F_s/F and TP_s/F_s; review N_s/N and R_s/N_s. Detection mix is conditional on low-quality status."
+    },
+    {
+      "topic": "undefined_rates",
+      "requirement": "No zero-imputation; valid count per statistic and per stratum-denominator condition."
+    },
+    {
+      "topic": "clinical_labels",
+      "requirement": "Dataset-reported benign/malignant classification, not universal histopathology."
+    },
+    {
+      "topic": "scope",
+      "requirement": "No independent patients, clinical effectiveness, causal effects, equivalence or human prompt validation."
+    }
+  ],
+  "resource_check": {
+    "python": "3.12.14",
+    "cpu_quota": 2,
+    "memory_limit_bytes": 8589934592,
+    "torch_installed": false,
+    "segment_anything_installed": false,
+    "gpu_device_evidence": false,
+    "checkpoint_present": false,
+    "exact_sam_source_present": true,
+    "fresh_network_status_file": "protocol/environment_status.json",
+    "official_checkpoint_host_allowed": false,
+    "cpu_wheel_host_allowed": true,
+    "configuration_write_tool_available": false,
+    "installed_or_downloaded_for_review": false
+  },
+  "six_case_cpu_feasibility": "Principally feasible with exact checkpoint and CPU dependencies in a separately documented float32 environment; actual memory/runtime must be measured.",
+  "synthetic_prompt_caveat": "Correlated algorithmic shifts from the reference-derived box are not independent human prompts or readers.",
+  "minimum_model_resources": {
+    "checkpoint": "sam_vit_b_01ec64.pth",
+    "sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+    "sam_commit": "dca509fe793f601edb92606367a655c15ac00fdf",
+    "dependencies": [
+      "torch2.4.1+cpu",
+      "torchvision0.19.1+cpu",
+      "Pillow10.4.0",
+      "NumPy1.26.4"
+    ],
+    "environment_differs_from_original": true
+  },
+  "cross_module_results_review": {
+    "status": "all_three_modules_pass",
+    "anchors": {
+      "A_detection_E_minus_I_pp": -13.84408602150538,
+      "B_detection_E_minus_I_pp": 8.131720430107528,
+      "A_review_E_minus_I_pp": -6.55764460112286,
+      "B_review_E_minus_I_pp": -4.531083878909964,
+      "external_B_minus_A_fixed_pp": 18.75,
+      "external_B_minus_A_equal50_pp": -6.25
+    },
+    "budget": {
+      "performance_rows_checked": 64,
+      "paired_rows_checked": 32,
+      "wilson_bounds_checked": 128,
+      "paired_newcombe_bounds_checked": 128,
+      "status": "pass",
+      "development_cutoffs_independently_checked": 16
+    },
+    "decomposition": {
+      "point_rows_checked": 4,
+      "scalar_statistics_per_row_checked": 8,
+      "percentile_bounds_checked": 64,
+      "valid_counts_match": true,
+      "status": "pass"
+    },
+    "bootstrap": {
+      "status": "pass",
+      "iteration_rows_checked": 30000,
+      "endpoint_values_from_counts_checked": 120000,
+      "endpoint_percentile_bounds_checked": 24,
+      "median_and_sign_counts_match": true,
+      "joint_valid_and_tie_rules_match": true,
+      "calibration_only_equal50_constant": -6.25,
+      "fixed_cutoff_B_minus_A_nonnegative_due_to_zero_observed_A_only": true
+    }
+  },
+  "interpretation_cautions": [
+    "Fixed-cutoff empirical bootstrap cannot generate an A-only failure outcome absent from the original 16 failure cases; its [0,+40]pp percentile interval must not override the original Newcombe [-4.28,+40.04] interval or imply superiority.",
+    "Calibration-only percentile intervals condition on the original test cohorts and are not population test-performance uncertainty."
+  ],
+  "clarification_addendum_sha256": "d525060a514fce1ec692f9adb3b9952116cabc75f7d446febdf84d19ebc66dda",
+  "final_status": "Complete; no remaining numerical or implementation blocker. Boundary/conditional bootstrap interpretation cautions retained.",
+  "review_scope": "Read-only protocol/scripts/results review; only this reviewer report and JSON were written. No experiment settings or source files changed."
+}

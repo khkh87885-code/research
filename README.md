@@ -1,6 +1,6 @@
 # Transfer of fixed review thresholds for breast ultrasound segmentation quality control
 
-兰昊泽（Haoze Lan），重庆医科大学人工智能医学学院。研究比较两种基于 Segment Anything Model（SAM）的复核评分，并考察在 BUS-BRA 开发集锁定的阈值在内部留出集和 BrEaST 外部队列上的表现。
+作者：兰昊泽（Haoze Lan，第一作者兼通讯作者）、Ziyuan Zhu（第二作者）；两位作者均署名重庆医科大学人工智能医学学院。第一作者 ORCID：[0009-0008-5089-5902](https://orcid.org/0009-0008-5089-5902)。研究比较两种基于 Segment Anything Model（SAM）的复核评分，并考察在 BUS-BRA 开发集锁定的阈值在内部留出集和 BrEaST 外部队列上的表现。
 
 | 队列 | 纳入患者 | 初始分割 Dice < 0.70 |
 | --- | ---: | ---: |
@@ -9,6 +9,14 @@
 | BrEaST 外部测试 | 252 | 16 |
 
 每位纳入患者固定使用一张图及对应参考掩膜。正式验证共 1,103 例。40 例预实验来自开发集。评分和复核均在回顾性模拟中进行。
+
+## 最新修订：v6 作者审阅版
+
+[主稿 Word](submission/bmt_v6/BMT_main_manuscript_v6.docx) · [主稿 PDF 预览](submission/bmt_v6/BMT_main_manuscript_v6_preview.pdf) · [完整修订包 ZIP](submission/BMT_revision_review_package_v6.zip) · [修订文件目录](submission/bmt_v6) · [核验与修改报告](submission/bmt_v6/BMT_revision_report.md)
+
+本次将最新 v6 修订材料归档至 `main`，包含两位作者、第一作者 ORCID、补充材料、声明审阅稿、投稿信、潜在审稿人和数值核验记录。该版本尚未提交期刊；伦理与同意适用性、最终作者批准及 AI 相关事项仍待确认。原始数据与锁定分析保持不变。
+
+包内“本轮没有推送 GitHub”等文字记录材料制作时的历史状态；本次仓库归档以本节为准。旧稿和原始实验记录保留在原目录。
 
 ## 文件索引
 

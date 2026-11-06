@@ -1,0 +1,106 @@
+{
+  "retrieved_on": "2026-11-06",
+  "purpose": "Official Chinese ethics-review basis for public, anonymized secondary breast ultrasound research; not an institutional approval or legal exemption determination.",
+  "national_rule": {
+    "title": "涉及人的生命科学和医学研究伦理审查办法",
+    "issuing_bodies": [
+      "国家卫生健康委",
+      "教育部",
+      "科技部",
+      "国家中医药局"
+    ],
+    "document_number": "国卫科教发〔2023〕4号",
+    "signed_on": "2023-02-18",
+    "published_on": "2023-02-27",
+    "effective": "自发布之日起施行（第五十四条）",
+    "url": "https://www.nhc.gov.cn/qjjys/c100016/202302/6b6e447b3edc4338856c9a652a85f44b.shtml",
+    "local": "cqmu_ethics_source_2.md",
+    "article2": "适用于中华人民共和国境内医疗卫生机构、高等学校、科研院所等的相关伦理审查工作",
+    "article32_intro": "使用人的信息数据或者生物样本开展以下情形的涉及人的生命科学和医学研究，不对人体造成伤害、不涉及敏感个人信息或者商业利益的，可以免除伦理审查，以减少科研人员不必要的负担，促进涉及人的生命科学和医学研究开展。",
+    "article32_1": "利用合法获得的公开数据，或者通过观察且不干扰公共行为产生的数据进行研究的；",
+    "article32_2": "使用匿名化的信息数据开展研究的；",
+    "institutional_responsibility": "第五条：机构是伦理审查工作的管理责任主体；第十二条：伦理审查委员会建立工作制度和标准操作规程",
+    "consent": "第四章第三十三至三十八条单独规范知情同意；第三十二条写的是免伦理审查，没有直接给出本项目的知情同意豁免认定"
+  },
+  "official_interpretation": {
+    "url": "https://www.nhc.gov.cn/qjjys/c100015/202302/687d51e0d215464590b87d7e2246c720.shtml",
+    "local": "china_ethics_source_1.md",
+    "points": [
+      "第九问重复第32条的前提和四类免伦理审查情形",
+      "第七问解释2023办法涵盖高等学校、科研院所，2016年11号令适用医疗卫生机构；应按具体机构适用规范区分"
+    ]
+  },
+  "personal_information_law": {
+    "title": "中华人民共和国个人信息保护法",
+    "adopted_on": "2021-08-20",
+    "effective_on": "2021-11-01",
+    "url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm",
+    "local": "china_ethics_other_1.md",
+    "article4": "个人信息不包括匿名化处理后的信息",
+    "article28": "医疗健康信息可构成敏感个人信息",
+    "article73_deidentification": "不借助额外信息的情况下无法识别特定自然人",
+    "article73_anonymization": "无法识别特定自然人且不能复原",
+    "implication": "仅去姓名、分配病例ID或使用de-identified措辞，不足以独立证明满足法律意义匿名化；应核对发布说明、是否可重识别、图像和元数据及链接数据"
+  },
+  "consent_distinction": {
+    "older_rule": "涉及人的生物医学研究伦理审查办法（国家卫生计生委令第11号，2016-10-12公布，2016-12-01施行）",
+    "url": "https://www.nhc.gov.cn/wjw/c100221/202201/558653bd3d1e4a078904152a30605a03.shtml",
+    "local": "china_ethics_other_0.md",
+    "article39": "以下情形经伦理委员会审查批准后，可以免除签署知情同意书",
+    "note": "仅作为免审与免签知情同意不同的明文例证；该医疗卫生机构规章的条款不能直接替代大学本项目的适用认定。免签署不应一概写成已获免知情同意。"
+  },
+  "cqmu": {
+    "directory_url": "https://kyc.cqmu.edu.cn/bszn/llsc.htm",
+    "process_url": "https://kyc.cqmu.edu.cn/info/1051/1385.htm",
+    "process_page_display_date": "2017-11-02 10:19",
+    "national_rule_repost_url": "https://kyc.cqmu.edu.cn/info/1051/2095.htm",
+    "repost_display_date": "2023-03-09 16:04",
+    "process": [
+      "学校官网→信息门户→实验动物中心→实验动物模块",
+      "生物医学研究科研项目→生物医学研究伦理审查",
+      "根据审查指南填报、下载模板，将全部材料合并PDF",
+      "提交后进入院系负责人审核流程",
+      "页面称委员会每月月底审核，建议每月20日前完成院系审核；当前执行时限需核对"
+    ],
+    "public_exemption_specific_process_found": false,
+    "limitation": "公开页为当前可访问页面但显示旧日期；未找到2026公开匿名数据免审专门表单或自评授权。学院/科研处/伦理委员会需确认当前免审认定或备案渠道；不把附属医院流程套用为校本部流程"
+  },
+  "study_mapping": [
+    {
+      "condition": "合法获得的公开数据（32(1)）",
+      "assessment": "BUS-BRA、BrEaST官方公开发布和许可材料可支持候选适用；需归档具体版本、获取来源、许可与数据使用范围。数据实际来源由主审计核验。"
+    },
+    {
+      "condition": "匿名化信息（32(2)）及不涉敏感个人信息",
+      "assessment": "论文描述公开匿名或去标识数据，尚不等于完成法律匿名化核对；需确认不含直接标识、可重识别元数据或链接密钥，不进行再识别。"
+    },
+    {
+      "condition": "不对人体造成伤害",
+      "assessment": "现有设计为既有公开图像上的回顾性计算，不新增招募、干预或样本采集，支持该条件；作者确认实际流程。"
+    },
+    {
+      "condition": "不涉及商业利益",
+      "assessment": "用户已确认无经费资助及无利益冲突，可支持非商业研究描述；仍需确认无企业委托、商业开发或其他相关商业利益，不能仅以无资助推定。"
+    },
+    {
+      "condition": "机构适用与证明",
+      "assessment": "未提供本研究伦理批准、免审认定、适用性确认或备案文件。国家条文提供免审依据，不能代替事实上的机构决定。"
+    },
+    {
+      "condition": "知情同意二次使用",
+      "assessment": "需区分原始数据采集的伦理/同意/豁免与本次二次分析的追加同意适用性；公开许可不自动证明所有伦理同意要求已被豁免。"
+    }
+  ],
+  "recommended_review_draft": {
+    "ethics": "This retrospective study used previously released breast ultrasound images and associated annotations from BUS-BRA and BrEaST and involved no new participant recruitment or intervention. Article 32 of the Chinese Measures for Ethical Review of Life Science and Medical Research Involving Human Participants permits exemption from ethics review for qualifying research using legally obtained public or anonymized information, subject to its stated conditions. [AUTHOR CONFIRMATION REQUIRED: the applicable institutional determination and any supporting document, date and reference, if issued].",
+    "consent": "No new participants were recruited for this secondary analysis of previously released datasets. [AUTHOR CONFIRMATION REQUIRED: the original datasets' consent/waiver basis and the institution's determination of whether additional informed consent was required for this reuse]."
+  },
+  "not_established": [
+    "This project has institutional ethical approval",
+    "This project has an IRB-issued exemption",
+    "Additional informed consent has been formally waived",
+    "The publicly released data satisfy the statutory definition of irreversible anonymization",
+    "A retrospective exemption or approval can be backdated"
+  ],
+  "ready_for_submission": false
+}

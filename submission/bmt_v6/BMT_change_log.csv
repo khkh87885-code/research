@@ -1,0 +1,13 @@
+﻿Area,Change,Numerical data impact
+Authorship,Added second author Ziyuan Zhu and supplied email; preserved Haoze Lan as first/corresponding author,None
+Declarations,"Added user-confirmed contributions, no funding and no conflicts; unresolved ethics/approval remain marked",None
+Study setting,Explicit oracle-localization and simulated-review scope,None
+Empty-mask audit,Documented zero initial/perturbed empties and future-rule limitation,No locked rule changed
+Utility,Added post hoc Tables S6/S7 and machine-readable metrics,New descriptive calculations only
+Related work,"Added verified Loke comparison, preserved prior-art distinction",None
+References,"Renumbered 1–14, added Newcombe DOIs and fixed repository record",None
+Figure delivery,Copied unchanged 600dpiPNG files; moved main images out of DOCX into separate files,Identical image bytes
+Supplement,Preserved S1–S5 exactly; added S6/S7 and audit provenance,Original table cells unchanged
+AI,Expanded transparent use description with human-review/version confirmation,No data/figure generation
+Submission package,"Prepared cover letter, declared form reconstruction, reviewers and checklist",No external submission
+Author metadata v6,Added Haoze Lan ORCID https://orcid.org/0009-0008-5089-5902; reconfirmed shared affiliation with Ziyuan Zhu; updated confirmation checklist/report,None

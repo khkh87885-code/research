@@ -1,0 +1,152 @@
+[
+  {
+    "file": "Figure_1_cohort_flow.pdf",
+    "pages": 1,
+    "size_mm": [
+      174.99999864366316,
+      77.99999779595268
+    ],
+    "min_text_pt": 8.5,
+    "fonts": [
+      "Arial-BoldMT",
+      "ArialMT"
+    ],
+    "text": "BUS-BRA 1,064 patients BrEaST 256 patients Development 213 patients Threshold selection Internal testing 851 patients 93 low-quality masks External testing 252 patients 16 low-quality masks Excluded 4 normal cases No main lesion mask Low-quality counts use Dice < 0.70 against the manual reference",
+    "png_metadata": {
+      "pixels": [
+        4133,
+        1842
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "bytes": 278538
+    }
+  },
+  {
+    "file": "Figure_2_SAM_architecture_preview.pdf",
+    "pages": 1,
+    "size_mm": [
+      174.99999864366316,
+      107.99999694824218
+    ],
+    "min_text_pt": 6.449999809265137,
+    "fonts": [
+      "Arial-BoldMT",
+      "ArialMT"
+    ],
+    "text": "A Image and prompts B Frozen SAM ViT-B C Review scores BrEaST case 001 Initial box Manual contour 10% margin per side, then clipped Initial box and four shifts 5% of clipped box width or height Left Right Up Down Image encoder 1 pass per image Prompt encoder Initial + 4 shifts Image embedding Prompt embeddings Mask decoder One shared image embedding 5 single-mask decodes Method A Model confidence Initial mask 1 − predicted IoU Flag if score ≥ cutoff A Method B Prompt disagreement Four shifted masks Left Right Up Down 1 − mean Dice Initial mask vs four shifted masks Flag if score ≥ cutoff B Evaluation reference Dice between the initial mask and manual contour < 0.70 defines low quality. Pawłowska et al. (2024)  ·  BrEaST v1 case 001  ·  doi 10.7937/9WKK-Q141  ·  CC BY 4.0  ·  Display crop",
+    "png_metadata": {
+      "pixels": [
+        4133,
+        2551
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "bytes": 878901
+    }
+  },
+  {
+    "file": "Figure_3_planned_contrasts.pdf",
+    "pages": 1,
+    "size_mm": [
+      174.99999864366316,
+      70.00000161064995
+    ],
+    "min_text_pt": 8.550000190734863,
+    "fonts": [
+      "Arial-BoldMT",
+      "ArialMT"
+    ],
+    "text": "−40 −20 0 20 40 Difference in proportions (percentage points) H1  Method A detection Primary · external minus internal H2  Method A simulated review Secondary · external minus internal H3  External detection Secondary · Method B minus A",
+    "png_metadata": {
+      "pixels": [
+        4133,
+        1653
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "bytes": 209818
+    }
+  },
+  {
+    "file": "Figure_4_review_curves.pdf",
+    "pages": 1,
+    "size_mm": [
+      174.99999864366316,
+      143.00000313652885
+    ],
+    "min_text_pt": 8.5,
+    "fonts": [
+      "Arial-BoldMT",
+      "ArialMT"
+    ],
+    "text": "0 20 40 60 80 100 0 25 50 75 100 Detected (%) A BUS-BRA internal test 851 patients  ·  93 low-quality masks 0 20 40 60 80 100 B BrEaST external test 252 patients  ·  16 low-quality masks Locked thresholds A 35/252, B 33/252 flagged Equal review 50/252 selected per method 50 60 70 80 90 100 Detected (%) C BrEaST at the two review settings Same 16 low-quality masks 10/16 (62.50%) 14/16 (87.50%) 13/16 (81.25%) 13/16 (81.25%) Patients selected for simulated review (%) Method A Method B Locked threshold Equal review",
+    "png_metadata": {
+      "pixels": [
+        4133,
+        3377
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "bytes": 538228
+    }
+  },
+  {
+    "file": "Figure_S1_dice_cutoff_contrasts.pdf",
+    "pages": 1,
+    "size_mm": [
+      174.99999864366316,
+      101.00000432332357
+    ],
+    "min_text_pt": 8.050000190734863,
+    "fonts": [
+      "Arial-BoldMT",
+      "ArialMT"
+    ],
+    "text": "−60 −40 −20 0 20 40 A Method A detection External minus internal Dice < 0.50 53 internal  ·  7 external −26.68 [−62.25, −4.80] Dice < 0.70 93 internal  ·  16 external −13.84 [−38.85, +7.45] Dice < 0.80 183 internal  ·  50 external −17.56 [−31.92, −2.01] −60 −40 −20 0 20 40 B BrEaST detection Method B minus Method A 0.00 [−27.14, +27.14] +18.75 [−4.28, +40.04] 0.00 [−10.06, +10.06] Detection rate difference (percentage points), 95% CI",
+    "png_metadata": {
+      "pixels": [
+        4133,
+        2385
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "bytes": 328073
+    }
+  },
+  {
+    "file": "Figure_S2_external_paired_counts.pdf",
+    "pages": 1,
+    "size_mm": [
+      174.99999864366316,
+      82.99999944898816
+    ],
+    "min_text_pt": 8.25,
+    "fonts": [
+      "Arial-BoldMT",
+      "ArialMT"
+    ],
+    "text": "A Locked thresholds A 35/252, B 33/252 flagged Count Both flagged 10 A only 0 B only 3 Neither flagged 3 B Equal review 50/252 selected per method Count 12 2 1 1 Each dot represents one case. Both panels show the same 16 BrEaST masks with Dice < 0.70.",
+    "png_metadata": {
+      "pixels": [
+        4133,
+        1960
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "bytes": 233807
+    }
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "main_paragraph_changes": [
+    {
+      "before": "ORCID identifiers  [AUTHOR CONFIRMATION REQUIRED: provide if available]",
+      "after": "ORCID  Haoze Lan: https://orcid.org/0009-0008-5089-5902"
+    }
+  ],
+  "main_tables_unchanged": true,
+  "pdf_layout": {
+    "BMT_submission_checklist.pdf": {
+      "pages": 3,
+      "out_of_page_words": 0
+    },
+    "BMT_main_manuscript_v6.pdf": {
+      "pages": 12,
+      "out_of_page_words": 0
+    },
+    "BMT_revision_report.pdf": {
+      "pages": 3,
+      "out_of_page_words": 0
+    },
+    "BMT_author_confirmation_required.pdf": {
+      "pages": 2,
+      "out_of_page_words": 0
+    }
+  }
+}

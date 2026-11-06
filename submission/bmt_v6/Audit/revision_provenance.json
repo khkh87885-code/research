@@ -1,0 +1,36 @@
+{
+  "source_repository": "https://github.com/khkh87885-code/research",
+  "source_commit": "592566b4c5f39e261c676eb034139a974e9cdfd5",
+  "retrieved_on": "2026-11-06",
+  "uploaded_attachment": "pasted requirements text only; no BMT_manuscript_v4(1).docx binary uploaded",
+  "manuscript_used": "manuscript/BMT_manuscript_v4_public.docx",
+  "source_manuscript_sha256": "8963aa225bcb437ec0231f965b182abe2722d0dfebd837410833a74610d36db8",
+  "source_supplement_sha256": "7f4626fcd4b8eeb365c02def28c3ddc89dd2be0ad57033bb08f95a7a81d62048",
+  "authors": [
+    {
+      "name": "Haoze Lan",
+      "order": 1,
+      "corresponding": true,
+      "email": "478283902@qq.com",
+      "affiliation": "College of Artificial Intelligence Medicine, Chongqing Medical University, Chongqing, China",
+      "orcid": "https://orcid.org/0009-0008-5089-5902"
+    },
+    {
+      "name": "Ziyuan Zhu",
+      "order": 2,
+      "corresponding": false,
+      "email": "zzy2630816871@gmail.com",
+      "affiliation": "College of Artificial Intelligence Medicine, Chongqing Medical University, Chongqing, China"
+    }
+  ],
+  "confirmed_funding": "None declared.",
+  "confirmed_conflicts": "The authors state no conflict of interest.",
+  "originals_preserved": true,
+  "model_inference_rerun_in_this_revision": false,
+  "author_metadata_update": {
+    "date": "2026-11-06",
+    "source": "User confirmation in this chat",
+    "main_manuscript": "BMT_main_manuscript_v6.docx",
+    "scientific_results_changed": false
+  }
+}

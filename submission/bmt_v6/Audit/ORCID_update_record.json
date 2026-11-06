@@ -1,0 +1,29 @@
+{
+  "author": "Haoze Lan",
+  "orcid": "https://orcid.org/0009-0008-5089-5902",
+  "checksum_valid": true,
+  "mapping_basis": "User confirmation; public ORCID page displays Haoze Lan",
+  "affiliation": "College of Artificial Intelligence Medicine, Chongqing Medical University, Chongqing, China",
+  "affiliation_basis": "User explicitly confirmed both authors have the same affiliation",
+  "second_author": "Ziyuan Zhu",
+  "second_author_orcid_provided": false,
+  "scientific_results_changed": false,
+  "documents_updated": [
+    {
+      "file": "BMT_author_confirmation_required.docx",
+      "paragraph_or_cell_updates": 1
+    },
+    {
+      "file": "BMT_main_manuscript_v6.docx",
+      "paragraph_or_cell_updates": 1
+    },
+    {
+      "file": "BMT_revision_report.docx",
+      "paragraph_or_cell_updates": 1
+    },
+    {
+      "file": "BMT_submission_checklist.docx",
+      "paragraph_or_cell_updates": 3
+    }
+  ]
+}

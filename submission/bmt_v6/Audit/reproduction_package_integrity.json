@@ -1,0 +1,167 @@
+{
+  "zip_sha256": "2ad78423bbfa8a714f1f237da1b35506f61e418ee6e0185a4aca83ac17050f2a",
+  "crc_test": null,
+  "zip_files": [
+    {
+      "file": "README.md",
+      "matches_directory": true,
+      "sha256": "64e090ce3bd0f48c9d7e07a3df508f8cb206f29684aaf0c23b7edb6a894d865c"
+    },
+    {
+      "file": "manifests/breast_external.csv",
+      "matches_directory": true,
+      "sha256": "33db74c60e8ce242f82f5efcd1007c08151e6faf359a6204f68a251791dbda22"
+    },
+    {
+      "file": "manifests/busbra_development.csv",
+      "matches_directory": true,
+      "sha256": "6db10ea5bae1095dba26ce70b3b376ad1390c94de1645c546320310de8d55274"
+    },
+    {
+      "file": "manifests/busbra_internal_holdout.csv",
+      "matches_directory": true,
+      "sha256": "2727d11d0db4f41ddd70a915576e5273a9d0ecbd735f151ae2ae710d0963a026"
+    },
+    {
+      "file": "records/development_cases.csv",
+      "matches_directory": true,
+      "sha256": "3c1375a5546a3af48de72339cc6a519f1f981d5431a38fcd2ccc6765ec43a9ce"
+    },
+    {
+      "file": "records/validation_cases.csv",
+      "matches_directory": true,
+      "sha256": "6ac44d3d3557caceba1e47dab4f87bc3b180568195c0d0ecb6506fbb04d07961"
+    },
+    {
+      "file": "reference/primary.json",
+      "matches_directory": true,
+      "sha256": "8ec31efd157814246d1a0ef46549090645381ea9df3382c6fab93156044e9a79"
+    },
+    {
+      "file": "reference/supplementary.json",
+      "matches_directory": true,
+      "sha256": "ee187cb902e1de7967379bc505cbd98811bc637f296cde29adb66be12e74733c"
+    },
+    {
+      "file": "reproduce.py",
+      "matches_directory": true,
+      "sha256": "f982dfffc0ae3954d81cc23a46cef4098daf869b188ab411263292560576c868"
+    },
+    {
+      "file": "review_curve_counts.csv",
+      "matches_directory": true,
+      "sha256": "61ffd66077894d50db20c2a6436876219676ed414232b7b8fc66a652803003c2"
+    },
+    {
+      "file": "score_images.py",
+      "matches_directory": true,
+      "sha256": "00086ee2db464e8e3080c2a2a02fc9d0a5e670ac03f9716e5ea1eb666d4bcbf8"
+    },
+    {
+      "file": "study_lock.json",
+      "matches_directory": true,
+      "sha256": "91189487ed1fa5328f33e5db4094f846f5619d73924329577f6a0d9e05ffc7d0"
+    },
+    {
+      "file": "study_statistics.py",
+      "matches_directory": true,
+      "sha256": "d74c6de1d41bb27c337981024d256c398bd0426bf90dab23f2be23798d5d2128"
+    },
+    {
+      "file": "verification.json",
+      "matches_directory": true,
+      "sha256": "87547d3c2060eefa606d98bb952b02c494288687f47d5e69305abc0aa376b4bf"
+    },
+    {
+      "file": "SHA256SUMS.txt",
+      "matches_directory": true,
+      "sha256": "e50e9cc69f734db66c02a21aea597aae953afe0e0ce1f90e793f845f4f271087"
+    }
+  ],
+  "package_sha256sums": [
+    {
+      "file": "README.md",
+      "expected": "64e090ce3bd0f48c9d7e07a3df508f8cb206f29684aaf0c23b7edb6a894d865c",
+      "actual": "64e090ce3bd0f48c9d7e07a3df508f8cb206f29684aaf0c23b7edb6a894d865c",
+      "matches": true
+    },
+    {
+      "file": "manifests/breast_external.csv",
+      "expected": "33db74c60e8ce242f82f5efcd1007c08151e6faf359a6204f68a251791dbda22",
+      "actual": "33db74c60e8ce242f82f5efcd1007c08151e6faf359a6204f68a251791dbda22",
+      "matches": true
+    },
+    {
+      "file": "manifests/busbra_development.csv",
+      "expected": "6db10ea5bae1095dba26ce70b3b376ad1390c94de1645c546320310de8d55274",
+      "actual": "6db10ea5bae1095dba26ce70b3b376ad1390c94de1645c546320310de8d55274",
+      "matches": true
+    },
+    {
+      "file": "manifests/busbra_internal_holdout.csv",
+      "expected": "2727d11d0db4f41ddd70a915576e5273a9d0ecbd735f151ae2ae710d0963a026",
+      "actual": "2727d11d0db4f41ddd70a915576e5273a9d0ecbd735f151ae2ae710d0963a026",
+      "matches": true
+    },
+    {
+      "file": "records/development_cases.csv",
+      "expected": "3c1375a5546a3af48de72339cc6a519f1f981d5431a38fcd2ccc6765ec43a9ce",
+      "actual": "3c1375a5546a3af48de72339cc6a519f1f981d5431a38fcd2ccc6765ec43a9ce",
+      "matches": true
+    },
+    {
+      "file": "records/validation_cases.csv",
+      "expected": "6ac44d3d3557caceba1e47dab4f87bc3b180568195c0d0ecb6506fbb04d07961",
+      "actual": "6ac44d3d3557caceba1e47dab4f87bc3b180568195c0d0ecb6506fbb04d07961",
+      "matches": true
+    },
+    {
+      "file": "reference/primary.json",
+      "expected": "8ec31efd157814246d1a0ef46549090645381ea9df3382c6fab93156044e9a79",
+      "actual": "8ec31efd157814246d1a0ef46549090645381ea9df3382c6fab93156044e9a79",
+      "matches": true
+    },
+    {
+      "file": "reference/supplementary.json",
+      "expected": "ee187cb902e1de7967379bc505cbd98811bc637f296cde29adb66be12e74733c",
+      "actual": "ee187cb902e1de7967379bc505cbd98811bc637f296cde29adb66be12e74733c",
+      "matches": true
+    },
+    {
+      "file": "reproduce.py",
+      "expected": "f982dfffc0ae3954d81cc23a46cef4098daf869b188ab411263292560576c868",
+      "actual": "f982dfffc0ae3954d81cc23a46cef4098daf869b188ab411263292560576c868",
+      "matches": true
+    },
+    {
+      "file": "review_curve_counts.csv",
+      "expected": "61ffd66077894d50db20c2a6436876219676ed414232b7b8fc66a652803003c2",
+      "actual": "61ffd66077894d50db20c2a6436876219676ed414232b7b8fc66a652803003c2",
+      "matches": true
+    },
+    {
+      "file": "score_images.py",
+      "expected": "00086ee2db464e8e3080c2a2a02fc9d0a5e670ac03f9716e5ea1eb666d4bcbf8",
+      "actual": "00086ee2db464e8e3080c2a2a02fc9d0a5e670ac03f9716e5ea1eb666d4bcbf8",
+      "matches": true
+    },
+    {
+      "file": "study_lock.json",
+      "expected": "91189487ed1fa5328f33e5db4094f846f5619d73924329577f6a0d9e05ffc7d0",
+      "actual": "91189487ed1fa5328f33e5db4094f846f5619d73924329577f6a0d9e05ffc7d0",
+      "matches": true
+    },
+    {
+      "file": "study_statistics.py",
+      "expected": "d74c6de1d41bb27c337981024d256c398bd0426bf90dab23f2be23798d5d2128",
+      "actual": "d74c6de1d41bb27c337981024d256c398bd0426bf90dab23f2be23798d5d2128",
+      "matches": true
+    },
+    {
+      "file": "verification.json",
+      "expected": "87547d3c2060eefa606d98bb952b02c494288687f47d5e69305abc0aa376b4bf",
+      "actual": "87547d3c2060eefa606d98bb952b02c494288687f47d5e69305abc0aa376b4bf",
+      "matches": true
+    }
+  ]
+}

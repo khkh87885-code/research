@@ -1,0 +1,77 @@
+{
+  "source_commit": "592566b4c5f39e261c676eb034139a974e9cdfd5",
+  "unit": "one initial prediction and four shifted predictions per unique scored study image",
+  "unique_images": 1316,
+  "initial_predictions": 1316,
+  "perturbation_predictions": 5264,
+  "initial_empty_evidence": "Direct archived initial_mask_empty flag.",
+  "perturbation_empty_evidence": "Logical determination from nonempty initial predictions and strictly positive Dice against every shifted prediction. Positive Dice entails a nonempty shifted prediction. Per-shift emptiness flags and foreground pixel counts are not stored.",
+  "cohorts": {
+    "development": {
+      "images": 213,
+      "initial_empty_direct_count": 0,
+      "perturbation_predictions": 852,
+      "perturbation_empty_count_logically_determined": 0,
+      "minimum_consistency_dice": 0.009082652134423252,
+      "per_direction_minimum_consistency_dice": {
+        "left": 0.009082652134423252,
+        "right": 0.08162022232373992,
+        "up": 0.28306326901095946,
+        "down": 0.45982142857142855
+      },
+      "zero_reference_dice_cases": [
+        {
+          "patient_id": "905",
+          "image_id": "bus_0905-l",
+          "dice_vs_reference": "0.0",
+          "initial_mask_empty": "0",
+          "risk_A": "0.21855592727661133",
+          "risk_B": "0.11248477002741397"
+        }
+      ],
+      "maximum_risk_B_formula_difference": 1.1102230246251565e-16
+    },
+    "internal_holdout": {
+      "images": 851,
+      "initial_empty_direct_count": 0,
+      "perturbation_predictions": 3404,
+      "perturbation_empty_count_logically_determined": 0,
+      "minimum_consistency_dice": 0.005981398886699167,
+      "per_direction_minimum_consistency_dice": {
+        "left": 0.08931116389548693,
+        "right": 0.19011882426516574,
+        "up": 0.005981398886699167,
+        "down": 0.048658481127785355
+      },
+      "zero_reference_dice_cases": [],
+      "maximum_risk_B_formula_difference": 1.1102230246251565e-16
+    },
+    "external_test": {
+      "images": 252,
+      "initial_empty_direct_count": 0,
+      "perturbation_predictions": 1008,
+      "perturbation_empty_count_logically_determined": 0,
+      "minimum_consistency_dice": 8.910670527957229e-05,
+      "per_direction_minimum_consistency_dice": {
+        "left": 0.0001643925694558606,
+        "right": 8.910670527957229e-05,
+        "up": 0.03672257886380893,
+        "down": 0.002209741276125587
+      },
+      "zero_reference_dice_cases": [],
+      "maximum_risk_B_formula_difference": 1.1102230246251565e-16
+    }
+  },
+  "affected_by_empty_empty_convention": 0,
+  "sensitivity_analysis_required_for_observed_empty_empty_cases": false,
+  "original_data_modified": false,
+  "image_inference_rerun_in_this_audit": false,
+  "archived_rerun_row_count": 1316,
+  "sources": [
+    "reproducibility/records/development_cases.csv",
+    "reproducibility/records/validation_cases.csv",
+    "experiments/replication/image_rerun/scores.csv",
+    "reproducibility/score_images.py"
+  ],
+  "archived_rerun_empty_flags_and_consistency_values_exactly_match": true
+}

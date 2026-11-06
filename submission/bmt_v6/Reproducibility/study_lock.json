@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "study": "Cross-dataset evaluation of fixed review thresholds for SAM segmentation quality control in breast ultrasound",
+  "cohorts": {
+    "development": {
+      "dataset": "BUS-BRA",
+      "count": 213,
+      "manifest": "manifests/busbra_development.csv",
+      "archived_scores": "records/development_cases.csv"
+    },
+    "internal_holdout": {
+      "dataset": "BUS-BRA",
+      "count": 851,
+      "manifest": "manifests/busbra_internal_holdout.csv",
+      "archived_scores": "records/validation_cases.csv"
+    },
+    "external_test": {
+      "dataset": "BrEaST",
+      "count": 252,
+      "manifest": "manifests/breast_external.csv",
+      "archived_scores": "records/validation_cases.csv"
+    }
+  },
+  "files_sha256": {
+    "manifests/busbra_development.csv": "6db10ea5bae1095dba26ce70b3b376ad1390c94de1645c546320310de8d55274",
+    "manifests/busbra_internal_holdout.csv": "2727d11d0db4f41ddd70a915576e5273a9d0ecbd735f151ae2ae710d0963a026",
+    "manifests/breast_external.csv": "33db74c60e8ce242f82f5efcd1007c08151e6faf359a6204f68a251791dbda22",
+    "records/development_cases.csv": "3c1375a5546a3af48de72339cc6a519f1f981d5431a38fcd2ccc6765ec43a9ce",
+    "records/validation_cases.csv": "6ac44d3d3557caceba1e47dab4f87bc3b180568195c0d0ecb6506fbb04d07961",
+    "reference/primary.json": "8ec31efd157814246d1a0ef46549090645381ea9df3382c6fab93156044e9a79",
+    "reference/supplementary.json": "ee187cb902e1de7967379bc505cbd98811bc637f296cde29adb66be12e74733c"
+  },
+  "datasets": {
+    "BUS-BRA": {
+      "version": "1.0",
+      "doi": "10.5281/zenodo.8231412",
+      "archive": "BUSBRA.zip",
+      "archive_md5": "1f8b2be6476d58fc97bfb5e5a1ea9bab",
+      "archive_sha256": "ba3e6ed19cc37c682d8d39e25435bbf8a555a12cb7e641b5f2117685c95580ff"
+    },
+    "BrEaST": {
+      "version": "1",
+      "doi": "10.7937/9WKK-Q141",
+      "archive": "BrEaST-Lesions_USG-images_and_masks-Dec-15-2023.zip",
+      "archive_sha256": "c32e49cdfa54042e065582d0cb35978b5fc5e5b5e461b33bf773fb50cfdad355",
+      "source_workbook_sha256": "89a8874496a6f1f93960390b963f7369b90f7e72ee08a738f2d17e37f5eff8bf"
+    }
+  },
+  "threshold_lock": {
+    "locked_at": "2026-11-05T19:16:27+08:00",
+    "alert_operator": ">=",
+    "quality_reference": {
+      "metric": "Dice versus manual lesion contour",
+      "low_quality_operator": "<",
+      "cutoff": 0.7
+    },
+    "methods": {
+      "A": {
+        "score_column": "risk_A",
+        "score_definition": "1 minus the raw SAM predicted IoU for the initial mask",
+        "threshold": 0.13705134391784668,
+        "development_review_count": 43,
+        "development_review_fraction": 0.20187793427230047,
+        "development_low_quality_detected": 19
+      },
+      "B": {
+        "score_column": "risk_B",
+        "score_definition": "1 minus the mean Dice of the initial mask compared with the four perturbed masks",
+        "threshold": 0.06972856653991777,
+        "development_review_count": 43,
+        "development_review_fraction": 0.20187793427230047,
+        "development_low_quality_detected": 17
+      }
+    },
+    "calibration": {
+      "dataset": "BUS-BRA",
+      "split": "development",
+      "patients": 213,
+      "low_quality_count": 24,
+      "review_target_fraction": 0.2,
+      "tie_rule": "Include all scores equal to the cutoff. Prefer fewer reviews if equally close to the target."
+    },
+    "model": {
+      "name": "SAM ViT-B",
+      "source_commit": "dca509fe793f601edb92606367a655c15ac00fdf",
+      "source_repository": "https://github.com/facebookresearch/segment-anything",
+      "weight_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+      "weight_dtype": "torch.float32",
+      "python": "3.8.20",
+      "torch": "2.4.1+cu118",
+      "prompt_box_expansion_per_side": 0.1,
+      "prompt_box_shift_fraction": 0.05,
+      "perturbation_directions": [
+        "left",
+        "right",
+        "up",
+        "down"
+      ],
+      "multimask_output": false
+    }
+  },
+  "external_alpha_changed_ids": [
+    5,
+    11,
+    77,
+    101,
+    112,
+    144,
+    215,
+    216
+  ],
+  "external_eligibility": {
+    "official_cases": 256,
+    "excluded_normal_case_ids_without_main_mask": [
+      45,
+      61,
+      209,
+      213
+    ],
+    "other_mask_files_outside_primary_reference": 14,
+    "exact_cross_dataset_duplicates": []
+  },
+  "environment": {
+    "python": "3.8.20",
+    "torch": "2.4.1+cu118",
+    "torchvision": "0.19.1+cu118",
+    "pillow": "10.4.0",
+    "numpy": "1.24.4",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU"
+  },
+  "analysis_python": "3.12.14",
+  "original_record_sha256": {
+    "threshold_lock": "67395cc2c1c882ed4aabdd80ac9e614a3e100b42eaae0d0e55e8a24ac256f655",
+    "external_lock": "12c58755408f397f67f656b8a3ca89125ad4e0478590ad23bd8f3a03524f127c",
+    "validation_summary": "417a989469b5b2858eec5f7e16e5462b23558e592733367b0dc75e58b180813b",
+    "primary_analysis": "ac02d8eccdca6983b34700256c55492548bab98e9193b4f6bad302ebda5b24df",
+    "supplementary_analysis": "6e72596183ca108dc077a2a25ce3e53dde4ded29b3019c026502498c7e7ff4ab",
+    "primary_analysis_script": "0c22e27b2cb2fdd71fdc23893d8e6842d0c121b4dbfdbd863d89804fdf5ee909",
+    "supplementary_analysis_script": "301e9b13bc14cd6b4b792cf326def43b67756be178b4a54ec063be4fa0068e1c"
+  }
+}

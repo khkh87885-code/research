@@ -312,6 +312,11 @@
       "sha256": "928a225b0aa28b93459931c5a1da9ad78a93e477204c577413a69ca795670a96"
     },
     {
+      "path": "Audit/editorial cleanup.json",
+      "bytes": 1641,
+      "sha256": "f023e92163b9b68a7e69a5d28d1ebc4678ea7928fe260c1dac0d74575adc22ee"
+    },
+    {
       "path": "Audit/file_naming/independent_naming_qa.json",
       "bytes": 27634,
       "sha256": "0a7b307205c323d9ecd381b2d1b986e3ab96209fe4e719bf774411417576227c"
@@ -418,8 +423,8 @@
     },
     {
       "path": "Breast Ultrasound Quality Control Cover Letter.docx",
-      "bytes": 39538,
-      "sha256": "0bbdb5825fcb7810114e86b2a5378ff95979b8dc1f0e0e9ea5220dd9cf95704f"
+      "bytes": 39534,
+      "sha256": "d7e71aa18a947c9db2f7ccc021ecd49176d0d1a3ce1ab25751fb559625c2f3bd"
     },
     {
       "path": "Breast Ultrasound Quality Control Data and Code Availability.docx",
@@ -428,8 +433,8 @@
     },
     {
       "path": "Breast Ultrasound Quality Control Ethical and Legal Declarations.docx",
-      "bytes": 26354,
-      "sha256": "575564276f29f046559b5bc8f2b04926ad9d550249e096bd6d0fb9a5a2e50162"
+      "bytes": 26374,
+      "sha256": "eb81b342cf5a8356b3c94f2fcf61db0bda8df7c586b22b423a3d025cd9547673"
     },
     {
       "path": "Breast Ultrasound Quality Control Figures.pdf",
@@ -474,7 +479,7 @@
     {
       "path": "Breast Ultrasound Quality Control Submission Guide.md",
       "bytes": 1609,
-      "sha256": "0fed049772364149ed6299cd473f03339e89b2f9785807d09851c9edeca8407b"
+      "sha256": "b2cb6fff7fcba36e4d9f4ffedb13946c9adc1a9b1253d5499a484283f2cde0c9"
     },
     {
       "path": "Breast Ultrasound Quality Control Supplementary Figure S6.pdf",

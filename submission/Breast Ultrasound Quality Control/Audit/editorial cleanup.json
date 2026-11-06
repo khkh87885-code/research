@@ -1,0 +1,33 @@
+{
+  "scope": "Editorial preparation only; manuscript, scientific results and author declaration facts retained",
+  "source_commit": "f7989b5a09216087ad3d982978c42a28df73a86d",
+  "changes": [
+    {
+      "file": "Breast Ultrasound Quality Control Cover Letter.docx",
+      "change": "Use initial-submission wording: This manuscript uses this distinction."
+    },
+    {
+      "file": "Breast Ultrasound Quality Control Ethical and Legal Declarations.docx",
+      "change": "Acknowledgments cross-references the complete AI statement below; all other declaration rows unchanged."
+    },
+    {
+      "file": "Breast Ultrasound Quality Control Submission Guide.md",
+      "change": "Correct Figure 5 attachment name to the existing filename with spaces."
+    }
+  ],
+  "independent_review": "PASS: specified edits verified and all other declaration rows retained",
+  "files": {
+    "Breast Ultrasound Quality Control Cover Letter.docx": {
+      "before_sha256": "0bbdb5825fcb7810114e86b2a5378ff95979b8dc1f0e0e9ea5220dd9cf95704f",
+      "after_sha256": "d7e71aa18a947c9db2f7ccc021ecd49176d0d1a3ce1ab25751fb559625c2f3bd"
+    },
+    "Breast Ultrasound Quality Control Ethical and Legal Declarations.docx": {
+      "before_sha256": "575564276f29f046559b5bc8f2b04926ad9d550249e096bd6d0fb9a5a2e50162",
+      "after_sha256": "eb81b342cf5a8356b3c94f2fcf61db0bda8df7c586b22b423a3d025cd9547673"
+    },
+    "Breast Ultrasound Quality Control Submission Guide.md": {
+      "before_sha256": "0fed049772364149ed6299cd473f03339e89b2f9785807d09851c9edeca8407b",
+      "after_sha256": "b2cb6fff7fcba36e4d9f4ffedb13946c9adc1a9b1253d5499a484283f2cde0c9"
+    }
+  }
+}

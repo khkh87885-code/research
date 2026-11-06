@@ -7,7 +7,7 @@
 | 系统类别 | 文件 |
 | --- | --- |
 | Main Document | Breast Ultrasound Quality Control Manuscript.docx |
-| Figures | Figures/Breast Ultrasound Quality Control Figure 1.png 至 Breast Ultrasound Quality Control_Figure_5.png，分别上传 |
+| Figures | Figures/Breast Ultrasound Quality Control Figure 1.png 至 Breast Ultrasound Quality Control Figure 5.png，分别上传 |
 | Cover Letter | Breast Ultrasound Quality Control Cover Letter.docx |
 | Ethical and Legal Declarations | Breast Ultrasound Quality Control Ethical and Legal Declarations.docx |
 | Supplementary Material 1 | Breast Ultrasound Quality Control Supplementary Material.docx |

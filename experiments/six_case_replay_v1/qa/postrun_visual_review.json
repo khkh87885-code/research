@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "reviewed_at_utc": "2026-11-06T09:53:35.466909+00:00",
+  "method": "Direct visual inspection of decoded PNG preview, independently rendered PDF, and full-resolution case175 prediction crop.",
+  "png_sha256": "d08f38d778a725357556fd3da02dfe5c7840947affa51934a07d9073d192718a",
+  "pdf_sha256": "60d1f163a36c59de0f9f043cd23585661ecadcb879d04828e588d6218eae9148",
+  "observations": [
+    "Six distinct rows match case089, case175, case238, case024, case105, case222 in the documented archived-group order.",
+    "All 18 panels are present; images have consistent orientation and per-case linkage.",
+    "Cyan prompt rectangles, green released references and orange actual captured predictions appear in their labelled columns.",
+    "All six case identifiers, group labels and rerun metric titles are legible without clipping or overlap.",
+    "Case175 actual initial mask is a narrow upper-edge band plus small components (3861 foreground pixels; XYXY bbox [173,0,617,89]; 444 top-row pixels); full-resolution crop confirms the orange contour. It is not empty.",
+    "Case105 and case222 show fragmented orange contours corresponding to actual masks; no visual smoothing or anatomical correction was applied."
+  ],
+  "nonblocking_note": "Top-border predictions can look small at fit-page scale; inspect the original 300dpi PNG/PDF or the saved case175 crop for detail.",
+  "visual_artifacts": [
+    "qa/prediction_sheet_visual_preview.jpg",
+    "qa/prediction_pdf_render.png",
+    "qa/case175_prediction_display_crop.png"
+  ]
+}

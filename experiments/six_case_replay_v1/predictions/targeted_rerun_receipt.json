@@ -1,0 +1,617 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-11-06T09:49:40.479749+00:00",
+  "scope": "Only the six archived external A-missed cases; not a full-cohort rerun",
+  "checkpoint_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+  "sam_source_commit": "dca509fe793f601edb92606367a655c15ac00fdf",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "torch": "2.4.1+cpu",
+    "torchvision": "0.19.1+cpu",
+    "numpy": "1.26.4",
+    "pillow": "10.4.0",
+    "device": "cpu",
+    "threads": 2,
+    "gpu_name": null,
+    "cuda_runtime": null,
+    "weight_dtype": "torch.float32",
+    "original_environment": {
+      "python": "3.8.20",
+      "torch": "2.4.1+cu118",
+      "torchvision": "0.19.1+cu118",
+      "pillow": "10.4.0",
+      "numpy": "1.24.4",
+      "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU"
+    },
+    "same_environment_as_original": false
+  },
+  "cases": [
+    {
+      "image_id": "case089",
+      "patient_id": "89",
+      "archived_group": "both_missed",
+      "pathology": "malignant",
+      "archived": {
+        "dice_vs_reference": 0.31905665492003255,
+        "sam_predicted_iou": 0.8959280848503113,
+        "risk_A": 0.10407191514968872,
+        "risk_B": 0.041040683630957586,
+        "dice_shift_left": 0.9750178443968593,
+        "dice_shift_right": 0.9761727475800447,
+        "dice_shift_up": 0.9496002780674313,
+        "dice_shift_down": 0.9350463954318344
+      },
+      "rerun": {
+        "dice_vs_reference": 0.31909990511047853,
+        "sam_predicted_iou": 0.8959192037582397,
+        "risk_A": 0.10408079624176025,
+        "risk_B": 0.041227634448447126,
+        "dice_shift_left": 0.9746519100321314,
+        "dice_shift_right": 0.976536312849162,
+        "dice_shift_up": 0.9492350486787204,
+        "dice_shift_down": 0.9346661906461978
+      },
+      "comparison": {
+        "dice_vs_reference": {
+          "archived": 0.31905665492003255,
+          "rerun": 0.31909990511047853,
+          "difference": 4.325019044598699e-05,
+          "exact_match": false
+        },
+        "sam_predicted_iou": {
+          "archived": 0.8959280848503113,
+          "rerun": 0.8959192037582397,
+          "difference": -8.881092071533203e-06,
+          "exact_match": false
+        },
+        "risk_A": {
+          "archived": 0.10407191514968872,
+          "rerun": 0.10408079624176025,
+          "difference": 8.881092071533203e-06,
+          "exact_match": false
+        },
+        "risk_B": {
+          "archived": 0.041040683630957586,
+          "rerun": 0.041227634448447126,
+          "difference": 0.00018695081748953957,
+          "exact_match": false
+        },
+        "dice_shift_left": {
+          "archived": 0.9750178443968593,
+          "rerun": 0.9746519100321314,
+          "difference": -0.00036593436472798224,
+          "exact_match": false
+        },
+        "dice_shift_right": {
+          "archived": 0.9761727475800447,
+          "rerun": 0.976536312849162,
+          "difference": 0.00036356526911729414,
+          "exact_match": false
+        },
+        "dice_shift_up": {
+          "archived": 0.9496002780674313,
+          "rerun": 0.9492350486787204,
+          "difference": -0.00036522938871086374,
+          "exact_match": false
+        },
+        "dice_shift_down": {
+          "archived": 0.9350463954318344,
+          "rerun": 0.9346661906461978,
+          "difference": -0.0003802047856366064,
+          "exact_match": false
+        }
+      },
+      "rerun_flags": {
+        "alert_A": 0,
+        "alert_B": 0
+      },
+      "archived_flags": {
+        "alert_A": 0,
+        "alert_B": 0
+      },
+      "flags_match": true,
+      "rerun_low_quality": true,
+      "low_quality_label_match": true,
+      "prediction_pixel_counts": [
+        1365,
+        1436,
+        1320,
+        1511,
+        1436
+      ],
+      "elapsed_seconds_current_environment": 9.003611422000176,
+      "artifact": "case089_targeted_rerun.npz",
+      "artifact_sha256": "4fd0f1a7b3167eaf99ea5d7e2543186ee457d073e66ef76618f306180be84f51"
+    },
+    {
+      "image_id": "case175",
+      "patient_id": "175",
+      "archived_group": "both_missed",
+      "pathology": "benign",
+      "archived": {
+        "dice_vs_reference": 0.02928704996181095,
+        "sam_predicted_iou": 0.8850563764572144,
+        "risk_A": 0.11494362354278564,
+        "risk_B": 0.020059290176363098,
+        "dice_shift_left": 0.9873385343394296,
+        "dice_shift_right": 0.9941383352872216,
+        "dice_shift_up": 0.9981837052413077,
+        "dice_shift_down": 0.9401022644265887
+      },
+      "rerun": {
+        "dice_vs_reference": 0.02928704996181095,
+        "sam_predicted_iou": 0.8850583434104919,
+        "risk_A": 0.11494165658950806,
+        "risk_B": 0.020034547593127616,
+        "dice_shift_left": 0.9873385343394296,
+        "dice_shift_right": 0.9941383352872216,
+        "dice_shift_up": 0.9980537173997664,
+        "dice_shift_down": 0.9403312226010716
+      },
+      "comparison": {
+        "dice_vs_reference": {
+          "archived": 0.02928704996181095,
+          "rerun": 0.02928704996181095,
+          "difference": 0.0,
+          "exact_match": true
+        },
+        "sam_predicted_iou": {
+          "archived": 0.8850563764572144,
+          "rerun": 0.8850583434104919,
+          "difference": 1.9669532775878906e-06,
+          "exact_match": false
+        },
+        "risk_A": {
+          "archived": 0.11494362354278564,
+          "rerun": 0.11494165658950806,
+          "difference": -1.9669532775878906e-06,
+          "exact_match": false
+        },
+        "risk_B": {
+          "archived": 0.020059290176363098,
+          "rerun": 0.020034547593127616,
+          "difference": -2.4742583235481952e-05,
+          "exact_match": false
+        },
+        "dice_shift_left": {
+          "archived": 0.9873385343394296,
+          "rerun": 0.9873385343394296,
+          "difference": 0.0,
+          "exact_match": true
+        },
+        "dice_shift_right": {
+          "archived": 0.9941383352872216,
+          "rerun": 0.9941383352872216,
+          "difference": 0.0,
+          "exact_match": true
+        },
+        "dice_shift_up": {
+          "archived": 0.9981837052413077,
+          "rerun": 0.9980537173997664,
+          "difference": -0.00012998784154127918,
+          "exact_match": false
+        },
+        "dice_shift_down": {
+          "archived": 0.9401022644265887,
+          "rerun": 0.9403312226010716,
+          "difference": 0.00022895817448287392,
+          "exact_match": false
+        }
+      },
+      "rerun_flags": {
+        "alert_A": 0,
+        "alert_B": 0
+      },
+      "archived_flags": {
+        "alert_A": 0,
+        "alert_B": 0
+      },
+      "flags_match": true,
+      "rerun_low_quality": true,
+      "low_quality_label_match": true,
+      "prediction_pixel_counts": [
+        3861,
+        3958,
+        3816,
+        3846,
+        4351
+      ],
+      "elapsed_seconds_current_environment": 8.14386539500083,
+      "artifact": "case175_targeted_rerun.npz",
+      "artifact_sha256": "4eed039771a9bb640c712ecdae7b3b79896a4909eb69b5c840123714385e549e"
+    },
+    {
+      "image_id": "case238",
+      "patient_id": "238",
+      "archived_group": "both_missed",
+      "pathology": "malignant",
+      "archived": {
+        "dice_vs_reference": 0.681269798476781,
+        "sam_predicted_iou": 0.9610910415649414,
+        "risk_A": 0.038908958435058594,
+        "risk_B": 0.005765972428081634,
+        "dice_shift_left": 0.9945860813072153,
+        "dice_shift_right": 0.9932013006207508,
+        "dice_shift_up": 0.9919259551004332,
+        "dice_shift_down": 0.997222773259274
+      },
+      "rerun": {
+        "dice_vs_reference": 0.681269798476781,
+        "sam_predicted_iou": 0.9610817432403564,
+        "risk_A": 0.038918256759643555,
+        "risk_B": 0.005717084876207479,
+        "dice_shift_left": 0.9945860813072153,
+        "dice_shift_right": 0.9932991722506898,
+        "dice_shift_up": 0.9920236336779912,
+        "dice_shift_down": 0.997222773259274
+      },
+      "comparison": {
+        "dice_vs_reference": {
+          "archived": 0.681269798476781,
+          "rerun": 0.681269798476781,
+          "difference": 0.0,
+          "exact_match": true
+        },
+        "sam_predicted_iou": {
+          "archived": 0.9610910415649414,
+          "rerun": 0.9610817432403564,
+          "difference": -9.298324584960938e-06,
+          "exact_match": false
+        },
+        "risk_A": {
+          "archived": 0.038908958435058594,
+          "rerun": 0.038918256759643555,
+          "difference": 9.298324584960938e-06,
+          "exact_match": false
+        },
+        "risk_B": {
+          "archived": 0.005765972428081634,
+          "rerun": 0.005717084876207479,
+          "difference": -4.8887551874154944e-05,
+          "exact_match": false
+        },
+        "dice_shift_left": {
+          "archived": 0.9945860813072153,
+          "rerun": 0.9945860813072153,
+          "difference": 0.0,
+          "exact_match": true
+        },
+        "dice_shift_right": {
+          "archived": 0.9932013006207508,
+          "rerun": 0.9932991722506898,
+          "difference": 9.787162993890597e-05,
+          "exact_match": false
+        },
+        "dice_shift_up": {
+          "archived": 0.9919259551004332,
+          "rerun": 0.9920236336779912,
+          "difference": 9.767857755793585e-05,
+          "exact_match": false
+        },
+        "dice_shift_down": {
+          "archived": 0.997222773259274,
+          "rerun": 0.997222773259274,
+          "difference": 0.0,
+          "exact_match": true
+        }
+      },
+      "rerun_flags": {
+        "alert_A": 0,
+        "alert_B": 0
+      },
+      "archived_flags": {
+        "alert_A": 0,
+        "alert_B": 0
+      },
+      "flags_match": true,
+      "rerun_low_quality": true,
+      "low_quality_label_match": true,
+      "prediction_pixel_counts": [
+        5054,
+        5105,
+        5094,
+        5101,
+        5028
+      ],
+      "elapsed_seconds_current_environment": 8.10977367399937,
+      "artifact": "case238_targeted_rerun.npz",
+      "artifact_sha256": "e692e958d61e11b92c7b38c0569eb8a2aafd16d8b34af49be56a0259fe6b12e3"
+    },
+    {
+      "image_id": "case024",
+      "patient_id": "24",
+      "archived_group": "B_only_detected",
+      "pathology": "benign",
+      "archived": {
+        "dice_vs_reference": 0.6851731222127574,
+        "sam_predicted_iou": 0.9454895257949829,
+        "risk_A": 0.05451047420501709,
+        "risk_B": 0.10999487585484258,
+        "dice_shift_left": 0.9646157688785281,
+        "dice_shift_right": 0.8373673036093419,
+        "dice_shift_up": 0.7872894258631697,
+        "dice_shift_down": 0.97074799822959
+      },
+      "rerun": {
+        "dice_vs_reference": 0.6851387914620704,
+        "sam_predicted_iou": 0.9454746842384338,
+        "risk_A": 0.05452531576156616,
+        "risk_B": 0.1100879581784645,
+        "dice_shift_left": 0.9645295587010825,
+        "dice_shift_right": 0.837218080588846,
+        "dice_shift_up": 0.7870720565843116,
+        "dice_shift_down": 0.970828471411902
+      },
+      "comparison": {
+        "dice_vs_reference": {
+          "archived": 0.6851731222127574,
+          "rerun": 0.6851387914620704,
+          "difference": -3.433075068703939e-05,
+          "exact_match": false
+        },
+        "sam_predicted_iou": {
+          "archived": 0.9454895257949829,
+          "rerun": 0.9454746842384338,
+          "difference": -1.4841556549072266e-05,
+          "exact_match": false
+        },
+        "risk_A": {
+          "archived": 0.05451047420501709,
+          "rerun": 0.05452531576156616,
+          "difference": 1.4841556549072266e-05,
+          "exact_match": false
+        },
+        "risk_B": {
+          "archived": 0.10999487585484258,
+          "rerun": 0.1100879581784645,
+          "difference": 9.308232362192914e-05,
+          "exact_match": false
+        },
+        "dice_shift_left": {
+          "archived": 0.9646157688785281,
+          "rerun": 0.9645295587010825,
+          "difference": -8.621017744558923e-05,
+          "exact_match": false
+        },
+        "dice_shift_right": {
+          "archived": 0.8373673036093419,
+          "rerun": 0.837218080588846,
+          "difference": -0.0001492230204959144,
+          "exact_match": false
+        },
+        "dice_shift_up": {
+          "archived": 0.7872894258631697,
+          "rerun": 0.7870720565843116,
+          "difference": -0.00021736927885818158,
+          "exact_match": false
+        },
+        "dice_shift_down": {
+          "archived": 0.97074799822959,
+          "rerun": 0.970828471411902,
+          "difference": 8.047318231196865e-05,
+          "exact_match": false
+        }
+      },
+      "rerun_flags": {
+        "alert_A": 0,
+        "alert_B": 1
+      },
+      "archived_flags": {
+        "alert_A": 0,
+        "alert_B": 1
+      },
+      "flags_match": true,
+      "rerun_low_quality": true,
+      "low_quality_label_match": true,
+      "prediction_pixel_counts": [
+        12316,
+        11704,
+        8878,
+        8043,
+        12537
+      ],
+      "elapsed_seconds_current_environment": 8.161971692001316,
+      "artifact": "case024_targeted_rerun.npz",
+      "artifact_sha256": "5ba9ca812255cd357232865f434cd2f1b8f287ce266c46bf23e3609d35d0b748"
+    },
+    {
+      "image_id": "case105",
+      "patient_id": "105",
+      "archived_group": "B_only_detected",
+      "pathology": "malignant",
+      "archived": {
+        "dice_vs_reference": 0.6545724575799206,
+        "sam_predicted_iou": 0.8975294828414917,
+        "risk_A": 0.1024705171585083,
+        "risk_B": 0.259670988417675,
+        "dice_shift_left": 0.24645641274462235,
+        "dice_shift_right": 0.9011731321852688,
+        "dice_shift_up": 0.9024845510451424,
+        "dice_shift_down": 0.9112019503542665
+      },
+      "rerun": {
+        "dice_vs_reference": 0.6545790284014119,
+        "sam_predicted_iou": 0.897526204586029,
+        "risk_A": 0.10247379541397095,
+        "risk_B": 0.26002996431242686,
+        "dice_shift_left": 0.24502097793432093,
+        "dice_shift_right": 0.9011574819557846,
+        "dice_shift_up": 0.9024874263301718,
+        "dice_shift_down": 0.9112142565300151
+      },
+      "comparison": {
+        "dice_vs_reference": {
+          "archived": 0.6545724575799206,
+          "rerun": 0.6545790284014119,
+          "difference": 6.570821491358458e-06,
+          "exact_match": false
+        },
+        "sam_predicted_iou": {
+          "archived": 0.8975294828414917,
+          "rerun": 0.897526204586029,
+          "difference": -3.2782554626464844e-06,
+          "exact_match": false
+        },
+        "risk_A": {
+          "archived": 0.1024705171585083,
+          "rerun": 0.10247379541397095,
+          "difference": 3.2782554626464844e-06,
+          "exact_match": false
+        },
+        "risk_B": {
+          "archived": 0.259670988417675,
+          "rerun": 0.26002996431242686,
+          "difference": 0.0003589758947518673,
+          "exact_match": false
+        },
+        "dice_shift_left": {
+          "archived": 0.24645641274462235,
+          "rerun": 0.24502097793432093,
+          "difference": -0.0014354348103014225,
+          "exact_match": false
+        },
+        "dice_shift_right": {
+          "archived": 0.9011731321852688,
+          "rerun": 0.9011574819557846,
+          "difference": -1.5650229484243106e-05,
+          "exact_match": false
+        },
+        "dice_shift_up": {
+          "archived": 0.9024845510451424,
+          "rerun": 0.9024874263301718,
+          "difference": 2.8752850294022636e-06,
+          "exact_match": false
+        },
+        "dice_shift_down": {
+          "archived": 0.9112019503542665,
+          "rerun": 0.9112142565300151,
+          "difference": 1.2306175748544312e-05,
+          "exact_match": false
+        }
+      },
+      "rerun_flags": {
+        "alert_A": 0,
+        "alert_B": 1
+      },
+      "archived_flags": {
+        "alert_A": 0,
+        "alert_B": 1
+      },
+      "flags_match": true,
+      "rerun_low_quality": true,
+      "low_quality_label_match": true,
+      "prediction_pixel_counts": [
+        271052,
+        37844,
+        256818,
+        263597,
+        245371
+      ],
+      "elapsed_seconds_current_environment": 7.906890463000309,
+      "artifact": "case105_targeted_rerun.npz",
+      "artifact_sha256": "8c83a723f77528bc9257eb86d18c9cc68ef6d7a43da4a061e81c775c1dce9a72"
+    },
+    {
+      "image_id": "case222",
+      "patient_id": "222",
+      "archived_group": "B_only_detected",
+      "pathology": "benign",
+      "archived": {
+        "dice_vs_reference": 0.5783684997507892,
+        "sam_predicted_iou": 0.8730125427246094,
+        "risk_A": 0.12698745727539062,
+        "risk_B": 0.20174328563188249,
+        "dice_shift_left": 0.6491910317346008,
+        "dice_shift_right": 0.838277353629423,
+        "dice_shift_up": 0.8716466263784188,
+        "dice_shift_down": 0.8339118457300275
+      },
+      "rerun": {
+        "dice_vs_reference": 0.5784646061814557,
+        "sam_predicted_iou": 0.8729665279388428,
+        "risk_A": 0.12703347206115723,
+        "risk_B": 0.2017335833247771,
+        "dice_shift_left": 0.6492517006802722,
+        "dice_shift_right": 0.8383016949953902,
+        "dice_shift_up": 0.8715865043062082,
+        "dice_shift_down": 0.8339257667190213
+      },
+      "comparison": {
+        "dice_vs_reference": {
+          "archived": 0.5783684997507892,
+          "rerun": 0.5784646061814557,
+          "difference": 9.610643066648716e-05,
+          "exact_match": false
+        },
+        "sam_predicted_iou": {
+          "archived": 0.8730125427246094,
+          "rerun": 0.8729665279388428,
+          "difference": -4.601478576660156e-05,
+          "exact_match": false
+        },
+        "risk_A": {
+          "archived": 0.12698745727539062,
+          "rerun": 0.12703347206115723,
+          "difference": 4.601478576660156e-05,
+          "exact_match": false
+        },
+        "risk_B": {
+          "archived": 0.20174328563188249,
+          "rerun": 0.2017335833247771,
+          "difference": -9.70230710539699e-06,
+          "exact_match": false
+        },
+        "dice_shift_left": {
+          "archived": 0.6491910317346008,
+          "rerun": 0.6492517006802722,
+          "difference": 6.06689456713605e-05,
+          "exact_match": false
+        },
+        "dice_shift_right": {
+          "archived": 0.838277353629423,
+          "rerun": 0.8383016949953902,
+          "difference": 2.434136596718428e-05,
+          "exact_match": false
+        },
+        "dice_shift_up": {
+          "archived": 0.8716466263784188,
+          "rerun": 0.8715865043062082,
+          "difference": -6.012207221062216e-05,
+          "exact_match": false
+        },
+        "dice_shift_down": {
+          "archived": 0.8339118457300275,
+          "rerun": 0.8339257667190213,
+          "difference": 1.3920988993776362e-05,
+          "exact_match": false
+        }
+      },
+      "rerun_flags": {
+        "alert_A": 0,
+        "alert_B": 1
+      },
+      "archived_flags": {
+        "alert_A": 0,
+        "alert_B": 1
+      },
+      "flags_match": true,
+      "rerun_low_quality": true,
+      "low_quality_label_match": true,
+      "prediction_pixel_counts": [
+        42115,
+        20360,
+        42487,
+        38118,
+        30467
+      ],
+      "elapsed_seconds_current_environment": 10.286634137000874,
+      "artifact": "case222_targeted_rerun.npz",
+      "artifact_sha256": "457105cca958c3f386fa2b9969057e443b324cc51b30addaf3273a09ba32e0f9"
+    }
+  ],
+  "completed_at_utc": "2026-11-06T09:50:32.874758+00:00",
+  "all_flags_match": true,
+  "all_fields_exact": false,
+  "max_absolute_difference": 0.0014354348103014225
+}

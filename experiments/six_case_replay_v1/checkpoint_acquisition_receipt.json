@@ -1,0 +1,16 @@
+{
+  "requested_public_url": "https://github.com/ultralytics/assets/releases/download/v8.3.0/sam_b.pt",
+  "original_official_url": "https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth",
+  "final_host": "release-assets.githubusercontent.com",
+  "release_filename": "sam_b.pt",
+  "canonical_local_filename": "sam_vit_b_01ec64.pth",
+  "expected_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+  "actual_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+  "verified_exact_frozen_bytes": true,
+  "bytes": 375042383,
+  "content_length": "375042383",
+  "started_utc": "2026-11-06T09:48:24.316300+00:00",
+  "completed_utc": "2026-11-06T09:48:37.128209+00:00",
+  "download_seconds": 12.811922704999233,
+  "network_path": "Inherited proxy and CA verification; allowed GitHub release asset hosts; no policy changes"
+}

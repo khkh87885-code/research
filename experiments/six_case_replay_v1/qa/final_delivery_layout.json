@@ -1,0 +1,34 @@
+[
+  {
+    "file": "reports/six_case_replay_report_zh.pdf",
+    "pages": 2,
+    "page_checks": [
+      {
+        "page": 1,
+        "text_characters": 1310,
+        "out_of_page_words": []
+      },
+      {
+        "page": 2,
+        "text_characters": 669,
+        "out_of_page_words": []
+      }
+    ]
+  },
+  {
+    "file": "reports/six_case_contours_A4.pdf",
+    "pages": 2,
+    "page_checks": [
+      {
+        "page": 1,
+        "text_characters": 642,
+        "out_of_page_words": []
+      },
+      {
+        "page": 2,
+        "text_characters": 649,
+        "out_of_page_words": []
+      }
+    ]
+  }
+]

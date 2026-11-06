@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-11-06T09:49:18.788332+00:00",
+  "research_source_commit": "a739a6c06ffafec40ce9f3eb4c97d6b516f3fc84",
+  "script_source_path": "submission/bmt_v7/Analysis/external_case_audit.py",
+  "script_sha256": "2fa13777d6b4fae4a9711577c5dad4efa6550b2253c5aba1131372270b044acc",
+  "six_cases": [
+    "case089",
+    "case175",
+    "case238",
+    "case024",
+    "case105",
+    "case222"
+  ],
+  "initial_and_shifted_masks_per_case": 5,
+  "expected_captured_masks": 30,
+  "device": "cpu",
+  "threads": 2,
+  "precision": "float32",
+  "original_primary_scores_preserved": true,
+  "preflight": "qa/preflight_review.json"
+}

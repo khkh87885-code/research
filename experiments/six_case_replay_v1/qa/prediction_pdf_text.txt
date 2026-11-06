@@ -1,0 +1,30 @@
+case089 | both_missed
+Original + reference-derived prompt
+Released primary reference (green)
+Actual targeted rerun prediction (orange)
+Dice 0.3191; A 0.1041; B 0.0412
+case175 | both_missed
+Original + reference-derived prompt
+Released primary reference (green)
+Actual targeted rerun prediction (orange)
+Dice 0.0293; A 0.1149; B 0.0200
+case238 | both_missed
+Original + reference-derived prompt
+Released primary reference (green)
+Actual targeted rerun prediction (orange)
+Dice 0.6813; A 0.0389; B 0.0057
+case024 | B_only_detected
+Original + reference-derived prompt
+Released primary reference (green)
+Actual targeted rerun prediction (orange)
+Dice 0.6851; A 0.0545; B 0.1101
+case105 | B_only_detected
+Original + reference-derived prompt
+Released primary reference (green)
+Actual targeted rerun prediction (orange)
+Dice 0.6546; A 0.1025; B 0.2600
+case222 | B_only_detected
+Original + reference-derived prompt
+Released primary reference (green)
+Actual targeted rerun prediction (orange)
+Dice 0.5785; A 0.1270; B 0.2017

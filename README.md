@@ -10,13 +10,19 @@
 
 每位纳入患者固定使用一张图及对应参考掩膜。正式验证共 1,103 例。40 例预实验来自开发集。评分和复核均在回顾性模拟中进行。
 
+## 六例真实预测轮廓：已完成
+
+[两页A4轮廓图](experiments/six_case_replay_v1/reports/six_case_contours_A4.pdf) · [中文核验报告](experiments/six_case_replay_v1/reports/six_case_replay_report_zh.pdf) · [逐例对照与复现](experiments/six_case_replay_v1/README.md) · [完整结果包](experiments/BMT_six_case_replay_v1.zip)
+
+2026-11-06已取得与原SAM ViT-B检查点SHA-256完全一致的375,042,383字节权重，并实际完成六例CPU重放，保存6个NPZ内的30张预测掩膜。12个A/B复核决定与6个低质量标签全部匹配；初始参考Dice最大绝对差0.0000961064。总墙钟59.419秒，峰值RSS约3.15GiB。真实预测轮廓与独立核验均已交付，原研究评分和H1–H3保持不变；本轮CPU数组按新运行标注，不能声称为原CUDA数组的逐像素恢复。
+
 ## 最新修订：v7 作者批准归档版
 
 [主稿 Word](submission/bmt_v7/BMT_main_manuscript_v7.docx) · [主稿 PDF 预览](submission/bmt_v7/BMT_main_manuscript_v7_preview.pdf) · [完整包 ZIP](submission/BMT_revision_review_package_v7.zip) · [补充材料](submission/bmt_v7/BMT_supplementary_material_v3.docx) · [修订与核验报告](submission/bmt_v7/BMT_revision_report.md)
 
 v7增加事后良恶性诊断分层（S8）、全部六例外部漏检记录（S9），把检出率Wilson区间放入主表，统一百分号/补表样式，并纠正官方指南日期及至少5名审稿人的审计记录。作者页采用缙云校区地址与作者最新确认的通讯邮编400016（官方401331来源记录保留）；法定免审与人工核验由作者确认，原始官方声明表单已填入。两位作者已明确批准本版并承担全文责任，主稿无作者确认占位。
 
-本次没有执行期刊投稿。六例初始预测掩膜不在可访问归档中，因此未伪造预测图；已提供真实病例表、原图/参考辅助图和精确模型复跑脚本。所有原始评分、锁定阈值与预设主要比较保持不变。科学范围、AI使用流程及仍需实际投稿时核对的事项见修订报告。
+v7制作时提供了六例病例表、原图/参考辅助图和精确复跑脚本。随后已取得精确权重并完成CPU重放，真实预测图及数值对照见上述“六例真实预测轮廓”目录。原始评分、锁定阈值与预设主要比较保持不变。期刊投稿尚未执行，v7原归档文件保留制作时的审计状态。
 
 ## 云端补充验证：2026-11-06
 

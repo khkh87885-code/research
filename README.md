@@ -10,7 +10,17 @@
 
 每位纳入患者固定使用一张图及对应参考掩膜。正式验证共 1,103 例。40 例预实验来自开发集。评分和复核均在回顾性模拟中进行。
 
-## 当前版本：v8 作者批准提交材料
+## 当前版本：v9 科研图件与投稿排版修订
+
+[正式主稿 Word](submission/bmt_v9/BMT_main_manuscript_v9.docx) · [正式主稿 PDF](submission/bmt_v9/BMT_main_manuscript_v9_preview.pdf) · [含图阅读 PDF](submission/bmt_v9/BMT_main_manuscript_v9_illustrated_preview.pdf) · [全部新图 PDF](submission/bmt_v9/BMT_v9_all_figures.pdf) · [补充 Word](submission/bmt_v9/BMT_supplementary_material_v5.docx) · [六例 S6 图版 PDF](submission/bmt_v9/BMT_supplementary_Figure_S6_v5.pdf) · [提交文件 ZIP](submission/BMT_v9_submission_files.zip) · [上传清单](submission/bmt_v9/UPLOAD_FILE_MAP.md)
+
+按用户要求，v9以已批准v8为基础重绘全部5张主图和补图S1–S6，并根据BMT当前官方作者指南整理投稿排版。统计图读取归档数据；超声图、参考掩膜与已捕获的SAM预测保持真实来源和几何，不使用生成式插画。生产图提供600dpi PNG及矢量PDF；六例补图另以6页PDF逐例展示，保持可读字体和完整视野。
+
+正式主稿为可编辑单栏Word，包含独立标题页、结构式摘要、规范标题层级、官方顺序的七项声明、参考文献、三张可编辑表和独立图注。A4、12pt正文及1.5倍行距是本次易读排版选择，官方指南未将字体、行距或单双栏规定为强制样式；未声称读取了未取得的Research Article模板Word样式。指南、模板内容转录及来源限制保存在新版Audit中。
+
+科学正文、全部数值和研究结论保持；三张主表66个单元格、19个补表面板878个单元格及15条文献逐字保留。作者信息、伦理适用性、责任与批准提交声明沿用已确认内容；本轮新增授权是图件和排版修订，不另造作者确认记录。主图5+表3仍共8项；补充材料按每文件低于10MB分为主补充文档和S6图版两个文件。正式版、阅读副本和实际上传选择见清单。尚未执行期刊投稿。
+
+## 历史版本：v8 作者批准提交材料
 
 [主稿 Word](submission/bmt_v8_final/BMT_main_manuscript_v8.docx) · [主稿 PDF](submission/bmt_v8_final/BMT_main_manuscript_v8_preview.pdf) · [补充 Word](submission/bmt_v8_final/BMT_supplementary_material_v4.docx) · [官方声明](submission/bmt_v8_final/BMT_Ethical_and_Legal_Declarations_v8.docx) · [投稿信](submission/bmt_v8_final/BMT_cover_letter_v8.docx) · [提交文件 ZIP](submission/BMT_v8_submission_files.zip) · [上传清单](submission/bmt_v8_final/UPLOAD_FILE_MAP.md)
 

@@ -1,0 +1,1201 @@
+{
+  "scope": "Independent integration QA; source CSV/JSON/NPZ and final export inspection, no inference or resampling",
+  "checks": [
+    {
+      "name": "Figure1 cohort counts from patient records",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure2 actual archived case001 mask Dice and consistency match original records",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "internal_holdout A complete patient-ranked curve",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "internal_holdout B complete patient-ranked curve",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "external_test A complete patient-ranked curve",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "external_test B complete patient-ranked curve",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "H1 exact original point/CI",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "H2 exact original point/CI",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "H3 exact original point/CI",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "policy marker {'split': 'internal_holdout', 'method': 'A', 'policy': 'locked', 'R': 174, 'TP': 71, 'F': 93, 'marker': 'square'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "policy marker {'split': 'internal_holdout', 'method': 'B', 'policy': 'locked', 'R': 150, 'TP': 68, 'F': 93, 'marker': 'square'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "policy marker {'split': 'external_test', 'method': 'A', 'policy': 'locked', 'R': 35, 'TP': 10, 'F': 16, 'marker': 'square'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "policy marker {'split': 'external_test', 'method': 'A', 'policy': 'top50', 'R': 50, 'TP': 14, 'F': 16, 'marker': 'open circle'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "policy marker {'split': 'external_test', 'method': 'B', 'policy': 'locked', 'R': 33, 'TP': 13, 'F': 16, 'marker': 'square'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "policy marker {'split': 'external_test', 'method': 'B', 'policy': 'top50', 'R': 50, 'TP': 13, 'F': 16, 'marker': 'open circle'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired outcome table locked",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "paired outcome table top50",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget plot {'panel': 'A', 'split': 'internal_holdout', 'method': 'A', 'source_column': 'review_fraction'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget plot {'panel': 'A', 'split': 'internal_holdout', 'method': 'B', 'source_column': 'review_fraction'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget plot {'panel': 'A', 'split': 'external_test', 'method': 'A', 'source_column': 'review_fraction'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget plot {'panel': 'A', 'split': 'external_test', 'method': 'B', 'source_column': 'review_fraction'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget plot {'panel': 'B', 'split': 'external_test', 'method': 'A', 'mode': 'development_calibrated_threshold', 'source_column': 'detection_fraction'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget plot {'panel': 'B', 'split': 'external_test', 'method': 'B', 'mode': 'development_calibrated_threshold', 'source_column': 'detection_fraction'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget plot {'panel': 'B', 'split': 'external_test', 'method': 'A', 'mode': 'test_cohort_equal_review', 'source_column': 'detection_fraction'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget plot {'panel': 'B', 'split': 'external_test', 'method': 'B', 'mode': 'test_cohort_equal_review', 'source_column': 'detection_fraction'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget plot {'panel': 'C', 'split': 'internal_holdout', 'method': 'A', 'mode': 'development_calibrated_threshold', 'source_column': 'detection_fraction'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget plot {'panel': 'C', 'split': 'internal_holdout', 'method': 'B', 'mode': 'development_calibrated_threshold', 'source_column': 'detection_fraction'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget plot {'panel': 'C', 'split': 'internal_holdout', 'method': 'A', 'mode': 'test_cohort_equal_review', 'source_column': 'detection_fraction'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget plot {'panel': 'C', 'split': 'internal_holdout', 'method': 'B', 'mode': 'test_cohort_equal_review', 'source_column': 'detection_fraction'}",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget paired CI 5.0 development_calibrated_threshold",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget paired CI 10.0 development_calibrated_threshold",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget paired CI 15.0 development_calibrated_threshold",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget paired CI 20.0 development_calibrated_threshold",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget paired CI 25.0 development_calibrated_threshold",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget paired CI 30.0 development_calibrated_threshold",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget paired CI 40.0 development_calibrated_threshold",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget paired CI 50.0 development_calibrated_threshold",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget paired CI 5.0 test_cohort_equal_review",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget paired CI 10.0 test_cohort_equal_review",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget paired CI 15.0 test_cohort_equal_review",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget paired CI 20.0 test_cohort_equal_review",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget paired CI 25.0 test_cohort_equal_review",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget paired CI 30.0 test_cohort_equal_review",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget paired CI 40.0 test_cohort_equal_review",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "budget paired CI 50.0 test_cohort_equal_review",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap interval R1 H1_A_external_minus_internal_detection_pp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap interval R1 H2_A_external_minus_internal_review_pp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap interval R1 external_fixed_B_minus_A_detection_pp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap interval R1 external_equal_B_minus_A_detection_pp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap interval R2 H1_A_external_minus_internal_detection_pp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap interval R2 H2_A_external_minus_internal_review_pp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap interval R2 external_fixed_B_minus_A_detection_pp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap interval R2 external_equal_B_minus_A_detection_pp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap interval R3 H1_A_external_minus_internal_detection_pp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap interval R3 H2_A_external_minus_internal_review_pp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap interval R3 external_fixed_B_minus_A_detection_pp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap interval R3 external_equal_B_minus_A_detection_pp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap sign frequency R1 Original strict",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap sign frequency R1 Opposite strict",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap sign frequency R1 Any zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap sign frequency R1 Same nonzero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap sign frequency R2 Original strict",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap sign frequency R2 Opposite strict",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap sign frequency R2 Any zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap sign frequency R2 Same nonzero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap sign frequency R3 Original strict",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap sign frequency R3 Opposite strict",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap sign frequency R3 Any zero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "bootstrap sign frequency R3 Same nonzero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case mix A detection overall_difference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case mix A detection composition_associated",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case mix A detection within_stratum_rate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case mix B detection overall_difference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case mix B detection composition_associated",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case mix B detection within_stratum_rate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case mix A review_fraction overall_difference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case mix A review_fraction composition_associated",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case mix A review_fraction within_stratum_rate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case mix B review_fraction overall_difference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case mix B review_fraction composition_associated",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case mix B review_fraction within_stratum_rate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_1 600 dpi at intended size",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_1 legible font and text bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_2 600 dpi at intended size",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_2 legible font and text bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_3 600 dpi at intended size",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_3 legible font and text bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_4 600 dpi at intended size",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_4 legible font and text bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_5 600 dpi at intended size",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_5 legible font and text bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S1 600 dpi at intended size",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S1 legible font and text bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S2 600 dpi at intended size",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S2 legible font and text bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S3 600 dpi at intended size",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S3 legible font and text bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S4 600 dpi at intended size",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S4 legible font and text bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S5 600 dpi at intended size",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S5 legible font and text bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S6A 600 dpi at intended size",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S6A legible font and text bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S6B 600 dpi at intended size",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S6B legible font and text bounds",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case089 original arrays exact hashes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case089 CPU metrics recomputed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case089 all five masks nonempty",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case175 original arrays exact hashes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case175 CPU metrics recomputed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case175 all five masks nonempty",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case238 original arrays exact hashes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case238 CPU metrics recomputed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case238 all five masks nonempty",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case024 original arrays exact hashes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case024 CPU metrics recomputed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case024 all five masks nonempty",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case105 original arrays exact hashes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case105 CPU metrics recomputed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case105 all five masks nonempty",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case222 original arrays exact hashes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case222 CPU metrics recomputed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case222 all five masks nonempty",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_5 case089 native RGB pixels unaltered",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_5 case175 native RGB pixels unaltered",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_5 case238 native RGB pixels unaltered",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S6A case089 native RGB pixels unaltered",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S6A case175 native RGB pixels unaltered",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S6A case238 native RGB pixels unaltered",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S6B case024 native RGB pixels unaltered",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S6B case105 native RGB pixels unaltered",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Figure_S6B case222 native RGB pixels unaltered",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "main all editable table cell strings exactly preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "main exact original scientific body paragraphs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "main exact original references",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all approved declaration facts exactly preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "declarations in official template order and terms",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final main figure caption 1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final main figure caption 2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final main figure caption 3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final main figure caption 4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final main figure caption 5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final author approval sentence retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "four-part abstract <=200 words",
+      "pass": true,
+      "detail": 174
+    },
+    {
+      "name": "keywords3–6 alphabetical lowercase",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "15 Vancouver reference labels <=35",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "references sequentially first cited and all cited",
+      "pass": true,
+      "detail": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "name": "main5 figures+3tables meets8 combined limit",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "main no figure embeds required as separate files",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no author draft placeholders in main",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all illustrated main labels >=6pt at actual document display size",
+      "pass": true,
+      "detail": [
+        7.277444455872624,
+        6.822604177380585,
+        7.277444455872624,
+        6.822604177380585,
+        6.029672633446219
+      ]
+    },
+    {
+      "name": "supplement19tables all878cell strings exactly preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "supplement pre-S6 scientific prose exactly preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final supplement caption S1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final supplement caption S2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final supplement caption S3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final supplement caption S4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final supplement caption S5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final supplement caption S6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "supplement docx <10MB",
+      "pass": true,
+      "detail": 1532383
+    },
+    {
+      "name": "S6 publication file <10MB",
+      "pass": true,
+      "detail": 1871819
+    },
+    {
+      "name": "S6 one case per page at readable font",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final S6 PDF case089 native original RGB retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final S6 PDF case175 native original RGB retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final S6 PDF case238 native original RGB retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final S6 PDF case024 native original RGB retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final S6 PDF case105 native original RGB retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final S6 PDF case222 native original RGB retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all supplement embedded figure labels >=6pt at actual display size",
+      "pass": true,
+      "detail": [
+        7.800000190734863,
+        8.0,
+        7.5,
+        7.5,
+        8.0
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v9_preview.pdf no clipped text or empty pages",
+      "pass": true,
+      "detail": {
+        "pages": 20,
+        "outside": [],
+        "empty_pages": []
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v9_illustrated_preview.pdf no clipped text or empty pages",
+      "pass": true,
+      "detail": {
+        "pages": 25,
+        "outside": [],
+        "empty_pages": []
+      }
+    },
+    {
+      "name": "BMT_supplementary_material_v5_preview.pdf no clipped text or empty pages",
+      "pass": true,
+      "detail": {
+        "pages": 25,
+        "outside": [],
+        "empty_pages": []
+      }
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v5.pdf no clipped text or empty pages",
+      "pass": true,
+      "detail": {
+        "pages": 6,
+        "outside": [],
+        "empty_pages": []
+      }
+    }
+  ],
+  "figure_metadata": {
+    "Figure_1": {
+      "pixels": [
+        4134,
+        3360
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "minimum_font_pt": 8.0,
+      "page_inches": [
+        6.889999813503689,
+        5.600000169542101
+      ],
+      "text_inside_canvas": true,
+      "png_sha256": "295e44479818fc08623a070b2a4179e1a8d1715f3bc5ee5095cf6b7c9739bf26",
+      "pdf_sha256": "2bc396f9e9396101d333da8137a1c4e27963d22b7539dd992ec194332f78be8e"
+    },
+    "Figure_2": {
+      "pixels": [
+        4134,
+        3660
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "minimum_font_pt": 7.5,
+      "page_inches": [
+        6.889999813503689,
+        6.100000169542101
+      ],
+      "text_inside_canvas": true,
+      "png_sha256": "66ba502a0a7770acf6ecc4264e4604295b91fcfcec01742ce4c5dc48291ef7c9",
+      "pdf_sha256": "2b7671a3c670fa93e45d5a9fafff82d18e9a59c9640af68729d3914eac73f87f"
+    },
+    "Figure_3": {
+      "pixels": [
+        4134,
+        2130
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "minimum_font_pt": 8.0,
+      "page_inches": [
+        6.889999813503689,
+        3.5500000847710504
+      ],
+      "text_inside_canvas": true,
+      "png_sha256": "a56dd46973a00b0719bbb492e28fc0846010aeac6e70398284416a09915306f3",
+      "pdf_sha256": "8e9230ce2b1ae4a6ef81384b302dae0ebb5c03606340a232a5bb129783752ccb"
+    },
+    "Figure_4": {
+      "pixels": [
+        4134,
+        3390
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "minimum_font_pt": 7.5,
+      "page_inches": [
+        6.889999813503689,
+        5.649999830457899
+      ],
+      "text_inside_canvas": true,
+      "png_sha256": "d940b1b6ab7025428a013421d7523e4e6fd36020e7042c21bb78b49d5515188d",
+      "pdf_sha256": "48cb1b05b4e438681c826c2e79a791abd8bbf8bbe36ddcebd164fc9e545a569d"
+    },
+    "Figure_5": {
+      "pixels": [
+        4134,
+        5055
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "minimum_font_pt": 8.0,
+      "page_inches": [
+        6.889999813503689,
+        8.425102233886719
+      ],
+      "text_inside_canvas": true,
+      "png_sha256": "6a471c1f12195090ed4da6bb3bdffabb233dca76756bd9f734a28beb3c0da65d",
+      "pdf_sha256": "ab2b7427d590353f34cdf17b595b38dda14713efce01bbe66d650b617ec16e0a"
+    },
+    "Figure_S1": {
+      "pixels": [
+        4134,
+        3480
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "minimum_font_pt": 7.800000190734863,
+      "page_inches": [
+        6.889999813503689,
+        5.8000000847710504
+      ],
+      "text_inside_canvas": true,
+      "png_sha256": "f355bc525af902b2dadadf49a3c7c721945e9881dbd3bacb063466e92ab2d909",
+      "pdf_sha256": "d414d9e3212bcada18ef1bf96c7cc55b27fa307deb547c480b5a7185e447ccf8"
+    },
+    "Figure_S2": {
+      "pixels": [
+        4134,
+        2010
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "minimum_font_pt": 8.0,
+      "page_inches": [
+        6.889999813503689,
+        3.3499999576144748
+      ],
+      "text_inside_canvas": true,
+      "png_sha256": "663b32f20e039490fa03deac5372a4f8cfb6e05a3e864acf2bea52ff4d4b3328",
+      "pdf_sha256": "5abae83a6cef88890d656789e8ceb1b956dbe86ba7f959d621f08257fdc8a861"
+    },
+    "Figure_S3": {
+      "pixels": [
+        4134,
+        3060
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "minimum_font_pt": 7.5,
+      "page_inches": [
+        6.889999813503689,
+        5.100000169542101
+      ],
+      "text_inside_canvas": true,
+      "png_sha256": "f8c7d9ad705b0b1407bcb8aec1c31b499d5610895e9d10b819af36eb61271deb",
+      "pdf_sha256": "0b0743062f1e1a73b066217b817cb8c86311ea299033559ecb69b4560f0fbc64"
+    },
+    "Figure_S4": {
+      "pixels": [
+        4134,
+        2730
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "minimum_font_pt": 7.5,
+      "page_inches": [
+        6.889999813503689,
+        4.5500000847710504
+      ],
+      "text_inside_canvas": true,
+      "png_sha256": "d2ec79d27591a394ba7cbb73797b1eac6e8a5a80ad079a5e1f35cb8ba5ef1bd4",
+      "pdf_sha256": "4a6056fdee13ba0e0bd9a00a628a7fedc8aa70951b8352795cb8f9fc26e14296"
+    },
+    "Figure_S5": {
+      "pixels": [
+        4134,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "minimum_font_pt": 8.0,
+      "page_inches": [
+        6.889999813503689,
+        2.9000000423855252
+      ],
+      "text_inside_canvas": true,
+      "png_sha256": "d47ca0615da5f1722f3b4b004a77cb1a08971d814a1c61f1b78af9e2605352e6",
+      "pdf_sha256": "cf807c9c62d0f848134527c4be6230f24be1216ce022353862ae2c91864da75b"
+    },
+    "Figure_S6A": {
+      "pixels": [
+        4134,
+        6740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "minimum_font_pt": 8.0,
+      "page_inches": [
+        6.889999813503689,
+        11.233600192599827
+      ],
+      "text_inside_canvas": true,
+      "png_sha256": "7ef86f64f2f76202956e6c9ab425dc3c55262a9e6aeccba3528e1b9700ffb5a9",
+      "pdf_sha256": "8712c522e1b31058c116fd42aa162f84fb0f25509d57bda169da5bef967a6f86"
+    },
+    "Figure_S6B": {
+      "pixels": [
+        4134,
+        6637
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "minimum_font_pt": 8.0,
+      "page_inches": [
+        6.889999813503689,
+        11.062010871039497
+      ],
+      "text_inside_canvas": true,
+      "png_sha256": "93b6e14b4418e7d468eb3c1c7bdea299dc156088a8ceab547998e95ce3c856c3",
+      "pdf_sha256": "aa5e37dc2c10854145c2800c889c0c295464764f0a306e22cd7dc61d76bd5f64"
+    }
+  },
+  "documents": {
+    "main": {
+      "docx_sha256": "5ea44cbc38262f3a60ecc3a76299c3518bed41a8d4979db799b28f94361b3737",
+      "abstract_whitespace_words": 174,
+      "reference_count": 15,
+      "table_cell_count": 66,
+      "total_paragraph_plus_cell_whitespace_words": 5647,
+      "declaration_order": [
+        "Research ethics",
+        "Informed consent",
+        "Author contributions",
+        "Use of Large Language Models, AI and Machine Learning Tools",
+        "Conflict of interest",
+        "Research funding",
+        "Data availability"
+      ]
+    },
+    "supplement": {
+      "docx_sha256": "1c3b4f77e6cb7fc11e486da9ec79485981e7b5a0ecbf482a307968767b21b5a1",
+      "table_count": 19,
+      "cell_count": 878,
+      "embedded_figures": 5,
+      "label_sizes_pt": [
+        7.800000190734863,
+        8.0,
+        7.5,
+        7.5,
+        8.0
+      ],
+      "S6_pdf_sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd"
+    },
+    "BMT_main_manuscript_v9_preview.pdf": {
+      "sha256": "20dc4cf5df98509bf52c913c47659dd32c13786a2c1da9b52ac19189699b71f8",
+      "pages": 20,
+      "empty_pages": [],
+      "outside_text": []
+    },
+    "BMT_main_manuscript_v9_illustrated_preview.pdf": {
+      "sha256": "2a4c447fc70b1d012e01a602358f1bcb1e3ef1763d04037052c59931514ce25f",
+      "pages": 25,
+      "empty_pages": [],
+      "outside_text": []
+    },
+    "BMT_supplementary_material_v5_preview.pdf": {
+      "sha256": "38bca3f99f600c29c30bd57c9b90f9bf77d9502dc621d1b3d04dfc4e5e6ffe8c",
+      "pages": 25,
+      "empty_pages": [],
+      "outside_text": []
+    },
+    "BMT_supplementary_Figure_S6_v5.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "pages": 6,
+      "empty_pages": [],
+      "outside_text": []
+    }
+  },
+  "curve_points_checked": 2210,
+  "source_data_unchanged": "All checks are read-only; source audit SHA matches recorded source arrays.",
+  "visual_review": {
+    "report": "/workspace/bmt_v9/qa/visual_qa_report.json",
+    "sha256": "07a7c1f188a031271c978b290e6aa8de79ebdcf052f78ef8a675fade6d4003e6",
+    "status": "All12production figures,20formalmainpages,5illustratedplates,25supplementpagesand6S6pages visually reviewed; no material issues."
+  },
+  "limits": [
+    "Publisher template binary was unavailable: this review verifies current official guide content and explicit requirements, not exact template Word styles.",
+    "PNG manuscript embeds are display rasters; native RGB array equality was independently verified in Figure5/S6 production PDFs and all30 final S6 PDF image views. Figure2 source arrays and computed metrics were verified; display resizing is conventional figure rendering.",
+    "No original unarchived CUDA masks are claimed to have been recovered; displayed six-case masks are correctly identified as CPU replay outputs."
+  ],
+  "final_documents_pending": false
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "panel": "A",
+    "native_image_pixels_identical_to_asset": true,
+    "native_images": 1
+  },
+  {
+    "panel": "B",
+    "native_image_pixels_identical_to_asset": true,
+    "native_images": 1
+  },
+  {
+    "panel": "C",
+    "native_image_pixels_identical_to_asset": true,
+    "native_images": 1
+  },
+  {
+    "panel": "D",
+    "native_image_pixels_identical_to_asset": true,
+    "native_images": 1
+  },
+  {
+    "panel": "E",
+    "native_image_pixels_identical_to_asset": true,
+    "native_images": 1
+  },
+  {
+    "panel": "F",
+    "native_image_pixels_identical_to_asset": true,
+    "native_images": 1
+  }
+]

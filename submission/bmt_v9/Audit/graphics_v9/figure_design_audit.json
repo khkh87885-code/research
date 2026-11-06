@@ -1,0 +1,893 @@
+{
+  "audit_date_utc": "2026-11-06",
+  "scope": "Read-only audit of 12 PNG files / 11 logical figures in approved v8; no final figure, manuscript, data or mask modification.",
+  "source_root": "/workspace/research_source",
+  "submission_root": "/workspace/research_source/submission/bmt_v8_final",
+  "contact_sheet": "/workspace/bmt_v9/qa/current_figures_contact_sheet.png",
+  "visual_inspection": {
+    "all_12_pngs_seen_in_contact_sheet": true,
+    "individual_high_resolution_seen": [
+      "Figure 2",
+      "Figure S4"
+    ],
+    "note": "The contact sheet supports whole-set visual inspection; source scripts and legends were read for scientific meaning."
+  },
+  "image_generation_service_finding": {
+    "conclusion": "No evidence of image_gen/imagegen/DALL-E/gpt-image/Midjourney/Stable Diffusion service calls in inspected source, analysis and audit text. Existing PNGs are traceable to deterministic Matplotlib/SVG plots and captured source arrays. This does not establish that no service was ever called outside the inspected record.",
+    "searched_paths": [
+      "/workspace/research_source/figures",
+      "/workspace/research_source/experiments",
+      "/workspace/research_source/submission/bmt_v8_final/Analysis",
+      "/workspace/research_source/submission/bmt_v8_final/Audit",
+      "/workspace/bmt_v8/scripts",
+      "/workspace/bmt_v8/evidence"
+    ],
+    "clinical_imagery_policy": "Never generate substitute ultrasound images, references or predicted masks; render only existing verified arrays."
+  },
+  "common_redesign_specification": {
+    "status": "Proposed publication design targets, not a claim of official BMT requirements. Use the separately verified current BMT instructions for final delivery requirements.",
+    "typography": "One sans-serif family throughout; target 8–9 pt data labels at final width, 10–11 pt panel letters; avoid reducing labels after export.",
+    "palette": "Restrained colorblind-safe A blue/B orange, with redundant line/marker patterns. Keep anatomy grayscale and use the same reference/prediction/prompt roles across image figures.",
+    "layout": "White background, no gradients/shadows/3D/decorative embedding icons. Square-cornered workflow boxes, thin black/grey rules, aligned plots and consistent gutters.",
+    "quantitative_graphics": "Exact original estimates/intervals/steps/counts only; preserve denominators, contrast direction, nominal-vs-primary status and exploratory qualifiers.",
+    "image_plates": "Native arrays with aspect retained; per-case display crop/zoom identical across paired panels; contour level0.5; no smoothing, mask editing, lesion replacement or invented scale bars.",
+    "exports": "Retain editable source and vector PDF/SVG for plots/diagrams; render suitable high-resolution image files at final physical size, following current journal requirements.",
+    "quality_control": "Check final-size text, grayscales, color key, crop equivalence, array hashes/counts/Dice, numerical roundtrips and captions."
+  },
+  "verification": {
+    "new_figure_source_hash_checks": [
+      {
+        "path": "/workspace/research_source/experiments/cloud_validation_v1/results/budget_transfer/performance.csv",
+        "expected_sha256": "2b35e41866b99745e3749c9016afea560a39f0eddbda4c0eff316d63df549200",
+        "observed_sha256": "2b35e41866b99745e3749c9016afea560a39f0eddbda4c0eff316d63df549200",
+        "match": true
+      },
+      {
+        "path": "/workspace/research_source/experiments/cloud_validation_v1/results/budget_transfer/paired_contrasts.csv",
+        "expected_sha256": "dab3a8e53fd6e58a7ad07114b27928a87c9abfec91afbc827ef63f5e9b7a3c93",
+        "observed_sha256": "dab3a8e53fd6e58a7ad07114b27928a87c9abfec91afbc827ef63f5e9b7a3c93",
+        "match": true
+      },
+      {
+        "path": "/workspace/research_source/experiments/cloud_validation_v1/results/bootstrap_stability/summary.json",
+        "expected_sha256": "050c69a00dcd3709bec88f0182c0ce5229a078dbd9f0838167173f2ed3313446",
+        "observed_sha256": "050c69a00dcd3709bec88f0182c0ce5229a078dbd9f0838167173f2ed3313446",
+        "match": true
+      },
+      {
+        "path": "/workspace/research_source/experiments/cloud_validation_v1/results/case_mix_decomposition.json",
+        "expected_sha256": "92e3ccd9d761117c25089a01c61c40f23674cf70b05a8e221cebbc29524e5543",
+        "observed_sha256": "92e3ccd9d761117c25089a01c61c40f23674cf70b05a8e221cebbc29524e5543",
+        "match": true
+      },
+      {
+        "path": "/workspace/research_source/experiments/six_case_replay_v1/predictions/targeted_rerun_receipt.json",
+        "expected_sha256": "5403390674fb4f549f7bb695f39551823f988521a551a99b409613eb5d750981",
+        "observed_sha256": "5403390674fb4f549f7bb695f39551823f988521a551a99b409613eb5d750981",
+        "match": true
+      },
+      {
+        "path": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case089_targeted_rerun.npz",
+        "expected_sha256": "4fd0f1a7b3167eaf99ea5d7e2543186ee457d073e66ef76618f306180be84f51",
+        "observed_sha256": "4fd0f1a7b3167eaf99ea5d7e2543186ee457d073e66ef76618f306180be84f51",
+        "match": true
+      },
+      {
+        "path": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case175_targeted_rerun.npz",
+        "expected_sha256": "4eed039771a9bb640c712ecdae7b3b79896a4909eb69b5c840123714385e549e",
+        "observed_sha256": "4eed039771a9bb640c712ecdae7b3b79896a4909eb69b5c840123714385e549e",
+        "match": true
+      },
+      {
+        "path": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case238_targeted_rerun.npz",
+        "expected_sha256": "e692e958d61e11b92c7b38c0569eb8a2aafd16d8b34af49be56a0259fe6b12e3",
+        "observed_sha256": "e692e958d61e11b92c7b38c0569eb8a2aafd16d8b34af49be56a0259fe6b12e3",
+        "match": true
+      },
+      {
+        "path": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case024_targeted_rerun.npz",
+        "expected_sha256": "5ba9ca812255cd357232865f434cd2f1b8f287ce266c46bf23e3609d35d0b748",
+        "observed_sha256": "5ba9ca812255cd357232865f434cd2f1b8f287ce266c46bf23e3609d35d0b748",
+        "match": true
+      },
+      {
+        "path": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case105_targeted_rerun.npz",
+        "expected_sha256": "8c83a723f77528bc9257eb86d18c9cc68ef6d7a43da4a061e81c775c1dce9a72",
+        "observed_sha256": "8c83a723f77528bc9257eb86d18c9cc68ef6d7a43da4a061e81c775c1dce9a72",
+        "match": true
+      },
+      {
+        "path": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case222_targeted_rerun.npz",
+        "expected_sha256": "457105cca958c3f386fa2b9969057e443b324cc51b30addaf3273a09ba32e0f9",
+        "observed_sha256": "457105cca958c3f386fa2b9969057e443b324cc51b30addaf3273a09ba32e0f9",
+        "match": true
+      }
+    ],
+    "all_source_hashes_match": true,
+    "example_case001": {
+      "path": "/workspace/research_source/figures/source/example_case.npz",
+      "sha256": "febf459b5e813f83b8922e0b48e39b11d0bed085afbe793eae9dae934e9bd74d",
+      "hash_matches_receipt": true,
+      "case": "case001",
+      "archived_values_match_record": true,
+      "mask_pixel_counts": [
+        11166,
+        12477,
+        22459,
+        8511,
+        27611
+      ],
+      "captured_backend": "original CUDA environment asserted by capture_figure_case.py",
+      "selection": "lowest eligible BrEaST case number"
+    },
+    "six_cases": [
+      {
+        "case": "case089",
+        "path": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case089_targeted_rerun.npz",
+        "sha256": "4fd0f1a7b3167eaf99ea5d7e2543186ee457d073e66ef76618f306180be84f51",
+        "hash_matches_receipt": true,
+        "shape": {
+          "image": [
+            537,
+            485,
+            3
+          ],
+          "reference": [
+            537,
+            485
+          ],
+          "masks": [
+            5,
+            537,
+            485
+          ],
+          "boxes": [
+            5,
+            4
+          ],
+          "raw_predicted_ious": [
+            5
+          ]
+        },
+        "mask_pixel_counts": [
+          1365,
+          1436,
+          1320,
+          1511,
+          1436
+        ],
+        "all_masks_nonempty": true,
+        "pixel_counts_match_receipt": true,
+        "independently_recomputed_initial_dice": 0.31909990511047853,
+        "receipt_initial_dice": 0.31909990511047853,
+        "dice_matches": true,
+        "group": "both_missed"
+      },
+      {
+        "case": "case175",
+        "path": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case175_targeted_rerun.npz",
+        "sha256": "4eed039771a9bb640c712ecdae7b3b79896a4909eb69b5c840123714385e549e",
+        "hash_matches_receipt": true,
+        "shape": {
+          "image": [
+            542,
+            789,
+            3
+          ],
+          "reference": [
+            542,
+            789
+          ],
+          "masks": [
+            5,
+            542,
+            789
+          ],
+          "boxes": [
+            5,
+            4
+          ],
+          "raw_predicted_ious": [
+            5
+          ]
+        },
+        "mask_pixel_counts": [
+          3861,
+          3958,
+          3816,
+          3846,
+          4351
+        ],
+        "all_masks_nonempty": true,
+        "pixel_counts_match_receipt": true,
+        "independently_recomputed_initial_dice": 0.02928704996181095,
+        "receipt_initial_dice": 0.02928704996181095,
+        "dice_matches": true,
+        "group": "both_missed"
+      },
+      {
+        "case": "case238",
+        "path": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case238_targeted_rerun.npz",
+        "sha256": "e692e958d61e11b92c7b38c0569eb8a2aafd16d8b34af49be56a0259fe6b12e3",
+        "hash_matches_receipt": true,
+        "shape": {
+          "image": [
+            537,
+            485,
+            3
+          ],
+          "reference": [
+            537,
+            485
+          ],
+          "masks": [
+            5,
+            537,
+            485
+          ],
+          "boxes": [
+            5,
+            4
+          ],
+          "raw_predicted_ious": [
+            5
+          ]
+        },
+        "mask_pixel_counts": [
+          5054,
+          5105,
+          5094,
+          5101,
+          5028
+        ],
+        "all_masks_nonempty": true,
+        "pixel_counts_match_receipt": true,
+        "independently_recomputed_initial_dice": 0.681269798476781,
+        "receipt_initial_dice": 0.681269798476781,
+        "dice_matches": true,
+        "group": "both_missed"
+      },
+      {
+        "case": "case024",
+        "path": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case024_targeted_rerun.npz",
+        "sha256": "5ba9ca812255cd357232865f434cd2f1b8f287ce266c46bf23e3609d35d0b748",
+        "hash_matches_receipt": true,
+        "shape": {
+          "image": [
+            469,
+            433,
+            3
+          ],
+          "reference": [
+            469,
+            433
+          ],
+          "masks": [
+            5,
+            469,
+            433
+          ],
+          "boxes": [
+            5,
+            4
+          ],
+          "raw_predicted_ious": [
+            5
+          ]
+        },
+        "mask_pixel_counts": [
+          12316,
+          11704,
+          8878,
+          8043,
+          12537
+        ],
+        "all_masks_nonempty": true,
+        "pixel_counts_match_receipt": true,
+        "independently_recomputed_initial_dice": 0.6851387914620704,
+        "receipt_initial_dice": 0.6851387914620704,
+        "dice_matches": true,
+        "group": "B_only_detected"
+      },
+      {
+        "case": "case105",
+        "path": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case105_targeted_rerun.npz",
+        "sha256": "8c83a723f77528bc9257eb86d18c9cc68ef6d7a43da4a061e81c775c1dce9a72",
+        "hash_matches_receipt": true,
+        "shape": {
+          "image": [
+            538,
+            831,
+            3
+          ],
+          "reference": [
+            538,
+            831
+          ],
+          "masks": [
+            5,
+            538,
+            831
+          ],
+          "boxes": [
+            5,
+            4
+          ],
+          "raw_predicted_ious": [
+            5
+          ]
+        },
+        "mask_pixel_counts": [
+          271052,
+          37844,
+          256818,
+          263597,
+          245371
+        ],
+        "all_masks_nonempty": true,
+        "pixel_counts_match_receipt": true,
+        "independently_recomputed_initial_dice": 0.6545790284014119,
+        "receipt_initial_dice": 0.6545790284014119,
+        "dice_matches": true,
+        "group": "B_only_detected"
+      },
+      {
+        "case": "case222",
+        "path": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case222_targeted_rerun.npz",
+        "sha256": "457105cca958c3f386fa2b9969057e443b324cc51b30addaf3273a09ba32e0f9",
+        "hash_matches_receipt": true,
+        "shape": {
+          "image": [
+            537,
+            485,
+            3
+          ],
+          "reference": [
+            537,
+            485
+          ],
+          "masks": [
+            5,
+            537,
+            485
+          ],
+          "boxes": [
+            5,
+            4
+          ],
+          "raw_predicted_ious": [
+            5
+          ]
+        },
+        "mask_pixel_counts": [
+          42115,
+          20360,
+          42487,
+          38118,
+          30467
+        ],
+        "all_masks_nonempty": true,
+        "pixel_counts_match_receipt": true,
+        "independently_recomputed_initial_dice": 0.5784646061814557,
+        "receipt_initial_dice": 0.5784646061814557,
+        "dice_matches": true,
+        "group": "B_only_detected"
+      }
+    ],
+    "all_six_case_checks_pass": true,
+    "figure5_figureS6A_pixel_identical": true,
+    "original_source_aliases_byte_identical": true
+  },
+  "implementation_caveats": [
+    "The original figure scripts import display_data.py, but no such file was found in the inspected source tree. Rebuild from archived_replay primary/supplementary JSON and patient CSV without changing analyses, or restore the verified helper.",
+    "The claimed no-overlap checks in earlier provenance are historical. The new design still needs fresh final-size visual QA.",
+    "This audit does not reopen author declarations or approved scientific conclusions."
+  ],
+  "figures": [
+    {
+      "id": "Figure 1",
+      "files": [
+        {
+          "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_1.png",
+          "name": "Figure_1.png",
+          "sha256": "a71a632b3f2d73852185991e93ef6317e7d0ebbc9c1eaa7180120736f0ea08e1",
+          "size_px": [
+            4133,
+            1842
+          ],
+          "dpi": [
+            599.9988,
+            599.9988
+          ]
+        }
+      ],
+      "content_classification": "schematic with recorded cohort counts",
+      "scientific_task": "Show development, internal test, external test and exclusion flow.",
+      "sources": [
+        "/workspace/research_source/figures/source/make_figures.py",
+        "/workspace/research_source/figures/Figure_1_cohort_flow.svg",
+        "/workspace/research_source/experiments/development_213/development_summary.json",
+        "/workspace/research_source/experiments/replication/archived_replay/primary.json",
+        "/workspace/research_source/reproducibility/manifests/breast_external.csv"
+      ],
+      "observed_design_issues": [
+        "Scientifically legible existing flowchart; no evidence of generated image content. Rounded blue-grey cards give a presentation-template appearance.",
+        "The external exclusion branch has the same prominence as the two analysis cohorts; box widths, body text and note compete."
+      ],
+      "redesign_specification": [
+        "Redraw in vector as a restrained rectangular cohort flowchart, white fill, 0.6–0.8 pt black/grey lines; no decorative colored cards.",
+        "Use two source columns and a consistent vertical flow. Show BrEaST 256 → excluded 4 → eligible 252 unambiguously, and BUS-BRA 1064 → development 213 / internal 851.",
+        "Put patient n on a separate consistent text line. Put low-quality n in internal/external test boxes only."
+      ],
+      "caption_meaning_to_preserve": [
+        "BUS-BRA 1064 patients; development 213 and internal test 851; BrEaST 256 total, four normal cases without a main lesion mask excluded, external test 252.",
+        "One image per patient; low quality is initial-mask/reference Dice <0.70; internal F=93 and external F=16."
+      ],
+      "original_v8_caption": "Figure 1.  Study cohorts and analysis flow. BUS-BRA patients were assigned to development or internal testing. BrEaST contributed external test patients with a primary lesion mask. Each patient contributed one image. Low-quality masks had a reference Dice coefficient below 0.70."
+    },
+    {
+      "id": "Figure 2",
+      "files": [
+        {
+          "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_2.png",
+          "name": "Figure_2.png",
+          "sha256": "7987c816c6834b2f83d0ad86acda1906b242aad09f0ea1010f583739b21a09ca",
+          "size_px": [
+            4133,
+            2551
+          ],
+          "dpi": [
+            599.9988,
+            599.9988
+          ]
+        }
+      ],
+      "content_classification": "hybrid schematic + real BrEaST ultrasound/reference + captured SAM output masks",
+      "scientific_task": "Explain reference-informed box prompts, shared frozen SAM inference and A/B risk calculation.",
+      "sources": [
+        "/workspace/research_source/figures/source/draw_sam_architecture.py",
+        "/workspace/research_source/figures/Figure_2_SAM_architecture_preview.svg",
+        "/workspace/research_source/figures/source/example_case.npz",
+        "/workspace/research_source/figures/source/example_case.json",
+        "/workspace/research_source/figures/source/capture_figure_case.py"
+      ],
+      "observed_design_issues": [
+        "The ultrasound and all five masks are data-backed; the embedding stacks and model blocks are conceptual schematic symbols.",
+        "Many nested rounded cards, tinted areas, embedding icons and small repeated labels produce an infographic appearance.",
+        "The source minimum label is 6.45 pt at 175 mm; Figure 2 production note explicitly warns against single-column scaling.",
+        "The original mask silhouettes are irregular because they are actual predictions. Their visual irregularity is not evidence of image generation."
+      ],
+      "redesign_specification": [
+        "Use a clean three-stage engineering diagram on white, with simple rectangular model boxes and only essential arrows; no stacked embedding icons or decorative tokens.",
+        "Keep the real case001 image and exact reference/prompt overlay. Show actual initial and four shifted mask arrays as monochrome or method-colored measured outputs at identical crop and aspect.",
+        "Place exact score formulas in the final branch; keep evaluation/reference definition in a compact separate line. Use readable ≥8 pt labels at intended final width.",
+        "Keep image attribution and CC BY 4.0 in the legend; distinguish schematic model modules from actual measured image/mask tiles."
+      ],
+      "caption_meaning_to_preserve": [
+        "Initial prompt derives from manual contour: 10% margin per side then clip; four shifts are 5% of the clipped width/height.",
+        "Frozen SAM ViT-B: one image embedding, five single-mask decodes, no fine tuning implied.",
+        "A=1−initial predicted IoU; B=1−mean Dice(initial vs each shifted mask); flag score ≥ locked cutoff.",
+        "Low quality is initial/reference Dice <0.70. Shared display crop is case001; no generative replacement or mask smoothing."
+      ],
+      "original_v8_caption": "Figure 2.  Review scores for prompted breast ultrasound segmentation. (A) The initial box is derived from the manual contour with a 10 % margin per side and clipped to the image. Four further prompts shift the clipped box by 5 % of its width or height. (B) Frozen Segment Anything Model (SAM) ViT-B reuses one image embedding to generate one mask per prompt. (C) Method A uses one minus predicted intersection over union for the initial mask. Method B uses one minus the mean Dice between the initial and four shifted masks. Each score triggers simulated review at or above its locked cutoff. The image and masks share a display crop from BrEaST case 001 [10]."
+    },
+    {
+      "id": "Figure 3",
+      "files": [
+        {
+          "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_3.png",
+          "name": "Figure_3.png",
+          "sha256": "57b94a597e677452c99eac2783a6128b408b703a41788b68571250dc9dce9348",
+          "size_px": [
+            4133,
+            1653
+          ],
+          "dpi": [
+            599.9988,
+            599.9988
+          ]
+        }
+      ],
+      "content_classification": "statistical result plot from archived patient scores",
+      "scientific_task": "Show planned H1–H3 proportion differences and original 95% intervals.",
+      "sources": [
+        "/workspace/research_source/figures/source/make_figures.py",
+        "/workspace/research_source/figures/Figure_3_planned_contrasts.svg",
+        "/workspace/research_source/experiments/replication/archived_replay/primary.json"
+      ],
+      "observed_design_issues": [
+        "Already a conventional forest plot; no generative illustration content.",
+        "No numerical estimate/CI column is present; substantial left label area and dark-blue heading weights make the balance uneven.",
+        "Primary/secondary encoding by filled/open marker is subtle and not stated inside the figure."
+      ],
+      "redesign_specification": [
+        "Use a compact forest plot with a left outcome/contrast column, central intervals and right numerical estimate [95% CI] column.",
+        "Maintain one shared percentage-point axis, a thin zero reference and H1 filled versus H2/H3 open markers; add a clear marker key or explicit role labels.",
+        "Use restrained monochrome or a single method color, equal row spacing and consistent typography."
+      ],
+      "caption_meaning_to_preserve": [
+        "H1 A detection: −13.844086 pp, 95% CI [−38.849065,+7.448184]; H2 A review: −6.557645 pp [−11.245572,−1.098304].",
+        "H3 external B−A detection: +18.75 pp [−4.283596,+40.038898]; original Newcombe intervals remain unchanged.",
+        "H1/H2 external−internal; H3 paired same 16 external low-quality cases; H2/H3 intervals nominal."
+      ],
+      "original_v8_caption": "Figure 3.  Planned differences at the locked thresholds. Points show differences in proportions and horizontal bars show two-sided 95 % Newcombe confidence intervals. H1 and H2 compare BrEaST minus BUS-BRA internal testing. H3 compares B minus A in the same 16 low-quality BrEaST cases. H2 and H3 intervals are nominal. The dashed line marks zero difference."
+    },
+    {
+      "id": "Figure 4",
+      "files": [
+        {
+          "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_4.png",
+          "name": "Figure_4.png",
+          "sha256": "5b33fde19a1a1cc80a555ae7e7ccf4d39b340486fe06f04d7e598fe84956dc1c",
+          "size_px": [
+            4133,
+            3377
+          ],
+          "dpi": [
+            599.9988,
+            599.9988
+          ]
+        }
+      ],
+      "content_classification": "statistical rank/review curves from recorded patient-level scores",
+      "scientific_task": "Compare detection versus review volume and show the policy-dependent 20% operating example.",
+      "sources": [
+        "/workspace/research_source/figures/source/redraw_figures.py",
+        "/workspace/research_source/figures/source/make_additional_figures.py",
+        "/workspace/research_source/figures/Figure_4_review_curves.svg",
+        "/workspace/research_source/experiments/formal_validation/validation_cases.csv",
+        "/workspace/research_source/experiments/replication/archived_replay/review_curve_counts.csv",
+        "/workspace/research_source/experiments/replication/archived_replay/primary.json",
+        "/workspace/research_source/experiments/replication/archived_replay/supplementary.json"
+      ],
+      "observed_design_issues": [
+        "Already a faithful step-curve plot, not a generated image.",
+        "Panel C dominates the vertical space; large bold count annotations and four-part legend compete with the two top curves.",
+        "Method and operating-rule encodings need to be carried consistently to the supplementary figures."
+      ],
+      "redesign_specification": [
+        "Keep exact step curves, full 0–100% axes and equal A/B panel dimensions. Do not smooth or interpolate the observed ranking steps.",
+        "Use A blue solid and B orange dashed consistently, with filled circle=locked threshold and open diamond=equal review.",
+        "Make C a compact paired-policy dot/line panel with counts and percentages aligned outside points; keep same 16-case denominator explicit."
+      ],
+      "caption_meaning_to_preserve": [
+        "Internal N851/F93 and external N252/F16; risk descending with patient-ID tie breaking.",
+        "External locked A reviews35/252, detects10/16; B reviews33/252, detects13/16.",
+        "Equal-review 50/252 per score: A detects14/16 and B13/16; policies are different operating rules, not a general ranking of scores."
+      ],
+      "original_v8_caption": "Figure 4.  Low-quality mask detection by simulated review volume. Panels A and B show the percentage of low-quality masks detected as progressively more patients are selected in descending risk order in each test cohort. Markers identify the locked thresholds and the equal-review setting. Panel C compares detection in the same 16 low-quality external cases at the locked thresholds and at 50 reviews per method."
+    },
+    {
+      "id": "Figure 5",
+      "files": [
+        {
+          "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_5.png",
+          "name": "Figure_5.png",
+          "sha256": "237d9c30dc0362e473ec376504ba194730a290faa81f5b9caf0084a1367aa6ba",
+          "size_px": [
+            4134,
+            4620
+          ],
+          "dpi": [
+            599.9988,
+            599.9988
+          ]
+        }
+      ],
+      "content_classification": "real ultrasound/reference + actual targeted CPU SAM replay mask contours",
+      "scientific_task": "Illustrate the three external shared screening misses.",
+      "sources": [
+        "/workspace/research_source/submission/bmt_v8_final/Analysis/build_figure5.py",
+        "/workspace/research_source/submission/bmt_v8_final/Audit/figure5_provenance.json",
+        "/workspace/research_source/experiments/six_case_replay_v1/predictions/targeted_rerun_receipt.json",
+        "/workspace/research_source/experiments/six_case_replay_v1/predictions/case089_targeted_rerun.npz",
+        "/workspace/research_source/experiments/six_case_replay_v1/predictions/case175_targeted_rerun.npz",
+        "/workspace/research_source/experiments/six_case_replay_v1/predictions/case238_targeted_rerun.npz"
+      ],
+      "observed_design_issues": [
+        "These are genuine source ultrasound images and measured model masks, not generative medical imagery.",
+        "Case aspect ratios make the image widths, title starts and visible anatomy areas uneven across rows.",
+        "No figure-internal contour/box legend; the reader must consult the caption to decode green/blue/orange.",
+        "Figure5 and FigureS6A PNGs are pixel-identical, creating visual duplication."
+      ],
+      "redesign_specification": [
+        "Use a standardized clinical image plate with clear column headings, aligned case/row labels, discrete panel letters and a single contour/box key.",
+        "Keep paired panels at exactly the same crop/zoom within each case; retain source aspect ratio and full pixel data. Use native arrays, no smoothing, retouching or invented scale bar.",
+        "For the main figure, emphasize shared-miss interpretation with a compact data strip for CPU Dice and original A/B below-cutoff flags, using existing receipt values only.",
+        "Distinguish main-figure focus from supplementary complete replay display while retaining all three cases and provenance."
+      ],
+      "caption_meaning_to_preserve": [
+        "Rows case089/case175/case238; left released reference+initial reference-derived box, right actual initial CPU prediction.",
+        "Both A/B missed these low-quality masks at original locked thresholds. CPU Dice 0.3190999051,0.0292870500,0.6812697985 (display 4 decimals).",
+        "Original checksum-matched SAM weights/source/prompt rules; CPU arrays are new replay captures, original study scores remain Table S9.",
+        "All six replay cases/TableS13; maximum six-case initial Dice difference9.61e−5. Do not claim original CUDA pixel identity."
+      ],
+      "original_v8_caption": "Figure 5.  Three shared screening misses with actual targeted CPU predictions. Rows show BrEaST case089 (A, B), case175 (C, D) and case238 (E, F) [10]. Left panels overlay the released reference contour (green) and reference-derived initial prompt (blue); right panels overlay the initial prediction captured in the CPU replay (orange). Both review scores missed these three low-quality masks at the original locked cutoffs. Predictions use the original checksum-matched SAM ViT-B weights, exact source and prompt rules. Displayed Dice values come from this replay. The maximum initial-reference-Dice difference across all six replayed cases was 9.61 × 10−5; original study scores remain in Table S9. All six replayed cases and numerical comparisons appear in Figure S6 and Table S13."
+    },
+    {
+      "id": "Figure S1",
+      "files": [
+        {
+          "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_S1.png",
+          "name": "Figure_S1.png",
+          "sha256": "9c58957f8f893a3c9a7a05a745c3c8ba6a337c8d6d5a444e592147471bb40392",
+          "size_px": [
+            4133,
+            2385
+          ],
+          "dpi": [
+            599.9988,
+            599.9988
+          ]
+        }
+      ],
+      "content_classification": "statistical sensitivity contrasts from archived patient scores",
+      "scientific_task": "Show sensitivity of the detection contrasts to low-quality Dice definition.",
+      "sources": [
+        "/workspace/research_source/figures/source/redraw_figures.py",
+        "/workspace/research_source/figures/Figure_S1_dice_cutoff_contrasts.svg",
+        "/workspace/research_source/experiments/replication/archived_replay/primary.json",
+        "/workspace/research_source/experiments/replication/archived_replay/supplementary.json"
+      ],
+      "observed_design_issues": [
+        "Conventional forest plot with data-backed intervals; no generative illustration.",
+        "A large left label gutter, per-row numerical values under intervals, and pale primary-row bands give the two panels uneven visual density.",
+        "The x-axis uses a detection-difference wording different from Figure3 despite the same unit."
+      ],
+      "redesign_specification": [
+        "Use the Figure3 forest style, aligned cutoff/denominator rows across two contrast columns, with explicit numerical estimate/CI columns.",
+        "Keep one common x range and thin zero lines. Mark primary H1 at Dice<0.70 with a filled marker; avoid large tinted bands.",
+        "Use consistent pp units, fonts, panel letters and confidence-interval line weight."
+      ],
+      "caption_meaning_to_preserve": [
+        "Risk thresholds remain locked; vary only reference Dice cutoff0.50/0.70/0.80.",
+        "Internal/external low-quality denominators53/7,93/16,183/50; A shows A external−internal; B external B−A.",
+        "Only H1 at0.70 is the primary interval; remaining95% intervals nominal."
+      ],
+      "original_v8_caption": "Figure S1.  Sensitivity to the definition of low quality. Panel A shows the external-minus-internal detection difference for method A. Panel B shows the paired B-minus-A difference in BrEaST. Risk thresholds remain fixed while reference Dice cutoffs vary. The filled marker denotes H1 at Dice below 0.70. The remaining 95 % confidence intervals are nominal."
+    },
+    {
+      "id": "Figure S2",
+      "files": [
+        {
+          "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_S2.png",
+          "name": "Figure_S2.png",
+          "sha256": "f5e0ab1c1680b8ed909cdf65596301d98b7ded647f55ced2a2d4960f92a5d98e",
+          "size_px": [
+            4133,
+            1960
+          ],
+          "dpi": [
+            599.9988,
+            599.9988
+          ]
+        }
+      ],
+      "content_classification": "paired empirical count plot from archived patient scores",
+      "scientific_task": "Show overlap of A/B detection for the same 16 external low-quality masks under two review rules.",
+      "sources": [
+        "/workspace/research_source/figures/source/redraw_figures.py",
+        "/workspace/research_source/figures/Figure_S2_external_paired_counts.svg",
+        "/workspace/research_source/experiments/replication/archived_replay/primary.json",
+        "/workspace/research_source/experiments/replication/archived_replay/supplementary.json"
+      ],
+      "observed_design_issues": [
+        "Current dot table is a measured count display; not a generated illustration.",
+        "The dot rows and separate right-count rules consume space; very pale neither dots have low contrast.",
+        "Dots do not encode case identity or trajectories between panels, so readers should not infer dot-by-dot patient pairing."
+      ],
+      "redesign_specification": [
+        "Use two aligned standard 2×2 A-flag/B-flag contingency tables, or retain dot tables with clearer black borders and all counts explicit.",
+        "Use exactly the same category order/scale across policies; label denominator16 once per panel and total reviewed counts in headings.",
+        "Do not invent transitions or patient identities from anonymous count dots."
+      ],
+      "caption_meaning_to_preserve": [
+        "Locked thresholds both10/A-only0/B-only3/neither3; A35/252 and B33/252 flagged.",
+        "Equal review top50/252 each: both12/A-only2/B-only1/neither1; same16 low-quality cases."
+      ],
+      "original_v8_caption": "Figure S2.  Paired outcomes among the 16 low-quality BrEaST masks. Each dot represents one low-quality case. Panel A uses the two locked thresholds. Panel B ranks each score separately and selects 50 of 252 patients per method. The right column in each panel reports the counts."
+    },
+    {
+      "id": "Figure S3",
+      "files": [
+        {
+          "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_S3.png",
+          "name": "Figure_S3.png",
+          "sha256": "bf145d14161c47daff18a167e036e82173f924f6b9dda0cfec836a8c334ca215",
+          "size_px": [
+            3840,
+            3690
+          ],
+          "dpi": [
+            599.9988,
+            599.9988
+          ]
+        }
+      ],
+      "content_classification": "post hoc archived quantitative budget-scan plot",
+      "scientific_task": "Show all eight budgets under transferred thresholds and equal-review ranking.",
+      "sources": [
+        "/workspace/research_source/submission/bmt_v8_final/Analysis/build_supp_figures.py",
+        "/workspace/research_source/experiments/cloud_validation_v1/results/budget_transfer/performance.csv",
+        "/workspace/research_source/experiments/cloud_validation_v1/results/budget_transfer/paired_contrasts.csv",
+        "/workspace/research_source/submission/bmt_v8_final/Analysis/table_data/S10_performance_unrounded.csv",
+        "/workspace/research_source/submission/bmt_v8_final/Analysis/table_data/S10_paired_contrasts_unrounded.csv"
+      ],
+      "observed_design_issues": [
+        "A conventional data plot; no generative illustration content.",
+        "Four series per panel and legends inside small axes increase cognitive load; D has overlapping paired error bars.",
+        "This figure uses a different blue/orange palette and smaller typography than main Figures3/4."
+      ],
+      "redesign_specification": [
+        "Use a consistent 2×2 statistical panel grid: actual review, external detection, internal detection, external B−A contrast.",
+        "Carry score colors consistently and use solid/filled=transferred versus dashed/open=equal review; use independent cohort marker shapes where needed.",
+        "Retain actual numerical x positions5,10,15,20,25,30,40,50; offset paired error bars only for legibility, never change endpoints.",
+        "Use a compact shared legend and readable≥8pt labels; a thin20% reference may identify the original example without visually selecting a favorable budget."
+      ],
+      "caption_meaning_to_preserve": [
+        "All8 budgets and both rules evaluated; no favorable-budget selection; external F16/internal F93.",
+        "D preserves archived nominal paired Newcombe95% CIs conditional on observed calibration/rankings; no recalibration or reranking uncertainty.",
+        "Post hoc sensitivity, TableS10. No rerun or new inference is needed to redraw."
+      ],
+      "original_v8_caption": "Figure S3. Complete review-budget scan. A shows actual review fractions after development-threshold transfer; B and C show external and internal low-quality detection under transferred cutoffs and equal-review ranking; D shows paired external B-minus-A detection differences. Each target was evaluated using both rules, with no selection of a favorable budget. External and internal low-quality denominators are 16 and 93. Error bars in D are nominal paired Newcombe 95 % intervals conditional on observed calibration and rankings; they do not incorporate recalibration or reranking uncertainty. Numerical values are in Table S10."
+    },
+    {
+      "id": "Figure S4",
+      "files": [
+        {
+          "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_S4.png",
+          "name": "Figure_S4.png",
+          "sha256": "489f73e4f26beabc0504899b3013eb14ed1b9e8c189d0006f3dc9cb9e7932606",
+          "size_px": [
+            3840,
+            4080
+          ],
+          "dpi": [
+            599.9988,
+            599.9988
+          ]
+        }
+      ],
+      "content_classification": "post hoc archived patient-bootstrap summaries",
+      "scientific_task": "Separate calibration/test-sampling sensitivity and summarize joint contrast sign patterns.",
+      "sources": [
+        "/workspace/research_source/submission/bmt_v8_final/Analysis/build_supp_figures.py",
+        "/workspace/research_source/experiments/cloud_validation_v1/results/bootstrap_stability/summary.json",
+        "/workspace/research_source/experiments/cloud_validation_v1/results/bootstrap_stability/iterations.csv.gz",
+        "/workspace/research_source/submission/bmt_v8_final/Analysis/table_data/S11_endpoints_unrounded.csv",
+        "/workspace/research_source/submission/bmt_v8_final/Analysis/table_data/S11_direction_matrix_unrounded.csv"
+      ],
+      "observed_design_issues": [
+        "Quantitative bootstrap results, not an image-generation artifact.",
+        "R1/R2/R3 labels require bottom footnote decoding; multi-meaning color choices differ from method palette.",
+        "Tiny sign-frequency segments have rotated labels; the 0.90% segment needs a leader; 7.2pt text is small at162.56mm width.",
+        "Three dense footnote lines and a separate legend force the reader away from the data."
+      ],
+      "redesign_specification": [
+        "Use explicit route names in aligned rows and compact forest panels for the four endpoints; preserve median/percentile-CI versus observed-estimate distinction.",
+        "Replace D with a 3-route×4-pattern annotated frequency matrix or grouped table, showing all percentages including zeros at identical readable size.",
+        "Use a simple semantic key: transferred vs equal-review markers, original observed points distinct from resampling medians. Avoid reusing method colors for unrelated categories.",
+        "Keep a short caption caveat with full support constraint and TableS11 reference; label all results post hoc descriptive resampling."
+      ],
+      "caption_meaning_to_preserve": [
+        "10,000 patient-bootstrap replicates per route: test-only fixed cutoff, development-only calibration, full development+test.",
+        "A/B show A external−internal detection/review; C external B−A transferred/equal-top50 detection; points medians and bars percentile95% intervals with original estimates separate.",
+        "Original strict pattern fixed>0/equal<0:39.61%,90.40%,30.94%; full ties28.08%. Sign frequencies are not p-values or population probabilities.",
+        "Fixed-test bootstrap cannot create absent A-only low-quality detection; nonnegative support does not exclude a population A advantage; retain originalH3 interval."
+      ],
+      "original_v8_caption": "Figure S4. Patient-bootstrap sensitivity, 10,000 replicates per route. A and B show A external-minus-internal detection and review contrasts; C shows external B-minus-A detection under transferred cutoffs and equal-top50 ranking. Points and bars denote medians and descriptive percentile 95 % intervals, with original estimates identified separately. D shows the joint sign-pattern frequencies: original strict pattern (fixed>0/equal<0), opposite pattern, at least one zero contrast, or matching nonzero signs. Frequencies are empirical resampling summaries, not p-values or population probabilities. Test-only resampling cannot generate an unobserved A-only low-quality detection at the fixed cutoffs; its nonnegative support must not be used to exclude a population A advantage. The original H3 Newcombe interval is retained. Complete routes, denominators and the sign matrix are in Table S11."
+    },
+    {
+      "id": "Figure S5",
+      "files": [
+        {
+          "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_S5.png",
+          "name": "Figure_S5.png",
+          "sha256": "0c8e8dd0152e1f6786f93bd91901bdbb10cfda50bbb8da7152b45eedd4e9af19",
+          "size_px": [
+            3840,
+            2190
+          ],
+          "dpi": [
+            599.9988,
+            599.9988
+          ]
+        }
+      ],
+      "content_classification": "post hoc archived diagnostic-stratum accounting with patient-bootstrap CIs",
+      "scientific_task": "Decompose external−internal differences using symmetric Kitagawa accounting.",
+      "sources": [
+        "/workspace/research_source/submission/bmt_v8_final/Analysis/build_supp_figures.py",
+        "/workspace/research_source/experiments/cloud_validation_v1/results/case_mix_decomposition.json",
+        "/workspace/research_source/experiments/cloud_validation_v1/results/case_mix_decomposition.csv",
+        "/workspace/research_source/experiments/cloud_validation_v1/results/case_mix_decomposition_bootstrap.csv.gz",
+        "/workspace/research_source/submission/bmt_v8_final/Analysis/table_data/S12_decomposition_unrounded.csv"
+      ],
+      "observed_design_issues": [
+        "Conventional empirical interval plot; no generated illustration.",
+        "Panel A/B letters and score A/B row labels may be confused; abbreviated Composition/Within strata labels require caption.",
+        "Panel-specific ranges are valid but should be explicit; no numerical estimate column."
+      ],
+      "redesign_specification": [
+        "Use two forest panels labelled Low-quality detection and Simulated review, with score labels separated from panel letters.",
+        "Group each score as Overall / Composition-associated / Within-stratum-rate, with exact estimate[CI] values aligned in a right column.",
+        "Keep term-specific intervals and zero references; do not force CI components to add or imply causal attribution."
+      ],
+      "caption_meaning_to_preserve": [
+        "Original locked cutoffs, external−internal direction; overall=compositional+within-stratum point terms.",
+        "Nominal percentile95% intervals from5000 patient bootstrap draws; detection components4999 valid, totals/review5000.",
+        "Detection weighting uses diagnosis shares among low-quality cases; review weighting uses all patients; within-stratum equals common-weight standardized difference.",
+        "Descriptive accounting, not causal effects; TableS12."
+      ],
+      "original_v8_caption": "Figure S5. Symmetric Kitagawa accounting at the original locked cutoffs. A shows low-quality detection and B simulated review. Rows give the overall external-minus-internal difference and its composition-associated and within-stratum-rate terms for each score. Points show original estimates; bars show nominal percentile 95 % intervals from 5,000 patient-bootstrap draws. Detection components have 4,999 valid draws; overall differences and review components have 5,000. Detection weights describe diagnostic shares among low-quality cases; review weights describe shares among all patients. The within-stratum term equals the common-weight standardized difference. These are descriptive accounting terms, not causal effects. Values and rounding details are in Table S12."
+    },
+    {
+      "id": "Figure S6",
+      "files": [
+        {
+          "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_S6A.png",
+          "name": "Figure_S6A.png",
+          "sha256": "237d9c30dc0362e473ec376504ba194730a290faa81f5b9caf0084a1367aa6ba",
+          "size_px": [
+            4134,
+            4620
+          ],
+          "dpi": [
+            599.9988,
+            599.9988
+          ]
+        },
+        {
+          "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_S6B.png",
+          "name": "Figure_S6B.png",
+          "sha256": "f9e4c85b93d8fcc5aacf972612a9295864b55156c40e4bf29ef4b6cc8decd97d",
+          "size_px": [
+            4134,
+            4620
+          ],
+          "dpi": [
+            599.9988,
+            599.9988
+          ]
+        }
+      ],
+      "content_classification": "real ultrasound/reference + 30 actual targeted CPU SAM replay mask arrays across six cases",
+      "scientific_task": "Document all six external low-quality cases missed by A: three shared misses and three B-only detections.",
+      "sources": [
+        "/workspace/research_source/submission/bmt_v8_final/Analysis/build_figure_s6a.py",
+        "/workspace/research_source/submission/bmt_v8_final/Analysis/build_figure_s6b.py",
+        "/workspace/research_source/submission/bmt_v8_final/Audit/new_figure_provenance.json",
+        "/workspace/research_source/experiments/six_case_replay_v1/predictions/targeted_rerun_receipt.json",
+        "/workspace/research_source/experiments/six_case_replay_v1/predictions/case089_targeted_rerun.npz",
+        "/workspace/research_source/experiments/six_case_replay_v1/predictions/case175_targeted_rerun.npz",
+        "/workspace/research_source/experiments/six_case_replay_v1/predictions/case238_targeted_rerun.npz",
+        "/workspace/research_source/experiments/six_case_replay_v1/predictions/case024_targeted_rerun.npz",
+        "/workspace/research_source/experiments/six_case_replay_v1/predictions/case105_targeted_rerun.npz",
+        "/workspace/research_source/experiments/six_case_replay_v1/predictions/case222_targeted_rerun.npz"
+      ],
+      "observed_design_issues": [
+        "Real measured model segmentations include highly irregular/fragmented masks (especially case105). These failure patterns must be preserved.",
+        "S6A is pixel-identical to main Figure5; title baselines and ultrasound widths vary with patient aspect ratio.",
+        "S6B uses the same two-column layout, but visually large case105 oversegmentation lacks a nearby explanation of the B-only status.",
+        "No internal role legend or compact risk/flag metadata strip."
+      ],
+      "redesign_specification": [
+        "Keep two parts/pages if needed, with a common clinical plate layout and shared legend. Group shared misses then B-only detections explicitly.",
+        "Use rows for patients with aligned column headings and native full image/ref+prompt/prediction; optional additional actual shifted-mask panels can document B without inventing imagery.",
+        "Keep per-case paired crop/zoom identical, aspect ratio preserved, exact contours at0.5, no smoothing/dilation/retouching or synthetic replacement.",
+        "Display CPU Dice and original A/B flag status from receipt; label arrays CPU replay and keep original CUDA limitation in caption.",
+        "Use distinct supplementary views or extra measured mask information to avoid simple duplication while retaining all6 cases and the original scientific message."
+      ],
+      "caption_meaning_to_preserve": [
+        "S6A case089/175/238 shared A/B misses; S6B case024/105/222 A-missed B-detected.",
+        "All30 captured masks nonempty; low-quality labels and A/B review flags agree with archive.",
+        "Same checksum-matched checkpoint/source, float32 and frozen prompt geometry; newCPU arrays, originalCUDA arrays not saved so pixel identity unverified.",
+        "Max initialDice difference9.61e−5, max48field difference0.00143543(case105 left-shift consistency); no new independent patients; TableS13 and unroundedCSV."
+      ],
+      "original_v8_caption": [
+        "Figure S6 (A). Targeted CPU predictions for the three shared screening misses, case089, case175 and case238. Left panels show the original image with released reference (green) and initial reference-derived prompt (blue); right panels show the actual replay prediction (orange). Both A and B remain below their review cutoffs. The model checkpoint, source, float32 precision and prompt geometry match the frozen protocol. Dice labels are from the CPU replay. Table S13 reports environment details and summarizes the comparisons; all 48 full-precision values are supplied in S13_all_48_comparisons_unrounded.csv. Original scores are retained in Table S9.",
+        "Figure S6 (B). Remaining A-missed low-quality cases, case024, case105 and case222, detected by B. Colors and panel layout follow part A. All 30 captured masks across the six patients are nonempty, and all quality labels and A/B review flags match the archive. The maximum initial-reference-Dice difference is 9.61 × 10−5; the maximum over all 48 fields is 0.00143543 (case105 left-shift consistency). These are new CPU arrays; original CUDA arrays were not saved, so cross-environment pixel identity cannot be verified. No new independent patients were introduced."
+      ]
+    }
+  ]
+}

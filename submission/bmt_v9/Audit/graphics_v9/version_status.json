@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-11-06T11:53:36.756818+00:00",
+  "revision": "v9 scientific graphics and submission layout",
+  "source": "submission/bmt_v8_final",
+  "user_requested_layout_and_figure_revision": true,
+  "scientific_results_changed": false,
+  "author_statement_substance_changed": false,
+  "prior_author_confirmation_scope_preserved": true,
+  "new_explicit_v9_author_approval_claimed": false,
+  "journal_submission_executed": false,
+  "integration_qa_sha256": "334f986dbc7fcbcfd9798f70a46d658abab476068ccfdb7abfe04983d46743c5",
+  "independent_checks_passed": 173,
+  "upload_files": [
+    "BMT_main_manuscript_v9.docx",
+    "Figures/Figure_1.png",
+    "Figures/Figure_2.png",
+    "Figures/Figure_3.png",
+    "Figures/Figure_4.png",
+    "Figures/Figure_5.png",
+    "BMT_Ethical_and_Legal_Declarations_v9.docx",
+    "BMT_cover_letter_v9.docx",
+    "BMT_supplementary_material_v5.docx",
+    "BMT_supplementary_Figure_S6_v5.pdf",
+    "BMT_data_and_code_availability_v9.docx",
+    "BMT_reviewer_candidates.docx",
+    "Additional_quality_control_metrics.csv",
+    "Analysis/table_data/S13_all_48_comparisons_unrounded.csv",
+    "UPLOAD_FILE_MAP.md"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "dataset": "BUS-BRA",
+  "split": "development",
+  "selection": "simple random sample without replacement from the sorted frozen development manifest",
+  "development_patients": 213,
+  "sample_seed": 20261107,
+  "sampled_patients": 40,
+  "completed_patients": 40,
+  "pathology_counts": {
+    "malignant": 14,
+    "benign": 26
+  },
+  "single_image_smoke_case_in_sample": false,
+  "dice_cutoff": 0.7,
+  "low_quality_count": 6,
+  "low_quality_fraction": 0.15,
+  "low_quality_fraction_wilson_95_ci": [
+    0.0706118771732036,
+    0.290723243664897
+  ],
+  "low_quality_image_ids": [
+    "bus_0045-r",
+    "bus_0356-r",
+    "bus_0396-l",
+    "bus_0432-r",
+    "bus_0669-l",
+    "bus_0699-s"
+  ],
+  "dice": {
+    "min": 0.046511627906976744,
+    "q1": 0.763736568523949,
+    "median": 0.870142723051724,
+    "q3": 0.9274981373153608,
+    "max": 0.9657986497514652
+  },
+  "risk_scores": {
+    "risk_A": {
+      "min": 0.008283138275146484,
+      "q1": 0.03442370891571045,
+      "median": 0.046320199966430664,
+      "q3": 0.144046813249588,
+      "max": 0.3354377746582031,
+      "distinct_scores": 40,
+      "zero_scores": 0,
+      "negative_scores": 0,
+      "tie_at_pilot_top_20pct_boundary": false,
+      "low_quality_in_pilot_top_20pct": 4
+    },
+    "risk_B": {
+      "min": 0.0010806531250051599,
+      "q1": 0.006668111492659473,
+      "median": 0.021543299911364444,
+      "q3": 0.07050631683443143,
+      "max": 0.29204474019988147,
+      "distinct_scores": 40,
+      "zero_scores": 0,
+      "negative_scores": 0,
+      "tie_at_pilot_top_20pct_boundary": false,
+      "low_quality_in_pilot_top_20pct": 3
+    }
+  },
+  "pilot_rank_only_review_count": 8,
+  "initial_empty_masks": 0,
+  "cases_with_fewer_than_four_distinct_perturbed_boxes": 0,
+  "inference_ms": {
+    "min": 347.83709999999957,
+    "q1": 355.54695000000083,
+    "median": 360.09899999999993,
+    "q3": 363.68185000000074,
+    "max": 701.7230999999997
+  },
+  "total_inference_ms": 14739.318800000005,
+  "model_load_ms": 932.2913000000002,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "free_gpu_before_model_mib": 5130.0,
+  "peak_pytorch_allocated_mib": 2770.56201171875,
+  "peak_pytorch_reserved_mib": 3104.0,
+  "sam_commit": "dca509fe793f601edb92606367a655c15ac00fdf",
+  "checkpoint_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+  "development_manifest_sha256": "6db10ea5bae1095dba26ce70b3b376ad1390c94de1645c546320310de8d55274",
+  "python": "3.8.20",
+  "torch": "2.4.1+cu118",
+  "weight_dtype": "torch.float32"
+}

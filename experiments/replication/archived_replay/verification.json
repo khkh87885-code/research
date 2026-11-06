@@ -1,0 +1,12 @@
+{
+  "route": "archived_scores",
+  "study_lock_sha256": "91189487ed1fa5328f33e5db4094f846f5619d73924329577f6a0d9e05ffc7d0",
+  "analysis_python": "3.12.14",
+  "matches": {
+    "calibration_matches_archive": true,
+    "primary_matches_archive": true,
+    "supplementary_matches_archive": true
+  },
+  "scored_rows": 1103,
+  "development_rows": 213
+}

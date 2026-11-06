@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "applicable": true,
+  "auditable": true,
+  "verdict": "PASS",
+  "backend": "python-matplotlib",
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "comparisons": 1,
+    "exemptions": 1
+  },
+  "tolerances": {
+    "alignment_pt": 1.5,
+    "gutter_pt": 1.5
+  },
+  "layout": {
+    "schema_version": 1,
+    "backend": "python-matplotlib",
+    "figure": {
+      "width_pt": 496.06299212598424,
+      "height_pt": 306.1417322834646
+    },
+    "panels": [
+      {
+        "id": "A",
+        "bbox_pt": [
+          9.921259842519685,
+          51.023622047244096,
+          134.6456692913386,
+          294.8031496062992
+        ]
+      },
+      {
+        "id": "B",
+        "bbox_pt": [
+          148.81889763779526,
+          51.023622047244096,
+          333.0708661417323,
+          294.8031496062992
+        ]
+      },
+      {
+        "id": "C",
+        "bbox_pt": [
+          347.2440944881889,
+          51.023622047244096,
+          486.14173228346453,
+          294.8031496062992
+        ]
+      }
+    ],
+    "row_groups": [
+      {
+        "id": "diagram-stages",
+        "panels": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    ],
+    "column_groups": [],
+    "boundary_groups": [],
+    "exemptions": [
+      {
+        "panels": [
+          "A",
+          "B",
+          "C"
+        ],
+        "checks": [
+          "panel-width"
+        ],
+        "reason": "The shared SAM model uses a wider center column than the image and score panels."
+      }
+    ]
+  },
+  "findings": []
+}

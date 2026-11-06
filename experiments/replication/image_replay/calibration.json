@@ -1,0 +1,22 @@
+{
+  "N": 213,
+  "F": 24,
+  "methods": {
+    "A": {
+      "recomputed_threshold": 0.13705134391784668,
+      "recomputed_reviews": 43,
+      "recomputed_detections": 19,
+      "locked_reviews": 43,
+      "locked_detections": 19,
+      "matches_original": true
+    },
+    "B": {
+      "recomputed_threshold": 0.06972856653991777,
+      "recomputed_reviews": 43,
+      "recomputed_detections": 17,
+      "locked_reviews": 43,
+      "locked_detections": 17,
+      "matches_original": true
+    }
+  }
+}

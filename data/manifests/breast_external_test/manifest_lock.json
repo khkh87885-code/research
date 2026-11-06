@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "status": "locked",
+  "created_at": "2026-11-05T19:40:55+08:00",
+  "dataset": {
+    "name": "BrEaST",
+    "version": 1,
+    "doi": "10.7937/9WKK-Q141",
+    "split": "external_test"
+  },
+  "manifest": {
+    "path": "manifest.csv",
+    "image_and_mask_path_base": "../breast_external_extracted",
+    "relative_paths_resolved_from": "directory containing this lock record",
+    "columns": [
+      "dataset",
+      "split",
+      "patient_id",
+      "image_id",
+      "pathology",
+      "image_path",
+      "mask_path",
+      "width",
+      "height",
+      "image_sha256",
+      "mask_sha256"
+    ],
+    "patient_id_source": "official workbook CaseID (integer)",
+    "pathology_source": "official workbook Classification (lowercase)",
+    "order": "patient_id ascending as integers",
+    "eligible_patients": 252,
+    "pathology_counts": {
+      "benign": 154,
+      "malignant": 98
+    },
+    "originals_verified_byte_for_byte_against_archive": 252,
+    "main_masks_verified_byte_for_byte_against_archive": 252,
+    "sha256": "33db74c60e8ce242f82f5efcd1007c08151e6faf359a6204f68a251791dbda22"
+  },
+  "eligibility": {
+    "official_cases": 256,
+    "excluded_normal_case_ids_without_main_mask": [
+      45,
+      61,
+      209,
+      213
+    ],
+    "other_mask_files_outside_primary_reference": 14,
+    "exact_cross_dataset_duplicates": []
+  },
+  "preprocessing": {
+    "original_image": {
+      "algorithm": "Decode RGBA, alpha-composite the original over opaque black, convert result to RGB",
+      "background_rgba": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "case_ids_with_changed_rgb_versus_ignoring_alpha": [
+        5,
+        11,
+        77,
+        101,
+        112,
+        144,
+        215,
+        216
+      ]
+    },
+    "reference_mask": {
+      "algorithm": "Use the official primary tumor mask. Read as a boolean array with Pillow convert('1').",
+      "foreground": "white pixels of the verified binary RGB content"
+    }
+  },
+  "scoring_rules": {
+    "thresholds": {
+      "A": 0.13705134391784668,
+      "B": 0.06972856653991777
+    },
+    "alert_operator": ">=",
+    "quality_reference": {
+      "metric": "Dice versus manual lesion contour",
+      "low_quality_operator": "<",
+      "cutoff": 0.7
+    },
+    "threshold_lock_timestamp": "2026-11-05T19:16:27+08:00",
+    "model": {
+      "name": "SAM ViT-B",
+      "source_commit": "dca509fe793f601edb92606367a655c15ac00fdf",
+      "source_repository": "https://github.com/facebookresearch/segment-anything",
+      "weight_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+      "weight_dtype": "torch.float32",
+      "python": "3.8.20",
+      "torch": "2.4.1+cu118",
+      "prompt_box_expansion_per_side": 0.1,
+      "prompt_box_shift_fraction": 0.05,
+      "perturbation_directions": [
+        "left",
+        "right",
+        "up",
+        "down"
+      ],
+      "multimask_output": false
+    }
+  },
+  "sources": {
+    "official_workbook": {
+      "path": "../breast_external_raw/BrEaST-Lesions-USG-clinical-data-Dec-15-2023.xlsx",
+      "sha256": "89a8874496a6f1f93960390b963f7369b90f7e72ee08a738f2d17e37f5eff8bf",
+      "sheet": "BrEaST-Lesions-USG clinical dat",
+      "fields": [
+        "CaseID",
+        "Image_filename",
+        "Mask_tumor_filename",
+        "Classification"
+      ]
+    },
+    "official_image_archive": {
+      "path": "../breast_external_raw/BrEaST-Lesions_USG-images_and_masks-Dec-15-2023.zip",
+      "sha256": "c32e49cdfa54042e065582d0cb35978b5fc5e5b5e461b33bf773fb50cfdad355"
+    },
+    "pairing_audit": {
+      "path": "../breast_external_extracted/pairing_audit.json",
+      "sha256": "bf8906d4fa971f4e5689a79fdf75071e4397d47fe1f359cc97f86b6cd30f5f6a"
+    },
+    "threshold_lock": {
+      "path": "../formal_validation_threshold_lock.json",
+      "sha256": "67395cc2c1c882ed4aabdd80ac9e614a3e100b42eaae0d0e55e8a24ac256f655"
+    },
+    "formal_protocol": {
+      "path": "../formal_experiment_protocol.md",
+      "sha256": "9f8741e988cd5d894ddcc3a77ee3878db1db78a4820ffea050cd7f073aa0950d"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "applicable": true,
+  "auditable": true,
+  "verdict": "PASS",
+  "backend": "python-matplotlib",
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "comparisons": 3,
+    "exemptions": 0
+  },
+  "tolerances": {
+    "alignment_pt": 1.5,
+    "gutter_pt": 1.5
+  },
+  "layout": {
+    "schema_version": 1,
+    "backend": "python-matplotlib",
+    "figure": {
+      "width_pt": 496.06299212598424,
+      "height_pt": 405.35433070866145
+    },
+    "panels": [
+      {
+        "id": "A",
+        "bbox_pt": [
+          64.48818897637796,
+          245.2950676203643,
+          251.7908972140814,
+          357.92787401574805
+        ],
+        "grid_id": "matplotlib-grid-1",
+        "row_start": 0,
+        "row_stop": 1,
+        "col_start": 0,
+        "col_stop": 1
+      },
+      {
+        "id": "B",
+        "bbox_pt": [
+          294.8705201087532,
+          245.2950676203643,
+          482.1732283464567,
+          357.92787401574805
+        ],
+        "grid_id": "matplotlib-grid-1",
+        "row_start": 0,
+        "row_stop": 1,
+        "col_start": 1,
+        "col_stop": 2
+      },
+      {
+        "id": "C",
+        "bbox_pt": [
+          64.48818897637796,
+          77.01732283464565,
+          482.1732283464567,
+          178.8200516920118
+        ],
+        "grid_id": "matplotlib-grid-1",
+        "row_start": 1,
+        "row_stop": 2,
+        "col_start": 0,
+        "col_stop": 2
+      }
+    ],
+    "row_groups": [
+      {
+        "id": "inferred-row-1",
+        "panels": [
+          "A",
+          "B"
+        ]
+      }
+    ],
+    "column_groups": [],
+    "boundary_groups": [
+      {
+        "id": "inferred-shared-left-1",
+        "edge": "left",
+        "panels": [
+          "A",
+          "C"
+        ]
+      },
+      {
+        "id": "inferred-shared-right-1",
+        "edge": "right",
+        "panels": [
+          "B",
+          "C"
+        ]
+      }
+    ],
+    "exemptions": []
+  },
+  "findings": []
+}

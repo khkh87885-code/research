@@ -1,0 +1,82 @@
+{
+  "dataset": "BUS-BRA",
+  "split": "development",
+  "selection": "first row in frozen development manifest",
+  "patient_id": 3,
+  "image_id": "bus_0003-l",
+  "source_image": "BUSBRA/Images/bus_0003-l.png",
+  "reference_mask": "BUSBRA/Masks/mask_0003-l.png",
+  "image_width": 275,
+  "image_height": 372,
+  "sam_commit": "dca509fe793f601edb92606367a655c15ac00fdf",
+  "checkpoint_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+  "base_box_xyxy": [
+    57.29999923706055,
+    63.20000076293945,
+    209.6999969482422,
+    228.8000030517578
+  ],
+  "perturbed_boxes_xyxy": {
+    "left": [
+      49.68000030517578,
+      63.20000076293945,
+      202.0800018310547,
+      228.8000030517578
+    ],
+    "right": [
+      64.91999816894531,
+      63.20000076293945,
+      217.3199920654297,
+      228.8000030517578
+    ],
+    "up": [
+      57.29999923706055,
+      54.91999816894531,
+      209.6999969482422,
+      220.52000427246094
+    ],
+    "down": [
+      57.29999923706055,
+      71.4800033569336,
+      209.6999969482422,
+      237.0800018310547
+    ]
+  },
+  "border_fraction_per_side": 0.1,
+  "shift_fraction_of_initial_box": 0.05,
+  "reference_mask_pixels": 11530,
+  "predicted_mask_pixels": 13734,
+  "dice_vs_reference": 0.9044490183660545,
+  "low_quality_dice_cutoff": 0.7,
+  "low_quality_by_study_definition": false,
+  "sam_predicted_iou": 0.924446165561676,
+  "risk_A": 0.07555383443832397,
+  "initial_vs_perturbed_dice": {
+    "left": 0.9764142450757985,
+    "right": 0.9844047444721042,
+    "up": 0.948226197695573,
+    "down": 0.9741760593522614
+  },
+  "risk_B": 0.029194688351065756,
+  "timing_ms": {
+    "model_build_load_and_to_gpu": 891.7002000000007,
+    "image_encoding": 1039.9041999999997,
+    "initial_prompt": 263.5676,
+    "four_perturbed_prompts": 40.79289999999958,
+    "inference_total": 1344.2646999999993
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "total_mib": 6143.5,
+    "free_before_model_mib": 5130.0,
+    "peak_pytorch_allocated_mib": 2769.92919921875,
+    "peak_pytorch_reserved_mib": 3096.0
+  },
+  "runtime": {
+    "python": "3.8.20",
+    "torch": "2.4.1+cu118",
+    "torchvision": "0.19.1+cu118",
+    "cuda_runtime": "11.8",
+    "weight_dtype": "torch.float32"
+  }
+}

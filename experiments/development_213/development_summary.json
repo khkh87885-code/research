@@ -1,0 +1,122 @@
+{
+  "status": "development_results_candidate_thresholds",
+  "dataset": "BUS-BRA",
+  "split": "development",
+  "scheduled_patients": 213,
+  "scored_patients": 213,
+  "technical_failures": [],
+  "patients_with_a_retry": 0,
+  "pathology_counts_scored": {
+    "malignant": 68,
+    "benign": 145
+  },
+  "dice_low_quality_cutoff": 0.7,
+  "low_quality_count": 24,
+  "low_quality_fraction": 0.11267605633802817,
+  "low_quality_wilson_95_ci": [
+    0.07689637617349751,
+    0.16217902528633935
+  ],
+  "dice": {
+    "min": 0.0,
+    "q1": 0.8178433233554793,
+    "median": 0.8853198083967315,
+    "q3": 0.9258943781942078,
+    "max": 0.9709096885528803
+  },
+  "review_target_fraction": 0.2,
+  "candidate_rule": "Alert when score >= threshold. Choose closest to 20%; exact ties stay together; fewer reviews breaks an equal distance.",
+  "methods": {
+    "risk_A": {
+      "threshold": 0.13705134391784668,
+      "candidate_reviews": 43,
+      "candidate_review_fraction": 0.20187793427230047,
+      "cases_equal_to_threshold": 1,
+      "true_alerts": 19,
+      "missed_low_quality": 5,
+      "acceptable_cases_alerted": 24,
+      "acceptable_cases_not_alerted": 165,
+      "low_quality_detection_fraction": 0.7916666666666666,
+      "descriptive_detection_wilson_95_ci": [
+        0.5952954674681133,
+        0.9075517464714814
+      ],
+      "low_quality_per_review_fraction": 0.4418604651162791,
+      "missed_low_quality_per_100": 2.347417840375587,
+      "scores": {
+        "min": -0.009663224220275879,
+        "q1": 0.03487116098403931,
+        "median": 0.0515519380569458,
+        "q3": 0.09749311208724976,
+        "max": 0.38636600971221924,
+        "distinct": 213,
+        "zero": 0,
+        "negative": 1
+      }
+    },
+    "risk_B": {
+      "threshold": 0.06972856653991777,
+      "candidate_reviews": 43,
+      "candidate_review_fraction": 0.20187793427230047,
+      "cases_equal_to_threshold": 1,
+      "true_alerts": 17,
+      "missed_low_quality": 7,
+      "acceptable_cases_alerted": 26,
+      "acceptable_cases_not_alerted": 163,
+      "low_quality_detection_fraction": 0.7083333333333334,
+      "descriptive_detection_wilson_95_ci": [
+        0.5083230633550337,
+        0.8508535180303913
+      ],
+      "low_quality_per_review_fraction": 0.3953488372093023,
+      "missed_low_quality_per_100": 3.2863849765258215,
+      "scores": {
+        "min": 0.0009992700971546142,
+        "q1": 0.008680611943895689,
+        "median": 0.0235327419793967,
+        "q3": 0.059978922458248096,
+        "max": 0.4325367844765712,
+        "distinct": 213,
+        "zero": 0,
+        "negative": 0
+      }
+    }
+  },
+  "same_candidate_review_count": true,
+  "paired_low_quality_at_candidates": {
+    "both": 14,
+    "A_only": 5,
+    "B_only": 3,
+    "neither": 2
+  },
+  "repeated_pilot_case_check": {
+    "previous_pilot_count": 40,
+    "previous_pilot_cases_repeated": 40,
+    "max_absolute_difference": {
+      "dice_vs_reference": 0.0,
+      "risk_A": 0.0,
+      "risk_B": 0.0
+    }
+  },
+  "initial_empty_masks": 0,
+  "inference_ms": {
+    "min": 346.5057000000016,
+    "q1": 353.2952999999992,
+    "median": 356.2232999999999,
+    "q3": 359.21379999999914,
+    "max": 716.786
+  },
+  "total_inference_ms": 76291.22679999993,
+  "model_load_ms": 822.8694,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "free_gpu_before_model_mib": 5130.0,
+  "peak_pytorch_allocated_mib": 2771.28759765625,
+  "peak_pytorch_reserved_mib": 3096.0,
+  "python": "3.8.20",
+  "torch": "2.4.1+cu118",
+  "weight_dtype": "torch.float32",
+  "sam_commit": "dca509fe793f601edb92606367a655c15ac00fdf",
+  "checkpoint_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+  "development_manifest_sha256": "6db10ea5bae1095dba26ce70b3b376ad1390c94de1645c546320310de8d55274",
+  "protocol_draft_sha256": "9f8741e988cd5d894ddcc3a77ee3878db1db78a4820ffea050cd7f073aa0950d"
+}

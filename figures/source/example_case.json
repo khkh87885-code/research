@@ -1,0 +1,38 @@
+{
+  "dataset": "BrEaST v1",
+  "doi": "10.7937/9WKK-Q141",
+  "patient_id": 1,
+  "case": "case001",
+  "selection": "lowest eligible BrEaST case number",
+  "image_sha256": "03980e1e3748bd614facda5c313cd703fdd30cbfacdeae5ca1415a9f3ccb95c0",
+  "reference_sha256": "ee9ee091ff976524c702237737d49c5fff88f1b3bb7cc8b89081903853657643",
+  "sam_commit": "dca509fe793f601edb92606367a655c15ac00fdf",
+  "checkpoint_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+  "artifact_sha256": "febf459b5e813f83b8922e0b48e39b11d0bed085afbe793eae9dae934e9bd74d",
+  "directions": [
+    "initial",
+    "left",
+    "right",
+    "up",
+    "down"
+  ],
+  "archived_values_match": true,
+  "image_shape": [
+    537,
+    485,
+    3
+  ],
+  "mask_pixel_counts": [
+    11166,
+    12477,
+    22459,
+    8511,
+    27611
+  ],
+  "base_box": [
+    140.60000610351562,
+    0.0,
+    457.3999938964844,
+    238.3000030517578
+  ]
+}

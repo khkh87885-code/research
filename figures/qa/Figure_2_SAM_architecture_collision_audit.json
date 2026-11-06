@@ -1,0 +1,30 @@
+{
+  "pdf": "Figure_2_SAM_architecture_preview.pdf",
+  "auditable": true,
+  "verdict": "PASS",
+  "page_count": 1,
+  "visible_text_box_count": 43,
+  "text_trace_count": 44,
+  "stroke_path_count": 63,
+  "filled_region_count": 32,
+  "image_region_count": 6,
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "contained_fill_overlays": 31,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [],
+  "audit_context": {
+    "pdf_filename": "Figure_2_SAM_architecture_preview.pdf",
+    "pdf_sha256": "0f6d3e5924cebfa1ee155dec8f83173ffb7537680dc5b75f14578cd61be7ab84",
+    "pymupdf_version": "1.27.2.3",
+    "strict_mode": true,
+    "pymupdf_release": "https://pypi.org/project/pymupdf/1.27.2.3/"
+  }
+}

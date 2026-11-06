@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+/reproducibility/replay_records/
+/reproducibility/replay_images/
+/reproducibility/rerun_images/
+/reproducibility/inputs/

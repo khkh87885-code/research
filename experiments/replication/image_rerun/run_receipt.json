@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "study_lock_sha256": "91189487ed1fa5328f33e5db4094f846f5619d73924329577f6a0d9e05ffc7d0",
+  "scores_sha256": "7b67151a0c68d4a53848d9039b5449f37ad9fe66c555ed90c7cc1178c2538e88",
+  "archive_sha256": {
+    "BUS-BRA": "ba3e6ed19cc37c682d8d39e25435bbf8a555a12cb7e641b5f2117685c95580ff",
+    "BrEaST": "c32e49cdfa54042e065582d0cb35978b5fc5e5b5e461b33bf773fb50cfdad355"
+  },
+  "sam_commit": "dca509fe793f601edb92606367a655c15ac00fdf",
+  "checkpoint_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+  "runtime": {
+    "python": "3.8.20",
+    "torch": "2.4.1+cu118",
+    "torchvision": "0.19.1+cu118",
+    "pillow": "10.4.0",
+    "numpy": "1.24.4",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "cuda": "11.8"
+  },
+  "cohorts": {
+    "development": {
+      "scheduled": 213,
+      "scored": 213
+    },
+    "internal_holdout": {
+      "scheduled": 851,
+      "scored": 851
+    },
+    "external_test": {
+      "scheduled": 252,
+      "scored": 252
+    }
+  },
+  "started_at_utc": "2026-11-05T17:17:55.657151+00:00",
+  "completed_at_utc": "2026-11-05T17:25:21.036817+00:00"
+}

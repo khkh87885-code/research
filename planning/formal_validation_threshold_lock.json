@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "status": "locked",
+  "locked_at": "2026-11-05T19:16:27+08:00",
+  "timezone": "Asia/Shanghai",
+  "authorization": "confirmed by the user",
+  "study": "Cross-dataset validation of breast ultrasound segmentation failure-screening thresholds",
+  "alert_operator": ">=",
+  "threshold_policy": "Apply the exact numeric thresholds to both test sets.",
+  "quality_reference": {
+    "metric": "Dice versus manual lesion contour",
+    "low_quality_operator": "<",
+    "cutoff": 0.7
+  },
+  "methods": {
+    "A": {
+      "score_column": "risk_A",
+      "score_definition": "1 minus the raw SAM predicted IoU for the initial mask",
+      "threshold": 0.13705134391784668,
+      "development_review_count": 43,
+      "development_review_fraction": 0.20187793427230047,
+      "development_low_quality_detected": 19
+    },
+    "B": {
+      "score_column": "risk_B",
+      "score_definition": "1 minus the mean Dice of the initial mask compared with the four perturbed masks",
+      "threshold": 0.06972856653991777,
+      "development_review_count": 43,
+      "development_review_fraction": 0.20187793427230047,
+      "development_low_quality_detected": 17
+    }
+  },
+  "calibration": {
+    "dataset": "BUS-BRA",
+    "split": "development",
+    "patients": 213,
+    "low_quality_count": 24,
+    "review_target_fraction": 0.2,
+    "tie_rule": "Include all scores equal to the cutoff. Prefer fewer reviews if equally close to the target."
+  },
+  "model": {
+    "name": "SAM ViT-B",
+    "source_commit": "dca509fe793f601edb92606367a655c15ac00fdf",
+    "source_repository": "https://github.com/facebookresearch/segment-anything",
+    "weight_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+    "weight_dtype": "torch.float32",
+    "python": "3.8.20",
+    "torch": "2.4.1+cu118",
+    "prompt_box_expansion_per_side": 0.1,
+    "prompt_box_shift_fraction": 0.05,
+    "perturbation_directions": [
+      "left",
+      "right",
+      "up",
+      "down"
+    ],
+    "multimask_output": false
+  },
+  "planned_tests": {
+    "internal": {
+      "dataset": "BUS-BRA",
+      "split": "internal_holdout",
+      "manifest_patients": 851
+    },
+    "external": {
+      "dataset": "BrEaST",
+      "dataset_doi": "10.7937/9WKK-Q141"
+    }
+  },
+  "evidence": {
+    "protocol": {
+      "path": "planning/formal_experiment_protocol.md",
+      "sha256": "9f8741e988cd5d894ddcc3a77ee3878db1db78a4820ffea050cd7f073aa0950d",
+      "path_note": "Repository copy with relative Markdown links; checksum refers to the frozen local original."
+    },
+    "development_case_results": {
+      "path": "experiments/development_213/development_cases.csv",
+      "sha256": "3c1375a5546a3af48de72339cc6a519f1f981d5431a38fcd2ccc6765ec43a9ce"
+    },
+    "development_summary": {
+      "path": "experiments/development_213/development_summary.json",
+      "sha256": "ed4d65bf6efd379e9c4f1bb5cec1f2fb0be864f5605d5e29da44bbbbd3d8a156"
+    },
+    "development_manifest": {
+      "path": "data/manifests/busbra_development.csv",
+      "sha256": "6db10ea5bae1095dba26ce70b3b376ad1390c94de1645c546320310de8d55274"
+    },
+    "internal_holdout_manifest": {
+      "path": "data/manifests/busbra_internal_holdout.csv",
+      "sha256": "2727d11d0db4f41ddd70a915576e5273a9d0ecbd735f151ae2ae710d0963a026"
+    },
+    "sam_weights": {
+      "path": "https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth",
+      "sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912"
+    },
+    "full_development_runner": {
+      "path": "experiments/run_full_development.py",
+      "sha256": "0bb9c3f1a6f995f5ba9eb4ab50c8ba71eba7d31d41a728bac622590fe611aaba"
+    },
+    "image_scoring_code": {
+      "path": "experiments/run_development_pilot.py",
+      "sha256": "2adf06b153dec9b0a4ed1fcc73db55c68a76d43211298c5d6a59735489571713"
+    },
+    "prompt_box_and_dice_code": {
+      "path": "experiments/run_single_case.py",
+      "sha256": "781652a8a72040f04a0363f130aaede242395e88748f18136e118b411031b8e2"
+    }
+  }
+}

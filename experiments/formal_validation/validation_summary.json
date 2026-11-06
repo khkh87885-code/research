@@ -1,0 +1,159 @@
+{
+  "status": "scoring_completed",
+  "started_at": "2026-11-05T19:51:56+08:00",
+  "completed_at": "2026-11-05T19:58:17+08:00",
+  "input_verification": {
+    "status": "preflight_verified",
+    "patients": {
+      "internal_holdout": 851,
+      "external_test": 252
+    },
+    "internal_holdout_pathology": {
+      "malignant": 274,
+      "benign": 577
+    },
+    "external_test_pathology": {
+      "benign": 154,
+      "malignant": 98
+    },
+    "development_results_replayed": {
+      "scheduled_patients": 213,
+      "N": 213,
+      "F": 24,
+      "technical_failures": [],
+      "patients_with_a_retry": 0,
+      "methods": {
+        "A": {
+          "R": 43,
+          "TP": 19,
+          "FN": 5,
+          "low_quality_detection_fraction": 0.7916666666666666,
+          "review_fraction": 0.20187793427230047,
+          "missed_low_quality_per_100": 2.347417840375587,
+          "review_fraction_among_acceptable": 0.12698412698412698
+        },
+        "B": {
+          "R": 43,
+          "TP": 17,
+          "FN": 7,
+          "low_quality_detection_fraction": 0.7083333333333334,
+          "review_fraction": 0.20187793427230047,
+          "missed_low_quality_per_100": 3.2863849765258215,
+          "review_fraction_among_acceptable": 0.13756613756613756
+        }
+      },
+      "paired_low_quality": {
+        "both": 14,
+        "A_only": 5,
+        "B_only": 3,
+        "neither": 2
+      }
+    },
+    "thresholds": {
+      "A": 0.13705134391784668,
+      "B": 0.06972856653991777
+    },
+    "alert_operator": ">=",
+    "quality_reference": {
+      "metric": "Dice versus manual lesion contour",
+      "low_quality_operator": "<",
+      "cutoff": 0.7
+    },
+    "external_black_background_case_ids": [
+      5,
+      11,
+      77,
+      101,
+      112,
+      144,
+      215,
+      216
+    ],
+    "threshold_lock_sha256": "67395cc2c1c882ed4aabdd80ac9e614a3e100b42eaae0d0e55e8a24ac256f655",
+    "external_manifest_lock_sha256": "12c58755408f397f67f656b8a3ca89125ad4e0478590ad23bd8f3a03524f127c",
+    "internal_holdout_manifest_sha256": "2727d11d0db4f41ddd70a915576e5273a9d0ecbd735f151ae2ae710d0963a026",
+    "external_manifest_sha256": "33db74c60e8ce242f82f5efcd1007c08151e6faf359a6204f68a251791dbda22",
+    "internal_archive_md5": "1f8b2be6476d58fc97bfb5e5a1ea9bab",
+    "protocol_sha256": "9f8741e988cd5d894ddcc3a77ee3878db1db78a4820ffea050cd7f073aa0950d",
+    "sam_commit": "dca509fe793f601edb92606367a655c15ac00fdf",
+    "checkpoint_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+    "runner_sha256": "01bcdcacefab72de0d9b8c51775bc28ae79e381d388fdc7b065c374a6383877c",
+    "runtime": {
+      "python": "3.8.20",
+      "torch": "2.4.1+cu118",
+      "torchvision": "0.19.1+cu118",
+      "pillow": "10.4.0",
+      "numpy": "1.24.4",
+      "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU"
+    }
+  },
+  "cohorts": {
+    "internal_holdout": {
+      "scheduled_patients": 851,
+      "N": 851,
+      "F": 93,
+      "technical_failures": [],
+      "patients_with_a_retry": 0,
+      "methods": {
+        "A": {
+          "R": 174,
+          "TP": 71,
+          "FN": 22,
+          "low_quality_detection_fraction": 0.7634408602150538,
+          "review_fraction": 0.2044653349001175,
+          "missed_low_quality_per_100": 2.5851938895417157,
+          "review_fraction_among_acceptable": 0.1358839050131926
+        },
+        "B": {
+          "R": 150,
+          "TP": 68,
+          "FN": 25,
+          "low_quality_detection_fraction": 0.7311827956989247,
+          "review_fraction": 0.1762632197414806,
+          "missed_low_quality_per_100": 2.937720329024677,
+          "review_fraction_among_acceptable": 0.10817941952506596
+        }
+      },
+      "paired_low_quality": {
+        "both": 58,
+        "A_only": 13,
+        "B_only": 10,
+        "neither": 12
+      }
+    },
+    "external_test": {
+      "scheduled_patients": 252,
+      "N": 252,
+      "F": 16,
+      "technical_failures": [],
+      "patients_with_a_retry": 0,
+      "methods": {
+        "A": {
+          "R": 35,
+          "TP": 10,
+          "FN": 6,
+          "low_quality_detection_fraction": 0.625,
+          "review_fraction": 0.1388888888888889,
+          "missed_low_quality_per_100": 2.380952380952381,
+          "review_fraction_among_acceptable": 0.1059322033898305
+        },
+        "B": {
+          "R": 33,
+          "TP": 13,
+          "FN": 3,
+          "low_quality_detection_fraction": 0.8125,
+          "review_fraction": 0.13095238095238096,
+          "missed_low_quality_per_100": 1.1904761904761905,
+          "review_fraction_among_acceptable": 0.0847457627118644
+        }
+      },
+      "paired_low_quality": {
+        "both": 10,
+        "A_only": 0,
+        "B_only": 3,
+        "neither": 3
+      }
+    }
+  },
+  "validation_cases_sha256": "6ac44d3d3557caceba1e47dab4f87bc3b180568195c0d0ecb6506fbb04d07961"
+}

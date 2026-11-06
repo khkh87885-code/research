@@ -1,0 +1,826 @@
+{
+  "checked_utc": "2026-11-06T13:30:55.333623+00:00",
+  "scope": "Independent verification of concise v12 mathematical definitions, preserved scientific methods and native display equations",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "main numbered equation labels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main true display math count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main no aligned or cases matrix",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main scientific table count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main scientific data cell count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main scientific cells match latest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main all native tables correctly classified",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (1) layout only 1x3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (1) single native display object",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (1) mathematical structure matches audited definition",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (1) descriptive labels upright",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (2) layout only 1x3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (2) single native display object",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (2) mathematical structure matches audited definition",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (2) descriptive labels upright",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (3) layout only 1x3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (3) single native display object",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (3) mathematical structure matches audited definition",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (3) descriptive labels upright",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main complete prose follows authorized concise plan",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main only retained equation references survive",
+      "pass": true,
+      "detail": "['2', '1', '2', '3', 'S1']"
+    },
+    {
+      "name": "main former mathematical appendix absent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main abstract and author metadata unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main Results through references declarations captions unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main no equation raster media",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement numbered equation labels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement true display math count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement no aligned or cases matrix",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement scientific table count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement scientific data cell count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement scientific cells match latest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement all native tables correctly classified",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement (S1) layout only 1x3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement (S1) single native display object",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement (S1) mathematical structure matches audited definition",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement (S1) descriptive labels upright",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement (S2) layout only 1x3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement (S2) single native display object",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement (S2) mathematical structure matches audited definition",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement (S2) descriptive labels upright",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement complete prose follows authorized concise plan",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement only retained equation references survive",
+      "pass": true,
+      "detail": "['S1', 'S2']"
+    },
+    {
+      "name": "supplement former mathematical appendix absent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement no equation raster media",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main exact rule paragraph frozen model and input handling",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main exact rule paragraph calibration zero option tied groups >= nearest target and fewer tie",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main exact rule paragraph H1 H2 H3 directions and nominal Newcombe",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main exact rule paragraph Dice sensitivity top50 and original string-ID tie",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main exact rule paragraph diagnostic strata and Wilson intervals",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main exact rule paragraph eight budgets nearest integer and half tie",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main exact rule paragraph three bootstrap routes paired records repeats top50 draw-order nominal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main exact rule paragraph historical versus six-case CPU environment scope",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Dice positive-denominator domain explicit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Dice empty-empty convention preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "empty prediction vs nonempty reference gives zero",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "strict low-quality reference cutoff preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "A raw quality-head input preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "four directions and clipped coincidence retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all zero-denominator rates remain undefined",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Kitagawa detection weights use low-quality patients",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Kitagawa review weights use all scored patients",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Kitagawa identity conditioned on defined stratum rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "overall rates aggregate counts retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph paired Newcombe positive-association correction",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph internal exact half K=425",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph equal-K review difference zero by design",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph linear finite-value bootstrap quantiles",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph three routes paired sampling",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph duplicate draws deterministic draw index and NA",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph R1 zero A-only empirical support",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph bootstrap not replace Newcombe or superiority probability",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph component finite percentile procedure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph 4999 vs5000 undefined stratum",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph noncausal and no percent-explained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph fixed CPU replay decisions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph 48 numeric fields and cross-environment differences",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_1.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_1.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_2.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_2.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_3.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_3.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_4.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_4.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_5.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_5.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S1.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S1.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S2.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S2.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S3.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S3.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S4.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S4.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S5.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S5.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S6A.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S6A.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S6B.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S6B.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "S6 file bytes unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v12_preview.pdf no replacement or math parser error glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v12_preview.pdf no red parser error spans",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v12_illustrated_preview.pdf no replacement or math parser error glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v12_illustrated_preview.pdf no red parser error spans",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_material_v8_preview.pdf no replacement or math parser error glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_material_v8_preview.pdf no red parser error spans",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v8.pdf no replacement or math parser error glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v8.pdf no red parser error spans",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final fingerprint BMT_formula_layout_proof_v12.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final fingerprint BMT_main_manuscript_v12.docx",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final fingerprint BMT_main_manuscript_v12_illustrated.docx",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final fingerprint BMT_main_manuscript_v12_illustrated_preview.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final fingerprint BMT_main_manuscript_v12_preview.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final fingerprint BMT_supplementary_Figure_S6_v8.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final fingerprint BMT_supplementary_material_v8.docx",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final fingerprint BMT_supplementary_material_v8_preview.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manual source-code equivalence main 1",
+      "pass": true,
+      "detail": "Two-times foreground intersection divided by summed foreground counts; positive-denominator domain and empty-empty=1 convention are explicitly stated in prose."
+    },
+    {
+      "name": "manual source-code equivalence main 2",
+      "pass": true,
+      "detail": "One minus raw initial SAM predicted IoU from the quality head; no manual-reference IoU substitution or clipping."
+    },
+    {
+      "name": "manual source-code equivalence main 3",
+      "pass": true,
+      "detail": "One minus the arithmetic mean of exactly4 initial-to-shifted predicted-mask Dice values. All4 directions remain included even if clipping creates coincident boxes."
+    },
+    {
+      "name": "manual source-code equivalence supplement S1",
+      "pass": true,
+      "detail": "Symmetric composition-associated term: difference in diagnostic shares multiplied by mean stratum rates; external-minus-internal direction."
+    },
+    {
+      "name": "manual source-code equivalence supplement S2",
+      "pass": true,
+      "detail": "Symmetric within-stratum-rate term: difference in stratum rates multiplied by mean diagnostic shares; detection weights use low-quality counts, review weights use all-patient counts."
+    },
+    {
+      "name": "illustrated copy retains identical native math",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "total display formula budget is five",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main all retained equation numbers referenced in prose",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement all retained equation numbers referenced in prose",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "proof contains two pages for all five formulas",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 127,
+  "unresolved_findings": 0,
+  "equations_verified": 5,
+  "display_equations_before": 26,
+  "display_equations_after": 5,
+  "equation_checks": [
+    {
+      "document": "main",
+      "label": "1",
+      "pass": true,
+      "latex": "D(U,V)=\\frac{2\\lvert U\\cap V\\rvert}{\\lvert U\\rvert+\\lvert V\\rvert}.",
+      "native_math_sha256": "d0ff07eb3b5058d7052a6a74955a8cb07f0c0ffa9dcacd6f511582bfff4ef472"
+    },
+    {
+      "document": "main",
+      "label": "2",
+      "pass": true,
+      "latex": "r_{\\mathrm{A}}=1-\\widehat q.",
+      "native_math_sha256": "ba3d249f94e2357fc0d6d155919fe4ac4889ed0dd8cecb75b93d84a8af7f4a51"
+    },
+    {
+      "document": "main",
+      "label": "3",
+      "pass": true,
+      "latex": "r_{\\mathrm{B}}=1-\\frac{1}{4}\\sum_{j=1}^{4}D(P_0,P_j).",
+      "native_math_sha256": "96a2c3e85730a8346c462a1f3ffba718fbdaab0c095d15115cbe184fd8eb6e6a"
+    },
+    {
+      "document": "supplement",
+      "label": "S1",
+      "pass": true,
+      "latex": "C=\\sum_s(w_{\\mathrm{E},s}-w_{\\mathrm{I},s})\\frac{p_{\\mathrm{E},s}+p_{\\mathrm{I},s}}{2},",
+      "native_math_sha256": "c81fb620cbcbad086161f4260a41d6d405a46e193fa2d60e4a13e506d5d30fda"
+    },
+    {
+      "document": "supplement",
+      "label": "S2",
+      "pass": true,
+      "latex": "W=\\sum_s(p_{\\mathrm{E},s}-p_{\\mathrm{I},s})\\frac{w_{\\mathrm{E},s}+w_{\\mathrm{I},s}}{2}.",
+      "native_math_sha256": "98408e9607616418625983dc5401de96d31ba83f6379ca29b568b64e7224805e"
+    }
+  ],
+  "source_code_audits": [
+    {
+      "document": "main",
+      "label": "1",
+      "source": "/workspace/research_source/submission/bmt_v9/Reproducibility/score_images.py",
+      "source_line": 34,
+      "source_sha256": "00086ee2db464e8e3080c2a2a02fc9d0a5e670ac03f9716e5ea1eb666d4bcbf8",
+      "pass": true,
+      "detail": "Two-times foreground intersection divided by summed foreground counts; positive-denominator domain and empty-empty=1 convention are explicitly stated in prose."
+    },
+    {
+      "document": "main",
+      "label": "2",
+      "source": "/workspace/research_source/submission/bmt_v9/Reproducibility/score_images.py",
+      "source_line": 117,
+      "source_sha256": "00086ee2db464e8e3080c2a2a02fc9d0a5e670ac03f9716e5ea1eb666d4bcbf8",
+      "pass": true,
+      "detail": "One minus raw initial SAM predicted IoU from the quality head; no manual-reference IoU substitution or clipping."
+    },
+    {
+      "document": "main",
+      "label": "3",
+      "source": "/workspace/research_source/submission/bmt_v9/Reproducibility/score_images.py",
+      "source_line": 107,
+      "source_sha256": "00086ee2db464e8e3080c2a2a02fc9d0a5e670ac03f9716e5ea1eb666d4bcbf8",
+      "pass": true,
+      "detail": "One minus the arithmetic mean of exactly4 initial-to-shifted predicted-mask Dice values. All4 directions remain included even if clipping creates coincident boxes."
+    },
+    {
+      "document": "supplement",
+      "label": "S1",
+      "source": "/workspace/research_source/experiments/cloud_validation_v1/scripts/case_mix_decomposition.py",
+      "source_line": 180,
+      "source_sha256": "818487d97e5ec9e34c594b724199b64f24d0590f2fed25c7c047dd5e9dc311ac",
+      "pass": true,
+      "detail": "Symmetric composition-associated term: difference in diagnostic shares multiplied by mean stratum rates; external-minus-internal direction."
+    },
+    {
+      "document": "supplement",
+      "label": "S2",
+      "source": "/workspace/research_source/experiments/cloud_validation_v1/scripts/case_mix_decomposition.py",
+      "source_line": 180,
+      "source_sha256": "818487d97e5ec9e34c594b724199b64f24d0590f2fed25c7c047dd5e9dc311ac",
+      "pass": true,
+      "detail": "Symmetric within-stratum-rate term: difference in stratum rates multiplied by mean diagnostic shares; detection weights use low-quality counts, review weights use all-patient counts."
+    }
+  ],
+  "documents": {
+    "BMT_formula_layout_proof_v12.pdf": {
+      "sha256": "528667e26c25bc4e734756bcda80193d164c054106d377543c16ff51b3432e97",
+      "bytes": 1014383,
+      "pages": 2
+    },
+    "BMT_main_manuscript_v12.docx": {
+      "sha256": "100bb41ffe8355222ecdf588ab7045a764995c7f785c8d6b51d80873c3242b0d",
+      "bytes": 58682
+    },
+    "BMT_main_manuscript_v12_illustrated.docx": {
+      "sha256": "5dac85b931467273d1e07cf980eddbf50771a78f0664b80ce018ece2460c4345",
+      "bytes": 3541208
+    },
+    "BMT_main_manuscript_v12_illustrated_preview.pdf": {
+      "sha256": "f205d68ae3f5ea02b9ef757d15c4e89c1b13b815f1d256347c186bcc198602eb",
+      "bytes": 1468838,
+      "pages": 26
+    },
+    "BMT_main_manuscript_v12_preview.pdf": {
+      "sha256": "c0e2d984059ef5b632a84ddb93f009a105ace8675b3f83615ac3059dbe371fa9",
+      "bytes": 225570,
+      "pages": 21
+    },
+    "BMT_supplementary_Figure_S6_v8.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "bytes": 1871819,
+      "pages": 6
+    },
+    "BMT_supplementary_material_v8.docx": {
+      "sha256": "f492a6222165ad5569a968f93ccf9c61a588ef5d9bb01769fd4859226bc6a740",
+      "bytes": 1533688
+    },
+    "BMT_supplementary_material_v8_preview.pdf": {
+      "sha256": "aeecd1f8eeb52c26f026cf7888b95320788d73e3831f2dae70db44dc0a61eef7",
+      "bytes": 1334686,
+      "pages": 25
+    }
+  },
+  "native_document_details": {
+    "BMT_main_manuscript_v12.docx": {
+      "sha256": "100bb41ffe8355222ecdf588ab7045a764995c7f785c8d6b51d80873c3242b0d",
+      "bytes": 58682,
+      "data_tables": 3,
+      "scientific_cells": 66,
+      "display_equations": 3,
+      "layout_tables": 3
+    },
+    "BMT_supplementary_material_v8.docx": {
+      "sha256": "f492a6222165ad5569a968f93ccf9c61a588ef5d9bb01769fd4859226bc6a740",
+      "bytes": 1533688,
+      "data_tables": 19,
+      "scientific_cells": 878,
+      "display_equations": 2,
+      "layout_tables": 2
+    },
+    "BMT_main_manuscript_v12_preview.pdf": {
+      "sha256": "c0e2d984059ef5b632a84ddb93f009a105ace8675b3f83615ac3059dbe371fa9",
+      "bytes": 225570,
+      "pages": 21
+    },
+    "BMT_main_manuscript_v12_illustrated_preview.pdf": {
+      "sha256": "f205d68ae3f5ea02b9ef757d15c4e89c1b13b815f1d256347c186bcc198602eb",
+      "bytes": 1468838,
+      "pages": 26
+    },
+    "BMT_supplementary_material_v8_preview.pdf": {
+      "sha256": "aeecd1f8eeb52c26f026cf7888b95320788d73e3831f2dae70db44dc0a61eef7",
+      "bytes": 1334686,
+      "pages": 25
+    },
+    "BMT_supplementary_Figure_S6_v8.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "bytes": 1871819,
+      "pages": 6
+    }
+  },
+  "formula_scope_plan_sha256": "58021b20a0fe14c2dd243f41dcefe9d2820493b2efaf11291585768f484d39fe",
+  "current_document_hash_manifest_sha256": "c600958d53e5be0cdfe7f68a97af6ee3a0fd7d8e619fe97e480d0886801591a2",
+  "scientific_results_changed": false,
+  "new_experiments_performed": false,
+  "native_documents_pending": false,
+  "final_documents_pending": false,
+  "notes": [
+    "The three main numbered display equations are Dice, risk A and risk B. The two supplementary equations are the Kitagawa C and W terms placed with TableS12. No previous mathematical appendix or stale Eq4–14/S3–S12 reference remains.",
+    "All five formulas are editable native m:oMathPara display equations. Their borderless1x3 equation-layout containers are explicitly tagged and excluded from scientific data-table counts: main3 data tables/66cells plus3 equation layouts; supplement19 data tables/878cells plus2 equation layouts.",
+    "Each actual native formula was independently compared against the concise plan converted by Pandoc, retaining fraction scope, mathematical operators, subscripts, the four-direction sum limits and cohort signs. Upright method/cohort labels A/B/E/I are retained without changing the definitions.",
+    "Dice is restricted to a positive denominator in the leading prose; empty-empty predicted masks score1, and an empty prediction against the nonempty reference scores0. Risk A consumes raw model predictedIoU, while risk B compares the initial prediction with all four shifted predictions.",
+    "Verbatim baseline-method checks preserve the candidate/zero-review calibration rule, >= flagging, whole score ties, nearest20% target/fewer-at-tie selection, locked transfer, nearest-K/half-tie rule, original identifier-string ranking, H1–H3 directions and nominal Newcombe intervals.",
+    "Unchanged supplementary notes preserve paired-record and retained-repeat-draw handling, linear finite-value bootstrap quantiles, R1 empirical-support constraints, conditional equal-K intervals, zero-review-volume difference by design,4999/5000 valid decomposition draws, missing stratum rates even at zero weights and the separate historical versus six-case CPU environments.",
+    "Kitagawa displayed rates are fractions, and TableS12 differences are percentage points. The total identity is conditioned on defined stratum rates; overall rates are calculated from aggregate numerators/denominators and common-weight standardization is described in prose.",
+    "All66 main and878 supplementary scientific tablecells, main Results through declarations/references/captions, abstract/author metadata, all24 production figure files and the standalone S6 PDF bytes remain unchanged from the preceding revision.",
+    "Both actual proof pages were visually inspected here: three main equations on mainpage5 and two supplementary equations with TableS12 on supplementpage19. The moved qhat definition is complete, and fraction/percentage-point units are explicit. Full-page publication-layout review remains separately documented by the dedicated visual reviewer.",
+    "No model inference, patient resampling, new data collection, training or statistical reanalysis was run. Main21 pages, illustrated26, supplement25, standaloneS6six and concise equation prooftwo pages."
+  ]
+}

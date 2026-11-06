@@ -1,0 +1,1110 @@
+{
+  "script": "/workspace/bmt_v9/scripts/redraw_extended_statistics.py",
+  "source_root": "/workspace/research_source/experiments/cloud_validation_v1/results",
+  "source_sha256_before": {
+    "performance": "2b35e41866b99745e3749c9016afea560a39f0eddbda4c0eff316d63df549200",
+    "paired_contrasts": "dab3a8e53fd6e58a7ad07114b27928a87c9abfec91afbc827ef63f5e9b7a3c93",
+    "bootstrap_summary": "050c69a00dcd3709bec88f0182c0ce5229a078dbd9f0838167173f2ed3313446",
+    "case_mix": "92e3ccd9d761117c25089a01c61c40f23674cf70b05a8e221cebbc29524e5543"
+  },
+  "style_source": "/workspace/bmt_v9/evidence/figure_style_spec.json",
+  "changes": "Presentation only; no bootstrap rerun, model inference, recalibration, or new statistical estimation.",
+  "font": "Liberation Sans",
+  "width_inches": 6.89,
+  "figures": {
+    "Figure_S3": {
+      "caption": "Figure S3. Review-budget transfer and detection across all eight evaluated budgets (5 %, 10 %, 15 %, 20 %, 25 %, 30 %, 40 %, and 50 %). (A) Observed review fractions after transferring development-calibrated thresholds to the internal holdout (filled markers, solid lines; n=851) and external cohort (open markers, dashed lines; n=252); the dotted diagonal marks equality with the target budget. (B,C) Observed low-quality detection on the external (16 low-quality cases) and internal (93 low-quality cases) cohorts. Filled markers/solid lines denote transferred thresholds, and open markers/dashed lines denote cohort-specific equal-review ranking. Method A uses blue circles and method B uses orange diamonds in A–C; shapes retain method identity in grayscale. (D) External paired B-minus-A detection differences (percentage points); points are observed contrasts, and vertical bars are the archived paired Newcombe 95 % confidence intervals. Dark circles denote transferred thresholds and blue open squares denote equal review; horizontal offsets are for legibility only. The equal-review count is cohort-specific and rounded as archived; at the 20 % budget, 50 of 252 external cases are reviewed per method. Lines in A–C connect observed budget settings and do not imply additional evaluations. Source: budget_transfer/performance.csv (64 rows) and budget_transfer/paired_contrasts.csv (32 rows); all values and original intervals are unchanged.",
+      "panels": [
+        "A: transferred review fraction",
+        "B: external detection",
+        "C: internal detection",
+        "D: paired Newcombe contrast"
+      ],
+      "plot_series": [
+        {
+          "panel": "A",
+          "split": "internal_holdout",
+          "method": "A",
+          "source_column": "review_fraction",
+          "budget_percent": [
+            5.0,
+            10.0,
+            15.0,
+            20.0,
+            25.0,
+            30.0,
+            40.0,
+            50.0
+          ],
+          "values_percent": [
+            7.52056404230317,
+            12.45593419506463,
+            18.56639247943595,
+            20.44653349001175,
+            27.49706227967097,
+            33.13748531139835,
+            42.068155111633374,
+            49.70622796709753
+          ]
+        },
+        {
+          "panel": "A",
+          "split": "internal_holdout",
+          "method": "B",
+          "source_column": "review_fraction",
+          "budget_percent": [
+            5.0,
+            10.0,
+            15.0,
+            20.0,
+            25.0,
+            30.0,
+            40.0,
+            50.0
+          ],
+          "values_percent": [
+            7.050528789659221,
+            12.925969447708571,
+            15.863689776733251,
+            17.62632197414806,
+            21.15158636897767,
+            27.262044653348998,
+            41.010575793184486,
+            51.46886016451234
+          ]
+        },
+        {
+          "panel": "A",
+          "split": "external_test",
+          "method": "A",
+          "source_column": "review_fraction",
+          "budget_percent": [
+            5.0,
+            10.0,
+            15.0,
+            20.0,
+            25.0,
+            30.0,
+            40.0,
+            50.0
+          ],
+          "values_percent": [
+            6.74603174603174,
+            9.52380952380952,
+            12.698412698412689,
+            13.88888888888889,
+            19.44444444444444,
+            25.39682539682539,
+            37.301587301587304,
+            51.19047619047619
+          ]
+        },
+        {
+          "panel": "A",
+          "split": "external_test",
+          "method": "B",
+          "source_column": "review_fraction",
+          "budget_percent": [
+            5.0,
+            10.0,
+            15.0,
+            20.0,
+            25.0,
+            30.0,
+            40.0,
+            50.0
+          ],
+          "values_percent": [
+            5.15873015873015,
+            9.12698412698412,
+            11.5079365079365,
+            13.09523809523809,
+            15.476190476190471,
+            18.25396825396825,
+            28.17460317460317,
+            38.49206349206349
+          ]
+        },
+        {
+          "panel": "B",
+          "split": "external_test",
+          "method": "A",
+          "mode": "development_calibrated_threshold",
+          "source_column": "detection_fraction",
+          "budget_percent": [
+            5.0,
+            10.0,
+            15.0,
+            20.0,
+            25.0,
+            30.0,
+            40.0,
+            50.0
+          ],
+          "values_percent": [
+            50.0,
+            56.25,
+            62.5,
+            62.5,
+            87.5,
+            87.5,
+            87.5,
+            93.75
+          ]
+        },
+        {
+          "panel": "B",
+          "split": "external_test",
+          "method": "B",
+          "mode": "development_calibrated_threshold",
+          "source_column": "detection_fraction",
+          "budget_percent": [
+            5.0,
+            10.0,
+            15.0,
+            20.0,
+            25.0,
+            30.0,
+            40.0,
+            50.0
+          ],
+          "values_percent": [
+            62.5,
+            75.0,
+            75.0,
+            81.25,
+            81.25,
+            81.25,
+            87.5,
+            87.5
+          ]
+        },
+        {
+          "panel": "B",
+          "split": "external_test",
+          "method": "A",
+          "mode": "test_cohort_equal_review",
+          "source_column": "detection_fraction",
+          "budget_percent": [
+            5.0,
+            10.0,
+            15.0,
+            20.0,
+            25.0,
+            30.0,
+            40.0,
+            50.0
+          ],
+          "values_percent": [
+            43.75,
+            56.25,
+            68.75,
+            87.5,
+            87.5,
+            87.5,
+            87.5,
+            93.75
+          ]
+        },
+        {
+          "panel": "B",
+          "split": "external_test",
+          "method": "B",
+          "mode": "test_cohort_equal_review",
+          "source_column": "detection_fraction",
+          "budget_percent": [
+            5.0,
+            10.0,
+            15.0,
+            20.0,
+            25.0,
+            30.0,
+            40.0,
+            50.0
+          ],
+          "values_percent": [
+            62.5,
+            75.0,
+            81.25,
+            81.25,
+            87.5,
+            87.5,
+            87.5,
+            93.75
+          ]
+        },
+        {
+          "panel": "C",
+          "split": "internal_holdout",
+          "method": "A",
+          "mode": "development_calibrated_threshold",
+          "source_column": "detection_fraction",
+          "budget_percent": [
+            5.0,
+            10.0,
+            15.0,
+            20.0,
+            25.0,
+            30.0,
+            40.0,
+            50.0
+          ],
+          "values_percent": [
+            44.08602150537634,
+            60.215053763440864,
+            72.04301075268818,
+            76.34408602150538,
+            89.24731182795699,
+            93.5483870967742,
+            98.9247311827957,
+            98.9247311827957
+          ]
+        },
+        {
+          "panel": "C",
+          "split": "internal_holdout",
+          "method": "B",
+          "mode": "development_calibrated_threshold",
+          "source_column": "detection_fraction",
+          "budget_percent": [
+            5.0,
+            10.0,
+            15.0,
+            20.0,
+            25.0,
+            30.0,
+            40.0,
+            50.0
+          ],
+          "values_percent": [
+            41.93548387096774,
+            62.365591397849464,
+            69.89247311827957,
+            73.11827956989248,
+            78.49462365591397,
+            87.09677419354838,
+            95.6989247311828,
+            98.9247311827957
+          ]
+        },
+        {
+          "panel": "C",
+          "split": "internal_holdout",
+          "method": "A",
+          "mode": "test_cohort_equal_review",
+          "source_column": "detection_fraction",
+          "budget_percent": [
+            5.0,
+            10.0,
+            15.0,
+            20.0,
+            25.0,
+            30.0,
+            40.0,
+            50.0
+          ],
+          "values_percent": [
+            36.55913978494624,
+            52.68817204301075,
+            67.74193548387096,
+            76.34408602150538,
+            87.09677419354838,
+            90.32258064516128,
+            98.9247311827957,
+            98.9247311827957
+          ]
+        },
+        {
+          "panel": "C",
+          "split": "internal_holdout",
+          "method": "B",
+          "mode": "test_cohort_equal_review",
+          "source_column": "detection_fraction",
+          "budget_percent": [
+            5.0,
+            10.0,
+            15.0,
+            20.0,
+            25.0,
+            30.0,
+            40.0,
+            50.0
+          ],
+          "values_percent": [
+            31.182795698924732,
+            53.76344086021505,
+            67.74193548387096,
+            77.41935483870968,
+            83.87096774193549,
+            89.24731182795699,
+            95.6989247311828,
+            98.9247311827957
+          ]
+        }
+      ],
+      "paired_intervals": [
+        {
+          "budget_percent": 5.0,
+          "mode": "development_calibrated_threshold",
+          "estimate_pp": 12.5,
+          "ci95_low_pp": -12.929855113402212,
+          "ci95_high_pp": 35.339112535141304
+        },
+        {
+          "budget_percent": 10.0,
+          "mode": "development_calibrated_threshold",
+          "estimate_pp": 18.75,
+          "ci95_low_pp": -9.637367999854558,
+          "ci95_high_pp": 43.29909073420161
+        },
+        {
+          "budget_percent": 15.0,
+          "mode": "development_calibrated_threshold",
+          "estimate_pp": 12.5,
+          "ci95_low_pp": -13.654452294458563,
+          "ci95_high_pp": 36.54184425402677
+        },
+        {
+          "budget_percent": 20.0,
+          "mode": "development_calibrated_threshold",
+          "estimate_pp": 18.75,
+          "ci95_low_pp": -4.283595634090115,
+          "ci95_high_pp": 40.038897959518025
+        },
+        {
+          "budget_percent": 25.0,
+          "mode": "development_calibrated_threshold",
+          "estimate_pp": -6.25,
+          "ci95_low_pp": -31.60940388274623,
+          "ci95_high_pp": 19.567263702767058
+        },
+        {
+          "budget_percent": 30.0,
+          "mode": "development_calibrated_threshold",
+          "estimate_pp": -6.25,
+          "ci95_low_pp": -31.60940388274623,
+          "ci95_high_pp": 19.567263702767058
+        },
+        {
+          "budget_percent": 40.0,
+          "mode": "development_calibrated_threshold",
+          "estimate_pp": 0.0,
+          "ci95_low_pp": -23.95540710440741,
+          "ci95_high_pp": 23.95540710440741
+        },
+        {
+          "budget_percent": 50.0,
+          "mode": "development_calibrated_threshold",
+          "estimate_pp": -6.25,
+          "ci95_low_pp": -28.81000177226344,
+          "ci95_high_pp": 15.013353718242758
+        },
+        {
+          "budget_percent": 5.0,
+          "mode": "test_cohort_equal_review",
+          "estimate_pp": 18.75,
+          "ci95_low_pp": -9.164596725652968,
+          "ci95_high_pp": 42.37653390689539
+        },
+        {
+          "budget_percent": 10.0,
+          "mode": "test_cohort_equal_review",
+          "estimate_pp": 18.75,
+          "ci95_low_pp": -9.637367999854558,
+          "ci95_high_pp": 43.29909073420161
+        },
+        {
+          "budget_percent": 15.0,
+          "mode": "test_cohort_equal_review",
+          "estimate_pp": 12.5,
+          "ci95_low_pp": -8.307351000290183,
+          "ci95_high_pp": 33.01769653709885
+        },
+        {
+          "budget_percent": 20.0,
+          "mode": "test_cohort_equal_review",
+          "estimate_pp": -6.25,
+          "ci95_low_pp": -31.60940388274623,
+          "ci95_high_pp": 19.567263702767058
+        },
+        {
+          "budget_percent": 25.0,
+          "mode": "test_cohort_equal_review",
+          "estimate_pp": 0.0,
+          "ci95_low_pp": -23.95540710440741,
+          "ci95_high_pp": 23.95540710440741
+        },
+        {
+          "budget_percent": 30.0,
+          "mode": "test_cohort_equal_review",
+          "estimate_pp": 0.0,
+          "ci95_low_pp": -23.95540710440741,
+          "ci95_high_pp": 23.95540710440741
+        },
+        {
+          "budget_percent": 40.0,
+          "mode": "test_cohort_equal_review",
+          "estimate_pp": 0.0,
+          "ci95_low_pp": -23.95540710440741,
+          "ci95_high_pp": 23.95540710440741
+        },
+        {
+          "budget_percent": 50.0,
+          "mode": "test_cohort_equal_review",
+          "estimate_pp": 0.0,
+          "ci95_low_pp": -20.198791293788,
+          "ci95_high_pp": 20.198791293788
+        }
+      ],
+      "input_rows": {
+        "performance": 64,
+        "paired_contrasts": 32
+      },
+      "data_marks": {
+        "A": 32,
+        "B": 32,
+        "C": 32,
+        "D": 16
+      },
+      "numeric_percent_spacing": "U+202F narrow no-break space before %; axes (%) unchanged",
+      "files": {
+        "png": {
+          "path": "/workspace/bmt_v9/outputs/Figures/Figure_S3.png",
+          "sha256": "f8c7d9ad705b0b1407bcb8aec1c31b499d5610895e9d10b819af36eb61271deb",
+          "bytes": 666209,
+          "pixels": [
+            4134,
+            3060
+          ],
+          "dpi": [
+            599.9988,
+            599.9988
+          ]
+        },
+        "pdf": {
+          "path": "/workspace/bmt_v9/outputs/Figures/Figure_S3.pdf",
+          "sha256": "0b0743062f1e1a73b066217b817cb8c86311ea299033559ecb69b4560f0fbc64",
+          "bytes": 27671,
+          "page_size_pt": [
+            496.0799865722656,
+            367.20001220703125
+          ],
+          "raster_images": 0,
+          "vector_drawings": 246,
+          "minimum_font_pt": 7.5,
+          "fonts": [
+            [
+              33,
+              "ttf",
+              "Type0",
+              "FRZNSF+LiberationSans-Bold",
+              "F2",
+              "Identity-H"
+            ],
+            [
+              40,
+              "ttf",
+              "Type0",
+              "FRZNSF+LiberationSans",
+              "F1",
+              "Identity-H"
+            ]
+          ]
+        },
+        "svg": {
+          "path": "/workspace/bmt_v9/outputs/Figures/Figure_S3.svg",
+          "sha256": "69a2b4a9b01e1e849d1fdfba7c0ce0c42e22be3aaec78f4d9ef23f270dd53627",
+          "bytes": 61405
+        }
+      },
+      "minimum_visible_font_pt": 7.5,
+      "visible_text_elements": 75,
+      "all_text_inside_canvas": true,
+      "vector_validation": {
+        "svg_paths": 59,
+        "svg_text_elements": 75,
+        "svg_embedded_images": 0,
+        "pdf_raster_images": 0
+      },
+      "preview": "/workspace/bmt_v9/qa/Figure_S3_preview.png",
+      "pdf_render_preview": "/workspace/bmt_v9/qa/Figure_S3_pdf_preview.png",
+      "grayscale_preview": "/workspace/bmt_v9/qa/Figure_S3_grayscale_preview.png"
+    },
+    "Figure_S4": {
+      "caption": "Figure S4. Exploratory bootstrap stability under three sources of variation. R1 resamples test patients at fixed development cutoffs; R2 resamples development patients for cutoff calibration while holding the test cohorts fixed; R3 resamples development and test patients. Each route has 10,000 archived patient-bootstrap replicates with method A, method B, and quality labels kept paired. (A) Method-A external-minus-internal contrasts for H1, low-quality detection (filled circles), and H2, review fraction (open squares). (B) External B-minus-A detection contrasts for the fixed-cutoff policy (dark circles) and equal top-50 review policy (blue open squares). In A and B, points are bootstrap medians and horizontal bars are unadjusted 2.5th–97.5th percentile intervals from the archived valid replicates; a collapsed interval is shown by its point, including the necessarily constant R2 equal-top-50 endpoint. (C) Exact empirical frequencies among jointly valid replicates, with marker shapes identifying four mutually exclusive sign categories. Original strict means fixed B−A >0 and top-50 B−A <0; opposite strict reverses both inequalities; any zero includes either contrast equal to zero; same nonzero means both contrasts share a nonzero sign. Frequencies are not p-values, posterior probabilities, or population probabilities. The observed external fixed-cutoff A-only detection cell is zero: R1 cannot resample an A-only detection and its fixed B−A distribution is therefore structurally nonnegative. Its [0,40] pp percentile interval does not exclude a population A advantage and does not replace the original paired Newcombe interval [−4.28,40.04] pp. Only 16 external low-quality patients inform detection; bootstrap replicates are not new patients. Source: bootstrap_stability/summary.json; no bootstrap was rerun, and original H1–H3 Newcombe intervals are unchanged.",
+      "panels": [
+        "A: H1/H2 three-route bootstrap medians",
+        "B: external policy three-route bootstrap medians",
+        "C: exact four-category empirical frequencies"
+      ],
+      "bootstrap_intervals": [
+        {
+          "panel": "A",
+          "route": "R1",
+          "endpoint": "H1_A_external_minus_internal_detection_pp",
+          "median_pp": -13.744461636931954,
+          "percentile95_pp": [
+            -40.15960117064,
+            11.824486209606823
+          ],
+          "valid_replicates": 10000
+        },
+        {
+          "panel": "A",
+          "route": "R1",
+          "endpoint": "H2_A_external_minus_internal_review_pp",
+          "median_pp": -6.513345643780427,
+          "percentile95_pp": [
+            -11.53917893048328,
+            -1.311797045492703
+          ],
+          "valid_replicates": 10000
+        },
+        {
+          "panel": "B",
+          "route": "R1",
+          "endpoint": "external_fixed_B_minus_A_detection_pp",
+          "median_pp": 18.181818181818183,
+          "percentile95_pp": [
+            0.0,
+            40.0
+          ],
+          "valid_replicates": 10000
+        },
+        {
+          "panel": "B",
+          "route": "R1",
+          "endpoint": "external_equal_B_minus_A_detection_pp",
+          "median_pp": 0.0,
+          "percentile95_pp": [
+            -25.0,
+            21.428571428571427
+          ],
+          "valid_replicates": 10000
+        },
+        {
+          "panel": "A",
+          "route": "R2",
+          "endpoint": "H1_A_external_minus_internal_detection_pp",
+          "median_pp": -13.844086021505376,
+          "percentile95_pp": [
+            -15.994623655913976,
+            -2.822580645161288
+          ],
+          "valid_replicates": 10000
+        },
+        {
+          "panel": "A",
+          "route": "R2",
+          "endpoint": "H2_A_external_minus_internal_review_pp",
+          "median_pp": -6.5576446011228615,
+          "percentile95_pp": [
+            -9.021599238990541,
+            -5.823680823680824
+          ],
+          "valid_replicates": 10000
+        },
+        {
+          "panel": "B",
+          "route": "R2",
+          "endpoint": "external_fixed_B_minus_A_detection_pp",
+          "median_pp": 18.75,
+          "percentile95_pp": [
+            -6.25,
+            18.75
+          ],
+          "valid_replicates": 10000
+        },
+        {
+          "panel": "B",
+          "route": "R2",
+          "endpoint": "external_equal_B_minus_A_detection_pp",
+          "median_pp": -6.25,
+          "percentile95_pp": [
+            -6.25,
+            -6.25
+          ],
+          "valid_replicates": 10000
+        },
+        {
+          "panel": "A",
+          "route": "R3",
+          "endpoint": "H1_A_external_minus_internal_detection_pp",
+          "median_pp": -12.121212121212121,
+          "percentile95_pp": [
+            -39.03164791557648,
+            11.711880804953537
+          ],
+          "valid_replicates": 10000
+        },
+        {
+          "panel": "A",
+          "route": "R3",
+          "endpoint": "H2_A_external_minus_internal_review_pp",
+          "median_pp": -7.039337474120083,
+          "percentile95_pp": [
+            -12.699217074217076,
+            -1.5468146718146791
+          ],
+          "valid_replicates": 10000
+        },
+        {
+          "panel": "B",
+          "route": "R3",
+          "endpoint": "external_fixed_B_minus_A_detection_pp",
+          "median_pp": 14.285714285714286,
+          "percentile95_pp": [
+            -13.333333333333334,
+            37.5
+          ],
+          "valid_replicates": 10000
+        },
+        {
+          "panel": "B",
+          "route": "R3",
+          "endpoint": "external_equal_B_minus_A_detection_pp",
+          "median_pp": 0.0,
+          "percentile95_pp": [
+            -25.0,
+            21.428571428571427
+          ],
+          "valid_replicates": 10000
+        }
+      ],
+      "joint_frequencies": [
+        {
+          "route": "R1",
+          "category": "Original strict",
+          "count": 3961,
+          "valid_replicates": 10000,
+          "frequency_percent": 39.61
+        },
+        {
+          "route": "R1",
+          "category": "Opposite strict",
+          "count": 0,
+          "valid_replicates": 10000,
+          "frequency_percent": 0.0
+        },
+        {
+          "route": "R1",
+          "category": "Any zero",
+          "count": 2519,
+          "valid_replicates": 10000,
+          "frequency_percent": 25.19
+        },
+        {
+          "route": "R1",
+          "category": "Same nonzero",
+          "count": 3520,
+          "valid_replicates": 10000,
+          "frequency_percent": 35.199999999999996
+        },
+        {
+          "route": "R2",
+          "category": "Original strict",
+          "count": 9040,
+          "valid_replicates": 10000,
+          "frequency_percent": 90.4
+        },
+        {
+          "route": "R2",
+          "category": "Opposite strict",
+          "count": 0,
+          "valid_replicates": 10000,
+          "frequency_percent": 0.0
+        },
+        {
+          "route": "R2",
+          "category": "Any zero",
+          "count": 435,
+          "valid_replicates": 10000,
+          "frequency_percent": 4.35
+        },
+        {
+          "route": "R2",
+          "category": "Same nonzero",
+          "count": 525,
+          "valid_replicates": 10000,
+          "frequency_percent": 5.25
+        },
+        {
+          "route": "R3",
+          "category": "Original strict",
+          "count": 3094,
+          "valid_replicates": 10000,
+          "frequency_percent": 30.94
+        },
+        {
+          "route": "R3",
+          "category": "Opposite strict",
+          "count": 90,
+          "valid_replicates": 10000,
+          "frequency_percent": 0.8999999999999999
+        },
+        {
+          "route": "R3",
+          "category": "Any zero",
+          "count": 2808,
+          "valid_replicates": 10000,
+          "frequency_percent": 28.08
+        },
+        {
+          "route": "R3",
+          "category": "Same nonzero",
+          "count": 4008,
+          "valid_replicates": 10000,
+          "frequency_percent": 40.08
+        }
+      ],
+      "data_marks": {
+        "A": 6,
+        "B": 6,
+        "C": 12
+      },
+      "frequencies_are_p_values": false,
+      "support_constraint": "The observed A-only cell is zero. Route 1 fixed-cutoff patient resampling cannot create A-only detections and therefore B-minus-A is structurally >=0; its [0,40] pp percentile interval does not rule out a population A advantage or replace the original paired Newcombe interval [-4.28,+40.04] pp.",
+      "numeric_percent_spacing": "U+202F narrow no-break space before %; axes (%) unchanged",
+      "files": {
+        "png": {
+          "path": "/workspace/bmt_v9/outputs/Figures/Figure_S4.png",
+          "sha256": "d2ec79d27591a394ba7cbb73797b1eac6e8a5a80ad079a5e1f35cb8ba5ef1bd4",
+          "bytes": 305182,
+          "pixels": [
+            4134,
+            2730
+          ],
+          "dpi": [
+            599.9988,
+            599.9988
+          ]
+        },
+        "pdf": {
+          "path": "/workspace/bmt_v9/outputs/Figures/Figure_S4.pdf",
+          "sha256": "4a6056fdee13ba0e0bd9a00a628a7fedc8aa70951b8352795cb8f9fc26e14296",
+          "bytes": 22632,
+          "page_size_pt": [
+            496.0799865722656,
+            327.6000061035156
+          ],
+          "raster_images": 0,
+          "vector_drawings": 79,
+          "minimum_font_pt": 7.5,
+          "fonts": [
+            [
+              15,
+              "ttf",
+              "Type0",
+              "FRZNSF+LiberationSans-Bold",
+              "F2",
+              "Identity-H"
+            ],
+            [
+              22,
+              "ttf",
+              "Type0",
+              "FRZNSF+LiberationSans",
+              "F1",
+              "Identity-H"
+            ]
+          ]
+        },
+        "svg": {
+          "path": "/workspace/bmt_v9/outputs/Figures/Figure_S4.svg",
+          "sha256": "d6d4debb6cca58bd97962900432b0e6e5bf3816713015e207e1343c4ac095a8a",
+          "bytes": 29979
+        }
+      },
+      "minimum_visible_font_pt": 7.5,
+      "visible_text_elements": 44,
+      "all_text_inside_canvas": true,
+      "vector_validation": {
+        "svg_paths": 33,
+        "svg_text_elements": 44,
+        "svg_embedded_images": 0,
+        "pdf_raster_images": 0
+      },
+      "preview": "/workspace/bmt_v9/qa/Figure_S4_preview.png",
+      "pdf_render_preview": "/workspace/bmt_v9/qa/Figure_S4_pdf_preview.png",
+      "grayscale_preview": "/workspace/bmt_v9/qa/Figure_S4_grayscale_preview.png"
+    },
+    "Figure_S5": {
+      "caption": "Figure S5. Descriptive symmetric Kitagawa decomposition of external-minus-internal differences at the locked development-calibrated cutoffs. (A) Low-quality detection. (B) Review fraction. For each outcome, the total observed difference is separated into a diagnostic-composition-associated term and a within-stratum-rate term using dataset-reported benign and malignant strata. Blue filled circles denote method A, and orange open squares denote method B; points are observed estimates, and horizontal bars are each term's own unadjusted bootstrap percentile 95 % interval. The symmetric formula averages internal and external stratum rates for the composition term and averages internal and external stratum weights for the within-stratum term. Detection weights use low-quality denominators; review weights use all-patient denominators. The two panels use separately labeled horizontal scales. There were 5,000 archived patient-bootstrap draws; detection components have 4,999 valid draws because one draw had an undefined external benign low-quality rate, while detection totals and all review terms have 5,000 valid draws. Observed terms add to their total; percentile-interval endpoints do not have to add. This is post hoc descriptive accounting, not causal attribution or a percent-explained analysis; two diagnostic strata do not remove other confounding. Only 16 external low-quality cases inform detection, and bootstrap draws are not independent new patients. Source: case_mix_decomposition.json; archived estimates and component-specific intervals are unchanged, and no resampling was rerun.",
+      "panels": [
+        "A: detection",
+        "B: review fraction"
+      ],
+      "term_intervals": [
+        {
+          "panel": "A",
+          "method": "A",
+          "outcome": "detection",
+          "term": "overall_difference",
+          "estimate_pp": -13.844086021505376,
+          "percentile95_pp": [
+            -40.847953599061164,
+            11.398381773661233
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        {
+          "panel": "A",
+          "method": "A",
+          "outcome": "detection",
+          "term": "composition_associated",
+          "estimate_pp": -1.6154392371677873,
+          "percentile95_pp": [
+            -10.89442065670418,
+            5.7306860998491045
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        {
+          "panel": "A",
+          "method": "A",
+          "outcome": "detection",
+          "term": "within_stratum_rate",
+          "estimate_pp": -12.228646784337593,
+          "percentile95_pp": [
+            -39.94389839233814,
+            14.300074413347225
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        {
+          "panel": "A",
+          "method": "B",
+          "outcome": "detection",
+          "term": "overall_difference",
+          "estimate_pp": 8.131720430107524,
+          "percentile95_pp": [
+            -15.089544340463453,
+            28.18385270774976
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        {
+          "panel": "A",
+          "method": "B",
+          "outcome": "detection",
+          "term": "composition_associated",
+          "estimate_pp": -0.7813451004260542,
+          "percentile95_pp": [
+            -6.429805247266963,
+            3.6211056382125175
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        {
+          "panel": "A",
+          "method": "B",
+          "outcome": "detection",
+          "term": "within_stratum_rate",
+          "estimate_pp": 8.913065530533572,
+          "percentile95_pp": [
+            -14.317421479471099,
+            28.6977991430143
+          ],
+          "valid_replicates": 4999,
+          "invalid_replicates": 1
+        },
+        {
+          "panel": "B",
+          "method": "A",
+          "outcome": "review_fraction",
+          "term": "overall_difference",
+          "estimate_pp": -6.5576446011228615,
+          "percentile95_pp": [
+            -11.53917893048328,
+            -1.311797045492703
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        {
+          "panel": "B",
+          "method": "A",
+          "outcome": "review_fraction",
+          "term": "composition_associated",
+          "estimate_pp": 0.644644327818787,
+          "percentile95_pp": [
+            -0.00527373267595494,
+            1.5429049419438476
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        {
+          "panel": "B",
+          "method": "A",
+          "outcome": "review_fraction",
+          "term": "within_stratum_rate",
+          "estimate_pp": -7.202288928941648,
+          "percentile95_pp": [
+            -12.145562337117074,
+            -2.0774461528217025
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        {
+          "panel": "B",
+          "method": "B",
+          "outcome": "review_fraction",
+          "term": "overall_difference",
+          "estimate_pp": -4.531083878909964,
+          "percentile95_pp": [
+            -9.306896181896184,
+            0.40687426556990697
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        {
+          "panel": "B",
+          "method": "B",
+          "outcome": "review_fraction",
+          "term": "composition_associated",
+          "estimate_pp": 0.7912411168668461,
+          "percentile95_pp": [
+            -0.006411300620776048,
+            1.7981379626852316
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        },
+        {
+          "panel": "B",
+          "method": "B",
+          "outcome": "review_fraction",
+          "term": "within_stratum_rate",
+          "estimate_pp": -5.322324995776811,
+          "percentile95_pp": [
+            -10.027621727516138,
+            -0.5579469743298582
+          ],
+          "valid_replicates": 5000,
+          "invalid_replicates": 0
+        }
+      ],
+      "data_marks": {
+        "A": 6,
+        "B": 6
+      },
+      "interpretation": "Post hoc descriptive accounting; not causal attribution.",
+      "interval_counts": "Detection components: 4999; detection totals and every review term: 5000.",
+      "numeric_percent_spacing": "U+202F narrow no-break space before %; axes (%) unchanged",
+      "files": {
+        "png": {
+          "path": "/workspace/bmt_v9/outputs/Figures/Figure_S5.png",
+          "sha256": "d47ca0615da5f1722f3b4b004a77cb1a08971d814a1c61f1b78af9e2605352e6",
+          "bytes": 130296,
+          "pixels": [
+            4134,
+            1740
+          ],
+          "dpi": [
+            599.9988,
+            599.9988
+          ]
+        },
+        "pdf": {
+          "path": "/workspace/bmt_v9/outputs/Figures/Figure_S5.pdf",
+          "sha256": "cf807c9c62d0f848134527c4be6230f24be1216ce022353862ae2c91864da75b",
+          "bytes": 20065,
+          "page_size_pt": [
+            496.0799865722656,
+            208.8000030517578
+          ],
+          "raster_images": 0,
+          "vector_drawings": 65,
+          "minimum_font_pt": 8.0,
+          "fonts": [
+            [
+              15,
+              "ttf",
+              "Type0",
+              "FRZNSF+LiberationSans-Bold",
+              "F2",
+              "Identity-H"
+            ],
+            [
+              22,
+              "ttf",
+              "Type0",
+              "FRZNSF+LiberationSans",
+              "F1",
+              "Identity-H"
+            ]
+          ]
+        },
+        "svg": {
+          "path": "/workspace/bmt_v9/outputs/Figures/Figure_S5.svg",
+          "sha256": "10fb31029c207ce79f0b660134374658c15677e3b2cf3c40768876d795dd1962",
+          "bytes": 19903
+        }
+      },
+      "minimum_visible_font_pt": 8.0,
+      "visible_text_elements": 19,
+      "all_text_inside_canvas": true,
+      "vector_validation": {
+        "svg_paths": 26,
+        "svg_text_elements": 19,
+        "svg_embedded_images": 0,
+        "pdf_raster_images": 0
+      },
+      "preview": "/workspace/bmt_v9/qa/Figure_S5_preview.png",
+      "pdf_render_preview": "/workspace/bmt_v9/qa/Figure_S5_pdf_preview.png",
+      "grayscale_preview": "/workspace/bmt_v9/qa/Figure_S5_grayscale_preview.png"
+    }
+  },
+  "source_sha256_after": {
+    "performance": "2b35e41866b99745e3749c9016afea560a39f0eddbda4c0eff316d63df549200",
+    "paired_contrasts": "dab3a8e53fd6e58a7ad07114b27928a87c9abfec91afbc827ef63f5e9b7a3c93",
+    "bootstrap_summary": "050c69a00dcd3709bec88f0182c0ce5229a078dbd9f0838167173f2ed3313446",
+    "case_mix": "92e3ccd9d761117c25089a01c61c40f23674cf70b05a8e221cebbc29524e5543"
+  },
+  "source_files_unchanged": true,
+  "script_sha256": "54c7b4383dcbeb2d6ebb188a40a37d3c2e8ea1f68ee263a442708398afa246d7",
+  "visual_inspection": {
+    "status": "passed",
+    "reviewer": "authoring assistant and independent read-only review agent",
+    "reviewed_png_sha256": {
+      "Figure_S3": "f8c7d9ad705b0b1407bcb8aec1c31b499d5610895e9d10b819af36eb61271deb",
+      "Figure_S4": "d2ec79d27591a394ba7cbb73797b1eac6e8a5a80ad079a5e1f35cb8ba5ef1bd4",
+      "Figure_S5": "d47ca0615da5f1722f3b4b004a77cb1a08971d814a1c61f1b78af9e2605352e6"
+    },
+    "views": [
+      "600dpi PNG downsampled previews",
+      "independently rasterized vector PDF previews",
+      "grayscale S3 preview"
+    ],
+    "observations": [
+      "All panel letters, titles, axes, endpoint markers and legends are legible; no visible text clipping or legend/data collision.",
+      "S3: all eight budget settings shown; method A circles and B diamonds plus filled/solid versus open/dashed policy and cohort encodings remain distinguishable in grayscale.",
+      "S4: grouped H1/H2 and fixed/top-50 intervals reduce panel count; all twelve frequency percentages remain readable, including 0.90% and 4.35%.",
+      "S5: observed A/B estimates are grouped by Total, Composition and Within strata; separately labeled horizontal scales retain all term-specific intervals."
+    ],
+    "independent_numeric_review": {
+      "status": "passed",
+      "S3": "All 8 budgets, 12 curves (96 observed points) and 16 paired Newcombe intervals match source CSVs.",
+      "S4": "All 12 bootstrap median/percentile intervals and 12 category frequencies match summary.json.",
+      "S5": "All 12 plotted points are source observed estimates and match term-specific percentile intervals; 4999 valid detection component draws, 5000 others.",
+      "source_hashes": "All four archived source SHA-256 hashes match evidence and remained unchanged.",
+      "exports": "All outputs are 6.89 inches wide; PNGs are 4134 pixels wide at approximately 600dpi; vector PDF/SVG contain no embedded raster images; PDF font minima are 7.5,7.5,8.0pt."
+    },
+    "final_percent_spacing_check": {
+      "status": "passed",
+      "rule": "Explicit numeric percentages in annotations and captions use U+202F before %. Axis (%) and ticks without % unchanged.",
+      "geometry": "All three PDFs have byte-for-byte identical repr of every vector drawing path before and after the spacing-only change.",
+      "data": "All plotted numeric arrays and four archived source hashes unchanged.",
+      "bbox": "All final text extents remain inside each figure canvas; updated S4 frequency table visually inspected with no clipping or overlap.",
+      "bootstrap": "No resampling or interval recomputation."
+    }
+  }
+}

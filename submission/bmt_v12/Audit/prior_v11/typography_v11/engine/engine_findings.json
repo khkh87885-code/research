@@ -1,0 +1,103 @@
+{
+  "scope": "Independent native-OMML layout and renderer prototypes; no final manuscript modified",
+  "findings": [
+    {
+      "issue": "Explicit roman labels/operators appear italic and letter-spaced in LibreOffice",
+      "cause": "LibreOffice does not honor Pandoc m:sty=p as expected; \\mathrm splits alphabetic runs",
+      "verified_fix": "Use \\text{TP}/TN/FP/FN/dev/std/corr/fixed/equal/or for named labels; for explicit plain alphabetic runs normalize m:sty=p to m:nor and merge adjacent alphabetic text runs, excluding m:scr calligraphic runs",
+      "evidence": [
+        "roman_plain_sty.png",
+        "roman_nor.png",
+        "roman_text.png",
+        "roman_matrix_1.png"
+      ]
+    },
+    {
+      "issue": "Aligned rows have large/uneven spacing",
+      "cause": "LibreOffice converts m:m to MathML mtable/StarMath matrix and discards m:mcJc alignment and cGp settings",
+      "verified_fix": "DOCX should still normalize mcPr child order=count,mcJc. For renderer-stable exact relation alignment prefer separate complete native math row fragments with paragraph tabs; eqArr is compact but centers rows independently in LO",
+      "evidence": [
+        "old_1.png",
+        "roman_eqarr_1.png",
+        "roman_matrixgap0.odt"
+      ]
+    },
+    {
+      "issue": "Per-run font11 and normal/paragraph-marker11 do not produce math11 in LibreOffice",
+      "cause": "OMML import initializes Math object BaseFontHeight=12 independently of those values",
+      "verified_fix": "Task-local LibreOffice PDF profile /org.openoffice.Office.Math/StandardFormat BaseSize=11 renders root letters exactly11.0pt; BaseSize12 for main. Word source can independently retain standard Cambria Math and proper style sizes",
+      "evidence": [
+        "normal12_r11.pdf",
+        "normal11_r11.pdf",
+        "normal12_mark11.pdf",
+        "profile11_pdf/roman_matrix.pdf",
+        "profile11_matrix.png"
+      ]
+    },
+    {
+      "issue": "ODT BaseFontHeight change alone still appears12pt",
+      "cause": "Parent draw:frame cached width/height retain original scale",
+      "verified_fix": "ODT-only alternative: modify every object BaseFontHeight11 AND scale its draw:frame width/height by11/12; measured10.99pt. Direct profile is simpler and avoids baseline/cache risks",
+      "evidence": [
+        "roman_matrix_odt_font11.pdf",
+        "roman_matrix_odt_font11_frames.pdf"
+      ]
+    }
+  ],
+  "not_recommended": [
+    "Changing the math font name alone: Cambria-vs-LatinModern did not repair LO math style",
+    "Adding borderless3-column equation tables without sufficient number-column width: prototype(10) wrapped in0.42in",
+    "Claiming direct Word/WPS rendering was tested: neither application was available"
+  ],
+  "fonts": "Standard Cambria Math is a conservative DOCX portability choice; PDF LO uses Liberation Serif/OpenSymbol after OMML import",
+  "prototype_equations": [
+    "7",
+    "8",
+    "10",
+    "12",
+    "13",
+    "S1",
+    "S2",
+    "S4",
+    "S6"
+  ],
+  "helper": "normalizer_recommendation.py",
+  "final_manuscript_changed": false,
+  "artifacts": [
+    {
+      "file": "old.docx",
+      "sha256": "25dc2706488536e005d4a6ee5394ce2873415390ca1799eea524e6dbce0163ae",
+      "bytes": 39208
+    },
+    {
+      "file": "old.pdf",
+      "sha256": "ff197d9f9cff4d3faa292dbc50c0a802b0feac83bdd5f8a95047d787fd9969f4",
+      "bytes": 48139
+    },
+    {
+      "file": "roman_matrix.docx",
+      "sha256": "ef737f4d25492cecbf99ca09162e469fc7dec50f4052f1b92dac3a6f54306a28",
+      "bytes": 38294
+    },
+    {
+      "file": "roman_matrix.pdf",
+      "sha256": "5cf2ed7f653d568e78c8f6352b1d016f2024a270b7164ff32489c7a6ec445386",
+      "bytes": 51685
+    },
+    {
+      "file": "roman_eqarr.docx",
+      "sha256": "6f2e64b78b7c6177604de21014bc47714d2db683d09d787ffc07be4ddf161ff8",
+      "bytes": 38253
+    },
+    {
+      "file": "roman_eqarr.pdf",
+      "sha256": "aa1be701ecff68edecd009e79a2a3a8d9dbce337bec1eca5db7bf7b5f0fb30a2",
+      "bytes": 51440
+    },
+    {
+      "file": "normalizer_recommendation.py",
+      "sha256": "5b33cc1233af5dbdc302fc5211d196973ecaf76173a912146ab9325018933875",
+      "bytes": 2762
+    }
+  ]
+}

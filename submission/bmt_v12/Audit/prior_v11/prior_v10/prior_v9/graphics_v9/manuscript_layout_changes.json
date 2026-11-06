@@ -1,0 +1,340 @@
+{
+  "created_utc": "2026-11-06T11:49:32.690196+00:00",
+  "source": "/workspace/research_source/submission/bmt_v8_final/BMT_main_manuscript_v8.docx",
+  "source_sha256": "17f68f66e436d55c4e305b1c99cfd976f95282050a1d7d086d740a67d0ab364e",
+  "output": "/workspace/bmt_v9/outputs/BMT_main_manuscript_v9.docx",
+  "output_sha256": "5ea44cbc38262f3a60ecc3a76299c3518bed41a8d4979db799b28f94361b3737",
+  "source_status": "Approved v8 final manuscript; no older review used as source",
+  "official_source": "official_format_requirements.json, checked 2026-11-06",
+  "official_mandatory_implemented": [
+    "First-page full names, corresponding-author asterisk, shared affiliation, complete approved mailing address, emails, ORCID, short title",
+    "Structured abstract: Objectives, Methods, Results, Conclusions; keywords retained",
+    "Unnumbered sentence-case headings and consistent hierarchy",
+    "Statements between main text and References follow the official template order and labels; substantive approved wording retained",
+    "15 Vancouver references with exact original DOI/URL strings",
+    "Editable Tables 1–3, separate titles, notes, approximate placement markers; figure legends after references"
+  ],
+  "chosen_style_not_official_mandate": {
+    "page": "A4 portrait, 25.4 mm margins, single column",
+    "body": "Times New Roman 12 pt; 1.5 lines; left aligned; no first-line indent; 6 pt after",
+    "title": "16 pt bold; 1.15 lines",
+    "heading_1": "14 pt bold; 1.15 lines",
+    "heading_2": "12 pt bold; 1.15 lines",
+    "front_matter": "Dedicated title page; Abstract on page 2; Introduction starts a new page; metadata 12 pt, 1.15 lines",
+    "running_furniture": "9 pt short-title header, 10 pt continuous Arabic page field in footer",
+    "references": "12 pt, 1.15 lines, 6 pt after, uniform 0.25 in hanging indent",
+    "tables": "One table per page; 10.5 pt; 1.12 lines; right-aligned numerical columns; horizontal outer/header rules; no vertical rules; no row splitting",
+    "notes": "10.5 pt, 1.15 lines immediately after each table",
+    "conclusions": "Separate H1 before the original final summary paragraph; template-supported structural choice"
+  },
+  "template_limitation": "Original Research Article DOCX binary not obtained; these are chosen review styles, not verified exact publisher Word styles.",
+  "font_rendering_note": "DOCX specifies Times New Roman. The local PDF renderer may substitute Liberation Serif where Times New Roman is unavailable; font substitution does not change the editable DOCX style.",
+  "metadata_presentation_map": [
+    {
+      "source_index": 1,
+      "before": "Running title  Threshold transfer and review budgets",
+      "after": "Running title: Threshold transfer and review budgets"
+    },
+    {
+      "source_index": 2,
+      "before": "Authors  Haoze Lan¹*, Ziyuan Zhu¹",
+      "after": "Haoze Lan*, Ziyuan Zhu"
+    },
+    {
+      "source_index": 3,
+      "before": "¹ College of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Chongqing 400016, China",
+      "after": "College of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Chongqing 400016, China"
+    },
+    {
+      "source_index": 4,
+      "before": "Corresponding author  Haoze Lan; Email: 478283902@qq.com",
+      "after": "Corresponding author: Haoze Lan; Email: 478283902@qq.com"
+    },
+    {
+      "source_index": 5,
+      "before": "Institutional mailing address  College of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Building 6, Lanyuan, No. 61 Daxuecheng Middle Road, Shapingba District, Chongqing 400016, China",
+      "after": "Mailing address: College of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Building 6, Lanyuan, No. 61 Daxuecheng Middle Road, Shapingba District, Chongqing 400016, China"
+    },
+    {
+      "source_index": 6,
+      "before": "Second author contact  Ziyuan Zhu; Email: zzy2630816871@gmail.com",
+      "after": "Ziyuan Zhu; Email: zzy2630816871@gmail.com"
+    },
+    {
+      "source_index": 7,
+      "before": "ORCID  Haoze Lan: https://orcid.org/0009-0008-5089-5902",
+      "after": "ORCID: Haoze Lan: https://orcid.org/0009-0008-5089-5902"
+    }
+  ],
+  "content_verification": {
+    "scientific_body_paragraphs_8_through_83_exactly_preserved": true,
+    "scientific_body_paragraph_sequence_preserved": true,
+    "references_tables_notes_exactly_preserved": true,
+    "original_conclusion_paragraph_exactly_preserved": true,
+    "author_responsibility_and_submission_approval_sentence_exactly_preserved": true,
+    "references_exactly_preserved_count": 15,
+    "reference_doi_characters_exact": true,
+    "hyperlink_elements_before": 0,
+    "hyperlink_elements_after": 0,
+    "hyperlink_xml_unchanged": true,
+    "editable_tables_count": 3,
+    "table_cell_strings_identical": true,
+    "table_cell_string_count": 66,
+    "figure_legend_paragraph_count": 5,
+    "figure_legend_strings_match_original_or_authorized_updates": true,
+    "new_pending_approval_text_added": false,
+    "statistical_text_sha256_before": "a5c3537f5430800fad2070a953e1ac34ae705b7caf7528497be49f2e60d5f8f9",
+    "statistical_text_sha256_after": "a5c3537f5430800fad2070a953e1ac34ae705b7caf7528497be49f2e60d5f8f9",
+    "statistical_numeric_token_count": 329,
+    "statistical_numeric_token_sequence_exact": true,
+    "statistical_text_narrow_nbsp_percent_count": 82,
+    "statistical_text_narrow_nbsp_percent_unchanged": true,
+    "declaration_substantive_text_exact_each_paragraph": true,
+    "declaration_numeric_tokens_exact_within_each_paragraph": true,
+    "scientific_and_declaration_canonical_numeric_token_count": 344,
+    "canonical_source_order_numeric_token_sequence_exact": true,
+    "canonical_source_order_text_sha256_before": "863b25a174eea76178992c6048b2c1f1599fdbccbe980085ecbe263aafa5bd4b",
+    "canonical_source_order_text_sha256_after": "863b25a174eea76178992c6048b2c1f1599fdbccbe980085ecbe263aafa5bd4b",
+    "canonical_audit_note": "Canonical audit restores original declaration order/labels and the removed empty Acknowledgments heading solely to verify exact source content. Final presentation follows official order/labels; no substantive declaration sentences are changed."
+  },
+  "declarations": {
+    "final_order": [
+      "Research ethics",
+      "Informed consent",
+      "Author contributions",
+      "Use of Large Language Models, AI and Machine Learning Tools",
+      "Conflict of interest",
+      "Research funding",
+      "Data availability"
+    ],
+    "source_to_final_mapping": [
+      {
+        "source_paragraph_index": 86,
+        "before_label": "Research ethics",
+        "after_label": "Research ethics",
+        "substantive_text": "This retrospective secondary analysis used lawfully obtained, publicly released anonymized breast ultrasound images and annotations and involved no participant recruitment or intervention. The authors confirmed that the study met the conditions for exemption from ethics review under Article 32 of the Chinese Measures for Ethical Review of Life Science and Medical Research Involving Human Participants (2023).",
+        "before": "Research ethics. This retrospective secondary analysis used lawfully obtained, publicly released anonymized breast ultrasound images and annotations and involved no participant recruitment or intervention. The authors confirmed that the study met the conditions for exemption from ethics review under Article 32 of the Chinese Measures for Ethical Review of Life Science and Medical Research Involving Human Participants (2023).",
+        "after": "Research ethics. This retrospective secondary analysis used lawfully obtained, publicly released anonymized breast ultrasound images and annotations and involved no participant recruitment or intervention. The authors confirmed that the study met the conditions for exemption from ethics review under Article 32 of the Chinese Measures for Ethical Review of Life Science and Medical Research Involving Human Participants (2023)."
+      },
+      {
+        "source_paragraph_index": 90,
+        "before_label": "Informed consent",
+        "after_label": "Informed consent",
+        "substantive_text": "No participants were recruited or contacted for this secondary analysis of publicly available anonymized data, and no additional informed consent was obtained.",
+        "before": "Informed consent. No participants were recruited or contacted for this secondary analysis of publicly available anonymized data, and no additional informed consent was obtained.",
+        "after": "Informed consent. No participants were recruited or contacted for this secondary analysis of publicly available anonymized data, and no additional informed consent was obtained."
+      },
+      {
+        "source_paragraph_index": 87,
+        "before_label": "Author contributions",
+        "after_label": "Author contributions",
+        "substantive_text": "All authors have accepted responsibility for the entire content of this manuscript and approved its submission. Haoze Lan: research conceptualization and principal study design. Ziyuan Zhu: code review, GitHub repository uploads and manuscript revision.",
+        "before": "Author contributions. All authors have accepted responsibility for the entire content of this manuscript and approved its submission. Haoze Lan: research conceptualization and principal study design. Ziyuan Zhu: code review, GitHub repository uploads and manuscript revision.",
+        "after": "Author contributions. All authors have accepted responsibility for the entire content of this manuscript and approved its submission. Haoze Lan: research conceptualization and principal study design. Ziyuan Zhu: code review, GitHub repository uploads and manuscript revision."
+      },
+      {
+        "source_paragraph_index": 85,
+        "before_label": "AI use and acknowledgments",
+        "after_label": "Use of Large Language Models, AI and Machine Learning Tools",
+        "substantive_text": "OpenAI Codex assisted with study-design discussions, research and statistical code, plotting scripts, and substantive drafting and editing. Figures were rendered with Python/Matplotlib from released images, captured SAM masks and recorded scores. Editorial drafting used the Scientific Agent Skills workflow [14]. A precise underlying Codex model identifier was not available in the archived study records. The human authors retain responsibility for the work.",
+        "before": "AI use and acknowledgments. OpenAI Codex assisted with study-design discussions, research and statistical code, plotting scripts, and substantive drafting and editing. Figures were rendered with Python/Matplotlib from released images, captured SAM masks and recorded scores. Editorial drafting used the Scientific Agent Skills workflow [14]. A precise underlying Codex model identifier was not available in the archived study records. The human authors retain responsibility for the work.",
+        "after": "Use of Large Language Models, AI and Machine Learning Tools. OpenAI Codex assisted with study-design discussions, research and statistical code, plotting scripts, and substantive drafting and editing. Figures were rendered with Python/Matplotlib from released images, captured SAM masks and recorded scores. Editorial drafting used the Scientific Agent Skills workflow [14]. A precise underlying Codex model identifier was not available in the archived study records. The human authors retain responsibility for the work."
+      },
+      {
+        "source_paragraph_index": 89,
+        "before_label": "Conflict of interest",
+        "after_label": "Conflict of interest",
+        "substantive_text": "The authors state no conflict of interest.",
+        "before": "Conflict of interest. The authors state no conflict of interest.",
+        "after": "Conflict of interest. The authors state no conflict of interest."
+      },
+      {
+        "source_paragraph_index": 88,
+        "before_label": "Research funding",
+        "after_label": "Research funding",
+        "substantive_text": "None declared.",
+        "before": "Research funding. None declared.",
+        "after": "Research funding. None declared."
+      },
+      {
+        "source_paragraph_index": 91,
+        "before_label": "Data and code availability",
+        "after_label": "Data availability",
+        "substantive_text": "The original BUS-BRA version 1.0 images and reference masks are available at https://doi.org/10.5281/zenodo.8231412 and BrEaST version 1 at https://doi.org/10.7937/9WKK-Q141 [8, 10]. Study-specific manifests, case scores, scoring and statistical code, and reproducibility records are available in the research repository [15]. The original study archive is retained at commit 592566b4c5f39e261c676eb034139a974e9cdfd5; the additional budget, bootstrap, diagnostic-accounting and six-case replay evidence is archived at commit 6a7da8181db6ba3db0bb9fa8bef628f284791b2e. Original datasets and derived materials are distinguished in the data, experiments and reproducibility directories. The checkpoint is not bundled; documented source URLs and its SHA-256 allow identity verification. The supplementary materials include the new tables, actual replay contours and executable analysis references.",
+        "before": "Data and code availability. The original BUS-BRA version 1.0 images and reference masks are available at https://doi.org/10.5281/zenodo.8231412 and BrEaST version 1 at https://doi.org/10.7937/9WKK-Q141 [8, 10]. Study-specific manifests, case scores, scoring and statistical code, and reproducibility records are available in the research repository [15]. The original study archive is retained at commit 592566b4c5f39e261c676eb034139a974e9cdfd5; the additional budget, bootstrap, diagnostic-accounting and six-case replay evidence is archived at commit 6a7da8181db6ba3db0bb9fa8bef628f284791b2e. Original datasets and derived materials are distinguished in the data, experiments and reproducibility directories. The checkpoint is not bundled; documented source URLs and its SHA-256 allow identity verification. The supplementary materials include the new tables, actual replay contours and executable analysis references.",
+        "after": "Data availability. The original BUS-BRA version 1.0 images and reference masks are available at https://doi.org/10.5281/zenodo.8231412 and BrEaST version 1 at https://doi.org/10.7937/9WKK-Q141 [8, 10]. Study-specific manifests, case scores, scoring and statistical code, and reproducibility records are available in the research repository [15]. The original study archive is retained at commit 592566b4c5f39e261c676eb034139a974e9cdfd5; the additional budget, bootstrap, diagnostic-accounting and six-case replay evidence is archived at commit 6a7da8181db6ba3db0bb9fa8bef628f284791b2e. Original datasets and derived materials are distinguished in the data, experiments and reproducibility directories. The checkpoint is not bundled; documented source URLs and its SHA-256 allow identity verification. The supplementary materials include the new tables, actual replay contours and executable analysis references."
+      }
+    ],
+    "removed_empty_heading": "Acknowledgments",
+    "authorization": "Root integration task explicitly authorized declaration order and label normalization on 2026-11-06"
+  },
+  "caption_updates_file": "/workspace/bmt_v9/evidence/final_caption_updates.json",
+  "final_caption_updates_applied": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "caption_status": "final update applied",
+  "removed_orphan_image_relationships": [
+    {
+      "part": "/word/document.xml",
+      "relationship_id": "rId10",
+      "target": "media/image1.png"
+    },
+    {
+      "part": "/word/document.xml",
+      "relationship_id": "rId11",
+      "target": "media/image2.png"
+    },
+    {
+      "part": "/word/document.xml",
+      "relationship_id": "rId12",
+      "target": "media/image3.png"
+    },
+    {
+      "part": "/word/document.xml",
+      "relationship_id": "rId13",
+      "target": "media/image4.png"
+    }
+  ],
+  "formal_image_package_audit": {
+    "media_file_count": 0,
+    "media_files": [],
+    "embedded_media_sha256": [],
+    "all_explicit_xml_relationships_resolve": true,
+    "embedded_media_exactly_match_expected_final_figures": true
+  },
+  "no_actual_submission_performed": true,
+  "pdf_review": {
+    "status": "passed final official-order declaration rebuild and PDF inspection",
+    "formal": {
+      "preview": "/workspace/bmt_v9/outputs/BMT_main_manuscript_v9_preview.pdf",
+      "preview_sha256": "20dc4cf5df98509bf52c913c47659dd32c13786a2c1da9b52ac19189699b71f8",
+      "page_count": 20,
+      "page_dimensions_points": [
+        595.303955078125,
+        841.8897705078125
+      ],
+      "all_pages_have_continuous_correct_page_numbers": true,
+      "blank_pages": 0,
+      "text_bounds_flags": [],
+      "contact_sheet": "/workspace/bmt_v9/qa/BMT_main_manuscript_v9_final_contact_sheet.png"
+    },
+    "illustrated": {
+      "preview": "/workspace/bmt_v9/outputs/BMT_main_manuscript_v9_illustrated_preview.pdf",
+      "preview_sha256": "2a4c447fc70b1d012e01a602358f1bcb1e3ef1763d04037052c59931514ce25f",
+      "page_count": 25,
+      "page_dimensions_points": [
+        595.303955078125,
+        841.8897705078125
+      ],
+      "all_pages_have_continuous_correct_page_numbers": true,
+      "blank_pages": 0,
+      "text_bounds_flags": [],
+      "contact_sheet": "/workspace/bmt_v9/qa/BMT_main_manuscript_v9_illustrated_final_contact_sheet.png"
+    },
+    "checks": [
+      "All 20 formal and 25 illustrated pages inspected at contact-sheet level",
+      "Declaration pages 13–14 inspected individually after official-label/order change",
+      "Final caption pages and five illustrated plate pages inspected individually",
+      "No empty pages, clipped text or tables, orphan headings, or out-of-page text",
+      "Tables 1–3 remain on separate pages 16–18 with notes immediately following",
+      "Final five figure legends remain separate paragraphs on pages 19–20",
+      "Illustrated figures and captions each remain together on pages 21–25"
+    ],
+    "local_font_substitution": "Liberation Serif for requested Times New Roman"
+  },
+  "illustrated_reading_copy": {
+    "path": "/workspace/bmt_v9/outputs/BMT_main_manuscript_v9_illustrated.docx",
+    "sha256": "2bb0a4ecf210e859d8fb7b883dbc285b71417ee12f4a0eb9f829c30397566280",
+    "purpose": "Optional reading copy with five new main figures and repeated exact legends at the end",
+    "formal_submission_file": "/workspace/bmt_v9/outputs/BMT_main_manuscript_v9.docx",
+    "added_figure_plates": [
+      "/workspace/bmt_v9/outputs/Figures/Figure_1.png",
+      "/workspace/bmt_v9/outputs/Figures/Figure_2.png",
+      "/workspace/bmt_v9/outputs/Figures/Figure_3.png",
+      "/workspace/bmt_v9/outputs/Figures/Figure_4.png",
+      "/workspace/bmt_v9/outputs/Figures/Figure_5.png"
+    ],
+    "plate_caption_style": "10.5 pt, 1.1 lines; chosen compact reading-copy style",
+    "image_package_audit": {
+      "media_file_count": 5,
+      "media_files": [
+        "word/media/image1.png",
+        "word/media/image2.png",
+        "word/media/image3.png",
+        "word/media/image4.png",
+        "word/media/image5.png"
+      ],
+      "embedded_media_sha256": [
+        "295e44479818fc08623a070b2a4179e1a8d1715f3bc5ee5095cf6b7c9739bf26",
+        "66ba502a0a7770acf6ecc4264e4604295b91fcfcec01742ce4c5dc48291ef7c9",
+        "6a471c1f12195090ed4da6bb3bdffabb233dca76756bd9f734a28beb3c0da65d",
+        "a56dd46973a00b0719bbb492e28fc0846010aeac6e70398284416a09915306f3",
+        "d940b1b6ab7025428a013421d7523e4e6fd36020e7042c21bb78b49d5515188d"
+      ],
+      "all_explicit_xml_relationships_resolve": true,
+      "embedded_media_exactly_match_expected_final_figures": true
+    },
+    "plate_scale_audit": [
+      {
+        "figure": 1,
+        "page": 21,
+        "display_width_in": 6.2676990376202975,
+        "display_height_in": 5.0942115048118985,
+        "source_width_in_at_600dpi": 6.89,
+        "source_minimum_label_pt": 8.0,
+        "source_label_size_evidence": "Actual text span minimum from final Figure_1.pdf",
+        "scaled_minimum_label_pt": 7.277444455872624,
+        "figure_and_final_caption_same_page": true
+      },
+      {
+        "figure": 2,
+        "page": 22,
+        "display_width_in": 6.2676990376202975,
+        "display_height_in": 5.5490518372703415,
+        "source_width_in_at_600dpi": 6.89,
+        "source_minimum_label_pt": 7.5,
+        "source_label_size_evidence": "Actual text span minimum from final Figure_2.pdf",
+        "scaled_minimum_label_pt": 6.822604177380585,
+        "figure_and_final_caption_same_page": true
+      },
+      {
+        "figure": 3,
+        "page": 23,
+        "display_width_in": 6.2676990376202975,
+        "display_height_in": 3.2293657042869643,
+        "source_width_in_at_600dpi": 6.89,
+        "source_minimum_label_pt": 8.0,
+        "source_label_size_evidence": "Actual text span minimum from final Figure_3.pdf",
+        "scaled_minimum_label_pt": 7.277444455872624,
+        "figure_and_final_caption_same_page": true
+      },
+      {
+        "figure": 4,
+        "page": 24,
+        "display_width_in": 6.2676990376202975,
+        "display_height_in": 5.139694881889763,
+        "source_width_in_at_600dpi": 6.89,
+        "source_minimum_label_pt": 7.5,
+        "source_label_size_evidence": "Actual text span minimum from final Figure_4.pdf",
+        "scaled_minimum_label_pt": 6.822604177380585,
+        "figure_and_final_caption_same_page": true
+      },
+      {
+        "figure": 5,
+        "page": 25,
+        "display_width_in": 5.1930555555555555,
+        "display_height_in": 6.349998906386702,
+        "source_width_in_at_600dpi": 6.89,
+        "source_minimum_label_pt": 8.0,
+        "source_label_size_evidence": "Actual text span minimum from final Figure_5.pdf",
+        "scaled_minimum_label_pt": 6.029672633446219,
+        "figure_and_final_caption_same_page": true
+      }
+    ],
+    "formal_text_prefix_exact": true
+  }
+}

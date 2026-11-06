@@ -10,7 +10,17 @@
 
 每位纳入患者固定使用一张图及对应参考掩膜。正式验证共 1,103 例。40 例预实验来自开发集。评分和复核均在回顾性模拟中进行。
 
-## 当前版本：v11 公式排版修正版
+## 当前版本：v12 精简正式公式稿
+
+[两页公式预览 PDF](submission/bmt_v12/BMT_formula_layout_proof_v12.pdf) · [正式主稿 Word](submission/bmt_v12/BMT_main_manuscript_v12.docx) · [主稿 PDF](submission/bmt_v12/BMT_main_manuscript_v12_preview.pdf) · [补充 Word](submission/bmt_v12/BMT_supplementary_material_v8.docx) · [补充 PDF](submission/bmt_v12/BMT_supplementary_material_v8_preview.pdf) · [投稿文件 ZIP](submission/BMT_v12_submission_files.zip) · [上传清单](submission/bmt_v12/UPLOAD_FILE_MAP.md)
+
+根据用户要求，本版查阅BMT官方作者指南、NIST科学符号字体规范及Microsoft Word Professional公式说明，将显示公式从26组精简为5组：主稿只保留Dice、置信度风险A和提示扰动风险B三式；补充材料只在TableS12附近保留Kitagawa的构成项与层内率项两式。其余常规指标、阈值/Top-K算法、主要比较、标准置信区间和重放误差均由精确文字、既有方法引用及代码说明，不再前置长数学附录。
+
+保留的五式均为真正可编辑的独立Office Math公式，分式/求和/上下标由公式结构表达；变量和描述性标识按科学排版区分正斜体，式号连续且在文中引用。单行公式居中、编号在右侧的版式及3+2的数量属于本轮编辑选择；官方指南要求对齐、不拥挤、避免复杂上下标和可编辑公式，未强制本版具体字号、位置或公式数量。正式源及取舍依据见Audit/formal_equations_v12。
+
+原结果与讨论、944个科学数据表单元格、15条参考文献、科研图和作者声明保持。公式排版容器与科学数据表分开识别，论文仍为主图5+科学表3共8项。各项选择规则、名义区间、事后分析及缺失分母条件保留。原v11留存供追溯；没有新增实验或期刊投稿。PDF已按实际输出检查，Word保留标准可编辑公式结构。
+
+## 历史版本：v11 公式排版修正版
 
 [9页公式预览 PDF](submission/bmt_v11/BMT_formula_layout_proof_v11.pdf) · [正式主稿 Word](submission/bmt_v11/BMT_main_manuscript_v11.docx) · [主稿 PDF](submission/bmt_v11/BMT_main_manuscript_v11_preview.pdf) · [补充 Word](submission/bmt_v11/BMT_supplementary_material_v7.docx) · [补充 PDF](submission/bmt_v11/BMT_supplementary_material_v7_preview.pdf) · [投稿文件 ZIP](submission/BMT_v11_submission_files.zip) · [上传清单](submission/bmt_v11/UPLOAD_FILE_MAP.md)
 

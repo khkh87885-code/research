@@ -1,0 +1,186 @@
+{
+  "scope": "Prune formula proliferation while retaining the exact scientific method and outputs",
+  "recommended_main_display_count": 3,
+  "recommended_supplement_display_count": 2,
+  "display_count_before": 26,
+  "display_count_after": 5,
+  "main_source": "/workspace/research_source/submission/bmt_v9/BMT_main_manuscript_v9.docx",
+  "supplement_source": "/workspace/research_source/submission/bmt_v9/BMT_supplementary_material_v5.docx",
+  "source_sha256": {
+    "main": "5ea44cbc38262f3a60ecc3a76299c3518bed41a8d4979db799b28f94361b3737",
+    "supplement": "1c3b4f77e6cb7fc11e486da9ec79485981e7b5a0ecbf482a307968767b21b5a1"
+  },
+  "main_replacements": [
+    {
+      "source_paragraph_index": 26,
+      "anchor_exact": "We obtained the initial prompt box from the tight bounding box of the nonempty reference mask, expanded each horizontal side by 10 % of the width and each vertical side by 10 % of the height, and clipped the result to the image. This is a reference-informed, known-location (oracle-localization) setting, not a test of autonomous lesion localization. We encoded the image once and used the resulting embedding for the initial prediction and four additional predictions (Figure 2). The fixed 10 % context margin was used consistently across datasets.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "We obtained the initial prompt box from the tight bounding box of the nonempty reference mask, using half-open pixel bounds with upper coordinates one pixel beyond the last foreground index, expanded each horizontal side by 10 % of the width and each vertical side by 10 % of the height, and clipped the result to the image. This is a reference-informed, known-location (oracle-localization) setting, not a test of autonomous lesion localization. We encoded the image once and used the resulting embedding for the initial prediction and four additional predictions (Figure 2). The fixed 10 % context margin was used consistently across datasets."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 27,
+      "anchor_exact": "Method A calculated risk as one minus the raw predicted intersection over union (IoU) returned for the initial mask. For method B, we shifted the initial clipped box left and right by 5 % of its width and up and down by 5 % of its height, clipping each shifted box to the image. We calculated the Dice coefficient between the initial predicted mask and each of the four shifted-prompt masks. Risk B was one minus the mean of these four Dice coefficients. We retained all four directions when clipping produced coincident boxes. The consistency Dice coefficient was defined as 1 when both predicted masks were empty. The 5 % translations define a deterministic local stability probe relative to box size. Method B adds four mask-decoder passes while reusing the image embedding. Recorded inference times cover the combined pipeline; A-only and incremental B times were not separately benchmarked.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For each image, let $P_0$ be the initial binary prediction, $P_j$ its prediction under shifted prompt $j$, and $G$ the manual reference mask. For binary masks $U,V$ with at least one foreground pixel between them, Dice agreement is"
+        },
+        {
+          "type": "equation",
+          "label": "1",
+          "latex": "D(U,V)=\\frac{2\\lvert U\\cap V\\rvert}{\\lvert U\\rvert+\\lvert V\\rvert}."
+        },
+        {
+          "type": "paragraph",
+          "text": "Here $\\lvert\\cdot\\rvert$ counts foreground pixels. For consistency scoring, Dice is defined as one when both predicted masks are empty. Method A uses the confidence risk in Eq. (2):"
+        },
+        {
+          "type": "equation",
+          "label": "2",
+          "latex": "r_{\\mathrm{A}}=1-\\widehat q."
+        },
+        {
+          "type": "paragraph",
+          "text": "Here $\\widehat q$ denotes the raw predicted intersection over union (IoU) returned by the SAM quality head for the initial mask. For method B, we shifted the initial clipped box left and right by 5 % of its width and up and down by 5 % of its height, clipping each shifted box to the image. The four initial-to-shifted Dice values define the disagreement risk"
+        },
+        {
+          "type": "equation",
+          "label": "3",
+          "latex": "r_{\\mathrm{B}}=1-\\frac{1}{4}\\sum_{j=1}^{4}D(P_0,P_j)."
+        },
+        {
+          "type": "paragraph",
+          "text": "All four directions were retained when clipping produced coincident boxes. These deterministic shifts probe local stability relative to box size. Method B adds four mask-decoder passes while reusing the image embedding. Recorded inference times cover the combined pipeline; A-only and incremental B times were not separately benchmarked."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 28,
+      "anchor_exact": "For binary masks, the Dice coefficient is twice the number of shared foreground pixels divided by the sum of foreground pixels in the two masks. The quality reference for both methods was Dice between the initial prediction and the manual mask. An empty initial prediction against a nonempty reference would contribute a Dice coefficient of 0. We defined low quality as reference Dice below 0.70, an operational cutoff for this evaluation.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The quality reference for both methods was the initial prediction’s Dice against the manual mask, $D(P_0,G)$ in Eq. (1). An empty initial prediction against the nonempty reference has Dice zero. Low quality was defined as reference Dice below 0.70, an operational cutoff for this evaluation. The raw model confidence in Eq. (2) and prediction-consistency score in Eq. (3) remain separate from this reference-quality outcome."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 33,
+      "anchor_exact": "The analysis included cases with a valid reference Dice and both finite risk scores. The procedure allowed one retry with the same configuration after a technical failure and recorded persistent failures separately. We report low-quality detection as the number of flagged low-quality masks divided by the number of low-quality masks. Simulated review is the number of flagged cases divided by all scored cases. Misses per 100 patients is 100 times the number of unflagged low-quality masks divided by all scored cases.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The analysis included cases with a valid reference Dice and both finite risk scores. The procedure allowed one retry with the same configuration after a technical failure and recorded persistent failures separately. We report low-quality detection as the number of flagged low-quality masks divided by the number of low-quality masks. Simulated review is the number of flagged cases divided by all scored cases. Misses per 100 patients is 100 times the number of unflagged low-quality masks divided by all scored cases. Rates with a zero denominator were left undefined."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 36,
+      "anchor_exact": "As post hoc descriptive quality-control measures, we additionally tabulated true-positive (TP), false-positive (FP), true-negative (TN) and false-negative (FN) counts, sensitivity (TP/(TP+FN)), specificity (TN/(TN+FP)), positive predictive value (PPV; TP/(TP+FP)) and negative predictive value (NPV; TN/(TN+FN)). Low-quality segmentation was the positive condition and a review flag the positive test. We used Wilson 95 % intervals for these proportions. These measures assess mask-quality screening, not diagnosis of breast cancer.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As post hoc descriptive quality-control measures, we additionally tabulated true-positive (TP), false-positive (FP), true-negative (TN) and false-negative (FN) counts, sensitivity, specificity, positive predictive value (PPV) and negative predictive value (NPV), with Wilson 95 % intervals (Tables S6 and S7). Low-quality segmentation was the positive condition and a review flag the positive test. These measures assess mask-quality screening, not diagnosis of breast cancer."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 41,
+      "anchor_exact": "We also used symmetric Kitagawa accounting and direct standardization across dataset-reported benign/malignant strata [13]. The external-minus-internal difference was partitioned into a composition-associated term and a within-stratum-rate term. Common weights were the arithmetic mean of the two cohort weights. Detection used the diagnostic shares among low-quality masks, whereas review fractions used shares among all scored patients. We obtained nominal percentile intervals from 5,000 independently sampled cohort-level patient-bootstrap replicates (seed 20261107), recalculating all weights and rates. Undefined stratum denominators remained missing. This accounting describes the observed mixtures and does not estimate causal effects.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "We also used symmetric Kitagawa accounting and direct standardization across dataset-reported benign/malignant strata [13]. The external-minus-internal difference was partitioned into a composition-associated term and a within-stratum-rate term. Common weights were the arithmetic mean of the two cohort weights. Detection used the diagnostic shares among low-quality masks, whereas review fractions used shares among all scored patients. We obtained nominal percentile intervals from 5,000 independently sampled cohort-level patient-bootstrap replicates (seed 20261107), recalculating all weights and rates. Undefined stratum denominators remained missing. This accounting describes the observed mixtures and does not estimate causal effects. The two component definitions are given in Eqs. (S1) and (S2) with Table S12."
+        }
+      ]
+    }
+  ],
+  "supplement_replacements": [
+    {
+      "source_paragraph_index": 77,
+      "anchor_exact": "Symmetric Kitagawa identity: overall difference = Σ[(wE−wI)(pE+pI)/2] + Σ[(pE−pI)(wE+wI)/2]. Detection weights are the diagnostic proportions among low-quality cases; review weights are the diagnostic proportions among all patients. The first sum is composition-associated and the second is the within-stratum term. Weights are recomputed in every draw.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For diagnostic stratum $s$, let $w_{c,s}$ be its weight and $p_{c,s}$ its outcome rate in cohort $c$, with E denoting external and I internal testing. For detection, weights are diagnostic shares among low-quality patients and rates are stratum-specific low-quality detection. For review, weights are diagnostic shares among all scored patients and rates are stratum-specific review fractions. Rates in Eqs. (S1) and (S2) are fractions; Table S12 reports differences in percentage points. The symmetric Kitagawa composition-associated term and within-stratum-rate term are"
+        },
+        {
+          "type": "equation",
+          "label": "S1",
+          "latex": "C=\\sum_s(w_{E,s}-w_{I,s})\\frac{p_{E,s}+p_{I,s}}{2},"
+        },
+        {
+          "type": "equation",
+          "label": "S2",
+          "latex": "W=\\sum_s(p_{E,s}-p_{I,s})\\frac{w_{E,s}+w_{I,s}}{2}."
+        },
+        {
+          "type": "paragraph",
+          "text": "Together, $C$ and $W$ sum to the external-minus-internal overall rate difference when the stratum rates are defined. Weights and rates are recomputed in each bootstrap draw."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 81,
+      "anchor_exact": "For diagnostic stratum s, C = Σ(w_E,s−w_I,s)(p_E,s+p_I,s)/2 and W = Σ(p_E,s−p_I,s)(w_E,s+w_I,s)/2, so D=C+W. Common weights w*=(w_E+w_I)/2 give a standardized external-minus-internal difference equal to W. Components may not sum to the displayed total after rounding. Method: Kitagawa EM, J Am Stat Assoc 1955;50:1168–1194, doi:10.1080/01621459.1955.10501299.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Direct standardization uses the arithmetic mean of the two cohort weights for each diagnostic stratum. When the stratum rates are defined, the resulting standardized external-minus-internal difference equals the within-stratum-rate term $W$ in Eq. (S2). Overall rates are calculated directly from aggregate numerators and denominators. Components may not sum to the displayed total after rounding. Method: Kitagawa EM, J Am Stat Assoc 1955;50:1168–1194, doi:10.1080/01621459.1955.10501299."
+        }
+      ]
+    }
+  ],
+  "removal_decisions": {
+    "main_1_2_prompt_geometry": "Replace vector coordinate expansions by the exact half-open bounds, per-side10% expansion, clipped5% shifts and four-direction prose; geometry is a reproducibility parameter, not a mathematical contribution.",
+    "main_3_dice": "KEEP as new main Eq.(1): defines both quality reference and consistency score.",
+    "main_4_risk_A": "KEEP as new main Eq.(2): explicitly identifies raw SAM predicted-IoU quality-head input.",
+    "main_5_risk_B": "KEEP as new main Eq.(3): central prompt-disagreement score.",
+    "main_6_low_quality_indicator": "Delete display; retain strict Dice<0.70 definition in prose plus alternative0.50/0.80 analyses.",
+    "main_7_flag_and_review_fraction": "Delete display; retain risk>=cutoff flag rule and exact review denominator in words.",
+    "main_8_calibration_argmin": "Delete display; retain complete candidate/tied-group/zero-option/nearest20%/fewer-at-tie rules in prose.",
+    "main_9_outcome_rates": "Delete display; retain explicit numerator/denominator definitions of detection, review and missesper100 plus zero-denominator rule.",
+    "main_10_H1_H2_H3": "Delete display; the three directions and percentage-point units are already precisely stated and reported in Table3.",
+    "main_11_equal_K": "Delete display; preserve nearestinteger budget, fewer-at-half tie, descending risk, exact archived ID string order and conditional pairing in words.",
+    "main_12_specificity_PPV_NPV": "Delete display; standard descriptive measures get concise positive-condition and denominator definitions in prose, counts/results stay in TablesS6/S7.",
+    "main_13_14_Kitagawa_standardization": "Remove from main; retain only the two nontrivial component formulas alongside TableS12, standardization described in words.",
+    "supp_S1_Wilson": "Remove display; Wilson interval name, confidence level, relevant denominator and original output stay in methods/tables; source code supplies implementation.",
+    "supp_S2_S3_S4_Newcombe_phi": "Remove displays; cite existing Newcombe references[11,12]. Retain a short implementation note about independent vs paired and positive-only association correction with negative association retained.",
+    "supp_S5_bootstrap_percentile": "Remove display;2.5th–97.5th finite-value linear-quantile procedure is already specified in TableS11 notes.",
+    "supp_S6_S7_direction_frequencies": "Remove displays; TableS11 paired sign matrix and strict sign-category prose define frequency numerator/denominator without four equations.",
+    "supp_S8_S9_S10_Kitagawa": "Retain only C and W as new Eqs.(S1),(S2); stratum weights and additive identity in words.",
+    "supp_S11_standardization": "Remove display; arithmetic-mean common weights and standardized difference equality to W in prose.",
+    "supp_S12_replay_errors": "Remove display; signed differences/max absolute error and48-field comparisons are clear in TableS13 and CSV, with no new inference."
+  },
+  "implementation_and_preservation_notes": [
+    "Source v9 is used as the prose baseline so all v10/v11 formula-heavy appendix material and stale Eq.(4)–Eq.(14)/Eq.(S3)–Eq.(S12) references disappear rather than being hidden or relocated.",
+    "Keep all unaffected v9 paragraphs, figures/captions, all66 main and878 supplementary table cell strings, abstract174words, Results/Discussion/Conclusions, declarations and all15 references exact.",
+    "Restore v9 paragraph31 unchanged for distinct-risk candidates, the zero-review option, >= flagging, tied groups, closest20% and fewer-at-tie calibration; lock thresholds before test scoring.",
+    "Restore v9 paragraphs34/35/39/40 unchanged for H1–3 direction, nominal Newcombe intervals, deterministic CaseID-string ties, eight budgets, nearestcount halves and paired duplicated bootstrap draw records.",
+    "Retain all original v9 supplement notes in S10–S13: zero review-policy difference by design, conditional intervals, empirical support constraint in R1, non-population frequency interpretation,4,999 vs5,000 valid decomposition replicates, missing rates not imputed even at zero weight, diagnostic-label limitation and cross-environment replay scope.",
+    "Add at most one unnumbered implementation paragraph near the interval methods: Wilson limits used no continuity correction; paired Newcombe uses its positive-association adjustment while preserving negative association; a zero paired margin gives zero association adjustment. This is optional prose for implementation specificity, not an extra display equation.",
+    "Do not add a new long mathematical appendix. The three core main equations and two contextual supplementary equations are the entire displayed-formula budget.",
+    "The3+2 count is an editorial scope decision, not a BMT-mandated number of formulas. Parent is separately retrieving official mathematical-typography guidance.",
+    "No new model training/optimization objective, p-values, causal interpretation, validation patient or experimental claim is created.",
+    "Use generic per-image symbols P0, Pj, G, qhat, r_A/r_B rather than patient-indexed nested subscripts. The same definition is applied independently to every included patient image. Method labels A/B are descriptive upright subscripts; j remains the four-direction index."
+  ],
+  "formula_selection_rationale": "Dice supplies the common quality/agreement definition. The two risks define the methods being compared. The two Kitagawa terms are the only unfamiliar mathematical accounting operation retained in the exploratory supplement. Routine arithmetic, algorithms fully specified by finite selection rules, named standard interval procedures and error bookkeeping do not require separate displayed equations.",
+  "main_notation": {
+    "P_0": "Initial binary prediction for the image",
+    "P_j": "Prediction under one of the four shifted prompts, j=1,...,4",
+    "G": "Manual reference mask",
+    "q_hat": "Raw predicted IoU from the initial-mask SAM quality head",
+    "r_A": "Confidence-based risk; A is an upright descriptive method label",
+    "r_B": "Prompt-disagreement risk; B is an upright descriptive method label",
+    "D(U,V)": "Dice foreground-pixel overlap; empty-empty convention specified in prose"
+  },
+  "layout_refinements": [
+    "Move the qhat definition after Eq2 so punctuation cannot begin a new line.",
+    "Use ordinary upright E/I cohort names in prose, consistent with descriptive subscripts.",
+    "State fractional-rate versus percentage-point table units explicitly."
+  ]
+}

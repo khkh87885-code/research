@@ -1,0 +1,5 @@
+Method: outcome,"Overall difference, pp [95% interval]","Composition-associated term, pp [95% interval]","Within-stratum term, pp [95% interval]",Valid overall n,Valid component n
+A: Detection,"-13.84 [-40.85, +11.40]","-1.62 [-10.89, +5.73]","-12.23 [-39.94, +14.30]",5000,4999
+A: Review fraction,"-6.56 [-11.54, -1.31]","+0.64 [-0.01, +1.54]","-7.20 [-12.15, -2.08]",5000,5000
+B: Detection,"+8.13 [-15.09, +28.18]","-0.78 [-6.43, +3.62]","+8.91 [-14.32, +28.70]",5000,4999
+B: Review fraction,"-4.53 [-9.31, +0.41]","+0.79 [-0.01, +1.80]","-5.32 [-10.03, -0.56]",5000,5000

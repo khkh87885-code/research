@@ -1,0 +1,88 @@
+{
+  "recorded_utc": "2026-11-06T13:32:40.110812+00:00",
+  "status": "PASS",
+  "final_documents_pending": false,
+  "source_latest": "submission/bmt_v11",
+  "prose_baseline": "submission/bmt_v9",
+  "scope": "User-requested pruning of redundant equations and formal scientific mathematical typography",
+  "reports": {
+    "mathematics": {
+      "path": "/workspace/bmt_v12/evidence/independent_mathematics_qa.json",
+      "sha256": "8561dacde523cfcb99aef0f10d2a93005fb18fe5e075d46835344e6fe0f71ddf",
+      "checks_passed": 127
+    },
+    "layout": {
+      "path": "/workspace/bmt_v12/evidence/independent_layout_qa.json",
+      "sha256": "47dcd4f2771a6473a5222d82db7e6cc259a8ecf90c570e454f61027a6c265b3c",
+      "checks_passed": 91
+    }
+  },
+  "documents": {
+    "BMT_formula_layout_proof_v12.pdf": {
+      "sha256": "528667e26c25bc4e734756bcda80193d164c054106d377543c16ff51b3432e97",
+      "bytes": 1014383,
+      "pages": 2
+    },
+    "BMT_main_manuscript_v12.docx": {
+      "sha256": "100bb41ffe8355222ecdf588ab7045a764995c7f785c8d6b51d80873c3242b0d",
+      "bytes": 58682
+    },
+    "BMT_main_manuscript_v12_illustrated.docx": {
+      "sha256": "5dac85b931467273d1e07cf980eddbf50771a78f0664b80ce018ece2460c4345",
+      "bytes": 3541208
+    },
+    "BMT_main_manuscript_v12_illustrated_preview.pdf": {
+      "sha256": "f205d68ae3f5ea02b9ef757d15c4e89c1b13b815f1d256347c186bcc198602eb",
+      "bytes": 1468838,
+      "pages": 26
+    },
+    "BMT_main_manuscript_v12_preview.pdf": {
+      "sha256": "c0e2d984059ef5b632a84ddb93f009a105ace8675b3f83615ac3059dbe371fa9",
+      "bytes": 225570,
+      "pages": 21
+    },
+    "BMT_supplementary_Figure_S6_v8.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "bytes": 1871819,
+      "pages": 6
+    },
+    "BMT_supplementary_material_v8.docx": {
+      "sha256": "f492a6222165ad5569a968f93ccf9c61a588ef5d9bb01769fd4859226bc6a740",
+      "bytes": 1533688
+    },
+    "BMT_supplementary_material_v8_preview.pdf": {
+      "sha256": "aeecd1f8eeb52c26f026cf7888b95320788d73e3831f2dae70db44dc0a61eef7",
+      "bytes": 1334686,
+      "pages": 25
+    }
+  },
+  "previous_display_equations": 26,
+  "main_display_equations": 3,
+  "supplement_display_equations": 2,
+  "native_editable_office_math_display": true,
+  "scientific_table_counts": [
+    3,
+    19
+  ],
+  "equation_layout_container_counts": [
+    3,
+    2
+  ],
+  "scientific_table_cells": [
+    66,
+    878
+  ],
+  "abstract_words": 174,
+  "main_body_words_including_inline_math": 3901,
+  "experimental_results_changed": false,
+  "results_figures_tables_references_declaration_substance_unchanged": true,
+  "sources": [
+    "BMT official Instructions for Authors, Equations and symbols",
+    "NIST Typefaces for Symbols in Scientific Manuscripts",
+    "Microsoft Word: Write an equation or formula"
+  ],
+  "renderer": "LibreOffice PDF export; native Word OfficeMath structure independently checked",
+  "word_wps_direct_rendering_tested": false,
+  "review_proof_pages": 2,
+  "journal_submission_executed": false
+}

@@ -1,0 +1,15 @@
+# v9 independent integration QA
+
+Status: PASS. 173/173 checks passed. Final documents complete; no experiment, inference or resampling was executed for this QA.
+
+The 2,210 empirical ranking points were independently reconstructed from archived patient records. Prespecified H1–H3 estimates and original confidence intervals, complete budget plot values, paired intervals, bootstrap medians/intervals and all 12 joint frequencies, and all 12 diagnostic decomposition terms agree with the original CSV/JSON records. Figure 1 cohort counts and Figure 2 case001 mask Dice/consistency were independently checked. Six saved CPU case arrays and metrics were recomputed; all 30 captured masks remain nonempty. Native RGB image views in the case-figure PDFs and all 30 views in the final S6 PDF exactly match the saved source pixels after applying the PDF display transform.
+
+Main manuscript: original scientific body paragraphs, 15 references, all 66 editable table cells and the seven approved declaration substance strings remain exact. Declaration order and two labels now follow the official template. The only scientific-body structure addition is the Conclusions heading. Abstract: 174 whitespace words; 15 sequentially cited references; five main figures plus three tables meet the combined limit of eight. All final main and supplementary captions match the final caption JSON. Author responsibility/submission approval remains present.
+
+Supplement: 19 editable table panels and all 878 cell strings exactly match the approved source; scientific prose before the new S6 presentation remains exact. No table-cell repair was necessary. Five new figures are embedded; S6 is a separate six-page publication file with one complete case per page. Both supplementary files are below 10 MB.
+
+All 12 production PNGs have 600 dpi metadata and 6.89-inch width. Production PDF label minima are at least 7.5 pt. Actual manuscript embedding scales keep all labels at least 6 pt (the optional illustrated Figure 5 minimum is approximately 6.03 pt; the separate full-size file remains 8 pt). Final main20 pages, illustrated25 pages, supplement25 pages and S6six pages have no clipped text or empty pages. Independent visual review found no material overlaps, orphan headings, table cropping or image cropping; the case175 upper-edge band remains visible.
+
+Official mandatory structure and limits were checked against the freshly retrieved BMT author-guide text. Body font, size, line spacing, margins and single-column layout are transparent editorial choices because those values are not specified in the retrieved guide. The original publisher template DOCX binary was unavailable; no claim of exact binary-template style inspection is made. CPU replay figures remain distinct from unarchived original CUDA masks. Scientific conclusions and original cohort scores remain unchanged.
+
+Exact checks, hashes, final document fingerprints and export metadata are stored in independent_integration_qa.json. Visual companion evidence: ../qa/visual_qa_report.json.

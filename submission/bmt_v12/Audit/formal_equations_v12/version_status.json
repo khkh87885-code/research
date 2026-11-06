@@ -1,0 +1,80 @@
+{
+  "created_utc": "2026-11-06T13:32:47.747512+00:00",
+  "revision": "v12 concise formal equations",
+  "source": "submission/bmt_v11",
+  "user_requested_formula_simplification_and_formal_layout_completed": true,
+  "main_numbered_equation_groups": 3,
+  "supplement_numbered_equation_groups": 2,
+  "native_editable_office_math": true,
+  "previous_display_groups": 26,
+  "retained_display_groups": 5,
+  "true_native_display_math": true,
+  "equation_layout_containers_are_not_scientific_data_tables": true,
+  "validated_equation_layouts": {
+    "BMT_main_manuscript_v12.docx": {
+      "labels": [
+        "1",
+        "2",
+        "3"
+      ],
+      "layout_containers": 3,
+      "true_display_math": 3
+    },
+    "BMT_supplementary_material_v8.docx": {
+      "labels": [
+        "S1",
+        "S2"
+      ],
+      "layout_containers": 2,
+      "true_display_math": 2
+    }
+  },
+  "native_word_or_wps_executed": false,
+  "results_tables_figures_references_declaration_substance_changed": false,
+  "main_scientific_tables_and_cells": [
+    3,
+    66
+  ],
+  "supplement_scientific_tables_and_cells": [
+    19,
+    878
+  ],
+  "post_hoc_and_nominal_interval_boundaries_retained": true,
+  "prior_author_confirmation_scope_preserved": true,
+  "journal_submission_executed": false,
+  "final_documents_pending": false,
+  "final_revision_qa_sha256": "289a946a4aef947b290f773ada3bdaba1fa364d85bbcd316a44e77c1936b4381",
+  "locked_independent_reports": {
+    "mathematics": {
+      "path": "/workspace/bmt_v12/evidence/independent_mathematics_qa.json",
+      "sha256": "8561dacde523cfcb99aef0f10d2a93005fb18fe5e075d46835344e6fe0f71ddf",
+      "checks_passed": 127
+    },
+    "layout": {
+      "path": "/workspace/bmt_v12/evidence/independent_layout_qa.json",
+      "sha256": "47dcd4f2771a6473a5222d82db7e6cc259a8ecf90c570e454f61027a6c265b3c",
+      "checks_passed": 91
+    }
+  },
+  "independent_check_counts": {
+    "mathematics": 127,
+    "layout": 91
+  },
+  "upload_files": [
+    "BMT_main_manuscript_v12.docx",
+    "Figures/Figure_1.png",
+    "Figures/Figure_2.png",
+    "Figures/Figure_3.png",
+    "Figures/Figure_4.png",
+    "Figures/Figure_5.png",
+    "BMT_Ethical_and_Legal_Declarations_v12.docx",
+    "BMT_cover_letter_v12.docx",
+    "BMT_supplementary_material_v8.docx",
+    "BMT_supplementary_Figure_S6_v8.pdf",
+    "BMT_data_and_code_availability_v12.docx",
+    "BMT_reviewer_candidates.docx",
+    "Additional_quality_control_metrics.csv",
+    "Analysis/table_data/S13_all_48_comparisons_unrounded.csv",
+    "UPLOAD_FILE_MAP.md"
+  ]
+}

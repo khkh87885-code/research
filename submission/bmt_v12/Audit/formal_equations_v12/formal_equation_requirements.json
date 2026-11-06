@@ -1,0 +1,49 @@
+{
+  "checked_utc": "2026-11-06T13:22:15.034587+00:00",
+  "applies_to": "Biomedical Engineering / Biomedizinische Technik research article",
+  "sources": [
+    {
+      "name": "BMT Instructions for Authors, Equations and symbols",
+      "url": "https://www.degruyterbrill.com/publication/journal_key/BMTE/downloadAsset/BMTE_Instructions%20for%20Authors.pdf",
+      "retrieval_status": 200,
+      "pdf_pages": 11,
+      "exact_requirements": [
+        "Equations should be well-aligned and not crowded.",
+        "Avoid complicated superscripts and subscripts by introducing new symbols.",
+        "For MS Word submissions, create equations using the Microsoft equation editor or a corresponding add-on.",
+        "Do not submit math equations as images, but as editable text.",
+        "Number displayed equations consecutively with Arabic numerals (if referred to in the text)."
+      ]
+    },
+    {
+      "name": "NIST Typefaces for Symbols in Scientific Manuscripts",
+      "url": "https://physics.nist.gov/cuu/pdf/typefaces.pdf",
+      "retrieval_status": 200,
+      "pdf_pages": 2,
+      "applied_rules": [
+        "Quantity and variable symbols are italic.",
+        "Explicitly defined functions/operators and descriptive terms are roman.",
+        "Descriptive subscripts/superscripts are roman; running variable indices are italic."
+      ]
+    },
+    {
+      "name": "Microsoft: Write an equation or formula in Word",
+      "url": "https://support.microsoft.com/en-us/word/training/write-an-equation-or-formula",
+      "retrieval_status": 200,
+      "exact_quote": "The Professional option displays the equation in a professional format optimized for display."
+    }
+  ],
+  "editorial_choices_not_BMT_mandates": [
+    "Only three principal method equations in the main text and two diagnostic-decomposition equations in the supplement.",
+    "Centered single-line display mathematics and right-aligned parenthesized labels.",
+    "Cambria Math native Word equations, main12pt/supplement11pt, with upright descriptive labels.",
+    "Symmetric borderless equation-layout containers carry true m:oMathPara; these containers are not scientific data tables."
+  ],
+  "selection_rationale": "Dice defines agreement, and the two risks define the compared methods. Only the two less-standard Kitagawa component definitions warrant supplemental display. Routine arithmetic and named standard statistical procedures are retained in precise prose and cited code, without a new mathematical appendix.",
+  "not_used_sources": [
+    {
+      "name": "AMS journals style guide",
+      "reason": "Full PDF retrieval failed with an unsupported-file-size response; no claim of having applied its formatting. Target-journal guidance takes priority."
+    }
+  ]
+}

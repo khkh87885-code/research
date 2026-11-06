@@ -1,0 +1,97 @@
+{
+  "checked_utc": "2026-11-06T13:16:49.962935+00:00",
+  "direct_renderer": "LibreOffice PDF export",
+  "word_wps_direct_tested": false,
+  "scope": "Native single-line display prototypes only; final manuscript not modified",
+  "documents": {
+    "main": {
+      "native_display_math_count": 3,
+      "layout_tables_not_data_tables": 3,
+      "formula_image_count": 0,
+      "tab_runs": 0,
+      "equation_number_spans": [
+        {
+          "text": "(1)",
+          "bbox": [
+            509.5,
+            169.5087432861328,
+            523.4439697265625,
+            182.79273986816406
+          ],
+          "font_pt": 12.0
+        },
+        {
+          "text": "(2)",
+          "bbox": [
+            509.5,
+            246.4087677001953,
+            523.4439697265625,
+            259.6927795410156
+          ],
+          "font_pt": 12.0
+        },
+        {
+          "text": "(3)",
+          "bbox": [
+            509.5,
+            345.2587890625,
+            523.4439697265625,
+            358.54278564453125
+          ],
+          "font_pt": 12.0
+        }
+      ],
+      "math_italic_font_sizes_pt": [
+        8.39,
+        8.4,
+        11.99,
+        12.0
+      ],
+      "pdf_pages": 1,
+      "errors": [],
+      "docx_sha256": "412cfddd4f5712ced68f4b0d5192aa5fc476f0e0d9d7844921256c84afe20e05",
+      "pdf_sha256": "547c779e20d1f80e2c05d71fed47eb8e0d0ac539fb01f9fbab4044a1007c6cab"
+    },
+    "supplement": {
+      "native_display_math_count": 2,
+      "layout_tables_not_data_tables": 2,
+      "formula_image_count": 0,
+      "tab_runs": 0,
+      "equation_number_spans": [
+        {
+          "text": "(S1)",
+          "bbox": [
+            526.9500122070312,
+            151.74978637695312,
+            545.8701171875,
+            163.92678833007812
+          ],
+          "font_pt": 11.0
+        },
+        {
+          "text": "(S2)",
+          "bbox": [
+            526.9500122070312,
+            235.44979858398438,
+            545.8701171875,
+            247.62680053710938
+          ],
+          "font_pt": 11.0
+        }
+      ],
+      "math_italic_font_sizes_pt": [
+        7.69,
+        11.03
+      ],
+      "pdf_pages": 1,
+      "errors": [],
+      "docx_sha256": "55e0d294314c470b2fb3d06f180e3cb2181fc6d5b98c2ed987b89e4f579c2444",
+      "pdf_sha256": "61be75b960827c488e6dfb1d54c59d2519133c1707ae8e67e546e19d09849fd6"
+    }
+  },
+  "visual_review": {
+    "main": "All3 single-line equations seen at1.8x: fraction and sum complete, variables italic, methodA/B labels compact upright, number right with no wrap.",
+    "supplement": "BothC/W lines seen at1.8x: full sums/fractions, external/internal nominalE/I upright, stratum variableitalic, no crowding.",
+    "limits": "These prototypes are not proof of Microsoft Word/WPS runtime behavior; source uses standard native display OMML and Cambria Math."
+  }
+}

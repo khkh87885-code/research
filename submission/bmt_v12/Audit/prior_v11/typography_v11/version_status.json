@@ -1,0 +1,58 @@
+{
+  "created_utc": "2026-11-06T12:58:39.766818+00:00",
+  "revision": "v11 mathematical typography",
+  "source": "submission/bmt_v10",
+  "user_requested_formula_typography_revision_completed": true,
+  "main_numbered_equation_groups": 14,
+  "supplement_numbered_equation_groups": 12,
+  "native_editable_office_math": true,
+  "equation_rows_may_outnumber_numbered_groups": true,
+  "native_word_or_wps_executed": false,
+  "results_tables_figures_references_declaration_substance_changed": false,
+  "main_tables_and_cells": [
+    3,
+    66
+  ],
+  "supplement_tables_and_cells": [
+    19,
+    878
+  ],
+  "post_hoc_and_nominal_interval_boundaries_retained": true,
+  "prior_author_confirmation_scope_preserved": true,
+  "journal_submission_executed": false,
+  "final_documents_pending": false,
+  "final_revision_qa_sha256": "2b1a31850a06a6ad0c1c5e35532d653138ee431dbf6a644f103098651d792fd5",
+  "locked_independent_reports": {
+    "mathematics": {
+      "path": "/workspace/bmt_v11/evidence/independent_mathematics_qa.json",
+      "sha256": "b373d278c892d7c4847c88631151bb2160f0248fc6bc7fd4fb7134498c4d6c92",
+      "checks_passed": 217
+    },
+    "layout": {
+      "path": "/workspace/bmt_v11/evidence/independent_layout_qa.json",
+      "sha256": "dc8585b9b79c290c6a715273b8c1bb3a7e198ed90bb2ad81718c921ee199539d",
+      "checks_passed": 68
+    }
+  },
+  "independent_check_counts": {
+    "mathematics": 217,
+    "layout": 68
+  },
+  "upload_files": [
+    "BMT_main_manuscript_v11.docx",
+    "Figures/Figure_1.png",
+    "Figures/Figure_2.png",
+    "Figures/Figure_3.png",
+    "Figures/Figure_4.png",
+    "Figures/Figure_5.png",
+    "BMT_Ethical_and_Legal_Declarations_v11.docx",
+    "BMT_cover_letter_v11.docx",
+    "BMT_supplementary_material_v7.docx",
+    "BMT_supplementary_Figure_S6_v7.pdf",
+    "BMT_data_and_code_availability_v11.docx",
+    "BMT_reviewer_candidates.docx",
+    "Additional_quality_control_metrics.csv",
+    "Analysis/table_data/S13_all_48_comparisons_unrounded.csv",
+    "UPLOAD_FILE_MAP.md"
+  ]
+}

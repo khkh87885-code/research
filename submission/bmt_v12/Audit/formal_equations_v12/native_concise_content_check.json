@@ -1,0 +1,624 @@
+{
+  "checks": [
+    {
+      "name": "main numbered equation labels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main true display math count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main no aligned or cases matrix",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main scientific table count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main scientific data cell count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main scientific cells match latest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main all native tables correctly classified",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (1) layout only 1x3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (1) single native display object",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (1) mathematical structure matches audited definition",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (1) descriptive labels upright",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (2) layout only 1x3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (2) single native display object",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (2) mathematical structure matches audited definition",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (2) descriptive labels upright",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (3) layout only 1x3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (3) single native display object",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (3) mathematical structure matches audited definition",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main (3) descriptive labels upright",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main complete prose follows authorized concise plan",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main only retained equation references survive",
+      "pass": true,
+      "detail": "['2', '1', '2', '3', 'S1']"
+    },
+    {
+      "name": "main former mathematical appendix absent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main abstract and author metadata unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main Results through references declarations captions unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main no equation raster media",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement numbered equation labels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement true display math count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement no aligned or cases matrix",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement scientific table count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement scientific data cell count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement scientific cells match latest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement all native tables correctly classified",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement (S1) layout only 1x3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement (S1) single native display object",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement (S1) mathematical structure matches audited definition",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement (S1) descriptive labels upright",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement (S2) layout only 1x3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement (S2) single native display object",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement (S2) mathematical structure matches audited definition",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement (S2) descriptive labels upright",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement complete prose follows authorized concise plan",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement only retained equation references survive",
+      "pass": true,
+      "detail": "['S1', 'S2']"
+    },
+    {
+      "name": "supplement former mathematical appendix absent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement no equation raster media",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main exact rule paragraph frozen model and input handling",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main exact rule paragraph calibration zero option tied groups >= nearest target and fewer tie",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main exact rule paragraph H1 H2 H3 directions and nominal Newcombe",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main exact rule paragraph Dice sensitivity top50 and original string-ID tie",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main exact rule paragraph diagnostic strata and Wilson intervals",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main exact rule paragraph eight budgets nearest integer and half tie",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main exact rule paragraph three bootstrap routes paired records repeats top50 draw-order nominal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main exact rule paragraph historical versus six-case CPU environment scope",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Dice positive-denominator domain explicit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Dice empty-empty convention preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "empty prediction vs nonempty reference gives zero",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "strict low-quality reference cutoff preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "A raw quality-head input preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "four directions and clipped coincidence retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all zero-denominator rates remain undefined",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Kitagawa detection weights use low-quality patients",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Kitagawa review weights use all scored patients",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Kitagawa identity conditioned on defined stratum rates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "overall rates aggregate counts retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph paired Newcombe positive-association correction",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph internal exact half K=425",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph equal-K review difference zero by design",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph linear finite-value bootstrap quantiles",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph three routes paired sampling",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph duplicate draws deterministic draw index and NA",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph R1 zero A-only empirical support",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph bootstrap not replace Newcombe or superiority probability",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph component finite percentile procedure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph 4999 vs5000 undefined stratum",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph noncausal and no percent-explained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph fixed CPU replay decisions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement exact rule paragraph 48 numeric fields and cross-environment differences",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_1.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_1.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_2.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_2.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_3.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_3.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_4.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_4.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_5.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_5.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S1.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S1.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S2.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S2.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S3.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S3.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S4.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S4.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S5.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S5.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S6A.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S6A.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S6B.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S6B.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "S6 file bytes unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v12_preview.pdf no replacement or math parser error glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v12_preview.pdf no red parser error spans",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v12_illustrated_preview.pdf no replacement or math parser error glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v12_illustrated_preview.pdf no red parser error spans",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_material_v8_preview.pdf no replacement or math parser error glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_material_v8_preview.pdf no red parser error spans",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v8.pdf no replacement or math parser error glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v8.pdf no red parser error spans",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "equation_checks": [
+    {
+      "document": "main",
+      "label": "1",
+      "pass": true,
+      "latex": "D(U,V)=\\frac{2\\lvert U\\cap V\\rvert}{\\lvert U\\rvert+\\lvert V\\rvert}.",
+      "native_math_sha256": "d0ff07eb3b5058d7052a6a74955a8cb07f0c0ffa9dcacd6f511582bfff4ef472"
+    },
+    {
+      "document": "main",
+      "label": "2",
+      "pass": true,
+      "latex": "r_{\\mathrm{A}}=1-\\widehat q.",
+      "native_math_sha256": "ba3d249f94e2357fc0d6d155919fe4ac4889ed0dd8cecb75b93d84a8af7f4a51"
+    },
+    {
+      "document": "main",
+      "label": "3",
+      "pass": true,
+      "latex": "r_{\\mathrm{B}}=1-\\frac{1}{4}\\sum_{j=1}^{4}D(P_0,P_j).",
+      "native_math_sha256": "96a2c3e85730a8346c462a1f3ffba718fbdaab0c095d15115cbe184fd8eb6e6a"
+    },
+    {
+      "document": "supplement",
+      "label": "S1",
+      "pass": true,
+      "latex": "C=\\sum_s(w_{\\mathrm{E},s}-w_{\\mathrm{I},s})\\frac{p_{\\mathrm{E},s}+p_{\\mathrm{I},s}}{2},",
+      "native_math_sha256": "c81fb620cbcbad086161f4260a41d6d405a46e193fa2d60e4a13e506d5d30fda"
+    },
+    {
+      "document": "supplement",
+      "label": "S2",
+      "pass": true,
+      "latex": "W=\\sum_s(p_{\\mathrm{E},s}-p_{\\mathrm{I},s})\\frac{w_{\\mathrm{E},s}+w_{\\mathrm{I},s}}{2}.",
+      "native_math_sha256": "98408e9607616418625983dc5401de96d31ba83f6379ca29b568b64e7224805e"
+    }
+  ],
+  "documents": {
+    "BMT_main_manuscript_v12.docx": {
+      "sha256": "100bb41ffe8355222ecdf588ab7045a764995c7f785c8d6b51d80873c3242b0d",
+      "bytes": 58682,
+      "data_tables": 3,
+      "scientific_cells": 66,
+      "display_equations": 3,
+      "layout_tables": 3
+    },
+    "BMT_supplementary_material_v8.docx": {
+      "sha256": "f492a6222165ad5569a968f93ccf9c61a588ef5d9bb01769fd4859226bc6a740",
+      "bytes": 1533688,
+      "data_tables": 19,
+      "scientific_cells": 878,
+      "display_equations": 2,
+      "layout_tables": 2
+    },
+    "BMT_main_manuscript_v12_preview.pdf": {
+      "sha256": "c0e2d984059ef5b632a84ddb93f009a105ace8675b3f83615ac3059dbe371fa9",
+      "bytes": 225570,
+      "pages": 21
+    },
+    "BMT_main_manuscript_v12_illustrated_preview.pdf": {
+      "sha256": "f205d68ae3f5ea02b9ef757d15c4e89c1b13b815f1d256347c186bcc198602eb",
+      "bytes": 1468838,
+      "pages": 26
+    },
+    "BMT_supplementary_material_v8_preview.pdf": {
+      "sha256": "aeecd1f8eeb52c26f026cf7888b95320788d73e3831f2dae70db44dc0a61eef7",
+      "bytes": 1334686,
+      "pages": 25
+    },
+    "BMT_supplementary_Figure_S6_v8.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "bytes": 1871819,
+      "pages": 6
+    }
+  }
+}

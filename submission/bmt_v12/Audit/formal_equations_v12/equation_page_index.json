@@ -1,0 +1,27 @@
+{
+  "BMT_main_manuscript_v12_preview.pdf": {
+    "pages": 21,
+    "equation_pages": [
+      {
+        "page": 5,
+        "labels": [
+          "1",
+          "2",
+          "3"
+        ]
+      }
+    ]
+  },
+  "BMT_supplementary_material_v8_preview.pdf": {
+    "pages": 25,
+    "equation_pages": [
+      {
+        "page": 19,
+        "labels": [
+          "S1",
+          "S2"
+        ]
+      }
+    ]
+  }
+}

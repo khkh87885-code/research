@@ -1,0 +1,332 @@
+{
+  "tables_equal": true,
+  "physical_tables": 19,
+  "exact_table_cells": 878,
+  "preserved_nonfigure_paragraphs": 88,
+  "new_images": 5,
+  "orphaned_legacy_images": 0,
+  "source_sha256": "1b6a1f25c6fe5b810531ad3cceb2e3988daa5873e95c996e78ca5a8b8137becd",
+  "final_docx_sha256": "1c3b4f77e6cb7fc11e486da9ec79485981e7b5a0ecbf482a307968767b21b5a1",
+  "docx_bytes": 1532383,
+  "s6": {
+    "file": "/workspace/bmt_v9/outputs/BMT_supplementary_Figure_S6_v5.pdf",
+    "bytes": 1871819,
+    "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+    "pages": 6,
+    "assets": [
+      {
+        "case": "case089",
+        "panel": "A",
+        "path": "/workspace/bmt_v9/layout_assets/Figure_S6_case_A_case089.pdf",
+        "sha256": "49e3dc4ad9b9f412b19cf501415d52ffcee1237546105733d8191fe027c30cc8",
+        "embedded_width_in": 6.88976377952756,
+        "scale": 0.9999657425279365
+      },
+      {
+        "case": "case175",
+        "panel": "B",
+        "path": "/workspace/bmt_v9/layout_assets/Figure_S6_case_B_case175.pdf",
+        "sha256": "b8ab06e123a10ac5c90c099bbd249df0fb85bf865e260165f9f5ace1793fbe10",
+        "embedded_width_in": 6.88976377952756,
+        "scale": 0.9999657425279365
+      },
+      {
+        "case": "case238",
+        "panel": "C",
+        "path": "/workspace/bmt_v9/layout_assets/Figure_S6_case_C_case238.pdf",
+        "sha256": "76e5ca10b5aa85483255337ff040bb3d89578aae216d50f48f4de48b8c465bdf",
+        "embedded_width_in": 6.88976377952756,
+        "scale": 0.9999657425279365
+      },
+      {
+        "case": "case024",
+        "panel": "D",
+        "path": "/workspace/bmt_v9/layout_assets/Figure_S6_case_D_case024.pdf",
+        "sha256": "9f26edc2d7553ffae1ab65458b2395ecdd428cae34a83cfa7a40f86764832ea6",
+        "embedded_width_in": 6.88976377952756,
+        "scale": 0.9999657425279365
+      },
+      {
+        "case": "case105",
+        "panel": "E",
+        "path": "/workspace/bmt_v9/layout_assets/Figure_S6_case_E_case105.pdf",
+        "sha256": "137e547111df013af9ce0b3f419f69542c171d18ec73db68195a8ddb82b9540b",
+        "embedded_width_in": 6.88976377952756,
+        "scale": 0.9999657425279365
+      },
+      {
+        "case": "case222",
+        "panel": "F",
+        "path": "/workspace/bmt_v9/layout_assets/Figure_S6_case_F_case222.pdf",
+        "sha256": "86e6195bfe7fca7b5f1a21c4af2a87651ab0dd1f3c2f8c177e147ec4541b6ad7",
+        "embedded_width_in": 6.88976377952756,
+        "scale": 0.9999657425279365
+      }
+    ],
+    "native_pdf_placement": true,
+    "image_resampling": false,
+    "qa": {
+      "pages": 6,
+      "out_of_page_text": [],
+      "page_info": [
+        {
+          "page": 1,
+          "chars": 1586,
+          "min_font_pt": 7.999760150909424,
+          "tables": []
+        },
+        {
+          "page": 2,
+          "chars": 485,
+          "min_font_pt": 7.999760150909424,
+          "tables": []
+        },
+        {
+          "page": 3,
+          "chars": 485,
+          "min_font_pt": 7.999760150909424,
+          "tables": []
+        },
+        {
+          "page": 4,
+          "chars": 489,
+          "min_font_pt": 7.999760150909424,
+          "tables": []
+        },
+        {
+          "page": 5,
+          "chars": 489,
+          "min_font_pt": 7.999760150909424,
+          "tables": []
+        },
+        {
+          "page": 6,
+          "chars": 489,
+          "min_font_pt": 7.999760150909424,
+          "tables": []
+        }
+      ]
+    }
+  },
+  "preview": {
+    "path": "/workspace/bmt_v9/outputs/BMT_supplementary_material_v5_preview.pdf",
+    "sha256": "38bca3f99f600c29c30bd57c9b90f9bf77d9502dc621d1b3d04dfc4e5e6ffe8c",
+    "bytes": 1316901,
+    "pages": 25,
+    "out_of_page_text": [],
+    "page_info": [
+      {
+        "page": 1,
+        "chars": 1105,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S1"
+        ]
+      },
+      {
+        "page": 2,
+        "chars": 961,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S2"
+        ]
+      },
+      {
+        "page": 3,
+        "chars": 641,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S3"
+        ]
+      },
+      {
+        "page": 4,
+        "chars": 613,
+        "min_font_pt": 9.0,
+        "tables": []
+      },
+      {
+        "page": 5,
+        "chars": 736,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S4"
+        ]
+      },
+      {
+        "page": 6,
+        "chars": 588,
+        "min_font_pt": 9.0,
+        "tables": []
+      },
+      {
+        "page": 7,
+        "chars": 1328,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S5",
+          "Table S13"
+        ]
+      },
+      {
+        "page": 8,
+        "chars": 1018,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S6"
+        ]
+      },
+      {
+        "page": 9,
+        "chars": 1552,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S7"
+        ]
+      },
+      {
+        "page": 10,
+        "chars": 2191,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S8"
+        ]
+      },
+      {
+        "page": 11,
+        "chars": 1618,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S9",
+          "Table S13",
+          "Table S9"
+        ]
+      },
+      {
+        "page": 12,
+        "chars": 1590,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S10"
+        ]
+      },
+      {
+        "page": 13,
+        "chars": 1864,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S10 (continued)"
+        ]
+      },
+      {
+        "page": 14,
+        "chars": 2362,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S10 (continued)"
+        ]
+      },
+      {
+        "page": 15,
+        "chars": 1863,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S10 (continued)"
+        ]
+      },
+      {
+        "page": 16,
+        "chars": 2360,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S10 (continued)"
+        ]
+      },
+      {
+        "page": 17,
+        "chars": 3164,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S11"
+        ]
+      },
+      {
+        "page": 18,
+        "chars": 1433,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S11 (continued)"
+        ]
+      },
+      {
+        "page": 19,
+        "chars": 2744,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S12"
+        ]
+      },
+      {
+        "page": 20,
+        "chars": 1935,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S13",
+          "Table S1"
+        ]
+      },
+      {
+        "page": 21,
+        "chars": 1664,
+        "min_font_pt": 9.0,
+        "tables": [
+          "Table S13 (continued)"
+        ]
+      },
+      {
+        "page": 22,
+        "chars": 1365,
+        "min_font_pt": 9.0,
+        "tables": []
+      },
+      {
+        "page": 23,
+        "chars": 1853,
+        "min_font_pt": 9.0,
+        "tables": []
+      },
+      {
+        "page": 24,
+        "chars": 1546,
+        "min_font_pt": 9.0,
+        "tables": []
+      },
+      {
+        "page": 25,
+        "chars": 1457,
+        "min_font_pt": 9.0,
+        "tables": []
+      }
+    ]
+  },
+  "visual_review": {
+    "contact_sheet": "qa/supplement_contact_sheet.png",
+    "all_25_pages_reviewed": true,
+    "orphan_heading_pages": 0,
+    "figure_pages": [
+      4,
+      6,
+      22,
+      23,
+      24
+    ],
+    "no_blank_pages": true,
+    "notes": "Tables each remain editable with exact strings; S6 supplied in separate native-image/vector PDF."
+  },
+  "S8_header_followup": {
+    "source_header": "Detection, n/F (%)\n[95 % CI, %]",
+    "final_header": "Detection, n/F (%)\n[95 % CI, %]",
+    "change_required": false,
+    "reason": "Full source header includes closing bracket; no modification was made. Earlier truncated diagnostic output was corrected."
+  }
+}

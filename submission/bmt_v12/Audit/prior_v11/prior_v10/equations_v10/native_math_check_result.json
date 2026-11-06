@@ -1,0 +1,485 @@
+{
+  "checks": [
+    {
+      "name": "main tables exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main editable table count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main no equation images",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main numbered formula count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main sequential formula labels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main audited equations independently convert",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main expected math node count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 1 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 2 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 3 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 4 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 5 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 6 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 7 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 8 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 9 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 10 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 11 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 12 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 13 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 14 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main abstract exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main all paragraphs Results through end exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main no raw TeX in plain Word text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement tables exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement editable table count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement no equation images",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement numbered formula count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement sequential formula labels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement audited equations independently convert",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement expected math node count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement equation S1 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement equation S2 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement equation S3 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement equation S4 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement equation S5 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement equation S6 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement equation S7 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement equation S8 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement equation S9 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement equation S10 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement equation S11 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement equation S12 semantic XML equals audited TeX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all original supplement prose ordered and exact apart from v6 file pointer",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "supplement no raw TeX in plain Word text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v10_preview.pdf no replacement/math-error glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v10_preview.pdf no red formula parser errors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v10_illustrated_preview.pdf no replacement/math-error glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v10_illustrated_preview.pdf no red formula parser errors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_material_v6_preview.pdf no replacement/math-error glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_material_v6_preview.pdf no red formula parser errors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v6.pdf no replacement/math-error glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v6.pdf no red formula parser errors",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "documents": {
+    "BMT_main_manuscript_v10.docx": {
+      "sha256": "7c09377e4edb101f316c6b6bfe419fe1d39d8bda50185ebc837834e5e1edf95f",
+      "tables": 3,
+      "display_formulas": 14
+    },
+    "BMT_supplementary_material_v6.docx": {
+      "sha256": "6261492ff9b26200c35f75d30a30604021c4e6d3b67030c733b9a55a59d958a6",
+      "tables": 19,
+      "display_formulas": 12
+    },
+    "BMT_main_manuscript_v10_preview.pdf": {
+      "sha256": "c22cfd6e30f7d85d6db500cb3ad604a902405722c5bf09cbf2a2732583b9fc50",
+      "pages": 23,
+      "bytes": 260654
+    },
+    "BMT_main_manuscript_v10_illustrated_preview.pdf": {
+      "sha256": "8cd0fbfc0a949f212046655fe54718dc9b948d2f029517a9f4a0a05304045329",
+      "pages": 28,
+      "bytes": 1503890
+    },
+    "BMT_supplementary_material_v6_preview.pdf": {
+      "sha256": "44926b7515d64d9eb3020ec8a9bb8336665fe38f46ed515991e261ea17b77ba0",
+      "pages": 29,
+      "bytes": 1386461
+    },
+    "BMT_supplementary_Figure_S6_v6.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "pages": 6,
+      "bytes": 1871819
+    }
+  },
+  "equation_native_checks": [
+    {
+      "document": "main",
+      "label": "1",
+      "actual_office_math_sha256": "f117328b7962624a1f3e3e4eaee73f70508c0f332c5bb430f78750c13eea372c",
+      "audited_latex": "\\begin{aligned}B_{0,i}&=\\operatorname{clip}_{\\Omega_i}(B_i+e_i),\\\\e_i&=(-0.10w_i,-0.10h_i,0.10w_i,0.10h_i).\\end{aligned}",
+      "pass": true
+    },
+    {
+      "document": "main",
+      "label": "2",
+      "actual_office_math_sha256": "5d3caeed05324784df17dd639308bd3f0a901a365033c66011d311875d979509",
+      "audited_latex": "\\begin{aligned}B_{j,i}&=\\operatorname{clip}_{\\Omega_i}\\{B_{0,i}+(u_{j,i},v_{j,i},u_{j,i},v_{j,i})\\},\\\\(u_{j,i},v_{j,i})&\\in\\{(-\\delta_{x,i},0),(\\delta_{x,i},0),(0,-\\delta_{y,i}),(0,\\delta_{y,i})\\},\\\\\\delta_{x,i}&=0.05w_{0,i},\\qquad\\delta_{y,i}=0.05h_{0,i}.\\end{aligned}",
+      "pass": true
+    },
+    {
+      "document": "main",
+      "label": "3",
+      "actual_office_math_sha256": "2d2434a30ae3cc628cfb2f368f48701ff15a6b7c2fbf8df13437b95a3a18df7e",
+      "audited_latex": "D(U,V)=\\begin{cases}\\dfrac{2\\lvert U\\cap V\\rvert}{\\lvert U\\rvert+\\lvert V\\rvert},&\\lvert U\\rvert+\\lvert V\\rvert>0,\\\\1,&\\lvert U\\rvert+\\lvert V\\rvert=0.\\end{cases}",
+      "pass": true
+    },
+    {
+      "document": "main",
+      "label": "4",
+      "actual_office_math_sha256": "5451c960a1a9fea9c310eead79755079f812a1d3ee08f89084bdd3dc4fbf20f2",
+      "audited_latex": "r_{A,i}=1-\\widehat q_i.",
+      "pass": true
+    },
+    {
+      "document": "main",
+      "label": "5",
+      "actual_office_math_sha256": "65bc5f9481ef9b01a27d499c95cc2c202a82a2b20a8bee2d97168c574a377e61",
+      "audited_latex": "r_{B,i}=1-\\frac14\\sum_{j=1}^{4}D(P_{0,i},P_{j,i}).",
+      "pass": true
+    },
+    {
+      "document": "main",
+      "label": "6",
+      "actual_office_math_sha256": "6e203df94239972010d02e7ea4fe746a0a37df77fb1a5031eeae5ee91ca74fd0",
+      "audited_latex": "Y_i=\\mathbf{1}\\{D(P_{0,i},G_i)<\\tau\\},\\qquad \\tau=0.70.",
+      "pass": true
+    },
+    {
+      "document": "main",
+      "label": "7",
+      "actual_office_math_sha256": "90e6bfbc495dea62d688b555eaeea3eca3bf0086f15a9f47202a0c0dabf84f2d",
+      "audited_latex": "\\begin{aligned}a_{m,i}(t)&=\\mathbf{1}\\{r_{m,i}\\ge t\\},\\\\v_{m,\\mathrm{dev}}(t)&=\\frac{1}{N_{\\mathrm{dev}}}\\sum_{i\\in\\mathrm{dev}}a_{m,i}(t).\\end{aligned}",
+      "pass": true
+    },
+    {
+      "document": "main",
+      "label": "8",
+      "actual_office_math_sha256": "4b58870f1c28818d815da2619b4d986c33696f98a090794e21de66eb7f1895d7",
+      "audited_latex": "t_m^*=\\underset{t\\in\\mathcal T_m}{\\operatorname{argmin}_{\\mathrm{lex}}}(\\lvert v_{m,\\mathrm{dev}}(t)-b\\rvert,\\ v_{m,\\mathrm{dev}}(t)).",
+      "pass": true
+    },
+    {
+      "document": "main",
+      "label": "9",
+      "actual_office_math_sha256": "c1fbd1c9ede76ab5fd8d2066fa54885a4d9deec024a2c7f18aca300e86e467d3",
+      "audited_latex": "\\begin{aligned}d_m&=\\frac{TP_m}{F},\\qquad v_m=\\frac{TP_m+FP_m}{N},\\\\M_m&=100\\frac{FN_m}{N},\\qquad F=TP_m+FN_m.\\end{aligned}",
+      "pass": true
+    },
+    {
+      "document": "main",
+      "label": "10",
+      "actual_office_math_sha256": "03dbe476e89463a0f396e2cc4e4a46d8965cc7f14084fd2c36a791595895fd89",
+      "audited_latex": "\\begin{aligned}\\Delta_{H1}&=100(d_{A,E}-d_{A,I}),\\\\\\Delta_{H2}&=100(v_{A,E}-v_{A,I}),\\\\\\Delta_{H3}&=100(d_{B,E}-d_{A,E}).\\end{aligned}",
+      "pass": true
+    },
+    {
+      "document": "main",
+      "label": "11",
+      "actual_office_math_sha256": "f6bd424537d680311f516a41f7638ac2d8150d009daa4e8bf0600e6078ff1d9c",
+      "audited_latex": "\\begin{aligned}K(b,N)&=\\min\\underset{k\\in\\{0,\\ldots,N\\}}{\\operatorname{argmin}}\\lvert k-bN\\rvert,\\\\a_{m,i}^{(K)}&=\\mathbf{1}\\{\\operatorname{rank}_m(i)\\le K(b,N)\\}.\\end{aligned}",
+      "pass": true
+    },
+    {
+      "document": "main",
+      "label": "12",
+      "actual_office_math_sha256": "c13a065690c5b66a32b166c12cd8d287cdb859db56725857d9e4f3571b878d15",
+      "audited_latex": "\\begin{aligned}\\operatorname{Specificity}_m&=\\frac{TN_m}{TN_m+FP_m},\\\\\\operatorname{PPV}_m&=\\frac{TP_m}{TP_m+FP_m},\\\\\\operatorname{NPV}_m&=\\frac{TN_m}{TN_m+FN_m}.\\end{aligned}",
+      "pass": true
+    },
+    {
+      "document": "main",
+      "label": "13",
+      "actual_office_math_sha256": "edee47def2f73521f195c0f8d22d2d3d207404cf1228ad948d800ec49ba647ea",
+      "audited_latex": "\\begin{aligned}\\Delta_P=P_E-P_I&=C+W,\\\\C&=\\sum_s(w_{E,s}-w_{I,s})\\frac{p_{E,s}+p_{I,s}}{2},\\\\W&=\\sum_s(p_{E,s}-p_{I,s})\\frac{w_{E,s}+w_{I,s}}{2}.\\end{aligned}",
+      "pass": true
+    },
+    {
+      "document": "main",
+      "label": "14",
+      "actual_office_math_sha256": "09680705d7848c86e56616d41e7a4a4dbc9f3046b52d049bb172adada3989f8b",
+      "audited_latex": "\\begin{aligned}w_s^*&=\\frac{w_{E,s}+w_{I,s}}{2},\\qquad P_c^{\\mathrm{std}}=\\sum_s w_s^*p_{c,s},\\\\P_E^{\\mathrm{std}}-P_I^{\\mathrm{std}}&=W.\\end{aligned}",
+      "pass": true
+    },
+    {
+      "document": "supplement",
+      "label": "S1",
+      "actual_office_math_sha256": "cbe60c1582dd030616d394f152ab5a0688fe55f6b7be588346eaab31fb9f2b6d",
+      "audited_latex": "(L,U)=\\frac{\\hat p+\\frac{z^2}{2n}\\ \\pm\\ z\\sqrt{\\frac{\\hat p(1-\\hat p)}{n}+\\frac{z^2}{4n^2}}}{1+\\frac{z^2}{n}}.",
+      "pass": true
+    },
+    {
+      "document": "supplement",
+      "label": "S2",
+      "actual_office_math_sha256": "0b7190b4089c46f30720a51e4aadfc8438b391a73417a60e874fabb203f108f2",
+      "audited_latex": "\\begin{aligned}\\mathcal R(x,y;\\rho)&=\\sqrt{\\max(x^2+y^2-2\\rho xy,0)},\\\\L_{\\Delta}&=\\hat\\Delta-\\mathcal R(\\hat p_1-L_1,U_2-\\hat p_2;\\rho),\\\\U_{\\Delta}&=\\hat\\Delta+\\mathcal R(U_1-\\hat p_1,\\hat p_2-L_2;\\rho).\\end{aligned}",
+      "pass": true
+    },
+    {
+      "document": "supplement",
+      "label": "S3",
+      "actual_office_math_sha256": "8fa1aeb2a9c2e077c08a2edd02a98f2118136d2e9cde87e95ace5c8f3581eb34",
+      "audited_latex": "N=a+b+c+d,\\qquad T=ad-bc,\\qquad M=(a+b)(c+d)(a+c)(b+d).",
+      "pass": true
+    },
+    {
+      "document": "supplement",
+      "label": "S4",
+      "actual_office_math_sha256": "bd8613f6c3f8c56577de4cf669f7327dd4d48dabd872e87950b508e12cf51674",
+      "audited_latex": "T^{\\mathrm{corr}}=T-\\mathbf1\\{T>0\\}\\min(T,N/2),\\qquad \\rho=\\frac{T^{\\mathrm{corr}}}{\\sqrt M}\\quad(M>0).",
+      "pass": true
+    },
+    {
+      "document": "supplement",
+      "label": "S5",
+      "actual_office_math_sha256": "5f9f86709c3cde911185d3c2a16aeed79d93c9ee01933c28633b69a42bcff5ca",
+      "audited_latex": "\\mathrm{CI}_{95\\%}^{\\mathrm{boot}}=[Q_{0.025}\\{\\theta^{*(b)}:b\\in\\mathcal V\\},\\ Q_{0.975}\\{\\theta^{*(b)}:b\\in\\mathcal V\\}].",
+      "pass": true
+    },
+    {
+      "document": "supplement",
+      "label": "S6",
+      "actual_office_math_sha256": "5ec8fbb71313c5c9ee1b4bfa27c8cd0886c129741a3eaec14be373562c8a471f",
+      "audited_latex": "\\begin{aligned}\\hat f_{+,-}&=\\frac{1}{\\lvert\\mathcal V_J\\rvert}\\sum_{b\\in\\mathcal V_J}\\mathbf1\\{\\Delta_{\\mathrm{fixed}}^{*(b)}>0,\\ \\Delta_{\\mathrm{equal}}^{*(b)}<0\\},\\\\\\hat f_{-,+}&=\\frac{1}{\\lvert\\mathcal V_J\\rvert}\\sum_{b\\in\\mathcal V_J}\\mathbf1\\{\\Delta_{\\mathrm{fixed}}^{*(b)}<0,\\ \\Delta_{\\mathrm{equal}}^{*(b)}>0\\}.\\end{aligned}",
+      "pass": true
+    },
+    {
+      "document": "supplement",
+      "label": "S7",
+      "actual_office_math_sha256": "5762c6acf92226939e80397ebdc621725c0359f81cca2f0b9e8940e08a5d191c",
+      "audited_latex": "\\begin{aligned}\\hat f_0&=\\frac{1}{\\lvert\\mathcal V_J\\rvert}\\sum_{b\\in\\mathcal V_J}\\mathbf1\\{\\Delta_{\\mathrm{fixed}}^{*(b)}=0\\quad\\mathrm{or}\\quad \\Delta_{\\mathrm{equal}}^{*(b)}=0\\},\\\\\\hat f_{\\mathrm{same}}&=\\frac{1}{\\lvert\\mathcal V_J\\rvert}\\sum_{b\\in\\mathcal V_J}\\mathbf1\\{\\Delta_{\\mathrm{fixed}}^{*(b)}\\Delta_{\\mathrm{equal}}^{*(b)}>0\\}.\\end{aligned}",
+      "pass": true
+    },
+    {
+      "document": "supplement",
+      "label": "S8",
+      "actual_office_math_sha256": "449a7a2024dae64456fb912921bb144a2394738f0d1c94c578b2302bfc1e83f9",
+      "audited_latex": "p_{c,s}=\\frac{u_{c,s}}{d_{c,s}},\\qquad w_{c,s}=\\frac{d_{c,s}}{\\sum_t d_{c,t}},\\qquad P_c=\\frac{\\sum_s u_{c,s}}{\\sum_s d_{c,s}}.",
+      "pass": true
+    },
+    {
+      "document": "supplement",
+      "label": "S9",
+      "actual_office_math_sha256": "d48642cab5008577cb647db80488f5a4e5a69d11269abaf916995bfd0dc79789",
+      "audited_latex": "\\Delta_{EI}=P_E-P_I=C+W.",
+      "pass": true
+    },
+    {
+      "document": "supplement",
+      "label": "S10",
+      "actual_office_math_sha256": "d194115539e2fe0bb2ec542ed4cdcff65d628b8617d259063a5e2c50a2b0764c",
+      "audited_latex": "\\begin{aligned}C&=\\sum_s(w_{E,s}-w_{I,s})\\frac{p_{E,s}+p_{I,s}}{2},\\\\W&=\\sum_s(p_{E,s}-p_{I,s})\\frac{w_{E,s}+w_{I,s}}{2}.\\end{aligned}",
+      "pass": true
+    },
+    {
+      "document": "supplement",
+      "label": "S11",
+      "actual_office_math_sha256": "a2bce7cebda42e58f524392efd6a2fb0d44cc1cda4a402fc7d04f37d29e75979",
+      "audited_latex": "\\begin{aligned}w_s^*&=\\frac{w_{E,s}+w_{I,s}}{2},\\qquad P_c^{\\mathrm{std}}=\\sum_s w_s^*p_{c,s},\\\\P_E^{\\mathrm{std}}-P_I^{\\mathrm{std}}&=W.\\end{aligned}",
+      "pass": true
+    },
+    {
+      "document": "supplement",
+      "label": "S12",
+      "actual_office_math_sha256": "7437f9e9c3003bd7ba3a7acb90fd575b08059cc344ffa1c78503a17e82cf285b",
+      "audited_latex": "\\begin{aligned}\\delta_{ij}&=v_{ij}^{\\mathrm{CPU}}-v_{ij}^{\\mathrm{archive}},\\qquad\\epsilon_j=\\max_{i\\in\\mathcal I_6}\\lvert\\delta_{ij}\\rvert,\\\\\\epsilon_{\\mathrm{all}}&=\\max_{i\\in\\mathcal I_6,\\ j\\in\\{1,\\ldots,8\\}}\\lvert\\delta_{ij}\\rvert.\\end{aligned}",
+      "pass": true
+    }
+  ]
+}

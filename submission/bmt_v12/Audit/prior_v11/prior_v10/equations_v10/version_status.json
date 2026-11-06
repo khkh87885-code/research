@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-11-06T12:25:06.561657+00:00",
+  "revision": "v10 editable mathematical methods",
+  "source": "submission/bmt_v9",
+  "user_requested_formula_revision_completed": true,
+  "main_numbered_equation_groups": 14,
+  "supplement_numbered_equation_groups": 12,
+  "native_editable_office_math": true,
+  "results_tables_figures_references_declaration_substance_changed": false,
+  "main_tables_and_cells": [
+    3,
+    66
+  ],
+  "supplement_tables_and_cells": [
+    19,
+    878
+  ],
+  "post_hoc_and_nominal_interval_boundaries_retained": true,
+  "new_explicit_author_approval_record_created": false,
+  "prior_author_confirmation_scope_preserved": true,
+  "journal_submission_executed": false,
+  "final_documents_pending": false,
+  "final_revision_qa_sha256": "41b83c3765b57c53c1db683fc4f515c078a239e510419e1e504385a35efdce3b",
+  "mathematics_qa_sha256": "8436e151e2c5900ae0b7fcf8367e464bf5876a7ee3b011d7095577c316e75cd5",
+  "layout_qa_sha256": "79dd8b898a61f577d35af25dce21a716c39b9fe6fe43ab8500717fffd496d18c",
+  "mathematics_checks_passed": 83,
+  "layout_checks_passed": 50,
+  "upload_files": [
+    "BMT_main_manuscript_v10.docx",
+    "Figures/Figure_1.png",
+    "Figures/Figure_2.png",
+    "Figures/Figure_3.png",
+    "Figures/Figure_4.png",
+    "Figures/Figure_5.png",
+    "BMT_Ethical_and_Legal_Declarations_v10.docx",
+    "BMT_cover_letter_v10.docx",
+    "BMT_supplementary_material_v6.docx",
+    "BMT_supplementary_Figure_S6_v6.pdf",
+    "BMT_data_and_code_availability_v10.docx",
+    "BMT_reviewer_candidates.docx",
+    "Additional_quality_control_metrics.csv",
+    "Analysis/table_data/S13_all_48_comparisons_unrounded.csv",
+    "UPLOAD_FILE_MAP.md"
+  ]
+}

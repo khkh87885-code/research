@@ -1,0 +1,1623 @@
+{
+  "checked_utc": "2026-11-06T13:30:42.051802+00:00",
+  "scope": "v12 pruned formal equations verified against BMT mathematics rules and NIST typography, with independent visual review",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Main3data tables66cells exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Supplement19data panels878cells exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Results discussion declarations refs legends exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Titlepage author info exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Abstract keywords exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Abstract<=200words",
+      "pass": true,
+      "detail": 174
+    },
+    {
+      "name": "Maintext<=6000words",
+      "pass": true,
+      "detail": 3901
+    },
+    {
+      "name": "15references exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No redundant mathematical appendix",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docxexact reduced display count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docxall display groups true editable oMathPara",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docxno equation matrices or multiline arrays",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docx (1)borderless equation-only container",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docx (1)symmetric number gutters",
+      "pass": true,
+      "detail": [
+        0.6,
+        5.067361111111111,
+        0.6
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docx (1)native display stays in one cell",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docx (1)single display line",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docx (1)row cannot split",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docx (2)borderless equation-only container",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docx (2)symmetric number gutters",
+      "pass": true,
+      "detail": [
+        0.6,
+        5.067361111111111,
+        0.6
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docx (2)native display stays in one cell",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docx (2)single display line",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docx (2)row cannot split",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docx (3)borderless equation-only container",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docx (3)symmetric number gutters",
+      "pass": true,
+      "detail": [
+        0.6,
+        5.067361111111111,
+        0.6
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docx (3)native display stays in one cell",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docx (3)single display line",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docx (3)row cannot split",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docxlabels sequential",
+      "pass": true,
+      "detail": [
+        "(1)",
+        "(2)",
+        "(3)"
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docxstandardCambriaMath default",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docxdescriptive inline E/I also upright or ordinary prose",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docxdescriptive method/cohort indices upright",
+      "pass": true,
+      "detail": [
+        {
+          "label": "A",
+          "normal": true
+        },
+        {
+          "label": "B",
+          "normal": true
+        }
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docxNIST variables and running indices stay mathematical italic",
+      "pass": true,
+      "detail": [
+        {
+          "variable": "D",
+          "not_normal_text": true
+        },
+        {
+          "variable": "U",
+          "not_normal_text": true
+        },
+        {
+          "variable": "V",
+          "not_normal_text": true
+        },
+        {
+          "variable": "U",
+          "not_normal_text": true
+        },
+        {
+          "variable": "V",
+          "not_normal_text": true
+        },
+        {
+          "variable": "U",
+          "not_normal_text": true
+        },
+        {
+          "variable": "V",
+          "not_normal_text": true
+        },
+        {
+          "variable": "r",
+          "not_normal_text": true
+        },
+        {
+          "variable": "q",
+          "not_normal_text": true
+        },
+        {
+          "variable": "r",
+          "not_normal_text": true
+        },
+        {
+          "variable": "j",
+          "not_normal_text": true
+        },
+        {
+          "variable": "D",
+          "not_normal_text": true
+        },
+        {
+          "variable": "P",
+          "not_normal_text": true
+        },
+        {
+          "variable": "P",
+          "not_normal_text": true
+        },
+        {
+          "variable": "j",
+          "not_normal_text": true
+        }
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docxshort generic mask notation no patienti",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docxno stale equation references",
+      "pass": true,
+      "detail": [
+        "1",
+        "2",
+        "3",
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docxall display equations cited across main/supplement",
+      "pass": true,
+      "detail": [
+        "1",
+        "2",
+        "3",
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v12.docxno rawTeX",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docxexact reduced display count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docxall display groups true editable oMathPara",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docxno equation matrices or multiline arrays",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docx (S1)borderless equation-only container",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docx (S1)symmetric number gutters",
+      "pass": true,
+      "detail": [
+        0.6,
+        5.690277777777778,
+        0.6
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docx (S1)native display stays in one cell",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docx (S1)single display line",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docx (S1)row cannot split",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docx (S2)borderless equation-only container",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docx (S2)symmetric number gutters",
+      "pass": true,
+      "detail": [
+        0.6,
+        5.690277777777778,
+        0.6
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docx (S2)native display stays in one cell",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docx (S2)single display line",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docx (S2)row cannot split",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docxlabels sequential",
+      "pass": true,
+      "detail": [
+        "(S1)",
+        "(S2)"
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docxstandardCambriaMath default",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docxdescriptive inline E/I also upright or ordinary prose",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docxdescriptive method/cohort indices upright",
+      "pass": true,
+      "detail": [
+        {
+          "label": "E",
+          "normal": true
+        },
+        {
+          "label": "I",
+          "normal": true
+        },
+        {
+          "label": "E",
+          "normal": true
+        },
+        {
+          "label": "I",
+          "normal": true
+        },
+        {
+          "label": "E",
+          "normal": true
+        },
+        {
+          "label": "I",
+          "normal": true
+        },
+        {
+          "label": "E",
+          "normal": true
+        },
+        {
+          "label": "I",
+          "normal": true
+        }
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docxNIST variables and running indices stay mathematical italic",
+      "pass": true,
+      "detail": [
+        {
+          "variable": "C",
+          "not_normal_text": true
+        },
+        {
+          "variable": "s",
+          "not_normal_text": true
+        },
+        {
+          "variable": "w",
+          "not_normal_text": true
+        },
+        {
+          "variable": "s",
+          "not_normal_text": true
+        },
+        {
+          "variable": "w",
+          "not_normal_text": true
+        },
+        {
+          "variable": "s",
+          "not_normal_text": true
+        },
+        {
+          "variable": "p",
+          "not_normal_text": true
+        },
+        {
+          "variable": "s",
+          "not_normal_text": true
+        },
+        {
+          "variable": "p",
+          "not_normal_text": true
+        },
+        {
+          "variable": "s",
+          "not_normal_text": true
+        },
+        {
+          "variable": "W",
+          "not_normal_text": true
+        },
+        {
+          "variable": "s",
+          "not_normal_text": true
+        },
+        {
+          "variable": "p",
+          "not_normal_text": true
+        },
+        {
+          "variable": "s",
+          "not_normal_text": true
+        },
+        {
+          "variable": "p",
+          "not_normal_text": true
+        },
+        {
+          "variable": "s",
+          "not_normal_text": true
+        },
+        {
+          "variable": "w",
+          "not_normal_text": true
+        },
+        {
+          "variable": "s",
+          "not_normal_text": true
+        },
+        {
+          "variable": "w",
+          "not_normal_text": true
+        },
+        {
+          "variable": "s",
+          "not_normal_text": true
+        }
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docxshort generic mask notation no patienti",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docxno stale equation references",
+      "pass": true,
+      "detail": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docxall display equations cited across main/supplement",
+      "pass": true,
+      "detail": [
+        "1",
+        "2",
+        "3",
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v8.docxno rawTeX",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v9.docxnon-replaced v9 prose exactly restored",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v5.docxnon-replaced v9 prose exactly restored",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Formalmain no images",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Supplement5images unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Readingcopy5images unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Main scientific figures+tables remains8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "S6 byte-identical",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v12_preview.pdfno clip/empty/parser errors",
+      "pass": true,
+      "detail": {
+        "bounds": [],
+        "empty": [],
+        "errors": []
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v12_preview.pdfexact3display labels",
+      "pass": true,
+      "detail": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v12_illustrated_preview.pdfno clip/empty/parser errors",
+      "pass": true,
+      "detail": {
+        "bounds": [],
+        "empty": [],
+        "errors": []
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v12_illustrated_preview.pdfexact3display labels",
+      "pass": true,
+      "detail": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v8_preview.pdfno clip/empty/parser errors",
+      "pass": true,
+      "detail": {
+        "bounds": [],
+        "empty": [],
+        "errors": []
+      }
+    },
+    {
+      "name": "BMT_supplementary_material_v8_preview.pdfexact2display labels",
+      "pass": true,
+      "detail": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v8_preview.pdfunder10MB",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v8.pdfno clip/empty/parser errors",
+      "pass": true,
+      "detail": {
+        "bounds": [],
+        "empty": [],
+        "errors": []
+      }
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v8.pdfunder10MB",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_formula_layout_proof_v12.pdfno clip/empty/parser errors",
+      "pass": true,
+      "detail": {
+        "bounds": [],
+        "empty": [],
+        "errors": []
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v12_preview.pdf (1)visually centered within2pt",
+      "pass": true,
+      "detail": {
+        "label": "(1)",
+        "page": 5,
+        "ink_center_pt": 297.98128509521484,
+        "page_center_pt": 297.6519775390625,
+        "center_error_pt": 0.32930755615234375,
+        "number_right_pt": 523.4439697265625,
+        "number_size": 12.0,
+        "minimum_ink_number_gap_pt": 160.4874267578125,
+        "base_char_sizes": [
+          12.029122352600098,
+          12.029122352600098,
+          12.029122352600098,
+          12.029122352600098
+        ]
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v12_preview.pdf (1)base and number actual font size",
+      "pass": true,
+      "detail": {
+        "label": "(1)",
+        "page": 5,
+        "ink_center_pt": 297.98128509521484,
+        "page_center_pt": 297.6519775390625,
+        "center_error_pt": 0.32930755615234375,
+        "number_right_pt": 523.4439697265625,
+        "number_size": 12.0,
+        "minimum_ink_number_gap_pt": 160.4874267578125,
+        "base_char_sizes": [
+          12.029122352600098,
+          12.029122352600098,
+          12.029122352600098,
+          12.029122352600098
+        ]
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v12_preview.pdf (2)visually centered within2pt",
+      "pass": true,
+      "detail": {
+        "label": "(2)",
+        "page": 5,
+        "ink_center_pt": 297.6750030517578,
+        "page_center_pt": 297.6519775390625,
+        "center_error_pt": 0.0230255126953125,
+        "number_right_pt": 523.4439697265625,
+        "number_size": 12.0,
+        "minimum_ink_number_gap_pt": 187.29998779296875,
+        "base_char_sizes": [
+          12.0,
+          12.0,
+          12.0,
+          12.0
+        ]
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v12_preview.pdf (2)base and number actual font size",
+      "pass": true,
+      "detail": {
+        "label": "(2)",
+        "page": 5,
+        "ink_center_pt": 297.6750030517578,
+        "page_center_pt": 297.6519775390625,
+        "center_error_pt": 0.0230255126953125,
+        "number_right_pt": 523.4439697265625,
+        "number_size": 12.0,
+        "minimum_ink_number_gap_pt": 187.29998779296875,
+        "base_char_sizes": [
+          12.0,
+          12.0,
+          12.0,
+          12.0
+        ]
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v12_preview.pdf (3)visually centered within2pt",
+      "pass": true,
+      "detail": {
+        "label": "(3)",
+        "page": 5,
+        "ink_center_pt": 297.7030029296875,
+        "page_center_pt": 297.6519775390625,
+        "center_error_pt": 0.051025390625,
+        "number_right_pt": 523.4439697265625,
+        "number_size": 12.0,
+        "minimum_ink_number_gap_pt": 153.1409912109375,
+        "base_char_sizes": [
+          12.027986526489258,
+          12.027986526489258,
+          12.027986526489258,
+          12.027986526489258,
+          12.027986526489258,
+          12.027986526489258,
+          12.027986526489258
+        ]
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v12_preview.pdf (3)base and number actual font size",
+      "pass": true,
+      "detail": {
+        "label": "(3)",
+        "page": 5,
+        "ink_center_pt": 297.7030029296875,
+        "page_center_pt": 297.6519775390625,
+        "center_error_pt": 0.051025390625,
+        "number_right_pt": 523.4439697265625,
+        "number_size": 12.0,
+        "minimum_ink_number_gap_pt": 153.1409912109375,
+        "base_char_sizes": [
+          12.027986526489258,
+          12.027986526489258,
+          12.027986526489258,
+          12.027986526489258,
+          12.027986526489258,
+          12.027986526489258,
+          12.027986526489258
+        ]
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v12_preview.pdfright equation numbers aligned",
+      "pass": true,
+      "detail": [
+        {
+          "label": "(1)",
+          "page": 5,
+          "ink_center_pt": 297.98128509521484,
+          "page_center_pt": 297.6519775390625,
+          "center_error_pt": 0.32930755615234375,
+          "number_right_pt": 523.4439697265625,
+          "number_size": 12.0,
+          "minimum_ink_number_gap_pt": 160.4874267578125,
+          "base_char_sizes": [
+            12.029122352600098,
+            12.029122352600098,
+            12.029122352600098,
+            12.029122352600098
+          ]
+        },
+        {
+          "label": "(2)",
+          "page": 5,
+          "ink_center_pt": 297.6750030517578,
+          "page_center_pt": 297.6519775390625,
+          "center_error_pt": 0.0230255126953125,
+          "number_right_pt": 523.4439697265625,
+          "number_size": 12.0,
+          "minimum_ink_number_gap_pt": 187.29998779296875,
+          "base_char_sizes": [
+            12.0,
+            12.0,
+            12.0,
+            12.0
+          ]
+        },
+        {
+          "label": "(3)",
+          "page": 5,
+          "ink_center_pt": 297.7030029296875,
+          "page_center_pt": 297.6519775390625,
+          "center_error_pt": 0.051025390625,
+          "number_right_pt": 523.4439697265625,
+          "number_size": 12.0,
+          "minimum_ink_number_gap_pt": 153.1409912109375,
+          "base_char_sizes": [
+            12.027986526489258,
+            12.027986526489258,
+            12.027986526489258,
+            12.027986526489258,
+            12.027986526489258,
+            12.027986526489258,
+            12.027986526489258
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v8_preview.pdf (S1)visually centered within2pt",
+      "pass": true,
+      "detail": {
+        "label": "(S1)",
+        "page": 19,
+        "ink_center_pt": 297.625,
+        "page_center_pt": 297.6519775390625,
+        "center_error_pt": 0.0269775390625,
+        "number_right_pt": 545.8701171875,
+        "number_size": 11.0,
+        "minimum_ink_number_gap_pt": 160.10000610351562,
+        "base_char_sizes": [
+          11.0,
+          11.0,
+          11.0,
+          11.0,
+          11.0
+        ]
+      }
+    },
+    {
+      "name": "BMT_supplementary_material_v8_preview.pdf (S1)base and number actual font size",
+      "pass": true,
+      "detail": {
+        "label": "(S1)",
+        "page": 19,
+        "ink_center_pt": 297.625,
+        "page_center_pt": 297.6519775390625,
+        "center_error_pt": 0.0269775390625,
+        "number_right_pt": 545.8701171875,
+        "number_size": 11.0,
+        "minimum_ink_number_gap_pt": 160.10000610351562,
+        "base_char_sizes": [
+          11.0,
+          11.0,
+          11.0,
+          11.0,
+          11.0
+        ]
+      }
+    },
+    {
+      "name": "BMT_supplementary_material_v8_preview.pdf (S2)visually centered within2pt",
+      "pass": true,
+      "detail": {
+        "label": "(S2)",
+        "page": 19,
+        "ink_center_pt": 297.65628814697266,
+        "page_center_pt": 297.6519775390625,
+        "center_error_pt": 0.00431060791015625,
+        "number_right_pt": 545.8701171875,
+        "number_size": 11.0,
+        "minimum_ink_number_gap_pt": 158.83743286132812,
+        "base_char_sizes": [
+          11.033145904541016,
+          11.033145904541016,
+          11.033145904541016,
+          11.033145904541016,
+          11.033145904541016,
+          11.033145904541016
+        ]
+      }
+    },
+    {
+      "name": "BMT_supplementary_material_v8_preview.pdf (S2)base and number actual font size",
+      "pass": true,
+      "detail": {
+        "label": "(S2)",
+        "page": 19,
+        "ink_center_pt": 297.65628814697266,
+        "page_center_pt": 297.6519775390625,
+        "center_error_pt": 0.00431060791015625,
+        "number_right_pt": 545.8701171875,
+        "number_size": 11.0,
+        "minimum_ink_number_gap_pt": 158.83743286132812,
+        "base_char_sizes": [
+          11.033145904541016,
+          11.033145904541016,
+          11.033145904541016,
+          11.033145904541016,
+          11.033145904541016,
+          11.033145904541016
+        ]
+      }
+    },
+    {
+      "name": "BMT_supplementary_material_v8_preview.pdfright equation numbers aligned",
+      "pass": true,
+      "detail": [
+        {
+          "label": "(S1)",
+          "page": 19,
+          "ink_center_pt": 297.625,
+          "page_center_pt": 297.6519775390625,
+          "center_error_pt": 0.0269775390625,
+          "number_right_pt": 545.8701171875,
+          "number_size": 11.0,
+          "minimum_ink_number_gap_pt": 160.10000610351562,
+          "base_char_sizes": [
+            11.0,
+            11.0,
+            11.0,
+            11.0,
+            11.0
+          ]
+        },
+        {
+          "label": "(S2)",
+          "page": 19,
+          "ink_center_pt": 297.65628814697266,
+          "page_center_pt": 297.6519775390625,
+          "center_error_pt": 0.00431060791015625,
+          "number_right_pt": 545.8701171875,
+          "number_size": 11.0,
+          "minimum_ink_number_gap_pt": 158.83743286132812,
+          "base_char_sizes": [
+            11.033145904541016,
+            11.033145904541016,
+            11.033145904541016,
+            11.033145904541016,
+            11.033145904541016,
+            11.033145904541016
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Two-page proof equals current final mathematical pages",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "SupplementDOCX under10MB",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "All5display equations individually visually inspected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT/NIST visual rules individually passed",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "documents": {
+    "BMT_main_manuscript_v12.docx": {
+      "sha256": "100bb41ffe8355222ecdf588ab7045a764995c7f785c8d6b51d80873c3242b0d",
+      "bytes": 58682,
+      "equation_labels": [
+        "1",
+        "2",
+        "3"
+      ],
+      "total_layout_plus_data_tables": 6,
+      "scientific_data_tables": 3
+    },
+    "BMT_supplementary_material_v8.docx": {
+      "sha256": "f492a6222165ad5569a968f93ccf9c61a588ef5d9bb01769fd4859226bc6a740",
+      "bytes": 1533688,
+      "equation_labels": [
+        "S1",
+        "S2"
+      ],
+      "total_layout_plus_data_tables": 21,
+      "scientific_data_tables": 19
+    },
+    "BMT_main_manuscript_v12_illustrated.docx": {
+      "sha256": "5dac85b931467273d1e07cf980eddbf50771a78f0664b80ce018ece2460c4345",
+      "bytes": 3541208
+    },
+    "BMT_main_manuscript_v12_preview.pdf": {
+      "sha256": "c0e2d984059ef5b632a84ddb93f009a105ace8675b3f83615ac3059dbe371fa9",
+      "bytes": 225570,
+      "pages": 21,
+      "equation_pages": {
+        "1": 5,
+        "2": 5,
+        "3": 5
+      },
+      "label_font_samples": [
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 8.399999618530273,
+          "page": 5,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 8.384356498718262,
+          "page": 5,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.5,
+          "page": 18,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.5,
+          "page": 18,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.5,
+          "page": 18,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.5,
+          "page": 18,
+          "upright": true
+        }
+      ],
+      "out_of_page_text": [],
+      "empty_pages": [],
+      "display_geometry": [
+        {
+          "label": "(1)",
+          "page": 5,
+          "ink_center_pt": 297.98128509521484,
+          "page_center_pt": 297.6519775390625,
+          "center_error_pt": 0.32930755615234375,
+          "number_right_pt": 523.4439697265625,
+          "number_size": 12.0,
+          "minimum_ink_number_gap_pt": 160.4874267578125,
+          "base_char_sizes": [
+            12.029122352600098,
+            12.029122352600098,
+            12.029122352600098,
+            12.029122352600098
+          ]
+        },
+        {
+          "label": "(2)",
+          "page": 5,
+          "ink_center_pt": 297.6750030517578,
+          "page_center_pt": 297.6519775390625,
+          "center_error_pt": 0.0230255126953125,
+          "number_right_pt": 523.4439697265625,
+          "number_size": 12.0,
+          "minimum_ink_number_gap_pt": 187.29998779296875,
+          "base_char_sizes": [
+            12.0,
+            12.0,
+            12.0,
+            12.0
+          ]
+        },
+        {
+          "label": "(3)",
+          "page": 5,
+          "ink_center_pt": 297.7030029296875,
+          "page_center_pt": 297.6519775390625,
+          "center_error_pt": 0.051025390625,
+          "number_right_pt": 523.4439697265625,
+          "number_size": 12.0,
+          "minimum_ink_number_gap_pt": 153.1409912109375,
+          "base_char_sizes": [
+            12.027986526489258,
+            12.027986526489258,
+            12.027986526489258,
+            12.027986526489258,
+            12.027986526489258,
+            12.027986526489258,
+            12.027986526489258
+          ]
+        }
+      ]
+    },
+    "BMT_main_manuscript_v12_illustrated_preview.pdf": {
+      "sha256": "f205d68ae3f5ea02b9ef757d15c4e89c1b13b815f1d256347c186bcc198602eb",
+      "bytes": 1468838,
+      "pages": 26,
+      "equation_pages": {
+        "1": 5,
+        "2": 5,
+        "3": 5
+      },
+      "label_font_samples": [
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 8.399999618530273,
+          "page": 5,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 8.384356498718262,
+          "page": 5,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.5,
+          "page": 18,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.5,
+          "page": 18,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.5,
+          "page": 18,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.5,
+          "page": 18,
+          "upright": true
+        }
+      ],
+      "out_of_page_text": [],
+      "empty_pages": []
+    },
+    "BMT_supplementary_material_v8_preview.pdf": {
+      "sha256": "aeecd1f8eeb52c26f026cf7888b95320788d73e3831f2dae70db44dc0a61eef7",
+      "bytes": 1334686,
+      "pages": 25,
+      "equation_pages": {
+        "S1": 19,
+        "S2": 19
+      },
+      "label_font_samples": [
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 2,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 2,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 2,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 2,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 2,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 2,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 2,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 2,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 5,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 5,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 8,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 8,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 8,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 8,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 8,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 8,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 9,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 9,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 9,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 9,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 10,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 10,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 10,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 10,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 10,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 10,
+          "upright": true
+        },
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 10,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 10.0,
+          "page": 10,
+          "upright": true
+        },
+        {
+          "text": "E",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 19,
+          "upright": true
+        },
+        {
+          "text": "I",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 19,
+          "upright": true
+        },
+        {
+          "text": "E",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 19,
+          "upright": true
+        },
+        {
+          "text": "I",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 19,
+          "upright": true
+        },
+        {
+          "text": "E",
+          "font": "LiberationSerif",
+          "size": 7.6879472732543945,
+          "page": 19,
+          "upright": true
+        },
+        {
+          "text": "I",
+          "font": "LiberationSerif",
+          "size": 7.6879472732543945,
+          "page": 19,
+          "upright": true
+        },
+        {
+          "text": "E",
+          "font": "LiberationSerif",
+          "size": 7.6879472732543945,
+          "page": 19,
+          "upright": true
+        },
+        {
+          "text": "I",
+          "font": "LiberationSerif",
+          "size": 7.6879472732543945,
+          "page": 19,
+          "upright": true
+        }
+      ],
+      "out_of_page_text": [],
+      "empty_pages": [],
+      "display_geometry": [
+        {
+          "label": "(S1)",
+          "page": 19,
+          "ink_center_pt": 297.625,
+          "page_center_pt": 297.6519775390625,
+          "center_error_pt": 0.0269775390625,
+          "number_right_pt": 545.8701171875,
+          "number_size": 11.0,
+          "minimum_ink_number_gap_pt": 160.10000610351562,
+          "base_char_sizes": [
+            11.0,
+            11.0,
+            11.0,
+            11.0,
+            11.0
+          ]
+        },
+        {
+          "label": "(S2)",
+          "page": 19,
+          "ink_center_pt": 297.65628814697266,
+          "page_center_pt": 297.6519775390625,
+          "center_error_pt": 0.00431060791015625,
+          "number_right_pt": 545.8701171875,
+          "number_size": 11.0,
+          "minimum_ink_number_gap_pt": 158.83743286132812,
+          "base_char_sizes": [
+            11.033145904541016,
+            11.033145904541016,
+            11.033145904541016,
+            11.033145904541016,
+            11.033145904541016,
+            11.033145904541016
+          ]
+        }
+      ]
+    },
+    "BMT_supplementary_Figure_S6_v8.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "bytes": 1871819,
+      "pages": 6,
+      "equation_pages": {},
+      "label_font_samples": [
+        {
+          "text": "A",
+          "font": "LiberationSans-Bold",
+          "size": 9.999700546264648,
+          "page": 1,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSans-Bold",
+          "size": 9.999700546264648,
+          "page": 2,
+          "upright": true
+        },
+        {
+          "text": "E",
+          "font": "LiberationSans-Bold",
+          "size": 9.999700546264648,
+          "page": 5,
+          "upright": true
+        }
+      ],
+      "out_of_page_text": [],
+      "empty_pages": []
+    },
+    "BMT_formula_layout_proof_v12.pdf": {
+      "sha256": "528667e26c25bc4e734756bcda80193d164c054106d377543c16ff51b3432e97",
+      "bytes": 1014383,
+      "pages": 2,
+      "equation_pages": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "S1": 2,
+        "S2": 2
+      },
+      "label_font_samples": [
+        {
+          "text": "A",
+          "font": "LiberationSerif",
+          "size": 8.399999618530273,
+          "page": 1,
+          "upright": true
+        },
+        {
+          "text": "B",
+          "font": "LiberationSerif",
+          "size": 8.384356498718262,
+          "page": 1,
+          "upright": true
+        },
+        {
+          "text": "E",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 2,
+          "upright": true
+        },
+        {
+          "text": "I",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 2,
+          "upright": true
+        },
+        {
+          "text": "E",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 2,
+          "upright": true
+        },
+        {
+          "text": "I",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 2,
+          "upright": true
+        },
+        {
+          "text": "E",
+          "font": "LiberationSerif",
+          "size": 7.6879472732543945,
+          "page": 2,
+          "upright": true
+        },
+        {
+          "text": "I",
+          "font": "LiberationSerif",
+          "size": 7.6879472732543945,
+          "page": 2,
+          "upright": true
+        },
+        {
+          "text": "E",
+          "font": "LiberationSerif",
+          "size": 7.6879472732543945,
+          "page": 2,
+          "upright": true
+        },
+        {
+          "text": "I",
+          "font": "LiberationSerif",
+          "size": 7.6879472732543945,
+          "page": 2,
+          "upright": true
+        }
+      ],
+      "out_of_page_text": [],
+      "empty_pages": []
+    }
+  },
+  "abstract_words": 174,
+  "body_words_including_inline_math": 3901,
+  "final_documents_pending": false,
+  "visual_review_pending": false,
+  "external_rules": {
+    "BMT": {
+      "source": "/workspace/bmt_v12/evidence/bmt_official_mathematics_source.md",
+      "rules": [
+        "Equations well aligned and not crowded",
+        "Avoid complicated superscripts/subscripts",
+        "Editable Word equations rather than images",
+        "Displayed equations numbered consecutively when cited"
+      ]
+    },
+    "NIST": {
+      "source": "/workspace/bmt_v12/evidence/nist_official_mathematics_source.md",
+      "rules": [
+        "Quantity and variable symbols italic",
+        "Descriptive labels upright"
+      ]
+    },
+    "Microsoft": {
+      "source": "/workspace/bmt_v12/evidence/microsoft_official_equation_source.md",
+      "rules": [
+        "Professional editable equation objects"
+      ]
+    }
+  },
+  "visual_review": {
+    "path": "/workspace/bmt_v12/qa/layout_qa/visual_review.json",
+    "sha256": "385b24da80251c9184f9ca7206ff56a5cc1e7d547cd83b710f90d3d0a7d6f447",
+    "summary": "All five retained scientific display equations individually inspected at1.8x in their actual paper context. Three core single-line main formulas and two Kitagawa component formulas remain; no redundant mathematical appendix or obsolete numbered equations. Native display objects are clean, centered and readable, with variables italic and method/cohort descriptors upright. Main12pt and supplement11pt base/number sizes are confirmed in PDF. The qhat punctuation break and inline E/I consistency were corrected and rechecked. Full numerical tables, results, statements and15references remain unchanged."
+  },
+  "limits": [
+    "Final PDF and native Word XML were inspected. Microsoft Word and WPS were not directly run.",
+    "Equation layout containers are administrative layout structures, not scientific data tables; they are explicitly tagged and excluded from the3main/19supplement scientific-table counts."
+  ]
+}

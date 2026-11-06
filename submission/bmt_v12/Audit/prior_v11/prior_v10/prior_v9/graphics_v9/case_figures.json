@@ -1,0 +1,2269 @@
+{
+  "source_receipt": "/workspace/research_source/experiments/six_case_replay_v1/predictions/targeted_rerun_receipt.json",
+  "source_receipt_sha256": "5403390674fb4f549f7bb695f39551823f988521a551a99b409613eb5d750981",
+  "style_spec": "/workspace/bmt_v9/evidence/figure_style_spec.json",
+  "style_spec_sha256": "bb8e9cac74c023d88d7a98f24b837112fc1c9b2fd6b596e5acb81abe3a6eae77",
+  "script": "/workspace/bmt_v9/scripts/redraw_case_figures.py",
+  "model_inference_performed": false,
+  "figure_5_panel_mapping": {
+    "A-C": "case089",
+    "D-F": "case175",
+    "G-I": "case238",
+    "columns": [
+      "original image",
+      "reference contour",
+      "initial CPU prediction contour"
+    ]
+  },
+  "supplementary_panel_mapping": {
+    "Figure_S6A": [
+      {
+        "panel": "A",
+        "case_id": "case089",
+        "left": "reference + initial CPU prediction + initial actual prompt",
+        "right_grid": {
+          "top_left": "left-shift mask",
+          "top_right": "right-shift mask",
+          "bottom_left": "up-shift mask",
+          "bottom_right": "down-shift mask"
+        },
+        "D_label": "Dice between initial CPU prediction and the displayed shifted CPU prediction"
+      },
+      {
+        "panel": "B",
+        "case_id": "case175",
+        "left": "reference + initial CPU prediction + initial actual prompt",
+        "right_grid": {
+          "top_left": "left-shift mask",
+          "top_right": "right-shift mask",
+          "bottom_left": "up-shift mask",
+          "bottom_right": "down-shift mask"
+        },
+        "D_label": "Dice between initial CPU prediction and the displayed shifted CPU prediction"
+      },
+      {
+        "panel": "C",
+        "case_id": "case238",
+        "left": "reference + initial CPU prediction + initial actual prompt",
+        "right_grid": {
+          "top_left": "left-shift mask",
+          "top_right": "right-shift mask",
+          "bottom_left": "up-shift mask",
+          "bottom_right": "down-shift mask"
+        },
+        "D_label": "Dice between initial CPU prediction and the displayed shifted CPU prediction"
+      }
+    ],
+    "Figure_S6B": [
+      {
+        "panel": "D",
+        "case_id": "case024",
+        "left": "reference + initial CPU prediction + initial actual prompt",
+        "right_grid": {
+          "top_left": "left-shift mask",
+          "top_right": "right-shift mask",
+          "bottom_left": "up-shift mask",
+          "bottom_right": "down-shift mask"
+        },
+        "D_label": "Dice between initial CPU prediction and the displayed shifted CPU prediction"
+      },
+      {
+        "panel": "E",
+        "case_id": "case105",
+        "left": "reference + initial CPU prediction + initial actual prompt",
+        "right_grid": {
+          "top_left": "left-shift mask",
+          "top_right": "right-shift mask",
+          "bottom_left": "up-shift mask",
+          "bottom_right": "down-shift mask"
+        },
+        "D_label": "Dice between initial CPU prediction and the displayed shifted CPU prediction"
+      },
+      {
+        "panel": "F",
+        "case_id": "case222",
+        "left": "reference + initial CPU prediction + initial actual prompt",
+        "right_grid": {
+          "top_left": "left-shift mask",
+          "top_right": "right-shift mask",
+          "bottom_left": "up-shift mask",
+          "bottom_right": "down-shift mask"
+        },
+        "D_label": "Dice between initial CPU prediction and the displayed shifted CPU prediction"
+      }
+    ]
+  },
+  "mask_order": [
+    "initial",
+    "left",
+    "right",
+    "up",
+    "down"
+  ],
+  "display_rules": {
+    "image": "Original uint8 RGB arrays unchanged; no grayscale conversion, enhancement, normalization, cropping, or synthesis.",
+    "FOV": "Full original field and aspect ratio in every image; outer half-pixel guard permits complete boundary display.",
+    "PNG": "Nearest-neighbor interpolation, resample=False, 600 dpi.",
+    "PDF": "Native RGB raster embedded by interpolation=none; vector contours and text.",
+    "SVG": "Each image element embeds exact native RGB PNG; decoded equality asserted; crisp-edges/pixelated display; vector contours and editable text.",
+    "contours": "Binary level 0.5 of actual boolean arrays, padded with false exterior only to recover image-edge boundaries; no change to array geometry.",
+    "prompts": "Actual float32 boxes from each NPZ, unchanged; dashed gray; supplementary panels only.",
+    "font": "Liberation Sans; minimum 8 pt (row headers 8.15 pt); panel letters bold 10 pt.",
+    "legend": "Single shared legend per figure; reference blue #0072B2; CPU prediction orange #D55E00; actual prompt gray dashed.",
+    "CPU_provenance": "All displayed numeric values are independently recalculated CPU replay values; archived CUDA values retained separately."
+  },
+  "metric_definitions": {
+    "Dice": "2 * intersection foreground / sum of foreground counts (both empty convention 1; no masks empty here)",
+    "risk_A": "1 - raw_predicted_ious[0]",
+    "risk_B": "1 - mean(Dice(initial, shifted)) across left/right/up/down"
+  },
+  "case_audit": [
+    {
+      "case_id": "case089",
+      "archived_group": "both_missed",
+      "artifact": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case089_targeted_rerun.npz",
+      "artifact_sha256": "4fd0f1a7b3167eaf99ea5d7e2543186ee457d073e66ef76618f306180be84f51",
+      "matches_receipt": true,
+      "arrays": {
+        "image": {
+          "shape": [
+            537,
+            485,
+            3
+          ],
+          "dtype": "uint8",
+          "sha256_raw_C_order_bytes": "c270268c14ce1780bee45915364e7469e7c11feee286881a803d5e102959830f"
+        },
+        "reference": {
+          "shape": [
+            537,
+            485
+          ],
+          "dtype": "bool",
+          "sha256_raw_C_order_bytes": "e148324855ec45b2b99717176ad9fbb6849e7173c47cd064364159c10e75f50c"
+        },
+        "masks": {
+          "shape": [
+            5,
+            537,
+            485
+          ],
+          "dtype": "bool",
+          "sha256_raw_C_order_bytes": "1d0f59747adf330c60b06a18161cc2077752bc6d8cd7a973bda32bf9e0dd2164"
+        },
+        "boxes": {
+          "shape": [
+            5,
+            4
+          ],
+          "dtype": "float32",
+          "sha256_raw_C_order_bytes": "50b52d4e9b7852af25011d51bc02780ce8161ab2b6c3955cbbf291490c7705a9"
+        },
+        "raw_predicted_ious": {
+          "shape": [
+            5
+          ],
+          "dtype": "float64",
+          "sha256_raw_C_order_bytes": "4258baf123801ccfe32dee379912fc7af9a69f1b01586c7574e619f50787c2c1"
+        }
+      },
+      "individual_mask_sha256_raw_C_order_bytes": [
+        "02e930c173377c232bd75415c31eafc98d1e6a387f7a20d49b9286141f477058",
+        "a186c2c99c6e4257136f170307134f7b9dce3f4ae234b123a58e938d239a109b",
+        "74838d30de44422b43cec8e142e786f4fca207a9b5d0585ee0be2fbcd702d8e0",
+        "b356a84b06f64937bdd5bfc4cafa9d809d625c3754984bab4e7c14157560072c",
+        "7b661669d95adb39bda6e3f37c8e922263dcd50e2eeea4ffa59cd8ec1c85d3a3"
+      ],
+      "reference_foreground_pixels": 6012,
+      "reference_inclusive_xy_bounds": [
+        167,
+        120,
+        257,
+        212
+      ],
+      "prediction_foreground_pixels": [
+        1365,
+        1436,
+        1320,
+        1511,
+        1436
+      ],
+      "prediction_inclusive_xy_bounds": [
+        [
+          152,
+          108,
+          257,
+          162
+        ],
+        [
+          150,
+          108,
+          258,
+          163
+        ],
+        [
+          162,
+          110,
+          258,
+          219
+        ],
+        [
+          151,
+          108,
+          258,
+          169
+        ],
+        [
+          162,
+          116,
+          259,
+          219
+        ]
+      ],
+      "recomputed_CPU_values": {
+        "dice_vs_reference": 0.31909990511047853,
+        "risk_A": 0.10408079624176025,
+        "risk_B": 0.041227634448447126,
+        "dice_shift_left": 0.9746519100321314,
+        "dice_shift_right": 0.976536312849162,
+        "dice_shift_up": 0.9492350486787204,
+        "dice_shift_down": 0.9346661906461978
+      },
+      "recomputed_minus_receipt": {
+        "dice_vs_reference": 0.0,
+        "risk_A": 0.0,
+        "risk_B": 0.0,
+        "dice_shift_left": 0.0,
+        "dice_shift_right": 0.0,
+        "dice_shift_up": 0.0,
+        "dice_shift_down": 0.0
+      },
+      "archived_CUDA_values_preserved": {
+        "dice_vs_reference": 0.31905665492003255,
+        "sam_predicted_iou": 0.8959280848503113,
+        "risk_A": 0.10407191514968872,
+        "risk_B": 0.041040683630957586,
+        "dice_shift_left": 0.9750178443968593,
+        "dice_shift_right": 0.9761727475800447,
+        "dice_shift_up": 0.9496002780674313,
+        "dice_shift_down": 0.9350463954318344
+      },
+      "CPU_minus_archived_initial_dice": 4.325019044598699e-05
+    },
+    {
+      "case_id": "case175",
+      "archived_group": "both_missed",
+      "artifact": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case175_targeted_rerun.npz",
+      "artifact_sha256": "4eed039771a9bb640c712ecdae7b3b79896a4909eb69b5c840123714385e549e",
+      "matches_receipt": true,
+      "arrays": {
+        "image": {
+          "shape": [
+            542,
+            789,
+            3
+          ],
+          "dtype": "uint8",
+          "sha256_raw_C_order_bytes": "6d0cfaab3cd612fc942e3f4002a772baa64b17289f18c30d5d8d0441ceeaf00c"
+        },
+        "reference": {
+          "shape": [
+            542,
+            789
+          ],
+          "dtype": "bool",
+          "sha256_raw_C_order_bytes": "a28a01d0b09f0feed10c1b980f2090f0270e3f1f54080477c725f8b052e27a74"
+        },
+        "masks": {
+          "shape": [
+            5,
+            542,
+            789
+          ],
+          "dtype": "bool",
+          "sha256_raw_C_order_bytes": "2e142c51a05c5748aec733764cf2d010d569d5c98dfaea1f8568b06fd6aaa2b4"
+        },
+        "boxes": {
+          "shape": [
+            5,
+            4
+          ],
+          "dtype": "float32",
+          "sha256_raw_C_order_bytes": "15525f485cb022fea1c80bf269f769e3acaf411a1ce7aaffa51e99a47134972e"
+        },
+        "raw_predicted_ious": {
+          "shape": [
+            5
+          ],
+          "dtype": "float64",
+          "sha256_raw_C_order_bytes": "93cb091e2c45489661336ef63c6fa01d613cab3bc2fc188b1e34126f5054f2e5"
+        }
+      },
+      "individual_mask_sha256_raw_C_order_bytes": [
+        "d3c3171739f4bd65909615ed8b4c32cbf23d39993c321462e38c004bee35e05f",
+        "d3925efd1e5a659436c18933848a11bfcf218239e4c3e5daa61a5c0da07458ba",
+        "1580ead157ac45d45eb8b00a9bdc4ee1545ed67ef443d24d361608ca411fd19c",
+        "f5d7d66fec201301f3d701d454274e9b975ce86cb74e71e160f3f31b25da94e2",
+        "0abf89dde804572fb0e5fef538e8dc273866c8f5f419d3f627f092bc987626e9"
+      ],
+      "reference_foreground_pixels": 34108,
+      "reference_inclusive_xy_bounds": [
+        227,
+        4,
+        608,
+        144
+      ],
+      "prediction_foreground_pixels": [
+        3861,
+        3958,
+        3816,
+        3846,
+        4351
+      ],
+      "prediction_inclusive_xy_bounds": [
+        [
+          173,
+          0,
+          616,
+          88
+        ],
+        [
+          173,
+          0,
+          616,
+          88
+        ],
+        [
+          174,
+          0,
+          616,
+          10
+        ],
+        [
+          173,
+          0,
+          616,
+          87
+        ],
+        [
+          173,
+          0,
+          616,
+          93
+        ]
+      ],
+      "recomputed_CPU_values": {
+        "dice_vs_reference": 0.02928704996181095,
+        "risk_A": 0.11494165658950806,
+        "risk_B": 0.020034547593127616,
+        "dice_shift_left": 0.9873385343394296,
+        "dice_shift_right": 0.9941383352872216,
+        "dice_shift_up": 0.9980537173997664,
+        "dice_shift_down": 0.9403312226010716
+      },
+      "recomputed_minus_receipt": {
+        "dice_vs_reference": 0.0,
+        "risk_A": 0.0,
+        "risk_B": 0.0,
+        "dice_shift_left": 0.0,
+        "dice_shift_right": 0.0,
+        "dice_shift_up": 0.0,
+        "dice_shift_down": 0.0
+      },
+      "archived_CUDA_values_preserved": {
+        "dice_vs_reference": 0.02928704996181095,
+        "sam_predicted_iou": 0.8850563764572144,
+        "risk_A": 0.11494362354278564,
+        "risk_B": 0.020059290176363098,
+        "dice_shift_left": 0.9873385343394296,
+        "dice_shift_right": 0.9941383352872216,
+        "dice_shift_up": 0.9981837052413077,
+        "dice_shift_down": 0.9401022644265887
+      },
+      "CPU_minus_archived_initial_dice": 0.0
+    },
+    {
+      "case_id": "case238",
+      "archived_group": "both_missed",
+      "artifact": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case238_targeted_rerun.npz",
+      "artifact_sha256": "e692e958d61e11b92c7b38c0569eb8a2aafd16d8b34af49be56a0259fe6b12e3",
+      "matches_receipt": true,
+      "arrays": {
+        "image": {
+          "shape": [
+            537,
+            485,
+            3
+          ],
+          "dtype": "uint8",
+          "sha256_raw_C_order_bytes": "2d2e4896e921e08010122e58235cb3c8d7565737845e391ec3df08dea2be3f55"
+        },
+        "reference": {
+          "shape": [
+            537,
+            485
+          ],
+          "dtype": "bool",
+          "sha256_raw_C_order_bytes": "ac4015a3e78a7a4b16709e17e664fca0a082a8f4b1ed3036d1f11ba41084942a"
+        },
+        "masks": {
+          "shape": [
+            5,
+            537,
+            485
+          ],
+          "dtype": "bool",
+          "sha256_raw_C_order_bytes": "64041cd8f8a09a72f2dce05ad3b7d67a64402481b1b33fcba17571ba09b495aa"
+        },
+        "boxes": {
+          "shape": [
+            5,
+            4
+          ],
+          "dtype": "float32",
+          "sha256_raw_C_order_bytes": "f1de071230351df67c4a81fdcb34b3714d1f97032b51c670e949f183b82c495c"
+        },
+        "raw_predicted_ious": {
+          "shape": [
+            5
+          ],
+          "dtype": "float64",
+          "sha256_raw_C_order_bytes": "9398f443f80c90ae6ae87f0398cf94d3fd1aab9561bc43474c2a3abdda0479a6"
+        }
+      },
+      "individual_mask_sha256_raw_C_order_bytes": [
+        "500a134041bc7136bc11964942569235c90ca1c24a562863169f6a9962f5a96c",
+        "28af8548e2966d9029eb0365eace78134382a681f8776a20168fcfdcd6294a2c",
+        "086953f0f2f4d593f82b5a0dfcd806b16a5e3cc1fc8d865643a3a3967bf23d9e",
+        "6ba8e830d04d2c3023d03a9be030151ee58cc882d202bad9014d99f58f5255ea",
+        "5e6685050d089de0d089fb0bc480210c97053e7ceb60f85e886fe58a6d451836"
+      ],
+      "reference_foreground_pixels": 9783,
+      "reference_inclusive_xy_bounds": [
+        123,
+        158,
+        266,
+        272
+      ],
+      "prediction_foreground_pixels": [
+        5054,
+        5105,
+        5094,
+        5101,
+        5028
+      ],
+      "prediction_inclusive_xy_bounds": [
+        [
+          140,
+          168,
+          246,
+          250
+        ],
+        [
+          140,
+          168,
+          247,
+          250
+        ],
+        [
+          140,
+          168,
+          247,
+          250
+        ],
+        [
+          140,
+          168,
+          247,
+          250
+        ],
+        [
+          140,
+          168,
+          246,
+          250
+        ]
+      ],
+      "recomputed_CPU_values": {
+        "dice_vs_reference": 0.681269798476781,
+        "risk_A": 0.038918256759643555,
+        "risk_B": 0.005717084876207368,
+        "dice_shift_left": 0.9945860813072153,
+        "dice_shift_right": 0.9932991722506898,
+        "dice_shift_up": 0.9920236336779912,
+        "dice_shift_down": 0.997222773259274
+      },
+      "recomputed_minus_receipt": {
+        "dice_vs_reference": 0.0,
+        "risk_A": 0.0,
+        "risk_B": -1.1102230246251565e-16,
+        "dice_shift_left": 0.0,
+        "dice_shift_right": 0.0,
+        "dice_shift_up": 0.0,
+        "dice_shift_down": 0.0
+      },
+      "archived_CUDA_values_preserved": {
+        "dice_vs_reference": 0.681269798476781,
+        "sam_predicted_iou": 0.9610910415649414,
+        "risk_A": 0.038908958435058594,
+        "risk_B": 0.005765972428081634,
+        "dice_shift_left": 0.9945860813072153,
+        "dice_shift_right": 0.9932013006207508,
+        "dice_shift_up": 0.9919259551004332,
+        "dice_shift_down": 0.997222773259274
+      },
+      "CPU_minus_archived_initial_dice": 0.0
+    },
+    {
+      "case_id": "case024",
+      "archived_group": "B_only_detected",
+      "artifact": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case024_targeted_rerun.npz",
+      "artifact_sha256": "5ba9ca812255cd357232865f434cd2f1b8f287ce266c46bf23e3609d35d0b748",
+      "matches_receipt": true,
+      "arrays": {
+        "image": {
+          "shape": [
+            469,
+            433,
+            3
+          ],
+          "dtype": "uint8",
+          "sha256_raw_C_order_bytes": "e5cd37d4d7a03b91c8f27403e908880c5c1902be54adf4b9bb439663cc622a5a"
+        },
+        "reference": {
+          "shape": [
+            469,
+            433
+          ],
+          "dtype": "bool",
+          "sha256_raw_C_order_bytes": "926ec454931525d85fcf4bcfe469bdede0c3d78ed41082d84c7956552e5c1fb6"
+        },
+        "masks": {
+          "shape": [
+            5,
+            469,
+            433
+          ],
+          "dtype": "bool",
+          "sha256_raw_C_order_bytes": "2acc5f135eb37d28433beda4104c256de996e7d276c17496b9927d6f57b20c05"
+        },
+        "boxes": {
+          "shape": [
+            5,
+            4
+          ],
+          "dtype": "float32",
+          "sha256_raw_C_order_bytes": "479c4b71b1cdd6bc31def9140ea136af6ee563dc8cbd77fc76d8973913e31445"
+        },
+        "raw_predicted_ious": {
+          "shape": [
+            5
+          ],
+          "dtype": "float64",
+          "sha256_raw_C_order_bytes": "aa77d0588cf299f3a45b2491e51aa386d62fdd0f85a890db5e59d02876440223"
+        }
+      },
+      "individual_mask_sha256_raw_C_order_bytes": [
+        "986487bab9c7e04f963c9d33604703bf5ecfbdf4e7755e00ef1d1601720ec9e0",
+        "ce05f57ced6c9ced8e935e667a8ffc193c64e1c72ac148b77af015617e5f4902",
+        "33327d6070254df4effb0e9c83673646e73efebf274a78192796d1b4731191db",
+        "4f64144eece3bcac179ce7b5930b7d4cf4ba30ee2027ecfe6f89355a287f16a6",
+        "2d037a566ba6d44dd7d3008630a8a60fc7634caf01175b09a690ec34dec398bb"
+      ],
+      "reference_foreground_pixels": 7642,
+      "reference_inclusive_xy_bounds": [
+        144,
+        47,
+        280,
+        148
+      ],
+      "prediction_foreground_pixels": [
+        12316,
+        11704,
+        8878,
+        8043,
+        12537
+      ],
+      "prediction_inclusive_xy_bounds": [
+        [
+          128,
+          37,
+          270,
+          156
+        ],
+        [
+          127,
+          42,
+          268,
+          156
+        ],
+        [
+          130,
+          37,
+          270,
+          155
+        ],
+        [
+          129,
+          34,
+          264,
+          153
+        ],
+        [
+          128,
+          43,
+          270,
+          157
+        ]
+      ],
+      "recomputed_CPU_values": {
+        "dice_vs_reference": 0.6851387914620704,
+        "risk_A": 0.05452531576156616,
+        "risk_B": 0.1100879581784645,
+        "dice_shift_left": 0.9645295587010825,
+        "dice_shift_right": 0.837218080588846,
+        "dice_shift_up": 0.7870720565843116,
+        "dice_shift_down": 0.970828471411902
+      },
+      "recomputed_minus_receipt": {
+        "dice_vs_reference": 0.0,
+        "risk_A": 0.0,
+        "risk_B": 0.0,
+        "dice_shift_left": 0.0,
+        "dice_shift_right": 0.0,
+        "dice_shift_up": 0.0,
+        "dice_shift_down": 0.0
+      },
+      "archived_CUDA_values_preserved": {
+        "dice_vs_reference": 0.6851731222127574,
+        "sam_predicted_iou": 0.9454895257949829,
+        "risk_A": 0.05451047420501709,
+        "risk_B": 0.10999487585484258,
+        "dice_shift_left": 0.9646157688785281,
+        "dice_shift_right": 0.8373673036093419,
+        "dice_shift_up": 0.7872894258631697,
+        "dice_shift_down": 0.97074799822959
+      },
+      "CPU_minus_archived_initial_dice": -3.433075068703939e-05
+    },
+    {
+      "case_id": "case105",
+      "archived_group": "B_only_detected",
+      "artifact": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case105_targeted_rerun.npz",
+      "artifact_sha256": "8c83a723f77528bc9257eb86d18c9cc68ef6d7a43da4a061e81c775c1dce9a72",
+      "matches_receipt": true,
+      "arrays": {
+        "image": {
+          "shape": [
+            538,
+            831,
+            3
+          ],
+          "dtype": "uint8",
+          "sha256_raw_C_order_bytes": "1d59feee63533a5be838f4a675fbd9bcc8533be305f25bb4aebd9b67876af533"
+        },
+        "reference": {
+          "shape": [
+            538,
+            831
+          ],
+          "dtype": "bool",
+          "sha256_raw_C_order_bytes": "92236978cc61485b6b45d6aded04ca3c09611053b9e12855c3b75f5f92d322c6"
+        },
+        "masks": {
+          "shape": [
+            5,
+            538,
+            831
+          ],
+          "dtype": "bool",
+          "sha256_raw_C_order_bytes": "87b691ffadd1e83117b940a229f19b3b633ed0026d3e5947b6f01f18ee0be5d1"
+        },
+        "boxes": {
+          "shape": [
+            5,
+            4
+          ],
+          "dtype": "float32",
+          "sha256_raw_C_order_bytes": "9d2f4b12633fc34833be83a76cce7a62c1ca07b1a0b173ad81d40e7914740c0a"
+        },
+        "raw_predicted_ious": {
+          "shape": [
+            5
+          ],
+          "dtype": "float64",
+          "sha256_raw_C_order_bytes": "5f4bf0661c24bfd7eef7af0c1a07cbdcea955a4fd3842d9405422d497b02b8a6"
+        }
+      },
+      "individual_mask_sha256_raw_C_order_bytes": [
+        "1afb70f042c857a80862cef83ffeb5b86b09258d839e7bbdd96f526c9af1f4fa",
+        "727203152f66f6c720c77ac5f19929ddd8b01e9e2930c14f59c486e225e938e2",
+        "373ba0c0383899e8159df2b43dcb62a236c10da21ab142b6a3ed129367ed16a0",
+        "f0eadc5aa2c833352f4d960c1e4b0e995ad7eb65f1d95abd7d252f4fbef6a60d",
+        "d826e7c60218fc8b12508bb381d0ffa290c25b2d537e779b128c26236d4f40d3"
+      ],
+      "reference_foreground_pixels": 132942,
+      "reference_inclusive_xy_bounds": [
+        111,
+        79,
+        684,
+        458
+      ],
+      "prediction_foreground_pixels": [
+        271052,
+        37844,
+        256818,
+        263597,
+        245371
+      ],
+      "prediction_inclusive_xy_bounds": [
+        [
+          8,
+          23,
+          738,
+          527
+        ],
+        [
+          21,
+          73,
+          679,
+          495
+        ],
+        [
+          49,
+          42,
+          784,
+          523
+        ],
+        [
+          11,
+          8,
+          744,
+          486
+        ],
+        [
+          8,
+          72,
+          738,
+          534
+        ]
+      ],
+      "recomputed_CPU_values": {
+        "dice_vs_reference": 0.6545790284014119,
+        "risk_A": 0.10247379541397095,
+        "risk_B": 0.26002996431242686,
+        "dice_shift_left": 0.24502097793432093,
+        "dice_shift_right": 0.9011574819557846,
+        "dice_shift_up": 0.9024874263301718,
+        "dice_shift_down": 0.9112142565300151
+      },
+      "recomputed_minus_receipt": {
+        "dice_vs_reference": 0.0,
+        "risk_A": 0.0,
+        "risk_B": 0.0,
+        "dice_shift_left": 0.0,
+        "dice_shift_right": 0.0,
+        "dice_shift_up": 0.0,
+        "dice_shift_down": 0.0
+      },
+      "archived_CUDA_values_preserved": {
+        "dice_vs_reference": 0.6545724575799206,
+        "sam_predicted_iou": 0.8975294828414917,
+        "risk_A": 0.1024705171585083,
+        "risk_B": 0.259670988417675,
+        "dice_shift_left": 0.24645641274462235,
+        "dice_shift_right": 0.9011731321852688,
+        "dice_shift_up": 0.9024845510451424,
+        "dice_shift_down": 0.9112019503542665
+      },
+      "CPU_minus_archived_initial_dice": 6.570821491358458e-06
+    },
+    {
+      "case_id": "case222",
+      "archived_group": "B_only_detected",
+      "artifact": "/workspace/research_source/experiments/six_case_replay_v1/predictions/case222_targeted_rerun.npz",
+      "artifact_sha256": "457105cca958c3f386fa2b9969057e443b324cc51b30addaf3273a09ba32e0f9",
+      "matches_receipt": true,
+      "arrays": {
+        "image": {
+          "shape": [
+            537,
+            485,
+            3
+          ],
+          "dtype": "uint8",
+          "sha256_raw_C_order_bytes": "ee0e85f74686c6b71fe1fa0a1d2b7a34f446c0efa72a6ff22418d3030cd1e370"
+        },
+        "reference": {
+          "shape": [
+            537,
+            485
+          ],
+          "dtype": "bool",
+          "sha256_raw_C_order_bytes": "46fb47ab88652f91c3c2a90d21e1c5a505a75136cf1dda4cfdaeb4eb15ebcda9"
+        },
+        "masks": {
+          "shape": [
+            5,
+            537,
+            485
+          ],
+          "dtype": "bool",
+          "sha256_raw_C_order_bytes": "68cb7faa10b8854f296efc0d99794abd2ff85cc6b2649b0746acacfa017649a0"
+        },
+        "boxes": {
+          "shape": [
+            5,
+            4
+          ],
+          "dtype": "float32",
+          "sha256_raw_C_order_bytes": "0839d859a3e8b1134f0b399e30fc0effb79ae3d729ffeb8c40f876fd1fd8e157"
+        },
+        "raw_predicted_ious": {
+          "shape": [
+            5
+          ],
+          "dtype": "float64",
+          "sha256_raw_C_order_bytes": "e8e42486c8f5c11bc4ba9559c1f66e84fbf0e21edf000765143ea0531cb3f7f7"
+        }
+      },
+      "individual_mask_sha256_raw_C_order_bytes": [
+        "bfb7cfee3f73f30a7d5f0f74ed148f747d80ff0de07dc35f321b6c745860b5a6",
+        "7a121e0c829b1eecabbf4c966df03d818228b1873ac660a280e37531afc761db",
+        "59a92a6b46451f60fce2a3ceb0c96e7e9e51e279f90d3f1ee68ed9238823aead",
+        "df5106faa5c58466bc826eeb7fbe8f17b61851962a536f5c84fdd16b7206b2de",
+        "82965a34f69368751580c13a9e2907b7ad69d6a41610a08f0ff0ebfc2f250281"
+      ],
+      "reference_foreground_pixels": 18065,
+      "reference_inclusive_xy_bounds": [
+        51,
+        30,
+        372,
+        172
+      ],
+      "prediction_foreground_pixels": [
+        42115,
+        20360,
+        42487,
+        38118,
+        30467
+      ],
+      "prediction_inclusive_xy_bounds": [
+        [
+          22,
+          6,
+          394,
+          179
+        ],
+        [
+          5,
+          13,
+          378,
+          150
+        ],
+        [
+          34,
+          16,
+          423,
+          179
+        ],
+        [
+          23,
+          3,
+          389,
+          168
+        ],
+        [
+          30,
+          21,
+          387,
+          185
+        ]
+      ],
+      "recomputed_CPU_values": {
+        "dice_vs_reference": 0.5784646061814557,
+        "risk_A": 0.12703347206115723,
+        "risk_B": 0.20173358332477698,
+        "dice_shift_left": 0.6492517006802722,
+        "dice_shift_right": 0.8383016949953902,
+        "dice_shift_up": 0.8715865043062082,
+        "dice_shift_down": 0.8339257667190213
+      },
+      "recomputed_minus_receipt": {
+        "dice_vs_reference": 0.0,
+        "risk_A": 0.0,
+        "risk_B": -1.1102230246251565e-16,
+        "dice_shift_left": 0.0,
+        "dice_shift_right": 0.0,
+        "dice_shift_up": 0.0,
+        "dice_shift_down": 0.0
+      },
+      "archived_CUDA_values_preserved": {
+        "dice_vs_reference": 0.5783684997507892,
+        "sam_predicted_iou": 0.8730125427246094,
+        "risk_A": 0.12698745727539062,
+        "risk_B": 0.20174328563188249,
+        "dice_shift_left": 0.6491910317346008,
+        "dice_shift_right": 0.838277353629423,
+        "dice_shift_up": 0.8716466263784188,
+        "dice_shift_down": 0.8339118457300275
+      },
+      "CPU_minus_archived_initial_dice": 9.610643066648716e-05
+    }
+  ],
+  "all_30_masks_nonempty": true,
+  "max_recomputed_metric_absolute_error": 1.1102230246251565e-16,
+  "captions": {
+    "Figure_5": "Figure 5. Three shared screening misses in the external set. Rows show case089 (A–C), case175 (D–F), and case238 (G–I); columns show the original released RGB ultrasound image, the released reference contour (blue), and the actual initial CPU replay prediction contour (orange). Row values are CPU replay Dice against the reference and risks A and B, rather than the original archived CUDA scores. All panels preserve the full original image field and aspect ratio. In case175, the nonempty prediction includes a thin upper-edge band. Masks were captured in the six-case exact-checkpoint CPU replay; no new model inference was performed to create this figure. Original CUDA scores and primary study estimates were retained unchanged.",
+    "Figure_S6": "Supplementary Figure S6. Actual prompt-shift responses in the six-case CPU replay. S6A contains shared misses case089 (A), case175 (B), and case238 (C); S6B contains B-only detections case024 (D), case105 (E), and case222 (F). Each case panel shows the reference (blue) and initial CPU prediction (orange) at left. The right 2 × 2 grid shows actual predictions after left (top left), right (top right), up (bottom left), and down (bottom right) prompt shifts; orange denotes the displayed CPU prediction, blue the same reference, and dashed gray the actual prompt box. Each D value is the Dice between that shifted prediction and the initial CPU prediction, rather than its Dice against the reference. Row values give initial CPU Dice against the reference and risks A/B. All 30 nonempty prediction masks from the six existing patients are shown, with original RGB pixels, full fields of view, and unchanged mask geometry. The case175 masks touch the upper image boundary; the right-shift prediction is a narrow nonempty band. CPU masks are not the unarchived original CUDA masks, and original CUDA scores were not overwritten. These six cases are not additional independent patients."
+  },
+  "exports": [
+    {
+      "file": "/workspace/bmt_v9/outputs/Figures/Figure_5.png",
+      "sha256": "6a471c1f12195090ed4da6bb3bdffabb233dca76756bd9f734a28beb3c0da65d",
+      "bytes": 1785582,
+      "width_inches": 6.89,
+      "height_inches": 8.425102654928722,
+      "embedded_original_rasters": null
+    },
+    {
+      "file": "/workspace/bmt_v9/outputs/Figures/Figure_5.pdf",
+      "sha256": "ab2b7427d590353f34cdf17b595b38dda14713efce01bbe66d650b617ec16e0a",
+      "bytes": 1888501,
+      "width_inches": 6.89,
+      "height_inches": 8.425102654928722,
+      "embedded_original_rasters": null
+    },
+    {
+      "file": "/workspace/bmt_v9/outputs/Figures/Figure_5.svg",
+      "sha256": "9c0609c2420d9e3cd530a1d2e5660588c33e5edc601ecf9fd1b4b78275f20b09",
+      "bytes": 3181644,
+      "width_inches": 6.89,
+      "height_inches": 8.425102654928722,
+      "embedded_original_rasters": [
+        {
+          "embedded_png_sha256": "708f6ae2a585a23c3dfababf00af8adc6e04570ac86d3f370e55d0f9170ad822",
+          "raw_RGB_array_sha256": "c270268c14ce1780bee45915364e7469e7c11feee286881a803d5e102959830f",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "708f6ae2a585a23c3dfababf00af8adc6e04570ac86d3f370e55d0f9170ad822",
+          "raw_RGB_array_sha256": "c270268c14ce1780bee45915364e7469e7c11feee286881a803d5e102959830f",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "708f6ae2a585a23c3dfababf00af8adc6e04570ac86d3f370e55d0f9170ad822",
+          "raw_RGB_array_sha256": "c270268c14ce1780bee45915364e7469e7c11feee286881a803d5e102959830f",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "745d3fe96831c6fedfa2aad208d16f14dd4a0a072e94e5423ec7f29948e1e05c",
+          "raw_RGB_array_sha256": "6d0cfaab3cd612fc942e3f4002a772baa64b17289f18c30d5d8d0441ceeaf00c",
+          "native_shape": [
+            542,
+            789,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "745d3fe96831c6fedfa2aad208d16f14dd4a0a072e94e5423ec7f29948e1e05c",
+          "raw_RGB_array_sha256": "6d0cfaab3cd612fc942e3f4002a772baa64b17289f18c30d5d8d0441ceeaf00c",
+          "native_shape": [
+            542,
+            789,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "745d3fe96831c6fedfa2aad208d16f14dd4a0a072e94e5423ec7f29948e1e05c",
+          "raw_RGB_array_sha256": "6d0cfaab3cd612fc942e3f4002a772baa64b17289f18c30d5d8d0441ceeaf00c",
+          "native_shape": [
+            542,
+            789,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "19cc7c0eb5789acdfba10deb5ed54591308103b1bdf6a06d239925c15a0d76cb",
+          "raw_RGB_array_sha256": "2d2e4896e921e08010122e58235cb3c8d7565737845e391ec3df08dea2be3f55",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "19cc7c0eb5789acdfba10deb5ed54591308103b1bdf6a06d239925c15a0d76cb",
+          "raw_RGB_array_sha256": "2d2e4896e921e08010122e58235cb3c8d7565737845e391ec3df08dea2be3f55",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "19cc7c0eb5789acdfba10deb5ed54591308103b1bdf6a06d239925c15a0d76cb",
+          "raw_RGB_array_sha256": "2d2e4896e921e08010122e58235cb3c8d7565737845e391ec3df08dea2be3f55",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "file": "/workspace/bmt_v9/outputs/Figures/Figure_S6A.png",
+      "sha256": "7ef86f64f2f76202956e6c9ab425dc3c55262a9e6aeccba3528e1b9700ffb5a9",
+      "bytes": 4380456,
+      "width_inches": 6.89,
+      "height_inches": 11.233600562587906,
+      "embedded_original_rasters": null
+    },
+    {
+      "file": "/workspace/bmt_v9/outputs/Figures/Figure_S6A.pdf",
+      "sha256": "8712c522e1b31058c116fd42aa162f84fb0f25509d57bda169da5bef967a6f86",
+      "bytes": 3182451,
+      "width_inches": 6.89,
+      "height_inches": 11.233600562587906,
+      "embedded_original_rasters": null
+    },
+    {
+      "file": "/workspace/bmt_v9/outputs/Figures/Figure_S6A.svg",
+      "sha256": "068be14ef4623bacedcd00cff537869ee986449ebcd28dcbc62168a7fcbddacd",
+      "bytes": 5593885,
+      "width_inches": 6.89,
+      "height_inches": 11.233600562587906,
+      "embedded_original_rasters": [
+        {
+          "embedded_png_sha256": "708f6ae2a585a23c3dfababf00af8adc6e04570ac86d3f370e55d0f9170ad822",
+          "raw_RGB_array_sha256": "c270268c14ce1780bee45915364e7469e7c11feee286881a803d5e102959830f",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "708f6ae2a585a23c3dfababf00af8adc6e04570ac86d3f370e55d0f9170ad822",
+          "raw_RGB_array_sha256": "c270268c14ce1780bee45915364e7469e7c11feee286881a803d5e102959830f",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "708f6ae2a585a23c3dfababf00af8adc6e04570ac86d3f370e55d0f9170ad822",
+          "raw_RGB_array_sha256": "c270268c14ce1780bee45915364e7469e7c11feee286881a803d5e102959830f",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "708f6ae2a585a23c3dfababf00af8adc6e04570ac86d3f370e55d0f9170ad822",
+          "raw_RGB_array_sha256": "c270268c14ce1780bee45915364e7469e7c11feee286881a803d5e102959830f",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "708f6ae2a585a23c3dfababf00af8adc6e04570ac86d3f370e55d0f9170ad822",
+          "raw_RGB_array_sha256": "c270268c14ce1780bee45915364e7469e7c11feee286881a803d5e102959830f",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "745d3fe96831c6fedfa2aad208d16f14dd4a0a072e94e5423ec7f29948e1e05c",
+          "raw_RGB_array_sha256": "6d0cfaab3cd612fc942e3f4002a772baa64b17289f18c30d5d8d0441ceeaf00c",
+          "native_shape": [
+            542,
+            789,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "745d3fe96831c6fedfa2aad208d16f14dd4a0a072e94e5423ec7f29948e1e05c",
+          "raw_RGB_array_sha256": "6d0cfaab3cd612fc942e3f4002a772baa64b17289f18c30d5d8d0441ceeaf00c",
+          "native_shape": [
+            542,
+            789,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "745d3fe96831c6fedfa2aad208d16f14dd4a0a072e94e5423ec7f29948e1e05c",
+          "raw_RGB_array_sha256": "6d0cfaab3cd612fc942e3f4002a772baa64b17289f18c30d5d8d0441ceeaf00c",
+          "native_shape": [
+            542,
+            789,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "745d3fe96831c6fedfa2aad208d16f14dd4a0a072e94e5423ec7f29948e1e05c",
+          "raw_RGB_array_sha256": "6d0cfaab3cd612fc942e3f4002a772baa64b17289f18c30d5d8d0441ceeaf00c",
+          "native_shape": [
+            542,
+            789,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "745d3fe96831c6fedfa2aad208d16f14dd4a0a072e94e5423ec7f29948e1e05c",
+          "raw_RGB_array_sha256": "6d0cfaab3cd612fc942e3f4002a772baa64b17289f18c30d5d8d0441ceeaf00c",
+          "native_shape": [
+            542,
+            789,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "19cc7c0eb5789acdfba10deb5ed54591308103b1bdf6a06d239925c15a0d76cb",
+          "raw_RGB_array_sha256": "2d2e4896e921e08010122e58235cb3c8d7565737845e391ec3df08dea2be3f55",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "19cc7c0eb5789acdfba10deb5ed54591308103b1bdf6a06d239925c15a0d76cb",
+          "raw_RGB_array_sha256": "2d2e4896e921e08010122e58235cb3c8d7565737845e391ec3df08dea2be3f55",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "19cc7c0eb5789acdfba10deb5ed54591308103b1bdf6a06d239925c15a0d76cb",
+          "raw_RGB_array_sha256": "2d2e4896e921e08010122e58235cb3c8d7565737845e391ec3df08dea2be3f55",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "19cc7c0eb5789acdfba10deb5ed54591308103b1bdf6a06d239925c15a0d76cb",
+          "raw_RGB_array_sha256": "2d2e4896e921e08010122e58235cb3c8d7565737845e391ec3df08dea2be3f55",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "19cc7c0eb5789acdfba10deb5ed54591308103b1bdf6a06d239925c15a0d76cb",
+          "raw_RGB_array_sha256": "2d2e4896e921e08010122e58235cb3c8d7565737845e391ec3df08dea2be3f55",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "file": "/workspace/bmt_v9/outputs/Figures/Figure_S6B.png",
+      "sha256": "93b6e14b4418e7d468eb3c1c7bdea299dc156088a8ceab547998e95ce3c856c3",
+      "bytes": 5531792,
+      "width_inches": 6.89,
+      "height_inches": 11.062010676375596,
+      "embedded_original_rasters": null
+    },
+    {
+      "file": "/workspace/bmt_v9/outputs/Figures/Figure_S6B.pdf",
+      "sha256": "aa5e37dc2c10854145c2800c889c0c295464764f0a306e22cd7dc61d76bd5f64",
+      "bytes": 3451868,
+      "width_inches": 6.89,
+      "height_inches": 11.062010676375596,
+      "embedded_original_rasters": null
+    },
+    {
+      "file": "/workspace/bmt_v9/outputs/Figures/Figure_S6B.svg",
+      "sha256": "aa86a26671d6314d221edcaaa8ad668734e672aabb75a30503af91e4b9afc176",
+      "bytes": 8272881,
+      "width_inches": 6.89,
+      "height_inches": 11.062010676375596,
+      "embedded_original_rasters": [
+        {
+          "embedded_png_sha256": "88e93839676c21e5c5cbdfb9b356c4c2ab72cf06f339774b1cd8122c88dabb38",
+          "raw_RGB_array_sha256": "e5cd37d4d7a03b91c8f27403e908880c5c1902be54adf4b9bb439663cc622a5a",
+          "native_shape": [
+            469,
+            433,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "88e93839676c21e5c5cbdfb9b356c4c2ab72cf06f339774b1cd8122c88dabb38",
+          "raw_RGB_array_sha256": "e5cd37d4d7a03b91c8f27403e908880c5c1902be54adf4b9bb439663cc622a5a",
+          "native_shape": [
+            469,
+            433,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "88e93839676c21e5c5cbdfb9b356c4c2ab72cf06f339774b1cd8122c88dabb38",
+          "raw_RGB_array_sha256": "e5cd37d4d7a03b91c8f27403e908880c5c1902be54adf4b9bb439663cc622a5a",
+          "native_shape": [
+            469,
+            433,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "88e93839676c21e5c5cbdfb9b356c4c2ab72cf06f339774b1cd8122c88dabb38",
+          "raw_RGB_array_sha256": "e5cd37d4d7a03b91c8f27403e908880c5c1902be54adf4b9bb439663cc622a5a",
+          "native_shape": [
+            469,
+            433,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "88e93839676c21e5c5cbdfb9b356c4c2ab72cf06f339774b1cd8122c88dabb38",
+          "raw_RGB_array_sha256": "e5cd37d4d7a03b91c8f27403e908880c5c1902be54adf4b9bb439663cc622a5a",
+          "native_shape": [
+            469,
+            433,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "e1e7c473684d005a39c6c4586bfe2433c658d55cbe5846d9feb1e71f0fc93fa4",
+          "raw_RGB_array_sha256": "1d59feee63533a5be838f4a675fbd9bcc8533be305f25bb4aebd9b67876af533",
+          "native_shape": [
+            538,
+            831,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "e1e7c473684d005a39c6c4586bfe2433c658d55cbe5846d9feb1e71f0fc93fa4",
+          "raw_RGB_array_sha256": "1d59feee63533a5be838f4a675fbd9bcc8533be305f25bb4aebd9b67876af533",
+          "native_shape": [
+            538,
+            831,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "e1e7c473684d005a39c6c4586bfe2433c658d55cbe5846d9feb1e71f0fc93fa4",
+          "raw_RGB_array_sha256": "1d59feee63533a5be838f4a675fbd9bcc8533be305f25bb4aebd9b67876af533",
+          "native_shape": [
+            538,
+            831,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "e1e7c473684d005a39c6c4586bfe2433c658d55cbe5846d9feb1e71f0fc93fa4",
+          "raw_RGB_array_sha256": "1d59feee63533a5be838f4a675fbd9bcc8533be305f25bb4aebd9b67876af533",
+          "native_shape": [
+            538,
+            831,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "e1e7c473684d005a39c6c4586bfe2433c658d55cbe5846d9feb1e71f0fc93fa4",
+          "raw_RGB_array_sha256": "1d59feee63533a5be838f4a675fbd9bcc8533be305f25bb4aebd9b67876af533",
+          "native_shape": [
+            538,
+            831,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "34c95617e49ebe4e64c9eb5bce424b7e97a885ce406aa01d712e95470dc6f011",
+          "raw_RGB_array_sha256": "ee0e85f74686c6b71fe1fa0a1d2b7a34f446c0efa72a6ff22418d3030cd1e370",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "34c95617e49ebe4e64c9eb5bce424b7e97a885ce406aa01d712e95470dc6f011",
+          "raw_RGB_array_sha256": "ee0e85f74686c6b71fe1fa0a1d2b7a34f446c0efa72a6ff22418d3030cd1e370",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "34c95617e49ebe4e64c9eb5bce424b7e97a885ce406aa01d712e95470dc6f011",
+          "raw_RGB_array_sha256": "ee0e85f74686c6b71fe1fa0a1d2b7a34f446c0efa72a6ff22418d3030cd1e370",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "34c95617e49ebe4e64c9eb5bce424b7e97a885ce406aa01d712e95470dc6f011",
+          "raw_RGB_array_sha256": "ee0e85f74686c6b71fe1fa0a1d2b7a34f446c0efa72a6ff22418d3030cd1e370",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        },
+        {
+          "embedded_png_sha256": "34c95617e49ebe4e64c9eb5bce424b7e97a885ce406aa01d712e95470dc6f011",
+          "raw_RGB_array_sha256": "ee0e85f74686c6b71fe1fa0a1d2b7a34f446c0efa72a6ff22418d3030cd1e370",
+          "native_shape": [
+            537,
+            485,
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "visual_QA": {
+    "status": "passed",
+    "method": "Full-page PDF renders and PNG previews inspected, case175 enlarged from PDF at 300 dpi and original 600 dpi PNG, SVG rendered in Chromium; native PDF raster equality and all text bounds checked programmatically.",
+    "checks": [
+      {
+        "figure": "Figure_5",
+        "all_pdf_text_in_bounds": true,
+        "pdf_min_fontsize": 8.0,
+        "embedded_pdf_images": [
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case089"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case089"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case089"
+            ]
+          },
+          {
+            "native_width": 789,
+            "native_height": 542,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case175"
+            ]
+          },
+          {
+            "native_width": 789,
+            "native_height": 542,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case175"
+            ]
+          },
+          {
+            "native_width": 789,
+            "native_height": 542,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case175"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case238"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case238"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case238"
+            ]
+          }
+        ],
+        "visual_review": "Full PDF render and PNG preview inspected: no overlapping text, clipped text or cropped FOV. Case175 thin upper-edge prediction visible in main and all supplementary directions."
+      },
+      {
+        "figure": "Figure_S6A",
+        "all_pdf_text_in_bounds": true,
+        "pdf_min_fontsize": 8.0,
+        "embedded_pdf_images": [
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case089"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case089"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case089"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case089"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case089"
+            ]
+          },
+          {
+            "native_width": 789,
+            "native_height": 542,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case175"
+            ]
+          },
+          {
+            "native_width": 789,
+            "native_height": 542,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case175"
+            ]
+          },
+          {
+            "native_width": 789,
+            "native_height": 542,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case175"
+            ]
+          },
+          {
+            "native_width": 789,
+            "native_height": 542,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case175"
+            ]
+          },
+          {
+            "native_width": 789,
+            "native_height": 542,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case175"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case238"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case238"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case238"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case238"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case238"
+            ]
+          }
+        ],
+        "visual_review": "Full PDF render and PNG preview inspected: no overlapping text, clipped text or cropped FOV. Case175 thin upper-edge prediction visible in main and all supplementary directions."
+      },
+      {
+        "figure": "Figure_S6B",
+        "all_pdf_text_in_bounds": true,
+        "pdf_min_fontsize": 8.0,
+        "embedded_pdf_images": [
+          {
+            "native_width": 433,
+            "native_height": 469,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case024"
+            ]
+          },
+          {
+            "native_width": 433,
+            "native_height": 469,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case024"
+            ]
+          },
+          {
+            "native_width": 433,
+            "native_height": 469,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case024"
+            ]
+          },
+          {
+            "native_width": 433,
+            "native_height": 469,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case024"
+            ]
+          },
+          {
+            "native_width": 433,
+            "native_height": 469,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case024"
+            ]
+          },
+          {
+            "native_width": 831,
+            "native_height": 538,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case105"
+            ]
+          },
+          {
+            "native_width": 831,
+            "native_height": 538,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case105"
+            ]
+          },
+          {
+            "native_width": 831,
+            "native_height": 538,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case105"
+            ]
+          },
+          {
+            "native_width": 831,
+            "native_height": 538,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case105"
+            ]
+          },
+          {
+            "native_width": 831,
+            "native_height": 538,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case105"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case222"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case222"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case222"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case222"
+            ]
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_original_RGB_matches_after_PDF_bottom_up_storage_correction": [
+              "case222"
+            ]
+          }
+        ],
+        "visual_review": "Full PDF render and PNG preview inspected: no overlapping text, clipped text or cropped FOV. Case175 thin upper-edge prediction visible in main and all supplementary directions."
+      }
+    ],
+    "SVG_Chromium_previews": [
+      "/workspace/bmt_v9/qa/Figure_5_svg_preview.png",
+      "/workspace/bmt_v9/qa/Figure_S6A_svg_preview.png",
+      "/workspace/bmt_v9/qa/Figure_S6B_svg_preview.png"
+    ],
+    "all_SVG_rasters_decoded_exact_original_arrays": true
+  },
+  "script_sha256": "425d3b395247dc5b6e6abc7add0669f5da89790e090e3e64cdd1981343858743",
+  "layout_assets": {
+    "index": "/workspace/bmt_v9/layout_assets/layout_asset_index.json",
+    "index_sha256": "b0c33409c743475dc8efa052b5ed08daf9aeb6b0b1ab58c2a992d213865011e6",
+    "purpose": "A4 supplementary manuscript integration: one original S6 case panel per page, production S6A/B unchanged",
+    "script": "/workspace/bmt_v9/scripts/redraw_case_layout_assets.py",
+    "script_sha256": "65a906602d669c62d30033bd37e367c9cf6f6b67de7915a5046da57dbaca14ab",
+    "panel_order": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "assets": [
+      {
+        "panel": "A",
+        "case_id": "case089",
+        "source_production_figure": "Figure_S6A",
+        "caption_continuation_label": "Supplementary Figure S6, panel A (case089).",
+        "width_inches": 6.89,
+        "height_inches": 4.362469135802469,
+        "png_pixels": [
+          4134,
+          2617
+        ],
+        "png_dpi": [
+          599.9988,
+          599.9988
+        ],
+        "font_minimum_pt": 8,
+        "files": [
+          {
+            "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_A_case089.png",
+            "sha256": "18eff3bc7539f50d30920424f2d51d1e976efdd371bbbfb715edffb0a9578e4a",
+            "bytes": 1185223
+          },
+          {
+            "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_A_case089.pdf",
+            "sha256": "49e3dc4ad9b9f412b19cf501415d52ffcee1237546105733d8191fe027c30cc8",
+            "bytes": 1000842
+          }
+        ],
+        "preview": "/workspace/bmt_v9/qa/Figure_S6_case_A_case089_preview.png",
+        "source_npz_sha256": "4fd0f1a7b3167eaf99ea5d7e2543186ee457d073e66ef76618f306180be84f51",
+        "source_original_RGB_sha256_raw_C_order": "c270268c14ce1780bee45915364e7469e7c11feee286881a803d5e102959830f",
+        "reference_sha256_raw_C_order": "e148324855ec45b2b99717176ad9fbb6849e7173c47cd064364159c10e75f50c",
+        "five_actual_mask_sha256_raw_C_order": [
+          "02e930c173377c232bd75415c31eafc98d1e6a387f7a20d49b9286141f477058",
+          "a186c2c99c6e4257136f170307134f7b9dce3f4ae234b123a58e938d239a109b",
+          "74838d30de44422b43cec8e142e786f4fca207a9b5d0585ee0be2fbcd702d8e0",
+          "b356a84b06f64937bdd5bfc4cafa9d809d625c3754984bab4e7c14157560072c",
+          "7b661669d95adb39bda6e3f37c8e922263dcd50e2eeea4ffa59cd8ec1c85d3a3"
+        ],
+        "prediction_foreground_pixels": [
+          1365,
+          1436,
+          1320,
+          1511,
+          1436
+        ],
+        "CPU_values": {
+          "dice_vs_reference": 0.31909990511047853,
+          "risk_A": 0.10408079624176025,
+          "risk_B": 0.041227634448447126
+        },
+        "shift_Dice_vs_initial": {
+          "left": 0.9746519100321314,
+          "right": 0.976536312849162,
+          "up": 0.9492350486787204,
+          "down": 0.9346661906461978
+        },
+        "source_pixel_validation": {
+          "all_five_PDF_rasters_match_native_original_RGB": true,
+          "pdf_images": [
+            {
+              "native_width": 485,
+              "native_height": 537,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 485,
+              "native_height": 537,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 485,
+              "native_height": 537,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 485,
+              "native_height": 537,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 485,
+              "native_height": 537,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            }
+          ],
+          "full_field_and_aspect_preserved": true,
+          "no_pixel_enhancement_no_grayscale_conversion_no_inference": true,
+          "actual_masks_and_boxes_unchanged": true
+        },
+        "layout_QA": {
+          "all_text_in_page_bounds": true,
+          "pdf_min_font_pt": 8.0,
+          "visual_review": "Full native PDF render inspected: all five full-FOV images, panel label, CPU metrics, four direction titles and shared legend readable; no overlap or clipping. Case175 upper-edge band preserved."
+        },
+        "lossless_PNG_optimization": "Opaque RGBA converted to exact RGB; all alpha=255 verified; optimize=True, compress_level=9, 600dpi metadata."
+      },
+      {
+        "panel": "B",
+        "case_id": "case175",
+        "source_production_figure": "Figure_S6A",
+        "caption_continuation_label": "Supplementary Figure S6, panel B (case175).",
+        "width_inches": 6.89,
+        "height_inches": 3.7,
+        "png_pixels": [
+          4134,
+          2220
+        ],
+        "png_dpi": [
+          599.9988,
+          599.9988
+        ],
+        "font_minimum_pt": 8,
+        "files": [
+          {
+            "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_B_case175.png",
+            "sha256": "ba8382bdc9355b19200fc2317113bff7d43ffe3b35a0f20066f53fc42bc2e022",
+            "bytes": 1744350
+          },
+          {
+            "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_B_case175.pdf",
+            "sha256": "b8ab06e123a10ac5c90c099bbd249df0fb85bf865e260165f9f5ace1793fbe10",
+            "bytes": 1360869
+          }
+        ],
+        "preview": "/workspace/bmt_v9/qa/Figure_S6_case_B_case175_preview.png",
+        "source_npz_sha256": "4eed039771a9bb640c712ecdae7b3b79896a4909eb69b5c840123714385e549e",
+        "source_original_RGB_sha256_raw_C_order": "6d0cfaab3cd612fc942e3f4002a772baa64b17289f18c30d5d8d0441ceeaf00c",
+        "reference_sha256_raw_C_order": "a28a01d0b09f0feed10c1b980f2090f0270e3f1f54080477c725f8b052e27a74",
+        "five_actual_mask_sha256_raw_C_order": [
+          "d3c3171739f4bd65909615ed8b4c32cbf23d39993c321462e38c004bee35e05f",
+          "d3925efd1e5a659436c18933848a11bfcf218239e4c3e5daa61a5c0da07458ba",
+          "1580ead157ac45d45eb8b00a9bdc4ee1545ed67ef443d24d361608ca411fd19c",
+          "f5d7d66fec201301f3d701d454274e9b975ce86cb74e71e160f3f31b25da94e2",
+          "0abf89dde804572fb0e5fef538e8dc273866c8f5f419d3f627f092bc987626e9"
+        ],
+        "prediction_foreground_pixels": [
+          3861,
+          3958,
+          3816,
+          3846,
+          4351
+        ],
+        "CPU_values": {
+          "dice_vs_reference": 0.02928704996181095,
+          "risk_A": 0.11494165658950806,
+          "risk_B": 0.020034547593127616
+        },
+        "shift_Dice_vs_initial": {
+          "left": 0.9873385343394296,
+          "right": 0.9941383352872216,
+          "up": 0.9980537173997664,
+          "down": 0.9403312226010716
+        },
+        "source_pixel_validation": {
+          "all_five_PDF_rasters_match_native_original_RGB": true,
+          "pdf_images": [
+            {
+              "native_width": 789,
+              "native_height": 542,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 789,
+              "native_height": 542,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 789,
+              "native_height": 542,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 789,
+              "native_height": 542,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 789,
+              "native_height": 542,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            }
+          ],
+          "full_field_and_aspect_preserved": true,
+          "no_pixel_enhancement_no_grayscale_conversion_no_inference": true,
+          "actual_masks_and_boxes_unchanged": true
+        },
+        "layout_QA": {
+          "all_text_in_page_bounds": true,
+          "pdf_min_font_pt": 8.0,
+          "visual_review": "Full native PDF render inspected: all five full-FOV images, panel label, CPU metrics, four direction titles and shared legend readable; no overlap or clipping. Case175 upper-edge band preserved."
+        },
+        "lossless_PNG_optimization": "Opaque RGBA converted to exact RGB; all alpha=255 verified; optimize=True, compress_level=9, 600dpi metadata."
+      },
+      {
+        "panel": "C",
+        "case_id": "case238",
+        "source_production_figure": "Figure_S6A",
+        "caption_continuation_label": "Supplementary Figure S6, panel C (case238).",
+        "width_inches": 6.89,
+        "height_inches": 4.362469135802469,
+        "png_pixels": [
+          4134,
+          2617
+        ],
+        "png_dpi": [
+          599.9988,
+          599.9988
+        ],
+        "font_minimum_pt": 8,
+        "files": [
+          {
+            "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_C_case238.png",
+            "sha256": "c2eddfd03efa20306b32fc831e0f19db691d6c9ece65d9c09b5aee6298588e52",
+            "bytes": 1178270
+          },
+          {
+            "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_C_case238.pdf",
+            "sha256": "76e5ca10b5aa85483255337ff040bb3d89578aae216d50f48f4de48b8c465bdf",
+            "bytes": 867495
+          }
+        ],
+        "preview": "/workspace/bmt_v9/qa/Figure_S6_case_C_case238_preview.png",
+        "source_npz_sha256": "e692e958d61e11b92c7b38c0569eb8a2aafd16d8b34af49be56a0259fe6b12e3",
+        "source_original_RGB_sha256_raw_C_order": "2d2e4896e921e08010122e58235cb3c8d7565737845e391ec3df08dea2be3f55",
+        "reference_sha256_raw_C_order": "ac4015a3e78a7a4b16709e17e664fca0a082a8f4b1ed3036d1f11ba41084942a",
+        "five_actual_mask_sha256_raw_C_order": [
+          "500a134041bc7136bc11964942569235c90ca1c24a562863169f6a9962f5a96c",
+          "28af8548e2966d9029eb0365eace78134382a681f8776a20168fcfdcd6294a2c",
+          "086953f0f2f4d593f82b5a0dfcd806b16a5e3cc1fc8d865643a3a3967bf23d9e",
+          "6ba8e830d04d2c3023d03a9be030151ee58cc882d202bad9014d99f58f5255ea",
+          "5e6685050d089de0d089fb0bc480210c97053e7ceb60f85e886fe58a6d451836"
+        ],
+        "prediction_foreground_pixels": [
+          5054,
+          5105,
+          5094,
+          5101,
+          5028
+        ],
+        "CPU_values": {
+          "dice_vs_reference": 0.681269798476781,
+          "risk_A": 0.038918256759643555,
+          "risk_B": 0.005717084876207368
+        },
+        "shift_Dice_vs_initial": {
+          "left": 0.9945860813072153,
+          "right": 0.9932991722506898,
+          "up": 0.9920236336779912,
+          "down": 0.997222773259274
+        },
+        "source_pixel_validation": {
+          "all_five_PDF_rasters_match_native_original_RGB": true,
+          "pdf_images": [
+            {
+              "native_width": 485,
+              "native_height": 537,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 485,
+              "native_height": 537,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 485,
+              "native_height": 537,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 485,
+              "native_height": 537,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 485,
+              "native_height": 537,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            }
+          ],
+          "full_field_and_aspect_preserved": true,
+          "no_pixel_enhancement_no_grayscale_conversion_no_inference": true,
+          "actual_masks_and_boxes_unchanged": true
+        },
+        "layout_QA": {
+          "all_text_in_page_bounds": true,
+          "pdf_min_font_pt": 8.0,
+          "visual_review": "Full native PDF render inspected: all five full-FOV images, panel label, CPU metrics, four direction titles and shared legend readable; no overlap or clipping. Case175 upper-edge band preserved."
+        },
+        "lossless_PNG_optimization": "Opaque RGBA converted to exact RGB; all alpha=255 verified; optimize=True, compress_level=9, 600dpi metadata."
+      },
+      {
+        "panel": "D",
+        "case_id": "case024",
+        "source_production_figure": "Figure_S6B",
+        "caption_continuation_label": "Supplementary Figure S6, panel D (case024).",
+        "width_inches": 6.89,
+        "height_inches": 4.298986175115207,
+        "png_pixels": [
+          4134,
+          2579
+        ],
+        "png_dpi": [
+          599.9988,
+          599.9988
+        ],
+        "font_minimum_pt": 8,
+        "files": [
+          {
+            "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_D_case024.png",
+            "sha256": "5f733e63f18df8990c96de47bb3050be86f7ce1ee96cc7f6dfd941d5ad8ae467",
+            "bytes": 1191939
+          },
+          {
+            "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_D_case024.pdf",
+            "sha256": "9f26edc2d7553ffae1ab65458b2395ecdd428cae34a83cfa7a40f86764832ea6",
+            "bytes": 758064
+          }
+        ],
+        "preview": "/workspace/bmt_v9/qa/Figure_S6_case_D_case024_preview.png",
+        "source_npz_sha256": "5ba9ca812255cd357232865f434cd2f1b8f287ce266c46bf23e3609d35d0b748",
+        "source_original_RGB_sha256_raw_C_order": "e5cd37d4d7a03b91c8f27403e908880c5c1902be54adf4b9bb439663cc622a5a",
+        "reference_sha256_raw_C_order": "926ec454931525d85fcf4bcfe469bdede0c3d78ed41082d84c7956552e5c1fb6",
+        "five_actual_mask_sha256_raw_C_order": [
+          "986487bab9c7e04f963c9d33604703bf5ecfbdf4e7755e00ef1d1601720ec9e0",
+          "ce05f57ced6c9ced8e935e667a8ffc193c64e1c72ac148b77af015617e5f4902",
+          "33327d6070254df4effb0e9c83673646e73efebf274a78192796d1b4731191db",
+          "4f64144eece3bcac179ce7b5930b7d4cf4ba30ee2027ecfe6f89355a287f16a6",
+          "2d037a566ba6d44dd7d3008630a8a60fc7634caf01175b09a690ec34dec398bb"
+        ],
+        "prediction_foreground_pixels": [
+          12316,
+          11704,
+          8878,
+          8043,
+          12537
+        ],
+        "CPU_values": {
+          "dice_vs_reference": 0.6851387914620704,
+          "risk_A": 0.05452531576156616,
+          "risk_B": 0.1100879581784645
+        },
+        "shift_Dice_vs_initial": {
+          "left": 0.9645295587010825,
+          "right": 0.837218080588846,
+          "up": 0.7870720565843116,
+          "down": 0.970828471411902
+        },
+        "source_pixel_validation": {
+          "all_five_PDF_rasters_match_native_original_RGB": true,
+          "pdf_images": [
+            {
+              "native_width": 433,
+              "native_height": 469,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 433,
+              "native_height": 469,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 433,
+              "native_height": 469,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 433,
+              "native_height": 469,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 433,
+              "native_height": 469,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            }
+          ],
+          "full_field_and_aspect_preserved": true,
+          "no_pixel_enhancement_no_grayscale_conversion_no_inference": true,
+          "actual_masks_and_boxes_unchanged": true
+        },
+        "layout_QA": {
+          "all_text_in_page_bounds": true,
+          "pdf_min_font_pt": 8.0,
+          "visual_review": "Full native PDF render inspected: all five full-FOV images, panel label, CPU metrics, four direction titles and shared legend readable; no overlap or clipping. Case175 upper-edge band preserved."
+        },
+        "lossless_PNG_optimization": "Opaque RGBA converted to exact RGB; all alpha=255 verified; optimize=True, compress_level=9, 600dpi metadata."
+      },
+      {
+        "panel": "E",
+        "case_id": "case105",
+        "source_production_figure": "Figure_S6B",
+        "caption_continuation_label": "Supplementary Figure S6, panel E (case105).",
+        "width_inches": 6.89,
+        "height_inches": 3.7,
+        "png_pixels": [
+          4134,
+          2220
+        ],
+        "png_dpi": [
+          599.9988,
+          599.9988
+        ],
+        "font_minimum_pt": 8,
+        "files": [
+          {
+            "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_E_case105.png",
+            "sha256": "44ba2d75ca237f98b17274466aa45ba7bf119a9c4c16ab0eddb25f3e2b310858",
+            "bytes": 2052835
+          },
+          {
+            "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_E_case105.pdf",
+            "sha256": "137e547111df013af9ce0b3f419f69542c171d18ec73db68195a8ddb82b9540b",
+            "bytes": 1673193
+          }
+        ],
+        "preview": "/workspace/bmt_v9/qa/Figure_S6_case_E_case105_preview.png",
+        "source_npz_sha256": "8c83a723f77528bc9257eb86d18c9cc68ef6d7a43da4a061e81c775c1dce9a72",
+        "source_original_RGB_sha256_raw_C_order": "1d59feee63533a5be838f4a675fbd9bcc8533be305f25bb4aebd9b67876af533",
+        "reference_sha256_raw_C_order": "92236978cc61485b6b45d6aded04ca3c09611053b9e12855c3b75f5f92d322c6",
+        "five_actual_mask_sha256_raw_C_order": [
+          "1afb70f042c857a80862cef83ffeb5b86b09258d839e7bbdd96f526c9af1f4fa",
+          "727203152f66f6c720c77ac5f19929ddd8b01e9e2930c14f59c486e225e938e2",
+          "373ba0c0383899e8159df2b43dcb62a236c10da21ab142b6a3ed129367ed16a0",
+          "f0eadc5aa2c833352f4d960c1e4b0e995ad7eb65f1d95abd7d252f4fbef6a60d",
+          "d826e7c60218fc8b12508bb381d0ffa290c25b2d537e779b128c26236d4f40d3"
+        ],
+        "prediction_foreground_pixels": [
+          271052,
+          37844,
+          256818,
+          263597,
+          245371
+        ],
+        "CPU_values": {
+          "dice_vs_reference": 0.6545790284014119,
+          "risk_A": 0.10247379541397095,
+          "risk_B": 0.26002996431242686
+        },
+        "shift_Dice_vs_initial": {
+          "left": 0.24502097793432093,
+          "right": 0.9011574819557846,
+          "up": 0.9024874263301718,
+          "down": 0.9112142565300151
+        },
+        "source_pixel_validation": {
+          "all_five_PDF_rasters_match_native_original_RGB": true,
+          "pdf_images": [
+            {
+              "native_width": 831,
+              "native_height": 538,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 831,
+              "native_height": 538,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 831,
+              "native_height": 538,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 831,
+              "native_height": 538,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 831,
+              "native_height": 538,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            }
+          ],
+          "full_field_and_aspect_preserved": true,
+          "no_pixel_enhancement_no_grayscale_conversion_no_inference": true,
+          "actual_masks_and_boxes_unchanged": true
+        },
+        "layout_QA": {
+          "all_text_in_page_bounds": true,
+          "pdf_min_font_pt": 8.0,
+          "visual_review": "Full native PDF render inspected: all five full-FOV images, panel label, CPU metrics, four direction titles and shared legend readable; no overlap or clipping. Case175 upper-edge band preserved."
+        },
+        "lossless_PNG_optimization": "Opaque RGBA converted to exact RGB; all alpha=255 verified; optimize=True, compress_level=9, 600dpi metadata."
+      },
+      {
+        "panel": "F",
+        "case_id": "case222",
+        "source_production_figure": "Figure_S6B",
+        "caption_continuation_label": "Supplementary Figure S6, panel F (case222).",
+        "width_inches": 6.89,
+        "height_inches": 4.362469135802469,
+        "png_pixels": [
+          4134,
+          2617
+        ],
+        "png_dpi": [
+          599.9988,
+          599.9988
+        ],
+        "font_minimum_pt": 8,
+        "files": [
+          {
+            "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_F_case222.png",
+            "sha256": "639f441ba7dbd215ea5f18b55936ec71e2ae2149dd0096cff61e9b8f6f799986",
+            "bytes": 1882769
+          },
+          {
+            "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_F_case222.pdf",
+            "sha256": "86e6195bfe7fca7b5f1a21c4af2a87651ab0dd1f3c2f8c177e147ec4541b6ad7",
+            "bytes": 1073020
+          }
+        ],
+        "preview": "/workspace/bmt_v9/qa/Figure_S6_case_F_case222_preview.png",
+        "source_npz_sha256": "457105cca958c3f386fa2b9969057e443b324cc51b30addaf3273a09ba32e0f9",
+        "source_original_RGB_sha256_raw_C_order": "ee0e85f74686c6b71fe1fa0a1d2b7a34f446c0efa72a6ff22418d3030cd1e370",
+        "reference_sha256_raw_C_order": "46fb47ab88652f91c3c2a90d21e1c5a505a75136cf1dda4cfdaeb4eb15ebcda9",
+        "five_actual_mask_sha256_raw_C_order": [
+          "bfb7cfee3f73f30a7d5f0f74ed148f747d80ff0de07dc35f321b6c745860b5a6",
+          "7a121e0c829b1eecabbf4c966df03d818228b1873ac660a280e37531afc761db",
+          "59a92a6b46451f60fce2a3ceb0c96e7e9e51e279f90d3f1ee68ed9238823aead",
+          "df5106faa5c58466bc826eeb7fbe8f17b61851962a536f5c84fdd16b7206b2de",
+          "82965a34f69368751580c13a9e2907b7ad69d6a41610a08f0ff0ebfc2f250281"
+        ],
+        "prediction_foreground_pixels": [
+          42115,
+          20360,
+          42487,
+          38118,
+          30467
+        ],
+        "CPU_values": {
+          "dice_vs_reference": 0.5784646061814557,
+          "risk_A": 0.12703347206115723,
+          "risk_B": 0.20173358332477698
+        },
+        "shift_Dice_vs_initial": {
+          "left": 0.6492517006802722,
+          "right": 0.8383016949953902,
+          "up": 0.8715865043062082,
+          "down": 0.8339257667190213
+        },
+        "source_pixel_validation": {
+          "all_five_PDF_rasters_match_native_original_RGB": true,
+          "pdf_images": [
+            {
+              "native_width": 485,
+              "native_height": 537,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 485,
+              "native_height": 537,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 485,
+              "native_height": 537,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 485,
+              "native_height": 537,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            },
+            {
+              "native_width": 485,
+              "native_height": 537,
+              "exact_RGB_array_match_after_PDF_scanline_correction": true
+            }
+          ],
+          "full_field_and_aspect_preserved": true,
+          "no_pixel_enhancement_no_grayscale_conversion_no_inference": true,
+          "actual_masks_and_boxes_unchanged": true
+        },
+        "layout_QA": {
+          "all_text_in_page_bounds": true,
+          "pdf_min_font_pt": 8.0,
+          "visual_review": "Full native PDF render inspected: all five full-FOV images, panel label, CPU metrics, four direction titles and shared legend readable; no overlap or clipping. Case175 upper-edge band preserved."
+        },
+        "lossless_PNG_optimization": "Opaque RGBA converted to exact RGB; all alpha=255 verified; optimize=True, compress_level=9, 600dpi metadata."
+      }
+    ],
+    "shared_caption_source": "/workspace/bmt_v9/evidence/case_figures.json:captions.Figure_S6",
+    "shared_caption_placement": "Use complete shared S6 caption once, then continuation labels A–F on subsequent case pages.",
+    "within_case_mapping": {
+      "left": "reference + initial CPU prediction + initial actual prompt",
+      "top_right_grid_left": "actual left-shift prediction",
+      "top_right_grid_right": "actual right-shift prediction",
+      "bottom_right_grid_left": "actual up-shift prediction",
+      "bottom_right_grid_right": "actual down-shift prediction"
+    },
+    "display_rules": "Identical to production S6: full FOV/native RGB, nearest-neighbor PNG, native-raster PDF, padded binary 0.5 contours, 8pt minimum.",
+    "all_six_visual_reviews_passed": true,
+    "total_six_PNG_bytes": 9235386
+  }
+}

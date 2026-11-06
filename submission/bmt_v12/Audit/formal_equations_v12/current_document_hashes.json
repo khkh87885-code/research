@@ -1,0 +1,39 @@
+{
+  "BMT_formula_layout_proof_v12.pdf": {
+    "sha256": "528667e26c25bc4e734756bcda80193d164c054106d377543c16ff51b3432e97",
+    "bytes": 1014383,
+    "pages": 2
+  },
+  "BMT_main_manuscript_v12.docx": {
+    "sha256": "100bb41ffe8355222ecdf588ab7045a764995c7f785c8d6b51d80873c3242b0d",
+    "bytes": 58682
+  },
+  "BMT_main_manuscript_v12_illustrated.docx": {
+    "sha256": "5dac85b931467273d1e07cf980eddbf50771a78f0664b80ce018ece2460c4345",
+    "bytes": 3541208
+  },
+  "BMT_main_manuscript_v12_illustrated_preview.pdf": {
+    "sha256": "f205d68ae3f5ea02b9ef757d15c4e89c1b13b815f1d256347c186bcc198602eb",
+    "bytes": 1468838,
+    "pages": 26
+  },
+  "BMT_main_manuscript_v12_preview.pdf": {
+    "sha256": "c0e2d984059ef5b632a84ddb93f009a105ace8675b3f83615ac3059dbe371fa9",
+    "bytes": 225570,
+    "pages": 21
+  },
+  "BMT_supplementary_Figure_S6_v8.pdf": {
+    "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+    "bytes": 1871819,
+    "pages": 6
+  },
+  "BMT_supplementary_material_v8.docx": {
+    "sha256": "f492a6222165ad5569a968f93ccf9c61a588ef5d9bb01769fd4859226bc6a740",
+    "bytes": 1533688
+  },
+  "BMT_supplementary_material_v8_preview.pdf": {
+    "sha256": "aeecd1f8eeb52c26f026cf7888b95320788d73e3831f2dae70db44dc0a61eef7",
+    "bytes": 1334686,
+    "pages": 25
+  }
+}

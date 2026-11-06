@@ -1,0 +1,349 @@
+{
+  "status": "Ready for root integration; 12 provisional supplementary labels may be mechanically remapped",
+  "title": "Supplementary mathematical methods",
+  "source_manuscript": "submission/bmt_v9/BMT_main_manuscript_v9.docx",
+  "source_supplement": "submission/bmt_v9/BMT_supplementary_material_v5.docx",
+  "placement": {
+    "preferred": "Insert after the supplementary title/author front matter and before Table S1; start Table S1 on a new page after the mathematical-methods appendix.",
+    "exact_anchor_before": "Table S1.  Locked thresholds and scoring settings",
+    "main_cross_reference": "Detailed interval, bootstrap, diagnostic-accounting and numerical-replay equations are given in Supplementary mathematical methods.",
+    "main_cross_reference_placement": "After the main Outcomes and statistical analysis interval paragraph, with a second short pointer in Post hoc policy sensitivity and diagnostic accounting if useful.",
+    "alternative": "Append after Table S13 and before post hoc figure sections if preserving the existing first-table pagination is preferred; do not place complex equations inside table notes."
+  },
+  "numbering": {
+    "suggestion": "Use the provisional consecutive sequence (S1)–(S12), or mechanically remap it during root integration; do not reset at subsections.",
+    "equation_keys": [
+      "wilson",
+      "newcombe_limits",
+      "paired_components",
+      "paired_correction",
+      "bootstrap_ci",
+      "bootstrap_original_opposite",
+      "bootstrap_tie_same",
+      "stratum_rates_weights",
+      "kitagawa_total",
+      "kitagawa_components",
+      "common_weights",
+      "replay_errors"
+    ],
+    "do_not_use_pending_labels_as_printed_text": true,
+    "provisional_labels": {
+      "wilson": "S1",
+      "newcombe_limits": "S2",
+      "paired_components": "S3",
+      "paired_correction": "S4",
+      "bootstrap_ci": "S5",
+      "bootstrap_original_opposite": "S6",
+      "bootstrap_tie_same": "S7",
+      "stratum_rates_weights": "S8",
+      "kitagawa_total": "S9",
+      "kitagawa_components": "S10",
+      "common_weights": "S11",
+      "replay_errors": "S12"
+    }
+  },
+  "citations": {
+    "reuse_existing_main_reference_numbers": {
+      "11": "Independent-proportion Newcombe score difference",
+      "12": "Paired-proportion Newcombe score difference",
+      "13": "Kitagawa decomposition"
+    },
+    "references_added": 0,
+    "main_reference_count_unchanged": 15,
+    "do_not_renumber_first_appearance": true
+  },
+  "notation": {
+    "I": "BUS-BRA internal holdout",
+    "E": "BrEaST external test",
+    "s": "Dataset-reported benign or malignant diagnostic stratum",
+    "n": "Denominator of a single reported proportion",
+    "N": "Paired-table total in the correlation subsection; all-patient cohort total in main notation, distinguished by local definition",
+    "F": "Number of low-quality masks",
+    "R": "Number selected for review",
+    "TP": "Number of low-quality masks selected for review",
+    "p_hat": "Observed proportion",
+    "rho": "Continuity-adjusted paired phi coefficient; zero for independent comparisons",
+    "theta_star_b": "Statistic evaluated in patient-bootstrap replicate b",
+    "V": "Finite replicate set for one endpoint",
+    "V_J": "Jointly valid replicate set for both external detection contrasts",
+    "C": "Kitagawa composition-associated term",
+    "W": "Kitagawa within-stratum-rate term",
+    "I_6": "The six selected replayed patients"
+  },
+  "blocks": [
+    {
+      "key": "appendix_intro",
+      "text": "These equations specify the interval calculations and post hoc analyses used in this study. Definitions of the masks, risk scores, low-quality condition and review policies are given in the main Methods. Rates below are fractions unless explicitly multiplied by 100; interval limits for differences are reported in percentage points. Citations [11–13] refer to the main reference list.",
+      "type": "paragraph"
+    },
+    {
+      "key": "intervals",
+      "level": 2,
+      "text": "Proportion and difference intervals",
+      "type": "heading"
+    },
+    {
+      "key": "wilson_definition",
+      "text": "For $x$ successes among $n$ observations, let $\\hat p=x/n$ and $z=\\Phi^{-1}(0.975)$. The two-sided 95% Wilson score limits without continuity correction are",
+      "type": "paragraph"
+    },
+    {
+      "key": "wilson",
+      "label": "S1",
+      "latex": "(L,U)=\\frac{\\hat p+\\frac{z^2}{2n}\\ \\pm\\ z\\sqrt{\\frac{\\hat p(1-\\hat p)}{n}+\\frac{z^2}{4n^2}}}{1+\\frac{z^2}{n}}.",
+      "note": "The minus sign gives L and the plus sign U. The implementation clips these proportion limits to [0,1].",
+      "essential": true,
+      "type": "equation",
+      "label_provisional": true
+    },
+    {
+      "key": "wilson_boundaries",
+      "text": "Here $x$ and $n$ are the numerator and denominator of the reported proportion. Detection uses low-quality patients as its denominator; review uses all scored patients. A proportion with a zero denominator is undefined and is not assigned an interval.",
+      "type": "paragraph"
+    },
+    {
+      "key": "newcombe_definition",
+      "text": "For the first-minus-second contrast $\\hat\\Delta=\\hat p_1-\\hat p_2$, let $(L_j,U_j)$ be the Wilson limits of $\\hat p_j$. The independent or paired Newcombe method 10 interval [11,12] is",
+      "type": "paragraph"
+    },
+    {
+      "key": "newcombe_limits",
+      "label": "S2",
+      "latex": "\\begin{aligned}\\mathcal R(x,y;\\rho)&=\\sqrt{\\max(x^2+y^2-2\\rho xy,0)},\\\\L_{\\Delta}&=\\hat\\Delta-\\mathcal R(\\hat p_1-L_1,U_2-\\hat p_2;\\rho),\\\\U_{\\Delta}&=\\hat\\Delta+\\mathcal R(U_1-\\hat p_1,\\hat p_2-L_2;\\rho).\\end{aligned}",
+      "note": "",
+      "essential": true,
+      "type": "equation",
+      "label_provisional": true
+    },
+    {
+      "key": "newcombe_independent",
+      "text": "Set $\\rho=0$ for the independent external-minus-internal H1 and H2 contrasts. For paired comparisons, define $a$, $b$, $c$ and $d$ as the numbers flagged by both methods, by the first method only, by the second method only, and by neither method, within the population used for the contrast. That population comprises low-quality patients for detection and all scored patients for review. For a B-minus-A contrast, first therefore denotes B. The paired method uses",
+      "type": "paragraph"
+    },
+    {
+      "key": "paired_components",
+      "label": "S3",
+      "latex": "N=a+b+c+d,\\qquad T=ad-bc,\\qquad M=(a+b)(c+d)(a+c)(b+d).",
+      "note": "",
+      "essential": true,
+      "type": "equation",
+      "label_provisional": true
+    },
+    {
+      "key": "paired_correction",
+      "label": "S4",
+      "latex": "T^{\\mathrm{corr}}=T-\\mathbf1\\{T>0\\}\\min(T,N/2),\\qquad \\rho=\\frac{T^{\\mathrm{corr}}}{\\sqrt M}\\quad(M>0).",
+      "note": "",
+      "essential": true,
+      "type": "equation",
+      "label_provisional": true
+    },
+    {
+      "key": "paired_boundaries",
+      "text": "If $M=0$, set $\\rho=0$. This correction acts only on positive association; a negative $T$ and its negative correlation are retained. The maximum with zero in $\\mathcal R$ handles numerical round-off. H1 uses the original independent interval; H2, H3 and supplementary intervals are nominal without multiplicity adjustment. Equal-review paired intervals condition on the observed selections and do not include calibration or re-ranking uncertainty.",
+      "type": "paragraph"
+    },
+    {
+      "key": "bootstrap",
+      "level": 2,
+      "text": "Patient-bootstrap summaries",
+      "type": "heading"
+    },
+    {
+      "key": "bootstrap_definition",
+      "text": "Let $\\theta^{*(b)}$ denote the statistic in replicate $b$, and $\\mathcal V$ the set of replicates for which that statistic is finite. The descriptive percentile interval is",
+      "type": "paragraph"
+    },
+    {
+      "key": "bootstrap_ci",
+      "label": "S5",
+      "latex": "\\mathrm{CI}_{95\\%}^{\\mathrm{boot}}=[Q_{0.025}\\{\\theta^{*(b)}:b\\in\\mathcal V\\},\\ Q_{0.975}\\{\\theta^{*(b)}:b\\in\\mathcal V\\}].",
+      "note": "",
+      "essential": true,
+      "type": "equation",
+      "label_provisional": true
+    },
+    {
+      "key": "bootstrap_quantiles",
+      "text": "Quantiles use linear interpolation of the sorted finite replicate values. Undefined detection denominators remain missing; no values are imputed. The three calibration/sampling routes each use 10,000 patient-bootstrap replicates. Within each sampled patient record, A/B scores and the quality label remain paired; repeated patient draws are retained. Cohorts are resampled independently.",
+      "type": "paragraph"
+    },
+    {
+      "key": "bootstrap_joint_definition",
+      "text": "For joint direction summaries, let $\\mathcal V_J$ contain replicates with both external B-minus-A detection contrasts defined: $\\Delta_{\\mathrm{fixed}}^*$ at transferred thresholds and $\\Delta_{\\mathrm{equal}}^*$ at equal top-50 review. The four mutually exclusive empirical frequencies are",
+      "type": "paragraph"
+    },
+    {
+      "key": "bootstrap_original_opposite",
+      "label": "S6",
+      "latex": "\\begin{aligned}\\hat f_{+,-}&=\\frac{1}{\\lvert\\mathcal V_J\\rvert}\\sum_{b\\in\\mathcal V_J}\\mathbf1\\{\\Delta_{\\mathrm{fixed}}^{*(b)}>0,\\ \\Delta_{\\mathrm{equal}}^{*(b)}<0\\},\\\\\\hat f_{-,+}&=\\frac{1}{\\lvert\\mathcal V_J\\rvert}\\sum_{b\\in\\mathcal V_J}\\mathbf1\\{\\Delta_{\\mathrm{fixed}}^{*(b)}<0,\\ \\Delta_{\\mathrm{equal}}^{*(b)}>0\\}.\\end{aligned}",
+      "note": "",
+      "essential": true,
+      "type": "equation",
+      "label_provisional": true
+    },
+    {
+      "key": "bootstrap_tie_same",
+      "label": "S7",
+      "latex": "\\begin{aligned}\\hat f_0&=\\frac{1}{\\lvert\\mathcal V_J\\rvert}\\sum_{b\\in\\mathcal V_J}\\mathbf1\\{\\Delta_{\\mathrm{fixed}}^{*(b)}=0\\ \\mathrm{or}\\ \\Delta_{\\mathrm{equal}}^{*(b)}=0\\},\\\\\\hat f_{\\mathrm{same}}&=\\frac{1}{\\lvert\\mathcal V_J\\rvert}\\sum_{b\\in\\mathcal V_J}\\mathbf1\\{\\Delta_{\\mathrm{fixed}}^{*(b)}\\Delta_{\\mathrm{equal}}^{*(b)}>0\\}.\\end{aligned}",
+      "note": "",
+      "essential": true,
+      "type": "equation",
+      "label_provisional": true
+    },
+    {
+      "key": "bootstrap_frequency_meaning",
+      "text": "The original strict pattern is $(+,-)$, the opposite strict pattern is $(-,+)$, and the frequency of any strict reversal is $\\hat f_{+,-}+\\hat f_{-,+}$. A zero contrast is not a strict reversal. These frequencies describe resampling of the observed patients and are not p-values, posterior probabilities or population probabilities.",
+      "type": "paragraph"
+    },
+    {
+      "key": "bootstrap_empirical_support",
+      "text": "At the locked thresholds, the 16 external low-quality patients comprise 10 detected by both methods, none by A only, three by B only and three by neither. R1 cannot create an A-only detection from this empirical support, so its fixed-threshold B-minus-A distribution is structurally nonnegative. Its percentile interval does not exclude a population advantage for A. Bootstrap intervals supplement, and do not replace, the prespecified Newcombe intervals.",
+      "type": "paragraph"
+    },
+    {
+      "key": "kitagawa",
+      "level": 2,
+      "text": "Diagnostic-stratum accounting and standardization",
+      "type": "heading"
+    },
+    {
+      "key": "kitagawa_definition",
+      "text": "For cohort $c\\in\\{I,E\\}$ and dataset-reported diagnostic stratum $s\\in\\{\\mathrm{benign},\\mathrm{malignant}\\}$, write $d_{c,s}$ for the denominator and $u_{c,s}$ for its numerator. In the detection analysis, $d_{c,s}=F_{c,s}$ (low-quality patients) and $u_{c,s}=TP_{c,s}$ (flagged low-quality patients). In the review analysis, $d_{c,s}=N_{c,s}$ (all scored patients) and $u_{c,s}=R_{c,s}$ (flagged patients). Then",
+      "type": "paragraph"
+    },
+    {
+      "key": "stratum_rates_weights",
+      "label": "S8",
+      "latex": "p_{c,s}=\\frac{u_{c,s}}{d_{c,s}},\\qquad w_{c,s}=\\frac{d_{c,s}}{\\sum_t d_{c,t}},\\qquad P_c=\\frac{\\sum_s u_{c,s}}{\\sum_s d_{c,s}}.",
+      "note": "",
+      "essential": true,
+      "type": "equation",
+      "label_provisional": true
+    },
+    {
+      "key": "kitagawa_identity_definition",
+      "text": "When the stratum rates are defined, $P_c=\\sum_s w_{c,s}p_{c,s}$. The symmetric Kitagawa identity [13] partitions the external-minus-internal difference into a composition-associated term $C$ and a within-stratum-rate term $W$:",
+      "type": "paragraph"
+    },
+    {
+      "key": "kitagawa_total",
+      "label": "S9",
+      "latex": "\\Delta_{EI}=P_E-P_I=C+W.",
+      "note": "",
+      "essential": true,
+      "type": "equation",
+      "label_provisional": true
+    },
+    {
+      "key": "kitagawa_components",
+      "label": "S10",
+      "latex": "\\begin{aligned}C&=\\sum_s(w_{E,s}-w_{I,s})\\frac{p_{E,s}+p_{I,s}}{2},\\\\W&=\\sum_s(p_{E,s}-p_{I,s})\\frac{w_{E,s}+w_{I,s}}{2}.\\end{aligned}",
+      "note": "",
+      "essential": true,
+      "type": "equation",
+      "label_provisional": true
+    },
+    {
+      "key": "standardization_definition",
+      "text": "Using the arithmetic-mean common weights gives direct-standardized cohort rates and a standardized difference equal to $W$:",
+      "type": "paragraph"
+    },
+    {
+      "key": "common_weights",
+      "label": "S11",
+      "latex": "\\begin{aligned}w_s^*&=\\frac{w_{E,s}+w_{I,s}}{2},\\qquad P_c^{\\mathrm{std}}=\\sum_s w_s^*p_{c,s},\\\\P_E^{\\mathrm{std}}-P_I^{\\mathrm{std}}&=W.\\end{aligned}",
+      "note": "",
+      "essential": true,
+      "type": "equation",
+      "label_provisional": true
+    },
+    {
+      "key": "kitagawa_boundaries",
+      "text": "All weights and stratum rates are recalculated in each of 5,000 within-cohort patient-bootstrap replicates. A stratum rate with a zero denominator remains undefined, even if its weight is zero; the missing value propagates to any component that uses that rate. Overall rates are calculated from aggregate numerators and denominators and remain defined when the total denominator is positive. This leaves 4,999 valid detection-component replicates because one draw has no external benign low-quality patient; detection totals and all review terms have 5,000 valid replicates. Each term uses its own finite-value percentile interval. Point components add to the total before rounding; interval endpoints need not add. This post hoc accounting is descriptive, not causal attribution or a percent-explained analysis, and two diagnostic strata do not remove other confounding.",
+      "type": "paragraph"
+    },
+    {
+      "key": "replay",
+      "level": 2,
+      "text": "Numerical replay differences",
+      "type": "heading"
+    },
+    {
+      "key": "replay_definition",
+      "text": "For the six selected patients, let $v_{ij}^{\\mathrm{CPU}}$ and $v_{ij}^{\\mathrm{archive}}$ be the CPU-replayed and archived values of numerical field $j$. The eight fields are reference Dice, initial predicted IoU, risk A, risk B and the four initial-to-shifted Dice values. We calculated signed differences and maximum absolute differences as",
+      "type": "paragraph"
+    },
+    {
+      "key": "replay_errors",
+      "label": "S12",
+      "latex": "\\begin{aligned}\\delta_{ij}&=v_{ij}^{\\mathrm{CPU}}-v_{ij}^{\\mathrm{archive}},\\qquad\\epsilon_j=\\max_{i\\in\\mathcal I_6}\\lvert\\delta_{ij}\\rvert,\\\\\\epsilon_{\\mathrm{all}}&=\\max_{i\\in\\mathcal I_6,\\ j\\in\\{1,\\ldots,8\\}}\\lvert\\delta_{ij}\\rvert.\\end{aligned}",
+      "note": "",
+      "essential": true,
+      "type": "equation",
+      "label_provisional": true
+    },
+    {
+      "key": "replay_scope",
+      "text": "Here $\\mathcal I_6$ is the same six-patient subset, so $\\epsilon_{\\mathrm{all}}$ summarizes 48 numerical comparisons. Exact equality and agreement of the fixed review decisions were checked separately. Numerical agreement of selected scores or decisions does not establish pixel identity with the unarchived original CUDA masks, create independent patients, or demonstrate improved screening performance.",
+      "type": "paragraph"
+    }
+  ],
+  "implementation_notes_not_necessarily_printed": [
+    "Wilson uses NormalDist().inv_cdf(0.975), without continuity correction, and clips proportion limits to [0,1]. Newcombe difference bounds are not separately truncated to [-1,1].",
+    "paired_phi applies max(T−N/2,0) only if raw T>0. When T≤0 it retains T, including negative correlations. M=0 gives rho=0.",
+    "The Newcombe radius uses sqrt(max(variance,0)) for numerical roundoff. Zero comparison denominators return missing, not zero.",
+    "NumPy quantile method=linear: for sorted values v0,…,v(m−1), h=(m−1)q, j=floor(h), gamma=h−j; Qq=(1−gamma)vj+gamma*vmin(j+1,m−1). A separate displayed interpolation equation is unnecessary for the paper.",
+    "Three bootstrap routes preserve paired A/B scores/labels; patient duplicates remain separate draw records. R1/R3 share archived test draws and R2/R3 share archived development draws; do not describe the three routes as mutually independent simulations.",
+    "All original study comparisons retain original scores. Six-case CPU replay is a different environment, not the historical all-1,316-image same-environment zero-difference rerun.",
+    "Display delimiters are fixed rather than dynamically sized. The compact Tcorr=T−1{T>0}min(T,N/2) is algebraically identical to the code’s positive-only piecewise correction; M=0 is explicitly handled in prose."
+  ],
+  "main_equation_budget_recommendation": {
+    "target_display_groups": "11–14; combine paired definitions or related metrics into one aligned group when readable",
+    "retain_in_main": [
+      "Dice overlap",
+      "Reference-quality score and low-quality indicator",
+      "Confidence risk A",
+      "Mean prompt-consistency and disagreement risk B",
+      "Reference-informed prompt geometry if not already clear in prose",
+      "Threshold review flag",
+      "Development calibration objective with fewer-reviews tie-break",
+      "Nearest-integer equal-review count with fewer-at-half tie-break",
+      "Low-quality detection",
+      "Review fraction and misses per 100",
+      "Sensitivity/specificity/PPV/NPV grouped definitions if the main word/page budget allows",
+      "Three primary contrasts H1/H2/H3, with percentage-point factor100"
+    ],
+    "place_in_supplement": [
+      "Full Wilson bounds",
+      "Independent/paired Newcombe limits and corrected phi",
+      "Bootstrap quantile and joint category frequencies",
+      "Kitagawa terms and direct standardization",
+      "Six-case numerical replay errors"
+    ],
+    "avoid": [
+      "A training loss or an optimization objective for SAM, because weights were frozen",
+      "Using ground-truth IoU as the risk-A input; risk A consumes SAM raw predicted IoU",
+      "Presenting post hoc accounting/resampling as preregistered primary analysis",
+      "A sign frequency interpreted as a p-value or probability of population superiority"
+    ]
+  },
+  "sources": [
+    {
+      "path": "/workspace/research_source/submission/bmt_v9/Reproducibility/study_statistics.py",
+      "sha256": "d74c6de1d41bb27c337981024d256c398bd0426bf90dab23f2be23798d5d2128"
+    },
+    {
+      "path": "/workspace/research_source/experiments/cloud_validation_v1/scripts/bootstrap_stability.py",
+      "sha256": "86bd575634946c8810b22b962bf4ac73f83ced3751c4f9a30c348ef140728720"
+    },
+    {
+      "path": "/workspace/research_source/experiments/cloud_validation_v1/scripts/case_mix_decomposition.py",
+      "sha256": "818487d97e5ec9e34c594b724199b64f24d0590f2fed25c7c047dd5e9dc311ac"
+    },
+    {
+      "path": "/workspace/research_source/experiments/six_case_replay_v1/scripts/external_case_audit.py",
+      "sha256": "2fa13777d6b4fae4a9711577c5dad4efa6550b2253c5aba1131372270b044acc"
+    }
+  ]
+}

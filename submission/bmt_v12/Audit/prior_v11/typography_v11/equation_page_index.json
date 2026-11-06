@@ -1,0 +1,83 @@
+{
+  "BMT_main_manuscript_v11_preview.pdf": {
+    "pages": 23,
+    "equation_pages": [
+      {
+        "page": 5,
+        "labels": [
+          "1",
+          "2"
+        ]
+      },
+      {
+        "page": 6,
+        "labels": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      {
+        "page": 7,
+        "labels": [
+          "7",
+          "8",
+          "9"
+        ]
+      },
+      {
+        "page": 8,
+        "labels": [
+          "10",
+          "11"
+        ]
+      },
+      {
+        "page": 9,
+        "labels": [
+          "12"
+        ]
+      },
+      {
+        "page": 10,
+        "labels": [
+          "13",
+          "14"
+        ]
+      }
+    ]
+  },
+  "BMT_supplementary_material_v7_preview.pdf": {
+    "pages": 29,
+    "equation_pages": [
+      {
+        "page": 2,
+        "labels": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      {
+        "page": 3,
+        "labels": [
+          "S6",
+          "S7"
+        ]
+      },
+      {
+        "page": 4,
+        "labels": [
+          "S8",
+          "S9",
+          "S10",
+          "S11",
+          "S12"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,609 @@
+{
+  "purpose": "A4 supplementary manuscript integration: one original S6 case panel per page, production S6A/B unchanged",
+  "script": "/workspace/bmt_v9/scripts/redraw_case_layout_assets.py",
+  "script_sha256": "65a906602d669c62d30033bd37e367c9cf6f6b67de7915a5046da57dbaca14ab",
+  "panel_order": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "assets": [
+    {
+      "panel": "A",
+      "case_id": "case089",
+      "source_production_figure": "Figure_S6A",
+      "caption_continuation_label": "Supplementary Figure S6, panel A (case089).",
+      "width_inches": 6.89,
+      "height_inches": 4.362469135802469,
+      "png_pixels": [
+        4134,
+        2617
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "font_minimum_pt": 8,
+      "files": [
+        {
+          "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_A_case089.png",
+          "sha256": "18eff3bc7539f50d30920424f2d51d1e976efdd371bbbfb715edffb0a9578e4a",
+          "bytes": 1185223
+        },
+        {
+          "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_A_case089.pdf",
+          "sha256": "49e3dc4ad9b9f412b19cf501415d52ffcee1237546105733d8191fe027c30cc8",
+          "bytes": 1000842
+        }
+      ],
+      "preview": "/workspace/bmt_v9/qa/Figure_S6_case_A_case089_preview.png",
+      "source_npz_sha256": "4fd0f1a7b3167eaf99ea5d7e2543186ee457d073e66ef76618f306180be84f51",
+      "source_original_RGB_sha256_raw_C_order": "c270268c14ce1780bee45915364e7469e7c11feee286881a803d5e102959830f",
+      "reference_sha256_raw_C_order": "e148324855ec45b2b99717176ad9fbb6849e7173c47cd064364159c10e75f50c",
+      "five_actual_mask_sha256_raw_C_order": [
+        "02e930c173377c232bd75415c31eafc98d1e6a387f7a20d49b9286141f477058",
+        "a186c2c99c6e4257136f170307134f7b9dce3f4ae234b123a58e938d239a109b",
+        "74838d30de44422b43cec8e142e786f4fca207a9b5d0585ee0be2fbcd702d8e0",
+        "b356a84b06f64937bdd5bfc4cafa9d809d625c3754984bab4e7c14157560072c",
+        "7b661669d95adb39bda6e3f37c8e922263dcd50e2eeea4ffa59cd8ec1c85d3a3"
+      ],
+      "prediction_foreground_pixels": [
+        1365,
+        1436,
+        1320,
+        1511,
+        1436
+      ],
+      "CPU_values": {
+        "dice_vs_reference": 0.31909990511047853,
+        "risk_A": 0.10408079624176025,
+        "risk_B": 0.041227634448447126
+      },
+      "shift_Dice_vs_initial": {
+        "left": 0.9746519100321314,
+        "right": 0.976536312849162,
+        "up": 0.9492350486787204,
+        "down": 0.9346661906461978
+      },
+      "source_pixel_validation": {
+        "all_five_PDF_rasters_match_native_original_RGB": true,
+        "pdf_images": [
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          }
+        ],
+        "full_field_and_aspect_preserved": true,
+        "no_pixel_enhancement_no_grayscale_conversion_no_inference": true,
+        "actual_masks_and_boxes_unchanged": true
+      },
+      "layout_QA": {
+        "all_text_in_page_bounds": true,
+        "pdf_min_font_pt": 8.0,
+        "visual_review": "Full native PDF render inspected: all five full-FOV images, panel label, CPU metrics, four direction titles and shared legend readable; no overlap or clipping. Case175 upper-edge band preserved."
+      },
+      "lossless_PNG_optimization": "Opaque RGBA converted to exact RGB; all alpha=255 verified; optimize=True, compress_level=9, 600dpi metadata."
+    },
+    {
+      "panel": "B",
+      "case_id": "case175",
+      "source_production_figure": "Figure_S6A",
+      "caption_continuation_label": "Supplementary Figure S6, panel B (case175).",
+      "width_inches": 6.89,
+      "height_inches": 3.7,
+      "png_pixels": [
+        4134,
+        2220
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "font_minimum_pt": 8,
+      "files": [
+        {
+          "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_B_case175.png",
+          "sha256": "ba8382bdc9355b19200fc2317113bff7d43ffe3b35a0f20066f53fc42bc2e022",
+          "bytes": 1744350
+        },
+        {
+          "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_B_case175.pdf",
+          "sha256": "b8ab06e123a10ac5c90c099bbd249df0fb85bf865e260165f9f5ace1793fbe10",
+          "bytes": 1360869
+        }
+      ],
+      "preview": "/workspace/bmt_v9/qa/Figure_S6_case_B_case175_preview.png",
+      "source_npz_sha256": "4eed039771a9bb640c712ecdae7b3b79896a4909eb69b5c840123714385e549e",
+      "source_original_RGB_sha256_raw_C_order": "6d0cfaab3cd612fc942e3f4002a772baa64b17289f18c30d5d8d0441ceeaf00c",
+      "reference_sha256_raw_C_order": "a28a01d0b09f0feed10c1b980f2090f0270e3f1f54080477c725f8b052e27a74",
+      "five_actual_mask_sha256_raw_C_order": [
+        "d3c3171739f4bd65909615ed8b4c32cbf23d39993c321462e38c004bee35e05f",
+        "d3925efd1e5a659436c18933848a11bfcf218239e4c3e5daa61a5c0da07458ba",
+        "1580ead157ac45d45eb8b00a9bdc4ee1545ed67ef443d24d361608ca411fd19c",
+        "f5d7d66fec201301f3d701d454274e9b975ce86cb74e71e160f3f31b25da94e2",
+        "0abf89dde804572fb0e5fef538e8dc273866c8f5f419d3f627f092bc987626e9"
+      ],
+      "prediction_foreground_pixels": [
+        3861,
+        3958,
+        3816,
+        3846,
+        4351
+      ],
+      "CPU_values": {
+        "dice_vs_reference": 0.02928704996181095,
+        "risk_A": 0.11494165658950806,
+        "risk_B": 0.020034547593127616
+      },
+      "shift_Dice_vs_initial": {
+        "left": 0.9873385343394296,
+        "right": 0.9941383352872216,
+        "up": 0.9980537173997664,
+        "down": 0.9403312226010716
+      },
+      "source_pixel_validation": {
+        "all_five_PDF_rasters_match_native_original_RGB": true,
+        "pdf_images": [
+          {
+            "native_width": 789,
+            "native_height": 542,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 789,
+            "native_height": 542,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 789,
+            "native_height": 542,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 789,
+            "native_height": 542,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 789,
+            "native_height": 542,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          }
+        ],
+        "full_field_and_aspect_preserved": true,
+        "no_pixel_enhancement_no_grayscale_conversion_no_inference": true,
+        "actual_masks_and_boxes_unchanged": true
+      },
+      "layout_QA": {
+        "all_text_in_page_bounds": true,
+        "pdf_min_font_pt": 8.0,
+        "visual_review": "Full native PDF render inspected: all five full-FOV images, panel label, CPU metrics, four direction titles and shared legend readable; no overlap or clipping. Case175 upper-edge band preserved."
+      },
+      "lossless_PNG_optimization": "Opaque RGBA converted to exact RGB; all alpha=255 verified; optimize=True, compress_level=9, 600dpi metadata."
+    },
+    {
+      "panel": "C",
+      "case_id": "case238",
+      "source_production_figure": "Figure_S6A",
+      "caption_continuation_label": "Supplementary Figure S6, panel C (case238).",
+      "width_inches": 6.89,
+      "height_inches": 4.362469135802469,
+      "png_pixels": [
+        4134,
+        2617
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "font_minimum_pt": 8,
+      "files": [
+        {
+          "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_C_case238.png",
+          "sha256": "c2eddfd03efa20306b32fc831e0f19db691d6c9ece65d9c09b5aee6298588e52",
+          "bytes": 1178270
+        },
+        {
+          "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_C_case238.pdf",
+          "sha256": "76e5ca10b5aa85483255337ff040bb3d89578aae216d50f48f4de48b8c465bdf",
+          "bytes": 867495
+        }
+      ],
+      "preview": "/workspace/bmt_v9/qa/Figure_S6_case_C_case238_preview.png",
+      "source_npz_sha256": "e692e958d61e11b92c7b38c0569eb8a2aafd16d8b34af49be56a0259fe6b12e3",
+      "source_original_RGB_sha256_raw_C_order": "2d2e4896e921e08010122e58235cb3c8d7565737845e391ec3df08dea2be3f55",
+      "reference_sha256_raw_C_order": "ac4015a3e78a7a4b16709e17e664fca0a082a8f4b1ed3036d1f11ba41084942a",
+      "five_actual_mask_sha256_raw_C_order": [
+        "500a134041bc7136bc11964942569235c90ca1c24a562863169f6a9962f5a96c",
+        "28af8548e2966d9029eb0365eace78134382a681f8776a20168fcfdcd6294a2c",
+        "086953f0f2f4d593f82b5a0dfcd806b16a5e3cc1fc8d865643a3a3967bf23d9e",
+        "6ba8e830d04d2c3023d03a9be030151ee58cc882d202bad9014d99f58f5255ea",
+        "5e6685050d089de0d089fb0bc480210c97053e7ceb60f85e886fe58a6d451836"
+      ],
+      "prediction_foreground_pixels": [
+        5054,
+        5105,
+        5094,
+        5101,
+        5028
+      ],
+      "CPU_values": {
+        "dice_vs_reference": 0.681269798476781,
+        "risk_A": 0.038918256759643555,
+        "risk_B": 0.005717084876207368
+      },
+      "shift_Dice_vs_initial": {
+        "left": 0.9945860813072153,
+        "right": 0.9932991722506898,
+        "up": 0.9920236336779912,
+        "down": 0.997222773259274
+      },
+      "source_pixel_validation": {
+        "all_five_PDF_rasters_match_native_original_RGB": true,
+        "pdf_images": [
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          }
+        ],
+        "full_field_and_aspect_preserved": true,
+        "no_pixel_enhancement_no_grayscale_conversion_no_inference": true,
+        "actual_masks_and_boxes_unchanged": true
+      },
+      "layout_QA": {
+        "all_text_in_page_bounds": true,
+        "pdf_min_font_pt": 8.0,
+        "visual_review": "Full native PDF render inspected: all five full-FOV images, panel label, CPU metrics, four direction titles and shared legend readable; no overlap or clipping. Case175 upper-edge band preserved."
+      },
+      "lossless_PNG_optimization": "Opaque RGBA converted to exact RGB; all alpha=255 verified; optimize=True, compress_level=9, 600dpi metadata."
+    },
+    {
+      "panel": "D",
+      "case_id": "case024",
+      "source_production_figure": "Figure_S6B",
+      "caption_continuation_label": "Supplementary Figure S6, panel D (case024).",
+      "width_inches": 6.89,
+      "height_inches": 4.298986175115207,
+      "png_pixels": [
+        4134,
+        2579
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "font_minimum_pt": 8,
+      "files": [
+        {
+          "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_D_case024.png",
+          "sha256": "5f733e63f18df8990c96de47bb3050be86f7ce1ee96cc7f6dfd941d5ad8ae467",
+          "bytes": 1191939
+        },
+        {
+          "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_D_case024.pdf",
+          "sha256": "9f26edc2d7553ffae1ab65458b2395ecdd428cae34a83cfa7a40f86764832ea6",
+          "bytes": 758064
+        }
+      ],
+      "preview": "/workspace/bmt_v9/qa/Figure_S6_case_D_case024_preview.png",
+      "source_npz_sha256": "5ba9ca812255cd357232865f434cd2f1b8f287ce266c46bf23e3609d35d0b748",
+      "source_original_RGB_sha256_raw_C_order": "e5cd37d4d7a03b91c8f27403e908880c5c1902be54adf4b9bb439663cc622a5a",
+      "reference_sha256_raw_C_order": "926ec454931525d85fcf4bcfe469bdede0c3d78ed41082d84c7956552e5c1fb6",
+      "five_actual_mask_sha256_raw_C_order": [
+        "986487bab9c7e04f963c9d33604703bf5ecfbdf4e7755e00ef1d1601720ec9e0",
+        "ce05f57ced6c9ced8e935e667a8ffc193c64e1c72ac148b77af015617e5f4902",
+        "33327d6070254df4effb0e9c83673646e73efebf274a78192796d1b4731191db",
+        "4f64144eece3bcac179ce7b5930b7d4cf4ba30ee2027ecfe6f89355a287f16a6",
+        "2d037a566ba6d44dd7d3008630a8a60fc7634caf01175b09a690ec34dec398bb"
+      ],
+      "prediction_foreground_pixels": [
+        12316,
+        11704,
+        8878,
+        8043,
+        12537
+      ],
+      "CPU_values": {
+        "dice_vs_reference": 0.6851387914620704,
+        "risk_A": 0.05452531576156616,
+        "risk_B": 0.1100879581784645
+      },
+      "shift_Dice_vs_initial": {
+        "left": 0.9645295587010825,
+        "right": 0.837218080588846,
+        "up": 0.7870720565843116,
+        "down": 0.970828471411902
+      },
+      "source_pixel_validation": {
+        "all_five_PDF_rasters_match_native_original_RGB": true,
+        "pdf_images": [
+          {
+            "native_width": 433,
+            "native_height": 469,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 433,
+            "native_height": 469,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 433,
+            "native_height": 469,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 433,
+            "native_height": 469,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 433,
+            "native_height": 469,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          }
+        ],
+        "full_field_and_aspect_preserved": true,
+        "no_pixel_enhancement_no_grayscale_conversion_no_inference": true,
+        "actual_masks_and_boxes_unchanged": true
+      },
+      "layout_QA": {
+        "all_text_in_page_bounds": true,
+        "pdf_min_font_pt": 8.0,
+        "visual_review": "Full native PDF render inspected: all five full-FOV images, panel label, CPU metrics, four direction titles and shared legend readable; no overlap or clipping. Case175 upper-edge band preserved."
+      },
+      "lossless_PNG_optimization": "Opaque RGBA converted to exact RGB; all alpha=255 verified; optimize=True, compress_level=9, 600dpi metadata."
+    },
+    {
+      "panel": "E",
+      "case_id": "case105",
+      "source_production_figure": "Figure_S6B",
+      "caption_continuation_label": "Supplementary Figure S6, panel E (case105).",
+      "width_inches": 6.89,
+      "height_inches": 3.7,
+      "png_pixels": [
+        4134,
+        2220
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "font_minimum_pt": 8,
+      "files": [
+        {
+          "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_E_case105.png",
+          "sha256": "44ba2d75ca237f98b17274466aa45ba7bf119a9c4c16ab0eddb25f3e2b310858",
+          "bytes": 2052835
+        },
+        {
+          "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_E_case105.pdf",
+          "sha256": "137e547111df013af9ce0b3f419f69542c171d18ec73db68195a8ddb82b9540b",
+          "bytes": 1673193
+        }
+      ],
+      "preview": "/workspace/bmt_v9/qa/Figure_S6_case_E_case105_preview.png",
+      "source_npz_sha256": "8c83a723f77528bc9257eb86d18c9cc68ef6d7a43da4a061e81c775c1dce9a72",
+      "source_original_RGB_sha256_raw_C_order": "1d59feee63533a5be838f4a675fbd9bcc8533be305f25bb4aebd9b67876af533",
+      "reference_sha256_raw_C_order": "92236978cc61485b6b45d6aded04ca3c09611053b9e12855c3b75f5f92d322c6",
+      "five_actual_mask_sha256_raw_C_order": [
+        "1afb70f042c857a80862cef83ffeb5b86b09258d839e7bbdd96f526c9af1f4fa",
+        "727203152f66f6c720c77ac5f19929ddd8b01e9e2930c14f59c486e225e938e2",
+        "373ba0c0383899e8159df2b43dcb62a236c10da21ab142b6a3ed129367ed16a0",
+        "f0eadc5aa2c833352f4d960c1e4b0e995ad7eb65f1d95abd7d252f4fbef6a60d",
+        "d826e7c60218fc8b12508bb381d0ffa290c25b2d537e779b128c26236d4f40d3"
+      ],
+      "prediction_foreground_pixels": [
+        271052,
+        37844,
+        256818,
+        263597,
+        245371
+      ],
+      "CPU_values": {
+        "dice_vs_reference": 0.6545790284014119,
+        "risk_A": 0.10247379541397095,
+        "risk_B": 0.26002996431242686
+      },
+      "shift_Dice_vs_initial": {
+        "left": 0.24502097793432093,
+        "right": 0.9011574819557846,
+        "up": 0.9024874263301718,
+        "down": 0.9112142565300151
+      },
+      "source_pixel_validation": {
+        "all_five_PDF_rasters_match_native_original_RGB": true,
+        "pdf_images": [
+          {
+            "native_width": 831,
+            "native_height": 538,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 831,
+            "native_height": 538,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 831,
+            "native_height": 538,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 831,
+            "native_height": 538,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 831,
+            "native_height": 538,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          }
+        ],
+        "full_field_and_aspect_preserved": true,
+        "no_pixel_enhancement_no_grayscale_conversion_no_inference": true,
+        "actual_masks_and_boxes_unchanged": true
+      },
+      "layout_QA": {
+        "all_text_in_page_bounds": true,
+        "pdf_min_font_pt": 8.0,
+        "visual_review": "Full native PDF render inspected: all five full-FOV images, panel label, CPU metrics, four direction titles and shared legend readable; no overlap or clipping. Case175 upper-edge band preserved."
+      },
+      "lossless_PNG_optimization": "Opaque RGBA converted to exact RGB; all alpha=255 verified; optimize=True, compress_level=9, 600dpi metadata."
+    },
+    {
+      "panel": "F",
+      "case_id": "case222",
+      "source_production_figure": "Figure_S6B",
+      "caption_continuation_label": "Supplementary Figure S6, panel F (case222).",
+      "width_inches": 6.89,
+      "height_inches": 4.362469135802469,
+      "png_pixels": [
+        4134,
+        2617
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "font_minimum_pt": 8,
+      "files": [
+        {
+          "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_F_case222.png",
+          "sha256": "639f441ba7dbd215ea5f18b55936ec71e2ae2149dd0096cff61e9b8f6f799986",
+          "bytes": 1882769
+        },
+        {
+          "file": "/workspace/bmt_v9/layout_assets/Figure_S6_case_F_case222.pdf",
+          "sha256": "86e6195bfe7fca7b5f1a21c4af2a87651ab0dd1f3c2f8c177e147ec4541b6ad7",
+          "bytes": 1073020
+        }
+      ],
+      "preview": "/workspace/bmt_v9/qa/Figure_S6_case_F_case222_preview.png",
+      "source_npz_sha256": "457105cca958c3f386fa2b9969057e443b324cc51b30addaf3273a09ba32e0f9",
+      "source_original_RGB_sha256_raw_C_order": "ee0e85f74686c6b71fe1fa0a1d2b7a34f446c0efa72a6ff22418d3030cd1e370",
+      "reference_sha256_raw_C_order": "46fb47ab88652f91c3c2a90d21e1c5a505a75136cf1dda4cfdaeb4eb15ebcda9",
+      "five_actual_mask_sha256_raw_C_order": [
+        "bfb7cfee3f73f30a7d5f0f74ed148f747d80ff0de07dc35f321b6c745860b5a6",
+        "7a121e0c829b1eecabbf4c966df03d818228b1873ac660a280e37531afc761db",
+        "59a92a6b46451f60fce2a3ceb0c96e7e9e51e279f90d3f1ee68ed9238823aead",
+        "df5106faa5c58466bc826eeb7fbe8f17b61851962a536f5c84fdd16b7206b2de",
+        "82965a34f69368751580c13a9e2907b7ad69d6a41610a08f0ff0ebfc2f250281"
+      ],
+      "prediction_foreground_pixels": [
+        42115,
+        20360,
+        42487,
+        38118,
+        30467
+      ],
+      "CPU_values": {
+        "dice_vs_reference": 0.5784646061814557,
+        "risk_A": 0.12703347206115723,
+        "risk_B": 0.20173358332477698
+      },
+      "shift_Dice_vs_initial": {
+        "left": 0.6492517006802722,
+        "right": 0.8383016949953902,
+        "up": 0.8715865043062082,
+        "down": 0.8339257667190213
+      },
+      "source_pixel_validation": {
+        "all_five_PDF_rasters_match_native_original_RGB": true,
+        "pdf_images": [
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          },
+          {
+            "native_width": 485,
+            "native_height": 537,
+            "exact_RGB_array_match_after_PDF_scanline_correction": true
+          }
+        ],
+        "full_field_and_aspect_preserved": true,
+        "no_pixel_enhancement_no_grayscale_conversion_no_inference": true,
+        "actual_masks_and_boxes_unchanged": true
+      },
+      "layout_QA": {
+        "all_text_in_page_bounds": true,
+        "pdf_min_font_pt": 8.0,
+        "visual_review": "Full native PDF render inspected: all five full-FOV images, panel label, CPU metrics, four direction titles and shared legend readable; no overlap or clipping. Case175 upper-edge band preserved."
+      },
+      "lossless_PNG_optimization": "Opaque RGBA converted to exact RGB; all alpha=255 verified; optimize=True, compress_level=9, 600dpi metadata."
+    }
+  ],
+  "shared_caption_source": "/workspace/bmt_v9/evidence/case_figures.json:captions.Figure_S6",
+  "shared_caption_placement": "Use complete shared S6 caption once, then continuation labels A–F on subsequent case pages.",
+  "within_case_mapping": {
+    "left": "reference + initial CPU prediction + initial actual prompt",
+    "top_right_grid_left": "actual left-shift prediction",
+    "top_right_grid_right": "actual right-shift prediction",
+    "bottom_right_grid_left": "actual up-shift prediction",
+    "bottom_right_grid_right": "actual down-shift prediction"
+  },
+  "display_rules": "Identical to production S6: full FOV/native RGB, nearest-neighbor PNG, native-raster PDF, padded binary 0.5 contours, 8pt minimum.",
+  "all_six_visual_reviews_passed": true,
+  "total_six_PNG_bytes": 9235386
+}

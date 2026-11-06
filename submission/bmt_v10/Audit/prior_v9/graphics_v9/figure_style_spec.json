@@ -1,0 +1,54 @@
+{
+  "purpose": "Conventional scientific publication figures redrawn from verified records and actual arrays; no generative image synthesis",
+  "font_family": "Liberation Sans",
+  "font_equivalence": "Arial-metric compatible installed font",
+  "font_size_pt": 9,
+  "minimum_pt": 7.5,
+  "panel_letters": "uppercase bold 10pt placed outside axes without overlapping headings",
+  "full_width_inches": 6.89,
+  "single_width_inches": 3.35,
+  "png_dpi": 600,
+  "exports": [
+    "png",
+    "pdf",
+    "svg"
+  ],
+  "style": {
+    "background": "white",
+    "axes": "black 0.7pt left/bottom only",
+    "grid": "none or very light horizontal when essential",
+    "interval_linewidth_pt": 1.0,
+    "data_linewidth_pt": 1.2,
+    "marker_size_pt": 4.0,
+    "no_gradients": true,
+    "no_decorative_icons": true,
+    "no_shadows_or_rounded_cards": true,
+    "legends": "direct labels or compact single shared legend; captions outside graphic"
+  },
+  "colors": {
+    "A": "#0072B2",
+    "B": "#D55E00",
+    "fixed": "#303030",
+    "equal": "#0072B2",
+    "reference": "#0072B2",
+    "prediction": "#D55E00",
+    "prompt": "#777777",
+    "neutral": "#666666"
+  },
+  "case_images": {
+    "pixels": "released ultrasound inputs unchanged, no contrast enhancement or invented anatomy",
+    "masks": "actual archived/captured boolean arrays only",
+    "rendering": "nearest-neighbor; full field preserved unless identical explicitly documented crop",
+    "boundary": "contours at binary0.5; all foreground preserved",
+    "case_id_and_CPU_vs_CUDA_provenance": "explicit in caption"
+  },
+  "scientific_invariants": [
+    "original H1-H3 and Newcombe intervals unchanged",
+    "all 8 budgets shown",
+    "empirical bootstrap frequencies are not p-values/population probabilities",
+    "Kitagawa is descriptive, not causal",
+    "6cases are existing patients; 30 masks are not 30 patients",
+    "R1 zero A-only support constraint retained"
+  ],
+  "format_authority": "BMT current official author guide; no publisher logo or journal-page imitation"
+}

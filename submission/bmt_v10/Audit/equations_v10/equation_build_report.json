@@ -1,0 +1,129 @@
+{
+  "created_utc": "2026-11-06T12:19:43.884441+00:00",
+  "scope": "Explicit equations for existing analyses; no experiment or numerical-result change",
+  "main": {
+    "source": "/workspace/research_source/submission/bmt_v9/BMT_main_manuscript_v9.docx",
+    "source_sha256": "5ea44cbc38262f3a60ecc3a76299c3518bed41a8d4979db799b28f94361b3737",
+    "output": "/workspace/bmt_v10/outputs/BMT_main_manuscript_v10.docx",
+    "sha256": "7c09377e4edb101f316c6b6bfe419fe1d39d8bda50185ebc837834e5e1edf95f",
+    "replaced_method_paragraphs": 12,
+    "all_other_paragraphs_exact": true,
+    "table_cells_exact": true,
+    "table_cell_count": 66,
+    "references_exact_count": 15,
+    "body_words_including_math_text": 3925,
+    "abstract_unchanged": true,
+    "results_discussion_declarations_exact": true,
+    "numbered_display_equations": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "office_math_objects": 68,
+    "image_media_count": 0,
+    "editable_native_math": true,
+    "illustrated": {
+      "path": "/workspace/bmt_v10/outputs/BMT_main_manuscript_v10_illustrated.docx",
+      "sha256": "b09a5f215d0296a6814099b8f45ee9cfb645a77d6407bd47454dfbab4c01b7d3",
+      "purpose": "Optional reading copy with five new main figures and repeated exact legends at the end",
+      "formal_submission_file": "/workspace/bmt_v10/outputs/BMT_main_manuscript_v10.docx",
+      "added_figure_plates": [
+        "/workspace/bmt_v10/outputs/Figures/Figure_1.png",
+        "/workspace/bmt_v10/outputs/Figures/Figure_2.png",
+        "/workspace/bmt_v10/outputs/Figures/Figure_3.png",
+        "/workspace/bmt_v10/outputs/Figures/Figure_4.png",
+        "/workspace/bmt_v10/outputs/Figures/Figure_5.png"
+      ],
+      "plate_caption_style": "10.5 pt, 1.1 lines; chosen compact reading-copy style",
+      "image_package_audit": {
+        "media_file_count": 5,
+        "media_files": [
+          "word/media/image1.png",
+          "word/media/image2.png",
+          "word/media/image3.png",
+          "word/media/image4.png",
+          "word/media/image5.png"
+        ],
+        "embedded_media_sha256": [
+          "295e44479818fc08623a070b2a4179e1a8d1715f3bc5ee5095cf6b7c9739bf26",
+          "66ba502a0a7770acf6ecc4264e4604295b91fcfcec01742ce4c5dc48291ef7c9",
+          "6a471c1f12195090ed4da6bb3bdffabb233dca76756bd9f734a28beb3c0da65d",
+          "a56dd46973a00b0719bbb492e28fc0846010aeac6e70398284416a09915306f3",
+          "d940b1b6ab7025428a013421d7523e4e6fd36020e7042c21bb78b49d5515188d"
+        ],
+        "all_explicit_xml_relationships_resolve": true,
+        "embedded_media_exactly_match_expected_final_figures": true
+      }
+    }
+  },
+  "supplement": {
+    "source": "/workspace/research_source/submission/bmt_v9/BMT_supplementary_material_v5.docx",
+    "source_sha256": "1c3b4f77e6cb7fc11e486da9ec79485981e7b5a0ecbf482a307968767b21b5a1",
+    "output": "/workspace/bmt_v10/outputs/BMT_supplementary_material_v6.docx",
+    "sha256": "6261492ff9b26200c35f75d30a30604021c4e6d3b67030c733b9a55a59d958a6",
+    "all_prior_scientific_paragraphs_exact": true,
+    "table_cells_exact": true,
+    "table_cell_count": 878,
+    "separate_S6_filename_only_updated": true,
+    "S6_bytes_unchanged": true,
+    "numbered_display_equations": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8",
+      "S9",
+      "S10",
+      "S11",
+      "S12"
+    ],
+    "office_math_objects": 56,
+    "image_media_count": 5,
+    "editable_native_math": true
+  },
+  "pandoc_version": "pandoc 3.1.11.1",
+  "equation_format": "Native editable Office Math, generated from audited TeX; no formula images",
+  "rendering_fix": "Delimiter properties normalized to OOXML schema order for correct LibreOffice right brackets/bars",
+  "figures_unchanged": true,
+  "final_documents_pending": false,
+  "previews": [
+    {
+      "path": "/workspace/bmt_v10/outputs/BMT_main_manuscript_v10_preview.pdf",
+      "sha256": "c22cfd6e30f7d85d6db500cb3ad604a902405722c5bf09cbf2a2732583b9fc50"
+    },
+    {
+      "path": "/workspace/bmt_v10/outputs/BMT_main_manuscript_v10_illustrated_preview.pdf",
+      "sha256": "8cd0fbfc0a949f212046655fe54718dc9b948d2f029517a9f4a0a05304045329"
+    },
+    {
+      "path": "/workspace/bmt_v10/outputs/BMT_supplementary_material_v6_preview.pdf",
+      "sha256": "44926b7515d64d9eb3020ec8a9bb8336665fe38f46ed515991e261ea17b77ba0"
+    }
+  ],
+  "final_independent_reports": {
+    "mathematics": {
+      "path": "/workspace/bmt_v10/evidence/independent_mathematics_qa.json",
+      "sha256": "8436e151e2c5900ae0b7fcf8367e464bf5876a7ee3b011d7095577c316e75cd5",
+      "checks_passed": 83
+    },
+    "layout": {
+      "path": "/workspace/bmt_v10/evidence/independent_layout_qa.json",
+      "sha256": "79dd8b898a61f577d35af25dce21a716c39b9fe6fe43ab8500717fffd496d18c",
+      "checks_passed": 50
+    }
+  }
+}

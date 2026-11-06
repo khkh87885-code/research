@@ -1,0 +1,158 @@
+[
+  {
+    "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_1.png",
+    "name": "Figure_1.png",
+    "sha256": "a71a632b3f2d73852185991e93ef6317e7d0ebbc9c1eaa7180120736f0ea08e1",
+    "size_px": [
+      4133,
+      1842
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_2.png",
+    "name": "Figure_2.png",
+    "sha256": "7987c816c6834b2f83d0ad86acda1906b242aad09f0ea1010f583739b21a09ca",
+    "size_px": [
+      4133,
+      2551
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_3.png",
+    "name": "Figure_3.png",
+    "sha256": "57b94a597e677452c99eac2783a6128b408b703a41788b68571250dc9dce9348",
+    "size_px": [
+      4133,
+      1653
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_4.png",
+    "name": "Figure_4.png",
+    "sha256": "5b33fde19a1a1cc80a555ae7e7ccf4d39b340486fe06f04d7e598fe84956dc1c",
+    "size_px": [
+      4133,
+      3377
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_5.png",
+    "name": "Figure_5.png",
+    "sha256": "237d9c30dc0362e473ec376504ba194730a290faa81f5b9caf0084a1367aa6ba",
+    "size_px": [
+      4134,
+      4620
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_S1.png",
+    "name": "Figure_S1.png",
+    "sha256": "9c58957f8f893a3c9a7a05a745c3c8ba6a337c8d6d5a444e592147471bb40392",
+    "size_px": [
+      4133,
+      2385
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_S2.png",
+    "name": "Figure_S2.png",
+    "sha256": "f5e0ab1c1680b8ed909cdf65596301d98b7ded647f55ced2a2d4960f92a5d98e",
+    "size_px": [
+      4133,
+      1960
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_S3.png",
+    "name": "Figure_S3.png",
+    "sha256": "bf145d14161c47daff18a167e036e82173f924f6b9dda0cfec836a8c334ca215",
+    "size_px": [
+      3840,
+      3690
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_S4.png",
+    "name": "Figure_S4.png",
+    "sha256": "489f73e4f26beabc0504899b3013eb14ed1b9e8c189d0006f3dc9cb9e7932606",
+    "size_px": [
+      3840,
+      4080
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_S5.png",
+    "name": "Figure_S5.png",
+    "sha256": "0c8e8dd0152e1f6786f93bd91901bdbb10cfda50bbb8da7152b45eedd4e9af19",
+    "size_px": [
+      3840,
+      2190
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_S6A.png",
+    "name": "Figure_S6A.png",
+    "sha256": "237d9c30dc0362e473ec376504ba194730a290faa81f5b9caf0084a1367aa6ba",
+    "size_px": [
+      4134,
+      4620
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "file": "/workspace/research_source/submission/bmt_v8_final/Figures/Figure_S6B.png",
+    "name": "Figure_S6B.png",
+    "sha256": "f9e4c85b93d8fcc5aacf972612a9295864b55156c40e4bf29ef4b6cc8decd97d",
+    "size_px": [
+      4134,
+      4620
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  }
+]

@@ -1,0 +1,251 @@
+{
+  "checked_on": "2026-11-06",
+  "journal": "Biomedical Engineering / Biomedizinische Technik (BMT)",
+  "article_type": "Research Article",
+  "sources": {
+    "instructions": {
+      "url": "https://www.degruyterbrill.com/publication/journal_key/BMTE/downloadAsset/BMTE_Instructions%20for%20Authors.pdf",
+      "retrieved_on": "2026-11-06",
+      "live_fetch_requested": true,
+      "maxAge": 0,
+      "http_status": 200,
+      "format_received": "Firecrawl parsed markdown; not original PDF binary",
+      "reported_pages": 11,
+      "scrape_id": "01a1b09a-b6c4-713d-a637-056778ae1800",
+      "local_evidence": "official_live_instructions_firecrawl.json",
+      "version_date": "December 2024",
+      "version_date_basis": "Previously independently extracted official PDF page 1 in /workspace/bmt_v7/evidence/official_pdf_pages_1_4_10.txt; current live parser omitted the page-header date."
+    },
+    "research_article_template": {
+      "url": "https://www.degruyterbrill.com/publication/journal_key/BMTE/downloadAsset/BMTE_Template%20for%20Research%20Articles.docx",
+      "retrieved_on": "2026-11-06",
+      "live_fetch_requested": true,
+      "maxAge": 0,
+      "http_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "format_received": "Firecrawl content transcription (markdown/rawHtml)",
+      "original_binary_obtained": false,
+      "word_style_evidence_available": false,
+      "scrape_id": "01a1b09a-b624-742c-95a0-05fd72a85b9f",
+      "local_evidence": "official_live_article_template_firecrawl.json"
+    },
+    "journal": {
+      "url": "https://www.degruyterbrill.com/journal/key/bmte/html",
+      "retrieved_on": "2026-11-06",
+      "live_fetch_requested": true,
+      "maxAge": 0,
+      "http_status": 200,
+      "scrape_id": "01a1b09b-8533-753e-bb5d-0a5282cdb8f1",
+      "current_links_confirmed": [
+        "Instructions for Authors",
+        "Template for Research Articles",
+        "LaTeX Template",
+        "Template for Ethical and Legal Declarations"
+      ],
+      "local_evidence": "official_live_journal_submit_excerpt.json"
+    },
+    "declarations_template": {
+      "url": "https://www.degruyterbrill.com/publication/journal_key/BMTE/downloadAsset/BMTE_Template%20for%20Ethical%20and%20Legal%20Declarations.docx",
+      "format_received": "Pre-existing original binary DOCX from earlier official retrieval; read independently with python-docx",
+      "original_binary_obtained": true,
+      "local_resource": "/workspace/bmt_v9/resources/official_declarations_template_original.docx",
+      "sha256": "8facc5b46d8dc245e1814a9f749e2ddc4d84e2189b20ea9f511886c38d9ef230"
+    }
+  },
+  "submission_vs_publication": {
+    "explicit_evidence": "Instructions p. 9 says exact figure/table positioning cannot be determined until manuscript has been typeset. Instructions p. 7 says running head appears atop each page of final version. Declarations p. 8 are inserted into final typeset article.",
+    "conclusion": "Submission manuscript and final published/typeset article are distinct stages. Published two-column layouts, logos and mastheads do not establish mandatory submission page geometry.",
+    "published_article_column_count_independently_verified_here": false
+  },
+  "requirements": [
+    {
+      "id": "submission_format",
+      "classification": "official_explicit",
+      "source": "instructions p. 7",
+      "requirement": "Microsoft Word or LaTeX manuscripts may be submitted; LaTeX requires a complete PDF as Main Document. Individual word processor templates are provided."
+    },
+    {
+      "id": "first_page",
+      "classification": "official_explicit",
+      "source": "instructions p. 7",
+      "requirement": "Author names, title/short title and affiliations are supplied on the first page. At least one given name and family name in full; corresponding author has * after family name. All current author facts previously approved must be retained."
+    },
+    {
+      "id": "running_title",
+      "classification": "official_explicit",
+      "source": "instructions p. 7",
+      "requirement": "Short title at most 75 characters including spaces. It is displayed at the top of each page in the final version. Main title/subtitle sentence case; lowercase after a colon."
+    },
+    {
+      "id": "affiliations",
+      "classification": "official_explicit",
+      "source": "instructions p. 7",
+      "requirement": "Corresponding author: email, department, institution, street, city, postal code, country. Other authors: department, institution, city, postal code, country. ORCID highly recommended."
+    },
+    {
+      "id": "text_order",
+      "classification": "official_explicit",
+      "source": "instructions p. 8",
+      "requirement": [
+        "Title page",
+        "Abstract (structured)",
+        "Keywords",
+        "Non-standard abbreviations (optional)",
+        "Introduction",
+        "Materials and methods",
+        "Results",
+        "Discussion",
+        "Acknowledgments",
+        "References",
+        "Table and Figure legends"
+      ],
+      "qualification": "The research-article template also shows a Conclusions section after Discussion. A separate Conclusions section is a template-supported choice, not mandated by the general structure list."
+    },
+    {
+      "id": "limits",
+      "classification": "official_explicit",
+      "source": "instructions p. 8",
+      "requirement": {
+        "word_count": 6000,
+        "abstract_words_max": 200,
+        "keywords_min": 3,
+        "keywords_max": 6,
+        "figures_and_tables_combined_max": 8,
+        "references_max": 35
+      },
+      "qualification": "The word-count table does not explicitly define inclusion/exclusion of references, captions, or declarations."
+    },
+    {
+      "id": "abstract",
+      "classification": "official_explicit",
+      "source": "instructions p. 8",
+      "requirement": "Maximum 200 words; headings Objectives; Methods; Results; Conclusions. Define abbreviations independently in abstract. No tables/figures/equations/footnotes; avoid references."
+    },
+    {
+      "id": "keywords",
+      "classification": "official_explicit",
+      "source": "instructions p. 8",
+      "requirement": "3–6 keywords, alphabetically ordered, lowercase, semicolon-separated; precise terms, avoid abbreviations and repetition of title words."
+    },
+    {
+      "id": "headings",
+      "classification": "official_explicit",
+      "source": "instructions p. 9",
+      "requirement": "Unnumbered, sentence case, no terminal period; consistent hierarchy, maximum four levels; when subdividing a section, use at least two subheadings at a given level."
+    },
+    {
+      "id": "declarations",
+      "classification": "official_explicit",
+      "source": "instructions p. 8; journal Submit; original declarations template",
+      "requirement": "A customized separate Word declarations template is required. Statements belong between main text and reference list in final typeset article. Manuscript statements must agree with the template; template controls if they conflict. Follow template terminology and order.",
+      "order": [
+        "Acknowledgments",
+        "Research ethics",
+        "Informed consent",
+        "Author contributions",
+        "Use of Large Language Models, AI and Machine Learning Tools",
+        "Conflict of interest",
+        "Research funding",
+        "Data availability"
+      ],
+      "qualification": "Acknowledgments can be removed if not applicable. Keep approved factual statements and approval responsibility."
+    },
+    {
+      "id": "references",
+      "classification": "official_explicit",
+      "source": "instructions pp. 9 and 11",
+      "requirement": {
+        "style": "Vancouver",
+        "in_text": "Square brackets: [1], [2, 8, 25], [5–12]",
+        "order": "Sequential order of first appearance, including tables and figures",
+        "list_label": "Number without bracket, e.g. 1.",
+        "authors": "Up to six listed; more than six = first six then et al.",
+        "matching": "Every listed item cited in text and vice versa",
+        "journal_example": "Schilling T, Bauer M, Biskup C, Haverich A, Hassel T. Engineering of biodegradable magnesium alloy scaffolds to stabilize biological myocardial grafts. Biomed Eng-Biomed Tech 2017;62:493–504."
+      }
+    },
+    {
+      "id": "figures",
+      "classification": "official_explicit",
+      "source": "instructions p. 9",
+      "requirement": {
+        "upload": "Each figure as a separate .jpg, .eps, .png or .tiff file",
+        "resolution_at_intended_size": "At least 300 dpi for pixel/halftone; 600 dpi for combined pixel and line graphics",
+        "labels": "Not below 6 pt; preferably Arial or Helvetica; uniform and legible",
+        "panels": "Uppercase letters",
+        "numbering": "Consecutive Arabic; all explicitly referred to in text",
+        "captions": "Concise and self-explanatory; main caption plus panel legends; caption outside image",
+        "position": "Suggested positioning is provisional until typesetting. Avoid above/below references."
+      }
+    },
+    {
+      "id": "tables",
+      "classification": "official_explicit",
+      "source": "instructions p. 9",
+      "requirement": "Editable Word/LaTeX tables; no image or Excel tables. Consecutive Arabic numbers; short descriptive title and column heads; units separated by comma in headers; lowercase alphabetical footnotes; explain abbreviations and any bold highlighting. Indicate approximate placement, e.g. [Place Table 1 near here]."
+    },
+    {
+      "id": "template_content",
+      "classification": "official_template_transcription",
+      "source": "Research Article DOCX content transcription",
+      "requirement": "Down-style/sentence-case title and headings; inline table/figure placeholders; no table inside a textbox/frame and no figure+legend combined in textbox/frame. Uppercase multi-panel labels. This content transcription contains publisher header artifacts (including an unrelated chemsuschem URL) that must not be copied as manuscript content."
+    },
+    {
+      "id": "typography",
+      "classification": "not_specified_in_retrieved_instructions",
+      "source": "Full current 11-page official Instructions text; content-only Research Article transcription",
+      "requirement": {
+        "mandatory_body_font": null,
+        "mandatory_body_font_size": null,
+        "mandatory_line_spacing": null,
+        "mandatory_margins": null,
+        "mandatory_page_size": null,
+        "mandatory_column_count": null
+      },
+      "qualification": "No such body-layout rules were found in the retrieved official Instructions. The original Research Article DOCX binary was not obtained, so its actual Word style values and column setup remain unknown. Do not infer them from published article screenshots or plain HTML text."
+    }
+  ],
+  "recommended_implementation": {
+    "classification": "editorial_implementation_choice_for_review_manuscript_not_journal_mandate",
+    "purpose": "Clean editable submission manuscript with readable research figures and clear author information; do not claim to reproduce the unpublished official DOCX styles.",
+    "page_size": "A4 portrait",
+    "margins_mm": 25.4,
+    "columns": 1,
+    "body": {
+      "font": "Times New Roman or available metrically stable serif",
+      "size_pt": 12,
+      "line_spacing": 1.5,
+      "alignment": "left",
+      "paragraph_after_pt": 6,
+      "first_line_indent_pt": 0
+    },
+    "title": {
+      "sentence_case": true,
+      "font_size_pt": 16,
+      "bold": true,
+      "alignment": "left"
+    },
+    "headings": {
+      "unnumbered": true,
+      "level_1_pt": 13,
+      "level_1_bold": true,
+      "level_2_pt": 12,
+      "level_2_bold": true,
+      "keep_with_next": true
+    },
+    "front_matter": "Title page as page 1, containing author names, current approved affiliations, correspondence, ORCID if known and running title. Abstract/keywords start on page 2; main text starts on a new page after abstract/keywords. These page breaks and sizes are review-layout choices, not official mandates.",
+    "running_head": "Short title + page number in a restrained header/footer may aid review; first-page short-title field is the actual official requirement. Do not add publisher logo, DOI, volume/page claims, received/accepted dates, or published-article masthead.",
+    "statements": "Use declarations-template headings in its exact order before References, keeping all approved author statements unchanged.",
+    "tables_figures": "Retain approximate insertion markers in body. Put complete table/figure legends after References as the Instructions structure states. Use editable table blocks and figure plates after legends (or separate editable table source); upload every figure separately. Template inline placeholders demonstrate approximate placement, not an instruction to reproduce final two-column float placement.",
+    "figure_design": "Conventional scientific plotting only. At final intended size use consistent sans-serif labels (prefer Arial/Helvetica), aim 8–10 pt and never below 6 pt, uppercase panels, concise axis labels with units, accessible line/marker encoding; do not embed caption text in the figure image.",
+    "pagination": "Continuous Arabic page numbers; keep titles/captions with following object; avoid isolated headings and split table rows; inspect the exported PDF page by page."
+  },
+  "limitations": [
+    "Research Article original binary DOCX not obtained; no style.xml, sectPr, margin, column, font, or spacing inspection can be claimed.",
+    "Current network policy enforced restricted package-manager/GitHub domain access; official publisher binary-download host is not allowlisted. Firecrawl content access succeeded; no proxy/CA changes or bypass attempted.",
+    "Two web searches for the exact template and legitimate GitHub mirror produced no matching original binary; unrelated generic templates were excluded.",
+    "Current live PDF content parser omitted page-header update date; December 2024 is based on existing independently extracted official page 1."
+  ],
+  "no_manuscript_mutation": true,
+  "no_submission_performed": true
+}

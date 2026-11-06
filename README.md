@@ -10,7 +10,15 @@
 
 每位纳入患者固定使用一张图及对应参考掩膜。正式验证共 1,103 例。40 例预实验来自开发集。评分和复核均在回顾性模拟中进行。
 
-## 当前版本：v9 科研图件与投稿排版修订
+## 当前版本：v10 可编辑数学公式修订
+
+[正式主稿 Word](submission/bmt_v10/BMT_main_manuscript_v10.docx) · [正式主稿 PDF](submission/bmt_v10/BMT_main_manuscript_v10_preview.pdf) · [含图阅读 PDF](submission/bmt_v10/BMT_main_manuscript_v10_illustrated_preview.pdf) · [补充公式与材料 Word](submission/bmt_v10/BMT_supplementary_material_v6.docx) · [补充 PDF](submission/bmt_v10/BMT_supplementary_material_v6_preview.pdf) · [六例 S6 图版](submission/bmt_v10/BMT_supplementary_Figure_S6_v6.pdf) · [投稿文件 ZIP](submission/BMT_v10_submission_files.zip) · [上传清单](submission/bmt_v10/UPLOAD_FILE_MAP.md)
+
+按用户要求，主稿现包含14组编号公式(1)–(14)，补充数学方法包含12组公式(S1)–(S12)，均为可编辑原生Office Math。公式明确提示框扩展与四方向平移、Dice、A/B风险、低质量判定、阈值校准及等复核预算、评价指标和H1–H3，并给出Wilson/Newcombe区间、bootstrap经验频率、Kitagawa分解及数值复跑误差的完整定义。符号、文内引用、适用分母和边界条件已与现有代码核对。
+
+本轮仅将既有计算写清楚：结果、讨论、摘要、15条文献、作者声明、全部944个表格单元格及12幅科研图保持。主稿仍为5图+3表共8项；统计区间的名义性质、事后分析标记和CPU重放范围保留。数学式与Word/PDF排版分别独立核验；公式不是图片，也没有运行新的实验。原v9和此前作者确认记录完整保留，本轮公式修订依用户请求完成，尚未执行期刊投稿。
+
+## 历史版本：v9 科研图件与投稿排版修订
 
 [正式主稿 Word](submission/bmt_v9/BMT_main_manuscript_v9.docx) · [正式主稿 PDF](submission/bmt_v9/BMT_main_manuscript_v9_preview.pdf) · [含图阅读 PDF](submission/bmt_v9/BMT_main_manuscript_v9_illustrated_preview.pdf) · [全部新图 PDF](submission/bmt_v9/BMT_v9_all_figures.pdf) · [补充 Word](submission/bmt_v9/BMT_supplementary_material_v5.docx) · [六例 S6 图版 PDF](submission/bmt_v9/BMT_supplementary_Figure_S6_v5.pdf) · [提交文件 ZIP](submission/BMT_v9_submission_files.zip) · [上传清单](submission/bmt_v9/UPLOAD_FILE_MAP.md)
 

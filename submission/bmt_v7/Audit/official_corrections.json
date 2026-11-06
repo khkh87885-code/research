@@ -1,0 +1,104 @@
+{
+  "audit_version": "v7",
+  "verified_at_utc": "2026-11-06T08:08:30Z",
+  "scope": "Corrections to prior BMT official-requirements audit; official source reads independent of user correction",
+  "official_instructions": {
+    "url": "https://www.degruyterbrill.com/publication/journal_key/BMTE/downloadAsset/BMTE_Instructions%20for%20Authors.pdf",
+    "status": 200,
+    "content_type": "application/pdf",
+    "byte_length": 849140,
+    "sha256": "5a11215a9b3ae9af62b10667e35b15cba20cb286102347c628ec0b1a304d52dc",
+    "page_count": 11,
+    "retrieved_via": "Firecrawl official live-browser fetch; exact fetched PDF parsed with PDF library; machine stdout retained in page extraction JSON",
+    "original_pdf_saved": false,
+    "page_evidence": "official_pdf_pages_1_4_10.json",
+    "note": "SHA-256 was computed in the remote browser environment from the fetched original PDF. The full PDF binary is not saved locally; page-numbered extracted text is saved."
+  },
+  "corrections": [
+    {
+      "id": "instructions_last_update",
+      "page": 1,
+      "status": "verified",
+      "prior_audit_status": "unverified; date absent from initial markdown extraction",
+      "corrected_status": "Verified from current official PDF page 1; retract previous unverified classification",
+      "exact_quote": "Instructions for Authors   (last update: December 2024)",
+      "finding": "The current official download URL returns instructions explicitly labelled December 2024. This verifies the document label; it does not assert that no newer document exists elsewhere."
+    },
+    {
+      "id": "reviewer_minimum",
+      "page": 4,
+      "status": "verified_mandatory",
+      "prior_audit_status": "Incorrectly said at least five was not located / was only a user request",
+      "corrected_status": "Official requirement: authors must provide at least five potential reviewers. Prior classification is withdrawn.",
+      "exact_quote_verbatim_extraction": "BME–BMT ,\n •   originality/topicality: the content is sufficiently important and topical to be worthy to be published in\n BME–BMT ,\n •   formal correctness: the formal criteria have been met (also in view of the manuscript being written in\nunderstandable English),\n •   ethical guidelines: national and international ethical standards for studies with human and/or animal\nsubjects are fulfilled (where applicable).\nIn cases where the criteria have not been met, the manuscript will be rejected without peer review.\n BME–BMT   is a single-blind peer-reviewed journal. Manuscripts which fulfill the substantive and formal criteria\nare reviewed anonymously by at least two independent reviewers selected by the Editors. The authors must pro-\nvide the names, institution, country and e-mail addresses of at least five potential reviewers. Reviewers indicated\nby the authors must be of institutions different from those of any of the authors and should be of different na-\ntionality. Authors may also provide names of reviewers they wish to exclude from reviewing their manuscripts.",
+      "exact_quote_normalized": "BME–BMT is a single-blind peer-reviewed journal. Manuscripts which fulfill the substantive and formal criteria are reviewed anonymously by at least two independent reviewers selected by the Editors. The authors must provide the names, institution, country and e-mail addresses of at least five potential reviewers. Reviewers indicated by the authors must be of institutions different from those of any of the authors and should be of different nationality. Authors may also provide names of reviewers they wish to exclude from reviewing their manuscripts.",
+      "normalization": "Removed PDF layout line breaks, discretionary line-end hyphens in pro-vide and na-tionality, and repeated layout spaces; no semantic changes.",
+      "minimum_candidates": 5,
+      "required_candidate_fields": [
+        "name",
+        "institution",
+        "country",
+        "email"
+      ],
+      "institution_constraint": "must be of institutions different from those of any of the authors",
+      "nationality_constraint": "should be of different nationality",
+      "constraint_interpretation": "Institution separation is a must. Different nationality is worded should, not must. Do not convert recommendation into a mandatory country-count threshold.",
+      "optional_exclusions": true,
+      "distinct_editor_reviewers": "At least two independent reviewers selected by Editors is a separate requirement and does not reduce authors' five-candidate minimum."
+    },
+    {
+      "id": "narrow_nonbreaking_space_percent",
+      "page": 10,
+      "section": "Units",
+      "status": "verified",
+      "corrected_status": "Use U+202F between numeric values and percent signs; ordinary ASCII spaces/U+00A0 are not the specified character.",
+      "exact_quote_verbatim_extraction": "A narrow non-breaking space (unicode hex\nvalue: U+202F) should be presented between numbers and units, except for °. °C and % should be spaced with a\nnarrow non-breaking space.",
+      "exact_quote_normalized": "A narrow non-breaking space (unicode hex value: U+202F) should be presented between numbers and units, except for °. °C and % should be spaced with a narrow non-breaking space.",
+      "required_character": {
+        "unicode": "U+202F",
+        "name": "NARROW NO-BREAK SPACE",
+        "utf8_hex": "E2 80 AF"
+      },
+      "examples": {
+        "percent": "95 %",
+        "temperature": "37 °C",
+        "angle": "45°"
+      },
+      "scope_note": "The official text exempts ° alone and explicitly includes °C and %. These examples apply that statement; the examples themselves are not quoted from the PDF."
+    }
+  ],
+  "original_declarations_template": {
+    "url": "https://www.degruyterbrill.com/publication/journal_key/BMTE/downloadAsset/BMTE_Template%20for%20Ethical%20and%20Legal%20Declarations.docx",
+    "status": 200,
+    "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "local_path": "/workspace/bmt_v7/originals/official_declarations_template.docx",
+    "byte_length": 27927,
+    "sha256": "8facc5b46d8dc245e1814a9f749e2ddc4d84e2189b20ea9f511886c38d9ef230",
+    "acquisition": "Original official HTTP response bytes fetched via Firecrawl live browser; complete machine stdout base64 decoded locally without regeneration",
+    "validation": [
+      "Local SHA-256 matches SHA-256 returned by remote browser",
+      "DOCX is a valid ZIP; zipfile.testzip() returned no bad entries",
+      "word/document.xml present",
+      "Eight named statement rows verified directly in word/document.xml"
+    ],
+    "binary_status": "original_official_binary_acquired",
+    "text_evidence": "official_declarations_original_extracted.txt",
+    "fields_in_original_order": [
+      "Acknowledgments",
+      "Research ethics",
+      "Informed consent",
+      "Author contributions (for double- anonymized journals: please use initials)",
+      "Use of Large Language Models, AI and Machine Learning Tools",
+      "Conflict of interest",
+      "Research funding",
+      "Data availability"
+    ],
+    "field_note": "The source XML contains a spacing artifact 'double- anonymized'; keep official field wording when copying its table. Eight named rows exclude the STATEMENT/TEXT header and two blank extension rows.",
+    "prior_transcription_status": "The prior Markdown was only a transcription. This newly acquired DOCX is the original official template and supersedes the prior binary-unavailable status."
+  },
+  "outstanding": [
+    "Complete and independently verify at least five reviewer profiles before submission; this audit does not invent candidates or emails.",
+    "User's ethics/institutional determination and final author approval status must be handled using actual confirmations; downloading the official template does not establish those facts."
+  ],
+  "no_external_submission": true
+}

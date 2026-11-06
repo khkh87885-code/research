@@ -1,0 +1,1317 @@
+{
+  "review_utc": "2026-11-06T08:46:29.730880+00:00",
+  "review_scope": "Final DOCX numerical and cross-reference consistency; not a new full study audit or model inference run.",
+  "source_files_sha256": {
+    "/workspace/bmt_v7/outputs/BMT_main_manuscript_v7.docx": "0c434d6c04e4d111eccfb865dd71551ce59fd09e89e9697b1eab6c0b7943cdd3",
+    "/workspace/bmt_v7/outputs/BMT_supplementary_material_v3.docx": "a47cbc92341784c03060ed554dfbc48c8f10f79160389c0af60d4809aae2b97d"
+  },
+  "manuscripts_unchanged_by_review": true,
+  "status": "PASS within numerical and cross-reference scope. Both authors explicitly approved submission of the final v7 manuscript and accepted full-content responsibility; no actual journal submission has been performed.",
+  "findings": [],
+  "historical_table_preservation": [
+    {
+      "table": "Main Table 1",
+      "numeric_tokens_checked": 18,
+      "all_numeric_tokens_preserved": true
+    },
+    {
+      "table": "Main Table 3",
+      "numeric_tokens_checked": 13,
+      "all_numeric_tokens_preserved": true
+    },
+    {
+      "table": "Table S1",
+      "numeric_tokens_checked": 38,
+      "all_numeric_tokens_preserved": true
+    },
+    {
+      "table": "Table S2",
+      "numeric_tokens_checked": 73,
+      "all_numeric_tokens_preserved": true
+    },
+    {
+      "table": "Table S3",
+      "numeric_tokens_checked": 17,
+      "all_numeric_tokens_preserved": true
+    },
+    {
+      "table": "Table S4",
+      "numeric_tokens_checked": 17,
+      "all_numeric_tokens_preserved": true
+    },
+    {
+      "table": "Table S5",
+      "numeric_tokens_checked": 15,
+      "all_numeric_tokens_preserved": true
+    },
+    {
+      "table": "Table S6",
+      "numeric_tokens_checked": 24,
+      "all_numeric_tokens_preserved": true
+    },
+    {
+      "table": "Table S7",
+      "numeric_tokens_checked": 120,
+      "all_numeric_tokens_preserved": true
+    }
+  ],
+  "table2_new_CI_and_existing_counts": [
+    {
+      "field": "Table2.internal_holdout.A.0",
+      "observed": "BUS-BRA internal",
+      "expected": "BUS-BRA internal",
+      "matches": true
+    },
+    {
+      "field": "Table2.internal_holdout.A.1",
+      "observed": "A",
+      "expected": "A",
+      "matches": true
+    },
+    {
+      "field": "Table2.internal_holdout.A.2",
+      "observed": "71/93 (76.34 %)\n[66.77, 83.83]",
+      "expected": "71/93 (76.34%) [66.77, 83.83]",
+      "matches": true
+    },
+    {
+      "field": "Table2.internal_holdout.A.3",
+      "observed": "174/851 (20.45 %)",
+      "expected": "174/851 (20.45%)",
+      "matches": true
+    },
+    {
+      "field": "Table2.internal_holdout.A.4",
+      "observed": "22",
+      "expected": "22",
+      "matches": true
+    },
+    {
+      "field": "Table2.internal_holdout.A.5",
+      "observed": "2.59",
+      "expected": "2.59",
+      "matches": true
+    },
+    {
+      "field": "Table2.internal_holdout.B.0",
+      "observed": "BUS-BRA internal",
+      "expected": "BUS-BRA internal",
+      "matches": true
+    },
+    {
+      "field": "Table2.internal_holdout.B.1",
+      "observed": "B",
+      "expected": "B",
+      "matches": true
+    },
+    {
+      "field": "Table2.internal_holdout.B.2",
+      "observed": "68/93 (73.12 %)\n[63.32, 81.08]",
+      "expected": "68/93 (73.12%) [63.32, 81.08]",
+      "matches": true
+    },
+    {
+      "field": "Table2.internal_holdout.B.3",
+      "observed": "150/851 (17.63 %)",
+      "expected": "150/851 (17.63%)",
+      "matches": true
+    },
+    {
+      "field": "Table2.internal_holdout.B.4",
+      "observed": "25",
+      "expected": "25",
+      "matches": true
+    },
+    {
+      "field": "Table2.internal_holdout.B.5",
+      "observed": "2.94",
+      "expected": "2.94",
+      "matches": true
+    },
+    {
+      "field": "Table2.external_test.A.0",
+      "observed": "BrEaST external",
+      "expected": "BrEaST external",
+      "matches": true
+    },
+    {
+      "field": "Table2.external_test.A.1",
+      "observed": "A",
+      "expected": "A",
+      "matches": true
+    },
+    {
+      "field": "Table2.external_test.A.2",
+      "observed": "10/16 (62.50 %)\n[38.64, 81.52]",
+      "expected": "10/16 (62.50%) [38.64, 81.52]",
+      "matches": true
+    },
+    {
+      "field": "Table2.external_test.A.3",
+      "observed": "35/252 (13.89 %)",
+      "expected": "35/252 (13.89%)",
+      "matches": true
+    },
+    {
+      "field": "Table2.external_test.A.4",
+      "observed": "6",
+      "expected": "6",
+      "matches": true
+    },
+    {
+      "field": "Table2.external_test.A.5",
+      "observed": "2.38",
+      "expected": "2.38",
+      "matches": true
+    },
+    {
+      "field": "Table2.external_test.B.0",
+      "observed": "BrEaST external",
+      "expected": "BrEaST external",
+      "matches": true
+    },
+    {
+      "field": "Table2.external_test.B.1",
+      "observed": "B",
+      "expected": "B",
+      "matches": true
+    },
+    {
+      "field": "Table2.external_test.B.2",
+      "observed": "13/16 (81.25 %)\n[56.99, 93.41]",
+      "expected": "13/16 (81.25%) [56.99, 93.41]",
+      "matches": true
+    },
+    {
+      "field": "Table2.external_test.B.3",
+      "observed": "33/252 (13.10 %)",
+      "expected": "33/252 (13.10%)",
+      "matches": true
+    },
+    {
+      "field": "Table2.external_test.B.4",
+      "observed": "3",
+      "expected": "3",
+      "matches": true
+    },
+    {
+      "field": "Table2.external_test.B.5",
+      "observed": "1.19",
+      "expected": "1.19",
+      "matches": true
+    }
+  ],
+  "tableS7_independent_fraction_and_CI_checks": [
+    {
+      "field": "S7.development.A.2",
+      "observed": "19/24 (79.17 %)\n[59.53, 90.76]",
+      "expected": "19/24 (79.17%) [59.53, 90.76]",
+      "matches": true
+    },
+    {
+      "field": "S7.development.A.3",
+      "observed": "165/189 (87.30 %)\n[81.80, 91.32]",
+      "expected": "165/189 (87.30%) [81.80, 91.32]",
+      "matches": true
+    },
+    {
+      "field": "S7.development.A.4",
+      "observed": "19/43 (44.19 %)\n[30.43, 58.89]",
+      "expected": "19/43 (44.19%) [30.43, 58.89]",
+      "matches": true
+    },
+    {
+      "field": "S7.development.A.5",
+      "observed": "165/170 (97.06 %)\n[93.30, 98.74]",
+      "expected": "165/170 (97.06%) [93.30, 98.74]",
+      "matches": true
+    },
+    {
+      "field": "S7.development.B.2",
+      "observed": "17/24 (70.83 %)\n[50.83, 85.09]",
+      "expected": "17/24 (70.83%) [50.83, 85.09]",
+      "matches": true
+    },
+    {
+      "field": "S7.development.B.3",
+      "observed": "163/189 (86.24 %)\n[80.61, 90.44]",
+      "expected": "163/189 (86.24%) [80.61, 90.44]",
+      "matches": true
+    },
+    {
+      "field": "S7.development.B.4",
+      "observed": "17/43 (39.53 %)\n[26.37, 54.42]",
+      "expected": "17/43 (39.53%) [26.37, 54.42]",
+      "matches": true
+    },
+    {
+      "field": "S7.development.B.5",
+      "observed": "163/170 (95.88 %)\n[91.75, 97.99]",
+      "expected": "163/170 (95.88%) [91.75, 97.99]",
+      "matches": true
+    },
+    {
+      "field": "S7.internal_holdout.A.2",
+      "observed": "71/93 (76.34 %)\n[66.77, 83.83]",
+      "expected": "71/93 (76.34%) [66.77, 83.83]",
+      "matches": true
+    },
+    {
+      "field": "S7.internal_holdout.A.3",
+      "observed": "655/758 (86.41 %)\n[83.79, 88.67]",
+      "expected": "655/758 (86.41%) [83.79, 88.67]",
+      "matches": true
+    },
+    {
+      "field": "S7.internal_holdout.A.4",
+      "observed": "71/174 (40.80 %)\n[33.78, 48.23]",
+      "expected": "71/174 (40.80%) [33.78, 48.23]",
+      "matches": true
+    },
+    {
+      "field": "S7.internal_holdout.A.5",
+      "observed": "655/677 (96.75 %)\n[95.13, 97.84]",
+      "expected": "655/677 (96.75%) [95.13, 97.84]",
+      "matches": true
+    },
+    {
+      "field": "S7.internal_holdout.B.2",
+      "observed": "68/93 (73.12 %)\n[63.32, 81.08]",
+      "expected": "68/93 (73.12%) [63.32, 81.08]",
+      "matches": true
+    },
+    {
+      "field": "S7.internal_holdout.B.3",
+      "observed": "676/758 (89.18 %)\n[86.77, 91.20]",
+      "expected": "676/758 (89.18%) [86.77, 91.20]",
+      "matches": true
+    },
+    {
+      "field": "S7.internal_holdout.B.4",
+      "observed": "68/150 (45.33 %)\n[37.58, 53.32]",
+      "expected": "68/150 (45.33%) [37.58, 53.32]",
+      "matches": true
+    },
+    {
+      "field": "S7.internal_holdout.B.5",
+      "observed": "676/701 (96.43 %)\n[94.79, 97.57]",
+      "expected": "676/701 (96.43%) [94.79, 97.57]",
+      "matches": true
+    },
+    {
+      "field": "S7.external_test.A.2",
+      "observed": "10/16 (62.50 %)\n[38.64, 81.52]",
+      "expected": "10/16 (62.50%) [38.64, 81.52]",
+      "matches": true
+    },
+    {
+      "field": "S7.external_test.A.3",
+      "observed": "211/236 (89.41 %)\n[84.83, 92.72]",
+      "expected": "211/236 (89.41%) [84.83, 92.72]",
+      "matches": true
+    },
+    {
+      "field": "S7.external_test.A.4",
+      "observed": "10/35 (28.57 %)\n[16.33, 45.05]",
+      "expected": "10/35 (28.57%) [16.33, 45.05]",
+      "matches": true
+    },
+    {
+      "field": "S7.external_test.A.5",
+      "observed": "211/217 (97.24 %)\n[94.10, 98.73]",
+      "expected": "211/217 (97.24%) [94.10, 98.73]",
+      "matches": true
+    },
+    {
+      "field": "S7.external_test.B.2",
+      "observed": "13/16 (81.25 %)\n[56.99, 93.41]",
+      "expected": "13/16 (81.25%) [56.99, 93.41]",
+      "matches": true
+    },
+    {
+      "field": "S7.external_test.B.3",
+      "observed": "216/236 (91.53 %)\n[87.27, 94.45]",
+      "expected": "216/236 (91.53%) [87.27, 94.45]",
+      "matches": true
+    },
+    {
+      "field": "S7.external_test.B.4",
+      "observed": "13/33 (39.39 %)\n[24.68, 56.32]",
+      "expected": "13/33 (39.39%) [24.68, 56.32]",
+      "matches": true
+    },
+    {
+      "field": "S7.external_test.B.5",
+      "observed": "216/219 (98.63 %)\n[96.05, 99.53]",
+      "expected": "216/219 (98.63%) [96.05, 99.53]",
+      "matches": true
+    }
+  ],
+  "tableS8_all_copied_fields": [
+    {
+      "field": "S8.internal_holdout.benign.A.0",
+      "observed": "BUS-BRA internal",
+      "expected": "BUS-BRA internal",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.benign.A.1",
+      "observed": "Benign",
+      "expected": "Benign",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.benign.A.2",
+      "observed": "577 / 53",
+      "expected": "577 / 53",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.benign.A.3",
+      "observed": "A",
+      "expected": "A",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.benign.A.4",
+      "observed": "51/53 (96.23 %)\n[87.25, 98.96]",
+      "expected": "51/53 (96.23%) [87.25, 98.96]",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.benign.A.5",
+      "observed": "102/577 (17.68 %)\n[14.78, 21.00]",
+      "expected": "102/577 (17.68%) [14.78, 21.00]",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.benign.B.0",
+      "observed": "BUS-BRA internal",
+      "expected": "BUS-BRA internal",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.benign.B.1",
+      "observed": "Benign",
+      "expected": "Benign",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.benign.B.2",
+      "observed": "577 / 53",
+      "expected": "577 / 53",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.benign.B.3",
+      "observed": "B",
+      "expected": "B",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.benign.B.4",
+      "observed": "41/53 (77.36 %)\n[64.47, 86.55]",
+      "expected": "41/53 (77.36%) [64.47, 86.55]",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.benign.B.5",
+      "observed": "80/577 (13.86 %)\n[11.28, 16.92]",
+      "expected": "80/577 (13.86%) [11.28, 16.92]",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.malignant.A.0",
+      "observed": "BUS-BRA internal",
+      "expected": "BUS-BRA internal",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.malignant.A.1",
+      "observed": "Malignant",
+      "expected": "Malignant",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.malignant.A.2",
+      "observed": "274 / 40",
+      "expected": "274 / 40",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.malignant.A.3",
+      "observed": "A",
+      "expected": "A",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.malignant.A.4",
+      "observed": "20/40 (50.00 %)\n[35.20, 64.80]",
+      "expected": "20/40 (50.00%) [35.20, 64.80]",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.malignant.A.5",
+      "observed": "72/274 (26.28 %)\n[21.42, 31.79]",
+      "expected": "72/274 (26.28%) [21.42, 31.79]",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.malignant.B.0",
+      "observed": "BUS-BRA internal",
+      "expected": "BUS-BRA internal",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.malignant.B.1",
+      "observed": "Malignant",
+      "expected": "Malignant",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.malignant.B.2",
+      "observed": "274 / 40",
+      "expected": "274 / 40",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.malignant.B.3",
+      "observed": "B",
+      "expected": "B",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.malignant.B.4",
+      "observed": "27/40 (67.50 %)\n[52.02, 79.92]",
+      "expected": "27/40 (67.50%) [52.02, 79.92]",
+      "matches": true
+    },
+    {
+      "field": "S8.internal_holdout.malignant.B.5",
+      "observed": "70/274 (25.55 %)\n[20.75, 31.02]",
+      "expected": "70/274 (25.55%) [20.75, 31.02]",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.benign.A.0",
+      "observed": "BrEaST external",
+      "expected": "BrEaST external",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.benign.A.1",
+      "observed": "Benign",
+      "expected": "Benign",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.benign.A.2",
+      "observed": "154 / 8",
+      "expected": "154 / 8",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.benign.A.3",
+      "observed": "A",
+      "expected": "A",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.benign.A.4",
+      "observed": "5/8 (62.50 %)\n[30.57, 86.32]",
+      "expected": "5/8 (62.50%) [30.57, 86.32]",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.benign.A.5",
+      "observed": "15/154 (9.74 %)\n[5.99, 15.45]",
+      "expected": "15/154 (9.74%) [5.99, 15.45]",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.benign.B.0",
+      "observed": "BrEaST external",
+      "expected": "BrEaST external",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.benign.B.1",
+      "observed": "Benign",
+      "expected": "Benign",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.benign.B.2",
+      "observed": "154 / 8",
+      "expected": "154 / 8",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.benign.B.3",
+      "observed": "B",
+      "expected": "B",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.benign.B.4",
+      "observed": "7/8 (87.50 %)\n[52.91, 97.76]",
+      "expected": "7/8 (87.50%) [52.91, 97.76]",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.benign.B.5",
+      "observed": "13/154 (8.44 %)\n[5.00, 13.91]",
+      "expected": "13/154 (8.44%) [5.00, 13.91]",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.malignant.A.0",
+      "observed": "BrEaST external",
+      "expected": "BrEaST external",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.malignant.A.1",
+      "observed": "Malignant",
+      "expected": "Malignant",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.malignant.A.2",
+      "observed": "98 / 8",
+      "expected": "98 / 8",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.malignant.A.3",
+      "observed": "A",
+      "expected": "A",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.malignant.A.4",
+      "observed": "5/8 (62.50 %)\n[30.57, 86.32]",
+      "expected": "5/8 (62.50%) [30.57, 86.32]",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.malignant.A.5",
+      "observed": "20/98 (20.41 %)\n[13.62, 29.43]",
+      "expected": "20/98 (20.41%) [13.62, 29.43]",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.malignant.B.0",
+      "observed": "BrEaST external",
+      "expected": "BrEaST external",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.malignant.B.1",
+      "observed": "Malignant",
+      "expected": "Malignant",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.malignant.B.2",
+      "observed": "98 / 8",
+      "expected": "98 / 8",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.malignant.B.3",
+      "observed": "B",
+      "expected": "B",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.malignant.B.4",
+      "observed": "6/8 (75.00 %)\n[40.93, 92.85]",
+      "expected": "6/8 (75.00%) [40.93, 92.85]",
+      "matches": true
+    },
+    {
+      "field": "S8.external_test.malignant.B.5",
+      "observed": "20/98 (20.41 %)\n[13.62, 29.43]",
+      "expected": "20/98 (20.41%) [13.62, 29.43]",
+      "matches": true
+    }
+  ],
+  "stratum_recombination": [
+    {
+      "split": "internal_holdout",
+      "method": "A",
+      "count": "N",
+      "sum": 851,
+      "overall": 851,
+      "matches": true
+    },
+    {
+      "split": "internal_holdout",
+      "method": "A",
+      "count": "low_quality",
+      "sum": 93,
+      "overall": 93,
+      "matches": true
+    },
+    {
+      "split": "internal_holdout",
+      "method": "A",
+      "count": "review_count",
+      "sum": 174,
+      "overall": 174,
+      "matches": true
+    },
+    {
+      "split": "internal_holdout",
+      "method": "A",
+      "count": "TP",
+      "sum": 71,
+      "overall": 71,
+      "matches": true
+    },
+    {
+      "split": "internal_holdout",
+      "method": "A",
+      "count": "FP",
+      "sum": 103,
+      "overall": 103,
+      "matches": true
+    },
+    {
+      "split": "internal_holdout",
+      "method": "A",
+      "count": "TN",
+      "sum": 655,
+      "overall": 655,
+      "matches": true
+    },
+    {
+      "split": "internal_holdout",
+      "method": "A",
+      "count": "FN",
+      "sum": 22,
+      "overall": 22,
+      "matches": true
+    },
+    {
+      "split": "internal_holdout",
+      "method": "B",
+      "count": "N",
+      "sum": 851,
+      "overall": 851,
+      "matches": true
+    },
+    {
+      "split": "internal_holdout",
+      "method": "B",
+      "count": "low_quality",
+      "sum": 93,
+      "overall": 93,
+      "matches": true
+    },
+    {
+      "split": "internal_holdout",
+      "method": "B",
+      "count": "review_count",
+      "sum": 150,
+      "overall": 150,
+      "matches": true
+    },
+    {
+      "split": "internal_holdout",
+      "method": "B",
+      "count": "TP",
+      "sum": 68,
+      "overall": 68,
+      "matches": true
+    },
+    {
+      "split": "internal_holdout",
+      "method": "B",
+      "count": "FP",
+      "sum": 82,
+      "overall": 82,
+      "matches": true
+    },
+    {
+      "split": "internal_holdout",
+      "method": "B",
+      "count": "TN",
+      "sum": 676,
+      "overall": 676,
+      "matches": true
+    },
+    {
+      "split": "internal_holdout",
+      "method": "B",
+      "count": "FN",
+      "sum": 25,
+      "overall": 25,
+      "matches": true
+    },
+    {
+      "split": "external_test",
+      "method": "A",
+      "count": "N",
+      "sum": 252,
+      "overall": 252,
+      "matches": true
+    },
+    {
+      "split": "external_test",
+      "method": "A",
+      "count": "low_quality",
+      "sum": 16,
+      "overall": 16,
+      "matches": true
+    },
+    {
+      "split": "external_test",
+      "method": "A",
+      "count": "review_count",
+      "sum": 35,
+      "overall": 35,
+      "matches": true
+    },
+    {
+      "split": "external_test",
+      "method": "A",
+      "count": "TP",
+      "sum": 10,
+      "overall": 10,
+      "matches": true
+    },
+    {
+      "split": "external_test",
+      "method": "A",
+      "count": "FP",
+      "sum": 25,
+      "overall": 25,
+      "matches": true
+    },
+    {
+      "split": "external_test",
+      "method": "A",
+      "count": "TN",
+      "sum": 211,
+      "overall": 211,
+      "matches": true
+    },
+    {
+      "split": "external_test",
+      "method": "A",
+      "count": "FN",
+      "sum": 6,
+      "overall": 6,
+      "matches": true
+    },
+    {
+      "split": "external_test",
+      "method": "B",
+      "count": "N",
+      "sum": 252,
+      "overall": 252,
+      "matches": true
+    },
+    {
+      "split": "external_test",
+      "method": "B",
+      "count": "low_quality",
+      "sum": 16,
+      "overall": 16,
+      "matches": true
+    },
+    {
+      "split": "external_test",
+      "method": "B",
+      "count": "review_count",
+      "sum": 33,
+      "overall": 33,
+      "matches": true
+    },
+    {
+      "split": "external_test",
+      "method": "B",
+      "count": "TP",
+      "sum": 13,
+      "overall": 13,
+      "matches": true
+    },
+    {
+      "split": "external_test",
+      "method": "B",
+      "count": "FP",
+      "sum": 20,
+      "overall": 20,
+      "matches": true
+    },
+    {
+      "split": "external_test",
+      "method": "B",
+      "count": "TN",
+      "sum": 216,
+      "overall": 216,
+      "matches": true
+    },
+    {
+      "split": "external_test",
+      "method": "B",
+      "count": "FN",
+      "sum": 3,
+      "overall": 3,
+      "matches": true
+    }
+  ],
+  "tableS9_all_copied_fields": [
+    {
+      "field": "S9.case089.0",
+      "observed": "case089\nmalignant",
+      "expected": "case089 malignant",
+      "matches": true
+    },
+    {
+      "field": "S9.case089.1",
+      "observed": "Neither",
+      "expected": "Neither",
+      "matches": true
+    },
+    {
+      "field": "S9.case089.2",
+      "observed": "0.3191",
+      "expected": "0.3191",
+      "matches": true
+    },
+    {
+      "field": "S9.case089.3",
+      "observed": "0.104072",
+      "expected": "0.104072",
+      "matches": true
+    },
+    {
+      "field": "S9.case089.4",
+      "observed": "0",
+      "expected": "0",
+      "matches": true
+    },
+    {
+      "field": "S9.case089.5",
+      "observed": "0.041041",
+      "expected": "0.041041",
+      "matches": true
+    },
+    {
+      "field": "S9.case089.6",
+      "observed": "0",
+      "expected": "0",
+      "matches": true
+    },
+    {
+      "field": "S9.case089.7",
+      "observed": "0.9590",
+      "expected": "0.9590",
+      "matches": true
+    },
+    {
+      "field": "S9.case175.0",
+      "observed": "case175\nbenign",
+      "expected": "case175 benign",
+      "matches": true
+    },
+    {
+      "field": "S9.case175.1",
+      "observed": "Neither",
+      "expected": "Neither",
+      "matches": true
+    },
+    {
+      "field": "S9.case175.2",
+      "observed": "0.0293",
+      "expected": "0.0293",
+      "matches": true
+    },
+    {
+      "field": "S9.case175.3",
+      "observed": "0.114944",
+      "expected": "0.114944",
+      "matches": true
+    },
+    {
+      "field": "S9.case175.4",
+      "observed": "0",
+      "expected": "0",
+      "matches": true
+    },
+    {
+      "field": "S9.case175.5",
+      "observed": "0.020059",
+      "expected": "0.020059",
+      "matches": true
+    },
+    {
+      "field": "S9.case175.6",
+      "observed": "0",
+      "expected": "0",
+      "matches": true
+    },
+    {
+      "field": "S9.case175.7",
+      "observed": "0.9799",
+      "expected": "0.9799",
+      "matches": true
+    },
+    {
+      "field": "S9.case238.0",
+      "observed": "case238\nmalignant",
+      "expected": "case238 malignant",
+      "matches": true
+    },
+    {
+      "field": "S9.case238.1",
+      "observed": "Neither",
+      "expected": "Neither",
+      "matches": true
+    },
+    {
+      "field": "S9.case238.2",
+      "observed": "0.6813",
+      "expected": "0.6813",
+      "matches": true
+    },
+    {
+      "field": "S9.case238.3",
+      "observed": "0.038909",
+      "expected": "0.038909",
+      "matches": true
+    },
+    {
+      "field": "S9.case238.4",
+      "observed": "0",
+      "expected": "0",
+      "matches": true
+    },
+    {
+      "field": "S9.case238.5",
+      "observed": "0.005766",
+      "expected": "0.005766",
+      "matches": true
+    },
+    {
+      "field": "S9.case238.6",
+      "observed": "0",
+      "expected": "0",
+      "matches": true
+    },
+    {
+      "field": "S9.case238.7",
+      "observed": "0.9942",
+      "expected": "0.9942",
+      "matches": true
+    },
+    {
+      "field": "S9.case024.0",
+      "observed": "case024\nbenign",
+      "expected": "case024 benign",
+      "matches": true
+    },
+    {
+      "field": "S9.case024.1",
+      "observed": "B only",
+      "expected": "B only",
+      "matches": true
+    },
+    {
+      "field": "S9.case024.2",
+      "observed": "0.6852",
+      "expected": "0.6852",
+      "matches": true
+    },
+    {
+      "field": "S9.case024.3",
+      "observed": "0.054510",
+      "expected": "0.054510",
+      "matches": true
+    },
+    {
+      "field": "S9.case024.4",
+      "observed": "0",
+      "expected": "0",
+      "matches": true
+    },
+    {
+      "field": "S9.case024.5",
+      "observed": "0.109995",
+      "expected": "0.109995",
+      "matches": true
+    },
+    {
+      "field": "S9.case024.6",
+      "observed": "1",
+      "expected": "1",
+      "matches": true
+    },
+    {
+      "field": "S9.case024.7",
+      "observed": "0.8900",
+      "expected": "0.8900",
+      "matches": true
+    },
+    {
+      "field": "S9.case105.0",
+      "observed": "case105\nmalignant",
+      "expected": "case105 malignant",
+      "matches": true
+    },
+    {
+      "field": "S9.case105.1",
+      "observed": "B only",
+      "expected": "B only",
+      "matches": true
+    },
+    {
+      "field": "S9.case105.2",
+      "observed": "0.6546",
+      "expected": "0.6546",
+      "matches": true
+    },
+    {
+      "field": "S9.case105.3",
+      "observed": "0.102471",
+      "expected": "0.102471",
+      "matches": true
+    },
+    {
+      "field": "S9.case105.4",
+      "observed": "0",
+      "expected": "0",
+      "matches": true
+    },
+    {
+      "field": "S9.case105.5",
+      "observed": "0.259671",
+      "expected": "0.259671",
+      "matches": true
+    },
+    {
+      "field": "S9.case105.6",
+      "observed": "1",
+      "expected": "1",
+      "matches": true
+    },
+    {
+      "field": "S9.case105.7",
+      "observed": "0.7403",
+      "expected": "0.7403",
+      "matches": true
+    },
+    {
+      "field": "S9.case222.0",
+      "observed": "case222\nbenign",
+      "expected": "case222 benign",
+      "matches": true
+    },
+    {
+      "field": "S9.case222.1",
+      "observed": "B only",
+      "expected": "B only",
+      "matches": true
+    },
+    {
+      "field": "S9.case222.2",
+      "observed": "0.5784",
+      "expected": "0.5784",
+      "matches": true
+    },
+    {
+      "field": "S9.case222.3",
+      "observed": "0.126987",
+      "expected": "0.126987",
+      "matches": true
+    },
+    {
+      "field": "S9.case222.4",
+      "observed": "0",
+      "expected": "0",
+      "matches": true
+    },
+    {
+      "field": "S9.case222.5",
+      "observed": "0.201743",
+      "expected": "0.201743",
+      "matches": true
+    },
+    {
+      "field": "S9.case222.6",
+      "observed": "1",
+      "expected": "1",
+      "matches": true
+    },
+    {
+      "field": "S9.case222.7",
+      "observed": "0.7983",
+      "expected": "0.7983",
+      "matches": true
+    }
+  ],
+  "complete_external_A_missed_case_set": [
+    "case089",
+    "case175",
+    "case238",
+    "case024",
+    "case105",
+    "case222"
+  ],
+  "shared_misses": [
+    "case089",
+    "case175",
+    "case238"
+  ],
+  "B_only_detections": [
+    "case024",
+    "case105",
+    "case222"
+  ],
+  "six_case_analysis_CSV_matches_original_score_fields": true,
+  "case001_flags": {
+    "A": 1,
+    "B": 1,
+    "not_a_target_case": true
+  },
+  "abstract_word_count_including_structured_headings_whitespace_method": 178,
+  "abstract_within_200_words": true,
+  "supplementary_table_first_citation_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "main_reference_first_citation_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "reference_list_sequence": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "author_confirmation_placeholders_main": 0,
+  "submission_approved_by_both_authors": true,
+  "journal_submission_performed": false,
+  "unknowns_preserved": [],
+  "author_confirmation_evidence_sha256": {
+    "/workspace/bmt_v7/evidence/author_confirmation_record.json": "f0301e923f6ee9ab3d8aa8802c4b0dfeff42795441823b64f747e9eab7737039",
+    "/workspace/bmt_v7/evidence/confirmed_address_ethics_sources.json": "1793e4345547093b3aeec330b90ee1d809ed036d9fd5d6657096496dfc19f9ab"
+  },
+  "author_confirmation_and_official_source_roles": {
+    "author_confirmations": {
+      "record": "/workspace/bmt_v7/evidence/author_confirmation_record.json",
+      "statement": "重庆医科大学缙云校区人工智能医学学院，你去找一下官方的地址或者别的论文中写的，项目符合国家法律规定免于审查，已经完成所有审查",
+      "campus": "Jinyun Campus",
+      "statutory_exemption": "Author-confirmed applicability of Article 32; not an IRB-issued approval or waiver",
+      "human_review": "Author confirms completion of review of code, data, figures and text",
+      "final_version_approval": "Both authors explicitly confirmed approval and full-content responsibility for v7.",
+      "submission_approved": true,
+      "approval_source_user_statement": "两位作者均已同意并承担全文责任",
+      "scope": "Author-provided study facts and applicability confirmation; not an IRB-issued approval or consent waiver."
+    },
+    "official_sources_documented_in_evidence": {
+      "record": "/workspace/bmt_v7/evidence/confirmed_address_ethics_sources.json",
+      "campus_address_postcode_sources": [
+        {
+          "url": "https://bzkzs.cqmu.edu.cn/",
+          "owner": "重庆医科大学本科招生官方网站",
+          "location": "footer",
+          "http_status": 200,
+          "exact_quote": "袁家岗校区：重庆市渝中区医学院路1号\n邮政编码：400016\n缙云校区：重庆市沙坪坝区大学城中路61号\n邮政编码：401331",
+          "contribution": "Explicitly pairs Jinyun Campus and street address with 401331; distinguishes Yuanjiagang postcode 400016."
+        },
+        {
+          "url": "https://mi.cqmu.edu.cn/",
+          "owner": "重庆医科大学人工智能医学学院",
+          "location": "footer",
+          "http_status": 200,
+          "exact_quote": "地址：重庆市沙坪坝区大学城中路61号兰园6号楼\n邮编：400016",
+          "contribution": "Provides specific college building. Postcode conflicts with campus-specific admissions listing."
+        },
+        {
+          "url": "https://mi.cqmu.edu.cn/xygk1/xyjj.htm",
+          "owner": "重庆医科大学人工智能医学学院",
+          "location": "footer",
+          "http_status": 200,
+          "exact_quote": "地址：重庆市沙坪坝区大学城中路61号兰园6号楼\n邮编：400016",
+          "contribution": "Repeats college building address."
+        },
+        {
+          "url": "https://www.cqmu.edu.cn/jgsz/jxkynsjg.htm",
+          "owner": "重庆医科大学",
+          "exact_quote": "[人工智能医学学院](https://mi.cqmu.edu.cn/)",
+          "contribution": "Authenticates college site via university directory."
+        }
+      ],
+      "postcode_discrepancy_resolution": "Use 401331 for the author-confirmed Jinyun Campus because current official admissions page explicitly separates the two campuses and gives Jinyun-specific 401331. Preserve the college footer's conflicting 400016 in evidence; do not assert without proof that its footer is an erroneous template.",
+      "statutory_basis": {
+        "title": "涉及人的生命科学和医学研究伦理审查办法",
+        "document_number": "国卫科教发〔2023〕4号",
+        "signed_on": "2023-02-18",
+        "url": "https://www.nhc.gov.cn/qjjys/c100016/202302/6b6e447b3edc4338856c9a652a85f44b.shtml",
+        "article": 32,
+        "quote_intro": "使用人的信息数据或者生物样本开展以下情形的涉及人的生命科学和医学研究，不对人体造成伤害、不涉及敏感个人信息或者商业利益的，可以免除伦理审查，以减少科研人员不必要的负担，促进涉及人的生命科学和医学研究开展。",
+        "quote_1": "利用合法获得的公开数据，或者通过观察且不干扰公共行为产生的数据进行研究的；",
+        "quote_2": "使用匿名化的信息数据开展研究的；",
+        "scope": "Ethics-review exemption; not itself an IRB decision waiving consent.",
+        "previous_source": "/workspace/bmt_revision/evidence/china_ethics_basis.json"
+      },
+      "scope": "Official-source evidence supports addresses and the text of Article 32; it does not independently certify that this individual study meets every exemption condition."
+    },
+    "archival_limitations": {
+      "Codex_model_identifier": "Not available in archived study records; candidly disclosed rather than invented or treated as a pending placeholder."
+    },
+    "final_version_submission_approval": "Both authors explicitly confirmed approval and full-content responsibility for v7.",
+    "journal_submission_performed": false
+  },
+  "confirmed_title_page_address_matches_evidence": true,
+  "author_confirmed_Article32_exemption_distinguished_from_IRB_approval": true,
+  "secondary_consent_facts_do_not_claim_IRB_consent_waiver": true,
+  "completed_human_review_matches_author_confirmation": true,
+  "unavailable_archived_Codex_model_identifier_disclosed": true,
+  "exploratory_no_recalibration_or_tests_explicit": true,
+  "BrEaST_biopsy_followup_distinction_explicit": true,
+  "S9_missing_predictions_checkpoint_scope_explicit": true,
+  "source_pair_visual_aid_inspected_read_only": true,
+  "source_pair_visual_aid_observation": "Six original images and green released-reference contours only; title and every right-panel label explicitly say target predictions unavailable/no SAM prediction shown.",
+  "limitations": [
+    "This review compares original tables with the previously validated v6 baseline instead of rerunning the unchanged primary and supplementary statistics.",
+    "A new numerical effect is not inferred from outcome-selected cases or subgroup point estimates.",
+    "Campus, statutory exemption applicability and completed human review now rely on the explicit author-confirmation record; official sources separately support address details and the legal text. No IRB-issued approval or consent waiver is claimed.",
+    "Both authors explicitly approved submission of the final v7 manuscript and accepted full-content responsibility; no actual journal submission has been performed. The precise underlying Codex model identifier is unavailable in archived records and is disclosed as such, not invented.",
+    "No targeted six-case SAM predictions were available or regenerated; the original checkpoint is not available in the inspected resources."
+  ]
+}

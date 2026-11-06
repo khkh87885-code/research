@@ -10,7 +10,15 @@
 
 每位纳入患者固定使用一张图及对应参考掩膜。正式验证共 1,103 例。40 例预实验来自开发集。评分和复核均在回顾性模拟中进行。
 
-## 最新修订：v6 作者审阅版
+## 最新修订：v7 作者批准归档版
+
+[主稿 Word](submission/bmt_v7/BMT_main_manuscript_v7.docx) · [主稿 PDF 预览](submission/bmt_v7/BMT_main_manuscript_v7_preview.pdf) · [完整包 ZIP](submission/BMT_revision_review_package_v7.zip) · [补充材料](submission/bmt_v7/BMT_supplementary_material_v3.docx) · [修订与核验报告](submission/bmt_v7/BMT_revision_report.md)
+
+v7增加事后良恶性诊断分层（S8）、全部六例外部漏检记录（S9），把检出率Wilson区间放入主表，统一百分号/补表样式，并纠正官方指南日期及至少5名审稿人的审计记录。作者页采用缙云校区官方地址与401331邮编；法定免审与人工核验由作者确认，原始官方声明表单已填入。两位作者已明确批准本版并承担全文责任，主稿无作者确认占位。
+
+本次没有执行期刊投稿。六例初始预测掩膜不在可访问归档中，因此未伪造预测图；已提供真实病例表、原图/参考辅助图和精确模型复跑脚本。所有原始评分、锁定阈值与预设主要比较保持不变。科学范围、AI使用流程及仍需实际投稿时核对的事项见修订报告。
+
+## 历史修订：v6 作者审阅版
 
 [主稿 Word](submission/bmt_v6/BMT_main_manuscript_v6.docx) · [主稿 PDF 预览](submission/bmt_v6/BMT_main_manuscript_v6_preview.pdf) · [完整修订包 ZIP](submission/BMT_revision_review_package_v6.zip) · [修订文件目录](submission/bmt_v6) · [核验与修改报告](submission/bmt_v6/BMT_revision_report.md)
 

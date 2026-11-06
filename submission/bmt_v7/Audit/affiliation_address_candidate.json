@@ -1,0 +1,94 @@
+{
+  "retrieved_at": "2026-11-06",
+  "institution_chinese": "重庆医科大学",
+  "department_chinese": "人工智能医学学院",
+  "candidate": {
+    "full_address_chinese": "重庆市沙坪坝区大学城中路61号兰园6号楼",
+    "municipality": "重庆市",
+    "district": "沙坪坝区",
+    "street_and_number": "大学城中路61号",
+    "building_exact_source": "兰园6号楼",
+    "postcode_as_published": "400016",
+    "telephone_as_published": "023-65714685",
+    "status": "Official college-published candidate; not yet author-confirmed correspondence address",
+    "english_street_or_building_translation": null
+  },
+  "sources": [
+    {
+      "url": "https://www.cqmu.edu.cn/jgsz/jxkynsjg.htm",
+      "title": "教学科研内设机构-重庆医科大学",
+      "source_owner": "重庆医科大学",
+      "directly_college_owned": false,
+      "evidence": "[人工智能医学学院](https://mi.cqmu.edu.cn/)",
+      "purpose": "University primary directory authenticates the college website",
+      "http_status": 200,
+      "saved_source": "affiliation_source_directory.md"
+    },
+    {
+      "url": "https://mi.cqmu.edu.cn/",
+      "title": "重庆医科大学人工智能医学学院",
+      "source_owner": "重庆医科大学人工智能医学学院",
+      "directly_college_owned": true,
+      "location_in_page": "footer",
+      "exact_quotes": [
+        "联系电话：023-65714685",
+        "地址：重庆市沙坪坝区大学城中路61号兰园6号楼",
+        "邮编：400016"
+      ],
+      "address_explicit": true,
+      "postcode_explicit": true,
+      "http_status": 200,
+      "saved_source": "affiliation_source_college_home.md"
+    },
+    {
+      "url": "https://mi.cqmu.edu.cn/xygk1/xyjj.htm",
+      "title": "学院简介-重庆医科大学人工智能医学学院",
+      "source_owner": "重庆医科大学人工智能医学学院",
+      "directly_college_owned": true,
+      "location_in_page": "footer",
+      "exact_quotes": [
+        "地址：重庆市沙坪坝区大学城中路61号兰园6号楼",
+        "邮编：400016"
+      ],
+      "address_explicit": true,
+      "postcode_explicit": true,
+      "http_status": 200,
+      "saved_source": "affiliation_source_college_intro.md"
+    },
+    {
+      "url": "https://www.cqmu.edu.cn/xxgk/xxjj.htm",
+      "title": "学校简介-重庆医科大学",
+      "source_owner": "重庆医科大学",
+      "directly_college_owned": false,
+      "exact_quote": "学校由位于渝中区的袁家岗校区和位于重庆大学城的缙云校区组成，校园总面积2650亩。",
+      "general_footer_address": "重庆市渝中区医学院路1号",
+      "general_footer_postcode": "400016",
+      "purpose": "Establishes university's two campuses; generic university footer was not substituted for the college's explicit address",
+      "http_status": 200,
+      "saved_source": "affiliation_source_university_intro.md"
+    }
+  ],
+  "campus_ambiguity": {
+    "university_has_multiple_campuses": true,
+    "campuses_officially_named": [
+      "袁家岗校区（渝中区）",
+      "缙云校区（重庆大学城）"
+    ],
+    "college_footer_has_single_explicit_address": true,
+    "college_footer_explicit_campus_label": false,
+    "no_second_college_address_verified": true,
+    "note": "The college footer gives the University Town street/building address, while university overview explicitly says there are two campuses. The college's footer does not itself label the address 缙云校区. Do not assume the author's work location or postal address from campus geography alone."
+  },
+  "postcode_caution": {
+    "official_college_published_value": "400016",
+    "same_value_as_general_university_footer": true,
+    "alternative_college_value_verified": false,
+    "note": "Both directly college-owned pages explicitly print 400016. This report preserves that primary text; postal validity for this street/building has not been independently established. The same value in the general university footer is not proof of an error. Do not silently replace it with a guessed University Town postcode."
+  },
+  "needs_author_confirmation": [
+    "是否以‘重庆市沙坪坝区大学城中路61号兰园6号楼’作为两作者所属单位/通讯地址",
+    "该具体通讯地址邮编是否确为学院官网所列400016",
+    "若需要英文街道或楼宇写法，请作者确认其惯用正式写法；本报告未自行英译"
+  ],
+  "manuscript_changed": false
+}

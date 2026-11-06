@@ -1,0 +1,885 @@
+{
+  "analysis": "post hoc exploratory stratification of segmentation quality control by dataset-provided benign/malignant labels",
+  "audit_utc": "2026-11-06T08:03:33.801951+00:00",
+  "source_commit": "9fc8f54a91216b80aba909ba6028078f7642e4a9",
+  "python": "3.12.14",
+  "source_inputs_sha256": {
+    "reproducibility/manifests/busbra_development.csv": "6db10ea5bae1095dba26ce70b3b376ad1390c94de1645c546320310de8d55274",
+    "reproducibility/manifests/busbra_internal_holdout.csv": "2727d11d0db4f41ddd70a915576e5273a9d0ecbd735f151ae2ae710d0963a026",
+    "reproducibility/manifests/breast_external.csv": "33db74c60e8ce242f82f5efcd1007c08151e6faf359a6204f68a251791dbda22",
+    "reproducibility/records/development_cases.csv": "3c1375a5546a3af48de72339cc6a519f1f981d5431a38fcd2ccc6765ec43a9ce",
+    "reproducibility/records/validation_cases.csv": "6ac44d3d3557caceba1e47dab4f87bc3b180568195c0d0ecb6506fbb04d07961",
+    "data/raw/BUS-BRA/BUSBRA/bus_data.csv": "f218d0f10b0aeeb14ff4b2cfed8631b2f4a7cf608e564548b35bddd55f3aafb3",
+    "data/raw/BrEaST/BrEaST-Lesions-USG-clinical-data-Dec-15-2023.xlsx": "89a8874496a6f1f93960390b963f7369b90f7e72ee08a738f2d17e37f5eff8bf"
+  },
+  "low_quality_definition": {
+    "reference_dice_operator": "<",
+    "cutoff": 0.7
+  },
+  "unchanged_thresholds": {
+    "A": 0.13705134391784668,
+    "B": 0.06972856653991777
+  },
+  "thresholds_recalibrated": false,
+  "new_SAM_inference": false,
+  "hypothesis_tests_performed": false,
+  "score_manifest_join_key": [
+    "dataset",
+    "canonical_integer_patient_id",
+    "image_id"
+  ],
+  "score_manifest_pathology_matches": {
+    "development": 213,
+    "internal_holdout": 851,
+    "external_test": 252
+  },
+  "missing_labels": 0,
+  "conflicting_labels": 0,
+  "duplicate_patient_rows": 0,
+  "BUS_BRA_development_internal_patient_overlap": 0,
+  "label_sources": {
+    "BUS-BRA": {
+      "file": "data/raw/BUS-BRA/BUSBRA/bus_data.csv",
+      "label_column": "Pathology",
+      "join": "score.image_id = ID; score.patient_id = Case",
+      "matched_patients": 1064,
+      "patient_label_inconsistencies_in_full_source": 0
+    },
+    "BrEaST": {
+      "file": "data/raw/BrEaST/BrEaST-Lesions-USG-clinical-data-Dec-15-2023.xlsx",
+      "worksheet": "BrEaST-Lesions-USG clinical dat",
+      "label_column": "Classification",
+      "join": "canonical patient_id = CaseID; confirm image and main mask filenames",
+      "matched_patients": 252,
+      "verification_counts": {
+        "confirmed by follow-up care": 55,
+        "confirmed by biopsy": 197
+      },
+      "excluded_normal_ids_without_main_mask": [
+        45,
+        61,
+        209,
+        213
+      ],
+      "caution": "Classification includes biopsy and follow-up confirmation; not all cases are histopathologically confirmed."
+    }
+  },
+  "stratified": {
+    "development": {
+      "benign": {
+        "A": {
+          "N": 145,
+          "low_quality": 10,
+          "review_count": 21,
+          "TP": 10,
+          "FP": 11,
+          "TN": 124,
+          "FN": 0,
+          "low_quality_fraction": {
+            "numerator": 10,
+            "denominator": 145,
+            "fraction": 0.06896551724137931,
+            "percent": 6.896551724137931,
+            "wilson_ci95_percent": [
+              3.7888953275645365,
+              12.229127479787397
+            ]
+          },
+          "review_fraction": {
+            "numerator": 21,
+            "denominator": 145,
+            "fraction": 0.14482758620689656,
+            "percent": 14.482758620689655,
+            "wilson_ci95_percent": [
+              9.671819941826325,
+              21.127030851431673
+            ]
+          },
+          "detection": {
+            "numerator": 10,
+            "denominator": 10,
+            "fraction": 1.0,
+            "percent": 100.0,
+            "wilson_ci95_percent": [
+              72.24672001371108,
+              100
+            ]
+          },
+          "misses_per_100": 0.0
+        },
+        "B": {
+          "N": 145,
+          "low_quality": 10,
+          "review_count": 21,
+          "TP": 8,
+          "FP": 13,
+          "TN": 122,
+          "FN": 2,
+          "low_quality_fraction": {
+            "numerator": 10,
+            "denominator": 145,
+            "fraction": 0.06896551724137931,
+            "percent": 6.896551724137931,
+            "wilson_ci95_percent": [
+              3.7888953275645365,
+              12.229127479787397
+            ]
+          },
+          "review_fraction": {
+            "numerator": 21,
+            "denominator": 145,
+            "fraction": 0.14482758620689656,
+            "percent": 14.482758620689655,
+            "wilson_ci95_percent": [
+              9.671819941826325,
+              21.127030851431673
+            ]
+          },
+          "detection": {
+            "numerator": 8,
+            "denominator": 10,
+            "fraction": 0.8,
+            "percent": 80.0,
+            "wilson_ci95_percent": [
+              49.01624715366418,
+              94.33178485456247
+            ]
+          },
+          "misses_per_100": 1.3793103448275863
+        }
+      },
+      "malignant": {
+        "A": {
+          "N": 68,
+          "low_quality": 14,
+          "review_count": 22,
+          "TP": 9,
+          "FP": 13,
+          "TN": 41,
+          "FN": 5,
+          "low_quality_fraction": {
+            "numerator": 14,
+            "denominator": 68,
+            "fraction": 0.20588235294117646,
+            "percent": 20.58823529411765,
+            "wilson_ci95_percent": [
+              12.679560879520634,
+              31.642282445189394
+            ]
+          },
+          "review_fraction": {
+            "numerator": 22,
+            "denominator": 68,
+            "fraction": 0.3235294117647059,
+            "percent": 32.35294117647059,
+            "wilson_ci95_percent": [
+              22.43760409532999,
+              44.15550189949603
+            ]
+          },
+          "detection": {
+            "numerator": 9,
+            "denominator": 14,
+            "fraction": 0.6428571428571429,
+            "percent": 64.28571428571429,
+            "wilson_ci95_percent": [
+              38.76442310390741,
+              83.65526824644589
+            ]
+          },
+          "misses_per_100": 7.352941176470588
+        },
+        "B": {
+          "N": 68,
+          "low_quality": 14,
+          "review_count": 22,
+          "TP": 9,
+          "FP": 13,
+          "TN": 41,
+          "FN": 5,
+          "low_quality_fraction": {
+            "numerator": 14,
+            "denominator": 68,
+            "fraction": 0.20588235294117646,
+            "percent": 20.58823529411765,
+            "wilson_ci95_percent": [
+              12.679560879520634,
+              31.642282445189394
+            ]
+          },
+          "review_fraction": {
+            "numerator": 22,
+            "denominator": 68,
+            "fraction": 0.3235294117647059,
+            "percent": 32.35294117647059,
+            "wilson_ci95_percent": [
+              22.43760409532999,
+              44.15550189949603
+            ]
+          },
+          "detection": {
+            "numerator": 9,
+            "denominator": 14,
+            "fraction": 0.6428571428571429,
+            "percent": 64.28571428571429,
+            "wilson_ci95_percent": [
+              38.76442310390741,
+              83.65526824644589
+            ]
+          },
+          "misses_per_100": 7.352941176470588
+        }
+      }
+    },
+    "internal_holdout": {
+      "benign": {
+        "A": {
+          "N": 577,
+          "low_quality": 53,
+          "review_count": 102,
+          "TP": 51,
+          "FP": 51,
+          "TN": 473,
+          "FN": 2,
+          "low_quality_fraction": {
+            "numerator": 53,
+            "denominator": 577,
+            "fraction": 0.09185441941074524,
+            "percent": 9.185441941074524,
+            "wilson_ci95_percent": [
+              7.091108238533258,
+              11.81963877386315
+            ]
+          },
+          "review_fraction": {
+            "numerator": 102,
+            "denominator": 577,
+            "fraction": 0.17677642980935876,
+            "percent": 17.677642980935875,
+            "wilson_ci95_percent": [
+              14.781707384713533,
+              21.001113497715046
+            ]
+          },
+          "detection": {
+            "numerator": 51,
+            "denominator": 53,
+            "fraction": 0.9622641509433962,
+            "percent": 96.22641509433963,
+            "wilson_ci95_percent": [
+              87.24571280258165,
+              98.95897127241732
+            ]
+          },
+          "misses_per_100": 0.3466204506065858
+        },
+        "B": {
+          "N": 577,
+          "low_quality": 53,
+          "review_count": 80,
+          "TP": 41,
+          "FP": 39,
+          "TN": 485,
+          "FN": 12,
+          "low_quality_fraction": {
+            "numerator": 53,
+            "denominator": 577,
+            "fraction": 0.09185441941074524,
+            "percent": 9.185441941074524,
+            "wilson_ci95_percent": [
+              7.091108238533258,
+              11.81963877386315
+            ]
+          },
+          "review_fraction": {
+            "numerator": 80,
+            "denominator": 577,
+            "fraction": 0.1386481802426343,
+            "percent": 13.864818024263432,
+            "wilson_ci95_percent": [
+              11.283268762010582,
+              16.924335280811718
+            ]
+          },
+          "detection": {
+            "numerator": 41,
+            "denominator": 53,
+            "fraction": 0.7735849056603774,
+            "percent": 77.35849056603773,
+            "wilson_ci95_percent": [
+              64.47372974853897,
+              86.54536898972573
+            ]
+          },
+          "misses_per_100": 2.079722703639515
+        }
+      },
+      "malignant": {
+        "A": {
+          "N": 274,
+          "low_quality": 40,
+          "review_count": 72,
+          "TP": 20,
+          "FP": 52,
+          "TN": 182,
+          "FN": 20,
+          "low_quality_fraction": {
+            "numerator": 40,
+            "denominator": 274,
+            "fraction": 0.145985401459854,
+            "percent": 14.598540145985401,
+            "wilson_ci95_percent": [
+              10.907446537878485,
+              19.26856073496033
+            ]
+          },
+          "review_fraction": {
+            "numerator": 72,
+            "denominator": 274,
+            "fraction": 0.26277372262773724,
+            "percent": 26.277372262773724,
+            "wilson_ci95_percent": [
+              21.419615968872634,
+              31.791110554163698
+            ]
+          },
+          "detection": {
+            "numerator": 20,
+            "denominator": 40,
+            "fraction": 0.5,
+            "percent": 50.0,
+            "wilson_ci95_percent": [
+              35.199526933465386,
+              64.80047306653461
+            ]
+          },
+          "misses_per_100": 7.299270072992701
+        },
+        "B": {
+          "N": 274,
+          "low_quality": 40,
+          "review_count": 70,
+          "TP": 27,
+          "FP": 43,
+          "TN": 191,
+          "FN": 13,
+          "low_quality_fraction": {
+            "numerator": 40,
+            "denominator": 274,
+            "fraction": 0.145985401459854,
+            "percent": 14.598540145985401,
+            "wilson_ci95_percent": [
+              10.907446537878485,
+              19.26856073496033
+            ]
+          },
+          "review_fraction": {
+            "numerator": 70,
+            "denominator": 274,
+            "fraction": 0.25547445255474455,
+            "percent": 25.547445255474454,
+            "wilson_ci95_percent": [
+              20.746217864213644,
+              31.024838705685344
+            ]
+          },
+          "detection": {
+            "numerator": 27,
+            "denominator": 40,
+            "fraction": 0.675,
+            "percent": 67.5,
+            "wilson_ci95_percent": [
+              52.01774618987768,
+              79.9154977682173
+            ]
+          },
+          "misses_per_100": 4.744525547445256
+        }
+      }
+    },
+    "external_test": {
+      "benign": {
+        "A": {
+          "N": 154,
+          "low_quality": 8,
+          "review_count": 15,
+          "TP": 5,
+          "FP": 10,
+          "TN": 136,
+          "FN": 3,
+          "low_quality_fraction": {
+            "numerator": 8,
+            "denominator": 154,
+            "fraction": 0.05194805194805195,
+            "percent": 5.194805194805195,
+            "wilson_ci95_percent": [
+              2.655493248516289,
+              9.915005636211943
+            ]
+          },
+          "review_fraction": {
+            "numerator": 15,
+            "denominator": 154,
+            "fraction": 0.09740259740259741,
+            "percent": 9.74025974025974,
+            "wilson_ci95_percent": [
+              5.991824014917514,
+              15.448334403244088
+            ]
+          },
+          "detection": {
+            "numerator": 5,
+            "denominator": 8,
+            "fraction": 0.625,
+            "percent": 62.5,
+            "wilson_ci95_percent": [
+              30.574239460262742,
+              86.31557141764026
+            ]
+          },
+          "misses_per_100": 1.948051948051948
+        },
+        "B": {
+          "N": 154,
+          "low_quality": 8,
+          "review_count": 13,
+          "TP": 7,
+          "FP": 6,
+          "TN": 140,
+          "FN": 1,
+          "low_quality_fraction": {
+            "numerator": 8,
+            "denominator": 154,
+            "fraction": 0.05194805194805195,
+            "percent": 5.194805194805195,
+            "wilson_ci95_percent": [
+              2.655493248516289,
+              9.915005636211943
+            ]
+          },
+          "review_fraction": {
+            "numerator": 13,
+            "denominator": 154,
+            "fraction": 0.08441558441558442,
+            "percent": 8.441558441558442,
+            "wilson_ci95_percent": [
+              4.999525563471407,
+              13.906444416566375
+            ]
+          },
+          "detection": {
+            "numerator": 7,
+            "denominator": 8,
+            "fraction": 0.875,
+            "percent": 87.5,
+            "wilson_ci95_percent": [
+              52.911181778714656,
+              97.75825085499432
+            ]
+          },
+          "misses_per_100": 0.6493506493506493
+        }
+      },
+      "malignant": {
+        "A": {
+          "N": 98,
+          "low_quality": 8,
+          "review_count": 20,
+          "TP": 5,
+          "FP": 15,
+          "TN": 75,
+          "FN": 3,
+          "low_quality_fraction": {
+            "numerator": 8,
+            "denominator": 98,
+            "fraction": 0.08163265306122448,
+            "percent": 8.16326530612245,
+            "wilson_ci95_percent": [
+              4.1944058967642,
+              15.28828715423356
+            ]
+          },
+          "review_fraction": {
+            "numerator": 20,
+            "denominator": 98,
+            "fraction": 0.20408163265306123,
+            "percent": 20.408163265306122,
+            "wilson_ci95_percent": [
+              13.617701138609185,
+              29.431032970633137
+            ]
+          },
+          "detection": {
+            "numerator": 5,
+            "denominator": 8,
+            "fraction": 0.625,
+            "percent": 62.5,
+            "wilson_ci95_percent": [
+              30.574239460262742,
+              86.31557141764026
+            ]
+          },
+          "misses_per_100": 3.061224489795918
+        },
+        "B": {
+          "N": 98,
+          "low_quality": 8,
+          "review_count": 20,
+          "TP": 6,
+          "FP": 14,
+          "TN": 76,
+          "FN": 2,
+          "low_quality_fraction": {
+            "numerator": 8,
+            "denominator": 98,
+            "fraction": 0.08163265306122448,
+            "percent": 8.16326530612245,
+            "wilson_ci95_percent": [
+              4.1944058967642,
+              15.28828715423356
+            ]
+          },
+          "review_fraction": {
+            "numerator": 20,
+            "denominator": 98,
+            "fraction": 0.20408163265306123,
+            "percent": 20.408163265306122,
+            "wilson_ci95_percent": [
+              13.617701138609185,
+              29.431032970633137
+            ]
+          },
+          "detection": {
+            "numerator": 6,
+            "denominator": 8,
+            "fraction": 0.75,
+            "percent": 75.0,
+            "wilson_ci95_percent": [
+              40.9275430310169,
+              92.8520787247891
+            ]
+          },
+          "misses_per_100": 2.0408163265306123
+        }
+      }
+    }
+  },
+  "overall_for_main_table_2": {
+    "development": {
+      "A": {
+        "N": 213,
+        "low_quality": 24,
+        "review_count": 43,
+        "TP": 19,
+        "FP": 24,
+        "TN": 165,
+        "FN": 5,
+        "low_quality_fraction": {
+          "numerator": 24,
+          "denominator": 213,
+          "fraction": 0.11267605633802817,
+          "percent": 11.267605633802816,
+          "wilson_ci95_percent": [
+            7.689637617349751,
+            16.217902528633935
+          ]
+        },
+        "review_fraction": {
+          "numerator": 43,
+          "denominator": 213,
+          "fraction": 0.20187793427230047,
+          "percent": 20.187793427230048,
+          "wilson_ci95_percent": [
+            15.347250119907368,
+            26.084614113667953
+          ]
+        },
+        "detection": {
+          "numerator": 19,
+          "denominator": 24,
+          "fraction": 0.7916666666666666,
+          "percent": 79.16666666666667,
+          "wilson_ci95_percent": [
+            59.529546746811334,
+            90.75517464714814
+          ]
+        },
+        "misses_per_100": 2.347417840375587
+      },
+      "B": {
+        "N": 213,
+        "low_quality": 24,
+        "review_count": 43,
+        "TP": 17,
+        "FP": 26,
+        "TN": 163,
+        "FN": 7,
+        "low_quality_fraction": {
+          "numerator": 24,
+          "denominator": 213,
+          "fraction": 0.11267605633802817,
+          "percent": 11.267605633802816,
+          "wilson_ci95_percent": [
+            7.689637617349751,
+            16.217902528633935
+          ]
+        },
+        "review_fraction": {
+          "numerator": 43,
+          "denominator": 213,
+          "fraction": 0.20187793427230047,
+          "percent": 20.187793427230048,
+          "wilson_ci95_percent": [
+            15.347250119907368,
+            26.084614113667953
+          ]
+        },
+        "detection": {
+          "numerator": 17,
+          "denominator": 24,
+          "fraction": 0.7083333333333334,
+          "percent": 70.83333333333333,
+          "wilson_ci95_percent": [
+            50.832306335503375,
+            85.08535180303913
+          ]
+        },
+        "misses_per_100": 3.2863849765258215
+      }
+    },
+    "internal_holdout": {
+      "A": {
+        "N": 851,
+        "low_quality": 93,
+        "review_count": 174,
+        "TP": 71,
+        "FP": 103,
+        "TN": 655,
+        "FN": 22,
+        "low_quality_fraction": {
+          "numerator": 93,
+          "denominator": 851,
+          "fraction": 0.10928319623971798,
+          "percent": 10.928319623971797,
+          "wilson_ci95_percent": [
+            9.005070812164059,
+            13.202726535731538
+          ]
+        },
+        "review_fraction": {
+          "numerator": 174,
+          "denominator": 851,
+          "fraction": 0.2044653349001175,
+          "percent": 20.446533490011753,
+          "wilson_ci95_percent": [
+            17.872465929726125,
+            23.286213868757315
+          ]
+        },
+        "detection": {
+          "numerator": 71,
+          "denominator": 93,
+          "fraction": 0.7634408602150538,
+          "percent": 76.34408602150538,
+          "wilson_ci95_percent": [
+            66.77082816194321,
+            83.82733567894385
+          ]
+        },
+        "misses_per_100": 2.5851938895417157
+      },
+      "B": {
+        "N": 851,
+        "low_quality": 93,
+        "review_count": 150,
+        "TP": 68,
+        "FP": 82,
+        "TN": 676,
+        "FN": 25,
+        "low_quality_fraction": {
+          "numerator": 93,
+          "denominator": 851,
+          "fraction": 0.10928319623971798,
+          "percent": 10.928319623971797,
+          "wilson_ci95_percent": [
+            9.005070812164059,
+            13.202726535731538
+          ]
+        },
+        "review_fraction": {
+          "numerator": 150,
+          "denominator": 851,
+          "fraction": 0.1762632197414806,
+          "percent": 17.626321974148063,
+          "wilson_ci95_percent": [
+            15.213312441544288,
+            20.330291075283487
+          ]
+        },
+        "detection": {
+          "numerator": 68,
+          "denominator": 93,
+          "fraction": 0.7311827956989247,
+          "percent": 73.11827956989248,
+          "wilson_ci95_percent": [
+            63.32377843443058,
+            81.07869187491931
+          ]
+        },
+        "misses_per_100": 2.937720329024677
+      }
+    },
+    "external_test": {
+      "A": {
+        "N": 252,
+        "low_quality": 16,
+        "review_count": 35,
+        "TP": 10,
+        "FP": 25,
+        "TN": 211,
+        "FN": 6,
+        "low_quality_fraction": {
+          "numerator": 16,
+          "denominator": 252,
+          "fraction": 0.06349206349206349,
+          "percent": 6.349206349206349,
+          "wilson_ci95_percent": [
+            3.945601553534571,
+            10.063644244979079
+          ]
+        },
+        "review_fraction": {
+          "numerator": 35,
+          "denominator": 252,
+          "fraction": 0.1388888888888889,
+          "percent": 13.88888888888889,
+          "wilson_ci95_percent": [
+            10.158891465134797,
+            18.703302786362862
+          ]
+        },
+        "detection": {
+          "numerator": 10,
+          "denominator": 16,
+          "fraction": 0.625,
+          "percent": 62.5,
+          "wilson_ci95_percent": [
+            38.64104054550273,
+            81.51876744113638
+          ]
+        },
+        "misses_per_100": 2.380952380952381
+      },
+      "B": {
+        "N": 252,
+        "low_quality": 16,
+        "review_count": 33,
+        "TP": 13,
+        "FP": 20,
+        "TN": 216,
+        "FN": 3,
+        "low_quality_fraction": {
+          "numerator": 16,
+          "denominator": 252,
+          "fraction": 0.06349206349206349,
+          "percent": 6.349206349206349,
+          "wilson_ci95_percent": [
+            3.945601553534571,
+            10.063644244979079
+          ]
+        },
+        "review_fraction": {
+          "numerator": 33,
+          "denominator": 252,
+          "fraction": 0.13095238095238096,
+          "percent": 13.095238095238095,
+          "wilson_ci95_percent": [
+            9.478667589936832,
+            17.820058403351986
+          ]
+        },
+        "detection": {
+          "numerator": 13,
+          "denominator": 16,
+          "fraction": 0.8125,
+          "percent": 81.25,
+          "wilson_ci95_percent": [
+            56.99111903802587,
+            93.40840092857185
+          ]
+        },
+        "misses_per_100": 1.1904761904761905
+      }
+    }
+  },
+  "user_supplied_checks": [
+    {
+      "split": "internal_holdout",
+      "stratum": "benign",
+      "expected_low_TPA_TPB": [
+        53,
+        51,
+        41
+      ],
+      "observed_low_TPA_TPB": [
+        53,
+        51,
+        41
+      ],
+      "matches": true
+    },
+    {
+      "split": "internal_holdout",
+      "stratum": "malignant",
+      "expected_low_TPA_TPB": [
+        40,
+        20,
+        27
+      ],
+      "observed_low_TPA_TPB": [
+        40,
+        20,
+        27
+      ],
+      "matches": true
+    },
+    {
+      "split": "external_test",
+      "stratum": "benign",
+      "expected_low_TPA_TPB": [
+        8,
+        5,
+        7
+      ],
+      "observed_low_TPA_TPB": [
+        8,
+        5,
+        7
+      ],
+      "matches": true
+    },
+    {
+      "split": "external_test",
+      "stratum": "malignant",
+      "expected_low_TPA_TPB": [
+        8,
+        5,
+        6
+      ],
+      "observed_low_TPA_TPB": [
+        8,
+        5,
+        6
+      ],
+      "matches": true
+    }
+  ],
+  "all_strata_recombine_to_original_overall_counts": true,
+  "interpretation_limits": [
+    "Low-quality segmentation is the condition being detected; these are not cancer classification metrics.",
+    "Exploratory post hoc subgroups; no subgroup hypotheses or interaction tests were specified or performed.",
+    "No causal claim about lesion biology, size or image appearance is supported.",
+    "External stratum-specific detection denominators are only eight, limiting precision.",
+    "Development estimates use the threshold-selection cohort and are not independent validation."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-06",
+  "user_statement": "重庆医科大学缙云校区人工智能医学学院，你去找一下官方的地址或者别的论文中写的，项目符合国家法律规定免于审查，已经完成所有审查",
+  "interpreted_confirmations": {
+    "campus": "Jinyun Campus",
+    "statutory_ethics_exemption": "Author-confirmed applicability of Article 32; not an IRB-issued approval or waiver",
+    "human_review": "Author confirms completion of review of code, data, figures and text"
+  },
+  "official_address": "College of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Building 6, Lanyuan, No. 61 Daxuecheng Middle Road, Shapingba District, Chongqing 401331, China",
+  "postcode": "401331",
+  "ethics_statement": "This retrospective secondary analysis used lawfully obtained, publicly released anonymized breast ultrasound images and annotations and involved no participant recruitment or intervention. The authors confirmed that the study met the conditions for exemption from ethics review under Article 32 of the Chinese Measures for Ethical Review of Life Science and Medical Research Involving Human Participants (2023).",
+  "consent_statement": "No participants were recruited or contacted for this secondary analysis of publicly available anonymized data, and no additional informed consent was obtained.",
+  "no_IRB_number_invented": true,
+  "underlying_Codex_model_identifier": "not available in archived study records",
+  "final_exact_version_submission_approval": "Both authors explicitly confirmed approval and full-content responsibility for v7.",
+  "submission_approved": true,
+  "approval_source_user_statement": "两位作者均已同意并承担全文责任"
+}

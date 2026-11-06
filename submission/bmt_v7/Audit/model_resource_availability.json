@@ -1,0 +1,116 @@
+{
+  "checked_at_utc": "2026-11-06T08:07:07.560054+00:00",
+  "scope": "Resource availability for a targeted six-case SAM ViT-B rerun only. No inference executed by this resource-check task.",
+  "locked_model": {
+    "name": "SAM ViT-B",
+    "checkpoint_filename": "sam_vit_b_01ec64.pth",
+    "checkpoint_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+    "official_checkpoint_url": "https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth",
+    "source_repository": "https://github.com/facebookresearch/segment-anything",
+    "source_commit": "dca509fe793f601edb92606367a655c15ac00fdf",
+    "weight_dtype": "torch.float32",
+    "multimask_output": false
+  },
+  "initial_runtime": {
+    "python": "3.12.14",
+    "machine": "x86_64",
+    "torch_installed": false,
+    "segment_anything_installed": false,
+    "nvidia_smi_found": false,
+    "nvidia_device_nodes": [],
+    "dev_dri_exists": false,
+    "os_cpu_count": 3,
+    "cgroup_cpu_max": "200000 100000",
+    "effective_cpu_quota": 2,
+    "cgroup_memory_max_bytes": 8589934592,
+    "host_memory_total_kb": 10207480,
+    "host_memory_available_kb_at_check": 9473788,
+    "swap_total_kb": 0,
+    "workspace_disk_free_bytes_at_check": 7255498752
+  },
+  "cache_search": {
+    "roots": [
+      "/workspace",
+      "/home/agent/.cache",
+      "/root/.cache",
+      "/tmp",
+      "/opt"
+    ],
+    "followed_symlinks": false,
+    "skipped_directory_names": [
+      ".git",
+      "node_modules",
+      "__pycache__"
+    ],
+    "match_rule": "Exact sam_vit_b_01ec64.pth, or SAM/01ec64-named .pth/.pt/.safetensors; also searched segment_anything source folders containing build_sam.py.",
+    "checkpoint_candidates_found": [],
+    "sam_source_found_before_download": [],
+    "unreadable_paths": [
+      "/root/.cache",
+      "/tmp/crssync-cRsaIC",
+      "/tmp/crssync-ifvYxp"
+    ],
+    "completeness_note": "No weights found within readable search scope. Permission-denied paths were not bypassed; no claim of exhaustive machine-wide absence."
+  },
+  "downloaded_source": {
+    "path": "/workspace/bmt_v7/resources/segment-anything",
+    "method": "git clone --no-checkout --filter=blob:none followed by detached checkout of the locked commit",
+    "head": "dca509fe793f601edb92606367a655c15ac00fdf",
+    "clean_checkout": true
+  },
+  "checkpoint_mirror_search": {
+    "method": "Bounded Firecrawl web searches plus publisher/repository page reads and HTTP HEAD checks of explicit GitHub asset candidates.",
+    "result": "No live GitHub release asset for the exact original PTH was found within this bounded search. No checkpoint bytes obtained or loaded.",
+    "candidates_checked": [
+      {
+        "url": "https://github.com/SamLynnEvans/Transformer/releases/download/1.0/sam_vit_b_01ec64.pth",
+        "discovered_from": "https://discuss.pytorch.kr/t/segment-anything-vit-b/1932",
+        "request_method": "HEAD",
+        "http_status": 404,
+        "bytes_downloaded": 0
+      },
+      {
+        "url": "https://github.com/facebookresearch/segment-anything/releases/download/v1.0/sam_vit_b_01ec64.pth",
+        "discovered_from": "https://github.com/Wenj1eee/Prompt-Dimensions-of-MedSAM",
+        "request_method": "HEAD",
+        "http_status": 404,
+        "bytes_downloaded": 0,
+        "note": "Third-party README candidate, not a verified official publication link."
+      }
+    ],
+    "other_pages_read": [
+      {
+        "url": "https://github.com/yatengLG/ISAT/releases/tag/v1.0.0",
+        "finding": "No original PTH asset link obtained from the retrieved page."
+      },
+      {
+        "url": "https://github.com/Gourieff/ComfyUI-ReActor",
+        "finding": "SAM PTH links point to HuggingFace, not GitHub release assets."
+      },
+      {
+        "url": "https://github.com/cactusqq/KeyFrame-Compass/blob/main/scripts/setup_eval_envs.sh",
+        "finding": "SAM ViT-B entry points to official dl.fbaipublicfiles.com URL and records matching locked SHA-256."
+      }
+    ],
+    "unattempted_non_github_candidates": [
+      "https://huggingface.co/ybelkada/segment-anything",
+      "https://huggingface.co/datasets/Gourieff/ReActor/blob/main/models/sams/sam_vit_b_01ec64.pth"
+    ],
+    "no_bypass_used": true,
+    "search_ids": [
+      "01a1afe2-79c7-7517-bdf1-e9e01e14c9c1",
+      "01a1afe3-2468-746e-a44b-fd7aeeb6e98e",
+      "01a1afe3-2476-716b-8888-bdec340a8e68",
+      "01a1afe3-b1b0-701f-a444-6ce2652e4076",
+      "01a1afe3-b1ae-776c-b65b-d214d7f64229",
+      "01a1afe4-9f33-72b6-857e-c4a8ed343700",
+      "01a1afe4-a002-7209-96fc-3db810343183"
+    ]
+  },
+  "rerun_constraints": [
+    "Original run_score requires recorded software versions and CUDA; measure_case unconditionally calls torch.cuda.synchronize(device). It cannot run unchanged in the current CPU environment.",
+    "A six-case CPU audit would need the exact checkpoint hash, the locked clean source, the unchanged geometry/decoding/prediction logic, conditional CUDA synchronization, a separately recorded environment and per-case comparisons.",
+    "Matching model identity does not guarantee bit-identical scores across hardware/software. Do not assume equality or describe a CPU audit as the original full-cohort same-environment rerun.",
+    "No inference or dependency installation was performed by this resource-check task."
+  ]
+}

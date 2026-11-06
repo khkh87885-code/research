@@ -1,3 +1,11 @@
+# BMT preparation archive — latest v7
+
+[主稿 Word](bmt_v7/BMT_main_manuscript_v7.docx) · [PDF预览](bmt_v7/BMT_main_manuscript_v7_preview.pdf) · [完整包](BMT_revision_review_package_v7.zip) · [v7核验报告](bmt_v7/BMT_revision_report.md)
+
+两位作者已确认批准v7并承担全文责任，主稿0作者确认占位；本次仅归档，没有向期刊提交或联系审稿人。v7保留原结果，新增S8/S9、主表Wilson区间，并填入已确认机构地址与声明。六例缺失的SAM预测不会用参考或其他病例替代，资源缺口和复跑脚本见Analysis。
+
+以下保留v6历史索引：
+
 # BMT submission preparation archive
 
 最新版本为 **v6 作者审阅版**，第一作者兼通讯作者 Haoze Lan，第二作者 Ziyuan Zhu。两人同属重庆医科大学人工智能医学学院。Haoze Lan ORCID: https://orcid.org/0009-0008-5089-5902。

@@ -1,0 +1,46 @@
+{
+  "npz_sha256_matches_receipt": true,
+  "raw_image_sha256_matches_receipt": true,
+  "raw_reference_sha256_matches_receipt": true,
+  "npz_image_exactly_equals_decoded_raw_rgb": true,
+  "npz_reference_exactly_equals_decoded_raw_reference": true,
+  "prediction_foreground_counts": [
+    11166,
+    12477,
+    22459,
+    8511,
+    27611
+  ],
+  "recomputed_npz_metrics": {
+    "reference_dice": 0.3952017732577091,
+    "risk_b": 0.33613448737215834
+  },
+  "archived_case_rows": [
+    {
+      "dataset": "BrEaST",
+      "split": "external_test",
+      "patient_id": "1",
+      "image_id": "case001",
+      "pathology": "benign",
+      "sam_commit": "dca509fe793f601edb92606367a655c15ac00fdf",
+      "checkpoint_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+      "status": "scored",
+      "retries": "0",
+      "error": "",
+      "dice_vs_reference": "0.3952017732577091",
+      "low_quality": "1",
+      "sam_predicted_iou": "0.6204274892807007",
+      "risk_A": "0.3795725107192993",
+      "risk_B": "0.33613448737215834",
+      "alert_A": "1",
+      "alert_B": "1",
+      "dice_shift_left": "0.8611428329738189",
+      "dice_shift_right": "0.45525650557620817",
+      "dice_shift_up": "0.820043705849469",
+      "dice_shift_down": "0.5190190061118705",
+      "initial_mask_empty": "0",
+      "distinct_perturbed_boxes": "4",
+      "inference_ms": "344.66299999996863"
+    }
+  ]
+}

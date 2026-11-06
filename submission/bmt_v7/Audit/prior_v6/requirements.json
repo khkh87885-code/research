@@ -1,0 +1,195 @@
+{
+  "retrieved_on": "2026-11-06",
+  "journal": "Biomedical Engineering / Biomedizinische Technik",
+  "article_type": "Research Article",
+  "verification_scope": "Current official linked files retrieved using live Firecrawl calls; no newer BMT instruction file located in targeted official-domain searches. The exact December 2024 revision date asserted in the user prompt was not independently visible in extracted PDF content.",
+  "sources": {
+    "journal": {
+      "url": "https://www.degruyterbrill.com/journal/key/bmte/html",
+      "local": "source_0.md",
+      "status": 200
+    },
+    "instructions": {
+      "url": "https://www.degruyterbrill.com/publication/journal_key/BMTE/downloadAsset/BMTE_Instructions%20for%20Authors.pdf",
+      "local": "source_1.md",
+      "status": 200
+    },
+    "ai": {
+      "url": "https://www.degruyterbrill.com/publishing/for-authors/author-policies/artificial-intelligence",
+      "date": "September 2026",
+      "local": "source_2.md",
+      "status": 200
+    },
+    "data": {
+      "url": "https://www.degruyterbrill.com/publishing/for-authors/author-policies/data-sharing-policy",
+      "local": "source_3.md",
+      "status": 200
+    },
+    "tier2": {
+      "url": "https://degruyter-live-craftcms-assets.s3.amazonaws.com/Policy-2_20240625.pdf",
+      "date": "June 2024",
+      "local": "official_tier2_policy.md",
+      "status": 200
+    },
+    "declarations": {
+      "url": "https://www.degruyterbrill.com/publication/journal_key/BMTE/downloadAsset/BMTE_Template%20for%20Ethical%20and%20Legal%20Declarations.docx",
+      "local": "official_declarations_template.md",
+      "status": 200,
+      "original_binary_downloaded": false
+    },
+    "article_template": {
+      "url": "https://www.degruyterbrill.com/publication/journal_key/BMTE/downloadAsset/BMTE_Template%20for%20Research%20Articles.docx",
+      "local": "official_research_article_template.md",
+      "status": 200,
+      "original_binary_downloaded": false
+    }
+  },
+  "limits": {
+    "main_words": 6000,
+    "abstract_words": 200,
+    "abstract_headings": [
+      "Objectives",
+      "Methods",
+      "Results",
+      "Conclusions"
+    ],
+    "keywords_min": 3,
+    "keywords_max": 6,
+    "keywords": "alphabetical, lowercase, semicolon-separated; avoid abbreviations and repetition of title words",
+    "tables_and_figures_combined_max": 8,
+    "references_max": 35,
+    "supplementary_max_bytes_per_file": 10000000,
+    "heading_levels_max": 4,
+    "running_title_max_characters_including_spaces": 75
+  },
+  "structure": [
+    "Title page",
+    "Abstract",
+    "Keywords",
+    "Abbreviations (optional)",
+    "Introduction",
+    "Materials and methods",
+    "Results",
+    "Discussion",
+    "Acknowledgments",
+    "References",
+    "Table and Figure legends"
+  ],
+  "title_page": {
+    "full_names": true,
+    "order": "as intended for publication",
+    "correspondence": "asterisk after family name",
+    "corresponding_affiliation": [
+      "email",
+      "department",
+      "institution",
+      "street",
+      "city",
+      "postal code",
+      "country"
+    ],
+    "other_affiliation": [
+      "department",
+      "institution",
+      "city",
+      "postal code",
+      "country"
+    ],
+    "institutional_email": "strongly recommended, not stated as an absolute requirement",
+    "orcid": "highly/strongly recommended where available; no invented identifiers"
+  },
+  "references": {
+    "style": "Vancouver",
+    "in_text": "square brackets",
+    "order": "consecutive order of first appearance, including tables and figures",
+    "list_label": "number without bracket",
+    "more_than_six_authors": "first 6 then et al.",
+    "bidirectional_matching_required": true
+  },
+  "figures": {
+    "formats": [
+      "jpg",
+      "eps",
+      "png",
+      "tiff"
+    ],
+    "separate_files": true,
+    "pixel_min_dpi": 300,
+    "mixed_pixel_line_min_dpi": 600,
+    "min_label_pt": 6,
+    "font": "preferably Arial or Helvetica",
+    "panels": "uppercase",
+    "captions": "self-contained and outside images",
+    "all_cited_in_text": true
+  },
+  "tables": {
+    "editable": true,
+    "formats": [
+      "Word",
+      "LaTeX"
+    ],
+    "images_or_excel": false,
+    "numbering": "consecutive Arabic",
+    "placement_markers": true,
+    "footnotes": "lowercase alphabetical letters; explain abbreviations"
+  },
+  "supplementary": {
+    "published_as_supplied": true,
+    "track_changes": false,
+    "cite_consecutively": true
+  },
+  "data_policy": {
+    "tier": 2,
+    "sharing": "encouraged, not mandatory",
+    "das": "encouraged; required template contains data availability field",
+    "repository_preferred": true,
+    "secondary_data_citations": true,
+    "no_data_available_claim_without_verification": true
+  },
+  "ethical_template": {
+    "separate_word_required": true,
+    "fields": [
+      "Acknowledgments",
+      "Research ethics",
+      "Informed consent",
+      "Author contributions",
+      "Use of Large Language Models, AI and Machine Learning Tools",
+      "Conflict of interest",
+      "Research funding",
+      "Data availability"
+    ],
+    "consistency": "Template and manuscript must match; template controls typeset statements if conflicting",
+    "author_approval_statement": "All authors have accepted responsibility for the entire content of this manuscript and approved its submission.",
+    "do_not_assert_approval_before_author_confirmation": true
+  },
+  "ai": {
+    "authorship": "AI cannot be an author; human authors accountable",
+    "substantive_content_disclosure": true,
+    "proofreading_copyediting_disclosure": false,
+    "methodological_use_locations": [
+      "Methods (BMT instructions)",
+      "Acknowledgments (September 2026 publisher policy)"
+    ],
+    "manuscript_preparation_use_location": "Separate Ethical and Legal Declarations",
+    "image_disclosure": "AI-generated or AI-assisted illustrative images disclosed at submission",
+    "research_data_figures": "Generative AI creation, alteration, manipulation or enhancement of research data, figures or experimental images prohibited",
+    "script_exception": "No explicit exception for AI-authored plotting scripts is stated. Describe actual conventional-software execution workflow and retain author/editor confirmation of policy interpretation.",
+    "human_verification": "Required; do not claim independently verified by human authors unless confirmed"
+  },
+  "cover_letter": {
+    "required_first_submission": true,
+    "addressed_to": "Editor-in-Chief",
+    "content": "brief novelty statement"
+  },
+  "reviewers": {
+    "five_candidates": "user-requested deliverable; not independently found as a stated minimum in retrieved author instructions",
+    "independence": "check institutional and collaboration conflicts; no inferred email"
+  },
+  "unresolved": [
+    "Exact current author-instructions revision date not visible in extraction",
+    "Original binary Word templates not downloaded; official content transcriptions saved",
+    "Institutional addresses, ORCID, institutional email availability need author confirmation",
+    "Actual human verification and final approval must be confirmed",
+    "AI-assisted script execution versus prohibited research-figure generation requires accurate disclosure and, if uncertain, editor determination"
+  ]
+}

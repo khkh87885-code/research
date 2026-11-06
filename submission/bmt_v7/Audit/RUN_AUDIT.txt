@@ -1,0 +1,5 @@
+Use Python 3.12 with Pillow installed. Obtain a checkout of https://github.com/khkh87885-code/research at commit 592566b4c5f39e261c676eb034139a974e9cdfd5. From this directory run:
+
+python -B independent_scientific_audit.py --source /path/to/research --output /path/to/new_audit_output
+
+This independently recalculates the stored-score results and checks selected raw files; it does not rerun SAM inference. For the original full-image pipeline use the separate Reproducibility/README.md and locked dependencies.

@@ -1,0 +1,2 @@
+Author metadata update, 6 November 2026: Haoze Lan's ORCID is https://orcid.org/0009-0008-5089-5902. The user confirmed that both authors have the same affiliation: College of Artificial Intelligence Medicine, Chongqing Medical University, Chongqing, China. This ORCID is not assigned to Ziyuan Zhu. Any earlier general ORCID confirmation item below is historical; only the second author's optional ORCID remains unprovided. Scientific data and results were not changed by this update. Final signatures are in FILE_MANIFEST.json.
+

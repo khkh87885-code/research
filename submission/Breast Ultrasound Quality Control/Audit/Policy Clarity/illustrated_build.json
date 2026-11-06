@@ -1,0 +1,33 @@
+{
+  "path": "/workspace/policy_clarity/outputs/Breast Ultrasound Quality Control Manuscript_illustrated.docx",
+  "sha256": "5abc223b88ea41fcac3afc5c8d2f948955ecc9f4ccfc7a759d8ae09b1b04b326",
+  "purpose": "Optional reading copy with five new main figures and repeated exact legends at the end",
+  "formal_submission_file": "/workspace/policy_clarity/outputs/Breast Ultrasound Quality Control Manuscript.docx",
+  "added_figure_plates": [
+    "/workspace/policy_clarity/outputs/Figures/Figure_1.png",
+    "/workspace/policy_clarity/outputs/Figures/Figure_2.png",
+    "/workspace/policy_clarity/outputs/Figures/Figure_3.png",
+    "/workspace/policy_clarity/outputs/Figures/Figure_4.png",
+    "/workspace/policy_clarity/outputs/Figures/Figure_5.png"
+  ],
+  "plate_caption_style": "10.5 pt, 1.1 lines; chosen compact reading-copy style",
+  "image_package_audit": {
+    "media_file_count": 5,
+    "media_files": [
+      "word/media/image1.png",
+      "word/media/image2.png",
+      "word/media/image3.png",
+      "word/media/image4.png",
+      "word/media/image5.png"
+    ],
+    "embedded_media_sha256": [
+      "295e44479818fc08623a070b2a4179e1a8d1715f3bc5ee5095cf6b7c9739bf26",
+      "52ba5800311f3a1c41480193e9b25b4af8f8b151f08967d27b8bba9406e78cf5",
+      "66ba502a0a7770acf6ecc4264e4604295b91fcfcec01742ce4c5dc48291ef7c9",
+      "6a471c1f12195090ed4da6bb3bdffabb233dca76756bd9f734a28beb3c0da65d",
+      "a56dd46973a00b0719bbb492e28fc0846010aeac6e70398284416a09915306f3"
+    ],
+    "all_explicit_xml_relationships_resolve": true,
+    "embedded_media_exactly_match_expected_final_figures": true
+  }
+}

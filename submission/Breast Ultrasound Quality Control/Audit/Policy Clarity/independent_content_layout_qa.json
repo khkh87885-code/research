@@ -1,0 +1,494 @@
+{
+  "status": "PASS",
+  "scope": "Final limited compression delta review after prior39 preservation/display checks; no expanded scientific retesting",
+  "created_utc": "2026-11-06T16:00:14.405612+00:00",
+  "final_documents_pending": false,
+  "checks": [
+    {
+      "name": "Main primary tables exact source strings",
+      "status": "PASS",
+      "detail": {
+        "tables": 3,
+        "cells": 66
+      },
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Supplement table count/cells",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "All 18 supplemental tables outside S4 exact source strings",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "S4 original K50 numerical cells exact source strings",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "S4 all six matched count rows agree with frozen presentation counts",
+      "status": "PASS",
+      "detail": [
+        [
+          "Method / K",
+          "Detection,\nn/N (%)",
+          "Simulated review,\nn/N (%)",
+          "Misses, n",
+          "Misses per\n100 patients"
+        ],
+        [
+          "A / 33",
+          "10/16 (62.50 %)",
+          "33/252 (13.10 %)",
+          "6",
+          "2.38"
+        ],
+        [
+          "B / 33",
+          "13/16 (81.25 %)",
+          "33/252 (13.10 %)",
+          "3",
+          "1.19"
+        ],
+        [
+          "A / 35",
+          "10/16 (62.50 %)",
+          "35/252 (13.89 %)",
+          "6",
+          "2.38"
+        ],
+        [
+          "B / 35",
+          "13/16 (81.25 %)",
+          "35/252 (13.89 %)",
+          "3",
+          "1.19"
+        ],
+        [
+          "A / 50",
+          "14/16 (87.50 %)",
+          "50/252 (19.84 %)",
+          "2",
+          "0.79"
+        ],
+        [
+          "B / 50",
+          "13/16 (81.25 %)",
+          "50/252 (19.84 %)",
+          "3",
+          "1.19"
+        ]
+      ],
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Main all native math XML exact source",
+      "status": "PASS",
+      "detail": {
+        "all_native_math_objects": 11
+      },
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Main native display equation group count/labels",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Main no automatic delimiter math objects",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Supplement all native math XML exact source",
+      "status": "PASS",
+      "detail": {
+        "all_native_math_objects": 9
+      },
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Supplement native display equation group count/labels",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Supplement no automatic delimiter math objects",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Unchanged original result For H1,",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Unchanged original result For H2,",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Unchanged original result For H3,",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Unchanged original result At 50/252 reviews",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Unchanged declaration Research ethics.",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Unchanged declaration Informed consent.",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Unchanged declaration Author contributions.",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Unchanged declaration Use of Large Language Models, AI and Machine Learning Tools.",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Unchanged declaration Conflict of interest.",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Unchanged declaration Research funding.",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Original data availability retained before matched-count addendum",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "All 15 references exact source text",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Abstract four labels and <=200 words",
+      "status": "PASS",
+      "detail": {
+        "words_excluding_labels": 184,
+        "words_including_four_labels": 188
+      },
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "All four abstract labels bold",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Abstract added matched-count readouts explicitly post hoc",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Main Methods added33/35 explicitly after original analyses",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "compact wording manually read and current semantic assertions rechecked in delta"
+    },
+    {
+      "name": "Main Methods K50 identified original protocol supplementary analysis",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Matched result restrained descriptive interpretation",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "compact wording manually read and current semantic assertions rechecked in delta"
+    },
+    {
+      "name": "Figure4 caption separates added33/35 from original50",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "compact wording manually read and current semantic assertions rechecked in delta"
+    },
+    {
+      "name": "Supplement S4 explicit post hoc and no extra inference",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Displayed same-K counts agree with frozen CSV",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "S4 Method/K table header 9pt bold",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Manuscript PDF pages/nonempty/in-page text",
+      "status": "PASS",
+      "detail": {
+        "pages": 21,
+        "empty": [],
+        "out_of_bounds": []
+      },
+      "evidence_origin": "final root render validation plus independent delta pages"
+    },
+    {
+      "name": "Supplementary Material PDF pages/nonempty/in-page text",
+      "status": "PASS",
+      "detail": {
+        "pages": 25,
+        "empty": [],
+        "out_of_bounds": []
+      },
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Illustrated Manuscript PDF pages/nonempty/in-page text",
+      "status": "PASS",
+      "detail": {
+        "pages": 26,
+        "empty": [],
+        "out_of_bounds": []
+      },
+      "evidence_origin": "final root render validation plus independent delta pages"
+    },
+    {
+      "name": "Formula Proof PDF pages/nonempty/in-page text",
+      "status": "PASS",
+      "detail": {
+        "pages": 2,
+        "empty": [],
+        "out_of_bounds": []
+      },
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Proof is actual current mainp5/suppp19 pixel-exact",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "prior full review; unaffected evidence retained, with final limited compression delta below"
+    },
+    {
+      "name": "Figure4 plate25 complete caption same page",
+      "status": "PASS",
+      "detail": null,
+      "evidence_origin": "current PDF compact caption visually reviewed; end text verified"
+    }
+  ],
+  "pdfs": {
+    "Manuscript": {
+      "pages": 21,
+      "sha256": "01aaeb0e8a3c18e05096c0ca8ad3b7a722bb5f3b0d6d160920f222b071ef1ed4"
+    },
+    "Supplementary Material": {
+      "pages": 25,
+      "sha256": "6e9cc381e9614576c2d20c8a751bfc9bc3e4954b78bb42cbc77db6b6e82236d6"
+    },
+    "Illustrated Manuscript": {
+      "pages": 26,
+      "sha256": "18dce21deafee6d0559b0cdad752ea90891866d2d92dc1c0783216b3e7742383"
+    },
+    "Formula Proof": {
+      "pages": 2,
+      "sha256": "8d0cd1f6635af0f749abb5926689e9554dedf92ec18fbbe22cdb8ac19f03b06e"
+    }
+  },
+  "hashes": {
+    "outputs/Breast Ultrasound Quality Control Cover Letter.docx": "812868c803d020a5f5a749a621cea443157250e46fc7569ba7823d5bcbf7e7fe",
+    "outputs/Breast Ultrasound Quality Control Data and Code Availability.docx": "d970bd7cd6f08d2c766558c515868da0332d2e4c8ea7dbd033adc939e84ecd94",
+    "outputs/Breast Ultrasound Quality Control Ethical and Legal Declarations.docx": "12ee03bc9bc7cf31e4b47718bd6566abfda3742c6999de3ecfba9978a39b36d8",
+    "outputs/Breast Ultrasound Quality Control Figures.pdf": "3845d1fa5e3df557239f7b88a22c1470961df345d0dadc07b72613aa4c287bc8",
+    "outputs/Breast Ultrasound Quality Control Formula Proof.pdf": "8d0cd1f6635af0f749abb5926689e9554dedf92ec18fbbe22cdb8ac19f03b06e",
+    "outputs/Breast Ultrasound Quality Control Illustrated Manuscript.docx": "5abc223b88ea41fcac3afc5c8d2f948955ecc9f4ccfc7a759d8ae09b1b04b326",
+    "outputs/Breast Ultrasound Quality Control Illustrated Manuscript.pdf": "18dce21deafee6d0559b0cdad752ea90891866d2d92dc1c0783216b3e7742383",
+    "outputs/Breast Ultrasound Quality Control Manuscript.docx": "cb105556c21e27eb06c9ac19082a8582d9e1193b0970200fe3f90af6c9d4c000",
+    "outputs/Breast Ultrasound Quality Control Manuscript.pdf": "01aaeb0e8a3c18e05096c0ca8ad3b7a722bb5f3b0d6d160920f222b071ef1ed4",
+    "outputs/Breast Ultrasound Quality Control Preparation Notes zh.md": "31e7706201b91d8e68d1515353b0e1fa39536801d4cefb937aac5498f21d738c",
+    "outputs/Breast Ultrasound Quality Control Submission Checklist.docx": "3fb8ecb333fdbd8272516c6a27ff2720ca32fe6a2e41c4305ffc96ccc6ae4338",
+    "outputs/Breast Ultrasound Quality Control Submission Guide.md": "7c49beee4d7ff98b21688d0c57e4446e859b5a3afd52f02efd4540117bb58bd6",
+    "outputs/Breast Ultrasound Quality Control Supplementary Material.docx": "439981b81bff73a0085e23ca0d9751853eaccc73614caa22f1e67270b46c4ef2",
+    "outputs/Breast Ultrasound Quality Control Supplementary Material.pdf": "6e9cc381e9614576c2d20c8a751bfc9bc3e4954b78bb42cbc77db6b6e82236d6",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure 1.pdf": "2bc396f9e9396101d333da8137a1c4e27963d22b7539dd992ec194332f78be8e",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure 1.png": "295e44479818fc08623a070b2a4179e1a8d1715f3bc5ee5095cf6b7c9739bf26",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure 2.pdf": "2b7671a3c670fa93e45d5a9fafff82d18e9a59c9640af68729d3914eac73f87f",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure 2.png": "66ba502a0a7770acf6ecc4264e4604295b91fcfcec01742ce4c5dc48291ef7c9",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure 3.pdf": "8e9230ce2b1ae4a6ef81384b302dae0ebb5c03606340a232a5bb129783752ccb",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure 3.png": "a56dd46973a00b0719bbb492e28fc0846010aeac6e70398284416a09915306f3",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure 4.pdf": "00b60de942f3d329fcfbbf3523dfedf54ba2f030ae88a80e803308a5f5b01287",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure 4.png": "52ba5800311f3a1c41480193e9b25b4af8f8b151f08967d27b8bba9406e78cf5",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure 5.pdf": "ab2b7427d590353f34cdf17b595b38dda14713efce01bbe66d650b617ec16e0a",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure 5.png": "6a471c1f12195090ed4da6bb3bdffabb233dca76756bd9f734a28beb3c0da65d",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure S1.pdf": "d414d9e3212bcada18ef1bf96c7cc55b27fa307deb547c480b5a7185e447ccf8",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure S1.png": "f355bc525af902b2dadadf49a3c7c721945e9881dbd3bacb063466e92ab2d909",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure S2.pdf": "5abae83a6cef88890d656789e8ceb1b956dbe86ba7f959d621f08257fdc8a861",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure S2.png": "663b32f20e039490fa03deac5372a4f8cfb6e05a3e864acf2bea52ff4d4b3328",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure S3.pdf": "0b0743062f1e1a73b066217b817cb8c86311ea299033559ecb69b4560f0fbc64",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure S3.png": "f8c7d9ad705b0b1407bcb8aec1c31b499d5610895e9d10b819af36eb61271deb",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure S4.pdf": "4a6056fdee13ba0e0bd9a00a628a7fedc8aa70951b8352795cb8f9fc26e14296",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure S4.png": "d2ec79d27591a394ba7cbb73797b1eac6e8a5a80ad079a5e1f35cb8ba5ef1bd4",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure S5.pdf": "cf807c9c62d0f848134527c4be6230f24be1216ce022353862ae2c91864da75b",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure S5.png": "d47ca0615da5f1722f3b4b004a77cb1a08971d814a1c61f1b78af9e2605352e6",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure S6A.pdf": "8712c522e1b31058c116fd42aa162f84fb0f25509d57bda169da5bef967a6f86",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure S6A.png": "7ef86f64f2f76202956e6c9ab425dc3c55262a9e6aeccba3528e1b9700ffb5a9",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure S6B.pdf": "aa5e37dc2c10854145c2800c889c0c295464764f0a306e22cd7dc61d76bd5f64",
+    "outputs/Figures/Breast Ultrasound Quality Control Figure S6B.png": "93b6e14b4418e7d468eb3c1c7bdea299dc156088a8ceab547998e95ce3c856c3",
+    "outputs/README zh.md": "8c99df8b21dc56f1df4a60bdc5848e838430ff48ef035ce8626c7d8d706baf65",
+    "outputs/root README.md": "f39b2ca31a3e2a3e622f3a1d0b0aebfe5b9b376102122dd95c37589cd47e2e14"
+  },
+  "visual_review": {
+    "reviewer": "independent child typography/content reviewer",
+    "pages_viewed": [
+      "Main p2 abstract",
+      "Main p5 equations1–3",
+      "Main p10 matched-count results",
+      "Supplement p5 S4",
+      "Supplement p19 equationsS1–S2",
+      "Illustrated p25 Figure4 with full caption",
+      "Standalone Figure4 actual PDF render",
+      "Main p3 compressed Introduction",
+      "Main p7 compressed33/35Methods",
+      "Main p10 compressed matched results",
+      "Main p13 compressed related-work Discussion",
+      "Illustrated p25 compact Figure4caption with unchanged graphic"
+    ],
+    "findings": [
+      "Final abstract labels bold, 188 words including four labels, added33/35 readouts explicitly post hoc; readable spacing.",
+      "Final S4 header9pt bold matches other header cells; six data rows and explanatory text fit on one page.",
+      "All five unchanged native formulas visually readable, with numbers aligned at right and no collision with prose.",
+      "Main p10 originalTop50 interval and added same-count result paragraphs readable.",
+      "Figure4A/B retain original curves and policy markers; C retains original pairedCI; D displays counts without new intervals. All annotations legible.",
+      "Figure4 and complete caption fit together on reading p25, with ample bottom clearance and no clipping.",
+      "Revised prior-work paragraphs describe related scoring comparisons and limit this study contribution to operating-policy evaluation; no unsupported first or superior claim observed.",
+      "Compression delta visually accepted on mainp3/p7/p10/p13 and readingp25; full compact caption fits."
+    ]
+  },
+  "limitations": [
+    "Direct Microsoft Word and WPS display were not executed; visual findings apply to actual exported PDFs.",
+    "No new resampling or scientific performance experiment; new presentation counts are checked against frozen CSV/source and original primary tables/results/math are preserved."
+  ],
+  "previous_report_sha256": "96a7ef66ec7479e9631027f61c2243bc10bc97ffb6b51bc86f16a1fd22a82745",
+  "previous_changed_output_hashes": {
+    "outputs/Breast Ultrasound Quality Control Formula Proof.pdf": "aa37542d0b76af06f96cf2a5056186515588352467869aa162fc993ca347525a",
+    "outputs/Breast Ultrasound Quality Control Illustrated Manuscript.docx": "2820b520a03fe4a6cbff81d73120a445c934552b8f47f76e618027378023ce9e",
+    "outputs/Breast Ultrasound Quality Control Illustrated Manuscript.pdf": "f7b011665f202e65a847eedcd8d40c6efed821de8b7896759acb18f60a47ec1c",
+    "outputs/Breast Ultrasound Quality Control Manuscript.docx": "903ff5d3af32b03da59eeb41653da537cab2a73227ec6e24f881a89ba6fce807",
+    "outputs/Breast Ultrasound Quality Control Manuscript.pdf": "01b4e7bf8c4d052e7e31ca4d86debb0781f44829606f34cbf0e0f2512c888a3e"
+  },
+  "delta_checks": [
+    {
+      "name": "Only five expected main/reading/proof outputs changed",
+      "status": "PASS",
+      "detail": [
+        "outputs/Breast Ultrasound Quality Control Formula Proof.pdf",
+        "outputs/Breast Ultrasound Quality Control Illustrated Manuscript.docx",
+        "outputs/Breast Ultrasound Quality Control Illustrated Manuscript.pdf",
+        "outputs/Breast Ultrasound Quality Control Manuscript.docx",
+        "outputs/Breast Ultrasound Quality Control Manuscript.pdf"
+      ]
+    },
+    {
+      "name": "Main primary table strings and all math XML still source-exact",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "H1 H2 H3 and originalTop50 result paragraphs still source-exact",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Compacted text retains analysis roles and no new inference",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Abstract unchanged188words and four bold labels",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Final PDF page counts",
+      "status": "PASS",
+      "detail": {
+        "Manuscript": 21,
+        "Supplementary Material": 25,
+        "Illustrated Manuscript": 26,
+        "Formula Proof": 2
+      }
+    },
+    {
+      "name": "Final proof exact current mainp5/suppp19",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Final abstract PDF raster identical to previous audited abstract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Compressed readingp25 has full caption same page",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "Manual content/visual delta review",
+      "status": "PASS",
+      "detail": {
+        "pages_viewed": [
+          "Main p3 compressed Introduction",
+          "Main p7 compressed33/35Methods",
+          "Main p10 compressed matched results",
+          "Main p13 compressed related-work Discussion",
+          "Illustrated p25 compact Figure4caption with unchanged graphic"
+        ],
+        "finding": "Scientific interpretation retained; actual new paragraphs and complete compact caption readable without crowding or clipping. K33/35posthoc, K50original, oldCI clearly retained; no unsupported priority/superiority claim."
+      }
+    }
+  ],
+  "word_limit": {
+    "conservative_visible_words_including_tables_declarations_references_figures": 5897,
+    "abstract_including_four_labels": 188,
+    "source": "root build manuscript_edits.json; abstract independently counted"
+  }
+}

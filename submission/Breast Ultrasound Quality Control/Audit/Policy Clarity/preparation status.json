@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-11-06T16:01:05.050206+00:00",
+  "source_commit": "4245aaa10a9ce1589807fbdb74b20f59893ec6ee",
+  "scope": "Related-work positioning and matched-count presentation",
+  "main_abstract_words_including_labels": 188,
+  "main_visible_word_count_including_tables_and_references": 5897,
+  "main_scientific_tables_and_cells": [
+    3,
+    66
+  ],
+  "supplement_tables_and_cells": [
+    19,
+    898
+  ],
+  "native_math_groups": [
+    3,
+    2
+  ],
+  "original_primary_values_and_intervals_preserved": true,
+  "K33_K35_role": "post hoc descriptive extraction from archived ranking curves",
+  "K50_role": "original protocol supplementary budget, repeated in matched-count display",
+  "new_model_inference": false,
+  "new_resampling": false,
+  "new_intervals_or_hypothesis_tests": false,
+  "external_patients_and_low_quality": [
+    252,
+    16
+  ],
+  "upload_materials_including_guide": [
+    "Breast Ultrasound Quality Control Manuscript.docx",
+    "Figures/Breast Ultrasound Quality Control Figure 1.png",
+    "Figures/Breast Ultrasound Quality Control Figure 2.png",
+    "Figures/Breast Ultrasound Quality Control Figure 3.png",
+    "Figures/Breast Ultrasound Quality Control Figure 4.png",
+    "Figures/Breast Ultrasound Quality Control Figure 5.png",
+    "Breast Ultrasound Quality Control Ethical and Legal Declarations.docx",
+    "Breast Ultrasound Quality Control Cover Letter.docx",
+    "Breast Ultrasound Quality Control Supplementary Material.docx",
+    "Breast Ultrasound Quality Control Supplementary Figure S6.pdf",
+    "Breast Ultrasound Quality Control Data and Code Availability.docx",
+    "Breast Ultrasound Quality Control Reviewer Candidates.docx",
+    "Breast Ultrasound Quality Control Additional Quality Control Metrics.csv",
+    "Analysis/Table Data/Breast Ultrasound Quality Control Table S13 Unrounded Comparisons.csv",
+    "Analysis/Table Data/Breast Ultrasound Quality Control Matched Review Counts.csv",
+    "Breast Ultrasound Quality Control Submission Guide.md"
+  ],
+  "zip_bytes": 7173243,
+  "zip_sha256": "331cf94af6cdaeabe06274b733022ff182de6c294eed59cf2df676821a11372d",
+  "independent_qa_sha256": "adfe3e95683b601df44eba46d30847c24a18ac51645f3e6527563147ed5c4862",
+  "native_word_or_wps_executed": false,
+  "journal_submission_executed": false
+}

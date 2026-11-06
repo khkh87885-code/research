@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "native_wps_tested": false,
+  "native_word_tested": false,
+  "documents": {
+    "Breast Ultrasound Quality Control Manuscript.pdf": {
+      "pages": 21,
+      "formula_pages": [
+        5
+      ],
+      "sha256": "01aaeb0e8a3c18e05096c0ca8ad3b7a722bb5f3b0d6d160920f222b071ef1ed4",
+      "out_of_page": []
+    },
+    "Breast Ultrasound Quality Control Supplementary Material.pdf": {
+      "pages": 25,
+      "formula_pages": [
+        19
+      ],
+      "sha256": "6e9cc381e9614576c2d20c8a751bfc9bc3e4954b78bb42cbc77db6b6e82236d6",
+      "out_of_page": []
+    },
+    "Breast Ultrasound Quality Control Illustrated Manuscript.pdf": {
+      "pages": 26,
+      "formula_pages": [
+        5
+      ],
+      "sha256": "18dce21deafee6d0559b0cdad752ea90891866d2d92dc1c0783216b3e7742383",
+      "out_of_page": []
+    },
+    "Breast Ultrasound Quality Control Figures.pdf": {
+      "pages": 12,
+      "formula_pages": [],
+      "sha256": "3845d1fa5e3df557239f7b88a22c1470961df345d0dadc07b72613aa4c287bc8",
+      "out_of_page": []
+    },
+    "Breast Ultrasound Quality Control Formula Proof.pdf": {
+      "pages": 2,
+      "sha256": "8d0cd1f6635af0f749abb5926689e9554dedf92ec18fbbe22cdb8ac19f03b06e"
+    }
+  }
+}

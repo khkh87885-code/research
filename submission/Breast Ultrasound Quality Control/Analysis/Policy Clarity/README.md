@@ -1,0 +1,9 @@
+# Matched review-count presentation
+
+The same original BrEaST252 case scores are ranked by descending risk and the stored patient-identifier string as a lexicographic tie-breaker. The added descriptive K33/K35 points use the previously reported locked-cutoff review volumes; K50 repeats the original protocol supplementary budget. No new inference, calibration, interval, hypothesis test or resampling is run. The existing H1–H3, original Top50 interval and all original scores remain.
+
+The named CSV is also uploaded as supplementary data under Analysis/Table Data. Source scores, curves and fixed primary references remain in ../../Reproducibility. Their source hashes and full paired count derivation are in ../../Audit/Policy Clarity/same_k_report.json. The original source commit is4245aaa10a9ce1589807fbdb74b20f59893ec6ee.
+
+The standalone scripts retain their original /workspace/research_source and /workspace/policy_clarity paths. To replay the scientific lookup, use the repository at the documented source commit, set ROOT/BASE/OUT in analyze_same_k.py for the local checkout, and run it with Python. It reads records/validation_cases.csv, review_curve_counts.csv, study_lock.json and reference JSON from Reproducibility, verifies input hashes and regenerates the three-row CSV and the audit. draw_figure4.py reads the same frozen references and this CSV; adjust BASE/SOURCE paths for the local workspace. build_manuscripts.py uses an immutable copy of the source submission in TASK/source and writes TASK/outputs. package_submission.py is the original hash-gated deployment script for this managed workspace.
+
+Only concise source comparisons are publicly archived. Temporary complete article retrievals are not bundled. The evidence compares the two closest papers without claiming first fixed-budget screening or absence of inaccessible methods. Current DOCX/PDF findings do not constitute a direct WPS or Microsoft Word runtime test.

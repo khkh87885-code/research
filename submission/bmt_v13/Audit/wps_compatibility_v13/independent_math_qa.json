@@ -1,0 +1,599 @@
+{
+  "checked_utc": "2026-11-06T14:03:57.998903+00:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "main scientific table count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main all scientific table cells exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main scientific cell count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main no formula layout table",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main formula labels/order unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main all formulas are ordinary single paragraphs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main no automatic delimiter objects",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main no math paragraph wrappers",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main all ordinary prose exact apart from S6 filename",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native math object count unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native arithmetic fraction/script/accent signature 1",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native arithmetic fraction/script/accent signature 2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native arithmetic fraction/script/accent signature 3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native arithmetic fraction/script/accent signature 4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native arithmetic fraction/script/accent signature 5",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native arithmetic fraction/script/accent signature 6",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native arithmetic fraction/script/accent signature 7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native arithmetic fraction/script/accent signature 8",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native arithmetic fraction/script/accent signature 9",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native arithmetic fraction/script/accent signature 10",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native arithmetic fraction/script/accent signature 11",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native f object count unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native nary object count unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native sSub object count unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native sSup object count unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native sSubSup object count unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main native acc object count unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main all literal parentheses normal text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main all literal parentheses Times New Roman",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main literal opening/closing parenthesis counts balanced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 1 source arithmetic equivalent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 2 source arithmetic equivalent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main equation 3 source arithmetic equivalent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 3 no operand remains outside summation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "riskB full Dice function is within summand",
+      "pass": true,
+      "detail": "D(P0,Pj)"
+    },
+    {
+      "name": "riskB complete P subscripts inside summand",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "riskB sum bounds still1..4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "riskB summand has no H/I substitution",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main title author metadata and abstract unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main Results declarations references captions unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main all embedded images unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement scientific table count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement all scientific table cells exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement scientific cell count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement no formula layout table",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement formula labels/order unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement all formulas are ordinary single paragraphs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement no automatic delimiter objects",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement no math paragraph wrappers",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement all ordinary prose exact apart from S6 filename",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement native math object count unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement native arithmetic fraction/script/accent signature 1",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement native arithmetic fraction/script/accent signature 2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement native arithmetic fraction/script/accent signature 3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement native arithmetic fraction/script/accent signature 4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement native arithmetic fraction/script/accent signature 5",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement native arithmetic fraction/script/accent signature 6",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement native arithmetic fraction/script/accent signature 7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement native arithmetic fraction/script/accent signature 8",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement native arithmetic fraction/script/accent signature 9",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement native f object count unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement native nary object count unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement native sSub object count unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement native sSup object count unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement native sSubSup object count unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement native acc object count unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement all literal parentheses normal text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement all literal parentheses Times New Roman",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement literal opening/closing parenthesis counts balanced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement equation S1 source arithmetic equivalent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S1 no operand remains outside summation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S1 mean fraction lies inside summand",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S1 denominator remains2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S1 mean numerator correct",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S1 body has literal factor parentheses",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement equation S2 source arithmetic equivalent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S2 no operand remains outside summation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S2 mean fraction lies inside summand",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S2 denominator remains2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S2 mean numerator correct",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S2 body has literal factor parentheses",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement all embedded images unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reading copy native math identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reading copy no delimiters or formula tables",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "S6 bytes unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v9.pdf no replacement or parser glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v9.pdf no red formula error text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v13_preview.pdf no replacement or parser glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v13_preview.pdf no red formula error text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_formula_layout_proof_v13.pdf no replacement or parser glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_formula_layout_proof_v13.pdf no red formula error text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_material_v9_preview.pdf no replacement or parser glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_material_v9_preview.pdf no red formula error text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v13_illustrated_preview.pdf no replacement or parser glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v13_illustrated_preview.pdf no red formula error text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "repair hash matches BMT_main_manuscript_v13.docx",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "repair hash matches BMT_supplementary_material_v9.docx",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "repair hash matches BMT_main_manuscript_v13_illustrated.docx",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 98,
+  "equations_verified": 5,
+  "equation_checks": [
+    {
+      "document": "main",
+      "label": "1",
+      "pass": true,
+      "math_text": "D(U,V)=2|U∩V||U|+|V|.",
+      "source_signature_equivalent": true,
+      "native_math_sha256": "fe9d8d30c01831f6cf20be24f8c1feb98313335601234c7ec71b90683640993f"
+    },
+    {
+      "document": "main",
+      "label": "2",
+      "pass": true,
+      "math_text": "rA=1−q.",
+      "source_signature_equivalent": true,
+      "native_math_sha256": "9a77ecf63ab76efd2707c5862870080f87f733a6792e92e4a95c978f910fdb9f"
+    },
+    {
+      "document": "main",
+      "label": "3",
+      "pass": true,
+      "math_text": "rB=1−14j=14D(P0,Pj).",
+      "source_signature_equivalent": true,
+      "native_math_sha256": "3fdeda9e17e55e91512bd1131d36e981f01ced093bfc03bdc4591740f2ab42fd"
+    },
+    {
+      "document": "supplement",
+      "label": "S1",
+      "pass": true,
+      "math_text": "C=s​(wE,s−wI,s)pE,s+pI,s2,",
+      "source_signature_equivalent": true,
+      "native_math_sha256": "b2d99c4cc7411de3ee6880445291be7c0f500ec6b5b02dcb345b1639649460a6"
+    },
+    {
+      "document": "supplement",
+      "label": "S2",
+      "pass": true,
+      "math_text": "W=s​(pE,s−pI,s)wE,s+wI,s2.",
+      "source_signature_equivalent": true,
+      "native_math_sha256": "5fb743165845961ce2db19981e3fcef7da7c68718d80e065c65bbd49f4f4ff5c"
+    }
+  ],
+  "documents": {
+    "BMT_main_manuscript_v13.docx": {
+      "sha256": "40be070a09074431a7ac09cfe7db0068e0d206312b761c64fce462f41502c8ad",
+      "bytes": 58197,
+      "data_tables": 3,
+      "scientific_cells": 66,
+      "formula_paragraphs": 3
+    },
+    "BMT_supplementary_material_v9.docx": {
+      "sha256": "39db16641c06b90ac0d9f2265cbd2bfa82a123c51cbb9e082e67a9b305cc2e1f",
+      "bytes": 1533507,
+      "data_tables": 19,
+      "scientific_cells": 878,
+      "formula_paragraphs": 2
+    },
+    "BMT_main_manuscript_v13_illustrated.docx": {
+      "sha256": "bf223624535d7954c61b928afc16d7501bf3f80c0c000bbb5fd248e730415d65",
+      "bytes": 3540721
+    },
+    "BMT_supplementary_Figure_S6_v9.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "bytes": 1871819,
+      "pages": 6
+    },
+    "BMT_main_manuscript_v13_preview.pdf": {
+      "sha256": "52060b3ed9a89a0d0c7e377253ad83d59a74ca79b962b436b5042d4910a86e1b",
+      "bytes": 222664,
+      "pages": 21
+    },
+    "BMT_formula_layout_proof_v13.pdf": {
+      "sha256": "6f8224945cb9bccf516c9f29356a1c90030709ea393da155a0ef38652350ba77",
+      "bytes": 1015333,
+      "pages": 2
+    },
+    "BMT_supplementary_material_v9_preview.pdf": {
+      "sha256": "af52b88d82a71b4e4df1b5ddd932a3983fc05e4545791d4aad0faf5cfbb9ef86",
+      "bytes": 1332781,
+      "pages": 25
+    },
+    "BMT_main_manuscript_v13_illustrated_preview.pdf": {
+      "sha256": "c35cf28d6b392898118660102eae1312a4acf029c44757cd044b9d2da0b58120",
+      "bytes": 1465931,
+      "pages": 26
+    }
+  },
+  "source_repair_report_sha256": "6f8e13c9ef868061bfc501c35fbefaf6625d90eb38dd232e630a892c3d925d2f",
+  "source_v12_main_sha256": "100bb41ffe8355222ecdf588ab7045a764995c7f785c8d6b51d80873c3242b0d",
+  "source_v12_supplement_sha256": "f492a6222165ad5569a968f93ccf9c61a588ef5d9bb01769fd4859226bc6a740",
+  "unresolved_findings": 0,
+  "final_documents_pending": false,
+  "direct_wps_tested": false,
+  "notes": [
+    "All scientific definitions and ordinary prose are unchanged from v12, except the S6v9 filename. The3main and2supplement equations remain native editable OfficeMath.",
+    "The arithmetic signature preserves fraction/script/accent structure and every source token while allowing dynamic-delimiter containers to become literal parentheses and legacy nary-body boundaries to expand. Separate checks require complete final summands, so this equivalence proof does not accept an incorrectly truncated summation operand.",
+    "RiskB contains the complete D(P0,Pj) function inside nary/e, with both P subscripts and bounds j=1..4. Kitagawa C/W both contain their full mean-rate/mean-weight fraction inside nary/e; only terminal punctuation stays outside.",
+    "All automatic m:d delimiter objects and all5 formula-layout tables are absent. Literal parentheses are ASCII normal-math text explicitly using Times New Roman.",
+    "All66main/878supplement scientific tablecells, author metadata/abstract, Results/declarations/references/captions and embedded image bytes are preserved. S6PDF bytes are unchanged.",
+    "No inference, resampling or statistical experiment was run. This is structural/content verification and this environment PDF checking, not a direct WPS or MicrosoftWord runtime test. Full visual review is separately documented."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "scope": "Actual exported PDF completeness/page boundaries and exact proof pages",
+  "native_wps_executed": false,
+  "native_word_executed": false,
+  "proof_is_exact_actual_pages": true,
+  "documents": [
+    {
+      "file": "BMT_main_manuscript_v13_preview.pdf",
+      "sha256": "52060b3ed9a89a0d0c7e377253ad83d59a74ca79b962b436b5042d4910a86e1b",
+      "bytes": 222664,
+      "pages": 21,
+      "nonempty_pages": true,
+      "text_outside_page": []
+    },
+    {
+      "file": "BMT_main_manuscript_v13_illustrated_preview.pdf",
+      "sha256": "c35cf28d6b392898118660102eae1312a4acf029c44757cd044b9d2da0b58120",
+      "bytes": 1465931,
+      "pages": 26,
+      "nonempty_pages": true,
+      "text_outside_page": []
+    },
+    {
+      "file": "BMT_supplementary_material_v9_preview.pdf",
+      "sha256": "af52b88d82a71b4e4df1b5ddd932a3983fc05e4545791d4aad0faf5cfbb9ef86",
+      "bytes": 1332781,
+      "pages": 25,
+      "nonempty_pages": true,
+      "text_outside_page": []
+    },
+    {
+      "file": "BMT_supplementary_Figure_S6_v9.pdf",
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "bytes": 1871819,
+      "pages": 6,
+      "nonempty_pages": true,
+      "text_outside_page": []
+    },
+    {
+      "file": "BMT_formula_layout_proof_v13.pdf",
+      "sha256": "6f8224945cb9bccf516c9f29356a1c90030709ea393da155a0ef38652350ba77",
+      "bytes": 1015333,
+      "pages": 2,
+      "nonempty_pages": true,
+      "text_outside_page": []
+    }
+  ]
+}

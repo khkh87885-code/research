@@ -1,0 +1,3 @@
+# Graphics/layout build archive
+
+These scripts are the exact cloud build scripts used for the v9 presentation revision. They retain /workspace/bmt_v9 and /workspace/research_source execution paths and are not advertised as a path-independent installer. Figure generation reads the already archived JSON/CSV and captured NPZ inputs; it does not rerun inference or resampling. The scripts export PNG, PDF and SVG; this delivery stores PNG and PDF, while SVG can be regenerated. Input/output hashes, current official-format evidence and independent checks are under ../../Audit/graphics_v9. The separate Reproducibility directory retains the approved portable numerical-analysis entry point.

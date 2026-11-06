@@ -1,0 +1,52 @@
+{
+  "revision": "v13",
+  "known_failing_viewer": "WPS",
+  "direct_wps_tested": false,
+  "fix": "Literal native-math parentheses; complete summands; ordinary paragraphs with center/right tabs; no layout tables",
+  "documents": [
+    {
+      "source": "/workspace/research_source/submission/bmt_v12/BMT_main_manuscript_v12.docx",
+      "output": "/workspace/bmt_v13/outputs/BMT_main_manuscript_v13.docx",
+      "sha256": "40be070a09074431a7ac09cfe7db0068e0d206312b761c64fce462f41502c8ad",
+      "flattened_delimiters": 3,
+      "equation_labels": [
+        "(1)",
+        "(2)",
+        "(3)"
+      ],
+      "scientific_tables": 3,
+      "editable_math": true,
+      "automatic_delimiter_objects": 0,
+      "layout_tables": 0
+    },
+    {
+      "source": "/workspace/research_source/submission/bmt_v12/BMT_supplementary_material_v8.docx",
+      "output": "/workspace/bmt_v13/outputs/BMT_supplementary_material_v9.docx",
+      "sha256": "39db16641c06b90ac0d9f2265cbd2bfa82a123c51cbb9e082e67a9b305cc2e1f",
+      "flattened_delimiters": 2,
+      "equation_labels": [
+        "(S1)",
+        "(S2)"
+      ],
+      "scientific_tables": 19,
+      "editable_math": true,
+      "automatic_delimiter_objects": 0,
+      "layout_tables": 0
+    },
+    {
+      "source": "/workspace/bmt_v12/outputs/BMT_main_manuscript_v12_illustrated.docx",
+      "output": "/workspace/bmt_v13/outputs/BMT_main_manuscript_v13_illustrated.docx",
+      "sha256": "bf223624535d7954c61b928afc16d7501bf3f80c0c000bbb5fd248e730415d65",
+      "flattened_delimiters": 3,
+      "equation_labels": [
+        "(1)",
+        "(2)",
+        "(3)"
+      ],
+      "scientific_tables": 3,
+      "editable_math": true,
+      "automatic_delimiter_objects": 0,
+      "layout_tables": 0
+    }
+  ]
+}

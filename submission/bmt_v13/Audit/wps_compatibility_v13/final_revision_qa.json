@@ -1,0 +1,72 @@
+{
+  "revision": "v13",
+  "created_utc": "2026-11-06T14:04:56.129389+00:00",
+  "status": "PASS",
+  "final_documents_pending": false,
+  "scope": "DOCX mathematical/content preservation plus actual exported PDF layout; WPS remains unexecuted",
+  "known_failing_viewer": "WPS",
+  "direct_wps_tested": false,
+  "direct_microsoft_word_tested": false,
+  "reports": {
+    "independent_math_qa": {
+      "path": "evidence/independent_math_qa.json",
+      "sha256": "2e4e0df98904f6e839038f10733649c8d55a251350b6a0584d3881c7aaeda7ce"
+    },
+    "typography_audit": {
+      "path": "evidence/typography_audit.json",
+      "sha256": "533a108326c6b7d9c2820022d0beaccb614b3937063a4c403292941b39870b15"
+    },
+    "render_validation": {
+      "path": "evidence/render_validation.json",
+      "sha256": "3f14f01a6726f7b291eb50691ccda0a19044196bfc403f04c17753c75ada3fee"
+    }
+  },
+  "documents": {
+    "BMT_formula_layout_proof_v13.pdf": {
+      "sha256": "6f8224945cb9bccf516c9f29356a1c90030709ea393da155a0ef38652350ba77",
+      "bytes": 1015333
+    },
+    "BMT_main_manuscript_v13.docx": {
+      "sha256": "40be070a09074431a7ac09cfe7db0068e0d206312b761c64fce462f41502c8ad",
+      "bytes": 58197
+    },
+    "BMT_main_manuscript_v13_illustrated.docx": {
+      "sha256": "bf223624535d7954c61b928afc16d7501bf3f80c0c000bbb5fd248e730415d65",
+      "bytes": 3540721
+    },
+    "BMT_main_manuscript_v13_illustrated_preview.pdf": {
+      "sha256": "c35cf28d6b392898118660102eae1312a4acf029c44757cd044b9d2da0b58120",
+      "bytes": 1465931
+    },
+    "BMT_main_manuscript_v13_preview.pdf": {
+      "sha256": "52060b3ed9a89a0d0c7e377253ad83d59a74ca79b962b436b5042d4910a86e1b",
+      "bytes": 222664
+    },
+    "BMT_supplementary_Figure_S6_v9.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "bytes": 1871819
+    },
+    "BMT_supplementary_material_v9.docx": {
+      "sha256": "39db16641c06b90ac0d9f2265cbd2bfa82a123c51cbb9e082e67a9b305cc2e1f",
+      "bytes": 1533507
+    },
+    "BMT_supplementary_material_v9_preview.pdf": {
+      "sha256": "af52b88d82a71b4e4df1b5ddd932a3983fc05e4545791d4aad0faf5cfbb9ef86",
+      "bytes": 1332781
+    }
+  },
+  "scientific_data_changed": false,
+  "new_experiments": false,
+  "journal_submission_executed": false,
+  "retained_equations": {
+    "main": [
+      "1",
+      "2",
+      "3"
+    ],
+    "supplement": [
+      "S1",
+      "S2"
+    ]
+  }
+}

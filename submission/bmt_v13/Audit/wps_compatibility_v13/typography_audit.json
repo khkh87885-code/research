@@ -1,0 +1,688 @@
+{
+  "checked_utc": "2026-11-06T14:03:17.311368+00:00",
+  "status": "PASS",
+  "final_documents_pending": false,
+  "scope": "Native object and real exported PDF typography audit for literal-fence/non-table equation paragraphs",
+  "checks": [
+    {
+      "name": "BMT_main_manuscript_v13.docx only original scientific tables remain",
+      "pass": true,
+      "detail": 3
+    },
+    {
+      "name": "BMT_main_manuscript_v13.docx data cells exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v13.docx all non-equation prose exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v13.docx no automatic delimiter objects",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v13.docx five-equation scope and labels retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v13.docx native editable fractions/sums retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v13.docx 1 one unsplit equation paragraph",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v13.docx 1 standard center/right tabs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v13.docx 1 literal parenthesis runs valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v13.docx 2 one unsplit equation paragraph",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v13.docx 2 standard center/right tabs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v13.docx 2 literal parenthesis runs valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v13.docx 3 one unsplit equation paragraph",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v13.docx 3 standard center/right tabs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v13.docx 3 literal parenthesis runs valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v13.docx no new equation images",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v9.docx only original scientific tables remain",
+      "pass": true,
+      "detail": 19
+    },
+    {
+      "name": "BMT_supplementary_material_v9.docx data cells exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v9.docx all non-equation prose exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v9.docx no automatic delimiter objects",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v9.docx five-equation scope and labels retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v9.docx native editable fractions/sums retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v9.docx S1 one unsplit equation paragraph",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v9.docx S1 standard center/right tabs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v9.docx S1 literal parenthesis runs valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v9.docx S2 one unsplit equation paragraph",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v9.docx S2 standard center/right tabs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v9.docx S2 literal parenthesis runs valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v9.docx no new equation images",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Reading copy contains unchanged five figures",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v13_preview.pdf no clipping/empty/parser errors",
+      "pass": true,
+      "detail": {
+        "bounds": [],
+        "empty": [],
+        "errors": []
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v13_illustrated_preview.pdf no clipping/empty/parser errors",
+      "pass": true,
+      "detail": {
+        "bounds": [],
+        "empty": [],
+        "errors": []
+      }
+    },
+    {
+      "name": "BMT_supplementary_material_v9_preview.pdf no clipping/empty/parser errors",
+      "pass": true,
+      "detail": {
+        "bounds": [],
+        "empty": [],
+        "errors": []
+      }
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v9.pdf no clipping/empty/parser errors",
+      "pass": true,
+      "detail": {
+        "bounds": [],
+        "empty": [],
+        "errors": []
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v13_preview.pdf actual display labels",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v13_preview.pdf (1) centered within2pt",
+      "pass": true,
+      "detail": {
+        "document": "BMT_main_manuscript_v13_preview.pdf",
+        "page": 5,
+        "label": "(1)",
+        "center_error_pt": 0.4279022216796875,
+        "number_right_pt": 523.3939819335938,
+        "number_size": 12.0,
+        "base_char_sizes": [
+          12.02354621887207,
+          12.02354621887207,
+          12.02354621887207,
+          12.02354621887207,
+          12.02354621887207
+        ]
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v13_preview.pdf (1) actual base/number size",
+      "pass": true,
+      "detail": {
+        "document": "BMT_main_manuscript_v13_preview.pdf",
+        "page": 5,
+        "label": "(1)",
+        "center_error_pt": 0.4279022216796875,
+        "number_right_pt": 523.3939819335938,
+        "number_size": 12.0,
+        "base_char_sizes": [
+          12.02354621887207,
+          12.02354621887207,
+          12.02354621887207,
+          12.02354621887207,
+          12.02354621887207
+        ]
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v13_preview.pdf (2) centered within2pt",
+      "pass": true,
+      "detail": {
+        "document": "BMT_main_manuscript_v13_preview.pdf",
+        "page": 5,
+        "label": "(2)",
+        "center_error_pt": 0.1168212890625,
+        "number_right_pt": 523.3939819335938,
+        "number_size": 12.0,
+        "base_char_sizes": [
+          11.914158821105957,
+          11.914158821105957,
+          11.914158821105957,
+          11.914158821105957
+        ]
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v13_preview.pdf (2) actual base/number size",
+      "pass": true,
+      "detail": {
+        "document": "BMT_main_manuscript_v13_preview.pdf",
+        "page": 5,
+        "label": "(2)",
+        "center_error_pt": 0.1168212890625,
+        "number_right_pt": 523.3939819335938,
+        "number_size": 12.0,
+        "base_char_sizes": [
+          11.914158821105957,
+          11.914158821105957,
+          11.914158821105957,
+          11.914158821105957
+        ]
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v13_preview.pdf (3) centered within2pt",
+      "pass": true,
+      "detail": {
+        "document": "BMT_main_manuscript_v13_preview.pdf",
+        "page": 5,
+        "label": "(3)",
+        "center_error_pt": 0.11006927490234375,
+        "number_right_pt": 523.3939819335938,
+        "number_size": 12.0,
+        "base_char_sizes": [
+          12.028176307678223,
+          12.028176307678223,
+          12.028176307678223,
+          12.028176307678223,
+          12.028176307678223,
+          12.028176307678223,
+          12.028176307678223,
+          12.028176307678223,
+          12.028176307678223
+        ]
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v13_preview.pdf (3) actual base/number size",
+      "pass": true,
+      "detail": {
+        "document": "BMT_main_manuscript_v13_preview.pdf",
+        "page": 5,
+        "label": "(3)",
+        "center_error_pt": 0.11006927490234375,
+        "number_right_pt": 523.3939819335938,
+        "number_size": 12.0,
+        "base_char_sizes": [
+          12.028176307678223,
+          12.028176307678223,
+          12.028176307678223,
+          12.028176307678223,
+          12.028176307678223,
+          12.028176307678223,
+          12.028176307678223,
+          12.028176307678223,
+          12.028176307678223
+        ]
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v13_preview.pdf right equation numbers align",
+      "pass": true,
+      "detail": [
+        {
+          "document": "BMT_main_manuscript_v13_preview.pdf",
+          "page": 5,
+          "label": "(1)",
+          "center_error_pt": 0.4279022216796875,
+          "number_right_pt": 523.3939819335938,
+          "number_size": 12.0,
+          "base_char_sizes": [
+            12.02354621887207,
+            12.02354621887207,
+            12.02354621887207,
+            12.02354621887207,
+            12.02354621887207
+          ]
+        },
+        {
+          "document": "BMT_main_manuscript_v13_preview.pdf",
+          "page": 5,
+          "label": "(2)",
+          "center_error_pt": 0.1168212890625,
+          "number_right_pt": 523.3939819335938,
+          "number_size": 12.0,
+          "base_char_sizes": [
+            11.914158821105957,
+            11.914158821105957,
+            11.914158821105957,
+            11.914158821105957
+          ]
+        },
+        {
+          "document": "BMT_main_manuscript_v13_preview.pdf",
+          "page": 5,
+          "label": "(3)",
+          "center_error_pt": 0.11006927490234375,
+          "number_right_pt": 523.3939819335938,
+          "number_size": 12.0,
+          "base_char_sizes": [
+            12.028176307678223,
+            12.028176307678223,
+            12.028176307678223,
+            12.028176307678223,
+            12.028176307678223,
+            12.028176307678223,
+            12.028176307678223,
+            12.028176307678223,
+            12.028176307678223
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v13_preview.pdf literal parentheses recognizable in extracted PDF",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v9_preview.pdf actual display labels",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v9_preview.pdf (S1) centered within2pt",
+      "pass": true,
+      "detail": {
+        "document": "BMT_supplementary_material_v9_preview.pdf",
+        "page": 19,
+        "label": "(S1)",
+        "center_error_pt": 0.001983642578125,
+        "number_right_pt": 545.8201293945312,
+        "number_size": 11.0,
+        "base_char_sizes": [
+          11.0,
+          11.0,
+          11.0,
+          11.0,
+          11.0,
+          11.0,
+          11.0
+        ]
+      }
+    },
+    {
+      "name": "BMT_supplementary_material_v9_preview.pdf (S1) actual base/number size",
+      "pass": true,
+      "detail": {
+        "document": "BMT_supplementary_material_v9_preview.pdf",
+        "page": 19,
+        "label": "(S1)",
+        "center_error_pt": 0.001983642578125,
+        "number_right_pt": 545.8201293945312,
+        "number_size": 11.0,
+        "base_char_sizes": [
+          11.0,
+          11.0,
+          11.0,
+          11.0,
+          11.0,
+          11.0,
+          11.0
+        ]
+      }
+    },
+    {
+      "name": "BMT_supplementary_material_v9_preview.pdf (S2) centered within2pt",
+      "pass": true,
+      "detail": {
+        "document": "BMT_supplementary_material_v9_preview.pdf",
+        "page": 19,
+        "label": "(S2)",
+        "center_error_pt": 0.02301788330078125,
+        "number_right_pt": 545.8201293945312,
+        "number_size": 11.0,
+        "base_char_sizes": [
+          11.0,
+          11.0,
+          11.0,
+          11.0,
+          11.0,
+          11.0,
+          11.0
+        ]
+      }
+    },
+    {
+      "name": "BMT_supplementary_material_v9_preview.pdf (S2) actual base/number size",
+      "pass": true,
+      "detail": {
+        "document": "BMT_supplementary_material_v9_preview.pdf",
+        "page": 19,
+        "label": "(S2)",
+        "center_error_pt": 0.02301788330078125,
+        "number_right_pt": 545.8201293945312,
+        "number_size": 11.0,
+        "base_char_sizes": [
+          11.0,
+          11.0,
+          11.0,
+          11.0,
+          11.0,
+          11.0,
+          11.0
+        ]
+      }
+    },
+    {
+      "name": "BMT_supplementary_material_v9_preview.pdf right equation numbers align",
+      "pass": true,
+      "detail": [
+        {
+          "document": "BMT_supplementary_material_v9_preview.pdf",
+          "page": 19,
+          "label": "(S1)",
+          "center_error_pt": 0.001983642578125,
+          "number_right_pt": 545.8201293945312,
+          "number_size": 11.0,
+          "base_char_sizes": [
+            11.0,
+            11.0,
+            11.0,
+            11.0,
+            11.0,
+            11.0,
+            11.0
+          ]
+        },
+        {
+          "document": "BMT_supplementary_material_v9_preview.pdf",
+          "page": 19,
+          "label": "(S2)",
+          "center_error_pt": 0.02301788330078125,
+          "number_right_pt": 545.8201293945312,
+          "number_size": 11.0,
+          "base_char_sizes": [
+            11.0,
+            11.0,
+            11.0,
+            11.0,
+            11.0,
+            11.0,
+            11.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v9_preview.pdf literal parentheses recognizable in extracted PDF",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Proof is current two mathematical pages",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Visual review all five formulas passed",
+      "pass": true,
+      "detail": {
+        "main_page": 5,
+        "supplement_page": 19,
+        "reviewed_labels": [
+          "1",
+          "2",
+          "3",
+          "S1",
+          "S2"
+        ],
+        "observation": "Literal parentheses ordinary and recognizable; fraction bars, four-direction sum and subscripts complete; numbers right aligned; native math remains legible in its actual paper context; no H/I-like fence glyph or new overlap in exported PDF."
+      }
+    },
+    {
+      "name": "No claim of direct WPS/MicrosoftWord test",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "documents": {
+    "BMT_main_manuscript_v13.docx": {
+      "sha256": "40be070a09074431a7ac09cfe7db0068e0d206312b761c64fce462f41502c8ad",
+      "bytes": 58197,
+      "native_equation_labels": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "BMT_supplementary_material_v9.docx": {
+      "sha256": "39db16641c06b90ac0d9f2265cbd2bfa82a123c51cbb9e082e67a9b305cc2e1f",
+      "bytes": 1533507,
+      "native_equation_labels": [
+        "S1",
+        "S2"
+      ]
+    },
+    "BMT_main_manuscript_v13_illustrated.docx": {
+      "sha256": "bf223624535d7954c61b928afc16d7501bf3f80c0c000bbb5fd248e730415d65",
+      "bytes": 3540721
+    },
+    "BMT_main_manuscript_v13_preview.pdf": {
+      "sha256": "52060b3ed9a89a0d0c7e377253ad83d59a74ca79b962b436b5042d4910a86e1b",
+      "bytes": 222664,
+      "pages": 21
+    },
+    "BMT_main_manuscript_v13_illustrated_preview.pdf": {
+      "sha256": "c35cf28d6b392898118660102eae1312a4acf029c44757cd044b9d2da0b58120",
+      "bytes": 1465931,
+      "pages": 26
+    },
+    "BMT_supplementary_material_v9_preview.pdf": {
+      "sha256": "af52b88d82a71b4e4df1b5ddd932a3983fc05e4545791d4aad0faf5cfbb9ef86",
+      "bytes": 1332781,
+      "pages": 25
+    },
+    "BMT_supplementary_Figure_S6_v9.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "bytes": 1871819,
+      "pages": 6
+    },
+    "BMT_formula_layout_proof_v13.pdf": {
+      "sha256": "6f8224945cb9bccf516c9f29356a1c90030709ea393da155a0ef38652350ba77",
+      "bytes": 1015333,
+      "pages": 2
+    }
+  },
+  "display_geometry": [
+    {
+      "document": "BMT_main_manuscript_v13_preview.pdf",
+      "page": 5,
+      "label": "(1)",
+      "center_error_pt": 0.4279022216796875,
+      "number_right_pt": 523.3939819335938,
+      "number_size": 12.0,
+      "base_char_sizes": [
+        12.02354621887207,
+        12.02354621887207,
+        12.02354621887207,
+        12.02354621887207,
+        12.02354621887207
+      ]
+    },
+    {
+      "document": "BMT_main_manuscript_v13_preview.pdf",
+      "page": 5,
+      "label": "(2)",
+      "center_error_pt": 0.1168212890625,
+      "number_right_pt": 523.3939819335938,
+      "number_size": 12.0,
+      "base_char_sizes": [
+        11.914158821105957,
+        11.914158821105957,
+        11.914158821105957,
+        11.914158821105957
+      ]
+    },
+    {
+      "document": "BMT_main_manuscript_v13_preview.pdf",
+      "page": 5,
+      "label": "(3)",
+      "center_error_pt": 0.11006927490234375,
+      "number_right_pt": 523.3939819335938,
+      "number_size": 12.0,
+      "base_char_sizes": [
+        12.028176307678223,
+        12.028176307678223,
+        12.028176307678223,
+        12.028176307678223,
+        12.028176307678223,
+        12.028176307678223,
+        12.028176307678223,
+        12.028176307678223,
+        12.028176307678223
+      ]
+    },
+    {
+      "document": "BMT_supplementary_material_v9_preview.pdf",
+      "page": 19,
+      "label": "(S1)",
+      "center_error_pt": 0.001983642578125,
+      "number_right_pt": 545.8201293945312,
+      "number_size": 11.0,
+      "base_char_sizes": [
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0
+      ]
+    },
+    {
+      "document": "BMT_supplementary_material_v9_preview.pdf",
+      "page": 19,
+      "label": "(S2)",
+      "center_error_pt": 0.02301788330078125,
+      "number_right_pt": 545.8201293945312,
+      "number_size": 11.0,
+      "base_char_sizes": [
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0
+      ]
+    }
+  ],
+  "visual_review": {
+    "method": "Individually viewed actual mainp5 and supplementp19 rendered at1.8x",
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "S1",
+      "S2"
+    ],
+    "image_directory": "/workspace/bmt_v13/qa/typography_view"
+  },
+  "known_failing_viewer": "WPS",
+  "direct_wps_tested": false,
+  "direct_microsoft_word_tested": false,
+  "limits": [
+    "The old source already used correct parenthesis characters. The exact internal reason for the user WPS rendering defect is not proven.",
+    "This review confirms literal punctuation, native structure, preserved content and the current LibreOffice PDF appearance; it is not evidence that WPS or Microsoft Word has been directly run."
+  ]
+}

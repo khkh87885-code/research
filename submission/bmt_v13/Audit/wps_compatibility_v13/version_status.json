@@ -1,0 +1,86 @@
+{
+  "created_utc": "2026-11-06T14:05:07.245254+00:00",
+  "revision": "v13 targeted WPS equation compatibility repair",
+  "source": "submission/bmt_v12",
+  "user_requested_wps_equation_repair_completed": true,
+  "main_numbered_equation_groups": 3,
+  "supplement_numbered_equation_groups": 2,
+  "native_editable_office_math": true,
+  "retained_display_groups": 5,
+  "native_equation_paragraphs": true,
+  "automatic_math_delimiters_removed": true,
+  "formula_layout_tables_removed": true,
+  "validated_equation_paragraphs": {
+    "BMT_main_manuscript_v13.docx": {
+      "labels": [
+        "1",
+        "2",
+        "3"
+      ],
+      "numbered_native_equation_paragraphs": 3,
+      "automatic_delimiter_objects": 0,
+      "formula_layout_tables": 0
+    },
+    "BMT_supplementary_material_v9.docx": {
+      "labels": [
+        "S1",
+        "S2"
+      ],
+      "numbered_native_equation_paragraphs": 2,
+      "automatic_delimiter_objects": 0,
+      "formula_layout_tables": 0
+    }
+  },
+  "native_word_or_wps_executed": false,
+  "user_reported_software": "WPS",
+  "results_tables_figures_references_declaration_substance_changed": false,
+  "main_scientific_tables_and_cells": [
+    3,
+    66
+  ],
+  "supplement_scientific_tables_and_cells": [
+    19,
+    878
+  ],
+  "post_hoc_and_nominal_interval_boundaries_retained": true,
+  "prior_author_confirmation_scope_preserved": true,
+  "journal_submission_executed": false,
+  "final_documents_pending": false,
+  "final_revision_qa_sha256": "5e9d4481a8c182673dde8cb2bc161bae428c0f721bff63972481e66827864198",
+  "locked_independent_reports": {
+    "independent_math_qa": {
+      "path": "evidence/independent_math_qa.json",
+      "sha256": "2e4e0df98904f6e839038f10733649c8d55a251350b6a0584d3881c7aaeda7ce"
+    },
+    "typography_audit": {
+      "path": "evidence/typography_audit.json",
+      "sha256": "533a108326c6b7d9c2820022d0beaccb614b3937063a4c403292941b39870b15"
+    },
+    "render_validation": {
+      "path": "evidence/render_validation.json",
+      "sha256": "3f14f01a6726f7b291eb50691ccda0a19044196bfc403f04c17753c75ada3fee"
+    }
+  },
+  "independent_check_counts": {
+    "independent_math_qa": 98,
+    "typography_audit": 53,
+    "render_validation": 0
+  },
+  "upload_files": [
+    "BMT_main_manuscript_v13.docx",
+    "Figures/Figure_1.png",
+    "Figures/Figure_2.png",
+    "Figures/Figure_3.png",
+    "Figures/Figure_4.png",
+    "Figures/Figure_5.png",
+    "BMT_Ethical_and_Legal_Declarations_v13.docx",
+    "BMT_cover_letter_v13.docx",
+    "BMT_supplementary_material_v9.docx",
+    "BMT_supplementary_Figure_S6_v9.pdf",
+    "BMT_data_and_code_availability_v13.docx",
+    "BMT_reviewer_candidates.docx",
+    "Additional_quality_control_metrics.csv",
+    "Analysis/table_data/S13_all_48_comparisons_unrounded.csv",
+    "UPLOAD_FILE_MAP.md"
+  ]
+}

@@ -10,7 +10,15 @@
 
 每位纳入患者固定使用一张图及对应参考掩膜。正式验证共 1,103 例。40 例预实验来自开发集。评分和复核均在回顾性模拟中进行。
 
-## 当前版本：v12 精简正式公式稿
+## 当前版本：v13 WPS 公式兼容修订
+
+[两页公式预览 PDF](submission/bmt_v13/BMT_formula_layout_proof_v13.pdf) · [正式主稿 Word](submission/bmt_v13/BMT_main_manuscript_v13.docx) · [主稿 PDF](submission/bmt_v13/BMT_main_manuscript_v13_preview.pdf) · [补充 Word](submission/bmt_v13/BMT_supplementary_material_v9.docx) · [补充 PDF](submission/bmt_v13/BMT_supplementary_material_v9_preview.pdf) · [投稿文件 ZIP](submission/BMT_v13_submission_files.zip) · [上传清单](submission/bmt_v13/UPLOAD_FILE_MAP.md)
+
+根据用户在WPS中提供的公式（3）截图，本版将截图中显示异常的自动数学括号结构改为普通原生数学字符，并移除五个公式排版表格。公式使用普通段落和标准制表位居中、编号右置，分式、求和、上下标仍可编辑；求和体明确包含完整被加项。主稿仍为三式，补充材料仍为两式。
+
+本轮直接修订v12，不改科研内容。正文、结果、三张主表和19个补表面板的944个单元格、15条参考文献、全部科研图及作者声明保持。S6仅升级文件名，PDF内容字节不变。当前检查覆盖DOCX底层结构、独立数学核验及实际导出的PDF；本环境未安装WPS，未声称已在WPS中实测。v12完整归档保留，尚未执行期刊投稿。
+
+## 历史版本：v12 精简正式公式稿
 
 [两页公式预览 PDF](submission/bmt_v12/BMT_formula_layout_proof_v12.pdf) · [正式主稿 Word](submission/bmt_v12/BMT_main_manuscript_v12.docx) · [主稿 PDF](submission/bmt_v12/BMT_main_manuscript_v12_preview.pdf) · [补充 Word](submission/bmt_v12/BMT_supplementary_material_v8.docx) · [补充 PDF](submission/bmt_v12/BMT_supplementary_material_v8_preview.pdf) · [投稿文件 ZIP](submission/BMT_v12_submission_files.zip) · [上传清单](submission/bmt_v12/UPLOAD_FILE_MAP.md)
 

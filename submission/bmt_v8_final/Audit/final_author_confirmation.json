@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-11-06T11:07:20.108590+00:00",
+  "source": "Explicit user reply to the three-item pre-submission check",
+  "exact_user_reply": "批准，审稿人没有利益冲突，原创没有在其他地方投稿",
+  "scope": "Current main manuscript v8, supplementary material v4, new analyses and figures",
+  "both_authors_final_v8_submission_approved": true,
+  "both_authors_responsibility_confirmed": true,
+  "proposed_reviewer_conflicts_confirmed_absent": true,
+  "confirmed_reviewer_names": [
+    "Carole Sudre",
+    "Veronika Cheplygina",
+    "Geert Litjens",
+    "Yuyin Zhou",
+    "Lena Maier-Hein",
+    "Bo Wang"
+  ],
+  "original_work_confirmed": true,
+  "no_other_journal_submission_confirmed": true,
+  "public_GitHub_manuscript_disclosure_retained": true,
+  "journal_submission_executed": false,
+  "review_basis_commit": "d75261433a11a814ebfd55c1bc9cb7ca4a962379",
+  "approved_input_main_sha256": "7455e90e9c1419100b2e9a6a78107d927fcb099101257b0c481172229a99a138",
+  "approved_input_supp_sha256": "6b443ebd1f5288ec8c28d3add258ef7b694c5aef47870b976e440507eefc9a2a",
+  "scientific_tables_scores_and_figures_changed": false
+}

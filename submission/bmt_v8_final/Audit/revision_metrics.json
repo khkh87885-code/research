@@ -1,0 +1,17 @@
+{
+  "abstract_whitespace_words": 174,
+  "abstract_lexical_words": 180,
+  "main_body_lexical_words_including_headings": 3927,
+  "main_tables": 3,
+  "main_figures": 5,
+  "main_combined_display_items": 8,
+  "references": 15,
+  "supplement_logical_tables": 13,
+  "supplement_physical_tables": 19,
+  "supplement_figures": 6,
+  "original_main_table_cells_unchanged": true,
+  "original_S1_S9_table_cells_unchanged": true,
+  "supplement_docx_bytes": 5300817,
+  "final_version_author_submission_approval_claimed": true,
+  "final_version_author_submission_approval_evidence": "final_author_confirmation.json"
+}

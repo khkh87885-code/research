@@ -1,0 +1,2907 @@
+{
+  "main": {
+    "path": "/workspace/bmt_v8/outputs/BMT_main_manuscript_v8.docx",
+    "sha256": "7455e90e9c1419100b2e9a6a78107d927fcb099101257b0c481172229a99a138",
+    "paragraphs": [
+      {
+        "i": 0,
+        "style": "Title",
+        "text": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control"
+      },
+      {
+        "i": 1,
+        "style": "Title metadata",
+        "text": "Running title  Threshold transfer and review budgets"
+      },
+      {
+        "i": 2,
+        "style": "Title metadata",
+        "text": "Authors  Haoze Lan¹*, Ziyuan Zhu¹"
+      },
+      {
+        "i": 3,
+        "style": "Title metadata",
+        "text": "¹ College of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Chongqing 400016, China"
+      },
+      {
+        "i": 4,
+        "style": "Title metadata",
+        "text": "Corresponding author  Haoze Lan; Email: 478283902@qq.com"
+      },
+      {
+        "i": 5,
+        "style": "Title metadata",
+        "text": "Institutional mailing address  College of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Building 6, Lanyuan, No. 61 Daxuecheng Middle Road, Shapingba District, Chongqing 400016, China"
+      },
+      {
+        "i": 6,
+        "style": "Title metadata",
+        "text": "Second author contact  Ziyuan Zhu; Email: zzy2630816871@gmail.com"
+      },
+      {
+        "i": 7,
+        "style": "Title metadata",
+        "text": "ORCID  Haoze Lan: https://orcid.org/0009-0008-5089-5902"
+      },
+      {
+        "i": 8,
+        "style": "Heading 1",
+        "text": "Abstract"
+      },
+      {
+        "i": 9,
+        "style": "Normal",
+        "text": "Objectives  To distinguish transfer of fixed numerical review thresholds from ranking at a fixed review count for breast ultrasound segmentation quality control."
+      },
+      {
+        "i": 10,
+        "style": "Normal",
+        "text": "Methods  Frozen Segment Anything Model predictions used reference-derived, known-location boxes. Confidence and prompt-disagreement thresholds targeting 20 % review in 213 development patients were transferred to 851 internal and 252 external patients. Low quality was reference Dice <0.70. Equal-review ranking and a post hoc eight-budget analysis assessed policy dependence."
+      },
+      {
+        "i": 11,
+        "style": "Normal",
+        "text": "Results  Confidence-based detection was 71/93 internally and 10/16 externally: −13.84 percentage points (95 % confidence interval −38.85 to 7.45). Review fractions were 20.45 % and 13.89 %, respectively. Externally, disagreement detected 13/16 low-quality masks at its transferred cutoff versus 10/16 for confidence; at 50 reviews per method, the corresponding counts were 13/16 and 14/16. Across targets from 5 % to 50 %, neither score consistently detected more low-quality masks."
+      },
+      {
+        "i": 12,
+        "style": "Normal",
+        "text": "Conclusions  Fixed-threshold transfer and equal-review ranking answer different deployment questions. Observed score comparisons depended on the policy and budget; external detection remained imprecise. Reporting detection, review fraction and misses together makes the operating rule explicit."
+      },
+      {
+        "i": 13,
+        "style": "Normal",
+        "text": "Keywords  domain shift; external testing; prompt perturbation; selective prediction; vision foundation models"
+      },
+      {
+        "i": 14,
+        "style": "Heading 1",
+        "text": "Introduction"
+      },
+      {
+        "i": 15,
+        "style": "Normal",
+        "text": "The Segment Anything Model (SAM) can delineate an object from a spatial prompt, such as a box around a lesion [1]. Medical adaptations of SAM have evaluated box-prompted segmentation across several modalities, including breast ultrasound [2]. When a segmentation is used to support a measurement or other downstream analysis, a separate question is which outputs should be sent for review. A high overall Dice coefficient can coexist with a subset of masks that have poor agreement with a reference contour."
+      },
+      {
+        "i": 16,
+        "style": "Normal",
+        "text": "Case-level quality estimation without a new manual mask has been studied with reverse classification accuracy [3]. For promptable models, Kinalioglu combined mask changes under small prompt perturbations with model confidence for failure screening [4]. Loke et al. directly compared prompt-perturbation uncertainty with predicted IoU in SAM/MedSAM; most case-level differences remained unresolved after paired testing and multiplicity correction [5]. These studies motivate a separate operating question: a score can be evaluated by transferring a numerical cutoff or by allocating the same number of reviews. The former preserves a development operating rule; the latter compares rankings at a specified capacity. Their implications for detection and workload need to be distinguished when scores are transferred between datasets."
+      },
+      {
+        "i": 17,
+        "style": "Normal",
+        "text": "We evaluated these two operating policies using model-confidence and prompt-disagreement risks on identical initial masks from a frozen SAM. Each score was calibrated to a 20 % development review target in BUS-BRA, then its numerical cutoff was applied unchanged to internal BUS-BRA and external BrEaST patients. The prespecified primary contrast, H1, compared external-minus-internal low-quality detection for confidence-based method A; H2 assessed its review fraction, and H3 compared the two scores on the same low-quality external masks at the locked cutoffs. Equal-review ranking addressed the capacity-constrained question separately. Complete-budget and resampling analyses examined the scope and stability of the comparison, while diagnostic-stratum accounting and prediction contours provided context for workload differences and missed cases."
+      },
+      {
+        "i": 18,
+        "style": "Heading 1",
+        "text": "Materials and methods"
+      },
+      {
+        "i": 19,
+        "style": "Heading 2",
+        "text": "Study design and datasets"
+      },
+      {
+        "i": 20,
+        "style": "Normal",
+        "text": "This retrospective evaluation used anonymized images and manual lesion contours from two public breast ultrasound datasets. Reporting was informed by the Checklist for Artificial Intelligence in Medical Imaging (CLAIM) 2024 update [6]. The patient was the analysis unit, with one image and one primary reference mask per patient. Figure 1 shows the development, internal test and external test cohorts. Table 1 describes their composition."
+      },
+      {
+        "i": 21,
+        "style": "Normal",
+        "text": "BUS-BRA version 1.0 contains 1,875 images from 1,064 patients [7, 8]. We used a patient-level split stratified by benign or malignant lesion status to obtain 213 development and 851 internal test patients (seed 20261105). We selected one eligible image per patient using seed 20261106. The two cohorts had disjoint patient identifiers. We verified image and mask pairs and used the actual pixel dimensions when these differed from metadata. An initial 40-case feasibility run used a subset of development patients. The full development set supplied the formal thresholds."
+      },
+      {
+        "i": 22,
+        "style": "Normal",
+        "text": "The BrEaST version 1 archive includes 256 scans, each from a different patient [9, 10]. We matched the official image and main tumor mask by case identifier. Four normal cases lacked a primary lesion mask, leaving 252 external test patients. The primary reference was the provided main tumor contour. Fourteen additional masks were outside that reference definition. The audit found zero exact image matches between the datasets."
+      },
+      {
+        "i": 23,
+        "style": "Manuscript note",
+        "text": "[Place Table 1 near here]"
+      },
+      {
+        "i": 24,
+        "style": "Heading 2",
+        "text": "Prompted segmentation and risk scores"
+      },
+      {
+        "i": 25,
+        "style": "Normal",
+        "text": "We used the official SAM ViT-B checkpoint (sam_vit_b_01ec64.pth) with frozen float32 weights and single-mask output [1]. The original source commit, checkpoint hash and software versions are recorded in Table S1. We decoded images to red, green and blue (RGB) channels. BrEaST images were alpha-composited over black before conversion to RGB. This changed the RGB pixel values of eight images relative to discarding the alpha channel. Reference masks were read as binary arrays."
+      },
+      {
+        "i": 26,
+        "style": "Normal",
+        "text": "We obtained the initial prompt box from the tight bounding box of the nonempty reference mask, expanded each horizontal side by 10 % of the width and each vertical side by 10 % of the height, and clipped the result to the image. This is a reference-informed, known-location (oracle-localization) setting, not a test of autonomous lesion localization. We encoded the image once and used the resulting embedding for the initial prediction and four additional predictions (Figure 2). The fixed 10 % context margin was used consistently across datasets."
+      },
+      {
+        "i": 27,
+        "style": "Normal",
+        "text": "Method A calculated risk as one minus the raw predicted intersection over union (IoU) returned for the initial mask. For method B, we shifted the initial clipped box left and right by 5 % of its width and up and down by 5 % of its height, clipping each shifted box to the image. We calculated the Dice coefficient between the initial predicted mask and each of the four shifted-prompt masks. Risk B was one minus the mean of these four Dice coefficients. We retained all four directions when clipping produced coincident boxes. The consistency Dice coefficient was defined as 1 when both predicted masks were empty. The 5 % translations define a deterministic local stability probe relative to box size. Method B adds four mask-decoder passes while reusing the image embedding. Recorded inference times cover the combined pipeline; A-only and incremental B times were not separately benchmarked."
+      },
+      {
+        "i": 28,
+        "style": "Normal",
+        "text": "For binary masks, the Dice coefficient is twice the number of shared foreground pixels divided by the sum of foreground pixels in the two masks. The quality reference for both methods was Dice between the initial prediction and the manual mask. An empty initial prediction against a nonempty reference would contribute a Dice coefficient of 0. We defined low quality as reference Dice below 0.70, an operational cutoff for this evaluation."
+      },
+      {
+        "i": 29,
+        "style": "Normal",
+        "text": "OpenAI Codex assisted with study-design discussions and implementation of research, statistical and plotting code. The pipeline processed public images with frozen SAM weights, and figures were rendered conventionally from recorded data and captured predictions. The human authors retain responsibility for the implementation and calculated outputs. A precise underlying Codex model identifier was not available in the archived study records."
+      },
+      {
+        "i": 30,
+        "style": "Heading 2",
+        "text": "Development threshold selection"
+      },
+      {
+        "i": 31,
+        "style": "Normal",
+        "text": "For each method, we searched the distinct development risk scores and the option to flag zero cases. A case was flagged if its score met or exceeded the candidate threshold. The selected threshold gave the review fraction closest to 20 %. Cases tied at the cutoff were flagged together. When two choices were equally close to the target, we selected the one with fewer flagged cases. The exact thresholds were locked before test scoring and applied to both test cohorts. The 20 % target defines a prespecified one-in-five review scenario rather than an empirically measured clinical review capacity."
+      },
+      {
+        "i": 32,
+        "style": "Heading 2",
+        "text": "Outcomes and statistical analysis"
+      },
+      {
+        "i": 33,
+        "style": "Normal",
+        "text": "The analysis included cases with a valid reference Dice and both finite risk scores. The procedure allowed one retry with the same configuration after a technical failure and recorded persistent failures separately. We report low-quality detection as the number of flagged low-quality masks divided by the number of low-quality masks. Simulated review is the number of flagged cases divided by all scored cases. Misses per 100 patients is 100 times the number of unflagged low-quality masks divided by all scored cases."
+      },
+      {
+        "i": 34,
+        "style": "Normal",
+        "text": "The dated analysis plan specified three contrasts. H1, the primary contrast, compared method A low-quality detection in BrEaST minus BUS-BRA internal testing. H2 used the same cohort order for method A simulated review. H3 assessed whether method B detected a larger fraction of the same low-quality BrEaST cases when the two cutoffs gave equal review counts in development. The paired contrast was B minus A. Differences are expressed in percentage points. We calculated two-sided 95 % confidence intervals (CIs) using Newcombe score method 10 for independent proportions in H1 and H2 [11] and its paired counterpart in H3 [12]. H2, H3 and supplementary intervals are nominal, with no multiplicity adjustment."
+      },
+      {
+        "i": 35,
+        "style": "Normal",
+        "text": "We repeated detection analyses with reference Dice cutoffs of 0.50 and 0.80 while retaining both locked risk thresholds. We also ranked the external cases by each risk score and selected the top 50 per method, the count closest to a 20 % review fraction among 252 cases. Risk ties followed the unmodified archived patient-identifier strings in lexicographic order (for example, \"1\", \"10\", \"100\"), rather than numeric or zero-padded image-identifier order. This equal-review comparison used a common number of reviews in the observed external cohort; its paired interval is conditional on the observed rankings."
+      },
+      {
+        "i": 36,
+        "style": "Normal",
+        "text": "As post hoc descriptive quality-control measures, we additionally tabulated true-positive (TP), false-positive (FP), true-negative (TN) and false-negative (FN) counts, sensitivity (TP/(TP+FN)), specificity (TN/(TN+FP)), positive predictive value (PPV; TP/(TP+FP)) and negative predictive value (NPV; TN/(TN+FN)). Low-quality segmentation was the positive condition and a review flag the positive test. We used Wilson 95 % intervals for these proportions. These measures assess mask-quality screening, not diagnosis of breast cancer."
+      },
+      {
+        "i": 37,
+        "style": "Normal",
+        "text": "We additionally performed a post hoc exploratory stratification by dataset-reported benign/malignant classification, retaining the locked risk thresholds and Dice < 0.70 definition. BUS-BRA labels came from the official Pathology field, linked by image and patient identifiers. BrEaST labels came from Classification, linked by CaseID and verified against the selected filenames; 197 diagnoses were biopsy-confirmed and 55 were confirmed by follow-up. We report stratum counts, review fractions and detection with Wilson 95 % intervals. No stratum-specific recalibration, hypothesis test or interaction test was performed. We also audited all external low-quality cases missed by A, partitioned by the B review flag."
+      },
+      {
+        "i": 38,
+        "style": "Heading 2",
+        "text": "Post hoc policy sensitivity and diagnostic accounting"
+      },
+      {
+        "i": 39,
+        "style": "Normal",
+        "text": "The following exploratory analyses were specified for this revision after the original study. They retain the original scores, low-quality definition and H1–H3. We examined development review targets of 5 %, 10 %, 15 %, 20 %, 25 %, 30 %, 40 % and 50 %, calibrating a separate threshold for each method with the same tied-group and nearest-target rules. Selection used development risks and counts, without quality labels. Each numerical threshold was transferred unchanged to both test cohorts. A separate equal-review policy selected the nearest integer to the target fraction of each test cohort, taking fewer cases at an exact half-integer tie."
+      },
+      {
+        "i": 40,
+        "style": "Normal",
+        "text": "We used 10,000 patient-bootstrap replicates per route (seed 20261106) to separate three sources of variation: test-cohort sampling at the original cutoffs; development resampling and cutoff recalibration with the original test cohorts unchanged; and both together. Cohorts were sampled independently, with paired A/B scores and labels retained within every record. Repeated draws were retained. Equal-review ranking selected exactly 50 external draw records, ordered by descending risk, original identifier string and draw-position index. The strict original direction pattern required external B-minus-A detection above zero at transferred cutoffs and below zero at equal review; ties were reported separately. Percentile 95 % intervals are descriptive, nominal sensitivity intervals and do not replace the prespecified Newcombe intervals."
+      },
+      {
+        "i": 41,
+        "style": "Normal",
+        "text": "We also used symmetric Kitagawa accounting and direct standardization across dataset-reported benign/malignant strata [13]. The external-minus-internal difference was partitioned into a composition-associated term and a within-stratum-rate term. Common weights were the arithmetic mean of the two cohort weights. Detection used the diagnostic shares among low-quality masks, whereas review fractions used shares among all scored patients. We obtained nominal percentile intervals from 5,000 independently sampled cohort-level patient-bootstrap replicates (seed 20261107), recalculating all weights and rates. Undefined stratum denominators remained missing. This accounting describes the observed mixtures and does not estimate causal effects."
+      },
+      {
+        "i": 42,
+        "style": "Heading 2",
+        "text": "Computational reproducibility"
+      },
+      {
+        "i": 43,
+        "style": "Normal",
+        "text": "The original study assessed computational reproducibility by recomputing statistics from archived case scores and by rerunning all 1,316 images in the original computing environment. Its recorded comparisons covered eight numerical fields, quality labels, review decisions, calibration and review-curve counts. For the present revision, we additionally replayed the six A-missed external cases on a CPU using the checksum-identical original checkpoint, exact SAM source and frozen float32 prompt rules. We saved the initial and four shifted predictions for each case and compared all eight numerical fields and decisions with the archive. The two exercises have separate environments and receipts; all cohort analyses continue to use the original scores."
+      },
+      {
+        "i": 44,
+        "style": "Heading 1",
+        "text": "Results"
+      },
+      {
+        "i": 45,
+        "style": "Heading 2",
+        "text": "Cohort yield and development calibration"
+      },
+      {
+        "i": 46,
+        "style": "Normal",
+        "text": "All 213 development, 851 internal test and 252 external test cases were scored. Low-quality masks occurred in 24/213 (11.27 %) development cases, 93/851 (10.93 %) internal cases and 16/252 (6.35 %) external cases. Each method flagged 43/213 (20.19 %) development cases. The locked thresholds were 0.13705134391784668 for A and 0.06972856653991777 for B."
+      },
+      {
+        "i": 47,
+        "style": "Normal",
+        "text": "No initial prediction was empty in the 1,316 study images. All 5,264 initial-to-shifted consistency Dice values were strictly positive, establishing that all shifted predictions were also nonempty. Thus the empty-empty Dice convention did not affect any recorded risk score or review decision."
+      },
+      {
+        "i": 48,
+        "style": "Heading 2",
+        "text": "Performance at the locked thresholds"
+      },
+      {
+        "i": 49,
+        "style": "Normal",
+        "text": "For H1, method A flagged 71 of 93 low-quality masks in BUS-BRA internal testing (76.34 %) and 10 of 16 in BrEaST (62.50 %; Wilson 95 % CI 38.64 to 81.52 %). The external-minus-internal difference was −13.84 percentage points (95 % CI −38.85 to 7.45). The interval includes zero and is compatible with both a substantial decrease and a smaller increase in detection (Tables 2 and 3 and Figure 3)."
+      },
+      {
+        "i": 50,
+        "style": "Manuscript note",
+        "text": "[Place Tables 2 and 3 near here]"
+      },
+      {
+        "i": 51,
+        "style": "Normal",
+        "text": "For H2, the method A simulated review fraction was 174/851 (20.45 %) internally and 35/252 (13.89 %) externally, a difference of −6.56 percentage points (nominal 95 % CI −11.25 to −1.10). Among masks with reference Dice of at least 0.70, A flagged 103/758 (13.59 %) internally and 25/236 (10.59 %) externally. The overall rates of missed low-quality masks with A were 2.59 per 100 internal patients and 2.38 per 100 external patients."
+      },
+      {
+        "i": 52,
+        "style": "Normal",
+        "text": "For H3, method B flagged 13/16 (81.25 %; Wilson 95 % CI 56.99 to 93.41 %) low-quality BrEaST masks compared with 10/16 (62.50 %) for A. Ten were flagged by both scores, three by B alone and three by neither. The paired difference was 18.75 percentage points (nominal 95 % CI −4.28 to 40.04). B flagged 33/252 (13.10 %) external cases and missed three low-quality masks. In the internal cohort, B flagged 150/851 (17.63 %) cases, detected 68/93 (73.12 %) low-quality masks and missed 25 (Table 2)."
+      },
+      {
+        "i": 53,
+        "style": "Heading 2",
+        "text": "Sensitivity and equal-review comparisons"
+      },
+      {
+        "i": 54,
+        "style": "Normal",
+        "text": "At reference Dice below 0.50, A detected 52/53 internal and 5/7 external low-quality masks, and B detected 43/53 and 5/7, respectively. At Dice below 0.80, the corresponding counts were 109/183 and 21/50 for A and 95/183 and 21/50 for B. With each alternative definition, A's external detection point estimate was lower than its internal estimate, and both methods had the same external detection count (Tables S2 and S3 and Figure S1)."
+      },
+      {
+        "i": 55,
+        "style": "Normal",
+        "text": "At 50/252 reviews (19.84 %) per method in BrEaST, A detected 14/16 (87.50 %) and B detected 13/16 (81.25 %) low-quality masks. The paired B-minus-A difference was −6.25 percentage points (nominal 95 % CI −31.61 to 19.57). The order of the two detection point estimates differed between the locked-threshold and equal-review settings (Figure 4 and Table S4). Figure S2 shows the paired detections and misses in both settings."
+      },
+      {
+        "i": 56,
+        "style": "Heading 2",
+        "text": "Reproducibility checks"
+      },
+      {
+        "i": 57,
+        "style": "Normal",
+        "text": "The archived same-environment raw-image rerun scored all 1,316 cases. The maximum absolute difference was zero for each of the eight numerical fields, and all quality and review decisions matched (Table S5). Statistical replay reproduced the thresholds, primary and supplementary results, and count-level review curves. These checks concern computational reproducibility of the recorded pipeline."
+      },
+      {
+        "i": 58,
+        "style": "Heading 2",
+        "text": "Additional descriptive quality-control measures"
+      },
+      {
+        "i": 59,
+        "style": "Normal",
+        "text": "The post hoc external quality-control counts were TP=10, FP=25, TN=211 and FN=6 for A, and TP=13, FP=20, TN=216 and FN=3 for B. Specificity was 89.41 % for A and 91.53 % for B; PPV was 28.57 % and 39.39 %, and NPV was 97.24 % and 98.63 %, respectively. The complete counts and Wilson intervals are provided in Tables S6 and S7."
+      },
+      {
+        "i": 60,
+        "style": "Heading 2",
+        "text": "Exploratory diagnostic strata"
+      },
+      {
+        "i": 61,
+        "style": "Normal",
+        "text": "Internal benign- and malignant-labelled groups contained 577 and 274 patients, including 53 and 40 low-quality masks. A detected 51/53 (96.23 %; Wilson 95 % CI 87.25 to 98.96 %) and 20/40 (50.00 %; 35.20 to 64.80 %), while B detected 41/53 (77.36 %) and 27/40 (67.50 %), respectively. Externally, each diagnostic stratum contained eight low-quality masks: A detected 5/8 in each group, and B detected 7/8 benign-labelled and 6/8 malignant-labelled cases. Review fractions and intervals are reported in Table S8. All stratum counts recombine exactly to the overall results."
+      },
+      {
+        "i": 62,
+        "style": "Heading 2",
+        "text": "External missed-case audit"
+      },
+      {
+        "i": 63,
+        "style": "Normal",
+        "text": "The complete set of six external low-quality cases missed by A comprised three also missed by B (cases 089, 175 and 238) and three detected by B (024, 105 and 222). In the shared-miss group, mean prompt-consistency Dice was 0.9590, 0.9799 and 0.9942, respectively, despite reference Dice of 0.3191, 0.0293 and 0.6813. Table S9 reports all six cases, their archived scores and flags. This is an outcome-defined descriptive case audit, not an additional estimate of population performance."
+      },
+      {
+        "i": 64,
+        "style": "Heading 2",
+        "text": "Review-policy and calibration sensitivity"
+      },
+      {
+        "i": 65,
+        "style": "Normal",
+        "text": "Across the complete budget grid, external B-minus-A detection under transferred cutoffs was positive at targets of 5–20 %, negative at 25 %, 30 % and 50 %, and zero at 40 %. Under equal-review ranking, it was positive at 5–15 %, negative at 20 %, and zero at 25–50 % (Table S10 and Figure S3). Neither score consistently detected more low-quality masks across these policies and budgets."
+      },
+      {
+        "i": 66,
+        "style": "Normal",
+        "text": "The strict 20 %-target direction pattern occurred in 39.61 % of fixed-cutoff test-sampling replicates, 90.40 % of development-only calibration replicates and 30.94 % of full development-and-test replicates. At least one comparison was tied in 28.08 % of full replicates. Full-resampling percentile intervals were [−39.03, +11.71] percentage points for A detection and [−12.70, −1.55] for its review fraction, in external-minus-internal order (Table S11 and Figure S4). These frequencies describe empirical resampling, not p-values or population probabilities. At the original fixed cutoffs, the absence of an observed A-only low-quality detection structurally constrains the test-sampling bootstrap difference to be nonnegative; its [0.00, +40.00] percentile interval cannot exclude a population A advantage. The original H3 Newcombe interval remains unchanged."
+      },
+      {
+        "i": 67,
+        "style": "Heading 2",
+        "text": "Diagnostic composition and standardized differences"
+      },
+      {
+        "i": 68,
+        "style": "Normal",
+        "text": "For A, the −6.56-point external-minus-internal review difference comprised a +0.64-point composition-associated term and a −7.20-point within-stratum-rate term. Its detection difference had corresponding terms of −1.62 and −12.23 points. For B, the review terms were +0.79 and −5.32 points, and the detection terms were −0.78 and +8.91 points (Table S12 and Figure S5). The within-stratum term equals the difference after standardization to common diagnostic weights. Detection components were defined in 4,999/5,000 replicates; one replicate had no external benign low-quality case. Overall differences and all review components had 5,000 valid replicates."
+      },
+      {
+        "i": 69,
+        "style": "Heading 2",
+        "text": "Spatial inspection from targeted CPU replay"
+      },
+      {
+        "i": 70,
+        "style": "Normal",
+        "text": "The six-case CPU replay saved 30 nonempty prediction masks. All 12 A/B review decisions and six quality labels matched the original records. Initial reference Dice differed by at most 9.61 × 10−5; the largest difference across all 48 numerical comparisons was 0.00143543 for left-shift consistency Dice in case105 (Table S13). Figure 5 shows the three shared misses, with all six cases in Figure S6. In case175, the predicted region lay along the upper image edge and had little overlap with the released reference (replayed Dice 0.0293), while both risks remained below their review cutoffs. These are newly captured CPU masks; the original six CUDA arrays were not archived, so pixel identity could not be tested."
+      },
+      {
+        "i": 71,
+        "style": "Heading 1",
+        "text": "Discussion"
+      },
+      {
+        "i": 72,
+        "style": "Heading 2",
+        "text": "Decision rules and deployment workload"
+      },
+      {
+        "i": 73,
+        "style": "Normal",
+        "text": "A fixed numerical cutoff and a fixed review count make different commitments when a quality-control score is transferred. A cutoff can be applied case by case, leaving the resulting review fraction as an outcome. Ranking fixes the number selected within a defined cohort or batch. In the 20 %-target example, B detected 13/16 low-quality external masks at its transferred cutoff and A detected 10/16; at 50 reviews each, the counts were 13/16 and 14/16. The complete budget scan showed that this ordering depended on the target as well as the rule. Evaluating both policies therefore distinguishes the transfer of a development operating point from detection at a specified review capacity."
+      },
+      {
+        "i": 74,
+        "style": "Normal",
+        "text": "Method A selected approximately one fifth of the internal cohort and one seventh of the external cohort for review. Its external detection contrast was less precise: workload was estimated from all 252 external patients, whereas detection used the 16 low-quality masks. The review fraction combines the prevalence of low-quality masks with the flagged fractions in low-quality and acceptable groups. BrEaST had both a smaller low-quality fraction and a smaller flagged fraction among acceptable masks. Misses per 100 patients depend on that prevalence too, explaining why they can remain similar while detection point estimates differ."
+      },
+      {
+        "i": 75,
+        "style": "Normal",
+        "text": "The diagnostic-stratum analysis gives a more specific description of this workload difference. For A, the positive composition-associated term and negative within-stratum-rate term act in opposite directions; the latter is also the common-weight standardized difference. Thus the two-stratum accounting locates the observed difference in rates within the diagnostic groups, without identifying its cause. For detection, these weights describe the low-quality subset, not all patients. Dataset differences in acquisition, devices and reference annotation remain combined with the observed diagnostic mixtures."
+      },
+      {
+        "i": 76,
+        "style": "Heading 2",
+        "text": "What prompt disagreement adds"
+      },
+      {
+        "i": 77,
+        "style": "Normal",
+        "text": "Prompt disagreement added three detections at the locked external operating point. Its yield relative to confidence was not uniform across budgets, and the bootstrap characterized the sensitivity of the 20 % direction pattern to calibration and test sampling. The development-only result is conditional on the original test patients and rankings; the full-resampling result also incorporates their empirical variation. Together with the original paired interval, these analyses support a policy-specific interpretation of the observed counts rather than a general ordering of the scores."
+      },
+      {
+        "i": 78,
+        "style": "Normal",
+        "text": "Confidence and prompt disagreement capture different properties of the same initial prediction. A uses the model quality estimate, whereas B probes stability under four specified box translations. The replay contours make their shared blind spot visible: a consistently selected region can remain poorly aligned with the reference. Case175 is an inspectable example of this behavior, with a narrow upper-edge prediction and very low reference Dice. Prior work combined structural responses with confidence [4] and directly compared perturbation uncertainty with predicted IoU [5]. The present evaluation complements those approaches by jointly reporting detection, review volume and misses under explicit operating policies."
+      },
+      {
+        "i": 79,
+        "style": "Heading 2",
+        "text": "Limitations and implications"
+      },
+      {
+        "i": 80,
+        "style": "Normal",
+        "text": "The findings apply to reference-informed, known-location boxes. Reader-drawn or automatically generated boxes require separate evaluation. The study used one SAM checkpoint, one image per patient and one independent external dataset; overlap with the SA-1B pretraining archive could not be determined [1]. Sixteen external low-quality masks limit detection precision, and empirical resampling does not add independent patients. The new budget, resampling and accounting analyses are post hoc; they define the scope of the operating example rather than confirming a prespecified population-level reversal."
+      },
+      {
+        "i": 81,
+        "style": "Normal",
+        "text": "Reference Dice measures agreement with released contours, and the operational cutoff requires separate clinical justification. Simulated review counts do not measure reader time, correction success or downstream measurement accuracy. Future evaluations should predefine the review policy and assess detection and workload jointly with independently supplied prompts and additional external cohorts."
+      },
+      {
+        "i": 82,
+        "style": "Normal",
+        "text": "All recorded predictions were nonempty. In future data, simultaneous empty initial and shifted masks could nevertheless receive zero disagreement risk under the stated consistency convention; any explicit empty-mask review rule would be a prospective policy change."
+      },
+      {
+        "i": 83,
+        "style": "Normal",
+        "text": "In this known-location breast ultrasound evaluation, transferring development-calibrated numerical cutoffs changed the fraction of cases flagged for review. The relative detection yield depended on the operating policy and budget, with no uniformly better score across the complete grid. Joint reporting of detection, review fraction and missed cases, together with an explicit choice of fixed cutoff or fixed review count, provides a practical basis for interpreting segmentation-quality screening across datasets."
+      },
+      {
+        "i": 84,
+        "style": "Heading 1",
+        "text": "Acknowledgments"
+      },
+      {
+        "i": 85,
+        "style": "Normal",
+        "text": "AI use and acknowledgments. OpenAI Codex assisted with study-design discussions, research and statistical code, plotting scripts, and substantive drafting and editing. Figures were rendered with Python/Matplotlib from released images, captured SAM masks and recorded scores. Editorial drafting used the Scientific Agent Skills workflow [14]. A precise underlying Codex model identifier was not available in the archived study records. The human authors retain responsibility for the work."
+      },
+      {
+        "i": 86,
+        "style": "Normal",
+        "text": "Research ethics. This retrospective secondary analysis used lawfully obtained, publicly released anonymized breast ultrasound images and annotations and involved no participant recruitment or intervention. The authors confirmed that the study met the conditions for exemption from ethics review under Article 32 of the Chinese Measures for Ethical Review of Life Science and Medical Research Involving Human Participants (2023)."
+      },
+      {
+        "i": 87,
+        "style": "Normal",
+        "text": "Author contributions. All authors have accepted responsibility for the entire content of this manuscript. Haoze Lan: research conceptualization and principal study design. Ziyuan Zhu: code review, GitHub repository uploads and manuscript revision."
+      },
+      {
+        "i": 88,
+        "style": "Normal",
+        "text": "Research funding. None declared."
+      },
+      {
+        "i": 89,
+        "style": "Normal",
+        "text": "Conflict of interest. The authors state no conflict of interest."
+      },
+      {
+        "i": 90,
+        "style": "Normal",
+        "text": "Informed consent. No participants were recruited or contacted for this secondary analysis of publicly available anonymized data, and no additional informed consent was obtained."
+      },
+      {
+        "i": 91,
+        "style": "Normal",
+        "text": "Data and code availability. The original BUS-BRA version 1.0 images and reference masks are available at https://doi.org/10.5281/zenodo.8231412 and BrEaST version 1 at https://doi.org/10.7937/9WKK-Q141 [8, 10]. Study-specific manifests, case scores, scoring and statistical code, and reproducibility records are available in the research repository [15]. The original study archive is retained at commit 592566b4c5f39e261c676eb034139a974e9cdfd5; the additional budget, bootstrap, diagnostic-accounting and six-case replay evidence is archived at commit 6a7da8181db6ba3db0bb9fa8bef628f284791b2e. Original datasets and derived materials are distinguished in the data, experiments and reproducibility directories. The checkpoint is not bundled; documented source URLs and its SHA-256 allow identity verification. The supplementary materials include the new tables, actual replay contours and executable analysis references."
+      },
+      {
+        "i": 92,
+        "style": "Heading 1",
+        "text": "References"
+      },
+      {
+        "i": 93,
+        "style": "Reference entry",
+        "text": "1.  Kirillov A, Mintun E, Ravi N, Mao H, Rolland C, Gustafson L, et al. Segment anything. In Proceedings of the IEEE/CVF International Conference on Computer Vision, Paris, France. IEEE, 2023. pp. 3992–4003. https://doi.org/10.1109/ICCV51070.2023.00371"
+      },
+      {
+        "i": 94,
+        "style": "Reference entry",
+        "text": "2.  Ma J, He Y, Li F, Han L, You C, Wang B. Segment anything in medical images. Nat Commun 2024;15:654. https://doi.org/10.1038/s41467-024-44824-z"
+      },
+      {
+        "i": 95,
+        "style": "Reference entry",
+        "text": "3.  Valindria VV, Lavdas I, Bai W, Kamnitsas K, Aboagye EO, Rockall AG, et al. Reverse classification accuracy: predicting segmentation performance in the absence of ground truth. IEEE Trans Med Imaging 2017;36:1597–1606. https://doi.org/10.1109/TMI.2017.2665165"
+      },
+      {
+        "i": 96,
+        "style": "Reference entry",
+        "text": "4.  Kinalioglu IH. Structural prompt-response consistency for label-free failure screening in promptable medical segmentation. Pattern Recognit Lett 2026;209:60–64. https://doi.org/10.1016/j.patrec.2026.08.026"
+      },
+      {
+        "i": 97,
+        "style": "Reference entry",
+        "text": "5.  Loke S, Movva NSV, Hota M, Gudepu R, Mburu N, Bestavemula S. When does prompt-perturbation uncertainty catch interactive-segmentation failures? An empirical study on SAM/MedSAM. In: MICCAI 2026 Satellite Events: UNSURE2026 [Internet]. 2026 [cited 2026 Nov 6]. Available from: https://papers.miccai.org/miccai-2026-sat/UNSURE2026_002.html"
+      },
+      {
+        "i": 98,
+        "style": "Reference entry",
+        "text": "6.  Tejani AS, Klontzas ME, Gatti AA, Mongan JT, Moy L, Park SH, et al. Checklist for artificial intelligence in medical imaging (CLAIM): 2024 update. Radiol Artif Intell 2024;6:e240300. https://doi.org/10.1148/ryai.240300"
+      },
+      {
+        "i": 99,
+        "style": "Reference entry",
+        "text": "7.  Gómez-Flores W, Gregorio-Calas MJ, Coelho de Albuquerque Pereira W. BUS-BRA: A breast ultrasound dataset for assessing computer-aided diagnosis systems. Med Phys 2024;51:3110–3123. https://doi.org/10.1002/mp.16812"
+      },
+      {
+        "i": 100,
+        "style": "Reference entry",
+        "text": "8.  Gómez-Flores W, Gregorio-Calas MJ, Coelho de Albuquerque Pereira W. BUS-BRA: A breast ultrasound dataset for assessing computer-aided diagnosis systems. Version 1.0 [dataset]. Zenodo, 2023. https://doi.org/10.5281/zenodo.8231412"
+      },
+      {
+        "i": 101,
+        "style": "Reference entry",
+        "text": "9.  Pawłowska A, Ćwierz-Pieńkowska A, Domalik A, Jaguś D, Kasprzak P, Matkowski R, et al. Curated benchmark dataset for ultrasound based breast lesion analysis. Sci Data 2024;11:148. https://doi.org/10.1038/s41597-024-02984-z"
+      },
+      {
+        "i": 102,
+        "style": "Reference entry",
+        "text": "10.  Pawłowska A, Ćwierz-Pieńkowska A, Domalik A, Jaguś D, Kasprzak P, Matkowski R, et al. A curated benchmark dataset for ultrasound based breast lesion analysis (Breast-Lesions-USG). Version 1 [dataset]. The Cancer Imaging Archive, 2024. https://doi.org/10.7937/9WKK-Q141"
+      },
+      {
+        "i": 103,
+        "style": "Reference entry",
+        "text": "11.  Newcombe RG. Interval estimation for the difference between independent proportions: comparison of eleven methods. Stat Med 1998;17:873–890. https://doi.org/10.1002/(SICI)1097-0258(19980430)17:8<873::AID-SIM779>3.0.CO;2-I"
+      },
+      {
+        "i": 104,
+        "style": "Reference entry",
+        "text": "12.  Newcombe RG. Improved confidence intervals for the difference between binomial proportions based on paired data. Stat Med 1998;17:2635–2650. https://doi.org/10.1002/(SICI)1097-0258(19981130)17:22<2635::AID-SIM954>3.0.CO;2-C"
+      },
+      {
+        "i": 105,
+        "style": "Reference entry",
+        "text": "13.  Kitagawa EM. Components of a difference between two rates. J Am Stat Assoc 1955;50:1168–1194. https://doi.org/10.1080/01621459.1955.10501299"
+      },
+      {
+        "i": 106,
+        "style": "Reference entry",
+        "text": "14.  Kassis T, Agarwal V, He Y, Patel D, Brueckner AM. Scientific agent skills: a library of procedural knowledge for research agents. arXiv 2026. https://doi.org/10.48550/arXiv.2609.00065"
+      },
+      {
+        "i": 107,
+        "style": "Reference entry",
+        "text": "15.  Research materials for fixed review thresholds in breast ultrasound segmentation [Internet]. GitHub; 2026 [cited 2026 Nov 6]. Evidence archive commit 6a7da8181db6ba3db0bb9fa8bef628f284791b2e. Available from: https://github.com/khkh87885-code/research/tree/6a7da8181db6ba3db0bb9fa8bef628f284791b2e."
+      },
+      {
+        "i": 108,
+        "style": "Heading 1",
+        "text": "Tables and table legends"
+      },
+      {
+        "i": 109,
+        "style": "Caption",
+        "text": "Table 1.  Study cohorts"
+      },
+      {
+        "i": 110,
+        "style": "Manuscript note",
+        "text": "One image was selected per patient. Low-quality masks had a reference Dice coefficient below 0.70. n, number of patients; N, cohort size."
+      },
+      {
+        "i": 111,
+        "style": "Caption",
+        "text": "Table 2.  Test performance at the locked review thresholds"
+      },
+      {
+        "i": 112,
+        "style": "Manuscript note",
+        "text": "Detection uses low-quality masks as its denominator. Simulated review and misses per 100 use all scored patients in each cohort. A, model-confidence score; B, prompt-disagreement score; n, number of events; N, relevant denominator. Brackets show Wilson 95 % intervals for detection, in percent."
+      },
+      {
+        "i": 113,
+        "style": "Caption",
+        "text": "Table 3.  Planned contrasts at the locked review thresholds"
+      },
+      {
+        "i": 114,
+        "style": "Manuscript note",
+        "text": "pp, percentage points. CI, confidence interval. H1 and H2 use independent Newcombe intervals. H3 uses a paired interval in the 16 low-quality BrEaST cases. H2 and H3 intervals are nominal."
+      },
+      {
+        "i": 115,
+        "style": "Heading 1",
+        "text": "Figure legends"
+      },
+      {
+        "i": 116,
+        "style": "Figure legend",
+        "text": "Figure 1.  Study cohorts and analysis flow. BUS-BRA patients were assigned to development or internal testing. BrEaST contributed external test patients with a primary lesion mask. Each patient contributed one image. Low-quality masks had a reference Dice coefficient below 0.70."
+      },
+      {
+        "i": 117,
+        "style": "Figure legend",
+        "text": "Figure 2.  Review scores for prompted breast ultrasound segmentation. (A) The initial box is derived from the manual contour with a 10 % margin per side and clipped to the image. Four further prompts shift the clipped box by 5 % of its width or height. (B) Frozen Segment Anything Model (SAM) ViT-B reuses one image embedding to generate one mask per prompt. (C) Method A uses one minus predicted intersection over union for the initial mask. Method B uses one minus the mean Dice between the initial and four shifted masks. Each score triggers simulated review at or above its locked cutoff. The image and masks share a display crop from BrEaST case 001 [10]."
+      },
+      {
+        "i": 118,
+        "style": "Figure legend",
+        "text": "Figure 3.  Planned differences at the locked thresholds. Points show differences in proportions and horizontal bars show two-sided 95 % Newcombe confidence intervals. H1 and H2 compare BrEaST minus BUS-BRA internal testing. H3 compares B minus A in the same 16 low-quality BrEaST cases. H2 and H3 intervals are nominal. The dashed line marks zero difference."
+      },
+      {
+        "i": 119,
+        "style": "Figure legend",
+        "text": "Figure 4.  Low-quality mask detection by simulated review volume. Panels A and B show the percentage of low-quality masks detected as progressively more patients are selected in descending risk order in each test cohort. Markers identify the locked thresholds and the equal-review setting. Panel C compares detection in the same 16 low-quality external cases at the locked thresholds and at 50 reviews per method."
+      },
+      {
+        "i": 120,
+        "style": "Figure legend",
+        "text": "Figure 5.  Three shared screening misses with actual targeted CPU predictions. Rows show BrEaST case089 (A, B), case175 (C, D) and case238 (E, F) [10]. Left panels overlay the released reference contour (green) and reference-derived initial prompt (blue); right panels overlay the initial prediction captured in the CPU replay (orange). Both review scores missed these three low-quality masks at the original locked cutoffs. Predictions use the original checksum-matched SAM ViT-B weights, exact source and prompt rules. Displayed Dice values come from this replay. The maximum initial-reference-Dice difference across all six replayed cases was 9.61 × 10−5; original study scores remain in Table S9. All six replayed cases and numerical comparisons appear in Figure S6 and Table S13."
+      }
+    ],
+    "tables": [
+      [
+        [
+          "Cohort",
+          "Patients, n",
+          "Benign, n",
+          "Malignant, n",
+          "Low-quality masks, n/N (%)"
+        ],
+        [
+          "BUS-BRA development",
+          "213",
+          "145",
+          "68",
+          "24/213 (11.27 %)"
+        ],
+        [
+          "BUS-BRA internal",
+          "851",
+          "577",
+          "274",
+          "93/851 (10.93 %)"
+        ],
+        [
+          "BrEaST external",
+          "252",
+          "154",
+          "98",
+          "16/252 (6.35 %)"
+        ]
+      ],
+      [
+        [
+          "Test cohort",
+          "Score",
+          "Detection, n/N (%)\n[Wilson 95 % CI, %]",
+          "Simulated review,\nn/N (%)",
+          "Misses, n",
+          "Misses per\n100 patients"
+        ],
+        [
+          "BUS-BRA internal",
+          "A",
+          "71/93 (76.34 %)\n[66.77, 83.83]",
+          "174/851 (20.45 %)",
+          "22",
+          "2.59"
+        ],
+        [
+          "BUS-BRA internal",
+          "B",
+          "68/93 (73.12 %)\n[63.32, 81.08]",
+          "150/851 (17.63 %)",
+          "25",
+          "2.94"
+        ],
+        [
+          "BrEaST external",
+          "A",
+          "10/16 (62.50 %)\n[38.64, 81.52]",
+          "35/252 (13.89 %)",
+          "6",
+          "2.38"
+        ],
+        [
+          "BrEaST external",
+          "B",
+          "13/16 (81.25 %)\n[56.99, 93.41]",
+          "33/252 (13.10 %)",
+          "3",
+          "1.19"
+        ]
+      ],
+      [
+        [
+          "Analysis",
+          "Contrast",
+          "Difference, pp",
+          "95 % CI, pp"
+        ],
+        [
+          "H1 (primary)",
+          "Method A detection, external minus internal",
+          "−13.84",
+          "[−38.85, +7.45]"
+        ],
+        [
+          "H2 (secondary)",
+          "Method A simulated review, external minus internal",
+          "−6.56",
+          "[−11.25, −1.10]"
+        ],
+        [
+          "H3 (secondary)",
+          "External detection, Method B minus Method A",
+          "+18.75",
+          "[−4.28, +40.04]"
+        ]
+      ]
+    ],
+    "sections": [
+      {
+        "width_in": 8.268055555555556,
+        "height_in": 11.693055555555556,
+        "top_in": 0.8659722222222223,
+        "bottom_in": 0.8659722222222223,
+        "left_in": 0.9055555555555556,
+        "right_in": 0.9055555555555556
+      }
+    ],
+    "inline_shapes": 0,
+    "media_files": [
+      "word/media/image1.png",
+      "word/media/image2.png",
+      "word/media/image3.png",
+      "word/media/image4.png"
+    ],
+    "image_metadata": [
+      {
+        "name": "word/media/image1.png",
+        "pixels": [
+          4133,
+          1842
+        ],
+        "format": "PNG",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      },
+      {
+        "name": "word/media/image2.png",
+        "pixels": [
+          4133,
+          2551
+        ],
+        "format": "PNG",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      },
+      {
+        "name": "word/media/image3.png",
+        "pixels": [
+          4133,
+          1653
+        ],
+        "format": "PNG",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      },
+      {
+        "name": "word/media/image4.png",
+        "pixels": [
+          4133,
+          3377
+        ],
+        "format": "PNG",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      }
+    ],
+    "shape_dimensions": [],
+    "explicit_run_font_counts": [
+      {
+        "font": null,
+        "size_pt": null,
+        "runs": 121
+      }
+    ],
+    "tracked_insertions_or_deletions": false
+  },
+  "supplement": {
+    "path": "/workspace/bmt_v8/outputs/BMT_supplementary_material_v4.docx",
+    "sha256": "6b443ebd1f5288ec8c28d3add258ef7b694c5aef47870b976e440507eefc9a2a",
+    "paragraphs": [
+      {
+        "i": 0,
+        "style": "Title",
+        "text": "Supplementary material for the breast ultrasound segmentation study"
+      },
+      {
+        "i": 1,
+        "style": "Title metadata",
+        "text": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control"
+      },
+      {
+        "i": 2,
+        "style": "Normal",
+        "text": "Haoze Lan; Ziyuan Zhu; v8 author-review revision, 6 November 2026"
+      },
+      {
+        "i": 3,
+        "style": "Caption",
+        "text": "Table S1.  Locked thresholds and scoring settings"
+      },
+      {
+        "i": 4,
+        "style": "Manuscript note",
+        "text": "SAM, Segment Anything Model. Inference used the official sam_vit_b_01ec64.pth checkpoint with float32 weights on a GeForce RTX 3060 Laptop GPU. Statistical replay used Python 3.12.14."
+      },
+      {
+        "i": 5,
+        "style": "Heading 1",
+        "text": "Sensitivity to the low quality definition"
+      },
+      {
+        "i": 6,
+        "style": "Caption",
+        "text": "Table S2.  Test performance at alternative reference Dice cutoffs"
+      },
+      {
+        "i": 7,
+        "style": "Manuscript note",
+        "text": "Both risk thresholds remained fixed. Detection uses the low-quality masks under the stated cutoff as its denominator. Simulated review and misses per 100 use all scored patients."
+      },
+      {
+        "i": 8,
+        "style": "Heading 1",
+        "text": "Detection rate contrasts"
+      },
+      {
+        "i": 9,
+        "style": "Caption",
+        "text": "Table S3.  Detection rate contrasts at alternative reference Dice cutoffs"
+      },
+      {
+        "i": 10,
+        "style": "Manuscript note",
+        "text": "pp, percentage points. CI, confidence interval. Between-cohort contrasts use independent Newcombe intervals. Within-BrEaST contrasts use paired Newcombe intervals."
+      },
+      {
+        "i": 11,
+        "style": "Normal",
+        "text": ""
+      },
+      {
+        "i": 12,
+        "style": "Figure legend",
+        "text": "Figure S1.  Sensitivity to the definition of low quality. Panel A shows the external-minus-internal detection difference for method A. Panel B shows the paired B-minus-A difference in BrEaST. Risk thresholds remain fixed while reference Dice cutoffs vary. The filled marker denotes H1 at Dice below 0.70. The remaining 95 % confidence intervals are nominal."
+      },
+      {
+        "i": 13,
+        "style": "Heading 1",
+        "text": "Equal review volume in BrEaST"
+      },
+      {
+        "i": 14,
+        "style": "Caption",
+        "text": "Table S4.  BrEaST performance at equal review volume"
+      },
+      {
+        "i": 15,
+        "style": "Manuscript note",
+        "text": "Each method selected 50 of the 252 scored cases in descending risk order. Ties followed lexicographic case identifier order. Low quality used reference Dice below 0.70."
+      },
+      {
+        "i": 16,
+        "style": "Normal",
+        "text": "Among the 16 low-quality cases, both methods flagged 12, only A flagged 2, only B flagged 1, and neither flagged 1. The paired B-minus-A difference was −6.25 percentage points (nominal 95 % confidence interval [−31.61, +19.57]). This interval is conditional on the observed rankings."
+      },
+      {
+        "i": 17,
+        "style": "Normal",
+        "text": ""
+      },
+      {
+        "i": 18,
+        "style": "Figure legend",
+        "text": "Figure S2.  Paired outcomes among the 16 low-quality BrEaST masks. Each dot represents one low-quality case. Panel A uses the two locked thresholds. Panel B ranks each score separately and selects 50 of 252 patients per method. The right column in each panel reports the counts."
+      },
+      {
+        "i": 19,
+        "style": "Heading 1",
+        "text": "Computational reproducibility"
+      },
+      {
+        "i": 20,
+        "style": "Caption",
+        "text": "Table S5.  Agreement between the raw-image rerun and archived scores"
+      },
+      {
+        "i": 21,
+        "style": "Manuscript note",
+        "text": "The numerical comparison covered reference Dice, SAM predicted intersection over union, the two risk scores and the four shifted-mask Dice values. Flag and count comparisons included the quality label, both review flags, the empty-mask flag and the distinct-box count. Runtime was recorded separately."
+      },
+      {
+        "i": 22,
+        "style": "Normal",
+        "text": "Recomputing statistics from archived scores and rerunning inference from the original images both reproduced the locked thresholds, primary and supplementary results, and review-curve counts. The reproducibility package contains the case manifests, input hashes and per-cohort verification records."
+      },
+      {
+        "i": 23,
+        "style": "Normal",
+        "text": "Revision audit provenance. Archived-score replay and the original same-environment full-cohort image rerun remain distinct from the six-case CPU replay reported in Table S13. The latter was actually executed for this revision, saved new prediction arrays and retained the original scores for every cohort analysis. Computational reproducibility is distinct from independent validation."
+      },
+      {
+        "i": 24,
+        "style": "Normal",
+        "text": ""
+      },
+      {
+        "i": 25,
+        "style": "Heading 1",
+        "text": "Additional descriptive quality-control measures"
+      },
+      {
+        "i": 26,
+        "style": "Normal",
+        "text": "These post hoc descriptive analyses use the unchanged locked risk thresholds and the primary reference Dice cutoff of 0.70. The positive condition is a low-quality segmentation; the positive test is a review flag. These are mask-quality screening measures, not breast-cancer diagnostic measures. Development results describe calibration data and are not independent test performance."
+      },
+      {
+        "i": 27,
+        "style": "Caption",
+        "text": "Table S6. Classification counts at the primary quality cutoff"
+      },
+      {
+        "i": 28,
+        "style": "Normal",
+        "text": "TP, true positive (flagged low quality); FP, false positive (flagged quality-acceptable); TN, true negative (unflagged quality-acceptable); FN, false negative (unflagged low quality); n, number of patients. A, model-confidence risk; B, prompt-disagreement risk."
+      },
+      {
+        "i": 29,
+        "style": "Caption",
+        "text": "Table S7. Sensitivity, specificity and predictive values"
+      },
+      {
+        "i": 30,
+        "style": "Normal",
+        "text": "Entries show n/N (%), followed by Wilson 95 % confidence intervals in percent. PPV, positive predictive value; NPV, negative predictive value. Sensitivity equals the low-quality detection measure used in the prespecified analysis. Predictive values depend on the frequency of low-quality segmentations. Machine-readable descriptive results for Dice cutoffs 0.50, 0.70 and 0.80 are supplied as Additional_quality_control_metrics.csv. Misses per 100 patients remain in the original main Table 2 and supplementary Tables S2 and S4."
+      },
+      {
+        "i": 31,
+        "style": "Normal",
+        "text": ""
+      },
+      {
+        "i": 32,
+        "style": "Heading 1",
+        "text": "Exploratory diagnostic stratification"
+      },
+      {
+        "i": 33,
+        "style": "Caption",
+        "text": "Table S8. Quality-control detection and review by dataset-reported benign/malignant classification"
+      },
+      {
+        "i": 34,
+        "style": "Normal",
+        "text": "Post hoc exploratory analysis with unchanged locked thresholds and reference Dice < 0.70. N, all scored patients in the stratum; F, low-quality masks; n, detected or reviewed cases as indicated; CI, Wilson confidence interval; A, model-confidence score; B, prompt-disagreement score. Classification is dataset-reported and is not uniformly histopathologically confirmed in BrEaST. These are quality-screening measures, not diagnostic sensitivity for malignancy. No hypothesis or interaction tests were performed. Complete machine-readable results also include the development strata, confusion counts and misses per 100 patients."
+      },
+      {
+        "i": 35,
+        "style": "Heading 2",
+        "text": "Empty-mask audit"
+      },
+      {
+        "i": 36,
+        "style": "Normal",
+        "text": "Across 213 development, 851 internal and 252 external images, the saved initial_mask_empty flag was zero for every initial prediction. Every one of the 5,264 initial-to-shifted Dice values was strictly positive, which also establishes that no shifted prediction was empty. Consequently the convention Dice(empty, empty)=1 affected zero recorded scores. A reference Dice of zero alone was not treated as evidence of an empty prediction. No affected-case sensitivity analysis was needed."
+      },
+      {
+        "i": 37,
+        "style": "Normal",
+        "text": ""
+      },
+      {
+        "i": 38,
+        "style": "Heading 1",
+        "text": "External missed-case records"
+      },
+      {
+        "i": 39,
+        "style": "Caption",
+        "text": "Table S9. All six low-quality external cases missed by method A"
+      },
+      {
+        "i": 40,
+        "style": "Normal",
+        "text": "All external cases with reference Dice < 0.70 and A flag=0 are included, partitioned by the B flag. A flag and B flag equal 1 when risk is at least the respective full-precision locked cutoff: A=0.13705134391784668; B=0.06972856653991777. Displayed scores are rounded; decisions use the original precision. Mean consistency is one minus Risk B. Each initial prediction was nonempty, and every initial-to-shifted Dice was positive. This outcome-defined case set illustrates score behavior and is not used to estimate an additional performance advantage."
+      },
+      {
+        "i": 41,
+        "style": "Normal",
+        "text": "Actual predictions for these six cases have now been captured in a targeted CPU replay using the checksum-identical checkpoint and exact SAM source. Figure S6 shows the replayed contours and Table S13 compares the new values with the archived scores. The original six CUDA arrays were not retained; pixel identity across environments cannot be checked. Table S9 continues to report the original scores. The Figure 2 case001 illustration is not used as a substitute for a missed case."
+      },
+      {
+        "i": 42,
+        "style": "Heading 1",
+        "text": "Table S10. Complete post hoc review-budget scan. Panel A: development calibration."
+      },
+      {
+        "i": 43,
+        "style": "Normal",
+        "text": "Post hoc exploratory analysis of the unchanged development cohort (N=213; low-quality cases F=24). A is confidence-based risk; B is prompt-instability risk. Low quality is reference Dice <0.70."
+      },
+      {
+        "i": 44,
+        "style": "Normal",
+        "text": "Each threshold minimizes the absolute difference from the target review fraction using development risks only. Risk ties are kept together; a zero-review candidate is included; equally close candidates select fewer reviews. All selected candidates here are nonzero. Displayed thresholds are rounded; analyses use full-precision stored thresholds."
+      },
+      {
+        "i": 45,
+        "style": "Normal",
+        "text": "R is the number selected for review; TP is the number of low-quality cases selected; F is the number of low-quality cases. Percentages in count cells use the displayed denominator. Settings were fixed before these new computations, not preregistered for the original study."
+      },
+      {
+        "i": 46,
+        "style": "Heading 1",
+        "text": "Table S10 (continued). Panel B: BUS-BRA internal holdout: development-calibrated thresholds."
+      },
+      {
+        "i": 47,
+        "style": "Normal",
+        "text": "Post hoc exploratory analysis; N=851; F=93. Count-cell percentages use the displayed denominator. pp, percentage points."
+      },
+      {
+        "i": 48,
+        "style": "Normal",
+        "text": "The development thresholds in Panel A are transferred without test-cohort recalibration. Therefore actual review fractions may differ from the target and between A and B."
+      },
+      {
+        "i": 49,
+        "style": "Normal",
+        "text": "Detection and review contrasts are paired within patients. Nominal two-sided 95 % confidence intervals use the original paired Newcombe method 10 with its correction for positive association."
+      },
+      {
+        "i": 50,
+        "style": "Normal",
+        "text": "The presented confidence intervals are conditional on the observed calibration and selection, exclude calibration uncertainty and re-ranking bootstrap uncertainty, and have no multiplicity correction. They do not replace or modify the original H1–H3 analyses."
+      },
+      {
+        "i": 51,
+        "style": "Heading 1",
+        "text": "Table S10 (continued). Panel C: BUS-BRA internal holdout: test-cohort equal review."
+      },
+      {
+        "i": 52,
+        "style": "Normal",
+        "text": "Post hoc exploratory analysis; N=851; F=93. Count-cell percentages use the displayed denominator. pp, percentage points."
+      },
+      {
+        "i": 53,
+        "style": "Normal",
+        "text": "Each method selects the same K highest-risk cases within this test cohort. K is the nearest integer to target budget × N, with ties selecting fewer. Internal 50 % therefore uses K=425. Ranking is risk descending, followed by the exact archived patient-identifier string; no test labels are used to select K. This is a cohort-relative ranking policy, not a portable threshold."
+      },
+      {
+        "i": 54,
+        "style": "Normal",
+        "text": "Detection contrasts are paired within patients. Their nominal two-sided 95 % confidence intervals use the original paired Newcombe method 10 with its correction for positive association. Review volume is exactly K for both methods, so the policy-level B−A review-fraction difference is zero by design; no policy review-difference interval is presented. The archived conditional Newcombe calculations for individual paired review flags are retained in the unrounded source CSV, and are not interpreted as intervals for the equal-K policy review-volume difference."
+      },
+      {
+        "i": 55,
+        "style": "Normal",
+        "text": "The presented confidence intervals are conditional on the observed calibration and selection, exclude calibration uncertainty and re-ranking bootstrap uncertainty, and have no multiplicity correction. They do not replace or modify the original H1–H3 analyses."
+      },
+      {
+        "i": 56,
+        "style": "Heading 1",
+        "text": "Table S10 (continued). Panel D: BrEaST external test: development-calibrated thresholds."
+      },
+      {
+        "i": 57,
+        "style": "Normal",
+        "text": "Post hoc exploratory analysis; N=252; F=16. Count-cell percentages use the displayed denominator. pp, percentage points."
+      },
+      {
+        "i": 58,
+        "style": "Normal",
+        "text": "The development thresholds in Panel A are transferred without test-cohort recalibration. Therefore actual review fractions may differ from the target and between A and B."
+      },
+      {
+        "i": 59,
+        "style": "Normal",
+        "text": "Detection and review contrasts are paired within patients. Nominal two-sided 95 % confidence intervals use the original paired Newcombe method 10 with its correction for positive association."
+      },
+      {
+        "i": 60,
+        "style": "Normal",
+        "text": "The presented confidence intervals are conditional on the observed calibration and selection, exclude calibration uncertainty and re-ranking bootstrap uncertainty, and have no multiplicity correction. They do not replace or modify the original H1–H3 analyses."
+      },
+      {
+        "i": 61,
+        "style": "Heading 1",
+        "text": "Table S10 (continued). Panel E: BrEaST external test: test-cohort equal review."
+      },
+      {
+        "i": 62,
+        "style": "Normal",
+        "text": "Post hoc exploratory analysis; N=252; F=16. Count-cell percentages use the displayed denominator. pp, percentage points."
+      },
+      {
+        "i": 63,
+        "style": "Normal",
+        "text": "Each method selects the same K highest-risk cases within this test cohort. K is the nearest integer to target budget × N, with ties selecting fewer. External 50 % therefore uses K=126. Ranking is risk descending, followed by the exact archived patient-identifier string; no test labels are used to select K. This is a cohort-relative ranking policy, not a portable threshold."
+      },
+      {
+        "i": 64,
+        "style": "Normal",
+        "text": "Detection contrasts are paired within patients. Their nominal two-sided 95 % confidence intervals use the original paired Newcombe method 10 with its correction for positive association. Review volume is exactly K for both methods, so the policy-level B−A review-fraction difference is zero by design; no policy review-difference interval is presented. The archived conditional Newcombe calculations for individual paired review flags are retained in the unrounded source CSV, and are not interpreted as intervals for the equal-K policy review-volume difference."
+      },
+      {
+        "i": 65,
+        "style": "Normal",
+        "text": "The presented confidence intervals are conditional on the observed calibration and selection, exclude calibration uncertainty and re-ranking bootstrap uncertainty, and have no multiplicity correction. They do not replace or modify the original H1–H3 analyses."
+      },
+      {
+        "i": 66,
+        "style": "Heading 1",
+        "text": "Table S11. Post hoc three-route bootstrap sensitivity. Panel A: endpoint intervals."
+      },
+      {
+        "i": 67,
+        "style": "Normal",
+        "text": "Post hoc exploratory patient bootstrap: 10,000 replicates per route; seed 20261106; NumPy PCG64. Values are percentage points. Intervals are nominal, unadjusted 2.5th–97.5th percentile intervals over valid replicates, using linear quantiles. All 12 endpoints have 10,000 valid replicates and zero NA replicates."
+      },
+      {
+        "i": 68,
+        "style": "Normal",
+        "text": "R1: test-cohort patient sampling at the locked development cutoffs; conditional on the observed development calibration. R2: development-patient resampling with recalibration to approximately 20 % review, evaluated on the unchanged test cohorts; conditional on those observed test cohorts. R3: full development-plus-test patient resampling, combining calibration variability and test-sampling variability within the observed empirical cohorts. A/B risks and quality stay paired within each sampled patient."
+      },
+      {
+        "i": 69,
+        "style": "Normal",
+        "text": "In R2, the equal-K=50 endpoint is necessarily constant because the test cohort and its risk ranking remain fixed; its degenerate interval is not evidence of population certainty. R1 and R3 share test draws, while R2 and R3 share development draws."
+      },
+      {
+        "i": 70,
+        "style": "Normal",
+        "text": "Every sampled draw is retained, including repeat draws of the same patient; these repetitions are not independent new cases. Equal review selects exactly 50 draw records by descending risk, original identifier string, then replica index. Calibration keeps all risk ties together and chooses fewer reviews when equally close; zero-denominator detection is NA without imputation."
+      },
+      {
+        "i": 71,
+        "style": "Normal",
+        "text": "The observed external low-quality paired table has both=10, A-only=0, B-only=3, neither=3. R1 cannot generate an A-only detection from this empirical support, so its threshold B−A contrast is structurally nonnegative. Its [0.00, +40.00] pp percentile interval does not exclude a population advantage for A."
+      },
+      {
+        "i": 72,
+        "style": "Normal",
+        "text": "These descriptive percentile intervals supplement, and do not replace, the original paired Newcombe intervals. The original external threshold B−A interval remains [−4.28, +40.04] pp. Empirical sign and reversal fractions are neither p-values nor posterior probabilities, and do not establish superiority or equivalence."
+      },
+      {
+        "i": 73,
+        "style": "Heading 1",
+        "text": "Table S11 (continued). Panel B: joint direction matrix for the external B−A detection contrasts."
+      },
+      {
+        "i": 74,
+        "style": "Normal",
+        "text": "Post hoc exploratory bootstrap. Rows show the sign of the threshold contrast; columns show the sign of the equal-review contrast. Each cell is a count and percentage of 10,000 jointly valid paired replicates. Route definitions and empirical-support caveats are given in Panel A. Strict reversal requires opposite nonzero signs; ties are reported separately."
+      },
+      {
+        "i": 75,
+        "style": "Normal",
+        "text": "R1: observed-direction reversal (+,−), 3961 (39.61 %); opposite reversal (−,+), 0 (0.00 %); any strict reversal, 3961 (39.61 %); either contrast tied, 2519 (25.19 %)."
+      },
+      {
+        "i": 76,
+        "style": "Normal",
+        "text": "R2: observed-direction reversal (+,−), 9040 (90.40 %); opposite reversal (−,+), 0 (0.00 %); any strict reversal, 9040 (90.40 %); either contrast tied, 435 (4.35 %)."
+      },
+      {
+        "i": 77,
+        "style": "Normal",
+        "text": "R3: observed-direction reversal (+,−), 3094 (30.94 %); opposite reversal (−,+), 90 (0.90 %); any strict reversal, 3184 (31.84 %); either contrast tied, 2808 (28.08 %)."
+      },
+      {
+        "i": 78,
+        "style": "Heading 1",
+        "text": "Table S12. Post hoc diagnostic-stratum symmetric Kitagawa decomposition of external-minus-internal differences."
+      },
+      {
+        "i": 79,
+        "style": "Normal",
+        "text": "Post hoc descriptive accounting at the locked 20 %-development-budget thresholds (A=0.13705134391784668; B=0.06972856653991777), without recalibration. Direction is external minus internal. Strata are dataset-reported benign and malignant diagnoses; not every diagnosis was histopathologically confirmed."
+      },
+      {
+        "i": 80,
+        "style": "Normal",
+        "text": "Symmetric Kitagawa identity: overall difference = Σ[(wE−wI)(pE+pI)/2] + Σ[(pE−pI)(wE+wI)/2]. Detection weights are the diagnostic proportions among low-quality cases; review weights are the diagnostic proportions among all patients. The first sum is composition-associated and the second is the within-stratum term. Weights are recomputed in every draw."
+      },
+      {
+        "i": 81,
+        "style": "Normal",
+        "text": "Intervals are nominal, unadjusted descriptive percentile 95 % intervals from 5,000 independent within-cohort patient bootstrap replicates (seed 20261107; NumPy PCG64; linear finite-value quantiles); A/B, quality and diagnosis remain paired. Duplicate draws are repeated observations of existing patients, not new cases."
+      },
+      {
+        "i": 82,
+        "style": "Normal",
+        "text": "Overall detection differences have 5,000 valid replicates. One draw has no external benign low-quality case, making its detection stratum rate undefined; the NA propagates to both detection components, leaving 4,999 valid component replicates. Review-fraction components and overall differences have 5,000 valid replicates. Undefined rates are not imputed even when their stratum weight is zero."
+      },
+      {
+        "i": 83,
+        "style": "Normal",
+        "text": "Two diagnostic strata cannot remove device, acquisition, annotation or other confounding. This decomposition is not a causal attribution and no percent-explained claim is made. Percentile intervals supplement the original H1–H3 Newcombe intervals; crossing zero does not demonstrate equivalence."
+      },
+      {
+        "i": 84,
+        "style": "Normal",
+        "text": "For diagnostic stratum s, C = Σ(w_E,s−w_I,s)(p_E,s+p_I,s)/2 and W = Σ(p_E,s−p_I,s)(w_E,s+w_I,s)/2, so D=C+W. Common weights w*=(w_E+w_I)/2 give a standardized external-minus-internal difference equal to W. Components may not sum to the displayed total after rounding. Method: Kitagawa EM, J Am Stat Assoc 1955;50:1168–1194, doi:10.1080/01621459.1955.10501299."
+      },
+      {
+        "i": 85,
+        "style": "Heading 1",
+        "text": "Table S13. Post hoc six-case targeted CPU replay. Panel A: reference Dice and saved-mask checks."
+      },
+      {
+        "i": 86,
+        "style": "Normal",
+        "text": "Post hoc targeted CPU replay of the six archived external low-quality cases missed by A: case089, case175 and case238 were missed by both methods; case024, case105 and case222 were detected only by B. The same six patients are replayed; this is not an independent validation cohort or a full-cohort rerun."
+      },
+      {
+        "i": 87,
+        "style": "Normal",
+        "text": "Low quality is reference Dice <0.70. Five predicted masks were saved per case (initial, left, right, up, down); all 30/30 are nonempty. Mask nonemptiness does not establish segmentation adequacy."
+      },
+      {
+        "i": 88,
+        "style": "Normal",
+        "text": "Reference Dice and risks were independently recomputed directly from the saved NPZ arrays and agree exactly with the replay receipt. Displayed values are rounded; unrounded case data and all 48 numerical comparisons are supplied as CSV."
+      },
+      {
+        "i": 89,
+        "style": "Normal",
+        "text": "Replay used CPU inference with the archived model checkpoint and frozen prompt geometry. The result checks numerical and decision reproducibility for these selected cases only; it is not a clinical-validity assessment."
+      },
+      {
+        "i": 90,
+        "style": "Normal",
+        "text": "The CPU replay used Python 3.12.14, PyTorch 2.4.1+cpu, torchvision 0.19.1+cpu, NumPy 1.26.4 and Pillow 10.4.0, with two PyTorch threads and float32 weights. The original GPU environment is in Table S1. Total wall time, including loading and figure generation, was 59.419 seconds; peak process RSS was 3,220.4 MiB. All 48 full-precision comparisons are supplied as S13_all_48_comparisons_unrounded.csv, alongside the captured arrays in the fixed evidence repository."
+      },
+      {
+        "i": 91,
+        "style": "Heading 1",
+        "text": "Table S13 (continued). Panel B: archived and replayed risks and review decisions."
+      },
+      {
+        "i": 92,
+        "style": "Normal",
+        "text": "Post hoc exploratory replay; A is 1 minus the initial SAM predicted IoU, and B is 1 minus mean Dice consistency between the initial mask and four shifted-prompt masks. Review=1 when risk is greater than or equal to the locked threshold: A=0.13705134391784668 and B=0.06972856653991777. The archived and replayed A/B review decisions agree in 12/12 comparisons; all six low-quality labels agree."
+      },
+      {
+        "i": 93,
+        "style": "Normal",
+        "text": "Eight numerical fields per case are reference Dice, initial predicted IoU, risk A, risk B and the four prompt-shift Dice values. Of 48 comparisons, 6 are exactly equal and 42 differ numerically. Maximum |Δ| across all fields is 0.0014354348103014225 (case105, left-shift Dice). Maximum |Δ| in reference Dice is 0.00009610643066648716 (case222); risk A, 0.00004601478576660156 (case222); risk B, 0.0003589758947518673 (case105). Numerical replay is therefore not bitwise identical."
+      },
+      {
+        "i": 94,
+        "style": "Normal",
+        "text": "These selected cases provide a reproducibility check for the saved predictions and fixed decisions, not additional patients or evidence of a performance improvement."
+      },
+      {
+        "i": 95,
+        "style": "Heading 1",
+        "text": "Post hoc budget dependence"
+      },
+      {
+        "i": 96,
+        "style": "Normal",
+        "text": ""
+      },
+      {
+        "i": 97,
+        "style": "Caption",
+        "text": "Figure S3. Complete review-budget scan. A shows actual review fractions after development-threshold transfer; B and C show external and internal low-quality detection under transferred cutoffs and equal-review ranking; D shows paired external B-minus-A detection differences. Each target was evaluated using both rules, with no selection of a favorable budget. External and internal low-quality denominators are 16 and 93. Error bars in D are nominal paired Newcombe 95 % intervals conditional on observed calibration and rankings; they do not incorporate recalibration or reranking uncertainty. Numerical values are in Table S10."
+      },
+      {
+        "i": 98,
+        "style": "Heading 1",
+        "text": "Post hoc calibration and sampling sensitivity"
+      },
+      {
+        "i": 99,
+        "style": "Normal",
+        "text": ""
+      },
+      {
+        "i": 100,
+        "style": "Caption",
+        "text": "Figure S4. Patient-bootstrap sensitivity, 10,000 replicates per route. A and B show A external-minus-internal detection and review contrasts; C shows external B-minus-A detection under transferred cutoffs and equal-top50 ranking. Points and bars denote medians and descriptive percentile 95 % intervals, with original estimates identified separately. D shows the joint sign-pattern frequencies: original strict pattern (fixed>0/equal<0), opposite pattern, at least one zero contrast, or matching nonzero signs. Frequencies are empirical resampling summaries, not p-values or population probabilities. Test-only resampling cannot generate an unobserved A-only low-quality detection at the fixed cutoffs; its nonnegative support must not be used to exclude a population A advantage. The original H3 Newcombe interval is retained. Complete routes, denominators and the sign matrix are in Table S11."
+      },
+      {
+        "i": 101,
+        "style": "Heading 1",
+        "text": "Diagnostic composition accounting"
+      },
+      {
+        "i": 102,
+        "style": "Normal",
+        "text": ""
+      },
+      {
+        "i": 103,
+        "style": "Caption",
+        "text": "Figure S5. Symmetric Kitagawa accounting at the original locked cutoffs. A shows low-quality detection and B simulated review. Rows give the overall external-minus-internal difference and its composition-associated and within-stratum-rate terms for each score. Points show original estimates; bars show nominal percentile 95 % intervals from 5,000 patient-bootstrap draws. Detection components have 4,999 valid draws; overall differences and review components have 5,000. Detection weights describe diagnostic shares among low-quality cases; review weights describe shares among all patients. The within-stratum term equals the common-weight standardized difference. These are descriptive accounting terms, not causal effects. Values and rounding details are in Table S12."
+      },
+      {
+        "i": 104,
+        "style": "Heading 1",
+        "text": "Targeted CPU replay: shared misses"
+      },
+      {
+        "i": 105,
+        "style": "Normal",
+        "text": ""
+      },
+      {
+        "i": 106,
+        "style": "Caption",
+        "text": "Figure S6 (A). Targeted CPU predictions for the three shared screening misses, case089, case175 and case238. Left panels show the original image with released reference (green) and initial reference-derived prompt (blue); right panels show the actual replay prediction (orange). Both A and B remain below their review cutoffs. The model checkpoint, source, float32 precision and prompt geometry match the frozen protocol. Dice labels are from the CPU replay. Table S13 reports environment details and summarizes the comparisons; all 48 full-precision values are supplied in S13_all_48_comparisons_unrounded.csv. Original scores are retained in Table S9."
+      },
+      {
+        "i": 107,
+        "style": "Heading 1",
+        "text": "Targeted CPU replay: B-only detections"
+      },
+      {
+        "i": 108,
+        "style": "Normal",
+        "text": ""
+      },
+      {
+        "i": 109,
+        "style": "Caption",
+        "text": "Figure S6 (B). Remaining A-missed low-quality cases, case024, case105 and case222, detected by B. Colors and panel layout follow part A. All 30 captured masks across the six patients are nonempty, and all quality labels and A/B review flags match the archive. The maximum initial-reference-Dice difference is 9.61 × 10−5; the maximum over all 48 fields is 0.00143543 (case105 left-shift consistency). These are new CPU arrays; original CUDA arrays were not saved, so cross-environment pixel identity cannot be verified. No new independent patients were introduced."
+      }
+    ],
+    "tables": [
+      [
+        [
+          "Setting",
+          "Value"
+        ],
+        [
+          "Development budget",
+          "20 % target. Each method flagged 43/213 (20.19 %) in development."
+        ],
+        [
+          "Locked risk threshold A",
+          "0.13705134391784668"
+        ],
+        [
+          "Locked risk threshold B",
+          "0.06972856653991777"
+        ],
+        [
+          "Review trigger",
+          "Risk score ≥ the corresponding locked threshold."
+        ],
+        [
+          "Fixed threshold ties",
+          "Include every case at the cutoff. If two cutoffs are equally close to the target, select the one with fewer reviews."
+        ],
+        [
+          "SAM source commit",
+          "dca509fe793f601edb92606367a655c15ac00fdf"
+        ],
+        [
+          "Checkpoint SHA-256",
+          "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912"
+        ],
+        [
+          "Formal scoring environment",
+          "Python 3.8.20, PyTorch 2.4.1+cu118, torchvision 0.19.1+cu118, Pillow 10.4.0, NumPy 1.24.4."
+        ]
+      ],
+      [
+        [
+          "Dice\ncutoff",
+          "Test cohort",
+          "Method",
+          "Detection,\nn/N (%)",
+          "Simulated review,\nn/N (%)",
+          "Misses, n",
+          "Misses per\n100 patients"
+        ],
+        [
+          "< 0.50",
+          "BUS-BRA internal",
+          "A",
+          "52/53 (98.11 %)",
+          "174/851 (20.45 %)",
+          "1",
+          "0.12"
+        ],
+        [
+          "< 0.50",
+          "BUS-BRA internal",
+          "B",
+          "43/53 (81.13 %)",
+          "150/851 (17.63 %)",
+          "10",
+          "1.18"
+        ],
+        [
+          "< 0.50",
+          "BrEaST external",
+          "A",
+          "5/7 (71.43 %)",
+          "35/252 (13.89 %)",
+          "2",
+          "0.79"
+        ],
+        [
+          "< 0.50",
+          "BrEaST external",
+          "B",
+          "5/7 (71.43 %)",
+          "33/252 (13.10 %)",
+          "2",
+          "0.79"
+        ],
+        [
+          "< 0.80",
+          "BUS-BRA internal",
+          "A",
+          "109/183 (59.56 %)",
+          "174/851 (20.45 %)",
+          "74",
+          "8.70"
+        ],
+        [
+          "< 0.80",
+          "BUS-BRA internal",
+          "B",
+          "95/183 (51.91 %)",
+          "150/851 (17.63 %)",
+          "88",
+          "10.34"
+        ],
+        [
+          "< 0.80",
+          "BrEaST external",
+          "A",
+          "21/50 (42.00 %)",
+          "35/252 (13.89 %)",
+          "29",
+          "11.51"
+        ],
+        [
+          "< 0.80",
+          "BrEaST external",
+          "B",
+          "21/50 (42.00 %)",
+          "33/252 (13.10 %)",
+          "29",
+          "11.51"
+        ]
+      ],
+      [
+        [
+          "Dice cutoff",
+          "Contrast",
+          "Difference, pp",
+          "Nominal 95 % CI, pp"
+        ],
+        [
+          "< 0.50",
+          "Method A detection, external minus internal",
+          "−26.68",
+          "[−62.25, −4.80]"
+        ],
+        [
+          "< 0.50",
+          "External detection, Method B minus Method A",
+          "0.00",
+          "[−27.14, +27.14]"
+        ],
+        [
+          "< 0.80",
+          "Method A detection, external minus internal",
+          "−17.56",
+          "[−31.92, −2.01]"
+        ],
+        [
+          "< 0.80",
+          "External detection, Method B minus Method A",
+          "0.00",
+          "[−10.06, +10.06]"
+        ]
+      ],
+      [
+        [
+          "Method",
+          "Detection,\nn/N (%)",
+          "Simulated review,\nn/N (%)",
+          "Misses, n",
+          "Misses per\n100 patients"
+        ],
+        [
+          "A",
+          "14/16 (87.50 %)",
+          "50/252 (19.84 %)",
+          "2",
+          "0.79"
+        ],
+        [
+          "B",
+          "13/16 (81.25 %)",
+          "50/252 (19.84 %)",
+          "3",
+          "1.19"
+        ]
+      ],
+      [
+        [
+          "Cohort",
+          "Compared /\nexpected",
+          "Maximum absolute\ndifference",
+          "Cases with\nchanged flags, n",
+          "Cases with\nchanged status, n"
+        ],
+        [
+          "BUS-BRA development",
+          "213/213",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "BUS-BRA internal",
+          "851/851",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "BrEaST external",
+          "252/252",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "Cohort",
+          "Score",
+          "TP, n",
+          "FP, n",
+          "TN, n",
+          "FN, n"
+        ],
+        [
+          "BUS-BRA development",
+          "A",
+          "19",
+          "24",
+          "165",
+          "5"
+        ],
+        [
+          "BUS-BRA development",
+          "B",
+          "17",
+          "26",
+          "163",
+          "7"
+        ],
+        [
+          "BUS-BRA internal",
+          "A",
+          "71",
+          "103",
+          "655",
+          "22"
+        ],
+        [
+          "BUS-BRA internal",
+          "B",
+          "68",
+          "82",
+          "676",
+          "25"
+        ],
+        [
+          "BrEaST external",
+          "A",
+          "10",
+          "25",
+          "211",
+          "6"
+        ],
+        [
+          "BrEaST external",
+          "B",
+          "13",
+          "20",
+          "216",
+          "3"
+        ]
+      ],
+      [
+        [
+          "Cohort",
+          "Score",
+          "Sensitivity",
+          "Specificity",
+          "PPV",
+          "NPV"
+        ],
+        [
+          "BUS-BRA development",
+          "A",
+          "19/24 (79.17 %)\n[59.53, 90.76]",
+          "165/189 (87.30 %)\n[81.80, 91.32]",
+          "19/43 (44.19 %)\n[30.43, 58.89]",
+          "165/170 (97.06 %)\n[93.30, 98.74]"
+        ],
+        [
+          "BUS-BRA development",
+          "B",
+          "17/24 (70.83 %)\n[50.83, 85.09]",
+          "163/189 (86.24 %)\n[80.61, 90.44]",
+          "17/43 (39.53 %)\n[26.37, 54.42]",
+          "163/170 (95.88 %)\n[91.75, 97.99]"
+        ],
+        [
+          "BUS-BRA internal",
+          "A",
+          "71/93 (76.34 %)\n[66.77, 83.83]",
+          "655/758 (86.41 %)\n[83.79, 88.67]",
+          "71/174 (40.80 %)\n[33.78, 48.23]",
+          "655/677 (96.75 %)\n[95.13, 97.84]"
+        ],
+        [
+          "BUS-BRA internal",
+          "B",
+          "68/93 (73.12 %)\n[63.32, 81.08]",
+          "676/758 (89.18 %)\n[86.77, 91.20]",
+          "68/150 (45.33 %)\n[37.58, 53.32]",
+          "676/701 (96.43 %)\n[94.79, 97.57]"
+        ],
+        [
+          "BrEaST external",
+          "A",
+          "10/16 (62.50 %)\n[38.64, 81.52]",
+          "211/236 (89.41 %)\n[84.83, 92.72]",
+          "10/35 (28.57 %)\n[16.33, 45.05]",
+          "211/217 (97.24 %)\n[94.10, 98.73]"
+        ],
+        [
+          "BrEaST external",
+          "B",
+          "13/16 (81.25 %)\n[56.99, 93.41]",
+          "216/236 (91.53 %)\n[87.27, 94.45]",
+          "13/33 (39.39 %)\n[24.68, 56.32]",
+          "216/219 (98.63 %)\n[96.05, 99.53]"
+        ]
+      ],
+      [
+        [
+          "Cohort",
+          "Diagnostic stratum",
+          "N / low quality",
+          "Score",
+          "Detection, n/F (%)\n[95 % CI, %]",
+          "Review, n/N (%)\n[95 % CI, %]"
+        ],
+        [
+          "BUS-BRA internal",
+          "Benign",
+          "577 / 53",
+          "A",
+          "51/53 (96.23 %)\n[87.25, 98.96]",
+          "102/577 (17.68 %)\n[14.78, 21.00]"
+        ],
+        [
+          "BUS-BRA internal",
+          "Benign",
+          "577 / 53",
+          "B",
+          "41/53 (77.36 %)\n[64.47, 86.55]",
+          "80/577 (13.86 %)\n[11.28, 16.92]"
+        ],
+        [
+          "BUS-BRA internal",
+          "Malignant",
+          "274 / 40",
+          "A",
+          "20/40 (50.00 %)\n[35.20, 64.80]",
+          "72/274 (26.28 %)\n[21.42, 31.79]"
+        ],
+        [
+          "BUS-BRA internal",
+          "Malignant",
+          "274 / 40",
+          "B",
+          "27/40 (67.50 %)\n[52.02, 79.92]",
+          "70/274 (25.55 %)\n[20.75, 31.02]"
+        ],
+        [
+          "BrEaST external",
+          "Benign",
+          "154 / 8",
+          "A",
+          "5/8 (62.50 %)\n[30.57, 86.32]",
+          "15/154 (9.74 %)\n[5.99, 15.45]"
+        ],
+        [
+          "BrEaST external",
+          "Benign",
+          "154 / 8",
+          "B",
+          "7/8 (87.50 %)\n[52.91, 97.76]",
+          "13/154 (8.44 %)\n[5.00, 13.91]"
+        ],
+        [
+          "BrEaST external",
+          "Malignant",
+          "98 / 8",
+          "A",
+          "5/8 (62.50 %)\n[30.57, 86.32]",
+          "20/98 (20.41 %)\n[13.62, 29.43]"
+        ],
+        [
+          "BrEaST external",
+          "Malignant",
+          "98 / 8",
+          "B",
+          "6/8 (75.00 %)\n[40.93, 92.85]",
+          "20/98 (20.41 %)\n[13.62, 29.43]"
+        ]
+      ],
+      [
+        [
+          "Case / label",
+          "Detected by",
+          "Reference Dice",
+          "Risk A",
+          "A flag",
+          "Risk B",
+          "B flag",
+          "Mean consistency Dice"
+        ],
+        [
+          "case089\nmalignant",
+          "Neither",
+          "0.3191",
+          "0.104072",
+          "0",
+          "0.041041",
+          "0",
+          "0.9590"
+        ],
+        [
+          "case175\nbenign",
+          "Neither",
+          "0.0293",
+          "0.114944",
+          "0",
+          "0.020059",
+          "0",
+          "0.9799"
+        ],
+        [
+          "case238\nmalignant",
+          "Neither",
+          "0.6813",
+          "0.038909",
+          "0",
+          "0.005766",
+          "0",
+          "0.9942"
+        ],
+        [
+          "case024\nbenign",
+          "B only",
+          "0.6852",
+          "0.054510",
+          "0",
+          "0.109995",
+          "1",
+          "0.8900"
+        ],
+        [
+          "case105\nmalignant",
+          "B only",
+          "0.6546",
+          "0.102471",
+          "0",
+          "0.259671",
+          "1",
+          "0.7403"
+        ],
+        [
+          "case222\nbenign",
+          "B only",
+          "0.5784",
+          "0.126987",
+          "0",
+          "0.201743",
+          "1",
+          "0.7983"
+        ]
+      ],
+      [
+        [
+          "Target budget (%)",
+          "A threshold",
+          "B threshold",
+          "Reviews R/N (%)",
+          "A detected TP/F (%)",
+          "B detected TP/F (%)"
+        ],
+        [
+          "5",
+          "0.230097890",
+          "0.143395298",
+          "11/213 (5.16)",
+          "6/24 (25.00)",
+          "7/24 (29.17)"
+        ],
+        [
+          "10",
+          "0.187371969",
+          "0.091432393",
+          "21/213 (9.86)",
+          "11/24 (45.83)",
+          "10/24 (41.67)"
+        ],
+        [
+          "15",
+          "0.153415680",
+          "0.075878174",
+          "32/213 (15.02)",
+          "17/24 (70.83)",
+          "13/24 (54.17)"
+        ],
+        [
+          "20",
+          "0.137051344",
+          "0.069728567",
+          "43/213 (20.19)",
+          "19/24 (79.17)",
+          "17/24 (70.83)"
+        ],
+        [
+          "25",
+          "0.099984050",
+          "0.060165861",
+          "53/213 (24.88)",
+          "21/24 (87.50)",
+          "19/24 (79.17)"
+        ],
+        [
+          "30",
+          "0.082495153",
+          "0.052356279",
+          "64/213 (30.05)",
+          "21/24 (87.50)",
+          "23/24 (95.83)"
+        ],
+        [
+          "40",
+          "0.060212433",
+          "0.034317724",
+          "85/213 (39.91)",
+          "21/24 (87.50)",
+          "24/24 (100.00)"
+        ],
+        [
+          "50",
+          "0.051672816",
+          "0.023950987",
+          "106/213 (49.77)",
+          "23/24 (95.83)",
+          "24/24 (100.00)"
+        ]
+      ],
+      [
+        [
+          "Target (%)",
+          "A reviews R/N (%)",
+          "B reviews R/N (%)",
+          "A detected TP/F (%)",
+          "B detected TP/F (%)",
+          "B−A detection, pp [95 % CI]",
+          "B−A review, pp [95 % CI]"
+        ],
+        [
+          "5",
+          "64/851 (7.52)",
+          "60/851 (7.05)",
+          "41/93 (44.09)",
+          "39/93 (41.94)",
+          "-2.15 [-10.64, +6.41]",
+          "-0.47 [-1.97, +1.00]"
+        ],
+        [
+          "10",
+          "106/851 (12.46)",
+          "110/851 (12.93)",
+          "56/93 (60.22)",
+          "58/93 (62.37)",
+          "+2.15 [-6.43, +10.67]",
+          "+0.47 [-1.46, +2.41]"
+        ],
+        [
+          "15",
+          "158/851 (18.57)",
+          "135/851 (15.86)",
+          "67/93 (72.04)",
+          "65/93 (69.89)",
+          "-2.15 [-12.16, +7.91]",
+          "-2.70 [-4.95, -0.47]"
+        ],
+        [
+          "20",
+          "174/851 (20.45)",
+          "150/851 (17.63)",
+          "71/93 (76.34)",
+          "68/93 (73.12)",
+          "-3.23 [-13.48, +7.09]",
+          "-2.82 [-5.06, -0.60]"
+        ],
+        [
+          "25",
+          "234/851 (27.50)",
+          "180/851 (21.15)",
+          "83/93 (89.25)",
+          "73/93 (78.49)",
+          "-10.75 [-20.42, -1.21]",
+          "-6.35 [-8.64, -4.07]"
+        ],
+        [
+          "30",
+          "282/851 (33.14)",
+          "232/851 (27.26)",
+          "87/93 (93.55)",
+          "81/93 (87.10)",
+          "-6.45 [-15.45, +2.30]",
+          "-5.88 [-8.09, -3.67]"
+        ],
+        [
+          "40",
+          "358/851 (42.07)",
+          "349/851 (41.01)",
+          "92/93 (98.92)",
+          "89/93 (95.70)",
+          "-3.23 [-9.55, +2.26]",
+          "-1.06 [-3.59, +1.48]"
+        ],
+        [
+          "50",
+          "423/851 (49.71)",
+          "438/851 (51.47)",
+          "92/93 (98.92)",
+          "92/93 (98.92)",
+          "0.00 [-4.86, +4.86]",
+          "+1.76 [-1.15, +4.66]"
+        ]
+      ],
+      [
+        [
+          "Target (%)",
+          "A reviews R/N (%)",
+          "B reviews R/N (%)",
+          "A detected TP/F (%)",
+          "B detected TP/F (%)",
+          "B−A detection, pp [95 % CI]",
+          "B−A review, pp"
+        ],
+        [
+          "5",
+          "43/851 (5.05)",
+          "43/851 (5.05)",
+          "34/93 (36.56)",
+          "29/93 (31.18)",
+          "-5.38 [-14.57, +3.95]",
+          "0 (by design)"
+        ],
+        [
+          "10",
+          "85/851 (9.99)",
+          "85/851 (9.99)",
+          "49/93 (52.69)",
+          "50/93 (53.76)",
+          "+1.08 [-7.20, +9.32]",
+          "0 (by design)"
+        ],
+        [
+          "15",
+          "128/851 (15.04)",
+          "128/851 (15.04)",
+          "63/93 (67.74)",
+          "63/93 (67.74)",
+          "0.00 [-10.00, +10.00]",
+          "0 (by design)"
+        ],
+        [
+          "20",
+          "170/851 (19.98)",
+          "170/851 (19.98)",
+          "71/93 (76.34)",
+          "72/93 (77.42)",
+          "+1.08 [-9.27, +11.40]",
+          "0 (by design)"
+        ],
+        [
+          "25",
+          "213/851 (25.03)",
+          "213/851 (25.03)",
+          "81/93 (87.10)",
+          "78/93 (83.87)",
+          "-3.23 [-12.88, +6.39]",
+          "0 (by design)"
+        ],
+        [
+          "30",
+          "255/851 (29.96)",
+          "255/851 (29.96)",
+          "84/93 (90.32)",
+          "83/93 (89.25)",
+          "-1.08 [-9.94, +7.74]",
+          "0 (by design)"
+        ],
+        [
+          "40",
+          "340/851 (39.95)",
+          "340/851 (39.95)",
+          "92/93 (98.92)",
+          "89/93 (95.70)",
+          "-3.23 [-9.55, +2.26]",
+          "0 (by design)"
+        ],
+        [
+          "50",
+          "425/851 (49.94)",
+          "425/851 (49.94)",
+          "92/93 (98.92)",
+          "92/93 (98.92)",
+          "0.00 [-4.86, +4.86]",
+          "0 (by design)"
+        ]
+      ],
+      [
+        [
+          "Target (%)",
+          "A reviews R/N (%)",
+          "B reviews R/N (%)",
+          "A detected TP/F (%)",
+          "B detected TP/F (%)",
+          "B−A detection, pp [95 % CI]",
+          "B−A review, pp [95 % CI]"
+        ],
+        [
+          "5",
+          "17/252 (6.75)",
+          "13/252 (5.16)",
+          "8/16 (50.00)",
+          "10/16 (62.50)",
+          "+12.50 [-12.93, +35.34]",
+          "-1.59 [-4.77, +1.38]"
+        ],
+        [
+          "10",
+          "24/252 (9.52)",
+          "23/252 (9.13)",
+          "9/16 (56.25)",
+          "12/16 (75.00)",
+          "+18.75 [-9.64, +43.30]",
+          "-0.40 [-3.91, +3.08]"
+        ],
+        [
+          "15",
+          "32/252 (12.70)",
+          "29/252 (11.51)",
+          "10/16 (62.50)",
+          "12/16 (75.00)",
+          "+12.50 [-13.65, +36.54]",
+          "-1.19 [-4.69, +2.23]"
+        ],
+        [
+          "20",
+          "35/252 (13.89)",
+          "33/252 (13.10)",
+          "10/16 (62.50)",
+          "13/16 (81.25)",
+          "+18.75 [-4.28, +40.04]",
+          "-0.79 [-4.18, +2.55]"
+        ],
+        [
+          "25",
+          "49/252 (19.44)",
+          "39/252 (15.48)",
+          "14/16 (87.50)",
+          "13/16 (81.25)",
+          "-6.25 [-31.61, +19.57]",
+          "-3.97 [-7.68, -0.41]"
+        ],
+        [
+          "30",
+          "64/252 (25.40)",
+          "46/252 (18.25)",
+          "14/16 (87.50)",
+          "13/16 (81.25)",
+          "-6.25 [-31.61, +19.57]",
+          "-7.14 [-11.62, -2.76]"
+        ],
+        [
+          "40",
+          "94/252 (37.30)",
+          "71/252 (28.17)",
+          "14/16 (87.50)",
+          "14/16 (87.50)",
+          "0.00 [-23.96, +23.96]",
+          "-9.13 [-14.35, -3.84]"
+        ],
+        [
+          "50",
+          "129/252 (51.19)",
+          "97/252 (38.49)",
+          "15/16 (93.75)",
+          "14/16 (87.50)",
+          "-6.25 [-28.81, +15.01]",
+          "-12.70 [-18.23, -6.99]"
+        ]
+      ],
+      [
+        [
+          "Target (%)",
+          "A reviews R/N (%)",
+          "B reviews R/N (%)",
+          "A detected TP/F (%)",
+          "B detected TP/F (%)",
+          "B−A detection, pp [95 % CI]",
+          "B−A review, pp"
+        ],
+        [
+          "5",
+          "13/252 (5.16)",
+          "13/252 (5.16)",
+          "7/16 (43.75)",
+          "10/16 (62.50)",
+          "+18.75 [-9.16, +42.38]",
+          "0 (by design)"
+        ],
+        [
+          "10",
+          "25/252 (9.92)",
+          "25/252 (9.92)",
+          "9/16 (56.25)",
+          "12/16 (75.00)",
+          "+18.75 [-9.64, +43.30]",
+          "0 (by design)"
+        ],
+        [
+          "15",
+          "38/252 (15.08)",
+          "38/252 (15.08)",
+          "11/16 (68.75)",
+          "13/16 (81.25)",
+          "+12.50 [-8.31, +33.02]",
+          "0 (by design)"
+        ],
+        [
+          "20",
+          "50/252 (19.84)",
+          "50/252 (19.84)",
+          "14/16 (87.50)",
+          "13/16 (81.25)",
+          "-6.25 [-31.61, +19.57]",
+          "0 (by design)"
+        ],
+        [
+          "25",
+          "63/252 (25.00)",
+          "63/252 (25.00)",
+          "14/16 (87.50)",
+          "14/16 (87.50)",
+          "0.00 [-23.96, +23.96]",
+          "0 (by design)"
+        ],
+        [
+          "30",
+          "76/252 (30.16)",
+          "76/252 (30.16)",
+          "14/16 (87.50)",
+          "14/16 (87.50)",
+          "0.00 [-23.96, +23.96]",
+          "0 (by design)"
+        ],
+        [
+          "40",
+          "101/252 (40.08)",
+          "101/252 (40.08)",
+          "14/16 (87.50)",
+          "14/16 (87.50)",
+          "0.00 [-23.96, +23.96]",
+          "0 (by design)"
+        ],
+        [
+          "50",
+          "126/252 (50.00)",
+          "126/252 (50.00)",
+          "15/16 (93.75)",
+          "15/16 (93.75)",
+          "0.00 [-20.20, +20.20]",
+          "0 (by design)"
+        ]
+      ],
+      [
+        [
+          "Route",
+          "Endpoint",
+          "Observed (pp)",
+          "Bootstrap median (pp)",
+          "Nominal percentile 95 % interval (pp)",
+          "Valid n"
+        ],
+        [
+          "R1",
+          "H1: A detection, external−internal",
+          "-13.84",
+          "-13.74",
+          "[-40.16, +11.82]",
+          "10000"
+        ],
+        [
+          "R1",
+          "H2: A review, external−internal",
+          "-6.56",
+          "-6.51",
+          "[-11.54, -1.31]",
+          "10000"
+        ],
+        [
+          "R1",
+          "External B−A detection, threshold",
+          "+18.75",
+          "+18.18",
+          "[0.00, +40.00]",
+          "10000"
+        ],
+        [
+          "R1",
+          "External B−A detection, equal K=50",
+          "-6.25",
+          "0.00",
+          "[-25.00, +21.43]",
+          "10000"
+        ],
+        [
+          "R2",
+          "H1: A detection, external−internal",
+          "-13.84",
+          "-13.84",
+          "[-15.99, -2.82]",
+          "10000"
+        ],
+        [
+          "R2",
+          "H2: A review, external−internal",
+          "-6.56",
+          "-6.56",
+          "[-9.02, -5.82]",
+          "10000"
+        ],
+        [
+          "R2",
+          "External B−A detection, threshold",
+          "+18.75",
+          "+18.75",
+          "[-6.25, +18.75]",
+          "10000"
+        ],
+        [
+          "R2",
+          "External B−A detection, equal K=50",
+          "-6.25",
+          "-6.25",
+          "[-6.25, -6.25]",
+          "10000"
+        ],
+        [
+          "R3",
+          "H1: A detection, external−internal",
+          "-13.84",
+          "-12.12",
+          "[-39.03, +11.71]",
+          "10000"
+        ],
+        [
+          "R3",
+          "H2: A review, external−internal",
+          "-6.56",
+          "-7.04",
+          "[-12.70, -1.55]",
+          "10000"
+        ],
+        [
+          "R3",
+          "External B−A detection, threshold",
+          "+18.75",
+          "+14.29",
+          "[-13.33, +37.50]",
+          "10000"
+        ],
+        [
+          "R3",
+          "External B−A detection, equal K=50",
+          "-6.25",
+          "0.00",
+          "[-25.00, +21.43]",
+          "10000"
+        ]
+      ],
+      [
+        [
+          "Route",
+          "Threshold B−A sign",
+          "Equal K=50 B−A <0, n (%)",
+          "Equal K=50 B−A =0, n (%)",
+          "Equal K=50 B−A >0, n (%)"
+        ],
+        [
+          "R1",
+          "<0",
+          "0 (0.00)",
+          "0 (0.00)",
+          "0 (0.00)"
+        ],
+        [
+          "R1",
+          "=0",
+          "343 (3.43)",
+          "126 (1.26)",
+          "0 (0.00)"
+        ],
+        [
+          "R1",
+          ">0",
+          "3961 (39.61)",
+          "2050 (20.50)",
+          "3520 (35.20)"
+        ],
+        [
+          "R2",
+          "<0",
+          "525 (5.25)",
+          "0 (0.00)",
+          "0 (0.00)"
+        ],
+        [
+          "R2",
+          "=0",
+          "435 (4.35)",
+          "0 (0.00)",
+          "0 (0.00)"
+        ],
+        [
+          "R2",
+          ">0",
+          "9040 (90.40)",
+          "0 (0.00)",
+          "0 (0.00)"
+        ],
+        [
+          "R3",
+          "<0",
+          "668 (6.68)",
+          "102 (1.02)",
+          "90 (0.90)"
+        ],
+        [
+          "R3",
+          "=0",
+          "542 (5.42)",
+          "364 (3.64)",
+          "90 (0.90)"
+        ],
+        [
+          "R3",
+          ">0",
+          "3094 (30.94)",
+          "1710 (17.10)",
+          "3340 (33.40)"
+        ]
+      ],
+      [
+        [
+          "Method: outcome",
+          "Overall difference, pp [95 % interval]",
+          "Composition-associated term, pp [95 % interval]",
+          "Within-stratum term, pp [95 % interval]",
+          "Valid overall n",
+          "Valid component n"
+        ],
+        [
+          "A: Detection",
+          "-13.84 [-40.85, +11.40]",
+          "-1.62 [-10.89, +5.73]",
+          "-12.23 [-39.94, +14.30]",
+          "5000",
+          "4999"
+        ],
+        [
+          "A: Review fraction",
+          "-6.56 [-11.54, -1.31]",
+          "+0.64 [-0.01, +1.54]",
+          "-7.20 [-12.15, -2.08]",
+          "5000",
+          "5000"
+        ],
+        [
+          "B: Detection",
+          "+8.13 [-15.09, +28.18]",
+          "-0.78 [-6.43, +3.62]",
+          "+8.91 [-14.32, +28.70]",
+          "5000",
+          "4999"
+        ],
+        [
+          "B: Review fraction",
+          "-4.53 [-9.31, +0.41]",
+          "+0.79 [-0.01, +1.80]",
+          "-5.32 [-10.03, -0.56]",
+          "5000",
+          "5000"
+        ]
+      ],
+      [
+        [
+          "Case",
+          "Archived Dice",
+          "CPU replay Dice",
+          "Replay−archive Dice",
+          "Low quality (archive→CPU)",
+          "Nonempty masks"
+        ],
+        [
+          "case089",
+          "0.319057",
+          "0.319100",
+          "+0.00004325",
+          "1→1",
+          "5/5"
+        ],
+        [
+          "case175",
+          "0.029287",
+          "0.029287",
+          "+0.00000000",
+          "1→1",
+          "5/5"
+        ],
+        [
+          "case238",
+          "0.681270",
+          "0.681270",
+          "+0.00000000",
+          "1→1",
+          "5/5"
+        ],
+        [
+          "case024",
+          "0.685173",
+          "0.685139",
+          "-0.00003433",
+          "1→1",
+          "5/5"
+        ],
+        [
+          "case105",
+          "0.654572",
+          "0.654579",
+          "+0.00000657",
+          "1→1",
+          "5/5"
+        ],
+        [
+          "case222",
+          "0.578368",
+          "0.578465",
+          "+0.00009611",
+          "1→1",
+          "5/5"
+        ]
+      ],
+      [
+        [
+          "Case",
+          "A risk (archive→CPU)",
+          "B risk (archive→CPU)",
+          "A review (archive→CPU)",
+          "B review (archive→CPU)",
+          "Maximum |Δ| across 8 fields"
+        ],
+        [
+          "case089",
+          "0.104072→0.104081",
+          "0.041041→0.041228",
+          "0→0",
+          "0→0",
+          "0.00038020"
+        ],
+        [
+          "case175",
+          "0.114944→0.114942",
+          "0.020059→0.020035",
+          "0→0",
+          "0→0",
+          "0.00022896"
+        ],
+        [
+          "case238",
+          "0.038909→0.038918",
+          "0.005766→0.005717",
+          "0→0",
+          "0→0",
+          "0.00009787"
+        ],
+        [
+          "case024",
+          "0.054510→0.054525",
+          "0.109995→0.110088",
+          "0→0",
+          "1→1",
+          "0.00021737"
+        ],
+        [
+          "case105",
+          "0.102471→0.102474",
+          "0.259671→0.260030",
+          "0→0",
+          "1→1",
+          "0.00143543"
+        ],
+        [
+          "case222",
+          "0.126987→0.127033",
+          "0.201743→0.201734",
+          "0→0",
+          "1→1",
+          "0.00009611"
+        ]
+      ]
+    ],
+    "sections": [
+      {
+        "width_in": 8.268055555555556,
+        "height_in": 11.693055555555556,
+        "top_in": 0.8659722222222223,
+        "bottom_in": 0.8659722222222223,
+        "left_in": 0.9055555555555556,
+        "right_in": 0.9055555555555556
+      }
+    ],
+    "inline_shapes": 7,
+    "media_files": [
+      "word/media/image1.png",
+      "word/media/image2.png",
+      "word/media/image3.png",
+      "word/media/image4.png",
+      "word/media/image5.png",
+      "word/media/image6.png",
+      "word/media/image7.png"
+    ],
+    "image_metadata": [
+      {
+        "name": "word/media/image1.png",
+        "pixels": [
+          4133,
+          2385
+        ],
+        "format": "PNG",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      },
+      {
+        "name": "word/media/image2.png",
+        "pixels": [
+          4133,
+          1960
+        ],
+        "format": "PNG",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      },
+      {
+        "name": "word/media/image3.png",
+        "pixels": [
+          3840,
+          3690
+        ],
+        "format": "PNG",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      },
+      {
+        "name": "word/media/image4.png",
+        "pixels": [
+          3840,
+          4080
+        ],
+        "format": "PNG",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      },
+      {
+        "name": "word/media/image5.png",
+        "pixels": [
+          3840,
+          2190
+        ],
+        "format": "PNG",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      },
+      {
+        "name": "word/media/image6.png",
+        "pixels": [
+          4134,
+          4620
+        ],
+        "format": "PNG",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      },
+      {
+        "name": "word/media/image7.png",
+        "pixels": [
+          4134,
+          4620
+        ],
+        "format": "PNG",
+        "dpi": [
+          599.9988,
+          599.9988
+        ]
+      }
+    ],
+    "shape_dimensions": [
+      {
+        "width_in": 6.68,
+        "height_in": 3.8547790901137358
+      },
+      {
+        "width_in": 6.68,
+        "height_in": 3.16786854768154
+      },
+      {
+        "width_in": 6.4,
+        "height_in": 6.15
+      },
+      {
+        "width_in": 6.4,
+        "height_in": 6.8
+      },
+      {
+        "width_in": 6.4,
+        "height_in": 3.65
+      },
+      {
+        "width_in": 6.4,
+        "height_in": 7.15239501312336
+      },
+      {
+        "width_in": 6.4,
+        "height_in": 7.15239501312336
+      }
+    ],
+    "explicit_run_font_counts": [
+      {
+        "font": null,
+        "size_pt": null,
+        "runs": 105
+      }
+    ],
+    "tracked_insertions_or_deletions": false
+  },
+  "checks": {
+    "h1_h3_original_main_tables_unchanged": [
+      true,
+      true,
+      true
+    ],
+    "original_supplement_s1_s9_tables_unchanged": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "original_reference_content_retained": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "reference_count": 15,
+    "reference_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "citation_first_occurrence": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "supplement_table_citation_first_occurrence": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "supplement_figure_citation_first_occurrence": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "abstract_word_count_with_labels": 180,
+    "main_body_word_count_excluding_acknowledgments_references_captions_tables": 3927,
+    "abstract_labels_present": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "postal_400016_present": true,
+    "old_postal_401331_absent": true,
+    "main_figure_caption_count": 5,
+    "main_table_caption_count": 3,
+    "supplement_figure_caption_count": 7,
+    "supplement_logical_figure_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "supplement_table_caption_count": 13,
+    "main_figure_captions": [
+      "Figure 1.  Study cohorts and analysis flow. BUS-BRA patients were assigned to development or internal testing. BrEaST contributed external test patients with a primary lesion mask. Each patient contributed one image. Low-quality masks had a reference Dice coefficient below 0.70.",
+      "Figure 2.  Review scores for prompted breast ultrasound segmentation. (A) The initial box is derived from the manual contour with a 10 % margin per side and clipped to the image. Four further prompts shift the clipped box by 5 % of its width or height. (B) Frozen Segment Anything Model (SAM) ViT-B reuses one image embedding to generate one mask per prompt. (C) Method A uses one minus predicted intersection over union for the initial mask. Method B uses one minus the mean Dice between the initial and four shifted masks. Each score triggers simulated review at or above its locked cutoff. The image and masks share a display crop from BrEaST case 001 [10].",
+      "Figure 3.  Planned differences at the locked thresholds. Points show differences in proportions and horizontal bars show two-sided 95 % Newcombe confidence intervals. H1 and H2 compare BrEaST minus BUS-BRA internal testing. H3 compares B minus A in the same 16 low-quality BrEaST cases. H2 and H3 intervals are nominal. The dashed line marks zero difference.",
+      "Figure 4.  Low-quality mask detection by simulated review volume. Panels A and B show the percentage of low-quality masks detected as progressively more patients are selected in descending risk order in each test cohort. Markers identify the locked thresholds and the equal-review setting. Panel C compares detection in the same 16 low-quality external cases at the locked thresholds and at 50 reviews per method.",
+      "Figure 5.  Three shared screening misses with actual targeted CPU predictions. Rows show BrEaST case089 (A, B), case175 (C, D) and case238 (E, F) [10]. Left panels overlay the released reference contour (green) and reference-derived initial prompt (blue); right panels overlay the initial prediction captured in the CPU replay (orange). Both review scores missed these three low-quality masks at the original locked cutoffs. Predictions use the original checksum-matched SAM ViT-B weights, exact source and prompt rules. Displayed Dice values come from this replay. The maximum initial-reference-Dice difference across all six replayed cases was 9.61 × 10−5; original study scores remain in Table S9. All six replayed cases and numerical comparisons appear in Figure S6 and Table S13."
+    ],
+    "main_table_captions": [
+      "Table 1.  Study cohorts",
+      "Table 2.  Test performance at the locked review thresholds",
+      "Table 3.  Planned contrasts at the locked review thresholds"
+    ],
+    "supplement_figure_captions": [
+      "Figure S1.  Sensitivity to the definition of low quality. Panel A shows the external-minus-internal detection difference for method A. Panel B shows the paired B-minus-A difference in BrEaST. Risk thresholds remain fixed while reference Dice cutoffs vary. The filled marker denotes H1 at Dice below 0.70. The remaining 95 % confidence intervals are nominal.",
+      "Figure S2.  Paired outcomes among the 16 low-quality BrEaST masks. Each dot represents one low-quality case. Panel A uses the two locked thresholds. Panel B ranks each score separately and selects 50 of 252 patients per method. The right column in each panel reports the counts.",
+      "Figure S3. Complete review-budget scan. A shows actual review fractions after development-threshold transfer; B and C show external and internal low-quality detection under transferred cutoffs and equal-review ranking; D shows paired external B-minus-A detection differences. Each target was evaluated using both rules, with no selection of a favorable budget. External and internal low-quality denominators are 16 and 93. Error bars in D are nominal paired Newcombe 95 % intervals conditional on observed calibration and rankings; they do not incorporate recalibration or reranking uncertainty. Numerical values are in Table S10.",
+      "Figure S4. Patient-bootstrap sensitivity, 10,000 replicates per route. A and B show A external-minus-internal detection and review contrasts; C shows external B-minus-A detection under transferred cutoffs and equal-top50 ranking. Points and bars denote medians and descriptive percentile 95 % intervals, with original estimates identified separately. D shows the joint sign-pattern frequencies: original strict pattern (fixed>0/equal<0), opposite pattern, at least one zero contrast, or matching nonzero signs. Frequencies are empirical resampling summaries, not p-values or population probabilities. Test-only resampling cannot generate an unobserved A-only low-quality detection at the fixed cutoffs; its nonnegative support must not be used to exclude a population A advantage. The original H3 Newcombe interval is retained. Complete routes, denominators and the sign matrix are in Table S11.",
+      "Figure S5. Symmetric Kitagawa accounting at the original locked cutoffs. A shows low-quality detection and B simulated review. Rows give the overall external-minus-internal difference and its composition-associated and within-stratum-rate terms for each score. Points show original estimates; bars show nominal percentile 95 % intervals from 5,000 patient-bootstrap draws. Detection components have 4,999 valid draws; overall differences and review components have 5,000. Detection weights describe diagnostic shares among low-quality cases; review weights describe shares among all patients. The within-stratum term equals the common-weight standardized difference. These are descriptive accounting terms, not causal effects. Values and rounding details are in Table S12.",
+      "Figure S6 (A). Targeted CPU predictions for the three shared screening misses, case089, case175 and case238. Left panels show the original image with released reference (green) and initial reference-derived prompt (blue); right panels show the actual replay prediction (orange). Both A and B remain below their review cutoffs. The model checkpoint, source, float32 precision and prompt geometry match the frozen protocol. Dice labels are from the CPU replay. Table S13 reports environment details and summarizes the comparisons; all 48 full-precision values are supplied in S13_all_48_comparisons_unrounded.csv. Original scores are retained in Table S9.",
+      "Figure S6 (B). Remaining A-missed low-quality cases, case024, case105 and case222, detected by B. Colors and panel layout follow part A. All 30 captured masks across the six patients are nonempty, and all quality labels and A/B review flags match the archive. The maximum initial-reference-Dice difference is 9.61 × 10−5; the maximum over all 48 fields is 0.00143543 (case105 left-shift consistency). These are new CPU arrays; original CUDA arrays were not saved, so cross-environment pixel identity cannot be verified. No new independent patients were introduced."
+    ],
+    "supplement_table_captions": [
+      "Table S1.  Locked thresholds and scoring settings",
+      "Table S2.  Test performance at alternative reference Dice cutoffs",
+      "Table S3.  Detection rate contrasts at alternative reference Dice cutoffs",
+      "Table S4.  BrEaST performance at equal review volume",
+      "Table S5.  Agreement between the raw-image rerun and archived scores",
+      "Table S6. Classification counts at the primary quality cutoff",
+      "Table S7. Sensitivity, specificity and predictive values",
+      "Table S8. Quality-control detection and review by dataset-reported benign/malignant classification",
+      "Table S9. All six low-quality external cases missed by method A",
+      "Table S10. Complete post hoc review-budget scan. Panel A: development calibration.",
+      "Table S11. Post hoc three-route bootstrap sensitivity. Panel A: endpoint intervals.",
+      "Table S12. Post hoc diagnostic-stratum symmetric Kitagawa decomposition of external-minus-internal differences.",
+      "Table S13. Post hoc six-case targeted CPU replay. Panel A: reference Dice and saved-mask checks."
+    ],
+    "em_dash_count": 0,
+    "replacement_character_count": 0,
+    "high_risk_terms": [
+      "Revision audit provenance. Archived-score replay and the original same-environment full-cohort image rerun remain distinct from the six-case CPU replay reported in Table S13. The latter was actually executed for this revision, saved new prediction arrays and retained the original scores for every cohort analysis. Computational reproducibility is distinct from independent validation.",
+      "Post hoc targeted CPU replay of the six archived external low-quality cases missed by A: case089, case175 and case238 were missed by both methods; case024, case105 and case222 were detected only by B. The same six patients are replayed; this is not an independent validation cohort or a full-cohort rerun."
+    ],
+    "posthoc_paragraphs": [
+      "Methods  Frozen Segment Anything Model predictions used reference-derived, known-location boxes. Confidence and prompt-disagreement thresholds targeting 20 % review in 213 development patients were transferred to 851 internal and 252 external patients. Low quality was reference Dice <0.70. Equal-review ranking and a post hoc eight-budget analysis assessed policy dependence.",
+      "As post hoc descriptive quality-control measures, we additionally tabulated true-positive (TP), false-positive (FP), true-negative (TN) and false-negative (FN) counts, sensitivity (TP/(TP+FN)), specificity (TN/(TN+FP)), positive predictive value (PPV; TP/(TP+FP)) and negative predictive value (NPV; TN/(TN+FN)). Low-quality segmentation was the positive condition and a review flag the positive test. We used Wilson 95 % intervals for these proportions. These measures assess mask-quality screening, not diagnosis of breast cancer.",
+      "We additionally performed a post hoc exploratory stratification by dataset-reported benign/malignant classification, retaining the locked risk thresholds and Dice < 0.70 definition. BUS-BRA labels came from the official Pathology field, linked by image and patient identifiers. BrEaST labels came from Classification, linked by CaseID and verified against the selected filenames; 197 diagnoses were biopsy-confirmed and 55 were confirmed by follow-up. We report stratum counts, review fractions and detection with Wilson 95 % intervals. No stratum-specific recalibration, hypothesis test or interaction test was performed. We also audited all external low-quality cases missed by A, partitioned by the B review flag.",
+      "Post hoc policy sensitivity and diagnostic accounting",
+      "The post hoc external quality-control counts were TP=10, FP=25, TN=211 and FN=6 for A, and TP=13, FP=20, TN=216 and FN=3 for B. Specificity was 89.41 % for A and 91.53 % for B; PPV was 28.57 % and 39.39 %, and NPV was 97.24 % and 98.63 %, respectively. The complete counts and Wilson intervals are provided in Tables S6 and S7.",
+      "The findings apply to reference-informed, known-location boxes. Reader-drawn or automatically generated boxes require separate evaluation. The study used one SAM checkpoint, one image per patient and one independent external dataset; overlap with the SA-1B pretraining archive could not be determined [1]. Sixteen external low-quality masks limit detection precision, and empirical resampling does not add independent patients. The new budget, resampling and accounting analyses are post hoc; they define the scope of the operating example rather than confirming a prespecified population-level reversal.",
+      "These post hoc descriptive analyses use the unchanged locked risk thresholds and the primary reference Dice cutoff of 0.70. The positive condition is a low-quality segmentation; the positive test is a review flag. These are mask-quality screening measures, not breast-cancer diagnostic measures. Development results describe calibration data and are not independent test performance.",
+      "Post hoc exploratory analysis with unchanged locked thresholds and reference Dice < 0.70. N, all scored patients in the stratum; F, low-quality masks; n, detected or reviewed cases as indicated; CI, Wilson confidence interval; A, model-confidence score; B, prompt-disagreement score. Classification is dataset-reported and is not uniformly histopathologically confirmed in BrEaST. These are quality-screening measures, not diagnostic sensitivity for malignancy. No hypothesis or interaction tests were performed. Complete machine-readable results also include the development strata, confusion counts and misses per 100 patients.",
+      "Table S10. Complete post hoc review-budget scan. Panel A: development calibration.",
+      "Post hoc exploratory analysis of the unchanged development cohort (N=213; low-quality cases F=24). A is confidence-based risk; B is prompt-instability risk. Low quality is reference Dice <0.70.",
+      "Post hoc exploratory analysis; N=851; F=93. Count-cell percentages use the displayed denominator. pp, percentage points.",
+      "Post hoc exploratory analysis; N=851; F=93. Count-cell percentages use the displayed denominator. pp, percentage points.",
+      "Post hoc exploratory analysis; N=252; F=16. Count-cell percentages use the displayed denominator. pp, percentage points.",
+      "Post hoc exploratory analysis; N=252; F=16. Count-cell percentages use the displayed denominator. pp, percentage points.",
+      "Table S11. Post hoc three-route bootstrap sensitivity. Panel A: endpoint intervals.",
+      "Post hoc exploratory patient bootstrap: 10,000 replicates per route; seed 20261106; NumPy PCG64. Values are percentage points. Intervals are nominal, unadjusted 2.5th–97.5th percentile intervals over valid replicates, using linear quantiles. All 12 endpoints have 10,000 valid replicates and zero NA replicates.",
+      "Post hoc exploratory bootstrap. Rows show the sign of the threshold contrast; columns show the sign of the equal-review contrast. Each cell is a count and percentage of 10,000 jointly valid paired replicates. Route definitions and empirical-support caveats are given in Panel A. Strict reversal requires opposite nonzero signs; ties are reported separately.",
+      "Table S12. Post hoc diagnostic-stratum symmetric Kitagawa decomposition of external-minus-internal differences.",
+      "Post hoc descriptive accounting at the locked 20 %-development-budget thresholds (A=0.13705134391784668; B=0.06972856653991777), without recalibration. Direction is external minus internal. Strata are dataset-reported benign and malignant diagnoses; not every diagnosis was histopathologically confirmed.",
+      "Table S13. Post hoc six-case targeted CPU replay. Panel A: reference Dice and saved-mask checks.",
+      "Post hoc targeted CPU replay of the six archived external low-quality cases missed by A: case089, case175 and case238 were missed by both methods; case024, case105 and case222 were detected only by B. The same six patients are replayed; this is not an independent validation cohort or a full-cohort rerun.",
+      "Post hoc exploratory replay; A is 1 minus the initial SAM predicted IoU, and B is 1 minus mean Dice consistency between the initial mask and four shifted-prompt masks. Review=1 when risk is greater than or equal to the locked threshold: A=0.13705134391784668 and B=0.06972856653991777. The archived and replayed A/B review decisions agree in 12/12 comparisons; all six low-quality labels agree.",
+      "Post hoc budget dependence",
+      "Post hoc calibration and sampling sensitivity"
+    ],
+    "bootstrap_frequency_mentions": {
+      "39.61": true,
+      "90.40": true,
+      "30.94": true
+    },
+    "cpu_difference_mentions": {
+      "0.001435": true,
+      "0.000096": true,
+      "9.610": false
+    },
+    "raw_id_mentions": [
+      "We repeated detection analyses with reference Dice cutoffs of 0.50 and 0.80 while retaining both locked risk thresholds. We also ranked the external cases by each risk score and selected the top 50 per method, the count closest to a 20 % review fraction among 252 cases. Risk ties followed the unmodified archived patient-identifier strings in lexicographic order (for example, \"1\", \"10\", \"100\"), rather than numeric or zero-padded image-identifier order. This equal-review comparison used a common number of reviews in the observed external cohort; its paired interval is conditional on the observed rankings.",
+      "We used 10,000 patient-bootstrap replicates per route (seed 20261106) to separate three sources of variation: test-cohort sampling at the original cutoffs; development resampling and cutoff recalibration with the original test cohorts unchanged; and both together. Cohorts were sampled independently, with paired A/B scores and labels retained within every record. Repeated draws were retained. Equal-review ranking selected exactly 50 external draw records, ordered by descending risk, original identifier string and draw-position index. The strict original direction pattern required external B-minus-A detection above zero at transferred cutoffs and below zero at equal review; ties were reported separately. Percentile 95 % intervals are descriptive, nominal sensitivity intervals and do not replace the prespecified Newcombe intervals.",
+      "We also used symmetric Kitagawa accounting and direct standardization across dataset-reported benign/malignant strata [13]. The external-minus-internal difference was partitioned into a composition-associated term and a within-stratum-rate term. Common weights were the arithmetic mean of the two cohort weights. Detection used the diagnostic shares among low-quality masks, whereas review fractions used shares among all scored patients. We obtained nominal percentile intervals from 5,000 independently sampled cohort-level patient-bootstrap replicates (seed 20261107), recalculating all weights and rates. Undefined stratum denominators remained missing. This accounting describes the observed mixtures and does not estimate causal effects.",
+      "The strict 20 %-target direction pattern occurred in 39.61 % of fixed-cutoff test-sampling replicates, 90.40 % of development-only calibration replicates and 30.94 % of full development-and-test replicates. At least one comparison was tied in 28.08 % of full replicates. Full-resampling percentile intervals were [−39.03, +11.71] percentage points for A detection and [−12.70, −1.55] for its review fraction, in external-minus-internal order (Table S11 and Figure S4). These frequencies describe empirical resampling, not p-values or population probabilities. At the original fixed cutoffs, the absence of an observed A-only low-quality detection structurally constrains the test-sampling bootstrap difference to be nonnegative; its [0.00, +40.00] percentile interval cannot exclude a population A advantage. The original H3 Newcombe interval remains unchanged.",
+      "For A, the −6.56-point external-minus-internal review difference comprised a +0.64-point composition-associated term and a −7.20-point within-stratum-rate term. Its detection difference had corresponding terms of −1.62 and −12.23 points. For B, the review terms were +0.79 and −5.32 points, and the detection terms were −0.78 and +8.91 points (Table S12 and Figure S5). The within-stratum term equals the difference after standardization to common diagnostic weights. Detection components were defined in 4,999/5,000 replicates; one replicate had no external benign low-quality case. Overall differences and all review components had 5,000 valid replicates.",
+      "Each method selected 50 of the 252 scored cases in descending risk order. Ties followed lexicographic case identifier order. Low quality used reference Dice below 0.70.",
+      "Post hoc exploratory patient bootstrap: 10,000 replicates per route; seed 20261106; NumPy PCG64. Values are percentage points. Intervals are nominal, unadjusted 2.5th–97.5th percentile intervals over valid replicates, using linear quantiles. All 12 endpoints have 10,000 valid replicates and zero NA replicates.",
+      "Every sampled draw is retained, including repeat draws of the same patient; these repetitions are not independent new cases. Equal review selects exactly 50 draw records by descending risk, original identifier string, then replica index. Calibration keeps all risk ties together and chooses fewer reviews when equally close; zero-denominator detection is NA without imputation.",
+      "Post hoc exploratory bootstrap. Rows show the sign of the threshold contrast; columns show the sign of the equal-review contrast. Each cell is a count and percentage of 10,000 jointly valid paired replicates. Route definitions and empirical-support caveats are given in Panel A. Strict reversal requires opposite nonzero signs; ties are reported separately.",
+      "Intervals are nominal, unadjusted descriptive percentile 95 % intervals from 5,000 independent within-cohort patient bootstrap replicates (seed 20261107; NumPy PCG64; linear finite-value quantiles); A/B, quality and diagnosis remain paired. Duplicate draws are repeated observations of existing patients, not new cases.",
+      "Overall detection differences have 5,000 valid replicates. One draw has no external benign low-quality case, making its detection stratum rate undefined; the NA propagates to both detection components, leaving 4,999 valid component replicates. Review-fraction components and overall differences have 5,000 valid replicates. Undefined rates are not imputed even when their stratum weight is zero.",
+      "Figure S4. Patient-bootstrap sensitivity, 10,000 replicates per route. A and B show A external-minus-internal detection and review contrasts; C shows external B-minus-A detection under transferred cutoffs and equal-top50 ranking. Points and bars denote medians and descriptive percentile 95 % intervals, with original estimates identified separately. D shows the joint sign-pattern frequencies: original strict pattern (fixed>0/equal<0), opposite pattern, at least one zero contrast, or matching nonzero signs. Frequencies are empirical resampling summaries, not p-values or population probabilities. Test-only resampling cannot generate an unobserved A-only low-quality detection at the fixed cutoffs; its nonnegative support must not be used to exclude a population A advantage. The original H3 Newcombe interval is retained. Complete routes, denominators and the sign matrix are in Table S11."
+    ]
+  }
+}

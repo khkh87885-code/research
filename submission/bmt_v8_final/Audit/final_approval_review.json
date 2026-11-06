@@ -1,0 +1,1268 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-11-06T11:09:53.880762+00:00",
+  "source": "/workspace/research_source/submission/bmt_v8",
+  "final": "/workspace/bmt_v8_final/outputs",
+  "authorization": "User explicitly approved v8, confirmed no reviewer conflicts, and confirmed originality/no other journal submission. No renewed confirmation requested.",
+  "checks": [
+    {
+      "id": "APPROVAL_main",
+      "passed": true,
+      "evidence": {
+        "file": "BMT_main_manuscript_v8.docx",
+        "paragraph": 88,
+        "text": "Author contributions. All authors have accepted responsibility for the entire content of this manuscript and approved its submission. Haoze Lan: research conceptualization and principal study design. Ziyuan Zhu: code review, GitHub repository uploads and manuscript revision."
+      }
+    },
+    {
+      "id": "APPROVAL_ethics",
+      "passed": true,
+      "evidence": {
+        "file": "BMT_Ethical_and_Legal_Declarations_v8.docx",
+        "paragraph": 17,
+        "text": "All authors have accepted responsibility for the entire content of this manuscript and approved its submission. Haoze Lan: research conceptualization and principal study design. Ziyuan Zhu: code review, GitHub repository uploads and manuscript revision."
+      }
+    },
+    {
+      "id": "SCIENCE_TEXT_main",
+      "passed": true,
+      "evidence": {
+        "file": "BMT_main_manuscript_v8.docx",
+        "source_paragraphs": 187,
+        "final_paragraphs": 187,
+        "deltas": [
+          {
+            "paragraph": 88,
+            "before": "Author contributions. All authors have accepted responsibility for the entire content of this manuscript. Haoze Lan: research conceptualization and principal study design. Ziyuan Zhu: code review, GitHub repository uploads and manuscript revision.",
+            "after": "Author contributions. All authors have accepted responsibility for the entire content of this manuscript and approved its submission. Haoze Lan: research conceptualization and principal study design. Ziyuan Zhu: code review, GitHub repository uploads and manuscript revision."
+          }
+        ],
+        "unexpected_deltas": []
+      }
+    },
+    {
+      "id": "EMBEDDED_MEDIA_main",
+      "passed": true,
+      "evidence": {
+        "embedded_files": 4,
+        "source": {
+          "word/media/image1.png": "a71a632b3f2d73852185991e93ef6317e7d0ebbc9c1eaa7180120736f0ea08e1",
+          "word/media/image2.png": "7987c816c6834b2f83d0ad86acda1906b242aad09f0ea1010f583739b21a09ca",
+          "word/media/image3.png": "57b94a597e677452c99eac2783a6128b408b703a41788b68571250dc9dce9348",
+          "word/media/image4.png": "5b33fde19a1a1cc80a555ae7e7ccf4d39b340486fe06f04d7e598fe84956dc1c"
+        },
+        "final": {
+          "word/media/image1.png": "a71a632b3f2d73852185991e93ef6317e7d0ebbc9c1eaa7180120736f0ea08e1",
+          "word/media/image2.png": "7987c816c6834b2f83d0ad86acda1906b242aad09f0ea1010f583739b21a09ca",
+          "word/media/image3.png": "57b94a597e677452c99eac2783a6128b408b703a41788b68571250dc9dce9348",
+          "word/media/image4.png": "5b33fde19a1a1cc80a555ae7e7ccf4d39b340486fe06f04d7e598fe84956dc1c"
+        }
+      }
+    },
+    {
+      "id": "SCIENCE_TEXT_supp",
+      "passed": true,
+      "evidence": {
+        "file": "BMT_supplementary_material_v4.docx",
+        "source_paragraphs": 988,
+        "final_paragraphs": 988,
+        "deltas": [
+          {
+            "paragraph": 3,
+            "before": "Haoze Lan; Ziyuan Zhu; v8 author-review revision, 6 November 2026",
+            "after": "Haoze Lan; Ziyuan Zhu"
+          }
+        ],
+        "unexpected_deltas": []
+      }
+    },
+    {
+      "id": "EMBEDDED_MEDIA_supp",
+      "passed": true,
+      "evidence": {
+        "embedded_files": 7,
+        "source": {
+          "word/media/image1.png": "9c58957f8f893a3c9a7a05a745c3c8ba6a337c8d6d5a444e592147471bb40392",
+          "word/media/image2.png": "f5e0ab1c1680b8ed909cdf65596301d98b7ded647f55ced2a2d4960f92a5d98e",
+          "word/media/image3.png": "bf145d14161c47daff18a167e036e82173f924f6b9dda0cfec836a8c334ca215",
+          "word/media/image4.png": "489f73e4f26beabc0504899b3013eb14ed1b9e8c189d0006f3dc9cb9e7932606",
+          "word/media/image5.png": "0c8e8dd0152e1f6786f93bd91901bdbb10cfda50bbb8da7152b45eedd4e9af19",
+          "word/media/image6.png": "237d9c30dc0362e473ec376504ba194730a290faa81f5b9caf0084a1367aa6ba",
+          "word/media/image7.png": "f9e4c85b93d8fcc5aacf972612a9295864b55156c40e4bf29ef4b6cc8decd97d"
+        },
+        "final": {
+          "word/media/image1.png": "9c58957f8f893a3c9a7a05a745c3c8ba6a337c8d6d5a444e592147471bb40392",
+          "word/media/image2.png": "f5e0ab1c1680b8ed909cdf65596301d98b7ded647f55ced2a2d4960f92a5d98e",
+          "word/media/image3.png": "bf145d14161c47daff18a167e036e82173f924f6b9dda0cfec836a8c334ca215",
+          "word/media/image4.png": "489f73e4f26beabc0504899b3013eb14ed1b9e8c189d0006f3dc9cb9e7932606",
+          "word/media/image5.png": "0c8e8dd0152e1f6786f93bd91901bdbb10cfda50bbb8da7152b45eedd4e9af19",
+          "word/media/image6.png": "237d9c30dc0362e473ec376504ba194730a290faa81f5b9caf0084a1367aa6ba",
+          "word/media/image7.png": "f9e4c85b93d8fcc5aacf972612a9295864b55156c40e4bf29ef4b6cc8decd97d"
+        }
+      }
+    },
+    {
+      "id": "SCIENCE_TEXT_data",
+      "passed": true,
+      "evidence": {
+        "file": "BMT_data_and_code_availability_v8.docx",
+        "source_paragraphs": 10,
+        "final_paragraphs": 10,
+        "deltas": [],
+        "unexpected_deltas": []
+      }
+    },
+    {
+      "id": "EMBEDDED_MEDIA_data",
+      "passed": true,
+      "evidence": {
+        "embedded_files": 0,
+        "source": {},
+        "final": {}
+      }
+    },
+    {
+      "id": "COVER_SCIENTIFIC_PARAGRAPHS",
+      "passed": true,
+      "evidence": {
+        "preserved_source_paragraphs": [
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "id": "COVER_APPROVAL",
+      "passed": true,
+      "evidence": "Cover letter\n6 November 2026\nEditor-in-ChiefBiomedical Engineering / Biomedizinische Technik\nRe: Research Article — Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control\nDear Editor-in-Chief,\nWe request consideration of this manuscript as a Research Article. It examines two operating questions in breast ultrasound segmentation quality control: transferring a development-calibrated numerical review threshold and selecting a fixed number of cases by risk ranking.\nA frozen SAM ViT-B generated shared initial masks for confidence and prompt-disagreement scores in a reference-informed, known-location setting. Each score targeted 20 % review in 213 BUS-BRA development patients; the cutoffs were transferred to 851 internal and 252 BrEaST external patients. Detection, actual review fractions and missed low-quality masks were evaluated jointly.\nThe confidence threshold selected 20.45 % of internal patients and 13.89 % externally. Relative detection counts changed between transferred cutoffs and equal review at the 20 % target; a complete eight-budget analysis showed no uniformly better score. The revised manuscript uses this distinction to explain how an operating rule changes the interpretation of score comparisons. Three bootstrap routes and descriptive diagnostic-stratum accounting characterize its sampling and case-mix context without changing the prespecified H1–H3 analyses.\nActual prediction contours are supplied for all six audited external misses. A targeted CPU replay used checkpoint bytes identical to the original and preserved every review and quality label, with numerical differences disclosed. The reference-derived prompts define a known-location evaluation, and review flags are simulated counts rather than measured reader time.\nThe authors report no research funding or conflicts of interest. OpenAI Codex assistance is disclosed in the manuscript and original Ethical and Legal Declarations form. The authors previously confirmed statutory ethics-review exemption under Article 32 of the Chinese Measures (2023).  Both authors have approved the final manuscript, supplementary materials and figures for submission to Biomedical Engineering / Biomedizinische Technik and accept responsibility for the entire content. The work is original and is not under consideration by another journal. Earlier manuscript drafts and supporting research materials are publicly available in our GitHub repository: https://github.com/khkh87885-code/research.\nSincerely,Haoze Lan, corresponding authorOn behalf of Haoze Lan and Ziyuan Zhu\nCollege of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Building 6, Lanyuan, No. 61 Daxuecheng Middle Road, Shapingba District, Chongqing 400016, ChinaCorrespondence: 478283902@qq.com"
+    },
+    {
+      "id": "COVER_ORIGINAL_NO_OTHER_JOURNAL",
+      "passed": true,
+      "evidence": "Cover letter\n6 November 2026\nEditor-in-ChiefBiomedical Engineering / Biomedizinische Technik\nRe: Research Article — Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control\nDear Editor-in-Chief,\nWe request consideration of this manuscript as a Research Article. It examines two operating questions in breast ultrasound segmentation quality control: transferring a development-calibrated numerical review threshold and selecting a fixed number of cases by risk ranking.\nA frozen SAM ViT-B generated shared initial masks for confidence and prompt-disagreement scores in a reference-informed, known-location setting. Each score targeted 20 % review in 213 BUS-BRA development patients; the cutoffs were transferred to 851 internal and 252 BrEaST external patients. Detection, actual review fractions and missed low-quality masks were evaluated jointly.\nThe confidence threshold selected 20.45 % of internal patients and 13.89 % externally. Relative detection counts changed between transferred cutoffs and equal review at the 20 % target; a complete eight-budget analysis showed no uniformly better score. The revised manuscript uses this distinction to explain how an operating rule changes the interpretation of score comparisons. Three bootstrap routes and descriptive diagnostic-stratum accounting characterize its sampling and case-mix context without changing the prespecified H1–H3 analyses.\nActual prediction contours are supplied for all six audited external misses. A targeted CPU replay used checkpoint bytes identical to the original and preserved every review and quality label, with numerical differences disclosed. The reference-derived prompts define a known-location evaluation, and review flags are simulated counts rather than measured reader time.\nThe authors report no research funding or conflicts of interest. OpenAI Codex assistance is disclosed in the manuscript and original Ethical and Legal Declarations form. The authors previously confirmed statutory ethics-review exemption under Article 32 of the Chinese Measures (2023).  Both authors have approved the final manuscript, supplementary materials and figures for submission to Biomedical Engineering / Biomedizinische Technik and accept responsibility for the entire content. The work is original and is not under consideration by another journal. Earlier manuscript drafts and supporting research materials are publicly available in our GitHub repository: https://github.com/khkh87885-code/research.\nSincerely,Haoze Lan, corresponding authorOn behalf of Haoze Lan and Ziyuan Zhu\nCollege of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Building 6, Lanyuan, No. 61 Daxuecheng Middle Road, Shapingba District, Chongqing 400016, ChinaCorrespondence: 478283902@qq.com"
+    },
+    {
+      "id": "COVER_GITHUB_PUBLIC_DISCLOSURE",
+      "passed": true,
+      "evidence": "Cover letter\n6 November 2026\nEditor-in-ChiefBiomedical Engineering / Biomedizinische Technik\nRe: Research Article — Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control\nDear Editor-in-Chief,\nWe request consideration of this manuscript as a Research Article. It examines two operating questions in breast ultrasound segmentation quality control: transferring a development-calibrated numerical review threshold and selecting a fixed number of cases by risk ranking.\nA frozen SAM ViT-B generated shared initial masks for confidence and prompt-disagreement scores in a reference-informed, known-location setting. Each score targeted 20 % review in 213 BUS-BRA development patients; the cutoffs were transferred to 851 internal and 252 BrEaST external patients. Detection, actual review fractions and missed low-quality masks were evaluated jointly.\nThe confidence threshold selected 20.45 % of internal patients and 13.89 % externally. Relative detection counts changed between transferred cutoffs and equal review at the 20 % target; a complete eight-budget analysis showed no uniformly better score. The revised manuscript uses this distinction to explain how an operating rule changes the interpretation of score comparisons. Three bootstrap routes and descriptive diagnostic-stratum accounting characterize its sampling and case-mix context without changing the prespecified H1–H3 analyses.\nActual prediction contours are supplied for all six audited external misses. A targeted CPU replay used checkpoint bytes identical to the original and preserved every review and quality label, with numerical differences disclosed. The reference-derived prompts define a known-location evaluation, and review flags are simulated counts rather than measured reader time.\nThe authors report no research funding or conflicts of interest. OpenAI Codex assistance is disclosed in the manuscript and original Ethical and Legal Declarations form. The authors previously confirmed statutory ethics-review exemption under Article 32 of the Chinese Measures (2023).  Both authors have approved the final manuscript, supplementary materials and figures for submission to Biomedical Engineering / Biomedizinische Technik and accept responsibility for the entire content. The work is original and is not under consideration by another journal. Earlier manuscript drafts and supporting research materials are publicly available in our GitHub repository: https://github.com/khkh87885-code/research.\nSincerely,Haoze Lan, corresponding authorOn behalf of Haoze Lan and Ziyuan Zhu\nCollege of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Building 6, Lanyuan, No. 61 Daxuecheng Middle Road, Shapingba District, Chongqing 400016, ChinaCorrespondence: 478283902@qq.com"
+    },
+    {
+      "id": "REVIEWER_SIX_PRESENT",
+      "passed": true,
+      "evidence": [
+        "Carole Sudre",
+        "Veronika Cheplygina",
+        "Geert Litjens",
+        "Yuyin Zhou",
+        "Lena Maier-Hein",
+        "Bo Wang"
+      ]
+    },
+    {
+      "id": "REVIEWER_SEVEN_PENDING_REMOVED",
+      "passed": true,
+      "evidence": {
+        "source_pending_occurrences": 7,
+        "final_pending_occurrences": 0,
+        "conflict_check_rows": [
+          "Conflict check: the authors confirm no disqualifying conflict of interest for this candidate.",
+          "Conflict check: the authors confirm no disqualifying conflict of interest for this candidate.",
+          "Conflict check: the authors confirm no disqualifying conflict of interest for this candidate.",
+          "Conflict check: the authors confirm no disqualifying conflict of interest for this candidate.",
+          "Conflict check: the authors confirm no disqualifying conflict of interest for this candidate.",
+          "Conflict check: the authors confirm no disqualifying conflict of interest for this candidate."
+        ]
+      }
+    },
+    {
+      "id": "REVIEWER_SIX_CONFLICT_CONFIRMATIONS",
+      "passed": true,
+      "evidence": [
+        "Conflict check: the authors confirm no disqualifying conflict of interest for this candidate.",
+        "Conflict check: the authors confirm no disqualifying conflict of interest for this candidate.",
+        "Conflict check: the authors confirm no disqualifying conflict of interest for this candidate.",
+        "Conflict check: the authors confirm no disqualifying conflict of interest for this candidate.",
+        "Conflict check: the authors confirm no disqualifying conflict of interest for this candidate.",
+        "Conflict check: the authors confirm no disqualifying conflict of interest for this candidate."
+      ]
+    },
+    {
+      "id": "REVIEWER_NOT_CONTACTED_NO_WILLINGNESS_CLAIM",
+      "passed": true,
+      "evidence": {
+        "opening": "Six candidates at institutions outside Chongqing Medical University are listed across six countries. They have not been contacted. All email addresses below are published professional contacts. The authors have confirmed no disqualifying reviewer conflicts. Availability and willingness to review have not been tested.",
+        "nomination_notes": [
+          "Six candidates at institutions outside Chongqing Medical University are listed across six countries. They have not been contacted. All email addresses below are published professional contacts. The authors have confirmed no disqualifying reviewer conflicts. Availability and willingness to review have not been tested.",
+          "Affiliations and public email publication were checked through official institutional pages or the original publisher article. Email deliverability, availability and willingness were not tested. The authors have confirmed the personal, institutional and collaborative conflict checks for all six candidates."
+        ]
+      }
+    },
+    {
+      "id": "OFFICIAL_TEMPLATE_INSTRUCTIONS_PRESERVED",
+      "passed": true,
+      "evidence": {
+        "source_paragraph_count": 80,
+        "final_paragraph_count": 79,
+        "checked_paragraphs": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "differences": []
+      }
+    },
+    {
+      "id": "OFFICIAL_TEMPLATE_TABLE_SHAPE",
+      "passed": true,
+      "evidence": [
+        {
+          "rows": 11,
+          "cells_by_row": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FORMAL_DOCX_NO_UNCONFIRMED_DRAFT_STATE",
+      "passed": true,
+      "evidence": [
+        {
+          "file": "BMT_Ethical_and_Legal_Declarations_v8.docx",
+          "sha256": "575564276f29f046559b5bc8f2b04926ad9d550249e096bd6d0fb9a5a2e50162",
+          "metadata": {
+            "docProps/app.xml": "Normal | 0 | 2 | 537 | 3609 | Microsoft Office Word | 0 | 72 | 81 | false | Titel | 1 | Walter de Gruyter GmbH | false | 4065 | false | false | 16.0000",
+            "docProps/core.xml": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control | Biomedical Engineering / Biomedizinische Technik submission | Haoze Lan; Ziyuan Zhu | BMT document preparation workflow | 2 | 2024-07-26T16:21:00Z | 2024-07-26T16:21:00Z",
+            "docProps/custom.xml": "0x0101003C01AD16B30AB4459C67DFCD2A63A973"
+          },
+          "state_markers": [],
+          "editing_markup": {
+            "comments": 0,
+            "insertions": 0,
+            "deletions": 0,
+            "move_from": 0,
+            "move_to": 0,
+            "content_controls": 0,
+            "hidden": 0,
+            "web_hidden": 0,
+            "track_revisions": 0
+          },
+          "headers_footers": {
+            "word/header1.xml": "",
+            "word/footer1.xml": ""
+          }
+        },
+        {
+          "file": "BMT_cover_letter_v8.docx",
+          "sha256": "0bbdb5825fcb7810114e86b2a5378ff95979b8dc1f0e0e9ea5220dd9cf95704f",
+          "metadata": {
+            "docProps/core.xml": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control | Biomedical Engineering / Biomedizinische Technik submission | Haoze Lan; Ziyuan Zhu | BMT document preparation workflow | 1 | 2026-11-06T00:00:00Z | 2026-11-06T00:00:00Z",
+            "docProps/app.xml": "\n   | Normal.dotm | \n   | 0 | \n   | 1 | \n   | 0 | \n   | 0 | \n   | Microsoft Macintosh Word | \n   | 0 | \n   | 0 | \n   | 0 | \n   | false | \n   | \n     | \n       | \n         | Title | \n       | \n       | \n         | 1 | \n       | \n     | \n   | \n   | \n     | \n       | \n     | \n   | \n   | \n   | \n   | false | \n   | 0 | \n   | false | \n   | \n   | false | \n   | 14.0000 | \n"
+          },
+          "state_markers": [],
+          "editing_markup": {
+            "comments": 0,
+            "insertions": 0,
+            "deletions": 0,
+            "move_from": 0,
+            "move_to": 0,
+            "content_controls": 0,
+            "hidden": 0,
+            "web_hidden": 0,
+            "track_revisions": 0
+          },
+          "headers_footers": {
+            "word/header1.xml": "BMT  |  Cover letter",
+            "word/footer1.xml": "Haoze Lan; Ziyuan Zhu  •  6 November 2026  |  "
+          }
+        },
+        {
+          "file": "BMT_data_and_code_availability_v8.docx",
+          "sha256": "01917dd2b95affeee61180540dc3b8ff534a2eb6aaafae96604969ba40786209",
+          "metadata": {
+            "docProps/core.xml": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control | Biomedical Engineering / Biomedizinische Technik submission | Haoze Lan; Ziyuan Zhu | BMT document preparation workflow | 1 | 2013-12-23T23:15:00Z | 2013-12-23T23:15:00Z",
+            "docProps/app.xml": "\n   | Normal.dotm | \n   | 0 | \n   | 1 | \n   | 0 | \n   | 0 | \n   | Microsoft Macintosh Word | \n   | 0 | \n   | 0 | \n   | 0 | \n   | false | \n   | \n     | \n       | \n         | Title | \n       | \n       | \n         | 1 | \n       | \n     | \n   | \n   | \n     | \n       | \n     | \n   | \n   | \n   | \n   | false | \n   | 0 | \n   | false | \n   | \n   | false | \n   | 14.0000 | \n"
+          },
+          "state_markers": [],
+          "editing_markup": {
+            "comments": 0,
+            "insertions": 0,
+            "deletions": 0,
+            "move_from": 0,
+            "move_to": 0,
+            "content_controls": 0,
+            "hidden": 0,
+            "web_hidden": 0,
+            "track_revisions": 0
+          },
+          "headers_footers": {
+            "word/header1.xml": "",
+            "word/footer1.xml": ""
+          }
+        },
+        {
+          "file": "BMT_main_manuscript_v8.docx",
+          "sha256": "17f68f66e436d55c4e305b1c99cfd976f95282050a1d7d086d740a67d0ab364e",
+          "metadata": {
+            "docProps/core.xml": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control | Biomedical Engineering / Biomedizinische Technik submission | Haoze Lan; Ziyuan Zhu | BMT document preparation workflow | 1 | 2013-12-23T23:15:00Z | 2013-12-23T23:15:00Z",
+            "docProps/app.xml": "\n   | Normal.dotm | \n   | 0 | \n   | 1 | \n   | 0 | \n   | 0 | \n   | Microsoft Macintosh Word | \n   | 0 | \n   | 0 | \n   | 0 | \n   | false | \n   | \n     | \n       | \n         | Title | \n       | \n       | \n         | 1 | \n       | \n     | \n   | \n   | \n     | \n       | \n     | \n   | \n   | \n   | \n   | false | \n   | 0 | \n   | false | \n   | \n   | false | \n   | 14.0000 | \n"
+          },
+          "state_markers": [],
+          "editing_markup": {
+            "comments": 0,
+            "insertions": 0,
+            "deletions": 0,
+            "move_from": 0,
+            "move_to": 0,
+            "content_controls": 0,
+            "hidden": 0,
+            "web_hidden": 0,
+            "track_revisions": 0
+          },
+          "headers_footers": {
+            "word/footer1.xml": "1",
+            "word/header1.xml": "Threshold transfer and review budgets"
+          }
+        },
+        {
+          "file": "BMT_reviewer_candidates.docx",
+          "sha256": "df5e13fb4ab0c9a0139141e2aed60671d7e072fe29cea928661cb29a54b6b778",
+          "metadata": {
+            "docProps/core.xml": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control | Biomedical Engineering / Biomedizinische Technik submission | Haoze Lan; Ziyuan Zhu | BMT document preparation workflow | 1 | 2026-11-06T00:00:00Z | 2026-11-06T00:00:00Z",
+            "docProps/app.xml": "\n   | Normal.dotm | \n   | 0 | \n   | 1 | \n   | 0 | \n   | 0 | \n   | Microsoft Macintosh Word | \n   | 0 | \n   | 0 | \n   | 0 | \n   | false | \n   | \n     | \n       | \n         | Title | \n       | \n       | \n         | 1 | \n       | \n     | \n   | \n   | \n     | \n       | \n     | \n   | \n   | \n   | \n   | false | \n   | 0 | \n   | false | \n   | \n   | false | \n   | 14.0000 | \n"
+          },
+          "state_markers": [],
+          "editing_markup": {
+            "comments": 0,
+            "insertions": 0,
+            "deletions": 0,
+            "move_from": 0,
+            "move_to": 0,
+            "content_controls": 0,
+            "hidden": 0,
+            "web_hidden": 0,
+            "track_revisions": 0
+          },
+          "headers_footers": {
+            "word/header1.xml": "BMT  |  Potential reviewers",
+            "word/footer1.xml": "Haoze Lan; Ziyuan Zhu  •  6 November 2026  |  "
+          }
+        },
+        {
+          "file": "BMT_submission_checklist_v8.docx",
+          "sha256": "03be7c64ef8a8f485e68cde58acbd7eecee77a0ab22dc54bc96f67e11ffff821",
+          "metadata": {
+            "docProps/core.xml": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control | Biomedical Engineering / Biomedizinische Technik submission | Haoze Lan; Ziyuan Zhu | BMT document preparation workflow | 1 | 2013-12-23T23:15:00Z | 2013-12-23T23:15:00Z",
+            "docProps/app.xml": "\n   | Normal.dotm | \n   | 0 | \n   | 1 | \n   | 0 | \n   | 0 | \n   | Microsoft Macintosh Word | \n   | 0 | \n   | 0 | \n   | 0 | \n   | false | \n   | \n     | \n       | \n         | Title | \n       | \n       | \n         | 1 | \n       | \n     | \n   | \n   | \n     | \n       | \n     | \n   | \n   | \n   | \n   | false | \n   | 0 | \n   | false | \n   | \n   | false | \n   | 14.0000 | \n"
+          },
+          "state_markers": [],
+          "editing_markup": {
+            "comments": 0,
+            "insertions": 0,
+            "deletions": 0,
+            "move_from": 0,
+            "move_to": 0,
+            "content_controls": 0,
+            "hidden": 0,
+            "web_hidden": 0,
+            "track_revisions": 0
+          },
+          "headers_footers": {
+            "word/header1.xml": "",
+            "word/footer1.xml": ""
+          }
+        },
+        {
+          "file": "BMT_supplementary_material_v4.docx",
+          "sha256": "1b6a1f25c6fe5b810531ad3cceb2e3988daa5873e95c996e78ca5a8b8137becd",
+          "metadata": {
+            "docProps/core.xml": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control | Biomedical Engineering / Biomedizinische Technik submission | Haoze Lan; Ziyuan Zhu | BMT document preparation workflow | 1 | 2013-12-23T23:15:00Z | 2013-12-23T23:15:00Z",
+            "docProps/app.xml": "\n   | Normal.dotm | \n   | 0 | \n   | 1 | \n   | 0 | \n   | 0 | \n   | Microsoft Macintosh Word | \n   | 0 | \n   | 0 | \n   | 0 | \n   | false | \n   | \n     | \n       | \n         | Title | \n       | \n       | \n         | 1 | \n       | \n     | \n   | \n   | \n     | \n       | \n     | \n   | \n   | \n   | \n   | false | \n   | 0 | \n   | false | \n   | \n   | false | \n   | 14.0000 | \n"
+          },
+          "state_markers": [],
+          "editing_markup": {
+            "comments": 0,
+            "insertions": 0,
+            "deletions": 0,
+            "move_from": 0,
+            "move_to": 0,
+            "content_controls": 0,
+            "hidden": 0,
+            "web_hidden": 0,
+            "track_revisions": 0
+          },
+          "headers_footers": {
+            "word/footer1.xml": "1",
+            "word/header1.xml": "Supplementary material: review policies"
+          }
+        }
+      ]
+    },
+    {
+      "id": "FORMAL_DOCX_NO_HIDDEN_EDITING",
+      "passed": true,
+      "evidence": [
+        {
+          "file": "BMT_Ethical_and_Legal_Declarations_v8.docx",
+          "editing_markup": {
+            "comments": 0,
+            "insertions": 0,
+            "deletions": 0,
+            "move_from": 0,
+            "move_to": 0,
+            "content_controls": 0,
+            "hidden": 0,
+            "web_hidden": 0,
+            "track_revisions": 0
+          }
+        },
+        {
+          "file": "BMT_cover_letter_v8.docx",
+          "editing_markup": {
+            "comments": 0,
+            "insertions": 0,
+            "deletions": 0,
+            "move_from": 0,
+            "move_to": 0,
+            "content_controls": 0,
+            "hidden": 0,
+            "web_hidden": 0,
+            "track_revisions": 0
+          }
+        },
+        {
+          "file": "BMT_data_and_code_availability_v8.docx",
+          "editing_markup": {
+            "comments": 0,
+            "insertions": 0,
+            "deletions": 0,
+            "move_from": 0,
+            "move_to": 0,
+            "content_controls": 0,
+            "hidden": 0,
+            "web_hidden": 0,
+            "track_revisions": 0
+          }
+        },
+        {
+          "file": "BMT_main_manuscript_v8.docx",
+          "editing_markup": {
+            "comments": 0,
+            "insertions": 0,
+            "deletions": 0,
+            "move_from": 0,
+            "move_to": 0,
+            "content_controls": 0,
+            "hidden": 0,
+            "web_hidden": 0,
+            "track_revisions": 0
+          }
+        },
+        {
+          "file": "BMT_reviewer_candidates.docx",
+          "editing_markup": {
+            "comments": 0,
+            "insertions": 0,
+            "deletions": 0,
+            "move_from": 0,
+            "move_to": 0,
+            "content_controls": 0,
+            "hidden": 0,
+            "web_hidden": 0,
+            "track_revisions": 0
+          }
+        },
+        {
+          "file": "BMT_submission_checklist_v8.docx",
+          "editing_markup": {
+            "comments": 0,
+            "insertions": 0,
+            "deletions": 0,
+            "move_from": 0,
+            "move_to": 0,
+            "content_controls": 0,
+            "hidden": 0,
+            "web_hidden": 0,
+            "track_revisions": 0
+          }
+        },
+        {
+          "file": "BMT_supplementary_material_v4.docx",
+          "editing_markup": {
+            "comments": 0,
+            "insertions": 0,
+            "deletions": 0,
+            "move_from": 0,
+            "move_to": 0,
+            "content_controls": 0,
+            "hidden": 0,
+            "web_hidden": 0,
+            "track_revisions": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "AUTHOR_INFORMATION_CONSISTENT",
+      "passed": true,
+      "evidence": {
+        "cover_original_author_blocks_retained": true,
+        "core_fields": {
+          "main": {
+            "title": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control",
+            "subject": "Biomedical Engineering / Biomedizinische Technik submission",
+            "creator": "Haoze Lan; Ziyuan Zhu",
+            "keywords": "",
+            "description": "",
+            "lastModifiedBy": "BMT document preparation workflow",
+            "revision": "1",
+            "created": "2013-12-23T23:15:00Z",
+            "modified": "2013-12-23T23:15:00Z",
+            "category": "",
+            "contentStatus": ""
+          },
+          "supp": {
+            "title": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control",
+            "subject": "Biomedical Engineering / Biomedizinische Technik submission",
+            "creator": "Haoze Lan; Ziyuan Zhu",
+            "keywords": "",
+            "description": "",
+            "lastModifiedBy": "BMT document preparation workflow",
+            "revision": "1",
+            "created": "2013-12-23T23:15:00Z",
+            "modified": "2013-12-23T23:15:00Z",
+            "category": "",
+            "contentStatus": ""
+          },
+          "ethics": {
+            "title": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control",
+            "subject": "Biomedical Engineering / Biomedizinische Technik submission",
+            "creator": "Haoze Lan; Ziyuan Zhu",
+            "keywords": "",
+            "description": "",
+            "lastModifiedBy": "BMT document preparation workflow",
+            "revision": "2",
+            "created": "2024-07-26T16:21:00Z",
+            "modified": "2024-07-26T16:21:00Z",
+            "category": "",
+            "contentStatus": ""
+          },
+          "cover": {
+            "title": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control",
+            "subject": "Biomedical Engineering / Biomedizinische Technik submission",
+            "creator": "Haoze Lan; Ziyuan Zhu",
+            "keywords": "",
+            "description": "",
+            "lastModifiedBy": "BMT document preparation workflow",
+            "revision": "1",
+            "created": "2026-11-06T00:00:00Z",
+            "modified": "2026-11-06T00:00:00Z",
+            "category": "",
+            "contentStatus": ""
+          },
+          "reviewers": {
+            "title": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control",
+            "subject": "Biomedical Engineering / Biomedizinische Technik submission",
+            "creator": "Haoze Lan; Ziyuan Zhu",
+            "keywords": "",
+            "description": "",
+            "lastModifiedBy": "BMT document preparation workflow",
+            "revision": "1",
+            "created": "2026-11-06T00:00:00Z",
+            "modified": "2026-11-06T00:00:00Z",
+            "category": "",
+            "contentStatus": ""
+          },
+          "data": {
+            "title": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control",
+            "subject": "Biomedical Engineering / Biomedizinische Technik submission",
+            "creator": "Haoze Lan; Ziyuan Zhu",
+            "keywords": "",
+            "description": "",
+            "lastModifiedBy": "BMT document preparation workflow",
+            "revision": "1",
+            "created": "2013-12-23T23:15:00Z",
+            "modified": "2013-12-23T23:15:00Z",
+            "category": "",
+            "contentStatus": ""
+          }
+        },
+        "main_author_rows_unchanged": true
+      }
+    },
+    {
+      "id": "VISIBLE_FINAL_DATES_CONSISTENT",
+      "passed": true,
+      "evidence": {
+        "cover": "6 November 2026",
+        "supp_author_line_has_no_date": "Haoze Lan; Ziyuan Zhu",
+        "reviewers": "Source-verified shortlist | 6 November 2026",
+        "modified_dates_retained_from_document_history": {
+          "main": "2013-12-23T23:15:00Z",
+          "supp": "2013-12-23T23:15:00Z",
+          "ethics": "2024-07-26T16:21:00Z",
+          "cover": "2026-11-06T00:00:00Z",
+          "reviewers": "2026-11-06T00:00:00Z",
+          "data": "2013-12-23T23:15:00Z"
+        }
+      }
+    },
+    {
+      "id": "FINAL_PDF_NO_UNCONFIRMED_DRAFT_STATE",
+      "passed": true,
+      "evidence": [
+        {
+          "file": "/workspace/bmt_v8_final/outputs/BMT_main_manuscript_v8_preview.pdf",
+          "pages": 14,
+          "metadata": {
+            "format": "PDF 1.7",
+            "title": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control",
+            "author": "Haoze Lan; Ziyuan Zhu",
+            "subject": "Biomedical Engineering / Biomedizinische Technik submission",
+            "keywords": "",
+            "creator": "Writer",
+            "producer": "LibreOfficeDev 26.8.0.0.alpha0 (X86_64)",
+            "creationDate": "D:20261106110929Z'",
+            "modDate": "",
+            "trapped": "",
+            "encryption": null
+          },
+          "state_marker_text": [],
+          "state_marker_metadata": []
+        },
+        {
+          "file": "/workspace/bmt_v8_final/outputs/BMT_supplementary_material_v4_preview.pdf",
+          "pages": 21,
+          "metadata": {
+            "format": "PDF 1.7",
+            "title": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control",
+            "author": "Haoze Lan; Ziyuan Zhu",
+            "subject": "Biomedical Engineering / Biomedizinische Technik submission",
+            "keywords": "",
+            "creator": "Writer",
+            "producer": "LibreOfficeDev 26.8.0.0.alpha0 (X86_64)",
+            "creationDate": "D:20261106110930Z'",
+            "modDate": "",
+            "trapped": "",
+            "encryption": null
+          },
+          "state_marker_text": [],
+          "state_marker_metadata": []
+        },
+        {
+          "file": "/workspace/bmt_v8_final/qa/BMT_Ethical_and_Legal_Declarations_v8.pdf",
+          "pages": 3,
+          "metadata": {
+            "format": "PDF 1.7",
+            "title": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control",
+            "author": "Haoze Lan; Ziyuan Zhu",
+            "subject": "Biomedical Engineering / Biomedizinische Technik submission",
+            "keywords": "",
+            "creator": "Writer",
+            "producer": "LibreOfficeDev 26.8.0.0.alpha0 (X86_64)",
+            "creationDate": "D:20261106110929Z'",
+            "modDate": "",
+            "trapped": "",
+            "encryption": null
+          },
+          "state_marker_text": [],
+          "state_marker_metadata": []
+        },
+        {
+          "file": "/workspace/bmt_v8_final/qa/BMT_cover_letter_v8.pdf",
+          "pages": 1,
+          "metadata": {
+            "format": "PDF 1.7",
+            "title": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control",
+            "author": "Haoze Lan; Ziyuan Zhu",
+            "subject": "Biomedical Engineering / Biomedizinische Technik submission",
+            "keywords": "",
+            "creator": "Writer",
+            "producer": "LibreOfficeDev 26.8.0.0.alpha0 (X86_64)",
+            "creationDate": "D:20261106110929Z'",
+            "modDate": "",
+            "trapped": "",
+            "encryption": null
+          },
+          "state_marker_text": [],
+          "state_marker_metadata": []
+        },
+        {
+          "file": "/workspace/bmt_v8_final/qa/BMT_data_and_code_availability_v8.pdf",
+          "pages": 1,
+          "metadata": {
+            "format": "PDF 1.7",
+            "title": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control",
+            "author": "Haoze Lan; Ziyuan Zhu",
+            "subject": "Biomedical Engineering / Biomedizinische Technik submission",
+            "keywords": "",
+            "creator": "Writer",
+            "producer": "LibreOfficeDev 26.8.0.0.alpha0 (X86_64)",
+            "creationDate": "D:20261106110929Z'",
+            "modDate": "",
+            "trapped": "",
+            "encryption": null
+          },
+          "state_marker_text": [],
+          "state_marker_metadata": []
+        },
+        {
+          "file": "/workspace/bmt_v8_final/qa/BMT_main_manuscript_v8.pdf",
+          "pages": 14,
+          "metadata": {
+            "format": "PDF 1.7",
+            "title": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control",
+            "author": "Haoze Lan; Ziyuan Zhu",
+            "subject": "Biomedical Engineering / Biomedizinische Technik submission",
+            "keywords": "",
+            "creator": "Writer",
+            "producer": "LibreOfficeDev 26.8.0.0.alpha0 (X86_64)",
+            "creationDate": "D:20261106110929Z'",
+            "modDate": "",
+            "trapped": "",
+            "encryption": null
+          },
+          "state_marker_text": [],
+          "state_marker_metadata": []
+        },
+        {
+          "file": "/workspace/bmt_v8_final/qa/BMT_reviewer_candidates.pdf",
+          "pages": 3,
+          "metadata": {
+            "format": "PDF 1.7",
+            "title": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control",
+            "author": "Haoze Lan; Ziyuan Zhu",
+            "subject": "Biomedical Engineering / Biomedizinische Technik submission",
+            "keywords": "",
+            "creator": "Writer",
+            "producer": "LibreOfficeDev 26.8.0.0.alpha0 (X86_64)",
+            "creationDate": "D:20261106110929Z'",
+            "modDate": "",
+            "trapped": "",
+            "encryption": null
+          },
+          "state_marker_text": [],
+          "state_marker_metadata": []
+        },
+        {
+          "file": "/workspace/bmt_v8_final/qa/BMT_submission_checklist_v8.pdf",
+          "pages": 1,
+          "metadata": {
+            "format": "PDF 1.7",
+            "title": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control",
+            "author": "Haoze Lan; Ziyuan Zhu",
+            "subject": "Biomedical Engineering / Biomedizinische Technik submission",
+            "keywords": "",
+            "creator": "Writer",
+            "producer": "LibreOfficeDev 26.8.0.0.alpha0 (X86_64)",
+            "creationDate": "D:20261106110929Z'",
+            "modDate": "",
+            "trapped": "",
+            "encryption": null
+          },
+          "state_marker_text": [],
+          "state_marker_metadata": []
+        },
+        {
+          "file": "/workspace/bmt_v8_final/qa/BMT_supplementary_material_v4.pdf",
+          "pages": 21,
+          "metadata": {
+            "format": "PDF 1.7",
+            "title": "Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control",
+            "author": "Haoze Lan; Ziyuan Zhu",
+            "subject": "Biomedical Engineering / Biomedizinische Technik submission",
+            "keywords": "",
+            "creator": "Writer",
+            "producer": "LibreOfficeDev 26.8.0.0.alpha0 (X86_64)",
+            "creationDate": "D:20261106110930Z'",
+            "modDate": "",
+            "trapped": "",
+            "encryption": null
+          },
+          "state_marker_text": [],
+          "state_marker_metadata": []
+        }
+      ]
+    },
+    {
+      "id": "PREVIEW_PDF_SYNC",
+      "passed": true,
+      "evidence": {
+        "files": [
+          "BMT_main_manuscript_v8",
+          "BMT_supplementary_material_v4"
+        ]
+      }
+    },
+    {
+      "id": "VISUAL_CHANGED_PAGES_REVIEWED",
+      "passed": true,
+      "evidence": {
+        "manuscript_pdf_page": 11,
+        "ethics_pdf_page": 1,
+        "cover_pdf_page": 1,
+        "supplement_pdf_page": 1,
+        "observations": "Actual approval statements, original/GitHub disclosure and cleaned author line are fully visible. No cropped text, overlap or unintended blank space. Official template color instructions remain visible as provided."
+      }
+    },
+    {
+      "id": "FIGURES_BYTE_IDENTICAL",
+      "passed": true,
+      "evidence": {
+        "source_files": 19,
+        "final_files": 19,
+        "source": {
+          "Figure_2.png": "7987c816c6834b2f83d0ad86acda1906b242aad09f0ea1010f583739b21a09ca",
+          "Figure_S5.png": "0c8e8dd0152e1f6786f93bd91901bdbb10cfda50bbb8da7152b45eedd4e9af19",
+          "Figure_S1.png": "9c58957f8f893a3c9a7a05a745c3c8ba6a337c8d6d5a444e592147471bb40392",
+          "Figure_S6B.pdf": "207c595482a039fe6a503bcc593ad67519cd7f10102f51dac3b8db1ece06b839",
+          "Figure_5.pdf": "6ed928d552054fa47dae01552888629ba263dc7e78c82766b27735d27d8b0d0a",
+          "Figure_S4.pdf": "4a2c876ad5d07744ea09d3e736d67f09ee98b41f78736957c7dddd963345eee6",
+          "Figure_S4.png": "489f73e4f26beabc0504899b3013eb14ed1b9e8c189d0006f3dc9cb9e7932606",
+          "Figure_S3.png": "bf145d14161c47daff18a167e036e82173f924f6b9dda0cfec836a8c334ca215",
+          "Figure_S3.pdf": "de2678e51a6d29637effbc2d65afcaec64dbf8fb88042d383039d7956e997e94",
+          "Figure_S6A.png": "237d9c30dc0362e473ec376504ba194730a290faa81f5b9caf0084a1367aa6ba",
+          "Figure_S6A.pdf": "ebea86506b2c4a8ba5eb185f0cad9d09839dd5f19a640192976add9829aaf6e8",
+          "Figure_3.png": "57b94a597e677452c99eac2783a6128b408b703a41788b68571250dc9dce9348",
+          "Figure_S2.png": "f5e0ab1c1680b8ed909cdf65596301d98b7ded647f55ced2a2d4960f92a5d98e",
+          "Figure_1.png": "a71a632b3f2d73852185991e93ef6317e7d0ebbc9c1eaa7180120736f0ea08e1",
+          "Figure_4.png": "5b33fde19a1a1cc80a555ae7e7ccf4d39b340486fe06f04d7e598fe84956dc1c",
+          "Figure_5.png": "237d9c30dc0362e473ec376504ba194730a290faa81f5b9caf0084a1367aa6ba",
+          "FIGURE_2_PRODUCTION_NOTE.txt": "1ff6d53d7801c8b03f8d5f45bce4dda013a5c22a8e0b7fd0242708e5617b138f",
+          "Figure_S6B.png": "f9e4c85b93d8fcc5aacf972612a9295864b55156c40e4bf29ef4b6cc8decd97d",
+          "Figure_S5.pdf": "0679a8d6789489d293b7882511e6b3f56814e6bf66e5eea701f71b0eb02475c4"
+        },
+        "final": {
+          "Figure_2.png": "7987c816c6834b2f83d0ad86acda1906b242aad09f0ea1010f583739b21a09ca",
+          "Figure_S5.png": "0c8e8dd0152e1f6786f93bd91901bdbb10cfda50bbb8da7152b45eedd4e9af19",
+          "Figure_S1.png": "9c58957f8f893a3c9a7a05a745c3c8ba6a337c8d6d5a444e592147471bb40392",
+          "Figure_S6B.pdf": "207c595482a039fe6a503bcc593ad67519cd7f10102f51dac3b8db1ece06b839",
+          "Figure_5.pdf": "6ed928d552054fa47dae01552888629ba263dc7e78c82766b27735d27d8b0d0a",
+          "Figure_S4.pdf": "4a2c876ad5d07744ea09d3e736d67f09ee98b41f78736957c7dddd963345eee6",
+          "Figure_S4.png": "489f73e4f26beabc0504899b3013eb14ed1b9e8c189d0006f3dc9cb9e7932606",
+          "Figure_S3.png": "bf145d14161c47daff18a167e036e82173f924f6b9dda0cfec836a8c334ca215",
+          "Figure_S3.pdf": "de2678e51a6d29637effbc2d65afcaec64dbf8fb88042d383039d7956e997e94",
+          "Figure_S6A.png": "237d9c30dc0362e473ec376504ba194730a290faa81f5b9caf0084a1367aa6ba",
+          "Figure_S6A.pdf": "ebea86506b2c4a8ba5eb185f0cad9d09839dd5f19a640192976add9829aaf6e8",
+          "Figure_3.png": "57b94a597e677452c99eac2783a6128b408b703a41788b68571250dc9dce9348",
+          "Figure_S2.png": "f5e0ab1c1680b8ed909cdf65596301d98b7ded647f55ced2a2d4960f92a5d98e",
+          "Figure_1.png": "a71a632b3f2d73852185991e93ef6317e7d0ebbc9c1eaa7180120736f0ea08e1",
+          "Figure_4.png": "5b33fde19a1a1cc80a555ae7e7ccf4d39b340486fe06f04d7e598fe84956dc1c",
+          "Figure_5.png": "237d9c30dc0362e473ec376504ba194730a290faa81f5b9caf0084a1367aa6ba",
+          "FIGURE_2_PRODUCTION_NOTE.txt": "1ff6d53d7801c8b03f8d5f45bce4dda013a5c22a8e0b7fd0242708e5617b138f",
+          "Figure_S6B.png": "f9e4c85b93d8fcc5aacf972612a9295864b55156c40e4bf29ef4b6cc8decd97d",
+          "Figure_S5.pdf": "0679a8d6789489d293b7882511e6b3f56814e6bf66e5eea701f71b0eb02475c4"
+        }
+      }
+    },
+    {
+      "id": "SOURCE_UNMODIFIED",
+      "passed": true,
+      "evidence": {
+        "baseline_files": 113,
+        "current_files": 113,
+        "changed": []
+      }
+    }
+  ],
+  "findings": [],
+  "details": {
+    "main_zip_changed_parts": [
+      "docProps/core.xml",
+      "word/document.xml"
+    ],
+    "supp_zip_changed_parts": [
+      "docProps/core.xml",
+      "word/document.xml"
+    ],
+    "data_zip_changed_parts": [
+      "[Content_Types].xml",
+      "docProps/core.xml",
+      "word/_rels/document.xml.rels",
+      "word/document.xml",
+      "word/footer1.xml",
+      "word/header1.xml"
+    ],
+    "ethics_table_shapes": [
+      {
+        "rows": 11,
+        "cells_by_row": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    ],
+    "main_table_shapes": [
+      {
+        "rows": 4,
+        "cells_by_row": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "rows": 5,
+        "cells_by_row": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "rows": 4,
+        "cells_by_row": [
+          4,
+          4,
+          4,
+          4
+        ]
+      }
+    ],
+    "supp_table_shapes": [
+      {
+        "rows": 9,
+        "cells_by_row": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "rows": 9,
+        "cells_by_row": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "rows": 5,
+        "cells_by_row": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "rows": 3,
+        "cells_by_row": [
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "rows": 4,
+        "cells_by_row": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "rows": 7,
+        "cells_by_row": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "rows": 7,
+        "cells_by_row": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "rows": 9,
+        "cells_by_row": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "rows": 7,
+        "cells_by_row": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      {
+        "rows": 9,
+        "cells_by_row": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "rows": 9,
+        "cells_by_row": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "rows": 9,
+        "cells_by_row": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "rows": 9,
+        "cells_by_row": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "rows": 9,
+        "cells_by_row": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ]
+      },
+      {
+        "rows": 13,
+        "cells_by_row": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "rows": 10,
+        "cells_by_row": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "rows": 5,
+        "cells_by_row": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "rows": 7,
+        "cells_by_row": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "rows": 7,
+        "cells_by_row": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      }
+    ],
+    "independent_template_crosscheck": {
+      "official_protected_paragraphs": 70,
+      "instructions_P33_to_P79_canonical_XML_unchanged": true,
+      "official_tblPr_canonical_sha256": "2c4b38f41baa0c089a04a88f9c60b2990331df03b409a18944321ec85737684c",
+      "independent_agent": "/root/approval_final_qa/template_qa"
+    }
+  },
+  "scope_limitations": [
+    "Read-only review of final submission copies; no journal submission and no reviewer contact.",
+    "Scientific calculations were not rerun; exact text and embedded/file image-byte comparisons establish no scientific change in this finalization."
+  ]
+}

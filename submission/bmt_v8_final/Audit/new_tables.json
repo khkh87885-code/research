@@ -1,0 +1,1052 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-06T10:33:22.023010+00:00",
+  "purpose": "Append-only post hoc v8 supplement: original main tables and Tables S1–S9 remain unchanged.",
+  "formatting": {
+    "unit_note": "All pp are percentage points; all intervals are nominal 95%.",
+    "suggested_font_pt": 8.0,
+    "repeat_header_rows": true,
+    "panel_note": "Panel suffixes keep the continuous main numbering S10–S13; no S14 is introduced."
+  },
+  "tables": [
+    {
+      "id": "S10A",
+      "main_table_id": "S10",
+      "title": "Table S10. Complete post hoc review-budget scan. Panel A: development calibration.",
+      "headers": [
+        "Target budget (%)",
+        "A threshold",
+        "B threshold",
+        "Reviews R/N (%)",
+        "A detected TP/F (%)",
+        "B detected TP/F (%)"
+      ],
+      "rows": [
+        [
+          "5",
+          "0.230097890",
+          "0.143395298",
+          "11/213 (5.16)",
+          "6/24 (25.00)",
+          "7/24 (29.17)"
+        ],
+        [
+          "10",
+          "0.187371969",
+          "0.091432393",
+          "21/213 (9.86)",
+          "11/24 (45.83)",
+          "10/24 (41.67)"
+        ],
+        [
+          "15",
+          "0.153415680",
+          "0.075878174",
+          "32/213 (15.02)",
+          "17/24 (70.83)",
+          "13/24 (54.17)"
+        ],
+        [
+          "20",
+          "0.137051344",
+          "0.069728567",
+          "43/213 (20.19)",
+          "19/24 (79.17)",
+          "17/24 (70.83)"
+        ],
+        [
+          "25",
+          "0.099984050",
+          "0.060165861",
+          "53/213 (24.88)",
+          "21/24 (87.50)",
+          "19/24 (79.17)"
+        ],
+        [
+          "30",
+          "0.082495153",
+          "0.052356279",
+          "64/213 (30.05)",
+          "21/24 (87.50)",
+          "23/24 (95.83)"
+        ],
+        [
+          "40",
+          "0.060212433",
+          "0.034317724",
+          "85/213 (39.91)",
+          "21/24 (87.50)",
+          "24/24 (100.00)"
+        ],
+        [
+          "50",
+          "0.051672816",
+          "0.023950987",
+          "106/213 (49.77)",
+          "23/24 (95.83)",
+          "24/24 (100.00)"
+        ]
+      ],
+      "notes": [
+        "Post hoc exploratory analysis of the unchanged development cohort (N=213; low-quality cases F=24). A is confidence-based risk; B is prompt-instability risk. Low quality is reference Dice <0.70.",
+        "Each threshold minimizes the absolute difference from the target review fraction using development risks only. Risk ties are kept together; a zero-review candidate is included; equally close candidates select fewer reviews. All selected candidates here are nonzero. Displayed thresholds are rounded; analyses use full-precision stored thresholds.",
+        "R is the number selected for review; TP is the number of low-quality cases selected; F is the number of low-quality cases. Percentages in count cells use the displayed denominator. Settings were fixed before these new computations, not preregistered for the original study."
+      ],
+      "classification": "Post hoc exploratory",
+      "csv": "table_data/S10A.csv",
+      "column_widths_hint": [
+        0.75,
+        0.93,
+        0.93,
+        1.05,
+        1.05,
+        1.05
+      ]
+    },
+    {
+      "id": "S10B",
+      "main_table_id": "S10",
+      "title": "Table S10 (continued). Panel B: BUS-BRA internal holdout: development-calibrated thresholds.",
+      "headers": [
+        "Target (%)",
+        "A reviews R/N (%)",
+        "B reviews R/N (%)",
+        "A detected TP/F (%)",
+        "B detected TP/F (%)",
+        "B−A detection, pp [95% CI]",
+        "B−A review, pp [95% CI]"
+      ],
+      "rows": [
+        [
+          "5",
+          "64/851 (7.52)",
+          "60/851 (7.05)",
+          "41/93 (44.09)",
+          "39/93 (41.94)",
+          "-2.15 [-10.64, +6.41]",
+          "-0.47 [-1.97, +1.00]"
+        ],
+        [
+          "10",
+          "106/851 (12.46)",
+          "110/851 (12.93)",
+          "56/93 (60.22)",
+          "58/93 (62.37)",
+          "+2.15 [-6.43, +10.67]",
+          "+0.47 [-1.46, +2.41]"
+        ],
+        [
+          "15",
+          "158/851 (18.57)",
+          "135/851 (15.86)",
+          "67/93 (72.04)",
+          "65/93 (69.89)",
+          "-2.15 [-12.16, +7.91]",
+          "-2.70 [-4.95, -0.47]"
+        ],
+        [
+          "20",
+          "174/851 (20.45)",
+          "150/851 (17.63)",
+          "71/93 (76.34)",
+          "68/93 (73.12)",
+          "-3.23 [-13.48, +7.09]",
+          "-2.82 [-5.06, -0.60]"
+        ],
+        [
+          "25",
+          "234/851 (27.50)",
+          "180/851 (21.15)",
+          "83/93 (89.25)",
+          "73/93 (78.49)",
+          "-10.75 [-20.42, -1.21]",
+          "-6.35 [-8.64, -4.07]"
+        ],
+        [
+          "30",
+          "282/851 (33.14)",
+          "232/851 (27.26)",
+          "87/93 (93.55)",
+          "81/93 (87.10)",
+          "-6.45 [-15.45, +2.30]",
+          "-5.88 [-8.09, -3.67]"
+        ],
+        [
+          "40",
+          "358/851 (42.07)",
+          "349/851 (41.01)",
+          "92/93 (98.92)",
+          "89/93 (95.70)",
+          "-3.23 [-9.55, +2.26]",
+          "-1.06 [-3.59, +1.48]"
+        ],
+        [
+          "50",
+          "423/851 (49.71)",
+          "438/851 (51.47)",
+          "92/93 (98.92)",
+          "92/93 (98.92)",
+          "0.00 [-4.86, +4.86]",
+          "+1.76 [-1.15, +4.66]"
+        ]
+      ],
+      "notes": [
+        "Post hoc exploratory analysis; N=851; F=93. Count-cell percentages use the displayed denominator. pp, percentage points.",
+        "The development thresholds in Panel A are transferred without test-cohort recalibration. Therefore actual review fractions may differ from the target and between A and B.",
+        "Detection and review contrasts are paired within patients. Nominal two-sided 95% confidence intervals use the original paired Newcombe method 10 with its correction for positive association.",
+        "The presented confidence intervals are conditional on the observed calibration and selection, exclude calibration uncertainty and re-ranking bootstrap uncertainty, and have no multiplicity correction. They do not replace or modify the original H1–H3 analyses."
+      ],
+      "classification": "Post hoc exploratory",
+      "csv": "table_data/S10B.csv",
+      "column_widths_hint": [
+        0.5,
+        0.87,
+        0.87,
+        0.87,
+        0.87,
+        1.35,
+        1.35
+      ]
+    },
+    {
+      "id": "S10C",
+      "main_table_id": "S10",
+      "title": "Table S10 (continued). Panel C: BUS-BRA internal holdout: test-cohort equal review.",
+      "headers": [
+        "Target (%)",
+        "A reviews R/N (%)",
+        "B reviews R/N (%)",
+        "A detected TP/F (%)",
+        "B detected TP/F (%)",
+        "B−A detection, pp [95% CI]",
+        "B−A review, pp"
+      ],
+      "rows": [
+        [
+          "5",
+          "43/851 (5.05)",
+          "43/851 (5.05)",
+          "34/93 (36.56)",
+          "29/93 (31.18)",
+          "-5.38 [-14.57, +3.95]",
+          "0 (by design)"
+        ],
+        [
+          "10",
+          "85/851 (9.99)",
+          "85/851 (9.99)",
+          "49/93 (52.69)",
+          "50/93 (53.76)",
+          "+1.08 [-7.20, +9.32]",
+          "0 (by design)"
+        ],
+        [
+          "15",
+          "128/851 (15.04)",
+          "128/851 (15.04)",
+          "63/93 (67.74)",
+          "63/93 (67.74)",
+          "0.00 [-10.00, +10.00]",
+          "0 (by design)"
+        ],
+        [
+          "20",
+          "170/851 (19.98)",
+          "170/851 (19.98)",
+          "71/93 (76.34)",
+          "72/93 (77.42)",
+          "+1.08 [-9.27, +11.40]",
+          "0 (by design)"
+        ],
+        [
+          "25",
+          "213/851 (25.03)",
+          "213/851 (25.03)",
+          "81/93 (87.10)",
+          "78/93 (83.87)",
+          "-3.23 [-12.88, +6.39]",
+          "0 (by design)"
+        ],
+        [
+          "30",
+          "255/851 (29.96)",
+          "255/851 (29.96)",
+          "84/93 (90.32)",
+          "83/93 (89.25)",
+          "-1.08 [-9.94, +7.74]",
+          "0 (by design)"
+        ],
+        [
+          "40",
+          "340/851 (39.95)",
+          "340/851 (39.95)",
+          "92/93 (98.92)",
+          "89/93 (95.70)",
+          "-3.23 [-9.55, +2.26]",
+          "0 (by design)"
+        ],
+        [
+          "50",
+          "425/851 (49.94)",
+          "425/851 (49.94)",
+          "92/93 (98.92)",
+          "92/93 (98.92)",
+          "0.00 [-4.86, +4.86]",
+          "0 (by design)"
+        ]
+      ],
+      "notes": [
+        "Post hoc exploratory analysis; N=851; F=93. Count-cell percentages use the displayed denominator. pp, percentage points.",
+        "Each method selects the same K highest-risk cases within this test cohort. K is the nearest integer to target budget × N, with ties selecting fewer. Internal 50% therefore uses K=425. Ranking is risk descending, followed by the exact archived patient-identifier string; no test labels are used to select K. This is a cohort-relative ranking policy, not a portable threshold.",
+        "Detection contrasts are paired within patients. Their nominal two-sided 95% confidence intervals use the original paired Newcombe method 10 with its correction for positive association. Review volume is exactly K for both methods, so the policy-level B−A review-fraction difference is zero by design; no policy review-difference interval is presented. The archived conditional Newcombe calculations for individual paired review flags are retained in the unrounded source CSV, and are not interpreted as intervals for the equal-K policy review-volume difference.",
+        "The presented confidence intervals are conditional on the observed calibration and selection, exclude calibration uncertainty and re-ranking bootstrap uncertainty, and have no multiplicity correction. They do not replace or modify the original H1–H3 analyses."
+      ],
+      "classification": "Post hoc exploratory",
+      "csv": "table_data/S10C.csv",
+      "column_widths_hint": [
+        0.5,
+        0.87,
+        0.87,
+        0.87,
+        0.87,
+        1.35,
+        1.35
+      ]
+    },
+    {
+      "id": "S10D",
+      "main_table_id": "S10",
+      "title": "Table S10 (continued). Panel D: BrEaST external test: development-calibrated thresholds.",
+      "headers": [
+        "Target (%)",
+        "A reviews R/N (%)",
+        "B reviews R/N (%)",
+        "A detected TP/F (%)",
+        "B detected TP/F (%)",
+        "B−A detection, pp [95% CI]",
+        "B−A review, pp [95% CI]"
+      ],
+      "rows": [
+        [
+          "5",
+          "17/252 (6.75)",
+          "13/252 (5.16)",
+          "8/16 (50.00)",
+          "10/16 (62.50)",
+          "+12.50 [-12.93, +35.34]",
+          "-1.59 [-4.77, +1.38]"
+        ],
+        [
+          "10",
+          "24/252 (9.52)",
+          "23/252 (9.13)",
+          "9/16 (56.25)",
+          "12/16 (75.00)",
+          "+18.75 [-9.64, +43.30]",
+          "-0.40 [-3.91, +3.08]"
+        ],
+        [
+          "15",
+          "32/252 (12.70)",
+          "29/252 (11.51)",
+          "10/16 (62.50)",
+          "12/16 (75.00)",
+          "+12.50 [-13.65, +36.54]",
+          "-1.19 [-4.69, +2.23]"
+        ],
+        [
+          "20",
+          "35/252 (13.89)",
+          "33/252 (13.10)",
+          "10/16 (62.50)",
+          "13/16 (81.25)",
+          "+18.75 [-4.28, +40.04]",
+          "-0.79 [-4.18, +2.55]"
+        ],
+        [
+          "25",
+          "49/252 (19.44)",
+          "39/252 (15.48)",
+          "14/16 (87.50)",
+          "13/16 (81.25)",
+          "-6.25 [-31.61, +19.57]",
+          "-3.97 [-7.68, -0.41]"
+        ],
+        [
+          "30",
+          "64/252 (25.40)",
+          "46/252 (18.25)",
+          "14/16 (87.50)",
+          "13/16 (81.25)",
+          "-6.25 [-31.61, +19.57]",
+          "-7.14 [-11.62, -2.76]"
+        ],
+        [
+          "40",
+          "94/252 (37.30)",
+          "71/252 (28.17)",
+          "14/16 (87.50)",
+          "14/16 (87.50)",
+          "0.00 [-23.96, +23.96]",
+          "-9.13 [-14.35, -3.84]"
+        ],
+        [
+          "50",
+          "129/252 (51.19)",
+          "97/252 (38.49)",
+          "15/16 (93.75)",
+          "14/16 (87.50)",
+          "-6.25 [-28.81, +15.01]",
+          "-12.70 [-18.23, -6.99]"
+        ]
+      ],
+      "notes": [
+        "Post hoc exploratory analysis; N=252; F=16. Count-cell percentages use the displayed denominator. pp, percentage points.",
+        "The development thresholds in Panel A are transferred without test-cohort recalibration. Therefore actual review fractions may differ from the target and between A and B.",
+        "Detection and review contrasts are paired within patients. Nominal two-sided 95% confidence intervals use the original paired Newcombe method 10 with its correction for positive association.",
+        "The presented confidence intervals are conditional on the observed calibration and selection, exclude calibration uncertainty and re-ranking bootstrap uncertainty, and have no multiplicity correction. They do not replace or modify the original H1–H3 analyses."
+      ],
+      "classification": "Post hoc exploratory",
+      "csv": "table_data/S10D.csv",
+      "column_widths_hint": [
+        0.5,
+        0.87,
+        0.87,
+        0.87,
+        0.87,
+        1.35,
+        1.35
+      ]
+    },
+    {
+      "id": "S10E",
+      "main_table_id": "S10",
+      "title": "Table S10 (continued). Panel E: BrEaST external test: test-cohort equal review.",
+      "headers": [
+        "Target (%)",
+        "A reviews R/N (%)",
+        "B reviews R/N (%)",
+        "A detected TP/F (%)",
+        "B detected TP/F (%)",
+        "B−A detection, pp [95% CI]",
+        "B−A review, pp"
+      ],
+      "rows": [
+        [
+          "5",
+          "13/252 (5.16)",
+          "13/252 (5.16)",
+          "7/16 (43.75)",
+          "10/16 (62.50)",
+          "+18.75 [-9.16, +42.38]",
+          "0 (by design)"
+        ],
+        [
+          "10",
+          "25/252 (9.92)",
+          "25/252 (9.92)",
+          "9/16 (56.25)",
+          "12/16 (75.00)",
+          "+18.75 [-9.64, +43.30]",
+          "0 (by design)"
+        ],
+        [
+          "15",
+          "38/252 (15.08)",
+          "38/252 (15.08)",
+          "11/16 (68.75)",
+          "13/16 (81.25)",
+          "+12.50 [-8.31, +33.02]",
+          "0 (by design)"
+        ],
+        [
+          "20",
+          "50/252 (19.84)",
+          "50/252 (19.84)",
+          "14/16 (87.50)",
+          "13/16 (81.25)",
+          "-6.25 [-31.61, +19.57]",
+          "0 (by design)"
+        ],
+        [
+          "25",
+          "63/252 (25.00)",
+          "63/252 (25.00)",
+          "14/16 (87.50)",
+          "14/16 (87.50)",
+          "0.00 [-23.96, +23.96]",
+          "0 (by design)"
+        ],
+        [
+          "30",
+          "76/252 (30.16)",
+          "76/252 (30.16)",
+          "14/16 (87.50)",
+          "14/16 (87.50)",
+          "0.00 [-23.96, +23.96]",
+          "0 (by design)"
+        ],
+        [
+          "40",
+          "101/252 (40.08)",
+          "101/252 (40.08)",
+          "14/16 (87.50)",
+          "14/16 (87.50)",
+          "0.00 [-23.96, +23.96]",
+          "0 (by design)"
+        ],
+        [
+          "50",
+          "126/252 (50.00)",
+          "126/252 (50.00)",
+          "15/16 (93.75)",
+          "15/16 (93.75)",
+          "0.00 [-20.20, +20.20]",
+          "0 (by design)"
+        ]
+      ],
+      "notes": [
+        "Post hoc exploratory analysis; N=252; F=16. Count-cell percentages use the displayed denominator. pp, percentage points.",
+        "Each method selects the same K highest-risk cases within this test cohort. K is the nearest integer to target budget × N, with ties selecting fewer. External 50% therefore uses K=126. Ranking is risk descending, followed by the exact archived patient-identifier string; no test labels are used to select K. This is a cohort-relative ranking policy, not a portable threshold.",
+        "Detection contrasts are paired within patients. Their nominal two-sided 95% confidence intervals use the original paired Newcombe method 10 with its correction for positive association. Review volume is exactly K for both methods, so the policy-level B−A review-fraction difference is zero by design; no policy review-difference interval is presented. The archived conditional Newcombe calculations for individual paired review flags are retained in the unrounded source CSV, and are not interpreted as intervals for the equal-K policy review-volume difference.",
+        "The presented confidence intervals are conditional on the observed calibration and selection, exclude calibration uncertainty and re-ranking bootstrap uncertainty, and have no multiplicity correction. They do not replace or modify the original H1–H3 analyses."
+      ],
+      "classification": "Post hoc exploratory",
+      "csv": "table_data/S10E.csv",
+      "column_widths_hint": [
+        0.5,
+        0.87,
+        0.87,
+        0.87,
+        0.87,
+        1.35,
+        1.35
+      ]
+    },
+    {
+      "id": "S11A",
+      "main_table_id": "S11",
+      "title": "Table S11. Post hoc three-route bootstrap sensitivity. Panel A: endpoint intervals.",
+      "headers": [
+        "Route",
+        "Endpoint",
+        "Observed (pp)",
+        "Bootstrap median (pp)",
+        "Nominal percentile 95% interval (pp)",
+        "Valid n"
+      ],
+      "rows": [
+        [
+          "R1",
+          "H1: A detection, external−internal",
+          "-13.84",
+          "-13.74",
+          "[-40.16, +11.82]",
+          "10000"
+        ],
+        [
+          "R1",
+          "H2: A review, external−internal",
+          "-6.56",
+          "-6.51",
+          "[-11.54, -1.31]",
+          "10000"
+        ],
+        [
+          "R1",
+          "External B−A detection, threshold",
+          "+18.75",
+          "+18.18",
+          "[0.00, +40.00]",
+          "10000"
+        ],
+        [
+          "R1",
+          "External B−A detection, equal K=50",
+          "-6.25",
+          "0.00",
+          "[-25.00, +21.43]",
+          "10000"
+        ],
+        [
+          "R2",
+          "H1: A detection, external−internal",
+          "-13.84",
+          "-13.84",
+          "[-15.99, -2.82]",
+          "10000"
+        ],
+        [
+          "R2",
+          "H2: A review, external−internal",
+          "-6.56",
+          "-6.56",
+          "[-9.02, -5.82]",
+          "10000"
+        ],
+        [
+          "R2",
+          "External B−A detection, threshold",
+          "+18.75",
+          "+18.75",
+          "[-6.25, +18.75]",
+          "10000"
+        ],
+        [
+          "R2",
+          "External B−A detection, equal K=50",
+          "-6.25",
+          "-6.25",
+          "[-6.25, -6.25]",
+          "10000"
+        ],
+        [
+          "R3",
+          "H1: A detection, external−internal",
+          "-13.84",
+          "-12.12",
+          "[-39.03, +11.71]",
+          "10000"
+        ],
+        [
+          "R3",
+          "H2: A review, external−internal",
+          "-6.56",
+          "-7.04",
+          "[-12.70, -1.55]",
+          "10000"
+        ],
+        [
+          "R3",
+          "External B−A detection, threshold",
+          "+18.75",
+          "+14.29",
+          "[-13.33, +37.50]",
+          "10000"
+        ],
+        [
+          "R3",
+          "External B−A detection, equal K=50",
+          "-6.25",
+          "0.00",
+          "[-25.00, +21.43]",
+          "10000"
+        ]
+      ],
+      "notes": [
+        "Post hoc exploratory patient bootstrap: 10,000 replicates per route; seed 20261106; NumPy PCG64. Values are percentage points. Intervals are nominal, unadjusted 2.5th–97.5th percentile intervals over valid replicates, using linear quantiles. All 12 endpoints have 10,000 valid replicates and zero NA replicates.",
+        "R1: test-cohort patient sampling at the locked development cutoffs; conditional on the observed development calibration. R2: development-patient resampling with recalibration to approximately 20% review, evaluated on the unchanged test cohorts; conditional on those observed test cohorts. R3: full development-plus-test patient resampling, combining calibration variability and test-sampling variability within the observed empirical cohorts. A/B risks and quality stay paired within each sampled patient.",
+        "In R2, the equal-K=50 endpoint is necessarily constant because the test cohort and its risk ranking remain fixed; its degenerate interval is not evidence of population certainty. R1 and R3 share test draws, while R2 and R3 share development draws.",
+        "Every sampled draw is retained, including repeat draws of the same patient; these repetitions are not independent new cases. Equal review selects exactly 50 draw records by descending risk, original identifier string, then replica index. Calibration keeps all risk ties together and chooses fewer reviews when equally close; zero-denominator detection is NA without imputation.",
+        "The observed external low-quality paired table has both=10, A-only=0, B-only=3, neither=3. R1 cannot generate an A-only detection from this empirical support, so its threshold B−A contrast is structurally nonnegative. Its [0.00, +40.00] pp percentile interval does not exclude a population advantage for A.",
+        "These descriptive percentile intervals supplement, and do not replace, the original paired Newcombe intervals. The original external threshold B−A interval remains [−4.28, +40.04] pp. Empirical sign and reversal fractions are neither p-values nor posterior probabilities, and do not establish superiority or equivalence."
+      ],
+      "classification": "Post hoc exploratory",
+      "csv": "table_data/S11A.csv",
+      "column_widths_hint": [
+        0.4,
+        2.25,
+        0.75,
+        0.9,
+        1.45,
+        0.5
+      ]
+    },
+    {
+      "id": "S11B",
+      "main_table_id": "S11",
+      "title": "Table S11 (continued). Panel B: joint direction matrix for the external B−A detection contrasts.",
+      "headers": [
+        "Route",
+        "Threshold B−A sign",
+        "Equal K=50 B−A <0, n (%)",
+        "Equal K=50 B−A =0, n (%)",
+        "Equal K=50 B−A >0, n (%)"
+      ],
+      "rows": [
+        [
+          "R1",
+          "<0",
+          "0 (0.00)",
+          "0 (0.00)",
+          "0 (0.00)"
+        ],
+        [
+          "R1",
+          "=0",
+          "343 (3.43)",
+          "126 (1.26)",
+          "0 (0.00)"
+        ],
+        [
+          "R1",
+          ">0",
+          "3961 (39.61)",
+          "2050 (20.50)",
+          "3520 (35.20)"
+        ],
+        [
+          "R2",
+          "<0",
+          "525 (5.25)",
+          "0 (0.00)",
+          "0 (0.00)"
+        ],
+        [
+          "R2",
+          "=0",
+          "435 (4.35)",
+          "0 (0.00)",
+          "0 (0.00)"
+        ],
+        [
+          "R2",
+          ">0",
+          "9040 (90.40)",
+          "0 (0.00)",
+          "0 (0.00)"
+        ],
+        [
+          "R3",
+          "<0",
+          "668 (6.68)",
+          "102 (1.02)",
+          "90 (0.90)"
+        ],
+        [
+          "R3",
+          "=0",
+          "542 (5.42)",
+          "364 (3.64)",
+          "90 (0.90)"
+        ],
+        [
+          "R3",
+          ">0",
+          "3094 (30.94)",
+          "1710 (17.10)",
+          "3340 (33.40)"
+        ]
+      ],
+      "notes": [
+        "Post hoc exploratory bootstrap. Rows show the sign of the threshold contrast; columns show the sign of the equal-review contrast. Each cell is a count and percentage of 10,000 jointly valid paired replicates. Route definitions and empirical-support caveats are given in Panel A. Strict reversal requires opposite nonzero signs; ties are reported separately.",
+        "R1: observed-direction reversal (+,−), 3961 (39.61%); opposite reversal (−,+), 0 (0.00%); any strict reversal, 3961 (39.61%); either contrast tied, 2519 (25.19%).",
+        "R2: observed-direction reversal (+,−), 9040 (90.40%); opposite reversal (−,+), 0 (0.00%); any strict reversal, 9040 (90.40%); either contrast tied, 435 (4.35%).",
+        "R3: observed-direction reversal (+,−), 3094 (30.94%); opposite reversal (−,+), 90 (0.90%); any strict reversal, 3184 (31.84%); either contrast tied, 2808 (28.08%)."
+      ],
+      "classification": "Post hoc exploratory",
+      "csv": "table_data/S11B.csv",
+      "column_widths_hint": [
+        0.45,
+        1.05,
+        1.65,
+        1.65,
+        1.65
+      ]
+    },
+    {
+      "id": "S12",
+      "main_table_id": "S12",
+      "title": "Table S12. Post hoc diagnostic-stratum symmetric Kitagawa decomposition of external-minus-internal differences.",
+      "headers": [
+        "Method: outcome",
+        "Overall difference, pp [95% interval]",
+        "Composition-associated term, pp [95% interval]",
+        "Within-stratum term, pp [95% interval]",
+        "Valid overall n",
+        "Valid component n"
+      ],
+      "rows": [
+        [
+          "A: Detection",
+          "-13.84 [-40.85, +11.40]",
+          "-1.62 [-10.89, +5.73]",
+          "-12.23 [-39.94, +14.30]",
+          "5000",
+          "4999"
+        ],
+        [
+          "A: Review fraction",
+          "-6.56 [-11.54, -1.31]",
+          "+0.64 [-0.01, +1.54]",
+          "-7.20 [-12.15, -2.08]",
+          "5000",
+          "5000"
+        ],
+        [
+          "B: Detection",
+          "+8.13 [-15.09, +28.18]",
+          "-0.78 [-6.43, +3.62]",
+          "+8.91 [-14.32, +28.70]",
+          "5000",
+          "4999"
+        ],
+        [
+          "B: Review fraction",
+          "-4.53 [-9.31, +0.41]",
+          "+0.79 [-0.01, +1.80]",
+          "-5.32 [-10.03, -0.56]",
+          "5000",
+          "5000"
+        ]
+      ],
+      "notes": [
+        "Post hoc descriptive accounting at the locked 20%-development-budget thresholds (A=0.13705134391784668; B=0.06972856653991777), without recalibration. Direction is external minus internal. Strata are dataset-reported benign and malignant diagnoses; not every diagnosis was histopathologically confirmed.",
+        "Symmetric Kitagawa identity: overall difference = Σ[(wE−wI)(pE+pI)/2] + Σ[(pE−pI)(wE+wI)/2]. Detection weights are the diagnostic proportions among low-quality cases; review weights are the diagnostic proportions among all patients. The first sum is composition-associated and the second is the within-stratum term. Weights are recomputed in every draw.",
+        "Intervals are nominal, unadjusted descriptive percentile 95% intervals from 5,000 independent within-cohort patient bootstrap replicates (seed 20261107; NumPy PCG64; linear finite-value quantiles); A/B, quality and diagnosis remain paired. Duplicate draws are repeated observations of existing patients, not new cases.",
+        "Overall detection differences have 5,000 valid replicates. One draw has no external benign low-quality case, making its detection stratum rate undefined; the NA propagates to both detection components, leaving 4,999 valid component replicates. Review-fraction components and overall differences have 5,000 valid replicates. Undefined rates are not imputed even when their stratum weight is zero.",
+        "Two diagnostic strata cannot remove device, acquisition, annotation or other confounding. This decomposition is not a causal attribution and no percent-explained claim is made. Percentile intervals supplement the original H1–H3 Newcombe intervals; crossing zero does not demonstrate equivalence."
+      ],
+      "classification": "Post hoc exploratory",
+      "csv": "table_data/S12.csv",
+      "column_widths_hint": [
+        1.0,
+        1.45,
+        1.45,
+        1.45,
+        0.55,
+        0.55
+      ]
+    },
+    {
+      "id": "S13A",
+      "main_table_id": "S13",
+      "title": "Table S13. Post hoc six-case targeted CPU replay. Panel A: reference Dice and saved-mask checks.",
+      "headers": [
+        "Case",
+        "Archived Dice",
+        "CPU replay Dice",
+        "Replay−archive Dice",
+        "Low quality (archive→CPU)",
+        "Nonempty masks"
+      ],
+      "rows": [
+        [
+          "case089",
+          "0.319057",
+          "0.319100",
+          "+0.00004325",
+          "1→1",
+          "5/5"
+        ],
+        [
+          "case175",
+          "0.029287",
+          "0.029287",
+          "+0.00000000",
+          "1→1",
+          "5/5"
+        ],
+        [
+          "case238",
+          "0.681270",
+          "0.681270",
+          "+0.00000000",
+          "1→1",
+          "5/5"
+        ],
+        [
+          "case024",
+          "0.685173",
+          "0.685139",
+          "-0.00003433",
+          "1→1",
+          "5/5"
+        ],
+        [
+          "case105",
+          "0.654572",
+          "0.654579",
+          "+0.00000657",
+          "1→1",
+          "5/5"
+        ],
+        [
+          "case222",
+          "0.578368",
+          "0.578465",
+          "+0.00009611",
+          "1→1",
+          "5/5"
+        ]
+      ],
+      "notes": [
+        "Post hoc targeted CPU replay of the six archived external low-quality cases missed by A: case089, case175 and case238 were missed by both methods; case024, case105 and case222 were detected only by B. The same six patients are replayed; this is not an independent validation cohort or a full-cohort rerun.",
+        "Low quality is reference Dice <0.70. Five predicted masks were saved per case (initial, left, right, up, down); all 30/30 are nonempty. Mask nonemptiness does not establish segmentation adequacy.",
+        "Reference Dice and risks were independently recomputed directly from the saved NPZ arrays and agree exactly with the replay receipt. Displayed values are rounded; unrounded case data and all 48 numerical comparisons are supplied as CSV.",
+        "Replay used CPU inference with the archived model checkpoint and frozen prompt geometry. The result checks numerical and decision reproducibility for these selected cases only; it is not a clinical-validity assessment."
+      ],
+      "classification": "Post hoc exploratory",
+      "csv": "table_data/S13A.csv",
+      "column_widths_hint": [
+        0.65,
+        0.95,
+        0.95,
+        1.25,
+        1.45,
+        0.9
+      ]
+    },
+    {
+      "id": "S13B",
+      "main_table_id": "S13",
+      "title": "Table S13 (continued). Panel B: archived and replayed risks and review decisions.",
+      "headers": [
+        "Case",
+        "A risk (archive→CPU)",
+        "B risk (archive→CPU)",
+        "A review (archive→CPU)",
+        "B review (archive→CPU)",
+        "Maximum |Δ| across 8 fields"
+      ],
+      "rows": [
+        [
+          "case089",
+          "0.104072→0.104081",
+          "0.041041→0.041228",
+          "0→0",
+          "0→0",
+          "0.00038020"
+        ],
+        [
+          "case175",
+          "0.114944→0.114942",
+          "0.020059→0.020035",
+          "0→0",
+          "0→0",
+          "0.00022896"
+        ],
+        [
+          "case238",
+          "0.038909→0.038918",
+          "0.005766→0.005717",
+          "0→0",
+          "0→0",
+          "0.00009787"
+        ],
+        [
+          "case024",
+          "0.054510→0.054525",
+          "0.109995→0.110088",
+          "0→0",
+          "1→1",
+          "0.00021737"
+        ],
+        [
+          "case105",
+          "0.102471→0.102474",
+          "0.259671→0.260030",
+          "0→0",
+          "1→1",
+          "0.00143543"
+        ],
+        [
+          "case222",
+          "0.126987→0.127033",
+          "0.201743→0.201734",
+          "0→0",
+          "1→1",
+          "0.00009611"
+        ]
+      ],
+      "notes": [
+        "Post hoc exploratory replay; A is 1 minus the initial SAM predicted IoU, and B is 1 minus mean Dice consistency between the initial mask and four shifted-prompt masks. Review=1 when risk is greater than or equal to the locked threshold: A=0.13705134391784668 and B=0.06972856653991777. The archived and replayed A/B review decisions agree in 12/12 comparisons; all six low-quality labels agree.",
+        "Eight numerical fields per case are reference Dice, initial predicted IoU, risk A, risk B and the four prompt-shift Dice values. Of 48 comparisons, 6 are exactly equal and 42 differ numerically. Maximum |Δ| across all fields is 0.0014354348103014225 (case105, left-shift Dice). Maximum |Δ| in reference Dice is 0.00009610643066648716 (case222); risk A, 0.00004601478576660156 (case222); risk B, 0.0003589758947518673 (case105). Numerical replay is therefore not bitwise identical.",
+        "These selected cases provide a reproducibility check for the saved predictions and fixed decisions, not additional patients or evidence of a performance improvement."
+      ],
+      "classification": "Post hoc exploratory",
+      "csv": "table_data/S13B.csv",
+      "column_widths_hint": [
+        0.65,
+        1.5,
+        1.5,
+        1.05,
+        1.05,
+        1.0
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "experiments/cloud_validation_v1/results/budget_transfer/calibration.csv",
+      "sha256": "c360231b9ae7972799c957b9ff0564028158686063bd2fdca2cd957ba5033dfb"
+    },
+    {
+      "path": "experiments/cloud_validation_v1/results/budget_transfer/performance.csv",
+      "sha256": "2b35e41866b99745e3749c9016afea560a39f0eddbda4c0eff316d63df549200"
+    },
+    {
+      "path": "experiments/cloud_validation_v1/results/budget_transfer/paired_contrasts.csv",
+      "sha256": "dab3a8e53fd6e58a7ad07114b27928a87c9abfec91afbc827ef63f5e9b7a3c93"
+    },
+    {
+      "path": "experiments/cloud_validation_v1/results/budget_transfer/results.json",
+      "sha256": "be2b05ce7276a9c79287b23b47672f609d106f5420c86455831a636169eb9b3b"
+    },
+    {
+      "path": "experiments/cloud_validation_v1/results/bootstrap_stability/summary.json",
+      "sha256": "050c69a00dcd3709bec88f0182c0ce5229a078dbd9f0838167173f2ed3313446"
+    },
+    {
+      "path": "experiments/cloud_validation_v1/results/bootstrap_stability/iterations.csv.gz",
+      "sha256": "57f3ae97cac132b971734378dadd5da1789587482d7f4bec1049894e6160f7dd"
+    },
+    {
+      "path": "experiments/cloud_validation_v1/results/case_mix_decomposition.csv",
+      "sha256": "22447517ddb96381d48ba8518695032c2c4c3839dcaee92a02325eb1f50484f0"
+    },
+    {
+      "path": "experiments/cloud_validation_v1/results/case_mix_decomposition.json",
+      "sha256": "92e3ccd9d761117c25089a01c61c40f23674cf70b05a8e221cebbc29524e5543"
+    },
+    {
+      "path": "experiments/cloud_validation_v1/results/case_mix_decomposition_bootstrap.csv.gz",
+      "sha256": "cda6f6cf2d07ea2272f888caa212ba16182c22d37a9dc39c3ff822401da05584"
+    },
+    {
+      "path": "experiments/six_case_replay_v1/reports/six_case_summary.csv",
+      "sha256": "2179d77ef34ff288545e046353f5d700d00b28f2beb1fab041cadf0c6e185b2a"
+    },
+    {
+      "path": "experiments/six_case_replay_v1/reports/all_48_numeric_comparisons.csv",
+      "sha256": "af2c82c53c71420efd597ca19f29f324d04e102ef0732d7cb997ee13d15c9ad3"
+    },
+    {
+      "path": "experiments/six_case_replay_v1/predictions/targeted_rerun_receipt.json",
+      "sha256": "5403390674fb4f549f7bb695f39551823f988521a551a99b409613eb5d750981"
+    },
+    {
+      "path": "experiments/six_case_replay_v1/qa/postrun_review.json",
+      "sha256": "b3cd2f8fb2d1c5a25a6f67fd905288c4dafe842d33918ebd4968ee381ab39ce6"
+    },
+    {
+      "path": "experiments/six_case_replay_v1/runtime_resource.json",
+      "sha256": "1af0dec577d58aff4bcc65431758e47d7b78aa201336feeaa8f369767c894f40"
+    },
+    {
+      "path": "experiments/six_case_replay_v1/predictions/case024_targeted_rerun.npz",
+      "sha256": "5ba9ca812255cd357232865f434cd2f1b8f287ce266c46bf23e3609d35d0b748"
+    },
+    {
+      "path": "experiments/six_case_replay_v1/predictions/case089_targeted_rerun.npz",
+      "sha256": "4fd0f1a7b3167eaf99ea5d7e2543186ee457d073e66ef76618f306180be84f51"
+    },
+    {
+      "path": "experiments/six_case_replay_v1/predictions/case105_targeted_rerun.npz",
+      "sha256": "8c83a723f77528bc9257eb86d18c9cc68ef6d7a43da4a061e81c775c1dce9a72"
+    },
+    {
+      "path": "experiments/six_case_replay_v1/predictions/case175_targeted_rerun.npz",
+      "sha256": "4eed039771a9bb640c712ecdae7b3b79896a4909eb69b5c840123714385e549e"
+    },
+    {
+      "path": "experiments/six_case_replay_v1/predictions/case222_targeted_rerun.npz",
+      "sha256": "457105cca958c3f386fa2b9969057e443b324cc51b30addaf3273a09ba32e0f9"
+    },
+    {
+      "path": "experiments/six_case_replay_v1/predictions/case238_targeted_rerun.npz",
+      "sha256": "e692e958d61e11b92c7b38c0569eb8a2aafd16d8b34af49be56a0259fe6b12e3"
+    }
+  ],
+  "numeric_verification": "new_tables_numeric_verification.json"
+}

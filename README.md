@@ -10,7 +10,15 @@
 
 每位纳入患者固定使用一张图及对应参考掩膜。正式验证共 1,103 例。40 例预实验来自开发集。评分和复核均在回顾性模拟中进行。
 
-## 最新修订：v8 作者审阅版
+## 当前版本：v8 作者批准提交材料
+
+[主稿 Word](submission/bmt_v8_final/BMT_main_manuscript_v8.docx) · [主稿 PDF](submission/bmt_v8_final/BMT_main_manuscript_v8_preview.pdf) · [补充 Word](submission/bmt_v8_final/BMT_supplementary_material_v4.docx) · [官方声明](submission/bmt_v8_final/BMT_Ethical_and_Legal_Declarations_v8.docx) · [投稿信](submission/bmt_v8_final/BMT_cover_letter_v8.docx) · [提交文件 ZIP](submission/BMT_v8_submission_files.zip) · [上传清单](submission/bmt_v8_final/UPLOAD_FILE_MAP.md)
+
+作者明确确认最终v8批准、推荐审稿人无利益冲突及论文原创、无其他期刊投稿。主稿和官方声明已填入完整批准提交句，投稿信披露GitHub公开稿，7处审稿人待确认标记及正式文件的草稿状态已清理。27项独立检查通过；科学正文、所有数值、19个图件及11个嵌入媒体均保持。期刊投稿尚未执行。
+
+提交ZIP仅包括论文上传所需文稿、主图及具名CSV，不含内部Audit/历史记录；完整溯源见bmt_v8_final目录。此前各审阅版本保留，下方旧版“待确认”描述属于批准前历史，当前以本节和[最终状态](submission/bmt_v8_final/BMT_pre_submission_final_status_zh.md)为准。
+
+## v8 作者审阅记录（批准前）
 
 [主稿 Word](submission/bmt_v8/BMT_main_manuscript_v8.docx) · [主稿 PDF](submission/bmt_v8/BMT_main_manuscript_v8_preview.pdf) · [补充材料 Word](submission/bmt_v8/BMT_supplementary_material_v4.docx) · [补充 PDF](submission/bmt_v8/BMT_supplementary_material_v4_preview.pdf) · [文稿及分析 ZIP](submission/BMT_documents_and_analysis_v8.zip) · [生产图 ZIP](submission/BMT_production_figures_v8.zip) · [修订说明](submission/bmt_v8/BMT_revision_report_v8_zh.md)
 
@@ -18,7 +26,7 @@ v8围绕固定阈值迁移与等复核量排序的部署含义重写标题、摘
 
 新增表139项数值核验与独立稿件审查通过；图按出版宽重排为600dpi、文字至少7.2pt。等复核量的复核差按设计为0，不将归档条件二元标志区间当作政策差区间。作者地址邮编400016沿用确认信息。本版是新的作者审阅稿，保留v7既有批准记录，不将其表述为已重新批准v8，未执行期刊投稿。
 
-提交前检查已补齐S7引用的CSV附件；[检查报告](submission/bmt_v8/BMT_pre_submission_review_zh.md)列明最终v8批准、原创/投稿状态及推荐审稿人关系三类作者事实，当前未代为确认。
+批准前检查已补齐S7引用的CSV附件，并记录当时的三类作者事项；作者随后已明确确认，当前状态见上方批准版。
 
 ## 六例真实预测轮廓：已完成
 

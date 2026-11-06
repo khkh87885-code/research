@@ -1,0 +1,332 @@
+{
+  "summary": {
+    "BMT_Ethical_and_Legal_Declarations_v8_review.pdf": {
+      "pages": 3,
+      "out_of_page_words": 0,
+      "blank_pages": []
+    },
+    "BMT_cover_letter_v8_review.pdf": {
+      "pages": 1,
+      "out_of_page_words": 0,
+      "blank_pages": []
+    },
+    "BMT_data_and_code_availability_v8.pdf": {
+      "pages": 1,
+      "out_of_page_words": 0,
+      "blank_pages": []
+    },
+    "BMT_main_manuscript_v8.pdf": {
+      "pages": 14,
+      "out_of_page_words": 0,
+      "blank_pages": []
+    },
+    "BMT_reviewer_candidates.pdf": {
+      "pages": 3,
+      "out_of_page_words": 0,
+      "blank_pages": []
+    },
+    "BMT_revision_report_v8_zh.pdf": {
+      "pages": 2,
+      "out_of_page_words": 0,
+      "blank_pages": []
+    },
+    "BMT_submission_checklist_v8.pdf": {
+      "pages": 1,
+      "out_of_page_words": 0,
+      "blank_pages": []
+    },
+    "BMT_supplementary_material_v4.pdf": {
+      "pages": 21,
+      "out_of_page_words": 0,
+      "blank_pages": []
+    }
+  },
+  "files": [
+    {
+      "file": "BMT_Ethical_and_Legal_Declarations_v8_review.pdf",
+      "pages": 3,
+      "sha256": "074a16f980b003d33f03e8d08ae6e17674ed2229a582ca3886dc49fb3058c82a",
+      "page_checks": [
+        {
+          "page": 1,
+          "characters": 3127,
+          "out_of_page_words": []
+        },
+        {
+          "page": 2,
+          "characters": 2587,
+          "out_of_page_words": []
+        },
+        {
+          "page": 3,
+          "characters": 1440,
+          "out_of_page_words": []
+        }
+      ]
+    },
+    {
+      "file": "BMT_cover_letter_v8_review.pdf",
+      "pages": 1,
+      "sha256": "436a0825cae631cfaa872064d884130b0c688c9cdb4f7ba03974f02cc9912b64",
+      "page_checks": [
+        {
+          "page": 1,
+          "characters": 2588,
+          "out_of_page_words": []
+        }
+      ]
+    },
+    {
+      "file": "BMT_data_and_code_availability_v8.pdf",
+      "pages": 1,
+      "sha256": "b666ab186ca2890436b533e15a65db714a668ec91294b96455961f9c0bee0b2c",
+      "page_checks": [
+        {
+          "page": 1,
+          "characters": 1874,
+          "out_of_page_words": []
+        }
+      ]
+    },
+    {
+      "file": "BMT_main_manuscript_v8.pdf",
+      "pages": 14,
+      "sha256": "b2825226bf3a2d63d8048a8d035a92a9ce1d98016e2ebd4f483029acf0371ad2",
+      "page_checks": [
+        {
+          "page": 1,
+          "characters": 743,
+          "out_of_page_words": []
+        },
+        {
+          "page": 2,
+          "characters": 1487,
+          "out_of_page_words": []
+        },
+        {
+          "page": 3,
+          "characters": 3336,
+          "out_of_page_words": []
+        },
+        {
+          "page": 4,
+          "characters": 3371,
+          "out_of_page_words": []
+        },
+        {
+          "page": 5,
+          "characters": 3622,
+          "out_of_page_words": []
+        },
+        {
+          "page": 6,
+          "characters": 3349,
+          "out_of_page_words": []
+        },
+        {
+          "page": 7,
+          "characters": 3062,
+          "out_of_page_words": []
+        },
+        {
+          "page": 8,
+          "characters": 3272,
+          "out_of_page_words": []
+        },
+        {
+          "page": 9,
+          "characters": 3525,
+          "out_of_page_words": []
+        },
+        {
+          "page": 10,
+          "characters": 3539,
+          "out_of_page_words": []
+        },
+        {
+          "page": 11,
+          "characters": 3363,
+          "out_of_page_words": []
+        },
+        {
+          "page": 12,
+          "characters": 2328,
+          "out_of_page_words": []
+        },
+        {
+          "page": 13,
+          "characters": 1754,
+          "out_of_page_words": []
+        },
+        {
+          "page": 14,
+          "characters": 2577,
+          "out_of_page_words": []
+        }
+      ]
+    },
+    {
+      "file": "BMT_reviewer_candidates.pdf",
+      "pages": 3,
+      "sha256": "14c38152863d30816c161de663769a868ae337580f61150abab5112aa44ce1ea",
+      "page_checks": [
+        {
+          "page": 1,
+          "characters": 2260,
+          "out_of_page_words": []
+        },
+        {
+          "page": 2,
+          "characters": 1964,
+          "out_of_page_words": []
+        },
+        {
+          "page": 3,
+          "characters": 3189,
+          "out_of_page_words": []
+        }
+      ]
+    },
+    {
+      "file": "BMT_revision_report_v8_zh.pdf",
+      "pages": 2,
+      "sha256": "1472f2dcaf3a32963c8c026a83551e986d3dff0a051daa6b3630f4e56e3f0107",
+      "page_checks": [
+        {
+          "page": 1,
+          "characters": 1030,
+          "out_of_page_words": []
+        },
+        {
+          "page": 2,
+          "characters": 398,
+          "out_of_page_words": []
+        }
+      ]
+    },
+    {
+      "file": "BMT_submission_checklist_v8.pdf",
+      "pages": 1,
+      "sha256": "b75174c2f768a1699f90132fefa7c3536cdacecb5553ce4bf83e736303bb7a1b",
+      "page_checks": [
+        {
+          "page": 1,
+          "characters": 472,
+          "out_of_page_words": []
+        }
+      ]
+    },
+    {
+      "file": "BMT_supplementary_material_v4.pdf",
+      "pages": 21,
+      "sha256": "052c54a00360d4329291f020b672caeea0aef0781cddd3a79a0d6777bf1f53fe",
+      "page_checks": [
+        {
+          "page": 1,
+          "characters": 2097,
+          "out_of_page_words": []
+        },
+        {
+          "page": 2,
+          "characters": 1440,
+          "out_of_page_words": []
+        },
+        {
+          "page": 3,
+          "characters": 1909,
+          "out_of_page_words": []
+        },
+        {
+          "page": 4,
+          "characters": 2559,
+          "out_of_page_words": []
+        },
+        {
+          "page": 5,
+          "characters": 2209,
+          "out_of_page_words": []
+        },
+        {
+          "page": 6,
+          "characters": 1637,
+          "out_of_page_words": []
+        },
+        {
+          "page": 7,
+          "characters": 1606,
+          "out_of_page_words": []
+        },
+        {
+          "page": 8,
+          "characters": 1887,
+          "out_of_page_words": []
+        },
+        {
+          "page": 9,
+          "characters": 2384,
+          "out_of_page_words": []
+        },
+        {
+          "page": 10,
+          "characters": 1880,
+          "out_of_page_words": []
+        },
+        {
+          "page": 11,
+          "characters": 2379,
+          "out_of_page_words": []
+        },
+        {
+          "page": 12,
+          "characters": 3181,
+          "out_of_page_words": []
+        },
+        {
+          "page": 13,
+          "characters": 1450,
+          "out_of_page_words": []
+        },
+        {
+          "page": 14,
+          "characters": 2760,
+          "out_of_page_words": []
+        },
+        {
+          "page": 15,
+          "characters": 1951,
+          "out_of_page_words": []
+        },
+        {
+          "page": 16,
+          "characters": 1677,
+          "out_of_page_words": []
+        },
+        {
+          "page": 17,
+          "characters": 706,
+          "out_of_page_words": []
+        },
+        {
+          "page": 18,
+          "characters": 993,
+          "out_of_page_words": []
+        },
+        {
+          "page": 19,
+          "characters": 857,
+          "out_of_page_words": []
+        },
+        {
+          "page": 20,
+          "characters": 738,
+          "out_of_page_words": []
+        },
+        {
+          "page": 21,
+          "characters": 652,
+          "out_of_page_words": []
+        }
+      ]
+    }
+  ]
+}

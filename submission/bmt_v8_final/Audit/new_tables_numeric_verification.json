@@ -1,0 +1,825 @@
+{
+  "status": "passed",
+  "created_utc": "2026-11-06T10:33:22.023781+00:00",
+  "table_count": 10,
+  "main_table_count": 4,
+  "checks": [
+    {
+      "check": "S10 complete scan dimensions",
+      "passed": true,
+      "detail": {
+        "calibration": 16,
+        "performance": 64,
+        "paired": 32,
+        "budgets": [
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.4,
+          0.5
+        ]
+      }
+    },
+    {
+      "check": "S10 CSV vs JSON calibration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 CSV vs JSON performance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.05, 'internal_holdout', 'development_calibrated_threshold') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.05, 'internal_holdout', 'development_calibrated_threshold') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.05, 'internal_holdout', 'test_cohort_equal_review') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.05, 'internal_holdout', 'test_cohort_equal_review') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.05, 'external_test', 'development_calibrated_threshold') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.05, 'external_test', 'development_calibrated_threshold') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.05, 'external_test', 'test_cohort_equal_review') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.05, 'external_test', 'test_cohort_equal_review') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.1, 'internal_holdout', 'development_calibrated_threshold') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.1, 'internal_holdout', 'development_calibrated_threshold') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.1, 'internal_holdout', 'test_cohort_equal_review') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.1, 'internal_holdout', 'test_cohort_equal_review') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.1, 'external_test', 'development_calibrated_threshold') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.1, 'external_test', 'development_calibrated_threshold') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.1, 'external_test', 'test_cohort_equal_review') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.1, 'external_test', 'test_cohort_equal_review') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.15, 'internal_holdout', 'development_calibrated_threshold') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.15, 'internal_holdout', 'development_calibrated_threshold') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.15, 'internal_holdout', 'test_cohort_equal_review') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.15, 'internal_holdout', 'test_cohort_equal_review') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.15, 'external_test', 'development_calibrated_threshold') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.15, 'external_test', 'development_calibrated_threshold') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.15, 'external_test', 'test_cohort_equal_review') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.15, 'external_test', 'test_cohort_equal_review') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.2, 'internal_holdout', 'development_calibrated_threshold') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.2, 'internal_holdout', 'development_calibrated_threshold') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.2, 'internal_holdout', 'test_cohort_equal_review') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.2, 'internal_holdout', 'test_cohort_equal_review') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.2, 'external_test', 'development_calibrated_threshold') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.2, 'external_test', 'development_calibrated_threshold') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.2, 'external_test', 'test_cohort_equal_review') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.2, 'external_test', 'test_cohort_equal_review') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.25, 'internal_holdout', 'development_calibrated_threshold') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.25, 'internal_holdout', 'development_calibrated_threshold') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.25, 'internal_holdout', 'test_cohort_equal_review') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.25, 'internal_holdout', 'test_cohort_equal_review') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.25, 'external_test', 'development_calibrated_threshold') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.25, 'external_test', 'development_calibrated_threshold') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.25, 'external_test', 'test_cohort_equal_review') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.25, 'external_test', 'test_cohort_equal_review') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.3, 'internal_holdout', 'development_calibrated_threshold') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.3, 'internal_holdout', 'development_calibrated_threshold') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.3, 'internal_holdout', 'test_cohort_equal_review') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.3, 'internal_holdout', 'test_cohort_equal_review') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.3, 'external_test', 'development_calibrated_threshold') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.3, 'external_test', 'development_calibrated_threshold') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.3, 'external_test', 'test_cohort_equal_review') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.3, 'external_test', 'test_cohort_equal_review') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.4, 'internal_holdout', 'development_calibrated_threshold') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.4, 'internal_holdout', 'development_calibrated_threshold') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.4, 'internal_holdout', 'test_cohort_equal_review') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.4, 'internal_holdout', 'test_cohort_equal_review') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.4, 'external_test', 'development_calibrated_threshold') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.4, 'external_test', 'development_calibrated_threshold') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.4, 'external_test', 'test_cohort_equal_review') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.4, 'external_test', 'test_cohort_equal_review') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.5, 'internal_holdout', 'development_calibrated_threshold') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.5, 'internal_holdout', 'development_calibrated_threshold') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.5, 'internal_holdout', 'test_cohort_equal_review') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.5, 'internal_holdout', 'test_cohort_equal_review') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.5, 'external_test', 'development_calibrated_threshold') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.5, 'external_test', 'development_calibrated_threshold') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.5, 'external_test', 'test_cohort_equal_review') detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 cell margins (0.5, 'external_test', 'test_cohort_equal_review') review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 archived paired-flag Newcombe calculations independently recomputed",
+      "passed": true,
+      "detail": {
+        "max_absolute_error_pp": 2.1316282072803006e-14,
+        "scope": "Archived conditional paired-flag calculations, including equal-K review flags; equal-K review-flag intervals are not published as policy review-volume intervals."
+      }
+    },
+    {
+      "check": "S10 internal half-budget K=425",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10 external half-budget K=126",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10C equal-K policy review difference publication presentation",
+      "passed": true,
+      "detail": {
+        "policy_review_difference_pp": 0,
+        "interval_presented": false,
+        "source_conditional_paired_flag_intervals": "Retained unchanged in archived input and unrounded CSV."
+      }
+    },
+    {
+      "check": "S10C cohort-specific half-budget note",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10E equal-K policy review difference publication presentation",
+      "passed": true,
+      "detail": {
+        "policy_review_difference_pp": 0,
+        "interval_presented": false,
+        "source_conditional_paired_flag_intervals": "Retained unchanged in archived input and unrounded CSV."
+      }
+    },
+    {
+      "check": "S10E cohort-specific half-budget note",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10B transferred-threshold review difference intervals retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S10D transferred-threshold review difference intervals retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 raw replicate count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 route count fixed_cutoffs_test_sampling",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 endpoint sign counts fixed_cutoffs_test_sampling H1_A_external_minus_internal_detection_pp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 endpoint sign counts fixed_cutoffs_test_sampling H2_A_external_minus_internal_review_pp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 endpoint sign counts fixed_cutoffs_test_sampling external_fixed_B_minus_A_detection_pp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 endpoint sign counts fixed_cutoffs_test_sampling external_equal_B_minus_A_detection_pp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 independently recomputed 3x3 direction matrix fixed_cutoffs_test_sampling",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 route count development_calibration_only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 endpoint sign counts development_calibration_only H1_A_external_minus_internal_detection_pp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 endpoint sign counts development_calibration_only H2_A_external_minus_internal_review_pp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 endpoint sign counts development_calibration_only external_fixed_B_minus_A_detection_pp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 endpoint sign counts development_calibration_only external_equal_B_minus_A_detection_pp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 independently recomputed 3x3 direction matrix development_calibration_only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 route count full_resampling",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 endpoint sign counts full_resampling H1_A_external_minus_internal_detection_pp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 endpoint sign counts full_resampling H2_A_external_minus_internal_review_pp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 endpoint sign counts full_resampling external_fixed_B_minus_A_detection_pp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 endpoint sign counts full_resampling external_equal_B_minus_A_detection_pp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 independently recomputed 3x3 direction matrix full_resampling",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 all 12 percentile intervals recomputed from raw draws",
+      "passed": true,
+      "detail": {
+        "max_absolute_error_pp": 0.0
+      }
+    },
+    {
+      "check": "S11 R1 zero A-only empirical support",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 R2 equal-review conditional endpoint constant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S11 raw CSV decompression hash",
+      "passed": true,
+      "detail": {
+        "sha256": "c387d4964494b696f78171d202806767f21a594491ce1c9cfdf47f40f1e5d87e"
+      }
+    },
+    {
+      "check": "S12 draw count A detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S12 finite replicate count A detection overall_difference",
+      "passed": true,
+      "detail": {
+        "valid_n": 5000
+      }
+    },
+    {
+      "check": "S12 finite replicate count A detection composition_associated",
+      "passed": true,
+      "detail": {
+        "valid_n": 4999
+      }
+    },
+    {
+      "check": "S12 finite replicate count A detection within_stratum_rate",
+      "passed": true,
+      "detail": {
+        "valid_n": 4999
+      }
+    },
+    {
+      "check": "S12 observed additive identity A detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S12 draw count A review_fraction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S12 finite replicate count A review_fraction overall_difference",
+      "passed": true,
+      "detail": {
+        "valid_n": 5000
+      }
+    },
+    {
+      "check": "S12 finite replicate count A review_fraction composition_associated",
+      "passed": true,
+      "detail": {
+        "valid_n": 5000
+      }
+    },
+    {
+      "check": "S12 finite replicate count A review_fraction within_stratum_rate",
+      "passed": true,
+      "detail": {
+        "valid_n": 5000
+      }
+    },
+    {
+      "check": "S12 observed additive identity A review_fraction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S12 draw count B detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S12 finite replicate count B detection overall_difference",
+      "passed": true,
+      "detail": {
+        "valid_n": 5000
+      }
+    },
+    {
+      "check": "S12 finite replicate count B detection composition_associated",
+      "passed": true,
+      "detail": {
+        "valid_n": 4999
+      }
+    },
+    {
+      "check": "S12 finite replicate count B detection within_stratum_rate",
+      "passed": true,
+      "detail": {
+        "valid_n": 4999
+      }
+    },
+    {
+      "check": "S12 observed additive identity B detection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S12 draw count B review_fraction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S12 finite replicate count B review_fraction overall_difference",
+      "passed": true,
+      "detail": {
+        "valid_n": 5000
+      }
+    },
+    {
+      "check": "S12 finite replicate count B review_fraction composition_associated",
+      "passed": true,
+      "detail": {
+        "valid_n": 5000
+      }
+    },
+    {
+      "check": "S12 finite replicate count B review_fraction within_stratum_rate",
+      "passed": true,
+      "detail": {
+        "valid_n": 5000
+      }
+    },
+    {
+      "check": "S12 observed additive identity B review_fraction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S12 all 12 component intervals recomputed from raw draws",
+      "passed": true,
+      "detail": {
+        "max_absolute_error_fraction": 0.0
+      }
+    },
+    {
+      "check": "S13 case decisions case089",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S13 quality label case089",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S13 case decisions case175",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S13 quality label case175",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S13 case decisions case238",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S13 quality label case238",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S13 case decisions case024",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S13 quality label case024",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S13 case decisions case105",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S13 quality label case105",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S13 case decisions case222",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S13 quality label case222",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "S13 all 30 saved masks nonempty",
+      "passed": true,
+      "detail": {
+        "nonempty": 30,
+        "total": 30
+      }
+    },
+    {
+      "check": "S13 all 48 metrics independently recomputed from arrays",
+      "passed": true,
+      "detail": {
+        "max_absolute_recompute_error": 0.0
+      }
+    },
+    {
+      "check": "S13 maximum absolute numerical difference",
+      "passed": true,
+      "detail": {
+        "image_id": "case105",
+        "field": "dice_shift_left",
+        "archived": 0.24645641274462235,
+        "recomputed_cpu": 0.24502097793432093,
+        "difference": -0.0014354348103014225
+      }
+    },
+    {
+      "check": "S13 replay source scope",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Source artifacts unchanged during table build",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Only supplementary identifiers S10–S13 generated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "No absolute paths in table product text",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "publication_presentation_changes": [
+    {
+      "table": "S10E",
+      "change": "Corrected the external equal-review 50% budget note to K=126; the internal S10C 50% note remains K=425."
+    },
+    {
+      "tables": [
+        "S10C",
+        "S10E"
+      ],
+      "change": "Equal-K policy review-fraction differences are presented as 0 (by design), with no policy review-difference interval. Archived conditional Newcombe calculations for individual paired binary review flags remain unchanged and are not interpreted as equal-K policy review-volume intervals."
+    },
+    {
+      "tables": [
+        "S10B",
+        "S10D"
+      ],
+      "change": "Transferred-threshold review-difference confidence intervals are retained. All detection-difference confidence intervals are unchanged."
+    }
+  ],
+  "source_artifacts_unchanged": true,
+  "source_sha256": {
+    "experiments/cloud_validation_v1/results/budget_transfer/calibration.csv": "c360231b9ae7972799c957b9ff0564028158686063bd2fdca2cd957ba5033dfb",
+    "experiments/cloud_validation_v1/results/budget_transfer/performance.csv": "2b35e41866b99745e3749c9016afea560a39f0eddbda4c0eff316d63df549200",
+    "experiments/cloud_validation_v1/results/budget_transfer/paired_contrasts.csv": "dab3a8e53fd6e58a7ad07114b27928a87c9abfec91afbc827ef63f5e9b7a3c93",
+    "experiments/cloud_validation_v1/results/budget_transfer/results.json": "be2b05ce7276a9c79287b23b47672f609d106f5420c86455831a636169eb9b3b",
+    "experiments/cloud_validation_v1/results/bootstrap_stability/summary.json": "050c69a00dcd3709bec88f0182c0ce5229a078dbd9f0838167173f2ed3313446",
+    "experiments/cloud_validation_v1/results/bootstrap_stability/iterations.csv.gz": "57f3ae97cac132b971734378dadd5da1789587482d7f4bec1049894e6160f7dd",
+    "experiments/cloud_validation_v1/results/case_mix_decomposition.csv": "22447517ddb96381d48ba8518695032c2c4c3839dcaee92a02325eb1f50484f0",
+    "experiments/cloud_validation_v1/results/case_mix_decomposition.json": "92e3ccd9d761117c25089a01c61c40f23674cf70b05a8e221cebbc29524e5543",
+    "experiments/cloud_validation_v1/results/case_mix_decomposition_bootstrap.csv.gz": "cda6f6cf2d07ea2272f888caa212ba16182c22d37a9dc39c3ff822401da05584",
+    "experiments/six_case_replay_v1/reports/six_case_summary.csv": "2179d77ef34ff288545e046353f5d700d00b28f2beb1fab041cadf0c6e185b2a",
+    "experiments/six_case_replay_v1/reports/all_48_numeric_comparisons.csv": "af2c82c53c71420efd597ca19f29f324d04e102ef0732d7cb997ee13d15c9ad3",
+    "experiments/six_case_replay_v1/predictions/targeted_rerun_receipt.json": "5403390674fb4f549f7bb695f39551823f988521a551a99b409613eb5d750981",
+    "experiments/six_case_replay_v1/qa/postrun_review.json": "b3cd2f8fb2d1c5a25a6f67fd905288c4dafe842d33918ebd4968ee381ab39ce6",
+    "experiments/six_case_replay_v1/runtime_resource.json": "1af0dec577d58aff4bcc65431758e47d7b78aa201336feeaa8f369767c894f40",
+    "experiments/six_case_replay_v1/predictions/case024_targeted_rerun.npz": "5ba9ca812255cd357232865f434cd2f1b8f287ce266c46bf23e3609d35d0b748",
+    "experiments/six_case_replay_v1/predictions/case089_targeted_rerun.npz": "4fd0f1a7b3167eaf99ea5d7e2543186ee457d073e66ef76618f306180be84f51",
+    "experiments/six_case_replay_v1/predictions/case105_targeted_rerun.npz": "8c83a723f77528bc9257eb86d18c9cc68ef6d7a43da4a061e81c775c1dce9a72",
+    "experiments/six_case_replay_v1/predictions/case175_targeted_rerun.npz": "4eed039771a9bb640c712ecdae7b3b79896a4909eb69b5c840123714385e549e",
+    "experiments/six_case_replay_v1/predictions/case222_targeted_rerun.npz": "457105cca958c3f386fa2b9969057e443b324cc51b30addaf3273a09ba32e0f9",
+    "experiments/six_case_replay_v1/predictions/case238_targeted_rerun.npz": "e692e958d61e11b92c7b38c0569eb8a2aafd16d8b34af49be56a0259fe6b12e3"
+  },
+  "presentation_csv_sha256": {
+    "table_data/S10A.csv": "4a218dbd401711bd2dd455902b668b3b4d8e145dd67733ebb054f8a2adf304f1",
+    "table_data/S10B.csv": "2a1ba45246aefe3b7bbe616ef1cd503167e9b7cba3d1775b7bc1d7b36ee63196",
+    "table_data/S10C.csv": "a5745b21fd41bcb906c29f8a118823dec35e805af960cee5ba1451c25e6bb557",
+    "table_data/S10D.csv": "90aced0893e6a455655c099fff5c0baeb22e164fc8cde0e56234fc41055499b6",
+    "table_data/S10E.csv": "d3b077b2a786cef3eddc0a89528681d8086d8e3cb88010f9a29cfdc08a247d7a",
+    "table_data/S11A.csv": "2eff4c0c240aae241781d0b352b0e3a821d9aef02f66c6a687801ebc6f007049",
+    "table_data/S11B.csv": "66f7eb400cfb718af108f0dbf5f58b1341bdcb95e123351658896ed600db8560",
+    "table_data/S12.csv": "aa19a31e26367fc5f9a2b0f4c9cc177d98d4321a778c01b60cda7a746d68f3ae",
+    "table_data/S13A.csv": "30e28698f38c812e4a91771e4bad8c16ac929a4c24119cac91b5213e551f3e46",
+    "table_data/S13B.csv": "daab67e5dc453a4cd97d9b5f3de24360b5a5b92a2704352966fa4f12a5e6f221"
+  },
+  "output_json_sha256": "4dadce58a9e5a9bc847040036404ef080a268eefbd509225173a3892393c2ce9"
+}

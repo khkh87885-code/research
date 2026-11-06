@@ -1,0 +1,35 @@
+{
+  "command": [
+    "/workspace/bmt_six_case_replay/env/bin/python",
+    "-B",
+    "/workspace/bmt_six_case_replay/scripts/external_case_audit.py",
+    "rerun",
+    "--source",
+    "/workspace/research_source",
+    "--output",
+    "/workspace/bmt_six_case_replay/predictions",
+    "--sam-source",
+    "/workspace/bmt_v7/resources/segment-anything",
+    "--checkpoint",
+    "/workspace/bmt_six_case_replay/resources/sam_vit_b_01ec64.pth",
+    "--device",
+    "cpu",
+    "--threads",
+    "2"
+  ],
+  "started_utc": "2026-11-06T09:49:37.720671+00:00",
+  "completed_utc": "2026-11-06T09:50:37.139954+00:00",
+  "return_code": 0,
+  "wall_seconds_including_loading_and_figures": 59.41930293599944,
+  "user_cpu_seconds": 68.533287,
+  "system_cpu_seconds": 38.928636,
+  "peak_child_RSS_MiB": 3220.421875,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "2",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "cpu_max": "200000 100000",
+  "memory_max": "8589934592"
+}

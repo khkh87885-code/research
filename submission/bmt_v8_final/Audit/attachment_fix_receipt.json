@@ -1,0 +1,10 @@
+{
+  "fixed_utc": "2026-11-06T10:55:29.355108+00:00",
+  "file": "Additional_quality_control_metrics.csv",
+  "source": "submission/bmt_v7/Additional_quality_control_metrics.csv",
+  "bytes": 7130,
+  "sha256": "b1778d9b785773a9c44b59ccd9c06e607f5c4f950171d6e3e1903d5c1eb9146e",
+  "reason": "The v8 supplement Table S7 note names this machine-readable companion, but it was absent from the v8 delivery package. Restored identical verified bytes; no recomputation or scientific value change.",
+  "current_manuscript_unchanged": true,
+  "current_supplement_unchanged": true
+}

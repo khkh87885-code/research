@@ -1,0 +1,13 @@
+route,endpoint,observed_pp,median_pp,lower_pp,upper_pp,valid_n,negative_n,zero_n,positive_n
+fixed_cutoffs_test_sampling,H1_A_external_minus_internal_detection_pp,-13.844086021505376,-13.744461636931954,-40.15960117064,11.824486209606823,10000,8490,22,1488
+fixed_cutoffs_test_sampling,H2_A_external_minus_internal_review_pp,-6.5576446011228615,-6.513345643780427,-11.53917893048328,-1.311797045492703,10000,9915,0,85
+fixed_cutoffs_test_sampling,external_fixed_B_minus_A_detection_pp,18.75,18.181818181818183,0.0,40.0,10000,0,469,9531
+fixed_cutoffs_test_sampling,external_equal_B_minus_A_detection_pp,-6.25,0.0,-25.0,21.428571428571427,10000,4304,2176,3520
+development_calibration_only,H1_A_external_minus_internal_detection_pp,-13.844086021505376,-13.844086021505376,-15.994623655913976,-2.822580645161288,10000,10000,0,0
+development_calibration_only,H2_A_external_minus_internal_review_pp,-6.5576446011228615,-6.5576446011228615,-9.021599238990541,-5.823680823680824,10000,10000,0,0
+development_calibration_only,external_fixed_B_minus_A_detection_pp,18.75,18.75,-6.25,18.75,10000,525,435,9040
+development_calibration_only,external_equal_B_minus_A_detection_pp,-6.25,-6.25,-6.25,-6.25,10000,10000,0,0
+full_resampling,H1_A_external_minus_internal_detection_pp,-13.844086021505376,-12.121212121212121,-39.03164791557648,11.711880804953537,10000,8283,22,1695
+full_resampling,H2_A_external_minus_internal_review_pp,-6.5576446011228615,-7.039337474120083,-12.699217074217076,-1.5468146718146791,10000,9935,0,65
+full_resampling,external_fixed_B_minus_A_detection_pp,18.75,14.285714285714286,-13.333333333333334,37.5,10000,860,996,8144
+full_resampling,external_equal_B_minus_A_detection_pp,-6.25,0.0,-25.0,21.428571428571427,10000,4304,2176,3520

@@ -1,0 +1,221 @@
+{
+  "retrieved_on": "2026-11-06",
+  "journal": "Biomedical Engineering / Biomedizinische Technik",
+  "article_type": "Research Article",
+  "verification_scope": "Official PDF pages 1, 4 and 10 independently checked for December 2024 revision, at least five reviewers, and narrow non-breaking space before percent.",
+  "sources": {
+    "journal": {
+      "url": "https://www.degruyterbrill.com/journal/key/bmte/html",
+      "local": "source_0.md",
+      "status": 200
+    },
+    "instructions": {
+      "url": "https://www.degruyterbrill.com/publication/journal_key/BMTE/downloadAsset/BMTE_Instructions%20for%20Authors.pdf",
+      "local": "source_1.md",
+      "status": 200,
+      "date": "December 2024"
+    },
+    "ai": {
+      "url": "https://www.degruyterbrill.com/publishing/for-authors/author-policies/artificial-intelligence",
+      "date": "September 2026",
+      "local": "source_2.md",
+      "status": 200
+    },
+    "data": {
+      "url": "https://www.degruyterbrill.com/publishing/for-authors/author-policies/data-sharing-policy",
+      "local": "source_3.md",
+      "status": 200
+    },
+    "tier2": {
+      "url": "https://degruyter-live-craftcms-assets.s3.amazonaws.com/Policy-2_20240625.pdf",
+      "date": "June 2024",
+      "local": "official_tier2_policy.md",
+      "status": 200
+    },
+    "declarations": {
+      "url": "https://www.degruyterbrill.com/publication/journal_key/BMTE/downloadAsset/BMTE_Template%20for%20Ethical%20and%20Legal%20Declarations.docx",
+      "local": "official_declarations_template_original.docx",
+      "status": 200,
+      "original_binary_downloaded": true
+    },
+    "article_template": {
+      "url": "https://www.degruyterbrill.com/publication/journal_key/BMTE/downloadAsset/BMTE_Template%20for%20Research%20Articles.docx",
+      "local": "official_research_article_template.md",
+      "status": 200,
+      "original_binary_downloaded": false
+    }
+  },
+  "limits": {
+    "main_words": 6000,
+    "abstract_words": 200,
+    "abstract_headings": [
+      "Objectives",
+      "Methods",
+      "Results",
+      "Conclusions"
+    ],
+    "keywords_min": 3,
+    "keywords_max": 6,
+    "keywords": "alphabetical, lowercase, semicolon-separated; avoid abbreviations and repetition of title words",
+    "tables_and_figures_combined_max": 8,
+    "references_max": 35,
+    "supplementary_max_bytes_per_file": 10000000,
+    "heading_levels_max": 4,
+    "running_title_max_characters_including_spaces": 75
+  },
+  "structure": [
+    "Title page",
+    "Abstract",
+    "Keywords",
+    "Abbreviations (optional)",
+    "Introduction",
+    "Materials and methods",
+    "Results",
+    "Discussion",
+    "Acknowledgments",
+    "References",
+    "Table and Figure legends"
+  ],
+  "title_page": {
+    "full_names": true,
+    "order": "as intended for publication",
+    "correspondence": "asterisk after family name",
+    "corresponding_affiliation": [
+      "email",
+      "department",
+      "institution",
+      "street",
+      "city",
+      "postal code",
+      "country"
+    ],
+    "other_affiliation": [
+      "department",
+      "institution",
+      "city",
+      "postal code",
+      "country"
+    ],
+    "institutional_email": "strongly recommended, not stated as an absolute requirement",
+    "orcid": "highly/strongly recommended where available; no invented identifiers",
+    "known_first_author_orcid": "https://orcid.org/0009-0008-5089-5902"
+  },
+  "references": {
+    "style": "Vancouver",
+    "in_text": "square brackets",
+    "order": "consecutive order of first appearance, including tables and figures",
+    "list_label": "number without bracket",
+    "more_than_six_authors": "first 6 then et al.",
+    "bidirectional_matching_required": true
+  },
+  "figures": {
+    "formats": [
+      "jpg",
+      "eps",
+      "png",
+      "tiff"
+    ],
+    "separate_files": true,
+    "pixel_min_dpi": 300,
+    "mixed_pixel_line_min_dpi": 600,
+    "min_label_pt": 6,
+    "font": "preferably Arial or Helvetica",
+    "panels": "uppercase",
+    "captions": "self-contained and outside images",
+    "all_cited_in_text": true
+  },
+  "tables": {
+    "editable": true,
+    "formats": [
+      "Word",
+      "LaTeX"
+    ],
+    "images_or_excel": false,
+    "numbering": "consecutive Arabic",
+    "placement_markers": true,
+    "footnotes": "lowercase alphabetical letters; explain abbreviations"
+  },
+  "supplementary": {
+    "published_as_supplied": true,
+    "track_changes": false,
+    "cite_consecutively": true
+  },
+  "data_policy": {
+    "tier": 2,
+    "sharing": "encouraged, not mandatory",
+    "das": "encouraged; required template contains data availability field",
+    "repository_preferred": true,
+    "secondary_data_citations": true,
+    "no_data_available_claim_without_verification": true
+  },
+  "ethical_template": {
+    "separate_word_required": true,
+    "fields": [
+      "Acknowledgments",
+      "Research ethics",
+      "Informed consent",
+      "Author contributions",
+      "Use of Large Language Models, AI and Machine Learning Tools",
+      "Conflict of interest",
+      "Research funding",
+      "Data availability"
+    ],
+    "consistency": "Template and manuscript must match; template controls typeset statements if conflicting",
+    "author_approval_statement": "All authors have accepted responsibility for the entire content of this manuscript and approved its submission.",
+    "do_not_assert_approval_before_author_confirmation": true
+  },
+  "ai": {
+    "authorship": "AI cannot be an author; human authors accountable",
+    "substantive_content_disclosure": true,
+    "proofreading_copyediting_disclosure": false,
+    "methodological_use_locations": [
+      "Methods (BMT instructions)",
+      "Acknowledgments (September 2026 publisher policy)"
+    ],
+    "manuscript_preparation_use_location": "Separate Ethical and Legal Declarations",
+    "image_disclosure": "AI-generated or AI-assisted illustrative images disclosed at submission",
+    "research_data_figures": "Generative AI creation, alteration, manipulation or enhancement of research data, figures or experimental images prohibited",
+    "script_exception": "No explicit exception for AI-authored plotting scripts is stated. Describe actual conventional-software execution workflow and retain author/editor confirmation of policy interpretation.",
+    "human_verification": "Required; do not claim independently verified by human authors unless confirmed"
+  },
+  "cover_letter": {
+    "required_first_submission": true,
+    "addressed_to": "Editor-in-Chief",
+    "content": "brief novelty statement"
+  },
+  "reviewers": {
+    "five_candidates": "Official requirement: at least five potential reviewers; Instructions for Authors p. 4. Six are provided.",
+    "independence": "check institutional and collaboration conflicts; no inferred email"
+  },
+  "unresolved": [
+    "AI-assisted script execution versus prohibited research-figure generation requires accurate disclosure and, if uncertain, editor determination"
+  ],
+  "v7_corrections_evidence": "official_corrections.json",
+  "official_declaration_template_sha256": "8facc5b46d8dc245e1814a9f749e2ddc4d84e2189b20ea9f511886c38d9ef230",
+  "current_author_status": {
+    "date": "2026-11-06",
+    "user_statement": "重庆医科大学缙云校区人工智能医学学院，你去找一下官方的地址或者别的论文中写的，项目符合国家法律规定免于审查，已经完成所有审查",
+    "interpreted_confirmations": {
+      "campus": "Jinyun Campus",
+      "statutory_ethics_exemption": "Author-confirmed applicability of Article 32; not an IRB-issued approval or waiver",
+      "human_review": "Author confirms completion of review of code, data, figures and text"
+    },
+    "official_address": "College of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Building 6, Lanyuan, No. 61 Daxuecheng Middle Road, Shapingba District, Chongqing 401331, China",
+    "postcode": "401331",
+    "ethics_statement": "This retrospective secondary analysis used lawfully obtained, publicly released anonymized breast ultrasound images and annotations and involved no participant recruitment or intervention. The authors confirmed that the study met the conditions for exemption from ethics review under Article 32 of the Chinese Measures for Ethical Review of Life Science and Medical Research Involving Human Participants (2023).",
+    "consent_statement": "No participants were recruited or contacted for this secondary analysis of publicly available anonymized data, and no additional informed consent was obtained.",
+    "no_IRB_number_invented": true,
+    "underlying_Codex_model_identifier": "not available in archived study records",
+    "final_exact_version_submission_approval": "Both authors explicitly confirmed approval and full-content responsibility for v7.",
+    "submission_approved": true,
+    "approval_source_user_statement": "两位作者均已同意并承担全文责任",
+    "confirmed_correspondence_address": "College of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Building 6, Lanyuan, No. 61 Daxuecheng Middle Road, Shapingba District, Chongqing 400016, China",
+    "correspondence_postcode": "400016",
+    "latest_correspondence_confirmation": {
+      "date": "2026-11-06",
+      "question_address": "重庆市沙坪坝区大学城中路61号兰园6号楼，邮编400016",
+      "user_answer": "确认地址和邮编均适用",
+      "source_scope": "author-confirmed institutional correspondence address; university campus-specific 401331 source retained as historical evidence"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Actual captured CPU replay masks; no model rerun during figure rendering",
+  "cases": [
+    {
+      "image_id": "case089",
+      "source_npz": "case089_targeted_rerun.npz",
+      "sha256": "4fd0f1a7b3167eaf99ea5d7e2543186ee457d073e66ef76618f306180be84f51",
+      "actual_prediction_foreground_pixels": 1365,
+      "rerun_dice": 0.31909990511047853,
+      "archived_risk_A": 0.10407191514968872,
+      "archived_risk_B": 0.041040683630957586
+    },
+    {
+      "image_id": "case175",
+      "source_npz": "case175_targeted_rerun.npz",
+      "sha256": "4eed039771a9bb640c712ecdae7b3b79896a4909eb69b5c840123714385e549e",
+      "actual_prediction_foreground_pixels": 3861,
+      "rerun_dice": 0.02928704996181095,
+      "archived_risk_A": 0.11494362354278564,
+      "archived_risk_B": 0.020059290176363098
+    },
+    {
+      "image_id": "case238",
+      "source_npz": "case238_targeted_rerun.npz",
+      "sha256": "e692e958d61e11b92c7b38c0569eb8a2aafd16d8b34af49be56a0259fe6b12e3",
+      "actual_prediction_foreground_pixels": 5054,
+      "rerun_dice": 0.681269798476781,
+      "archived_risk_A": 0.038908958435058594,
+      "archived_risk_B": 0.005765972428081634
+    }
+  ],
+  "width_inches": 6.89,
+  "height_inches": 7.7,
+  "raster_dpi": 600,
+  "font_pt": 8.5,
+  "panels": "A-F",
+  "reference_color": "#1b9e77",
+  "prediction_color": "#d95f02",
+  "prompt_color": "#56b4e9"
+}

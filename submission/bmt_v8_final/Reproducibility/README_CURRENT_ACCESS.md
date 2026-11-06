@@ -1,0 +1,3 @@
+# Current access and source-snapshot note
+
+The study archive is publicly accessible at https://github.com/khkh87885-code/research/tree/592566b4c5f39e261c676eb034139a974e9cdfd5. Access was verified on 6 November 2026. This folder preserves the original checksum-locked reproduction package. Its original README.md predates publication of the GitHub archive and includes historical pending-distribution wording. The current manuscript availability statement and this note record the current access route. The original README.md and SHA256SUMS.txt are preserved unchanged so their integrity can still be verified. No new licence or DOI is invented. The new post hoc quality-control metrics are supplied separately as Additional_quality_control_metrics.csv.

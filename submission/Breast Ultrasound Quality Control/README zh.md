@@ -1,8 +1,8 @@
 # Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control
 
-本目录是论文的当前投稿文件，文件名统一采用主题前缀 `Breast_Ultrasound_Quality_Control`，不使用内部版本标记。目标期刊为 Biomedical Engineering / Biomedizinische Technik，文章类型为 Research Article，按常规新稿投稿。
+本目录是论文的当前投稿文件，文件名统一采用主题前缀 `Breast Ultrasound Quality Control`，不使用内部版本标记。目标期刊为 Biomedical Engineering / Biomedizinische Technik，文章类型为 Research Article，按常规新稿投稿。
 
-[正式主稿 Word](Breast_Ultrasound_Quality_Control_Manuscript.docx) · [主稿 PDF](Breast_Ultrasound_Quality_Control_Manuscript.pdf) · [补充材料 Word](Breast_Ultrasound_Quality_Control_Supplementary_Material.docx) · [补充材料 PDF](Breast_Ultrasound_Quality_Control_Supplementary_Material.pdf) · [六例图 S6](Breast_Ultrasound_Quality_Control_Supplementary_Figure_S6.pdf) · [投稿上传清单](Breast_Ultrasound_Quality_Control_Submission_Guide.md) · [完整投稿包](../Breast_Ultrasound_Quality_Control_Submission_Files.zip)
+[正式主稿 Word](Breast%20Ultrasound%20Quality%20Control%20Manuscript.docx) · [主稿 PDF](Breast%20Ultrasound%20Quality%20Control%20Manuscript.pdf) · [补充材料 Word](Breast%20Ultrasound%20Quality%20Control%20Supplementary%20Material.docx) · [补充材料 PDF](Breast%20Ultrasound%20Quality%20Control%20Supplementary%20Material.pdf) · [六例图 S6](Breast%20Ultrasound%20Quality%20Control%20Supplementary%20Figure%20S6.pdf) · [投稿上传清单](Breast%20Ultrasound%20Quality%20Control%20Submission%20Guide.md) · [完整投稿包](../Breast%20Ultrasound%20Quality%20Control%20Submission%20Files.zip)
 
 主稿保留三式，补充材料保留两式，均为原生可编辑数学。主稿有五图、三张数据表；补充材料有十九个数据表面板。科研正文、数据、模型、图件与既有作者声明保持。补充正文中的两处CSV和一处S6文件名已与实际文件同步。
 

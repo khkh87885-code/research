@@ -1,0 +1,292 @@
+{
+  "scope": "read-only pre-submission author-fields and draft-artifacts audit",
+  "source_directory": "/workspace/research_source/submission/bmt_v8",
+  "source_modified": false,
+  "position_convention": "Paragraph numbers count all w:p nodes in the named OOXML part, in document order, including table cells. Table rows/cells are 1-based.",
+  "source_exclusions": [
+    "Audit history and Analysis scripts are evidence, not manuscript text; historical placeholders were not counted as current manuscript defects."
+  ],
+  "summary": "v8稿包仍为作者审阅版本。真正未决项为v8最终批准、审稿人关系、原创性/无同时投稿事实确认；批准后清理作者侧草稿字样。没有发现隐藏批注、修订、内容控件、隐藏文字或正文空占位。",
+  "findings": [
+    {
+      "id": "AUTH-01",
+      "severity": "required_before_submission",
+      "kind": "author_confirmation_then_text_update",
+      "title": "v8最终批准与模板强制批准句尚未完成",
+      "locations": [
+        {
+          "file": "BMT_main_manuscript_v8.docx",
+          "part": "word/document.xml",
+          "paragraph": 88,
+          "anchor": "Author contributions. All authors have accepted responsibility for the entire content of this manuscript."
+        },
+        {
+          "file": "BMT_Ethical_and_Legal_Declarations_v8_review.docx",
+          "part": "word/document.xml",
+          "paragraph": 17,
+          "table": 1,
+          "row": 5,
+          "cell": 2,
+          "anchor": "All authors have accepted responsibility for the entire content of this manuscript."
+        },
+        {
+          "file": "BMT_Ethical_and_Legal_Declarations_v8_review.docx",
+          "part": "word/document.xml",
+          "paragraph": 80,
+          "anchor": "Final approval to submit this revised version is not inferred from the recorded approval of v7."
+        }
+      ],
+      "evidence": "已确认批准记录明确针对v7；v8新增预算、bootstrap、诊断分解及CPU轮廓。当前正文与表格仅保留承担责任句；原始官方模板P50要求mandatory default statement，P51完整句包含and approved its submission。",
+      "action": "先由两位作者审阅并明确批准主稿v8、补充v4和新版图表；随后在主稿与伦理表同步使用完整句：All authors have accepted responsibility for the entire content of this manuscript and approved its submission. 不得凭v7批准自动补写。"
+    },
+    {
+      "id": "AUTH-02",
+      "severity": "required_before_nomination",
+      "kind": "author_fact_confirmation",
+      "title": "审稿人独立性仍有显式待确认项",
+      "locations": [
+        {
+          "file": "BMT_reviewer_candidates.docx",
+          "part": "word/document.xml",
+          "paragraph": 4
+        },
+        {
+          "file": "BMT_reviewer_candidates.docx",
+          "part": "word/document.xml",
+          "paragraph": 12
+        },
+        {
+          "file": "BMT_reviewer_candidates.docx",
+          "part": "word/document.xml",
+          "paragraph": 20
+        },
+        {
+          "file": "BMT_reviewer_candidates.docx",
+          "part": "word/document.xml",
+          "paragraph": 29
+        },
+        {
+          "file": "BMT_reviewer_candidates.docx",
+          "part": "word/document.xml",
+          "paragraph": 37
+        },
+        {
+          "file": "BMT_reviewer_candidates.docx",
+          "part": "word/document.xml",
+          "paragraph": 48
+        },
+        {
+          "file": "BMT_reviewer_candidates.docx",
+          "part": "word/document.xml",
+          "paragraph": 58
+        }
+      ],
+      "evidence": "总说明及Carole Sudre、Veronika Cheplygina、Geert Litjens、Yuyin Zhou、Lena Maier-Hein、Bo Wang逐人均保留[AUTHOR CONFIRMATION REQUIRED] / Not yet confirmed by both authors。",
+      "action": "由两位作者核对近期共同作者、共同基金、师生/指导、私人关系、同单位等期刊冲突；从确认独立的人选中提交至少5名。不能从公开单位与国别推定没有个人/合作冲突。"
+    },
+    {
+      "id": "AUTH-03",
+      "severity": "required_before_submission_declaration",
+      "kind": "author_fact_confirmation",
+      "title": "原创、未重复发表和无同时投稿仍需真实事实确认",
+      "locations": [
+        {
+          "file": "BMT_submission_checklist_v8.docx",
+          "part": "word/document.xml",
+          "paragraph": 13,
+          "anchor": "核对原创性、未重复/同时投稿及推荐审稿人关系"
+        }
+      ],
+      "evidence": "本轮检查的提交正文、投稿信、声明及既有作者确认记录未记录双方对这些投稿事实的明确确认；当前投稿信没有代为声称已确认。",
+      "action": "正式投稿及填系统声明前由作者确认原创性、既往发表/预印本/相关稿披露及无同时投稿。是否在投稿信加入该句依期刊或系统要求；不是要求凭空补一个未经确认的句子。"
+    },
+    {
+      "id": "EDIT-01",
+      "severity": "required_for_final_upload",
+      "kind": "draft_markers_cleanup_after_approval",
+      "title": "将正式上传副本中的作者审阅/草稿标记清理",
+      "locations": [
+        {
+          "file": "BMT_cover_letter_v8_review.docx",
+          "part": "word/document.xml",
+          "paragraph": 1,
+          "anchor": "Draft cover letter — v8 author-review edition"
+        },
+        {
+          "file": "BMT_cover_letter_v8_review.docx",
+          "part": "word/document.xml",
+          "paragraph": 10,
+          "anchor": "This letter remains a draft accompanying the revised author-review edition."
+        },
+        {
+          "file": "BMT_cover_letter_v8_review.docx",
+          "part": "word/footer1.xml",
+          "paragraph": 1,
+          "anchor": "Author review draft"
+        },
+        {
+          "file": "BMT_Ethical_and_Legal_Declarations_v8_review.docx",
+          "part": "word/document.xml",
+          "paragraph": 1,
+          "anchor": "Ethical and legal declarations — v8 author-review copy"
+        },
+        {
+          "file": "BMT_Ethical_and_Legal_Declarations_v8_review.docx",
+          "part": "word/document.xml",
+          "paragraph": 80,
+          "anchor": "Version status: this form accompanies the revised v8 author-review manuscript."
+        },
+        {
+          "file": "BMT_supplementary_material_v4.docx",
+          "part": "word/document.xml",
+          "paragraph": 3,
+          "anchor": "Haoze Lan; Ziyuan Zhu; v8 author-review revision, 6 November 2026"
+        },
+        {
+          "file": "BMT_reviewer_candidates.docx",
+          "part": "word/footer1.xml",
+          "paragraph": 1,
+          "anchor": "Author review draft"
+        }
+      ],
+      "evidence": "这些是作者侧新增状态文本，非官方模板原文；补充材料可按原样发布。",
+      "action": "批准完成后，制作正式上传副本，清理上述状态字样并更新必要日期；审稿人文档若仅用于系统录入则无需整份上传。内部修订报告和submission checklist可保留审阅状态，无需作为论文文件上传。"
+    }
+  ],
+  "not_issues": [
+    {
+      "title": "官方伦理模板的[TEMPLATE]、[INSTRUCTIONS]和默认示例不是漏填",
+      "file": "BMT_Ethical_and_Legal_Declarations_v8_review.docx",
+      "locations": "document.xml P2–6及P33–79；表1第10–11行是原模板空可选行",
+      "evidence": "已与Audit/official_declarations_template_original.docx逐段对照；这些提示与示例来自期刊原始模板，8个实际必填值均已填写。P51的批准句是官方说明示例，不代表作者已作出该声明。",
+      "action": "保留官方模板结构；勿全局删除方括号或把说明页当成作者声明。"
+    },
+    {
+      "title": "主稿的表格放置提示是正常排版标记",
+      "file": "BMT_main_manuscript_v8.docx",
+      "locations": "document.xml P24 [Place Table 1 near here]；P51 [Place Tables 2 and 3 near here]",
+      "evidence": "实际Table 1–3均在文后editable tables出现；不是空数据或未完成表格。"
+    },
+    {
+      "title": "不重复索要历史已确认信息",
+      "locations": "主稿P3–8、P87–91；伦理表1第3–8行",
+      "evidence": "作者顺序、单位/邮箱/ORCID、400016通讯邮编、贡献、无经费、无利益冲突及法定免审依据已有作者确认。主稿与伦理表一致；没有编造IRB批准机关、编号或新的知情同意。"
+    },
+    {
+      "title": "未找到隐藏编辑遗留",
+      "locations": "8个顶层DOCX的document、tables、headers、footers和全部XML parts",
+      "evidence": "comments、w:ins/w:del、moveFrom/moveTo、w:sdt、w:vanish/webHidden及trackRevisions均为0；页面字段是正常PAGE域。"
+    },
+    {
+      "title": "Codex模型ID缺失已作事实披露",
+      "locations": "主稿P30、P86；伦理表1第2及第6行",
+      "evidence": "明确写明精确底层模型ID不在归档记录中，未留下TBD或伪造型号。若作者确有原始记录可补充；无记录时不编造。"
+    }
+  ],
+  "inspected_docx": [
+    {
+      "file": "BMT_Ethical_and_Legal_Declarations_v8_review.docx",
+      "sha256": "41cfc895f6edc62ba0dce328e99dd43ecd3d0adc591007b1aca126b68b3b3b77",
+      "xml_inspection": {
+        "comments": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "move_revisions": 0,
+        "content_controls": 0,
+        "hidden_text": 0,
+        "tracked_revisions_setting": 0
+      }
+    },
+    {
+      "file": "BMT_cover_letter_v8_review.docx",
+      "sha256": "a4a3f85a58b222c4205e991a1606a271c39e550a3b54f93be1b53790584352dd",
+      "xml_inspection": {
+        "comments": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "move_revisions": 0,
+        "content_controls": 0,
+        "hidden_text": 0,
+        "tracked_revisions_setting": 0
+      }
+    },
+    {
+      "file": "BMT_data_and_code_availability_v8.docx",
+      "sha256": "60ad159900097eebe95aaa7106d29d21c7bc316888e320d09fc0124c3862c0bc",
+      "xml_inspection": {
+        "comments": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "move_revisions": 0,
+        "content_controls": 0,
+        "hidden_text": 0,
+        "tracked_revisions_setting": 0
+      }
+    },
+    {
+      "file": "BMT_main_manuscript_v8.docx",
+      "sha256": "7455e90e9c1419100b2e9a6a78107d927fcb099101257b0c481172229a99a138",
+      "xml_inspection": {
+        "comments": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "move_revisions": 0,
+        "content_controls": 0,
+        "hidden_text": 0,
+        "tracked_revisions_setting": 0
+      }
+    },
+    {
+      "file": "BMT_reviewer_candidates.docx",
+      "sha256": "5fc1a408aa6145671102f7136c50f07a3dd7774602b6a3690315dadbe3c2aa48",
+      "xml_inspection": {
+        "comments": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "move_revisions": 0,
+        "content_controls": 0,
+        "hidden_text": 0,
+        "tracked_revisions_setting": 0
+      }
+    },
+    {
+      "file": "BMT_revision_report_v8_zh.docx",
+      "sha256": "8f5a2803456b11cfde1a3d070e9eb28f6c2f13f53fab4ad67616a455e2b9ac74",
+      "xml_inspection": {
+        "comments": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "move_revisions": 0,
+        "content_controls": 0,
+        "hidden_text": 0,
+        "tracked_revisions_setting": 0
+      }
+    },
+    {
+      "file": "BMT_submission_checklist_v8.docx",
+      "sha256": "29718ea80c97573634f0ad0ff6868d62ea694c8cce41616b7ef4f29b309efb00",
+      "xml_inspection": {
+        "comments": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "move_revisions": 0,
+        "content_controls": 0,
+        "hidden_text": 0,
+        "tracked_revisions_setting": 0
+      }
+    },
+    {
+      "file": "BMT_supplementary_material_v4.docx",
+      "sha256": "6b443ebd1f5288ec8c28d3add258ef7b694c5aef47870b976e440507eefc9a2a",
+      "xml_inspection": {
+        "comments": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "move_revisions": 0,
+        "content_controls": 0,
+        "hidden_text": 0,
+        "tracked_revisions_setting": 0
+      }
+    }
+  ]
+}

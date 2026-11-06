@@ -18,6 +18,8 @@ v8围绕固定阈值迁移与等复核量排序的部署含义重写标题、摘
 
 新增表139项数值核验与独立稿件审查通过；图按出版宽重排为600dpi、文字至少7.2pt。等复核量的复核差按设计为0，不将归档条件二元标志区间当作政策差区间。作者地址邮编400016沿用确认信息。本版是新的作者审阅稿，保留v7既有批准记录，不将其表述为已重新批准v8，未执行期刊投稿。
 
+提交前检查已补齐S7引用的CSV附件；[检查报告](submission/bmt_v8/BMT_pre_submission_review_zh.md)列明最终v8批准、原创/投稿状态及推荐审稿人关系三类作者事实，当前未代为确认。
+
 ## 六例真实预测轮廓：已完成
 
 [两页A4轮廓图](experiments/six_case_replay_v1/reports/six_case_contours_A4.pdf) · [中文核验报告](experiments/six_case_replay_v1/reports/six_case_replay_report_zh.pdf) · [逐例对照与复现](experiments/six_case_replay_v1/README.md) · [完整结果包](experiments/BMT_six_case_replay_v1.zip)

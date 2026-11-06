@@ -1,11 +1,15 @@
 {
+  "Additional_quality_control_metrics.csv": {
+    "bytes": 7130,
+    "sha256": "b1778d9b785773a9c44b59ccd9c06e607f5c4f950171d6e3e1903d5c1eb9146e"
+  },
   "Analysis/README.md": {
     "bytes": 1643,
     "sha256": "aa3075ef40f24f0626c17e8852d4d04a4d412122cac7a068e5e003885ca294c3"
   },
   "Analysis/build_ancillary.py": {
-    "bytes": 11940,
-    "sha256": "08e0906a2af64b40dbce3d12a0c58721d5c177ca2226f17821e0109bf010e5f3"
+    "bytes": 12126,
+    "sha256": "4e7a9a5c65f00346e7715946ed7065565f7b479cafe3a703590b4f56b2981106"
   },
   "Analysis/build_figure5.py": {
     "bytes": 2378,
@@ -119,6 +123,10 @@
     "bytes": 604,
     "sha256": "32002a95954863aaa337f977f310b609e2fd392b334c16fbdc82ae8f5d98c49d"
   },
+  "Audit/attachment_fix_receipt.json": {
+    "bytes": 569,
+    "sha256": "7fabb98bd77f0ad8e7cc5835b0ce218590a748e3b1a965e55b5e33e071d8e0b6"
+  },
   "Audit/figure5_provenance.json": {
     "bytes": 1387,
     "sha256": "9c79b181ff6083eec9f9a9359051ddb882ad78bd72168979da1db9ac228cbcc4"
@@ -174,6 +182,14 @@
   "Audit/official_requirements.md": {
     "bytes": 1928,
     "sha256": "34ba8bd15a09dfa3169bc3ec8d93e6755ff8a6f8d0530f9338e986086796fe22"
+  },
+  "Audit/pre_submission_independent_check.json": {
+    "bytes": 12214,
+    "sha256": "7bff12c9b72ad42db48b5b2e5c30a22beba3dcca80b524f7dbecea529cf127cc"
+  },
+  "Audit/pre_submission_independent_check.md": {
+    "bytes": 6118,
+    "sha256": "d35730e0a66ebb9767947cfd1fdf8d4efb70e579237f4f1a2bdbe61ebd29fd34"
   },
   "Audit/prior_author_confirmations/author_confirmation_record.json": {
     "bytes": 2376,
@@ -250,6 +266,10 @@
   "BMT_main_manuscript_v8_preview.pdf": {
     "bytes": 179869,
     "sha256": "b2825226bf3a2d63d8048a8d035a92a9ce1d98016e2ebd4f483029acf0371ad2"
+  },
+  "BMT_pre_submission_review_zh.md": {
+    "bytes": 4819,
+    "sha256": "a9ed56ccb244110bd671aa9cca58794f7d57567792b56a41a0969beed70680af"
   },
   "BMT_reviewer_candidates.docx": {
     "bytes": 41573,
@@ -356,8 +376,8 @@
     "sha256": "f9e4c85b93d8fcc5aacf972612a9295864b55156c40e4bf29ef4b6cc8decd97d"
   },
   "README_zh.md": {
-    "bytes": 1907,
-    "sha256": "2a545133b0cddd71446f08327e1bb1d1ec75e4abae590b48e7dbbfc05dd7f53a"
+    "bytes": 2224,
+    "sha256": "2efddbae3a732a3d2a755f36e7b074b372574f8db1b1b73f0c0e78dd8f706924"
   },
   "Reproducibility/README.md": {
     "bytes": 9272,

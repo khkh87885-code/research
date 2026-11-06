@@ -1,0 +1,202 @@
+{
+  "status": "PASS",
+  "reviewer": "/root/v8_independent_qa",
+  "date_utc": "2026-11-06",
+  "scope": "Independent scientific, numerical, structural and sampled PDF visual review. Manuscript files were read only; no inference, bootstrap, source-study edits or author approvals were performed by this reviewer.",
+  "files": {
+    "main": {
+      "path": "/workspace/bmt_v8/outputs/BMT_main_manuscript_v8.docx",
+      "sha256": "7455e90e9c1419100b2e9a6a78107d927fcb099101257b0c481172229a99a138"
+    },
+    "supplement": {
+      "path": "/workspace/bmt_v8/outputs/BMT_supplementary_material_v4.docx",
+      "sha256": "6b443ebd1f5288ec8c28d3add258ef7b694c5aef47870b976e440507eefc9a2a"
+    },
+    "main_pdf": {
+      "path": "/workspace/bmt_v8/qa/BMT_main_manuscript_v8.pdf",
+      "sha256": "b2825226bf3a2d63d8048a8d035a92a9ce1d98016e2ebd4f483029acf0371ad2",
+      "pages": 14
+    },
+    "supplement_pdf": {
+      "path": "/workspace/bmt_v8/qa/BMT_supplementary_material_v4.pdf",
+      "sha256": "052c54a00360d4329291f020b672caeea0aef0781cddd3a79a0d6777bf1f53fe",
+      "pages": 21
+    }
+  },
+  "source_commit": "6a7da8181db6ba3db0bb9fa8bef628f284791b2e",
+  "source_worktree_status": "",
+  "scientific_checks": [
+    {
+      "id": "locked_primary",
+      "status": "PASS",
+      "evidence": "主稿3张表与v7逐单元格一致，H1 −13.84 [−38.85,+7.45]、H2 −6.56 [−11.25,−1.10]、H3 +18.75 [−4.28,+40.04]不变；补充S1–S9九表逐格一致。"
+    },
+    {
+      "id": "posthoc_scope",
+      "status": "PASS",
+      "evidence": "新增预算、bootstrap、诊断分解与六例CPU重放明确标记post hoc；未升级为原预设假设。"
+    },
+    {
+      "id": "policy_and_ties",
+      "status": "PASS",
+      "evidence": "整组校准ties、等距取更少复核、零复核候选、原始标识符字符串排序与整数K规则明确；内部50%K425/外部50%K126。"
+    },
+    {
+      "id": "bootstrap_records",
+      "status": "PASS",
+      "evidence": "重复抽中记录保留，不去重；外部top50选择50条draw记录，原ID及replica索引解决ties。"
+    },
+    {
+      "id": "bootstrap_signs",
+      "status": "PASS",
+      "evidence": "R1/R2/R3原方向频率39.61/90.40/30.94%，full有零对比28.08%，均表为经验频率而非人群概率或p值。"
+    },
+    {
+      "id": "zero_A_only_support",
+      "status": "PASS",
+      "evidence": "原配对both10/A-only0/B-only3/neither3及R1支持约束被明确解释；[0,40]不能排除人群A优势，原H3 Newcombe保留。"
+    },
+    {
+      "id": "case_mix",
+      "status": "PASS",
+      "evidence": "检测权重按低质量病例F_s/F，复核权重按全部患者N_s/N；非因果、未作percent-explained主张；4999/5000分量有效数及舍入说明准确。"
+    },
+    {
+      "id": "cpu_replay",
+      "status": "PASS",
+      "evidence": "六病例/30非空实际CPU masks、12复核决定及6质量标签一致。最大参考Dice差9.61064306665e−5与48字段最大差0.0014354348103正确；原CUDA数组未存，未主张逐像素/逐位一致；原分数继续用于全队列分析。"
+    },
+    {
+      "id": "claims_and_language",
+      "status": "PASS",
+      "evidence": "主线明确为固定阈值迁移与等复核ranking的区分；预算依赖和16个外部低质量事件的不精确性写清，无一般优越、临床有效或病理因果推断。"
+    },
+    {
+      "id": "author_and_declarations",
+      "status": "PASS",
+      "evidence": "作者单位、邮编400016、邮箱与ORCID保持。正文和填写的author-contributions不称两作者已重新批准v8；审阅版状态明确。官方模板instructions中的approved字样未被误当作者填写声明。"
+    }
+  ],
+  "format_checks": {
+    "status": "PASS",
+    "abstract_lexical_words_including_four_labels": 180,
+    "abstract_limit_words": 200,
+    "main_body_lexical_words_including_section_headings": 3927,
+    "main_body_limit_words": 6000,
+    "main_figures": 5,
+    "main_tables": 3,
+    "main_display_items_total": 8,
+    "supplement_logical_tables": 13,
+    "supplement_physical_tables": 19,
+    "supplement_logical_figures": 6,
+    "supplement_embedded_figure_pages": 7,
+    "references": 15,
+    "original_sources_retained": 14,
+    "new_source": "Kitagawa EM (1955), DOI 10.1080/01621459.1955.10501299",
+    "reference_provenance_note": "Original references 1–12 are unchanged; original Scientific Agent Skills reference moves 13→14; the original repository reference moves 14→15 and updates its archive commit, while the original primary archive remains explicitly available.",
+    "reference_first_citation_order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "supplement_table_first_citation_order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "supplement_figure_first_citation_order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "all_12_standalone_pngs_approx_600dpi": true,
+    "main_and_supplement_em_dash_count": 0,
+    "replacement_character_count": 0,
+    "tracked_insertions_or_deletions": false
+  },
+  "visual_review": {
+    "status": "PASS",
+    "main_pdf_pages_reviewed": [
+      1,
+      6,
+      9,
+      13,
+      14
+    ],
+    "supplement_pdf_pages_reviewed": [
+      9,
+      11,
+      12,
+      14,
+      15,
+      16,
+      18,
+      20,
+      21
+    ],
+    "standalone_figures_reviewed": [
+      "Figure_5.png",
+      "source six-case shared-miss sheet"
+    ],
+    "findings": "Reviewed tables/captions are legible without clipping; S4 and S6A/B show clear panel labels and contours. The case175 upper-edge prediction is visibly nonempty. Final revised pages 11/15/20 were re-rendered and inspected after fixes."
+  },
+  "resolved_findings": [
+    {
+      "id": "empty_mask_rule",
+      "finding": "原Methods空掩膜约定可能被读成真实出现两张空掩膜。",
+      "resolution": "改为明确条件规则；结果仍明确全部预测非空。"
+    },
+    {
+      "id": "external_equal_k_footnote",
+      "finding": "S10E外部面板曾重复内部50%预算K=425脚注。",
+      "resolution": "外部50%明确K=126；内部S10C保留K=425。"
+    },
+    {
+      "id": "equal_k_review_interval",
+      "finding": "等复核政策按设计复核量差为零，给出非零宽度区间会混淆统计目标。",
+      "resolution": "S10C/E改为0 (by design)，不呈现政策复核量差区间；原CSV保留，检测差区间不变。"
+    },
+    {
+      "id": "cpu_environment_and_full_comparisons",
+      "finding": "S6A先前声称S13含环境细节和完整48字段，但版本仅含摘要。",
+      "resolution": "S13补充CPU完整版本、两线程、float32、运行时间与内存；S6A明确摘要及S13_all_48_comparisons_unrounded.csv。"
+    },
+    {
+      "id": "em_dash",
+      "finding": "补稿作者版本行有一处长破折号。",
+      "resolution": "改为分号；最终主稿和补稿em dash均为0。"
+    }
+  ],
+  "unresolved_findings": [],
+  "limits": "This review assesses consistency and presentation against the fixed evidence. It is not an independent patient cohort, clinical validation, a new model run, or certification of author approval to submit.",
+  "supporting_evidence": [
+    "qa/structural_extraction.json",
+    "qa/numeric_reference.json",
+    "qa/review_v8.py"
+  ]
+}

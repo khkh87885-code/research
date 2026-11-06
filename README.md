@@ -1,4 +1,4 @@
-# Transfer of fixed review thresholds for breast ultrasound segmentation quality control
+# Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control
 
 作者：兰昊泽（Haoze Lan，第一作者兼通讯作者）、Ziyuan Zhu（第二作者）；两位作者均署名重庆医科大学人工智能医学学院。第一作者 ORCID：[0009-0008-5089-5902](https://orcid.org/0009-0008-5089-5902)。研究比较两种基于 Segment Anything Model（SAM）的复核评分，并考察在 BUS-BRA 开发集锁定的阈值在内部留出集和 BrEaST 外部队列上的表现。
 
@@ -10,13 +10,21 @@
 
 每位纳入患者固定使用一张图及对应参考掩膜。正式验证共 1,103 例。40 例预实验来自开发集。评分和复核均在回顾性模拟中进行。
 
+## 最新修订：v8 作者审阅版
+
+[主稿 Word](submission/bmt_v8/BMT_main_manuscript_v8.docx) · [主稿 PDF](submission/bmt_v8/BMT_main_manuscript_v8_preview.pdf) · [补充材料 Word](submission/bmt_v8/BMT_supplementary_material_v4.docx) · [补充 PDF](submission/bmt_v8/BMT_supplementary_material_v4_preview.pdf) · [文稿及分析 ZIP](submission/BMT_documents_and_analysis_v8.zip) · [生产图 ZIP](submission/BMT_production_figures_v8.zip) · [修订说明](submission/bmt_v8/BMT_revision_report_v8_zh.md)
+
+v8围绕固定阈值迁移与等复核量排序的部署含义重写标题、摘要、引言和讨论，整合全部8预算扫描、三路线bootstrap、诊断构成标准化/分解及六例真实CPU预测轮廓。原H1–H3、三张主表与原S1–S9数字不变。主文5图+3表共8项；补表S1–S13、补图S1–S6；新增内容明确为事后分析。摘要174词，正文约3927词，15条文献。
+
+新增表139项数值核验与独立稿件审查通过；图按出版宽重排为600dpi、文字至少7.2pt。等复核量的复核差按设计为0，不将归档条件二元标志区间当作政策差区间。作者地址邮编400016沿用确认信息。本版是新的作者审阅稿，保留v7既有批准记录，不将其表述为已重新批准v8，未执行期刊投稿。
+
 ## 六例真实预测轮廓：已完成
 
 [两页A4轮廓图](experiments/six_case_replay_v1/reports/six_case_contours_A4.pdf) · [中文核验报告](experiments/six_case_replay_v1/reports/six_case_replay_report_zh.pdf) · [逐例对照与复现](experiments/six_case_replay_v1/README.md) · [完整结果包](experiments/BMT_six_case_replay_v1.zip)
 
 2026-11-06已取得与原SAM ViT-B检查点SHA-256完全一致的375,042,383字节权重，并实际完成六例CPU重放，保存6个NPZ内的30张预测掩膜。12个A/B复核决定与6个低质量标签全部匹配；初始参考Dice最大绝对差0.0000961064。总墙钟59.419秒，峰值RSS约3.15GiB。真实预测轮廓与独立核验均已交付，原研究评分和H1–H3保持不变；本轮CPU数组按新运行标注，不能声称为原CUDA数组的逐像素恢复。
 
-## 最新修订：v7 作者批准归档版
+## 历史修订：v7 作者批准归档版
 
 [主稿 Word](submission/bmt_v7/BMT_main_manuscript_v7.docx) · [主稿 PDF 预览](submission/bmt_v7/BMT_main_manuscript_v7_preview.pdf) · [完整包 ZIP](submission/BMT_revision_review_package_v7.zip) · [补充材料](submission/bmt_v7/BMT_supplementary_material_v3.docx) · [修订与核验报告](submission/bmt_v7/BMT_revision_report.md)
 

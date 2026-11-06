@@ -1,0 +1,95 @@
+{
+  "source_commit": "6a7da8181db6ba3db0bb9fa8bef628f284791b2e",
+  "sources": [
+    {
+      "path": "/workspace/research_source/experiments/cloud_validation_v1/protocol/reviewer_report_20261106.md",
+      "sha256": "cc7fec8dda8edd7e6dbc91232746c0cb79bb7de27c1687ec1d49deae3e0599d7"
+    },
+    {
+      "path": "/workspace/research_source/experiments/cloud_validation_v1/results/budget_transfer/results.json",
+      "sha256": "be2b05ce7276a9c79287b23b47672f609d106f5420c86455831a636169eb9b3b"
+    },
+    {
+      "path": "/workspace/research_source/experiments/cloud_validation_v1/results/bootstrap_stability/summary.json",
+      "sha256": "050c69a00dcd3709bec88f0182c0ce5229a078dbd9f0838167173f2ed3313446"
+    },
+    {
+      "path": "/workspace/research_source/experiments/cloud_validation_v1/results/case_mix_decomposition.json",
+      "sha256": "92e3ccd9d761117c25089a01c61c40f23674cf70b05a8e221cebbc29524e5543"
+    },
+    {
+      "path": "/workspace/research_source/experiments/six_case_replay_v1/predictions/targeted_rerun_receipt.json",
+      "sha256": "5403390674fb4f549f7bb695f39551823f988521a551a99b409613eb5d750981"
+    },
+    {
+      "path": "/workspace/research_source/experiments/six_case_replay_v1/reports/all_48_numeric_comparisons.csv",
+      "sha256": "af2c82c53c71420efd597ca19f29f324d04e102ef0732d7cb997ee13d15c9ad3"
+    },
+    {
+      "path": "/workspace/research_source/experiments/six_case_replay_v1/qa/postrun_review.json",
+      "sha256": "b3cd2f8fb2d1c5a25a6f67fd905288c4dafe842d33918ebd4968ee381ab39ce6"
+    }
+  ],
+  "independent_numeric_review": {
+    "budget_external_fixed_signs_by_target_percent": {
+      "positive": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "negative": [
+        25,
+        30,
+        50
+      ],
+      "zero": [
+        40
+      ]
+    },
+    "budget_external_equal_review_signs_by_target_percent": {
+      "positive": [
+        5,
+        10,
+        15
+      ],
+      "negative": [
+        20
+      ],
+      "zero": [
+        25,
+        30,
+        40,
+        50
+      ]
+    },
+    "strict_reversal_frequencies_percent": [
+      39.61,
+      90.4,
+      30.94
+    ],
+    "external_locked_paired_table": {
+      "both": 10,
+      "A_only": 0,
+      "B_only": 3,
+      "neither": 3
+    },
+    "case_mix_detection_denominator": "F_s/F",
+    "case_mix_review_denominator": "N_s/N",
+    "case_mix_A_detection_pp": {
+      "overall": -13.8440860215,
+      "composition": -1.6154392372,
+      "within_stratum_rate": -12.2286467843
+    },
+    "case_mix_detection_components_valid_draws": 4999,
+    "case_mix_bootstrap_total": 5000,
+    "cpu_case_count": 6,
+    "cpu_mask_count": 30,
+    "cpu_nonempty_masks": 30,
+    "cpu_all_quality_labels_and_review_flags_match": true,
+    "cpu_max_abs_reference_dice_difference": 9.61064306665e-05,
+    "cpu_max_abs_all_metric_difference": 0.0014354348103,
+    "cpu_reference_dice_max_case": "case222",
+    "cpu_all_metric_max_case_field": "case105 dice_shift_left"
+  }
+}

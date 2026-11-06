@@ -1,0 +1,1 @@
+Figure 2 is supplied at approximately 175 mm width and 600 dpi. Keep it as a full-width figure. The minimum source-PDF label size is approximately 6.45 pt at 175 mm; scaling to single-column width would reduce labels below the intended readable size. The PNG bytes are unchanged from the verified source.

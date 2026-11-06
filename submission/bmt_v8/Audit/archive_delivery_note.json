@@ -1,0 +1,11 @@
+{
+  "full_bundle_filename": "BMT_revision_review_package_v8.zip",
+  "repository_download_components": [
+    "BMT_documents_and_analysis_v8.zip",
+    "BMT_production_figures_v8.zip"
+  ],
+  "documents_scope": "All review-package files except Figures/",
+  "figures_scope": "Figures/",
+  "usage": "Extract both repository components into the same directory; their union matches FILE_MANIFEST.json. The single complete bundle is retained in the task workspace.",
+  "interface_constraint": "The repository connector limits each request body to 16 MiB; files themselves and scientific results are unchanged."
+}

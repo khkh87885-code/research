@@ -1,0 +1,114 @@
+{
+  "retrieved_at": "2026-11-06",
+  "address": {
+    "retrieved_at": "2026-11-06",
+    "status": "Campus confirmed by author; campus-specific postcode verified from current official university admissions source",
+    "author_confirmed_campus": "重庆医科大学缙云校区人工智能医学学院",
+    "department_chinese": "人工智能医学学院",
+    "institution_chinese": "重庆医科大学",
+    "campus_chinese": "缙云校区",
+    "chinese_address": "重庆市沙坪坝区大学城中路61号兰园6号楼",
+    "postcode": "401331",
+    "title_page_full_english": "College of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Building 6, Lanyuan, No. 61 Daxuecheng Middle Road, Shapingba District, Chongqing 401331, China",
+    "title_page_short_affiliation": "College of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Chongqing 401331, China",
+    "translation_note": "Jinyun Campus, Building 6, Lanyuan, No. 61 Daxuecheng Middle Road and Shapingba District are faithful transliteration/translation of source Chinese address, not a newly claimed official English name.",
+    "primary_sources": [
+      {
+        "url": "https://bzkzs.cqmu.edu.cn/",
+        "owner": "重庆医科大学本科招生官方网站",
+        "location": "footer",
+        "http_status": 200,
+        "exact_quote": "袁家岗校区：重庆市渝中区医学院路1号\n邮政编码：400016\n缙云校区：重庆市沙坪坝区大学城中路61号\n邮政编码：401331",
+        "contribution": "Explicitly pairs Jinyun Campus and street address with 401331; distinguishes Yuanjiagang postcode 400016."
+      },
+      {
+        "url": "https://mi.cqmu.edu.cn/",
+        "owner": "重庆医科大学人工智能医学学院",
+        "location": "footer",
+        "http_status": 200,
+        "exact_quote": "地址：重庆市沙坪坝区大学城中路61号兰园6号楼\n邮编：400016",
+        "contribution": "Provides specific college building. Postcode conflicts with campus-specific admissions listing."
+      },
+      {
+        "url": "https://mi.cqmu.edu.cn/xygk1/xyjj.htm",
+        "owner": "重庆医科大学人工智能医学学院",
+        "location": "footer",
+        "http_status": 200,
+        "exact_quote": "地址：重庆市沙坪坝区大学城中路61号兰园6号楼\n邮编：400016",
+        "contribution": "Repeats college building address."
+      },
+      {
+        "url": "https://www.cqmu.edu.cn/jgsz/jxkynsjg.htm",
+        "owner": "重庆医科大学",
+        "exact_quote": "[人工智能医学学院](https://mi.cqmu.edu.cn/)",
+        "contribution": "Authenticates college site via university directory."
+      }
+    ],
+    "source_discrepancy_resolution": "Use 401331 for the author-confirmed Jinyun Campus because current official admissions page explicitly separates the two campuses and gives Jinyun-specific 401331. Preserve the college footer's conflicting 400016 in evidence; do not assert without proof that its footer is an erroneous template.",
+    "does_not_require_further_author_postcode_lookup": true
+  },
+  "ethics": {
+    "status": "Author-confirmed statutory Article 32 exemption; no IRB-issued approval or consent waiver claimed",
+    "author_confirmation": {
+      "statement": "项目符合国家法律规定免于审查，已经完成所有审查",
+      "provenance": "User statement transmitted by parent in this task",
+      "supersedes": "Prior pending author confirmation of statutory exemption conditions",
+      "irb_reference_number_provided": false
+    },
+    "statutory_basis": {
+      "title": "涉及人的生命科学和医学研究伦理审查办法",
+      "document_number": "国卫科教发〔2023〕4号",
+      "signed_on": "2023-02-18",
+      "url": "https://www.nhc.gov.cn/qjjys/c100016/202302/6b6e447b3edc4338856c9a652a85f44b.shtml",
+      "article": 32,
+      "quote_intro": "使用人的信息数据或者生物样本开展以下情形的涉及人的生命科学和医学研究，不对人体造成伤害、不涉及敏感个人信息或者商业利益的，可以免除伦理审查，以减少科研人员不必要的负担，促进涉及人的生命科学和医学研究开展。",
+      "quote_1": "利用合法获得的公开数据，或者通过观察且不干扰公共行为产生的数据进行研究的；",
+      "quote_2": "使用匿名化的信息数据开展研究的；",
+      "scope": "Ethics-review exemption; not itself an IRB decision waiving consent.",
+      "previous_source": "/workspace/bmt_revision/evidence/china_ethics_basis.json"
+    },
+    "original_dataset_provenance": [
+      {
+        "dataset": "BrEaST",
+        "url": "https://www.nature.com/articles/s41597-024-02984-z",
+        "doi": "10.1038/s41597-024-02984-z",
+        "section": "Methods; Data collection and anonymization",
+        "status": "Full original article verified",
+        "exact_quotes": [
+          "The breast ultrasound images from 256 patients were collected at medical centers in Poland in 2019–2022. Ethical approval for this study was obtained from the Bioethics Committee at the Lower Silesian Chamber of Medicine no. 2/BNR/2022. The requirement of obtaining written informed consent from patients was forgone because retrospective data collection has not impacted the standard diagnostic procedures and all data has been anonymized before being entered into the database. The data transfer, annotation and labeling were conducted via a purpose-built web-based system at the Institute of Fundamental Technological Research of the Polish Academy of Sciences in Poland. The scheme of workflow is shown in Fig. [1](https://www.nature.com/articles/s41597-024-02984-z#Fig1). In particular, the process was divided into four steps: data acquisition (1), data collection and anonymization (2), data labeling and annotation (3) and data evaluation and extraction (4).",
+          "In building the dataset, the first clinically non-standard step was to anonymize, collect and transfer the data. To protect patients’ privacy, all identifiable information has been removed from the images.",
+          "The anonymization was conducted at the institutions of the data origin. For each file, all DICOM tags containing sensitive or identifiable information such as patient ID, patient’s name, or patient’s date of birth were deleted or replaced with random values. Then, all patient-related textual information within the image (e.g. patient ID) was permanently removed. Before transferring, all anonymized images were manually reviewed to ensure that all information had been removed."
+        ],
+        "scope": "The Bioethics Committee approval 2/BNR/2022 and written-consent-forgone statement apply to the original BrEaST data study, not this secondary analysis."
+      },
+      {
+        "dataset": "BUS-BRA",
+        "url": "https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.16812",
+        "doi": "10.1002/mp.16812",
+        "status": "Original publisher abstract verified; exact original ethics/consent clause not accessible",
+        "exact_quote": "The BUS dataset comprises 1875 anonymized images from 1064 female patients acquired via four ultrasound scanners during systematic studies at the National Institute of Cancer (Rio de Janeiro, Brazil). The dataset includes biopsy-proven tumors divided into 722 benign and 342 malignant cases. Besides, a senior ultrasonographer performed a BI-RADS assessment in categories 2 to 5. Additionally, the ultrasonographer manually outlined the breast lesions to obtain ground truth segmentations. Furthermore, 5- and 10-fold cross-validation partitions are provided to standardize the training and test sets to evaluate and reproduce CAD systems. Finally, to validate the utility of the BUS dataset, an evaluation framework is implemented to assess the performance of deep neural networks for segmenting and classifying breast lesions.",
+        "repository_url": "https://zenodo.org/records/8231412",
+        "repository_exact_quote": "The BUS-BRA Dataset is a publicly available dataset of anonymized breast ultrasound (BUS) images of 1,064 patients that underwent routinary breast studies.",
+        "access_limitation": "Wiley /doi/full and /doi/pdf returned HTML abstract pages. ResearchGate shows Request PDF. No original BUS-BRA consent/waiver statement verified.",
+        "scope": "Do not claim both original datasets had the same consent waiver. Do not transfer approval protocol from another 2017 INCa paper."
+      }
+    ],
+    "recommended_research_ethics": "This secondary analysis used publicly available, anonymized BUS-BRA and BrEaST data and involved no new participant recruitment or intervention. The authors confirm that the study qualified for exemption from ethics review under Article 32 of the Chinese Measures for Ethical Review of Life Science and Medical Research Involving Human Participants (2023).",
+    "recommended_informed_consent": "This secondary analysis used only publicly available, anonymized data and involved no new participant recruitment or contact. Additional participant consent was not sought.",
+    "minimal_informed_consent": "This secondary analysis used only publicly available, anonymized data and involved no new participant recruitment or contact.",
+    "wording_rationale": "Reports actual reuse process without converting statutory ethics-review exemption to an invented IRB consent waiver, or representing original-data approval as present-study approval.",
+    "do_not_claim": [
+      "IRB waiver of consent for this secondary analysis",
+      "Present study approval under BrEaST 2/BNR/2022",
+      "BUS-BRA original consent waiver not read",
+      "Mandatory need for a fictitious institution approval number despite author-confirmed statutory exemption"
+    ]
+  },
+  "current_author_confirmed_correspondence": {
+    "postcode": "400016",
+    "full_english_address": "College of Artificial Intelligence Medicine, Chongqing Medical University, Jinyun Campus, Building 6, Lanyuan, No. 61 Daxuecheng Middle Road, Shapingba District, Chongqing 400016, China",
+    "basis": "Latest explicit author confirmation, recorded in author_confirmation_record.json",
+    "previous_title_page_recommendation_superseded": true,
+    "official_campus_specific_401331_source_preserved": true
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "recorded_utc": "2026-11-06T12:58:12.944611+00:00",
+  "status": "PASS",
+  "final_documents_pending": false,
+  "source": "submission/bmt_v10",
+  "scope": "Typography correction of the existing mathematical methods; no numerical or study-result change",
+  "reports": {
+    "mathematics": {
+      "path": "/workspace/bmt_v11/evidence/independent_mathematics_qa.json",
+      "sha256": "b373d278c892d7c4847c88631151bb2160f0248fc6bc7fd4fb7134498c4d6c92",
+      "checks_passed": 217
+    },
+    "layout": {
+      "path": "/workspace/bmt_v11/evidence/independent_layout_qa.json",
+      "sha256": "dc8585b9b79c290c6a715273b8c1bb3a7e198ed90bb2ad81718c921ee199539d",
+      "checks_passed": 68
+    }
+  },
+  "documents": {
+    "BMT_formula_layout_proof_v11.pdf": {
+      "sha256": "443764407b8d8becbfca5ee0cc3e006bf2f2469a9b466c6efe2df4a8cfad049f",
+      "bytes": 1082813,
+      "pages": 9
+    },
+    "BMT_main_manuscript_v11.docx": {
+      "sha256": "f3a7d18d79e497772179fee8f0dda48a728c0f674b1e21b6dd28de2aa3ef81df",
+      "bytes": 64021
+    },
+    "BMT_main_manuscript_v11_illustrated.docx": {
+      "sha256": "29296b8b86275f3ccf3a9ed17943c239bce627ad0aa0c67757268fbc5bfe8269",
+      "bytes": 3546534
+    },
+    "BMT_main_manuscript_v11_illustrated_preview.pdf": {
+      "sha256": "f53d1f98ed6382164d21ed31fcdb48953d4832ac86f6d3f9406870d3004599d8",
+      "bytes": 1518715,
+      "pages": 28
+    },
+    "BMT_main_manuscript_v11_preview.pdf": {
+      "sha256": "97593bcaccb509500ae972d8b5fe1a5341e1e43deeef66531e042d3f26e833c5",
+      "bytes": 275470,
+      "pages": 23
+    },
+    "BMT_supplementary_Figure_S6_v7.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "bytes": 1871819,
+      "pages": 6
+    },
+    "BMT_supplementary_material_v7.docx": {
+      "sha256": "2f6e5e97c430c9fc4606efd3d118170342af23c38a7d2695b89e2b294c3687b5",
+      "bytes": 1539783
+    },
+    "BMT_supplementary_material_v7_preview.pdf": {
+      "sha256": "7d72380e86f41a954298f7066371a719b0fab14ecc48e5993a753e356d79a13c",
+      "bytes": 1394974,
+      "pages": 29
+    }
+  },
+  "main_equation_groups": 14,
+  "supplement_equation_groups": 12,
+  "native_editable_office_math": true,
+  "results_tables_figures_references_declaration_substance_changed": false,
+  "main_table_cells": 66,
+  "supplement_table_cells": 878,
+  "abstract_words": 174,
+  "main_body_words_including_math_extraction": 3938,
+  "directly_tested_renderer": "LibreOffice PDF export",
+  "word_wps_direct_rendering_tested": false,
+  "renderer_profile": {
+    "main_math_base_pt": 12,
+    "supplement_math_base_pt": 11,
+    "index_and_limit_percent": 70
+  },
+  "review_proof_pages": 9,
+  "journal_submission_executed": false
+}

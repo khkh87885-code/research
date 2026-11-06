@@ -1,0 +1,300 @@
+{
+  "source_docx": "/workspace/research_source/submission/bmt_v9/BMT_main_manuscript_v9.docx",
+  "source_sha256": "5ea44cbc38262f3a60ecc3a76299c3518bed41a8d4979db799b28f94361b3737",
+  "scope": "Explicit mathematical definitions of existing methods; no new analysis or scientific-result change",
+  "display_equation_count": 14,
+  "main_numbering": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "replacements": [
+    {
+      "source_paragraph_index": 26,
+      "anchor_exact": "We obtained the initial prompt box from the tight bounding box of the nonempty reference mask, expanded each horizontal side by 10 % of the width and each vertical side by 10 % of the height, and clipped the result to the image. This is a reference-informed, known-location (oracle-localization) setting, not a test of autonomous lesion localization. We encoded the image once and used the resulting embedding for the initial prediction and four additional predictions (Figure 2). The fixed 10 % context margin was used consistently across datasets.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For patient $i$, let $G_i$ be the nonempty binary reference mask and $B_i=(x_i^-,y_i^-,x_i^+,y_i^+)$ its tight bounding box. Upper coordinates are one pixel beyond the largest foreground index, so $w_i=x_i^+-x_i^-$ and $h_i=y_i^+-y_i^-$. The initial prompt expands each side by 10 % and clips coordinates to the image (Eq. (1)):"
+        },
+        {
+          "type": "equation",
+          "label": "1",
+          "latex": "\\begin{aligned}B_{0,i}&=\\operatorname{clip}_{\\Omega_i}(B_i+e_i),\\\\e_i&=(-0.10w_i,-0.10h_i,0.10w_i,0.10h_i).\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Here $\\operatorname{clip}_{\\Omega_i}$ clips horizontal coordinates to $[0,W_i]$ and vertical coordinates to $[0,H_i]$, where $W_i,H_i$ are the image dimensions. Writing the clipped box width and height as $w_{0,i},h_{0,i}$, its four perturbations are"
+        },
+        {
+          "type": "equation",
+          "label": "2",
+          "latex": "\\begin{aligned}B_{j,i}&=\\operatorname{clip}_{\\Omega_i}\\{B_{0,i}+(u_{j,i},v_{j,i},u_{j,i},v_{j,i})\\},\\\\(u_{j,i},v_{j,i})&\\in\\{(-\\delta_{x,i},0),(\\delta_{x,i},0),(0,-\\delta_{y,i}),(0,\\delta_{y,i})\\},\\\\\\delta_{x,i}&=0.05w_{0,i},\\qquad\\delta_{y,i}=0.05h_{0,i}.\\end{aligned}",
+          "rendering_note": "Equivalent explicit displacement variables avoid an open delimiter across aligned rows."
+        },
+        {
+          "type": "paragraph",
+          "text": "The four entries in Eq. (2) correspond to left, right, up and down, respectively. This reference-informed, known-location (oracle-localization) setting does not test autonomous lesion localization. We encoded the image once and reused its embedding for the initial and four shifted-prompt predictions (Figure 2). The same 10 % context margin and 5 % shifts were used across datasets."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 27,
+      "anchor_exact": "Method A calculated risk as one minus the raw predicted intersection over union (IoU) returned for the initial mask. For method B, we shifted the initial clipped box left and right by 5 % of its width and up and down by 5 % of its height, clipping each shifted box to the image. We calculated the Dice coefficient between the initial predicted mask and each of the four shifted-prompt masks. Risk B was one minus the mean of these four Dice coefficients. We retained all four directions when clipping produced coincident boxes. The consistency Dice coefficient was defined as 1 when both predicted masks were empty. The 5 % translations define a deterministic local stability probe relative to box size. Method B adds four mask-decoder passes while reusing the image embedding. Recorded inference times cover the combined pipeline; A-only and incremental B times were not separately benchmarked.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Let $P_{0,i}$ denote the initial binary prediction and $P_{j,i}$ its prediction under shift $j$. For two binary masks $U,V$, with $|\\cdot|$ denoting foreground-pixel count, Dice agreement is"
+        },
+        {
+          "type": "equation",
+          "label": "3",
+          "latex": "D(U,V)=\\begin{cases}\\dfrac{2\\lvert U\\cap V\\rvert}{\\lvert U\\rvert+\\lvert V\\rvert},&\\lvert U\\rvert+\\lvert V\\rvert>0,\\\\1,&\\lvert U\\rvert+\\lvert V\\rvert=0.\\end{cases}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Method A uses the raw predicted intersection over union (IoU), $\\widehat q_i$, returned by the SAM quality head for the initial mask:"
+        },
+        {
+          "type": "equation",
+          "label": "4",
+          "latex": "r_{A,i}=1-\\widehat q_i."
+        },
+        {
+          "type": "paragraph",
+          "text": "Method B uses disagreement between the initial prediction and the four shifted-prompt predictions:"
+        },
+        {
+          "type": "equation",
+          "label": "5",
+          "latex": "r_{B,i}=1-\\frac14\\sum_{j=1}^{4}D(P_{0,i},P_{j,i})."
+        },
+        {
+          "type": "paragraph",
+          "text": "Thus $\\widehat q_i$ in Eq. (4) is a model output, whereas Eq. (5) measures prediction-to-prediction consistency. All four directions were retained when clipping produced coincident boxes. Method B adds four mask-decoder passes while reusing the image embedding. Recorded inference times cover the combined pipeline; A-only and incremental B times were not separately benchmarked."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 28,
+      "anchor_exact": "For binary masks, the Dice coefficient is twice the number of shared foreground pixels divided by the sum of foreground pixels in the two masks. The quality reference for both methods was Dice between the initial prediction and the manual mask. An empty initial prediction against a nonempty reference would contribute a Dice coefficient of 0. We defined low quality as reference Dice below 0.70, an operational cutoff for this evaluation.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The quality reference for both methods was $D(P_{0,i},G_i)$, separate from the scores in Eqs. (4) and (5). We defined the low-quality indicator as"
+        },
+        {
+          "type": "equation",
+          "label": "6",
+          "latex": "Y_i=\\mathbf{1}\\{D(P_{0,i},G_i)<\\tau\\},\\qquad \\tau=0.70."
+        },
+        {
+          "type": "paragraph",
+          "text": "Here $\\mathbf{1}\\{\\cdot\\}$ is one when its condition holds and zero otherwise. This is an operational quality cutoff. An empty initial prediction against the nonempty reference has Dice zero under Eq. (3)."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 31,
+      "anchor_exact": "For each method, we searched the distinct development risk scores and the option to flag zero cases. A case was flagged if its score met or exceeded the candidate threshold. The selected threshold gave the review fraction closest to 20 %. Cases tied at the cutoff were flagged together. When two choices were equally close to the target, we selected the one with fewer flagged cases. The exact thresholds were locked before test scoring and applied to both test cohorts. The 20 % target defines a prespecified one-in-five review scenario rather than an empirically measured clinical review capacity.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For method $m\\in\\{A,B\\}$, candidate cutoff $t$ flags patient $i$ when the risk meets or exceeds the cutoff. Its development review fraction is given by Eq. (7):"
+        },
+        {
+          "type": "equation",
+          "label": "7",
+          "latex": "\\begin{aligned}a_{m,i}(t)&=\\mathbf{1}\\{r_{m,i}\\ge t\\},\\\\v_{m,\\mathrm{dev}}(t)&=\\frac{1}{N_{\\mathrm{dev}}}\\sum_{i\\in\\mathrm{dev}}a_{m,i}(t).\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "text": "The candidate set $\\mathcal T_m$ contains every distinct development risk and a cutoff above the maximum risk, representing zero reviews. For target fraction $b$, calibration selects"
+        },
+        {
+          "type": "equation",
+          "label": "8",
+          "latex": "t_m^*=\\underset{t\\in\\mathcal T_m}{\\operatorname{argmin}_{\\mathrm{lex}}}(\\lvert v_{m,\\mathrm{dev}}(t)-b\\rvert,\\ v_{m,\\mathrm{dev}}(t))."
+        },
+        {
+          "type": "paragraph",
+          "text": "The ordered pair in Eq. (8) is minimized lexicographically: first the absolute target discrepancy, then the review fraction. Thus cutoff ties are kept together and equally close choices select fewer cases. The primary target was $b=0.20$, a prespecified one-in-five scenario rather than measured clinical capacity. The exact thresholds were locked before test scoring and transferred unchanged to both test cohorts."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 33,
+      "anchor_exact": "The analysis included cases with a valid reference Dice and both finite risk scores. The procedure allowed one retry with the same configuration after a technical failure and recorded persistent failures separately. We report low-quality detection as the number of flagged low-quality masks divided by the number of low-quality masks. Simulated review is the number of flagged cases divided by all scored cases. Misses per 100 patients is 100 times the number of unflagged low-quality masks divided by all scored cases.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The analysis included cases with valid reference Dice and both finite risk scores. One retry with the same configuration was allowed after a technical failure; persistent failures were recorded separately. In a cohort of $N$ scored patients, let $F=\\sum_iY_i$ be the number of low-quality masks. Writing $a_{m,i}$ for the flag under the evaluated policy, the counts are $TP_m=\\sum_iY_i a_{m,i}$, $FP_m=\\sum_i(1-Y_i)a_{m,i}$, $FN_m=F-TP_m$ and $TN_m=N-F-FP_m$. These count flagged low-quality, flagged acceptable, unflagged low-quality and unflagged acceptable masks, respectively. The reported outcomes are"
+        },
+        {
+          "type": "equation",
+          "label": "9",
+          "latex": "\\begin{aligned}d_m&=\\frac{TP_m}{F},\\qquad v_m=\\frac{TP_m+FP_m}{N},\\\\M_m&=100\\frac{FN_m}{N},\\qquad F=TP_m+FN_m.\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Here $d_m$ is low-quality detection, $v_m$ is simulated review fraction and $M_m$ is missed low-quality masks per 100 patients. Rates with a zero denominator were left undefined."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 34,
+      "anchor_exact": "The dated analysis plan specified three contrasts. H1, the primary contrast, compared method A low-quality detection in BrEaST minus BUS-BRA internal testing. H2 used the same cohort order for method A simulated review. H3 assessed whether method B detected a larger fraction of the same low-quality BrEaST cases when the two cutoffs gave equal review counts in development. The paired contrast was B minus A. Differences are expressed in percentage points. We calculated two-sided 95 % confidence intervals (CIs) using Newcombe score method 10 for independent proportions in H1 and H2 [11] and its paired counterpart in H3 [12]. H2, H3 and supplementary intervals are nominal, with no multiplicity adjustment.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Let $E$ and $I$ denote BrEaST external testing and BUS-BRA internal testing. The dated plan specified the following differences in percentage points (Eq. (10)):"
+        },
+        {
+          "type": "equation",
+          "label": "10",
+          "latex": "\\begin{aligned}\\Delta_{H1}&=100(d_{A,E}-d_{A,I}),\\\\\\Delta_{H2}&=100(v_{A,E}-v_{A,I}),\\\\\\Delta_{H3}&=100(d_{B,E}-d_{A,E}).\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "text": "H1 was primary; H2 assessed the corresponding workload difference. H3 compared the scores on the same external low-quality masks at separately locked cutoffs that gave equal development review counts. We calculated two-sided 95 % confidence intervals (CIs) using Newcombe score method 10 for the independent proportions in H1 and H2 [11] and its paired counterpart in H3 [12]. H2, H3 and supplementary intervals are nominal, with no multiplicity adjustment. The exact interval equations are given in the Supplementary mathematical methods."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 35,
+      "anchor_exact": "We repeated detection analyses with reference Dice cutoffs of 0.50 and 0.80 while retaining both locked risk thresholds. We also ranked the external cases by each risk score and selected the top 50 per method, the count closest to a 20 % review fraction among 252 cases. Risk ties followed the unmodified archived patient-identifier strings in lexicographic order (for example, \"1\", \"10\", \"100\"), rather than numeric or zero-padded image-identifier order. This equal-review comparison used a common number of reviews in the observed external cohort; its paired interval is conditional on the observed rankings.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Sensitivity analyses replaced $\\tau$ in Eq. (6) by 0.50 or 0.80 while retaining the locked risk thresholds. A separate equal-review policy selects the same nearest-integer count for each method:"
+        },
+        {
+          "type": "equation",
+          "label": "11",
+          "latex": "\\begin{aligned}K(b,N)&=\\min\\underset{k\\in\\{0,\\ldots,N\\}}{\\operatorname{argmin}}\\lvert k-bN\\rvert,\\\\a_{m,i}^{(K)}&=\\mathbf{1}\\{\\operatorname{rank}_m(i)\\le K(b,N)\\}.\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "text": "The minimum in Eq. (11) resolves an exact half-integer tie in favor of fewer reviews. Rank is determined by decreasing risk, then the unmodified archived patient-identifier string in lexicographic order, for example \"1\", \"10\", \"100\". With $b=0.20$ and $N=252$, each method selects the top 50 external cases. This paired interval conditions on the observed rankings."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 36,
+      "anchor_exact": "As post hoc descriptive quality-control measures, we additionally tabulated true-positive (TP), false-positive (FP), true-negative (TN) and false-negative (FN) counts, sensitivity (TP/(TP+FN)), specificity (TN/(TN+FP)), positive predictive value (PPV; TP/(TP+FP)) and negative predictive value (NPV; TN/(TN+FN)). Low-quality segmentation was the positive condition and a review flag the positive test. We used Wilson 95 % intervals for these proportions. These measures assess mask-quality screening, not diagnosis of breast cancer.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Post hoc descriptive quality-control measures used low-quality segmentation as the positive condition and a review flag as the positive test. Sensitivity equals $d_m$ in Eq. (9); the remaining measures are given by Eq. (12):"
+        },
+        {
+          "type": "equation",
+          "label": "12",
+          "latex": "\\begin{aligned}\\operatorname{Specificity}_m&=\\frac{TN_m}{TN_m+FP_m},\\\\\\operatorname{PPV}_m&=\\frac{TP_m}{TP_m+FP_m},\\\\\\operatorname{NPV}_m&=\\frac{TN_m}{TN_m+FN_m}.\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "text": "PPV and NPV denote positive and negative predictive value. We reported the TP, FP, TN and FN counts and Wilson 95 % intervals for these proportions. These measures assess mask-quality screening, not diagnosis of breast cancer; the Wilson equation is provided in the Supplementary mathematical methods."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 39,
+      "anchor_exact": "The following exploratory analyses were specified for this revision after the original study. They retain the original scores, low-quality definition and H1–H3. We examined development review targets of 5 %, 10 %, 15 %, 20 %, 25 %, 30 %, 40 % and 50 %, calibrating a separate threshold for each method with the same tied-group and nearest-target rules. Selection used development risks and counts, without quality labels. Each numerical threshold was transferred unchanged to both test cohorts. A separate equal-review policy selected the nearest integer to the target fraction of each test cohort, taking fewer cases at an exact half-integer tie.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The following exploratory analyses were specified for this revision after the original study and retain its scores, low-quality definition and H1–H3. We evaluated $b\\in\\{0.05,0.10,0.15,0.20,0.25,0.30,0.40,0.50\\}$. For each method and target, Eq. (8) selects a threshold using development risks and counts without quality labels; the resulting numerical cutoff is transferred unchanged to both test cohorts. Separately, Eq. (11) selects a cohort-specific equal-review count and ranking."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 40,
+      "anchor_exact": "We used 10,000 patient-bootstrap replicates per route (seed 20261106) to separate three sources of variation: test-cohort sampling at the original cutoffs; development resampling and cutoff recalibration with the original test cohorts unchanged; and both together. Cohorts were sampled independently, with paired A/B scores and labels retained within every record. Repeated draws were retained. Equal-review ranking selected exactly 50 external draw records, ordered by descending risk, original identifier string and draw-position index. The strict original direction pattern required external B-minus-A detection above zero at transferred cutoffs and below zero at equal review; ties were reported separately. Percentile 95 % intervals are descriptive, nominal sensitivity intervals and do not replace the prespecified Newcombe intervals.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "We used 10,000 patient-bootstrap replicates per route (seed 20261106) to separate test-cohort sampling at the original cutoffs, development resampling and recalibration with fixed test cohorts, and both together. Cohorts were sampled independently, keeping A/B scores and quality labels paired within each record. Repeated draws were retained. Equal review selects exactly 50 external draw records, ordered by decreasing risk, original identifier string and draw-position index. The strict original direction pattern requires external B-minus-A detection above zero at transferred cutoffs and below zero at equal review; ties are separate. Bootstrap percentile 95 % intervals and direction-frequency equations are given in the Supplementary mathematical methods. These are descriptive, nominal sensitivity analyses and do not replace the prespecified Newcombe intervals."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 41,
+      "anchor_exact": "We also used symmetric Kitagawa accounting and direct standardization across dataset-reported benign/malignant strata [13]. The external-minus-internal difference was partitioned into a composition-associated term and a within-stratum-rate term. Common weights were the arithmetic mean of the two cohort weights. Detection used the diagnostic shares among low-quality masks, whereas review fractions used shares among all scored patients. We obtained nominal percentile intervals from 5,000 independently sampled cohort-level patient-bootstrap replicates (seed 20261107), recalculating all weights and rates. Undefined stratum denominators remained missing. This accounting describes the observed mixtures and does not estimate causal effects.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "We also used symmetric Kitagawa accounting and direct standardization across dataset-reported benign/malignant strata [13]. Let $s$ denote a diagnostic stratum, $w_{c,s}$ its weight and $p_{c,s}$ its outcome rate in cohort $c\\in\\{E,I\\}$. When all stratum rates are defined, $P_c=\\sum_s w_{c,s}p_{c,s}$ and the external-minus-internal difference is given by Eq. (13):"
+        },
+        {
+          "type": "equation",
+          "label": "13",
+          "latex": "\\begin{aligned}\\Delta_P=P_E-P_I&=C+W,\\\\C&=\\sum_s(w_{E,s}-w_{I,s})\\frac{p_{E,s}+p_{I,s}}{2},\\\\W&=\\sum_s(p_{E,s}-p_{I,s})\\frac{w_{E,s}+w_{I,s}}{2}.\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "text": "Here $C$ is the composition-associated term and $W$ the within-stratum-rate term. Common weights give directly standardized rates (Eq. (14)):"
+        },
+        {
+          "type": "equation",
+          "label": "14",
+          "latex": "\\begin{aligned}w_s^*&=\\frac{w_{E,s}+w_{I,s}}{2},\\qquad P_c^{\\mathrm{std}}=\\sum_s w_s^*p_{c,s},\\\\P_E^{\\mathrm{std}}-P_I^{\\mathrm{std}}&=W.\\end{aligned}"
+        },
+        {
+          "type": "paragraph",
+          "text": "For detection, $w_{c,s}=F_{c,s}/F_c$ and $p_{c,s}=TP_{c,s}/F_{c,s}$; for review, $w_{c,s}=N_{c,s}/N_c$ and $p_{c,s}=R_{c,s}/N_{c,s}$, where $R_{c,s}$ is the flagged count. We obtained nominal percentile intervals from 5,000 independent cohort-level patient-bootstrap replicates (seed 20261107), recalculating weights and rates. Undefined stratum rates remained missing and propagated to dependent components, including when the associated weight was zero. Overall rates were computed directly from aggregate numerators and denominators. This accounting describes observed mixtures and does not estimate causal effects."
+        }
+      ]
+    },
+    {
+      "source_paragraph_index": 43,
+      "anchor_exact": "The original study assessed computational reproducibility by recomputing statistics from archived case scores and by rerunning all 1,316 images in the original computing environment. Its recorded comparisons covered eight numerical fields, quality labels, review decisions, calibration and review-curve counts. For the present revision, we additionally replayed the six A-missed external cases on a CPU using the checksum-identical original checkpoint, exact SAM source and frozen float32 prompt rules. We saved the initial and four shifted predictions for each case and compared all eight numerical fields and decisions with the archive. The two exercises have separate environments and receipts; all cohort analyses continue to use the original scores.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The original study assessed computational reproducibility by recomputing statistics from archived case scores and by rerunning all 1,316 images in the original computing environment. Its recorded comparisons covered eight numerical fields, quality labels, review decisions, calibration and review-curve counts. For the present revision, we additionally replayed the six A-missed external cases on a CPU using the checksum-identical original checkpoint, exact SAM source and frozen float32 prompt rules. We saved the initial and four shifted predictions for each case and compared all eight numerical fields and decisions with the archive. The two exercises have separate environments and receipts; all cohort analyses continue to use the original scores. The absolute-error equation used for numerical comparisons is given in the Supplementary mathematical methods."
+        }
+      ]
+    }
+  ],
+  "preserve_other_paragraphs": true,
+  "preserve_all_tables_and_captions": true,
+  "preserve_results_declarations_references": true,
+  "citation_policy": "No reference added. [11] and [12] stay in the H1-H3 interval paragraph; [13] stays in the Kitagawa paragraph. First-appearance sequence remains unchanged.",
+  "notation_notes": [
+    "Risk r carries patient index; review fraction v carries cohort index, avoiding their conflation.",
+    "SAM predicted IoU is raw quality-head output and is not equated with reference IoU.",
+    "Candidate infinity is represented by any cutoff above maximum risk; zero review is included.",
+    "argmin_lex is explicitly defined as ordered-pair lexicographic minimization.",
+    "Top-K minimum over argmin encodes the fewer-at-half tie rule, not banker rounding.",
+    "The four directions remain four terms even if clipping produces coincident boxes.",
+    "The box upper edge max foreground index+1 matches the actual code.",
+    "Undefined rates are NA, with no zero-denominator imputation.",
+    "Full Wilson, paired Newcombe with corrected phi, bootstrap, empirical-support caveats and replay-error equations are delegated to Supplementary mathematical methods."
+  ],
+  "source_code_references": [
+    "submission/bmt_v9/Reproducibility/score_images.py:34",
+    "submission/bmt_v9/Reproducibility/score_images.py:41",
+    "submission/bmt_v9/Reproducibility/study_statistics.py:77",
+    "submission/bmt_v9/Reproducibility/study_statistics.py:241",
+    "experiments/cloud_validation_v1/scripts/budget_transfer.py:129",
+    "experiments/cloud_validation_v1/scripts/budget_transfer.py:146",
+    "experiments/cloud_validation_v1/scripts/case_mix_decomposition.py:170"
+  ],
+  "planning_counts": {
+    "replaced_original_prose_whitespace_words": 1166,
+    "replacement_prose_with_inline_latex_whitespace_words": 1211,
+    "equation_word_count_note": "Final guideline word count must be measured from rendered DOCX; this planning count includes inline LaTeX tokens."
+  }
+}

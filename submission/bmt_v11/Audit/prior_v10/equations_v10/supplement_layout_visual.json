@@ -1,0 +1,92 @@
+{
+  "reviewed_utc": "2026-11-06T12:22:56.167218+00:00",
+  "status": "PASS",
+  "documents_pending_final_hash": false,
+  "files": {
+    "BMT_supplementary_material_v6_preview.pdf": {
+      "sha256": "44926b7515d64d9eb3020ec8a9bb8336665fe38f46ed515991e261ea17b77ba0",
+      "pages": 29,
+      "bytes": 1386461,
+      "outside_text": [],
+      "empty_pages": [],
+      "equation_labels": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12"
+      ]
+    },
+    "BMT_supplementary_Figure_S6_v6.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "pages": 6,
+      "bytes": 1871819,
+      "outside_text": [],
+      "empty_pages": [],
+      "equation_labels": []
+    }
+  },
+  "checks": [
+    {
+      "check": "BMT_supplementary_material_v6_preview.pdf pagebounds/empty",
+      "pass": true
+    },
+    {
+      "check": "BMT_supplementary_Figure_S6_v6.pdf pagebounds/empty",
+      "pass": true
+    }
+  ],
+  "table_panels": 19,
+  "table_cells": 878,
+  "all_878_table_cell_strings_exact": true,
+  "separate_S6_bytes_unchanged": true,
+  "visual_review": {
+    "all_supplement_29_pages_contact_sheet_viewed": true,
+    "all_S6_6_pages_contact_sheet_viewed": true,
+    "S1_through_S12_equations_detail_pages": [
+      2,
+      3,
+      4
+    ],
+    "equations_complete": true,
+    "right_delimiters_correct": true,
+    "equation_numbers_right_aligned_no_overlap": true,
+    "no_orphan_headings": true,
+    "no_cropped_tables_figures": true,
+    "final_pages_2_3_4_5_inspected_full_size": true,
+    "all_subsection_headings_black": true,
+    "replay_scope_paragraph_wholly_on_page4": true,
+    "Table_S1_starts_clean_page5": true,
+    "S7_logical_or_spacing_visible": true
+  },
+  "sources": "Read-only final PDFs and DOCX, compared to v9 supplement. No source images, scientific values, documents or analyses changed.",
+  "docx_sha256": "6261492ff9b26200c35f75d30a30604021c4e6d3b67030c733b9a55a59d958a6",
+  "minor_recommendations_resolved": [
+    {
+      "location": "Supplement pp4–5",
+      "finding": "The new mathematical-methods final replay_scope paragraph continues as two lines at the top of p5 immediately above Table S1.",
+      "recommendation": "Reclaim approximately two lines by reducing only added mathematics paragraph/equation spacing, or keep this final paragraph together.",
+      "resolved": true
+    },
+    {
+      "location": "New mathematical methods Heading2",
+      "finding": "New Heading2 styles inherit blue, while prior supplement headings are black.",
+      "recommendation": "Set new subsection heading font explicitly black for consistent submission style.",
+      "resolved": true
+    },
+    {
+      "location": "Eq S7",
+      "finding": "The logical word or touches its adjacent mathematical expressions.",
+      "recommendation": "Use explicit mathematical spaces around or, e.g. \\quad\\mathrm{or}\\quad.",
+      "resolved": true
+    }
+  ],
+  "final_contact_sheet": "/workspace/bmt_v10/qa/layout_qa/final_supplement_sheet.png"
+}

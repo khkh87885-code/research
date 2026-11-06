@@ -1,0 +1,979 @@
+{
+  "checked_utc": "2026-11-06T12:24:11.200410+00:00",
+  "scope": "Independent editable-equation layout and source-preservation QA",
+  "checks": [
+    {
+      "name": "Main 3 editable tables /66 cells exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Supplement 19 panels /878 cells exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Results, discussion, declarations, references, table/figure legends exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Title page author and correspondence exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Abstract and keywords exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Abstract <=200 words",
+      "pass": true,
+      "detail": 174
+    },
+    {
+      "name": "Main text <=6000 words including math text",
+      "pass": true,
+      "detail": 3925
+    },
+    {
+      "name": "15 references unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Citations first appear sequentially 1..15",
+      "pass": true,
+      "detail": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "name": "Original supplement prose exact apart from S6 filename",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Formal main contains no image media",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Supplement retains exactly original 5 image media",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Illustrated copy contains only unchanged five main figures",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Five figures plus three tables =8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Separate S6 unchanged from v9",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v10.docx display numbering",
+      "pass": true,
+      "detail": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v10.docx native editable math",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v10.docx equation paragraphs cannot split",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v10.docx no raw TeX commands",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v6.docx display numbering",
+      "pass": true,
+      "detail": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12"
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v6.docx native editable math",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v6.docx equation paragraphs cannot split",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v6.docx no raw TeX commands",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Main all display equations cited and no undefined equation references",
+      "pass": true,
+      "detail": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "name": "Supplement all display equations cited and no undefined equation references",
+      "pass": true,
+      "detail": [
+        "S1",
+        "S10",
+        "S11",
+        "S12",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v10_preview.pdf no clipped text",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_main_manuscript_v10_preview.pdf no empty pages",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_main_manuscript_v10_preview.pdf no missing-math placeholders",
+      "pass": true,
+      "detail": {
+        "placeholder": [],
+        "red": []
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v10_preview.pdf equation labels14 sequential",
+      "pass": true,
+      "detail": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v10_illustrated_preview.pdf no clipped text",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_main_manuscript_v10_illustrated_preview.pdf no empty pages",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_main_manuscript_v10_illustrated_preview.pdf no missing-math placeholders",
+      "pass": true,
+      "detail": {
+        "placeholder": [],
+        "red": []
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v10_illustrated_preview.pdf equation labels14 sequential",
+      "pass": true,
+      "detail": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v6_preview.pdf no clipped text",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_supplementary_material_v6_preview.pdf no empty pages",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_supplementary_material_v6_preview.pdf no missing-math placeholders",
+      "pass": true,
+      "detail": {
+        "placeholder": [],
+        "red": []
+      }
+    },
+    {
+      "name": "BMT_supplementary_material_v6_preview.pdf equation labelsS1..S12 sequential",
+      "pass": true,
+      "detail": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12"
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v6_preview.pdf <10MB",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v6.pdf no clipped text",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v6.pdf no empty pages",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v6.pdf no missing-math placeholders",
+      "pass": true,
+      "detail": {
+        "placeholder": [],
+        "red": []
+      }
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v6.pdf <10MB",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Supplement DOCX <10MB",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Final source/export hashes match locked document manifest",
+      "pass": true,
+      "detail": "All seven final DOCX/PDF files match current_document_hashes.json."
+    },
+    {
+      "name": "Main all23 pages visually reviewed",
+      "pass": true,
+      "detail": "Final contact sheet plus complete equation pages5,6,7,8,10; no clipped text or orphan headings."
+    },
+    {
+      "name": "Main Eq2 complete after renderer repair",
+      "pass": true,
+      "detail": "All four directional tuples and delta definitions visible; no red placeholder glyphs."
+    },
+    {
+      "name": "All14 main and12 supplementary formulas visually complete",
+      "pass": true,
+      "detail": "Right brackets/bars, multi-line alignment, fractions, limits and equation numbers inspected at full page."
+    },
+    {
+      "name": "Final supplemental headings black and S7 logical spacing legible",
+      "pass": true,
+      "detail": "Inspected final pages2–4; no remaining default-blue headings or compressed logical or."
+    },
+    {
+      "name": "Supplement replay paragraph finishes before table section",
+      "pass": true,
+      "detail": "Replay definition and scope end onp4; TableS1 starts cleanly onp5."
+    },
+    {
+      "name": "Illustrated five plates visually reviewed",
+      "pass": true,
+      "detail": "Final five figure plates remain each on one page with exact new captions; no image/caption clipping."
+    }
+  ],
+  "documents": {
+    "BMT_main_manuscript_v10.docx": {
+      "sha256": "7c09377e4edb101f316c6b6bfe419fe1d39d8bda50185ebc837834e5e1edf95f",
+      "bytes": 64173,
+      "equation_labels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "math_texts": [
+        "B0,i=clipΩiBi+ei,ei=−0.10wi,−0.10hi,0.10wi,0.10hi.",
+        "Bj,i=clipΩi{B0,i+uj,i,vj,i,uj,i,vj,i},uj,i,vj,i∈{−δx,i,0,δx,i,0,0,−δy,i,0,δy,i},δx,i=0.05w0,i,  δy,i=0.05h0,i.",
+        "DU,V=2|U∩V||U|+|V|,|U|+|V|>0,1,|U|+|V|=0.",
+        "rA,i=1−qi.",
+        "rB,i=1−14j=14DP0,i,Pj,i.",
+        "Yi=1{DP0,i,Gi<τ},  τ=0.70.",
+        "am,it=1{rm,i≥t},vm,devt=1Ndevi∈dev​am,it.",
+        "tm*=argminlext∈Tm|vm,devt−b|, vm,devt.",
+        "dm=TPmF,  vm=TPm+FPmN,Mm=100FNmN,  F=TPm+FNm.",
+        "ΔH1=100dA,E−dA,I,ΔH2=100vA,E−vA,I,ΔH3=100dB,E−dA,E.",
+        "Kb,N=minargmink∈{0,…,N}|k−bN|,am,iK=1{rankmi≤Kb,N}.",
+        "Specificitym=TNmTNm+FPm,PPVm=TPmTPm+FPm,NPVm=TNmTNm+FNm.",
+        "ΔP=PE−PI=C+W,C=s​wE,s−wI,spE,s+pI,s2,W=s​pE,s−pI,swE,s+wI,s2.",
+        "ws*=wE,s+wI,s2,  Pcstd=s​ws*pc,s,PEstd−PIstd=W."
+      ],
+      "office_math_objects": 68
+    },
+    "BMT_main_manuscript_v10_illustrated.docx": {
+      "sha256": "b09a5f215d0296a6814099b8f45ee9cfb645a77d6407bd47454dfbab4c01b7d3",
+      "bytes": 3546688
+    },
+    "BMT_supplementary_material_v6.docx": {
+      "sha256": "6261492ff9b26200c35f75d30a30604021c4e6d3b67030c733b9a55a59d958a6",
+      "bytes": 1540348,
+      "equation_labels": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "math_texts": [
+        "L,U=p+z22n ± zp1−pn+z24n21+z2n.",
+        "Rx,y;ρ=maxx2+y2−2ρxy,0,LΔ=Δ−Rp1−L1,U2−p2;ρ,UΔ=Δ+RU1−p1,p2−L2;ρ.",
+        "N=a+b+c+d,  T=ad−bc,  M=a+bc+da+cb+d.",
+        "Tcorr=T−1{T>0}minT,N/2,  ρ=TcorrM M>0.",
+        "CI95%boot=Q0.025{θ*b:b∈V}, Q0.975{θ*b:b∈V}.",
+        "f+,−=1|VJ|b∈VJ​1{Δfixed*b>0, Δequal*b<0},f−,+=1|VJ|b∈VJ​1{Δfixed*b<0, Δequal*b>0}.",
+        "f0=1|VJ|b∈VJ​1{Δfixed*b=0 or Δequal*b=0},fsame=1|VJ|b∈VJ​1{Δfixed*bΔequal*b>0}.",
+        "pc,s=uc,sdc,s,  wc,s=dc,st​dc,t,  Pc=s​uc,ss​dc,s.",
+        "ΔEI=PE−PI=C+W.",
+        "C=s​wE,s−wI,spE,s+pI,s2,W=s​pE,s−pI,swE,s+wI,s2.",
+        "ws*=wE,s+wI,s2,  Pcstd=s​ws*pc,s,PEstd−PIstd=W.",
+        "δij=vijCPU−vijarchive,  ϵj=maxi∈I6|δij|,ϵall=maxi∈I6, j∈{1,…,8}|δij|."
+      ],
+      "office_math_objects": 56
+    },
+    "BMT_main_manuscript_v10_preview.pdf": {
+      "sha256": "c22cfd6e30f7d85d6db500cb3ad604a902405722c5bf09cbf2a2732583b9fc50",
+      "bytes": 260654,
+      "pages": 23,
+      "equation_pages": {
+        "1": 5,
+        "2": 5,
+        "3": 5,
+        "4": 5,
+        "5": 5,
+        "6": 6,
+        "7": 6,
+        "8": 6,
+        "9": 7,
+        "10": 7,
+        "11": 8,
+        "12": 8,
+        "13": 10,
+        "14": 10
+      },
+      "equation_number_bounds": [
+        {
+          "label": "(1)",
+          "page": 5,
+          "bbox": [
+            509.3999938964844,
+            179.6587677001953,
+            523.343994140625,
+            192.94276428222656
+          ]
+        },
+        {
+          "label": "(2)",
+          "page": 5,
+          "bbox": [
+            509.3999938964844,
+            304.9087829589844,
+            523.343994140625,
+            318.1927795410156
+          ]
+        },
+        {
+          "label": "(3)",
+          "page": 5,
+          "bbox": [
+            509.3999938964844,
+            523.1587524414062,
+            523.343994140625,
+            536.4427490234375
+          ]
+        },
+        {
+          "label": "(4)",
+          "page": 5,
+          "bbox": [
+            509.3999938964844,
+            613.0587158203125,
+            523.343994140625,
+            626.3427124023438
+          ]
+        },
+        {
+          "label": "(5)",
+          "page": 5,
+          "bbox": [
+            509.3999938964844,
+            694.3587646484375,
+            523.343994140625,
+            707.6427612304688
+          ]
+        },
+        {
+          "label": "(6)",
+          "page": 6,
+          "bbox": [
+            509.3999938964844,
+            192.5087432861328,
+            523.343994140625,
+            205.79273986816406
+          ]
+        },
+        {
+          "label": "(7)",
+          "page": 6,
+          "bbox": [
+            509.3999938964844,
+            487.9587707519531,
+            523.343994140625,
+            501.2427673339844
+          ]
+        },
+        {
+          "label": "(8)",
+          "page": 6,
+          "bbox": [
+            509.3999938964844,
+            582.3587646484375,
+            523.343994140625,
+            595.6427612304688
+          ]
+        },
+        {
+          "label": "(9)",
+          "page": 7,
+          "bbox": [
+            509.3999938964844,
+            291.9587707519531,
+            523.343994140625,
+            305.2427673339844
+          ]
+        },
+        {
+          "label": "(10)",
+          "page": 7,
+          "bbox": [
+            503.3999938964844,
+            455.1087951660156,
+            523.343994140625,
+            468.3927917480469
+          ]
+        },
+        {
+          "label": "(11)",
+          "page": 8,
+          "bbox": [
+            503.3999938964844,
+            154.0087432861328,
+            523.343994140625,
+            167.29273986816406
+          ]
+        },
+        {
+          "label": "(12)",
+          "page": 8,
+          "bbox": [
+            503.3999938964844,
+            391.6587829589844,
+            523.343994140625,
+            404.9427795410156
+          ]
+        },
+        {
+          "label": "(13)",
+          "page": 10,
+          "bbox": [
+            503.3999938964844,
+            212.0587921142578,
+            523.343994140625,
+            225.34278869628906
+          ]
+        },
+        {
+          "label": "(14)",
+          "page": 10,
+          "bbox": [
+            503.3999938964844,
+            334.5087890625,
+            523.343994140625,
+            347.79278564453125
+          ]
+        }
+      ],
+      "out_of_page_text": [],
+      "empty_pages": []
+    },
+    "BMT_main_manuscript_v10_illustrated_preview.pdf": {
+      "sha256": "8cd0fbfc0a949f212046655fe54718dc9b948d2f029517a9f4a0a05304045329",
+      "bytes": 1503890,
+      "pages": 28,
+      "equation_pages": {
+        "1": 5,
+        "2": 5,
+        "3": 5,
+        "4": 5,
+        "5": 5,
+        "6": 6,
+        "7": 6,
+        "8": 6,
+        "9": 7,
+        "10": 7,
+        "11": 8,
+        "12": 8,
+        "13": 10,
+        "14": 10
+      },
+      "equation_number_bounds": [
+        {
+          "label": "(1)",
+          "page": 5,
+          "bbox": [
+            509.3999938964844,
+            179.6587677001953,
+            523.343994140625,
+            192.94276428222656
+          ]
+        },
+        {
+          "label": "(2)",
+          "page": 5,
+          "bbox": [
+            509.3999938964844,
+            304.9087829589844,
+            523.343994140625,
+            318.1927795410156
+          ]
+        },
+        {
+          "label": "(3)",
+          "page": 5,
+          "bbox": [
+            509.3999938964844,
+            523.1587524414062,
+            523.343994140625,
+            536.4427490234375
+          ]
+        },
+        {
+          "label": "(4)",
+          "page": 5,
+          "bbox": [
+            509.3999938964844,
+            613.0587158203125,
+            523.343994140625,
+            626.3427124023438
+          ]
+        },
+        {
+          "label": "(5)",
+          "page": 5,
+          "bbox": [
+            509.3999938964844,
+            694.3587646484375,
+            523.343994140625,
+            707.6427612304688
+          ]
+        },
+        {
+          "label": "(6)",
+          "page": 6,
+          "bbox": [
+            509.3999938964844,
+            192.5087432861328,
+            523.343994140625,
+            205.79273986816406
+          ]
+        },
+        {
+          "label": "(7)",
+          "page": 6,
+          "bbox": [
+            509.3999938964844,
+            487.9587707519531,
+            523.343994140625,
+            501.2427673339844
+          ]
+        },
+        {
+          "label": "(8)",
+          "page": 6,
+          "bbox": [
+            509.3999938964844,
+            582.3587646484375,
+            523.343994140625,
+            595.6427612304688
+          ]
+        },
+        {
+          "label": "(9)",
+          "page": 7,
+          "bbox": [
+            509.3999938964844,
+            291.9587707519531,
+            523.343994140625,
+            305.2427673339844
+          ]
+        },
+        {
+          "label": "(10)",
+          "page": 7,
+          "bbox": [
+            503.3999938964844,
+            455.1087951660156,
+            523.343994140625,
+            468.3927917480469
+          ]
+        },
+        {
+          "label": "(11)",
+          "page": 8,
+          "bbox": [
+            503.3999938964844,
+            154.0087432861328,
+            523.343994140625,
+            167.29273986816406
+          ]
+        },
+        {
+          "label": "(12)",
+          "page": 8,
+          "bbox": [
+            503.3999938964844,
+            391.6587829589844,
+            523.343994140625,
+            404.9427795410156
+          ]
+        },
+        {
+          "label": "(13)",
+          "page": 10,
+          "bbox": [
+            503.3999938964844,
+            212.0587921142578,
+            523.343994140625,
+            225.34278869628906
+          ]
+        },
+        {
+          "label": "(14)",
+          "page": 10,
+          "bbox": [
+            503.3999938964844,
+            334.5087890625,
+            523.343994140625,
+            347.79278564453125
+          ]
+        }
+      ],
+      "out_of_page_text": [],
+      "empty_pages": []
+    },
+    "BMT_supplementary_material_v6_preview.pdf": {
+      "sha256": "44926b7515d64d9eb3020ec8a9bb8336665fe38f46ed515991e261ea17b77ba0",
+      "bytes": 1386461,
+      "pages": 29,
+      "equation_pages": {
+        "S1": 2,
+        "S2": 2,
+        "S3": 2,
+        "S4": 2,
+        "S5": 2,
+        "S6": 3,
+        "S7": 3,
+        "S8": 4,
+        "S9": 4,
+        "S10": 4,
+        "S11": 4,
+        "S12": 4
+      },
+      "equation_number_bounds": [
+        {
+          "label": "(S1)",
+          "page": 2,
+          "bbox": [
+            526.9000244140625,
+            248.54977416992188,
+            545.8201293945312,
+            260.7267761230469
+          ]
+        },
+        {
+          "label": "(S2)",
+          "page": 2,
+          "bbox": [
+            526.9000244140625,
+            420.94976806640625,
+            545.8201293945312,
+            433.12677001953125
+          ]
+        },
+        {
+          "label": "(S3)",
+          "page": 2,
+          "bbox": [
+            526.9000244140625,
+            541.5497436523438,
+            545.8201293945312,
+            553.7267456054688
+          ]
+        },
+        {
+          "label": "(S4)",
+          "page": 2,
+          "bbox": [
+            526.9000244140625,
+            572.3997802734375,
+            545.8201293945312,
+            584.5767822265625
+          ]
+        },
+        {
+          "label": "(S5)",
+          "page": 2,
+          "bbox": [
+            526.9000244140625,
+            734.1997680664062,
+            545.8201293945312,
+            746.3767700195312
+          ]
+        },
+        {
+          "label": "(S6)",
+          "page": 3,
+          "bbox": [
+            526.9000244140625,
+            169.34976196289062,
+            545.8201293945312,
+            181.52676391601562
+          ]
+        },
+        {
+          "label": "(S7)",
+          "page": 3,
+          "bbox": [
+            526.9000244140625,
+            239.89974975585938,
+            545.8201293945312,
+            252.07675170898438
+          ]
+        },
+        {
+          "label": "(S8)",
+          "page": 4,
+          "bbox": [
+            526.9000244140625,
+            170.09976196289062,
+            545.8201293945312,
+            182.27676391601562
+          ]
+        },
+        {
+          "label": "(S9)",
+          "page": 4,
+          "bbox": [
+            526.9000244140625,
+            271.0497741699219,
+            545.8201293945312,
+            283.2267761230469
+          ]
+        },
+        {
+          "label": "(S10)",
+          "page": 4,
+          "bbox": [
+            521.4000244140625,
+            318.5997619628906,
+            545.8201293945312,
+            330.7767639160156
+          ]
+        },
+        {
+          "label": "(S11)",
+          "page": 4,
+          "bbox": [
+            521.4000244140625,
+            417.0497741699219,
+            545.8201293945312,
+            429.2267761230469
+          ]
+        },
+        {
+          "label": "(S12)",
+          "page": 4,
+          "bbox": [
+            521.4000244140625,
+            675.5997314453125,
+            545.8201293945312,
+            687.7767333984375
+          ]
+        }
+      ],
+      "out_of_page_text": [],
+      "empty_pages": []
+    },
+    "BMT_supplementary_Figure_S6_v6.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "bytes": 1871819,
+      "pages": 6,
+      "equation_pages": {},
+      "equation_number_bounds": [],
+      "out_of_page_text": [],
+      "empty_pages": []
+    },
+    "main": {
+      "docx_sha256": "7c09377e4edb101f316c6b6bfe419fe1d39d8bda50185ebc837834e5e1edf95f",
+      "docx_path": "/workspace/bmt_v10/outputs/BMT_main_manuscript_v10.docx"
+    },
+    "supplement": {
+      "docx_sha256": "6261492ff9b26200c35f75d30a30604021c4e6d3b67030c733b9a55a59d958a6",
+      "docx_path": "/workspace/bmt_v10/outputs/BMT_supplementary_material_v6.docx"
+    }
+  },
+  "abstract_words": 174,
+  "body_words_including_math_text": 3925,
+  "final_documents_pending": false,
+  "visual_review_pending": false,
+  "status": "PASS",
+  "unresolved_findings": [],
+  "visual_review": {
+    "main_contact_sheet": "/workspace/bmt_v10/qa/layout_qa/main_final_contact_sheet.png",
+    "main_equation_pages": [
+      5,
+      6,
+      7,
+      8,
+      10
+    ],
+    "supplement_equation_pages": [
+      2,
+      3,
+      4
+    ],
+    "illustrated_plate_pages": [
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "supplement_report": "/workspace/bmt_v10/evidence/supplement_layout_visual.json",
+    "supplement_report_sha256": "13bc24b06fad0a8f6029b3b23be2543d5aebac6f7d6f032b5cab503cbb0ce90d"
+  }
+}

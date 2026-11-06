@@ -10,7 +10,17 @@
 
 每位纳入患者固定使用一张图及对应参考掩膜。正式验证共 1,103 例。40 例预实验来自开发集。评分和复核均在回顾性模拟中进行。
 
-## 当前版本：v10 可编辑数学公式修订
+## 当前版本：v11 公式排版修正版
+
+[9页公式预览 PDF](submission/bmt_v11/BMT_formula_layout_proof_v11.pdf) · [正式主稿 Word](submission/bmt_v11/BMT_main_manuscript_v11.docx) · [主稿 PDF](submission/bmt_v11/BMT_main_manuscript_v11_preview.pdf) · [补充 Word](submission/bmt_v11/BMT_supplementary_material_v7.docx) · [补充 PDF](submission/bmt_v11/BMT_supplementary_material_v7_preview.pdf) · [投稿文件 ZIP](submission/BMT_v11_submission_files.zip) · [上传清单](submission/bmt_v11/UPLOAD_FILE_MAP.md)
+
+根据用户反馈，本版纠正v10的公式排版问题：TP/FP/FN/TN等指标缩写与dev/std/corr/fixed/CPU等标签按正体连排，运算符使用正体，完整公式逐行按实测位置对齐关系符号，原14/12组编号保留。主稿公式实际为12pt，补充公式11pt；脚标采用70%比例。补充S7的逻辑“或”改排为等价的∨符号，避免文字被渲染器挤在一起。公式仍是可编辑原生Office Math，正文长诊断标签恢复普通文字。
+
+本轮重新核查了实际PDF字形、字号、行距与所有公式页，保留原数学定义、结果、944个表格单元格、15条参考文献、科研图和作者声明。此前v10检查偏重内容和页面边界，未充分发现字形与对齐问题；v11的诊断、转换原型和严格视觉检查保存在Audit/typography_v11。PDF采用任务独立转换配置；DOCX使用标准Cambria Math与Times New Roman。当前环境直接验证的是LibreOffice导出的PDF，未声称已在Microsoft Word或WPS中实际打开测试。
+
+9页公式预览用于核对，不作为投稿文件；正式上传仍使用主稿Word、独立主图、两件补充材料及清单中的声明等文件。公式修订没有新增实验、患者或效应结论，原v10保留为历史版本。期刊投稿尚未执行。
+
+## 历史版本：v10 可编辑数学公式修订
 
 [正式主稿 Word](submission/bmt_v10/BMT_main_manuscript_v10.docx) · [正式主稿 PDF](submission/bmt_v10/BMT_main_manuscript_v10_preview.pdf) · [含图阅读 PDF](submission/bmt_v10/BMT_main_manuscript_v10_illustrated_preview.pdf) · [补充公式与材料 Word](submission/bmt_v10/BMT_supplementary_material_v6.docx) · [补充 PDF](submission/bmt_v10/BMT_supplementary_material_v6_preview.pdf) · [六例 S6 图版](submission/bmt_v10/BMT_supplementary_Figure_S6_v6.pdf) · [投稿文件 ZIP](submission/BMT_v10_submission_files.zip) · [上传清单](submission/bmt_v10/UPLOAD_FILE_MAP.md)
 

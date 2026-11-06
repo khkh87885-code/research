@@ -1,0 +1,62 @@
+{
+  "recorded_utc": "2026-11-06T12:25:00.876237+00:00",
+  "status": "PASS",
+  "final_documents_pending": false,
+  "source": "submission/bmt_v9",
+  "scope": "User-requested mathematical presentation revision; no new experiments or changed results",
+  "reports": {
+    "mathematics": {
+      "path": "/workspace/bmt_v10/evidence/independent_mathematics_qa.json",
+      "sha256": "8436e151e2c5900ae0b7fcf8367e464bf5876a7ee3b011d7095577c316e75cd5",
+      "checks_passed": 83
+    },
+    "layout": {
+      "path": "/workspace/bmt_v10/evidence/independent_layout_qa.json",
+      "sha256": "79dd8b898a61f577d35af25dce21a716c39b9fe6fe43ab8500717fffd496d18c",
+      "checks_passed": 50
+    }
+  },
+  "documents": {
+    "BMT_main_manuscript_v10.docx": {
+      "sha256": "7c09377e4edb101f316c6b6bfe419fe1d39d8bda50185ebc837834e5e1edf95f",
+      "bytes": 64173
+    },
+    "BMT_main_manuscript_v10_illustrated.docx": {
+      "sha256": "b09a5f215d0296a6814099b8f45ee9cfb645a77d6407bd47454dfbab4c01b7d3",
+      "bytes": 3546688
+    },
+    "BMT_main_manuscript_v10_illustrated_preview.pdf": {
+      "sha256": "8cd0fbfc0a949f212046655fe54718dc9b948d2f029517a9f4a0a05304045329",
+      "bytes": 1503890,
+      "pages": 28
+    },
+    "BMT_main_manuscript_v10_preview.pdf": {
+      "sha256": "c22cfd6e30f7d85d6db500cb3ad604a902405722c5bf09cbf2a2732583b9fc50",
+      "bytes": 260654,
+      "pages": 23
+    },
+    "BMT_supplementary_Figure_S6_v6.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "bytes": 1871819,
+      "pages": 6
+    },
+    "BMT_supplementary_material_v6.docx": {
+      "sha256": "6261492ff9b26200c35f75d30a30604021c4e6d3b67030c733b9a55a59d958a6",
+      "bytes": 1540348
+    },
+    "BMT_supplementary_material_v6_preview.pdf": {
+      "sha256": "44926b7515d64d9eb3020ec8a9bb8336665fe38f46ed515991e261ea17b77ba0",
+      "bytes": 1386461,
+      "pages": 29
+    }
+  },
+  "main_equation_groups": 14,
+  "supplement_equation_groups": 12,
+  "native_editable_office_math": true,
+  "results_discussion_declarations_references_tables_figures_unchanged": true,
+  "main_table_cells": 66,
+  "supplement_table_cells": 878,
+  "abstract_words": 174,
+  "main_body_words_including_math_extraction": 3925,
+  "journal_submission_executed": false
+}

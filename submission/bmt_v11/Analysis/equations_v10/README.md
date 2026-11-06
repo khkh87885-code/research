@@ -1,0 +1,3 @@
+# Editable-equation build archive
+
+The v10 scripts preserve the cloud execution paths /workspace/bmt_v10 and /workspace/research_source. They replace only audited method-paragraph anchors and add the mathematical-methods supplement, generating native Office Math from audited TeX through Pandoc. They do not rerun inference or resampling. Effective plans, current build hashes and final mathematical/layout checks are under ../../Audit/equations_v10. Existing figure-build scripts and portable numerical-analysis Reproducibility content are preserved from v9. Historical source/approval evidence is retained as text/JSON under Audit/prior_v9 without changing its scope.

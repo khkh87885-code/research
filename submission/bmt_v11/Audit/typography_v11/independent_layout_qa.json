@@ -1,0 +1,3980 @@
+{
+  "checked_utc": "2026-11-06T12:57:46.410612+00:00",
+  "scope": "Independent strict typography, editable-equation layout and source-preservation QA",
+  "checks": [
+    {
+      "name": "Main 3 editable tables /66 cells exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Supplement 19 panels /878 cells exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Results, discussion, declarations, references, table/figure legends exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Title page author and correspondence exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Abstract and keywords exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Abstract <=200 words",
+      "pass": true,
+      "detail": 174
+    },
+    {
+      "name": "Main text <=6000 words including math text",
+      "pass": true,
+      "detail": 3938
+    },
+    {
+      "name": "15 references unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Citations first appear sequentially 1..15",
+      "pass": true,
+      "detail": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "name": "Original supplement prose exact apart from S6 filename",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Formal main contains no image media",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Supplement retains exactly original 5 image media",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Illustrated copy contains only unchanged five main figures",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Five figures plus three tables =8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Separate S6 unchanged from v9",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v11.docx display numbering",
+      "pass": true,
+      "detail": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v11.docx native editable math",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v11.docx equation paragraphs cannot split",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v11.docx no raw TeX commands",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v7.docx display numbering",
+      "pass": true,
+      "detail": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12"
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v7.docx native editable math",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v7.docx equation paragraphs cannot split",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v7.docx no raw TeX commands",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Main all display equations cited and no undefined equation references",
+      "pass": true,
+      "detail": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "name": "Supplement all display equations cited and no undefined equation references",
+      "pass": true,
+      "detail": [
+        "S1",
+        "S10",
+        "S11",
+        "S12",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9"
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v11_preview.pdf no clipped text",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_main_manuscript_v11_preview.pdf no empty pages",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_main_manuscript_v11_preview.pdf no missing-math placeholders",
+      "pass": true,
+      "detail": {
+        "placeholder": [],
+        "red": []
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v11_preview.pdf equation labels14 sequential",
+      "pass": true,
+      "detail": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v11_illustrated_preview.pdf no clipped text",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_main_manuscript_v11_illustrated_preview.pdf no empty pages",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_main_manuscript_v11_illustrated_preview.pdf no missing-math placeholders",
+      "pass": true,
+      "detail": {
+        "placeholder": [],
+        "red": []
+      }
+    },
+    {
+      "name": "BMT_main_manuscript_v11_illustrated_preview.pdf equation labels14 sequential",
+      "pass": true,
+      "detail": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v7_preview.pdf no clipped text",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_supplementary_material_v7_preview.pdf no empty pages",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_supplementary_material_v7_preview.pdf no missing-math placeholders",
+      "pass": true,
+      "detail": {
+        "placeholder": [],
+        "red": []
+      }
+    },
+    {
+      "name": "BMT_supplementary_material_v7_preview.pdf equation labelsS1..S12 sequential",
+      "pass": true,
+      "detail": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12"
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v7_preview.pdf <10MB",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v7.pdf no clipped text",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v7.pdf no empty pages",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v7.pdf no missing-math placeholders",
+      "pass": true,
+      "detail": {
+        "placeholder": [],
+        "red": []
+      }
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v7.pdf <10MB",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_formula_layout_proof_v11.pdf no clipped text",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_formula_layout_proof_v11.pdf no empty pages",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "BMT_formula_layout_proof_v11.pdf no missing-math placeholders",
+      "pass": true,
+      "detail": {
+        "placeholder": [],
+        "red": []
+      }
+    },
+    {
+      "name": "Supplement DOCX <10MB",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v11.docx standard Cambria Math default",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v11.docx complete equation row groups",
+      "pass": true,
+      "detail": [
+        [
+          "(1)",
+          2
+        ],
+        [
+          "(2)",
+          3
+        ],
+        [
+          "(3)",
+          1
+        ],
+        [
+          "(4)",
+          1
+        ],
+        [
+          "(5)",
+          1
+        ],
+        [
+          "(6)",
+          1
+        ],
+        [
+          "(7)",
+          2
+        ],
+        [
+          "(8)",
+          1
+        ],
+        [
+          "(9)",
+          2
+        ],
+        [
+          "(10)",
+          3
+        ],
+        [
+          "(11)",
+          2
+        ],
+        [
+          "(12)",
+          3
+        ],
+        [
+          "(13)",
+          3
+        ],
+        [
+          "(14)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v11.docx relation anchors identical within each multiline group",
+      "pass": true,
+      "detail": [
+        {
+          "label": "(1)",
+          "rows": 2,
+          "anchor_twips": [
+            "2896",
+            "2896"
+          ],
+          "same_anchor": true
+        },
+        {
+          "label": "(2)",
+          "rows": 3,
+          "anchor_twips": [
+            "2919",
+            "2919",
+            "2919"
+          ],
+          "same_anchor": true
+        },
+        {
+          "label": "(7)",
+          "rows": 2,
+          "anchor_twips": [
+            "4001",
+            "4001"
+          ],
+          "same_anchor": true
+        },
+        {
+          "label": "(9)",
+          "rows": 2,
+          "anchor_twips": [
+            "3416",
+            "3416"
+          ],
+          "same_anchor": true
+        },
+        {
+          "label": "(10)",
+          "rows": 3,
+          "anchor_twips": [
+            "3802",
+            "3802",
+            "3802"
+          ],
+          "same_anchor": true
+        },
+        {
+          "label": "(11)",
+          "rows": 2,
+          "anchor_twips": [
+            "3714",
+            "3714"
+          ],
+          "same_anchor": true
+        },
+        {
+          "label": "(12)",
+          "rows": 3,
+          "anchor_twips": [
+            "4456",
+            "4456",
+            "4456"
+          ],
+          "same_anchor": true
+        },
+        {
+          "label": "(13)",
+          "rows": 3,
+          "anchor_twips": [
+            "3745",
+            "3745",
+            "3745"
+          ],
+          "same_anchor": true
+        },
+        {
+          "label": "(14)",
+          "rows": 2,
+          "anchor_twips": [
+            "3532",
+            "3532"
+          ],
+          "same_anchor": true
+        }
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v11.docx literal labels/operators explicitly normal text",
+      "pass": true,
+      "detail": [
+        {
+          "text": "clip",
+          "normal_math_text": true
+        },
+        {
+          "text": "clip",
+          "normal_math_text": true
+        },
+        {
+          "text": "clip",
+          "normal_math_text": true
+        },
+        {
+          "text": "dev",
+          "normal_math_text": true
+        },
+        {
+          "text": "dev",
+          "normal_math_text": true
+        },
+        {
+          "text": "dev",
+          "normal_math_text": true
+        },
+        {
+          "text": "argmin",
+          "normal_math_text": true
+        },
+        {
+          "text": "lex",
+          "normal_math_text": true
+        },
+        {
+          "text": "dev",
+          "normal_math_text": true
+        },
+        {
+          "text": "dev",
+          "normal_math_text": true
+        },
+        {
+          "text": "TP",
+          "normal_math_text": true
+        },
+        {
+          "text": "FP",
+          "normal_math_text": true
+        },
+        {
+          "text": "FN",
+          "normal_math_text": true
+        },
+        {
+          "text": "TP",
+          "normal_math_text": true
+        },
+        {
+          "text": "TN",
+          "normal_math_text": true
+        },
+        {
+          "text": "FP",
+          "normal_math_text": true
+        },
+        {
+          "text": "TP",
+          "normal_math_text": true
+        },
+        {
+          "text": "TP",
+          "normal_math_text": true
+        },
+        {
+          "text": "FP",
+          "normal_math_text": true
+        },
+        {
+          "text": "FN",
+          "normal_math_text": true
+        },
+        {
+          "text": "TP",
+          "normal_math_text": true
+        },
+        {
+          "text": "FN",
+          "normal_math_text": true
+        },
+        {
+          "text": "H1",
+          "normal_math_text": true
+        },
+        {
+          "text": "H2",
+          "normal_math_text": true
+        },
+        {
+          "text": "H3",
+          "normal_math_text": true
+        },
+        {
+          "text": "min",
+          "normal_math_text": true
+        },
+        {
+          "text": "argmin",
+          "normal_math_text": true
+        },
+        {
+          "text": "rank",
+          "normal_math_text": true
+        },
+        {
+          "text": "Specificity",
+          "normal_math_text": true
+        },
+        {
+          "text": "TN",
+          "normal_math_text": true
+        },
+        {
+          "text": "TN",
+          "normal_math_text": true
+        },
+        {
+          "text": "FP",
+          "normal_math_text": true
+        },
+        {
+          "text": "PPV",
+          "normal_math_text": true
+        },
+        {
+          "text": "TP",
+          "normal_math_text": true
+        },
+        {
+          "text": "TP",
+          "normal_math_text": true
+        },
+        {
+          "text": "FP",
+          "normal_math_text": true
+        },
+        {
+          "text": "NPV",
+          "normal_math_text": true
+        },
+        {
+          "text": "TN",
+          "normal_math_text": true
+        },
+        {
+          "text": "TN",
+          "normal_math_text": true
+        },
+        {
+          "text": "FN",
+          "normal_math_text": true
+        },
+        {
+          "text": "std",
+          "normal_math_text": true
+        },
+        {
+          "text": "std",
+          "normal_math_text": true
+        },
+        {
+          "text": "std",
+          "normal_math_text": true
+        },
+        {
+          "text": "TP",
+          "normal_math_text": true
+        }
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v11.docx no long benign/malignant math words",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v7.docx standard Cambria Math default",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_supplementary_material_v7.docx complete equation row groups",
+      "pass": true,
+      "detail": [
+        [
+          "(S1)",
+          1
+        ],
+        [
+          "(S2)",
+          3
+        ],
+        [
+          "(S3)",
+          1
+        ],
+        [
+          "(S4)",
+          1
+        ],
+        [
+          "(S5)",
+          1
+        ],
+        [
+          "(S6)",
+          2
+        ],
+        [
+          "(S7)",
+          2
+        ],
+        [
+          "(S8)",
+          1
+        ],
+        [
+          "(S9)",
+          1
+        ],
+        [
+          "(S10)",
+          2
+        ],
+        [
+          "(S11)",
+          2
+        ],
+        [
+          "(S12)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v7.docx relation anchors identical within each multiline group",
+      "pass": true,
+      "detail": [
+        {
+          "label": "(S2)",
+          "rows": 3,
+          "anchor_twips": [
+            "4202",
+            "4202",
+            "4202"
+          ],
+          "same_anchor": true
+        },
+        {
+          "label": "(S6)",
+          "rows": 2,
+          "anchor_twips": [
+            "3632",
+            "3632"
+          ],
+          "same_anchor": true
+        },
+        {
+          "label": "(S7)",
+          "rows": 2,
+          "anchor_twips": [
+            "3581",
+            "3581"
+          ],
+          "same_anchor": true
+        },
+        {
+          "label": "(S10)",
+          "rows": 2,
+          "anchor_twips": [
+            "3797",
+            "3797"
+          ],
+          "same_anchor": true
+        },
+        {
+          "label": "(S11)",
+          "rows": 2,
+          "anchor_twips": [
+            "4066",
+            "4066"
+          ],
+          "same_anchor": true
+        },
+        {
+          "label": "(S12)",
+          "rows": 2,
+          "anchor_twips": [
+            "3804",
+            "3804"
+          ],
+          "same_anchor": true
+        }
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v7.docx literal labels/operators explicitly normal text",
+      "pass": true,
+      "detail": [
+        {
+          "text": "max",
+          "normal_math_text": true
+        },
+        {
+          "text": "corr",
+          "normal_math_text": true
+        },
+        {
+          "text": "min",
+          "normal_math_text": true
+        },
+        {
+          "text": "corr",
+          "normal_math_text": true
+        },
+        {
+          "text": "CI",
+          "normal_math_text": true
+        },
+        {
+          "text": "boot",
+          "normal_math_text": true
+        },
+        {
+          "text": "fixed",
+          "normal_math_text": true
+        },
+        {
+          "text": "equal",
+          "normal_math_text": true
+        },
+        {
+          "text": "fixed",
+          "normal_math_text": true
+        },
+        {
+          "text": "equal",
+          "normal_math_text": true
+        },
+        {
+          "text": "fixed",
+          "normal_math_text": true
+        },
+        {
+          "text": "equal",
+          "normal_math_text": true
+        },
+        {
+          "text": "fixed",
+          "normal_math_text": true
+        },
+        {
+          "text": "equal",
+          "normal_math_text": true
+        },
+        {
+          "text": "same",
+          "normal_math_text": true
+        },
+        {
+          "text": "fixed",
+          "normal_math_text": true
+        },
+        {
+          "text": "equal",
+          "normal_math_text": true
+        },
+        {
+          "text": "TP",
+          "normal_math_text": true
+        },
+        {
+          "text": "std",
+          "normal_math_text": true
+        },
+        {
+          "text": "std",
+          "normal_math_text": true
+        },
+        {
+          "text": "std",
+          "normal_math_text": true
+        },
+        {
+          "text": "CPU",
+          "normal_math_text": true
+        },
+        {
+          "text": "archive",
+          "normal_math_text": true
+        },
+        {
+          "text": "CPU",
+          "normal_math_text": true
+        },
+        {
+          "text": "archive",
+          "normal_math_text": true
+        },
+        {
+          "text": "max",
+          "normal_math_text": true
+        },
+        {
+          "text": "all",
+          "normal_math_text": true
+        },
+        {
+          "text": "max",
+          "normal_math_text": true
+        },
+        {
+          "text": "all",
+          "normal_math_text": true
+        }
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v7.docx no long benign/malignant math words",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BMT_main_manuscript_v11_preview.pdf actual label/operator glyphs upright",
+      "pass": true,
+      "detail": [
+        {
+          "text": "clip",
+          "font": "LiberationSerif",
+          "size": 11.917908668518066,
+          "page": 5,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "dev",
+          "font": "LiberationSerif",
+          "size": 8.399999618530273,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "dev",
+          "font": "LiberationSerif",
+          "size": 8.399999618530273,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "dev",
+          "font": "LiberationSerif",
+          "size": 8.399999618530273,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "lex",
+          "font": "LiberationSerif",
+          "size": 8.434576034545898,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "dev",
+          "font": "LiberationSerif",
+          "size": 8.434576034545898,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "dev",
+          "font": "LiberationSerif",
+          "size": 8.434576034545898,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TP",
+          "font": "LiberationSerif",
+          "size": 12.0,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "FN",
+          "font": "LiberationSerif",
+          "size": 11.991652488708496,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TP",
+          "font": "LiberationSerif",
+          "size": 11.991652488708496,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "FP",
+          "font": "LiberationSerif",
+          "size": 12.0,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TP",
+          "font": "LiberationSerif",
+          "size": 12.031051635742188,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TP",
+          "font": "LiberationSerif",
+          "size": 12.031051635742188,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "FN",
+          "font": "LiberationSerif",
+          "size": 12.031051635742188,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "H1",
+          "font": "LiberationSerif",
+          "size": 8.399999618530273,
+          "page": 8,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "H2",
+          "font": "LiberationSerif",
+          "size": 8.377509117126465,
+          "page": 8,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "H3",
+          "font": "LiberationSerif",
+          "size": 8.377629280090332,
+          "page": 8,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "rank",
+          "font": "LiberationSerif",
+          "size": 12.0,
+          "page": 8,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "Specificity",
+          "font": "LiberationSerif",
+          "size": 11.914158821105957,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TN",
+          "font": "LiberationSerif",
+          "size": 12.032350540161133,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TN",
+          "font": "LiberationSerif",
+          "size": 12.032350540161133,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "PPV",
+          "font": "LiberationSerif",
+          "size": 11.8937406539917,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TP",
+          "font": "LiberationSerif",
+          "size": 12.032350540161133,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TP",
+          "font": "LiberationSerif",
+          "size": 12.032350540161133,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "NPV",
+          "font": "LiberationSerif",
+          "size": 11.895049095153809,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TN",
+          "font": "LiberationSerif",
+          "size": 12.032350540161133,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TN",
+          "font": "LiberationSerif",
+          "size": 12.032350540161133,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "std",
+          "font": "LiberationSerif",
+          "size": 8.388236999511719,
+          "page": 10,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "std",
+          "font": "LiberationSerif",
+          "size": 8.427563667297363,
+          "page": 10,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "std",
+          "font": "LiberationSerif",
+          "size": 8.427563667297363,
+          "page": 10,
+          "on_math_page": true,
+          "upright": true
+        }
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v11_preview.pdf actual math operator base size matches prose/number",
+      "pass": true,
+      "detail": [
+        {
+          "text": "clip",
+          "font": "LiberationSerif",
+          "size": 11.917908668518066,
+          "page": 5,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TP",
+          "font": "LiberationSerif",
+          "size": 12.0,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "FN",
+          "font": "LiberationSerif",
+          "size": 11.991652488708496,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TP",
+          "font": "LiberationSerif",
+          "size": 11.991652488708496,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "FP",
+          "font": "LiberationSerif",
+          "size": 12.0,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TP",
+          "font": "LiberationSerif",
+          "size": 12.031051635742188,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TP",
+          "font": "LiberationSerif",
+          "size": 12.031051635742188,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "FN",
+          "font": "LiberationSerif",
+          "size": 12.031051635742188,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "rank",
+          "font": "LiberationSerif",
+          "size": 12.0,
+          "page": 8,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "Specificity",
+          "font": "LiberationSerif",
+          "size": 11.914158821105957,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TN",
+          "font": "LiberationSerif",
+          "size": 12.032350540161133,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TN",
+          "font": "LiberationSerif",
+          "size": 12.032350540161133,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "PPV",
+          "font": "LiberationSerif",
+          "size": 11.8937406539917,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TP",
+          "font": "LiberationSerif",
+          "size": 12.032350540161133,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TP",
+          "font": "LiberationSerif",
+          "size": 12.032350540161133,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "NPV",
+          "font": "LiberationSerif",
+          "size": 11.895049095153809,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TN",
+          "font": "LiberationSerif",
+          "size": 12.032350540161133,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "TN",
+          "font": "LiberationSerif",
+          "size": 12.032350540161133,
+          "page": 9,
+          "on_math_page": true,
+          "upright": true
+        }
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v11_preview.pdf actual descriptive script sizes70percent",
+      "pass": true,
+      "detail": [
+        {
+          "text": "dev",
+          "font": "LiberationSerif",
+          "size": 8.399999618530273,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "dev",
+          "font": "LiberationSerif",
+          "size": 8.399999618530273,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "dev",
+          "font": "LiberationSerif",
+          "size": 8.399999618530273,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "lex",
+          "font": "LiberationSerif",
+          "size": 8.434576034545898,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "dev",
+          "font": "LiberationSerif",
+          "size": 8.434576034545898,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "dev",
+          "font": "LiberationSerif",
+          "size": 8.434576034545898,
+          "page": 7,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "H1",
+          "font": "LiberationSerif",
+          "size": 8.399999618530273,
+          "page": 8,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "H2",
+          "font": "LiberationSerif",
+          "size": 8.377509117126465,
+          "page": 8,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "H3",
+          "font": "LiberationSerif",
+          "size": 8.377629280090332,
+          "page": 8,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "std",
+          "font": "LiberationSerif",
+          "size": 8.388236999511719,
+          "page": 10,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "std",
+          "font": "LiberationSerif",
+          "size": 8.427563667297363,
+          "page": 10,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "std",
+          "font": "LiberationSerif",
+          "size": 8.427563667297363,
+          "page": 10,
+          "on_math_page": true,
+          "upright": true
+        }
+      ]
+    },
+    {
+      "name": "BMT_main_manuscript_v11_preview.pdf equation numbers actual intended size",
+      "pass": true,
+      "detail": [
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v7_preview.pdf actual label/operator glyphs upright",
+      "pass": true,
+      "detail": [
+        {
+          "text": "max",
+          "font": "LiberationSerif",
+          "size": 10.917783737182617,
+          "page": 2,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "corr",
+          "font": "LiberationSerif",
+          "size": 7.7372145652771,
+          "page": 2,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "min",
+          "font": "LiberationSerif",
+          "size": 11.030839920043945,
+          "page": 2,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "corr",
+          "font": "LiberationSerif",
+          "size": 7.7372145652771,
+          "page": 2,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "CI",
+          "font": "LiberationSerif",
+          "size": 10.922478675842285,
+          "page": 2,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "boot",
+          "font": "LiberationSerif",
+          "size": 7.730447769165039,
+          "page": 2,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "fixed",
+          "font": "LiberationSerif",
+          "size": 7.711312770843506,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "equal",
+          "font": "LiberationSerif",
+          "size": 7.727496147155762,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "fixed",
+          "font": "LiberationSerif",
+          "size": 7.687289714813232,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "equal",
+          "font": "LiberationSerif",
+          "size": 7.687289714813232,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "fixed",
+          "font": "LiberationSerif",
+          "size": 7.687289714813232,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "equal",
+          "font": "LiberationSerif",
+          "size": 7.687289714813232,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "fixed",
+          "font": "LiberationSerif",
+          "size": 7.687289714813232,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "equal",
+          "font": "LiberationSerif",
+          "size": 7.687289714813232,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "same",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "fixed",
+          "font": "LiberationSerif",
+          "size": 7.684514045715332,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "equal",
+          "font": "LiberationSerif",
+          "size": 7.684514045715332,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "std",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "std",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "std",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "CPU",
+          "font": "LiberationSerif",
+          "size": 7.727496147155762,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "archive",
+          "font": "LiberationSerif",
+          "size": 7.727496147155762,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "CPU",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "archive",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "all",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "max",
+          "font": "LiberationSerif",
+          "size": 11.0,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "all",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "Specificity",
+          "font": "LiberationSerif-Bold",
+          "size": 10.0,
+          "page": 13,
+          "on_math_page": false,
+          "upright": true
+        },
+        {
+          "text": "PPV",
+          "font": "LiberationSerif-Bold",
+          "size": 10.0,
+          "page": 13,
+          "on_math_page": false,
+          "upright": true
+        },
+        {
+          "text": "NPV",
+          "font": "LiberationSerif-Bold",
+          "size": 10.0,
+          "page": 13,
+          "on_math_page": false,
+          "upright": true
+        }
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v7_preview.pdf actual math operator base size matches prose/number",
+      "pass": true,
+      "detail": [
+        {
+          "text": "max",
+          "font": "LiberationSerif",
+          "size": 10.917783737182617,
+          "page": 2,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "min",
+          "font": "LiberationSerif",
+          "size": 11.030839920043945,
+          "page": 2,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "CI",
+          "font": "LiberationSerif",
+          "size": 10.922478675842285,
+          "page": 2,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "max",
+          "font": "LiberationSerif",
+          "size": 11.0,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        }
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v7_preview.pdf actual descriptive script sizes70percent",
+      "pass": true,
+      "detail": [
+        {
+          "text": "corr",
+          "font": "LiberationSerif",
+          "size": 7.7372145652771,
+          "page": 2,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "corr",
+          "font": "LiberationSerif",
+          "size": 7.7372145652771,
+          "page": 2,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "boot",
+          "font": "LiberationSerif",
+          "size": 7.730447769165039,
+          "page": 2,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "fixed",
+          "font": "LiberationSerif",
+          "size": 7.711312770843506,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "equal",
+          "font": "LiberationSerif",
+          "size": 7.727496147155762,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "fixed",
+          "font": "LiberationSerif",
+          "size": 7.687289714813232,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "equal",
+          "font": "LiberationSerif",
+          "size": 7.687289714813232,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "fixed",
+          "font": "LiberationSerif",
+          "size": 7.687289714813232,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "equal",
+          "font": "LiberationSerif",
+          "size": 7.687289714813232,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "fixed",
+          "font": "LiberationSerif",
+          "size": 7.687289714813232,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "equal",
+          "font": "LiberationSerif",
+          "size": 7.687289714813232,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "same",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "fixed",
+          "font": "LiberationSerif",
+          "size": 7.684514045715332,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "equal",
+          "font": "LiberationSerif",
+          "size": 7.684514045715332,
+          "page": 3,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "std",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "std",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "std",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "CPU",
+          "font": "LiberationSerif",
+          "size": 7.727496147155762,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "archive",
+          "font": "LiberationSerif",
+          "size": 7.727496147155762,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "CPU",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "archive",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "all",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        },
+        {
+          "text": "all",
+          "font": "LiberationSerif",
+          "size": 7.699999809265137,
+          "page": 4,
+          "on_math_page": true,
+          "upright": true
+        }
+      ]
+    },
+    {
+      "name": "BMT_supplementary_material_v7_preview.pdf equation numbers actual intended size",
+      "pass": true,
+      "detail": [
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        11.0
+      ]
+    },
+    {
+      "name": "Nine-page proof matches current finalized mathematical pages",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Final nine mathematical pages individually visually inspected",
+      "pass": true,
+      "detail": [
+        {
+          "document": "main",
+          "page": 5,
+          "equations": [
+            "1",
+            "2"
+          ]
+        },
+        {
+          "document": "main",
+          "page": 6,
+          "equations": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "document": "main",
+          "page": 7,
+          "equations": [
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "document": "main",
+          "page": 8,
+          "equations": [
+            "10",
+            "11"
+          ]
+        },
+        {
+          "document": "main",
+          "page": 9,
+          "equations": [
+            "12"
+          ]
+        },
+        {
+          "document": "main",
+          "page": 10,
+          "equations": [
+            "13",
+            "14"
+          ]
+        },
+        {
+          "document": "supplement",
+          "page": 2,
+          "equations": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5"
+          ]
+        },
+        {
+          "document": "supplement",
+          "page": 3,
+          "equations": [
+            "S6",
+            "S7"
+          ]
+        },
+        {
+          "document": "supplement",
+          "page": 4,
+          "equations": [
+            "S8",
+            "S9",
+            "S10",
+            "S11",
+            "S12"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Final all26equation groups visually inspected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Final S7 logical disjunction is visible and separated",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "documents": {
+    "BMT_main_manuscript_v11.docx": {
+      "sha256": "f3a7d18d79e497772179fee8f0dda48a728c0f674b1e21b6dd28de2aa3ef81df",
+      "bytes": 64021,
+      "equation_labels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "math_texts": [
+        "ei=−0.10wi,−0.10hi,0.10wi,0.10hi.",
+        "δx,i=0.05w0,i,  δy,i=0.05h0,i.",
+        "DU,V=2|U∩V||U|+|V|,|U|+|V|>0,1,|U|+|V|=0.",
+        "rA,i=1−qi.",
+        "rB,i=1−14j=14DP0,i,Pj,i.",
+        "Yi=1{DP0,i,Gi<τ},  τ=0.70.",
+        "vm,devt=1Ndevi∈dev​am,it.",
+        "tm*=argminlext∈Tm|vm,devt−b|, vm,devt.",
+        "Mm=100FNmN,  F=TPm+FNm.",
+        "ΔH3=100dB,E−dA,E.",
+        "am,iK=1{rankmi≤Kb,N}.",
+        "NPVm=TNmTNm+FNm.",
+        "W=s​pE,s−pI,swE,s+wI,s2.",
+        "PEstd−PIstd=W."
+      ],
+      "office_math_objects": 103,
+      "typography_structure": {
+        "equation_row_groups": [
+          [
+            "(1)",
+            2
+          ],
+          [
+            "(2)",
+            3
+          ],
+          [
+            "(3)",
+            1
+          ],
+          [
+            "(4)",
+            1
+          ],
+          [
+            "(5)",
+            1
+          ],
+          [
+            "(6)",
+            1
+          ],
+          [
+            "(7)",
+            2
+          ],
+          [
+            "(8)",
+            1
+          ],
+          [
+            "(9)",
+            2
+          ],
+          [
+            "(10)",
+            3
+          ],
+          [
+            "(11)",
+            2
+          ],
+          [
+            "(12)",
+            3
+          ],
+          [
+            "(13)",
+            3
+          ],
+          [
+            "(14)",
+            2
+          ]
+        ],
+        "relation_anchors": [
+          {
+            "label": "(1)",
+            "rows": 2,
+            "anchor_twips": [
+              "2896",
+              "2896"
+            ],
+            "same_anchor": true
+          },
+          {
+            "label": "(2)",
+            "rows": 3,
+            "anchor_twips": [
+              "2919",
+              "2919",
+              "2919"
+            ],
+            "same_anchor": true
+          },
+          {
+            "label": "(7)",
+            "rows": 2,
+            "anchor_twips": [
+              "4001",
+              "4001"
+            ],
+            "same_anchor": true
+          },
+          {
+            "label": "(9)",
+            "rows": 2,
+            "anchor_twips": [
+              "3416",
+              "3416"
+            ],
+            "same_anchor": true
+          },
+          {
+            "label": "(10)",
+            "rows": 3,
+            "anchor_twips": [
+              "3802",
+              "3802",
+              "3802"
+            ],
+            "same_anchor": true
+          },
+          {
+            "label": "(11)",
+            "rows": 2,
+            "anchor_twips": [
+              "3714",
+              "3714"
+            ],
+            "same_anchor": true
+          },
+          {
+            "label": "(12)",
+            "rows": 3,
+            "anchor_twips": [
+              "4456",
+              "4456",
+              "4456"
+            ],
+            "same_anchor": true
+          },
+          {
+            "label": "(13)",
+            "rows": 3,
+            "anchor_twips": [
+              "3745",
+              "3745",
+              "3745"
+            ],
+            "same_anchor": true
+          },
+          {
+            "label": "(14)",
+            "rows": 2,
+            "anchor_twips": [
+              "3532",
+              "3532"
+            ],
+            "same_anchor": true
+          }
+        ],
+        "literal_label_runs": [
+          {
+            "text": "clip",
+            "normal_math_text": true
+          },
+          {
+            "text": "clip",
+            "normal_math_text": true
+          },
+          {
+            "text": "clip",
+            "normal_math_text": true
+          },
+          {
+            "text": "dev",
+            "normal_math_text": true
+          },
+          {
+            "text": "dev",
+            "normal_math_text": true
+          },
+          {
+            "text": "dev",
+            "normal_math_text": true
+          },
+          {
+            "text": "argmin",
+            "normal_math_text": true
+          },
+          {
+            "text": "lex",
+            "normal_math_text": true
+          },
+          {
+            "text": "dev",
+            "normal_math_text": true
+          },
+          {
+            "text": "dev",
+            "normal_math_text": true
+          },
+          {
+            "text": "TP",
+            "normal_math_text": true
+          },
+          {
+            "text": "FP",
+            "normal_math_text": true
+          },
+          {
+            "text": "FN",
+            "normal_math_text": true
+          },
+          {
+            "text": "TP",
+            "normal_math_text": true
+          },
+          {
+            "text": "TN",
+            "normal_math_text": true
+          },
+          {
+            "text": "FP",
+            "normal_math_text": true
+          },
+          {
+            "text": "TP",
+            "normal_math_text": true
+          },
+          {
+            "text": "TP",
+            "normal_math_text": true
+          },
+          {
+            "text": "FP",
+            "normal_math_text": true
+          },
+          {
+            "text": "FN",
+            "normal_math_text": true
+          },
+          {
+            "text": "TP",
+            "normal_math_text": true
+          },
+          {
+            "text": "FN",
+            "normal_math_text": true
+          },
+          {
+            "text": "H1",
+            "normal_math_text": true
+          },
+          {
+            "text": "H2",
+            "normal_math_text": true
+          },
+          {
+            "text": "H3",
+            "normal_math_text": true
+          },
+          {
+            "text": "min",
+            "normal_math_text": true
+          },
+          {
+            "text": "argmin",
+            "normal_math_text": true
+          },
+          {
+            "text": "rank",
+            "normal_math_text": true
+          },
+          {
+            "text": "Specificity",
+            "normal_math_text": true
+          },
+          {
+            "text": "TN",
+            "normal_math_text": true
+          },
+          {
+            "text": "TN",
+            "normal_math_text": true
+          },
+          {
+            "text": "FP",
+            "normal_math_text": true
+          },
+          {
+            "text": "PPV",
+            "normal_math_text": true
+          },
+          {
+            "text": "TP",
+            "normal_math_text": true
+          },
+          {
+            "text": "TP",
+            "normal_math_text": true
+          },
+          {
+            "text": "FP",
+            "normal_math_text": true
+          },
+          {
+            "text": "NPV",
+            "normal_math_text": true
+          },
+          {
+            "text": "TN",
+            "normal_math_text": true
+          },
+          {
+            "text": "TN",
+            "normal_math_text": true
+          },
+          {
+            "text": "FN",
+            "normal_math_text": true
+          },
+          {
+            "text": "std",
+            "normal_math_text": true
+          },
+          {
+            "text": "std",
+            "normal_math_text": true
+          },
+          {
+            "text": "std",
+            "normal_math_text": true
+          },
+          {
+            "text": "TP",
+            "normal_math_text": true
+          }
+        ]
+      }
+    },
+    "BMT_main_manuscript_v11_illustrated.docx": {
+      "sha256": "29296b8b86275f3ccf3a9ed17943c239bce627ad0aa0c67757268fbc5bfe8269",
+      "bytes": 3546534
+    },
+    "BMT_supplementary_material_v7.docx": {
+      "sha256": "2f6e5e97c430c9fc4606efd3d118170342af23c38a7d2695b89e2b294c3687b5",
+      "bytes": 1539783,
+      "equation_labels": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "math_texts": [
+        "L,U=p+z22n ± zp1−pn+z24n21+z2n.",
+        "UΔ=Δ+RU1−p1,p2−L2;ρ.",
+        "N=a+b+c+d,  T=ad−bc,  M=a+bc+da+cb+d.",
+        "Tcorr=T−1{T>0}minT,N/2,  ρ=TcorrM M>0.",
+        "CI95%boot=Q0.025{θ*b:b∈V}, Q0.975{θ*b:b∈V}.",
+        "f−,+=1|VJ|b∈VJ​1{Δfixed*b<0, Δequal*b>0}.",
+        "fsame=1|VJ|b∈VJ​1{Δfixed*bΔequal*b>0}.",
+        "pc,s=uc,sdc,s,  wc,s=dc,st​dc,t,  Pc=s​uc,ss​dc,s.",
+        "ΔEI=PE−PI=C+W.",
+        "W=s​pE,s−pI,swE,s+wI,s2.",
+        "PEstd−PIstd=W.",
+        "ϵall=maxi∈I6, j∈{1,…,8}|δij|."
+      ],
+      "office_math_objects": 76,
+      "typography_structure": {
+        "equation_row_groups": [
+          [
+            "(S1)",
+            1
+          ],
+          [
+            "(S2)",
+            3
+          ],
+          [
+            "(S3)",
+            1
+          ],
+          [
+            "(S4)",
+            1
+          ],
+          [
+            "(S5)",
+            1
+          ],
+          [
+            "(S6)",
+            2
+          ],
+          [
+            "(S7)",
+            2
+          ],
+          [
+            "(S8)",
+            1
+          ],
+          [
+            "(S9)",
+            1
+          ],
+          [
+            "(S10)",
+            2
+          ],
+          [
+            "(S11)",
+            2
+          ],
+          [
+            "(S12)",
+            2
+          ]
+        ],
+        "relation_anchors": [
+          {
+            "label": "(S2)",
+            "rows": 3,
+            "anchor_twips": [
+              "4202",
+              "4202",
+              "4202"
+            ],
+            "same_anchor": true
+          },
+          {
+            "label": "(S6)",
+            "rows": 2,
+            "anchor_twips": [
+              "3632",
+              "3632"
+            ],
+            "same_anchor": true
+          },
+          {
+            "label": "(S7)",
+            "rows": 2,
+            "anchor_twips": [
+              "3581",
+              "3581"
+            ],
+            "same_anchor": true
+          },
+          {
+            "label": "(S10)",
+            "rows": 2,
+            "anchor_twips": [
+              "3797",
+              "3797"
+            ],
+            "same_anchor": true
+          },
+          {
+            "label": "(S11)",
+            "rows": 2,
+            "anchor_twips": [
+              "4066",
+              "4066"
+            ],
+            "same_anchor": true
+          },
+          {
+            "label": "(S12)",
+            "rows": 2,
+            "anchor_twips": [
+              "3804",
+              "3804"
+            ],
+            "same_anchor": true
+          }
+        ],
+        "literal_label_runs": [
+          {
+            "text": "max",
+            "normal_math_text": true
+          },
+          {
+            "text": "corr",
+            "normal_math_text": true
+          },
+          {
+            "text": "min",
+            "normal_math_text": true
+          },
+          {
+            "text": "corr",
+            "normal_math_text": true
+          },
+          {
+            "text": "CI",
+            "normal_math_text": true
+          },
+          {
+            "text": "boot",
+            "normal_math_text": true
+          },
+          {
+            "text": "fixed",
+            "normal_math_text": true
+          },
+          {
+            "text": "equal",
+            "normal_math_text": true
+          },
+          {
+            "text": "fixed",
+            "normal_math_text": true
+          },
+          {
+            "text": "equal",
+            "normal_math_text": true
+          },
+          {
+            "text": "fixed",
+            "normal_math_text": true
+          },
+          {
+            "text": "equal",
+            "normal_math_text": true
+          },
+          {
+            "text": "fixed",
+            "normal_math_text": true
+          },
+          {
+            "text": "equal",
+            "normal_math_text": true
+          },
+          {
+            "text": "same",
+            "normal_math_text": true
+          },
+          {
+            "text": "fixed",
+            "normal_math_text": true
+          },
+          {
+            "text": "equal",
+            "normal_math_text": true
+          },
+          {
+            "text": "TP",
+            "normal_math_text": true
+          },
+          {
+            "text": "std",
+            "normal_math_text": true
+          },
+          {
+            "text": "std",
+            "normal_math_text": true
+          },
+          {
+            "text": "std",
+            "normal_math_text": true
+          },
+          {
+            "text": "CPU",
+            "normal_math_text": true
+          },
+          {
+            "text": "archive",
+            "normal_math_text": true
+          },
+          {
+            "text": "CPU",
+            "normal_math_text": true
+          },
+          {
+            "text": "archive",
+            "normal_math_text": true
+          },
+          {
+            "text": "max",
+            "normal_math_text": true
+          },
+          {
+            "text": "all",
+            "normal_math_text": true
+          },
+          {
+            "text": "max",
+            "normal_math_text": true
+          },
+          {
+            "text": "all",
+            "normal_math_text": true
+          }
+        ]
+      }
+    },
+    "BMT_main_manuscript_v11_preview.pdf": {
+      "sha256": "97593bcaccb509500ae972d8b5fe1a5341e1e43deeef66531e042d3f26e833c5",
+      "bytes": 275470,
+      "pages": 23,
+      "equation_pages": {
+        "1": 5,
+        "2": 5,
+        "3": 6,
+        "4": 6,
+        "5": 6,
+        "6": 6,
+        "7": 7,
+        "8": 7,
+        "9": 7,
+        "10": 8,
+        "11": 8,
+        "12": 9,
+        "13": 10,
+        "14": 10
+      },
+      "equation_number_bounds": [
+        {
+          "label": "(1)",
+          "page": 5,
+          "bbox": [
+            509.3999938964844,
+            198.0587921142578,
+            523.343994140625,
+            211.34278869628906
+          ]
+        },
+        {
+          "label": "(2)",
+          "page": 5,
+          "bbox": [
+            509.3999938964844,
+            343.8587951660156,
+            523.343994140625,
+            357.1427917480469
+          ]
+        },
+        {
+          "label": "(3)",
+          "page": 6,
+          "bbox": [
+            509.3999938964844,
+            140.10877990722656,
+            523.343994140625,
+            153.3927764892578
+          ]
+        },
+        {
+          "label": "(4)",
+          "page": 6,
+          "bbox": [
+            509.3999938964844,
+            230.2587432861328,
+            523.343994140625,
+            243.54273986816406
+          ]
+        },
+        {
+          "label": "(5)",
+          "page": 6,
+          "bbox": [
+            509.3999938964844,
+            311.8088073730469,
+            523.343994140625,
+            325.0928039550781
+          ]
+        },
+        {
+          "label": "(6)",
+          "page": 6,
+          "bbox": [
+            509.3999938964844,
+            510.8587951660156,
+            523.343994140625,
+            524.1427612304688
+          ]
+        },
+        {
+          "label": "(7)",
+          "page": 7,
+          "bbox": [
+            509.3999938964844,
+            171.45875549316406,
+            523.343994140625,
+            184.7427520751953
+          ]
+        },
+        {
+          "label": "(8)",
+          "page": 7,
+          "bbox": [
+            509.3999938964844,
+            259.1587829589844,
+            523.343994140625,
+            272.4427795410156
+          ]
+        },
+        {
+          "label": "(9)",
+          "page": 7,
+          "bbox": [
+            509.3999938964844,
+            646.708740234375,
+            523.343994140625,
+            659.9927368164062
+          ]
+        },
+        {
+          "label": "(10)",
+          "page": 8,
+          "bbox": [
+            503.3999938964844,
+            165.3087921142578,
+            523.343994140625,
+            178.59278869628906
+          ]
+        },
+        {
+          "label": "(11)",
+          "page": 8,
+          "bbox": [
+            503.3999938964844,
+            438.1087951660156,
+            523.343994140625,
+            451.3927917480469
+          ]
+        },
+        {
+          "label": "(12)",
+          "page": 9,
+          "bbox": [
+            503.3999938964844,
+            229.6587677001953,
+            523.343994140625,
+            242.94276428222656
+          ]
+        },
+        {
+          "label": "(13)",
+          "page": 10,
+          "bbox": [
+            503.3999938964844,
+            376.4587707519531,
+            523.343994140625,
+            389.7427673339844
+          ]
+        },
+        {
+          "label": "(14)",
+          "page": 10,
+          "bbox": [
+            503.3999938964844,
+            496.2587890625,
+            523.343994140625,
+            509.54278564453125
+          ]
+        }
+      ],
+      "out_of_page_text": [],
+      "empty_pages": [],
+      "typography_pdf": {
+        "literal_labels": [
+          {
+            "text": "clip",
+            "font": "LiberationSerif",
+            "size": 11.917908668518066,
+            "page": 5,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "dev",
+            "font": "LiberationSerif",
+            "size": 8.399999618530273,
+            "page": 7,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "dev",
+            "font": "LiberationSerif",
+            "size": 8.399999618530273,
+            "page": 7,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "dev",
+            "font": "LiberationSerif",
+            "size": 8.399999618530273,
+            "page": 7,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "lex",
+            "font": "LiberationSerif",
+            "size": 8.434576034545898,
+            "page": 7,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "dev",
+            "font": "LiberationSerif",
+            "size": 8.434576034545898,
+            "page": 7,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "dev",
+            "font": "LiberationSerif",
+            "size": 8.434576034545898,
+            "page": 7,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "TP",
+            "font": "LiberationSerif",
+            "size": 12.0,
+            "page": 7,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "FN",
+            "font": "LiberationSerif",
+            "size": 11.991652488708496,
+            "page": 7,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "TP",
+            "font": "LiberationSerif",
+            "size": 11.991652488708496,
+            "page": 7,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "FP",
+            "font": "LiberationSerif",
+            "size": 12.0,
+            "page": 7,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "TP",
+            "font": "LiberationSerif",
+            "size": 12.031051635742188,
+            "page": 7,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "TP",
+            "font": "LiberationSerif",
+            "size": 12.031051635742188,
+            "page": 7,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "FN",
+            "font": "LiberationSerif",
+            "size": 12.031051635742188,
+            "page": 7,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "H1",
+            "font": "LiberationSerif",
+            "size": 8.399999618530273,
+            "page": 8,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "H2",
+            "font": "LiberationSerif",
+            "size": 8.377509117126465,
+            "page": 8,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "H3",
+            "font": "LiberationSerif",
+            "size": 8.377629280090332,
+            "page": 8,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "rank",
+            "font": "LiberationSerif",
+            "size": 12.0,
+            "page": 8,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "Specificity",
+            "font": "LiberationSerif",
+            "size": 11.914158821105957,
+            "page": 9,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "TN",
+            "font": "LiberationSerif",
+            "size": 12.032350540161133,
+            "page": 9,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "TN",
+            "font": "LiberationSerif",
+            "size": 12.032350540161133,
+            "page": 9,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "PPV",
+            "font": "LiberationSerif",
+            "size": 11.8937406539917,
+            "page": 9,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "TP",
+            "font": "LiberationSerif",
+            "size": 12.032350540161133,
+            "page": 9,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "TP",
+            "font": "LiberationSerif",
+            "size": 12.032350540161133,
+            "page": 9,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "NPV",
+            "font": "LiberationSerif",
+            "size": 11.895049095153809,
+            "page": 9,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "TN",
+            "font": "LiberationSerif",
+            "size": 12.032350540161133,
+            "page": 9,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "TN",
+            "font": "LiberationSerif",
+            "size": 12.032350540161133,
+            "page": 9,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "std",
+            "font": "LiberationSerif",
+            "size": 8.388236999511719,
+            "page": 10,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "std",
+            "font": "LiberationSerif",
+            "size": 8.427563667297363,
+            "page": 10,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "std",
+            "font": "LiberationSerif",
+            "size": 8.427563667297363,
+            "page": 10,
+            "on_math_page": true,
+            "upright": true
+          }
+        ],
+        "base_size_expected": 12
+      }
+    },
+    "BMT_main_manuscript_v11_illustrated_preview.pdf": {
+      "sha256": "f53d1f98ed6382164d21ed31fcdb48953d4832ac86f6d3f9406870d3004599d8",
+      "bytes": 1518715,
+      "pages": 28,
+      "equation_pages": {
+        "1": 5,
+        "2": 5,
+        "3": 6,
+        "4": 6,
+        "5": 6,
+        "6": 6,
+        "7": 7,
+        "8": 7,
+        "9": 7,
+        "10": 8,
+        "11": 8,
+        "12": 9,
+        "13": 10,
+        "14": 10
+      },
+      "equation_number_bounds": [
+        {
+          "label": "(1)",
+          "page": 5,
+          "bbox": [
+            509.3999938964844,
+            198.0587921142578,
+            523.343994140625,
+            211.34278869628906
+          ]
+        },
+        {
+          "label": "(2)",
+          "page": 5,
+          "bbox": [
+            509.3999938964844,
+            343.8587951660156,
+            523.343994140625,
+            357.1427917480469
+          ]
+        },
+        {
+          "label": "(3)",
+          "page": 6,
+          "bbox": [
+            509.3999938964844,
+            140.10877990722656,
+            523.343994140625,
+            153.3927764892578
+          ]
+        },
+        {
+          "label": "(4)",
+          "page": 6,
+          "bbox": [
+            509.3999938964844,
+            230.2587432861328,
+            523.343994140625,
+            243.54273986816406
+          ]
+        },
+        {
+          "label": "(5)",
+          "page": 6,
+          "bbox": [
+            509.3999938964844,
+            311.8088073730469,
+            523.343994140625,
+            325.0928039550781
+          ]
+        },
+        {
+          "label": "(6)",
+          "page": 6,
+          "bbox": [
+            509.3999938964844,
+            510.8587951660156,
+            523.343994140625,
+            524.1427612304688
+          ]
+        },
+        {
+          "label": "(7)",
+          "page": 7,
+          "bbox": [
+            509.3999938964844,
+            171.45875549316406,
+            523.343994140625,
+            184.7427520751953
+          ]
+        },
+        {
+          "label": "(8)",
+          "page": 7,
+          "bbox": [
+            509.3999938964844,
+            259.1587829589844,
+            523.343994140625,
+            272.4427795410156
+          ]
+        },
+        {
+          "label": "(9)",
+          "page": 7,
+          "bbox": [
+            509.3999938964844,
+            646.708740234375,
+            523.343994140625,
+            659.9927368164062
+          ]
+        },
+        {
+          "label": "(10)",
+          "page": 8,
+          "bbox": [
+            503.3999938964844,
+            165.3087921142578,
+            523.343994140625,
+            178.59278869628906
+          ]
+        },
+        {
+          "label": "(11)",
+          "page": 8,
+          "bbox": [
+            503.3999938964844,
+            438.1087951660156,
+            523.343994140625,
+            451.3927917480469
+          ]
+        },
+        {
+          "label": "(12)",
+          "page": 9,
+          "bbox": [
+            503.3999938964844,
+            229.6587677001953,
+            523.343994140625,
+            242.94276428222656
+          ]
+        },
+        {
+          "label": "(13)",
+          "page": 10,
+          "bbox": [
+            503.3999938964844,
+            376.4587707519531,
+            523.343994140625,
+            389.7427673339844
+          ]
+        },
+        {
+          "label": "(14)",
+          "page": 10,
+          "bbox": [
+            503.3999938964844,
+            496.2587890625,
+            523.343994140625,
+            509.54278564453125
+          ]
+        }
+      ],
+      "out_of_page_text": [],
+      "empty_pages": []
+    },
+    "BMT_supplementary_material_v7_preview.pdf": {
+      "sha256": "7d72380e86f41a954298f7066371a719b0fab14ecc48e5993a753e356d79a13c",
+      "bytes": 1394974,
+      "pages": 29,
+      "equation_pages": {
+        "S1": 2,
+        "S2": 2,
+        "S3": 2,
+        "S4": 2,
+        "S5": 2,
+        "S6": 3,
+        "S7": 3,
+        "S8": 4,
+        "S9": 4,
+        "S10": 4,
+        "S11": 4,
+        "S12": 4
+      },
+      "equation_number_bounds": [
+        {
+          "label": "(S1)",
+          "page": 2,
+          "bbox": [
+            526.9000244140625,
+            247.04977416992188,
+            545.8201293945312,
+            259.2267761230469
+          ]
+        },
+        {
+          "label": "(S2)",
+          "page": 2,
+          "bbox": [
+            526.9000244140625,
+            439.5497741699219,
+            545.8201293945312,
+            451.7267761230469
+          ]
+        },
+        {
+          "label": "(S3)",
+          "page": 2,
+          "bbox": [
+            526.9000244140625,
+            539.7997436523438,
+            545.8201293945312,
+            551.9767456054688
+          ]
+        },
+        {
+          "label": "(S4)",
+          "page": 2,
+          "bbox": [
+            526.9000244140625,
+            568.499755859375,
+            545.8201293945312,
+            580.6767578125
+          ]
+        },
+        {
+          "label": "(S5)",
+          "page": 2,
+          "bbox": [
+            526.9000244140625,
+            728.6997680664062,
+            545.8201293945312,
+            740.8767700195312
+          ]
+        },
+        {
+          "label": "(S6)",
+          "page": 3,
+          "bbox": [
+            526.9000244140625,
+            189.39974975585938,
+            545.8201293945312,
+            201.57675170898438
+          ]
+        },
+        {
+          "label": "(S7)",
+          "page": 3,
+          "bbox": [
+            526.9000244140625,
+            262.3997497558594,
+            545.8201293945312,
+            274.5767517089844
+          ]
+        },
+        {
+          "label": "(S8)",
+          "page": 4,
+          "bbox": [
+            526.9000244140625,
+            168.99978637695312,
+            545.8201293945312,
+            181.17678833007812
+          ]
+        },
+        {
+          "label": "(S9)",
+          "page": 4,
+          "bbox": [
+            526.9000244140625,
+            270.6997985839844,
+            545.8201293945312,
+            282.8768005371094
+          ]
+        },
+        {
+          "label": "(S10)",
+          "page": 4,
+          "bbox": [
+            521.4000244140625,
+            336.9997863769531,
+            545.8201293945312,
+            349.1767883300781
+          ]
+        },
+        {
+          "label": "(S11)",
+          "page": 4,
+          "bbox": [
+            521.4000244140625,
+            438.2997741699219,
+            545.8201293945312,
+            450.4767761230469
+          ]
+        },
+        {
+          "label": "(S12)",
+          "page": 4,
+          "bbox": [
+            521.4000244140625,
+            696.3997802734375,
+            545.8201293945312,
+            708.5767822265625
+          ]
+        }
+      ],
+      "out_of_page_text": [],
+      "empty_pages": [],
+      "typography_pdf": {
+        "literal_labels": [
+          {
+            "text": "max",
+            "font": "LiberationSerif",
+            "size": 10.917783737182617,
+            "page": 2,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "corr",
+            "font": "LiberationSerif",
+            "size": 7.7372145652771,
+            "page": 2,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "min",
+            "font": "LiberationSerif",
+            "size": 11.030839920043945,
+            "page": 2,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "corr",
+            "font": "LiberationSerif",
+            "size": 7.7372145652771,
+            "page": 2,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "CI",
+            "font": "LiberationSerif",
+            "size": 10.922478675842285,
+            "page": 2,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "boot",
+            "font": "LiberationSerif",
+            "size": 7.730447769165039,
+            "page": 2,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "fixed",
+            "font": "LiberationSerif",
+            "size": 7.711312770843506,
+            "page": 3,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "equal",
+            "font": "LiberationSerif",
+            "size": 7.727496147155762,
+            "page": 3,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "fixed",
+            "font": "LiberationSerif",
+            "size": 7.687289714813232,
+            "page": 3,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "equal",
+            "font": "LiberationSerif",
+            "size": 7.687289714813232,
+            "page": 3,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "fixed",
+            "font": "LiberationSerif",
+            "size": 7.687289714813232,
+            "page": 3,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "equal",
+            "font": "LiberationSerif",
+            "size": 7.687289714813232,
+            "page": 3,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "fixed",
+            "font": "LiberationSerif",
+            "size": 7.687289714813232,
+            "page": 3,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "equal",
+            "font": "LiberationSerif",
+            "size": 7.687289714813232,
+            "page": 3,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "same",
+            "font": "LiberationSerif",
+            "size": 7.699999809265137,
+            "page": 3,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "fixed",
+            "font": "LiberationSerif",
+            "size": 7.684514045715332,
+            "page": 3,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "equal",
+            "font": "LiberationSerif",
+            "size": 7.684514045715332,
+            "page": 3,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "std",
+            "font": "LiberationSerif",
+            "size": 7.699999809265137,
+            "page": 4,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "std",
+            "font": "LiberationSerif",
+            "size": 7.699999809265137,
+            "page": 4,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "std",
+            "font": "LiberationSerif",
+            "size": 7.699999809265137,
+            "page": 4,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "CPU",
+            "font": "LiberationSerif",
+            "size": 7.727496147155762,
+            "page": 4,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "archive",
+            "font": "LiberationSerif",
+            "size": 7.727496147155762,
+            "page": 4,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "CPU",
+            "font": "LiberationSerif",
+            "size": 7.699999809265137,
+            "page": 4,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "archive",
+            "font": "LiberationSerif",
+            "size": 7.699999809265137,
+            "page": 4,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "all",
+            "font": "LiberationSerif",
+            "size": 7.699999809265137,
+            "page": 4,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "max",
+            "font": "LiberationSerif",
+            "size": 11.0,
+            "page": 4,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "all",
+            "font": "LiberationSerif",
+            "size": 7.699999809265137,
+            "page": 4,
+            "on_math_page": true,
+            "upright": true
+          },
+          {
+            "text": "Specificity",
+            "font": "LiberationSerif-Bold",
+            "size": 10.0,
+            "page": 13,
+            "on_math_page": false,
+            "upright": true
+          },
+          {
+            "text": "PPV",
+            "font": "LiberationSerif-Bold",
+            "size": 10.0,
+            "page": 13,
+            "on_math_page": false,
+            "upright": true
+          },
+          {
+            "text": "NPV",
+            "font": "LiberationSerif-Bold",
+            "size": 10.0,
+            "page": 13,
+            "on_math_page": false,
+            "upright": true
+          }
+        ],
+        "base_size_expected": 11
+      }
+    },
+    "BMT_supplementary_Figure_S6_v7.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "bytes": 1871819,
+      "pages": 6,
+      "equation_pages": {},
+      "equation_number_bounds": [],
+      "out_of_page_text": [],
+      "empty_pages": []
+    },
+    "BMT_formula_layout_proof_v11.pdf": {
+      "sha256": "443764407b8d8becbfca5ee0cc3e006bf2f2469a9b466c6efe2df4a8cfad049f",
+      "bytes": 1082813,
+      "pages": 9,
+      "equation_pages": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 2,
+        "5": 2,
+        "6": 2,
+        "7": 3,
+        "8": 3,
+        "9": 3,
+        "10": 4,
+        "11": 4,
+        "12": 5,
+        "13": 6,
+        "14": 6,
+        "S1": 7,
+        "S2": 7,
+        "S3": 7,
+        "S4": 7,
+        "S5": 7,
+        "S6": 8,
+        "S7": 8,
+        "S8": 9,
+        "S9": 9,
+        "S10": 9,
+        "S11": 9,
+        "S12": 9
+      },
+      "equation_number_bounds": [
+        {
+          "label": "(1)",
+          "page": 1,
+          "bbox": [
+            509.3999938964844,
+            198.0587921142578,
+            523.343994140625,
+            211.34278869628906
+          ]
+        },
+        {
+          "label": "(2)",
+          "page": 1,
+          "bbox": [
+            509.3999938964844,
+            343.8587951660156,
+            523.343994140625,
+            357.1427917480469
+          ]
+        },
+        {
+          "label": "(3)",
+          "page": 2,
+          "bbox": [
+            509.3999938964844,
+            140.10877990722656,
+            523.343994140625,
+            153.3927764892578
+          ]
+        },
+        {
+          "label": "(4)",
+          "page": 2,
+          "bbox": [
+            509.3999938964844,
+            230.2587432861328,
+            523.343994140625,
+            243.54273986816406
+          ]
+        },
+        {
+          "label": "(5)",
+          "page": 2,
+          "bbox": [
+            509.3999938964844,
+            311.8088073730469,
+            523.343994140625,
+            325.0928039550781
+          ]
+        },
+        {
+          "label": "(6)",
+          "page": 2,
+          "bbox": [
+            509.3999938964844,
+            510.8587951660156,
+            523.343994140625,
+            524.1427612304688
+          ]
+        },
+        {
+          "label": "(7)",
+          "page": 3,
+          "bbox": [
+            509.3999938964844,
+            171.45875549316406,
+            523.343994140625,
+            184.7427520751953
+          ]
+        },
+        {
+          "label": "(8)",
+          "page": 3,
+          "bbox": [
+            509.3999938964844,
+            259.1587829589844,
+            523.343994140625,
+            272.4427795410156
+          ]
+        },
+        {
+          "label": "(9)",
+          "page": 3,
+          "bbox": [
+            509.3999938964844,
+            646.708740234375,
+            523.343994140625,
+            659.9927368164062
+          ]
+        },
+        {
+          "label": "(10)",
+          "page": 4,
+          "bbox": [
+            503.3999938964844,
+            165.3087921142578,
+            523.343994140625,
+            178.59278869628906
+          ]
+        },
+        {
+          "label": "(11)",
+          "page": 4,
+          "bbox": [
+            503.3999938964844,
+            438.1087951660156,
+            523.343994140625,
+            451.3927917480469
+          ]
+        },
+        {
+          "label": "(12)",
+          "page": 5,
+          "bbox": [
+            503.3999938964844,
+            229.6587677001953,
+            523.343994140625,
+            242.94276428222656
+          ]
+        },
+        {
+          "label": "(13)",
+          "page": 6,
+          "bbox": [
+            503.3999938964844,
+            376.4587707519531,
+            523.343994140625,
+            389.7427673339844
+          ]
+        },
+        {
+          "label": "(14)",
+          "page": 6,
+          "bbox": [
+            503.3999938964844,
+            496.2587890625,
+            523.343994140625,
+            509.54278564453125
+          ]
+        },
+        {
+          "label": "(S1)",
+          "page": 7,
+          "bbox": [
+            526.9000244140625,
+            247.04977416992188,
+            545.8201293945312,
+            259.2267761230469
+          ]
+        },
+        {
+          "label": "(S2)",
+          "page": 7,
+          "bbox": [
+            526.9000244140625,
+            439.5497741699219,
+            545.8201293945312,
+            451.7267761230469
+          ]
+        },
+        {
+          "label": "(S3)",
+          "page": 7,
+          "bbox": [
+            526.9000244140625,
+            539.7997436523438,
+            545.8201293945312,
+            551.9767456054688
+          ]
+        },
+        {
+          "label": "(S4)",
+          "page": 7,
+          "bbox": [
+            526.9000244140625,
+            568.499755859375,
+            545.8201293945312,
+            580.6767578125
+          ]
+        },
+        {
+          "label": "(S5)",
+          "page": 7,
+          "bbox": [
+            526.9000244140625,
+            728.6997680664062,
+            545.8201293945312,
+            740.8767700195312
+          ]
+        },
+        {
+          "label": "(S6)",
+          "page": 8,
+          "bbox": [
+            526.9000244140625,
+            189.39974975585938,
+            545.8201293945312,
+            201.57675170898438
+          ]
+        },
+        {
+          "label": "(S7)",
+          "page": 8,
+          "bbox": [
+            526.9000244140625,
+            262.3997497558594,
+            545.8201293945312,
+            274.5767517089844
+          ]
+        },
+        {
+          "label": "(S8)",
+          "page": 9,
+          "bbox": [
+            526.9000244140625,
+            168.99978637695312,
+            545.8201293945312,
+            181.17678833007812
+          ]
+        },
+        {
+          "label": "(S9)",
+          "page": 9,
+          "bbox": [
+            526.9000244140625,
+            270.6997985839844,
+            545.8201293945312,
+            282.8768005371094
+          ]
+        },
+        {
+          "label": "(S10)",
+          "page": 9,
+          "bbox": [
+            521.4000244140625,
+            336.9997863769531,
+            545.8201293945312,
+            349.1767883300781
+          ]
+        },
+        {
+          "label": "(S11)",
+          "page": 9,
+          "bbox": [
+            521.4000244140625,
+            438.2997741699219,
+            545.8201293945312,
+            450.4767761230469
+          ]
+        },
+        {
+          "label": "(S12)",
+          "page": 9,
+          "bbox": [
+            521.4000244140625,
+            696.3997802734375,
+            545.8201293945312,
+            708.5767822265625
+          ]
+        }
+      ],
+      "out_of_page_text": [],
+      "empty_pages": []
+    }
+  },
+  "abstract_words": 174,
+  "body_words_including_math_text": 3938,
+  "final_documents_pending": false,
+  "visual_review_pending": false,
+  "status": "PASS",
+  "visual_review": {
+    "path": "/workspace/bmt_v11/qa/layout_qa/typography_visual_review.json",
+    "sha256": "785fa60e661bab3ac97410fd2a634762c1d4564952579b69c26f584e8017e2fc",
+    "summary": "All nine mathematical pages were individually inspected at1.7x. All26groups complete, coherent12pt main/11pt supplement with70% scripts, compact upright operators and descriptive labels, groupwise relation anchors aligned, readable inline counts and no collisions. S7 logical disjunction is a visible vee symbol. DOCX/native structures and PDF are checked; Microsoft Word/WPS were not run."
+  },
+  "limits": [
+    "The final PDF was rendered with the task-specific LibreOffice math profile and inspected. Native DOCX structure uses Cambria Math and editable OMML; Microsoft Word and WPS were not directly run in this environment.",
+    "Inline summation limits are vertically stacked in this PDF renderer but remain readable and do not collide with adjacent text. No mathematical formulas, results or cohort data were changed for typography."
+  ]
+}

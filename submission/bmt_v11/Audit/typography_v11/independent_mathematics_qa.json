@@ -1,0 +1,1395 @@
+{
+  "checked_utc": "2026-11-06T12:57:30.193076+00:00",
+  "scope": "v11 formula typography revision; independent unchanged-content and native-OMML verification",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "main audited v10 plan definitions exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main numbered group labels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main display group count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 1 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 1 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 1 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 1 row1 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 1 row2 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 1 row2 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 1 row2 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 2 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 2 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 2 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 2 row1 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 2 row2 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 2 row2 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 2 row2 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 2 row3 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 2 row3 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 2 row3 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 3 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 3 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 3 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 4 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 4 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 4 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 5 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 5 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 5 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 6 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 6 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 6 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 7 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 7 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 7 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 7 row1 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 7 row2 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 7 row2 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 7 row2 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 8 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 8 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 8 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 9 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 9 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 9 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 9 row1 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 9 row2 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 9 row2 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 9 row2 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 10 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 10 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 10 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 10 row1 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 10 row2 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 10 row2 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 10 row2 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 10 row3 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 10 row3 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 10 row3 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 11 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 11 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 11 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 11 row1 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 11 row2 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 11 row2 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 11 row2 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 12 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 12 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 12 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 12 row1 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 12 row2 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 12 row2 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 12 row2 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 12 row3 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 12 row3 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 12 row3 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 13 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 13 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 13 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 13 row1 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 13 row2 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 13 row2 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 13 row2 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 13 row3 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 13 row3 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 13 row3 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 14 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 14 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 14 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 14 row1 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 14 row2 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 14 row2 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main 14 row2 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main inline math object count unchanged",
+      "pass": true,
+      "detail": "actual=54, expected=54"
+    },
+    {
+      "name": "main all inline arithmetic structures exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main all table cells exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main table count unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main abstract unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main Results through captions unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main formula images absent and old figure embeds unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement audited v10 plan definitions exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement numbered group labels",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement display group count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S1 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S1 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S1 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S2 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S2 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S2 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S2 row1 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S2 row2 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S2 row2 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S2 row2 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S2 row3 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S2 row3 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S2 row3 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S3 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S3 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S3 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S4 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S4 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S4 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S5 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S5 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S5 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S6 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S6 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S6 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S6 row1 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S6 row2 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S6 row2 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S6 row2 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S7 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S7 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S7 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S7 row1 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S7 row2 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S7 row2 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S7 row2 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S8 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S8 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S8 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S9 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S9 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S9 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S10 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S10 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S10 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S10 row1 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S10 row2 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S10 row2 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S10 row2 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S11 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S11 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S11 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S11 row1 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S11 row2 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S11 row2 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S11 row2 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S12 row count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S12 row1 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S12 row1 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S12 row1 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S12 row2 native fragment count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S12 row2 part1 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement S12 row2 part2 arithmetic structure exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement inline math object count unchanged",
+      "pass": true,
+      "detail": "actual=44, expected=44"
+    },
+    {
+      "name": "supplement all inline arithmetic structures exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement all table cells exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement table count unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement TableS1 through end unchanged except file pointer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement formula images absent and old figure embeds unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v11_preview.pdf no math parser error glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v11_preview.pdf no red parser text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v11_illustrated_preview.pdf no math parser error glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_main_manuscript_v11_illustrated_preview.pdf no red parser text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_material_v7_preview.pdf no math parser error glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_material_v7_preview.pdf no red parser text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v7.pdf no math parser error glyph",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "BMT_supplementary_Figure_S6_v7.pdf no red parser text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "S6 image publication PDF unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final fingerprint BMT_formula_layout_proof_v11.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final fingerprint BMT_main_manuscript_v11.docx",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final fingerprint BMT_main_manuscript_v11_illustrated.docx",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final fingerprint BMT_main_manuscript_v11_illustrated_preview.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final fingerprint BMT_main_manuscript_v11_preview.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final fingerprint BMT_supplementary_Figure_S6_v7.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final fingerprint BMT_supplementary_material_v7.docx",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final fingerprint BMT_supplementary_material_v7_preview.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "S7 uses exactly one logical OR and no AND",
+      "pass": true,
+      "detail": "f0=1|VJ|b∈VJ​1{Δfixed*b=0∨Δequal*b=0},fsame=1|VJ|b∈VJ​1{Δfixed*bΔequal*b>0}."
+    },
+    {
+      "name": "reading copy identical math structures",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "main every formula group remains referenced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "supplement every formula group remains referenced",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_1.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_1.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_2.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_2.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_3.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_3.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_4.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_4.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_5.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_5.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S1.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S1.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S2.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S2.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S3.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S3.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S4.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S4.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S5.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S5.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S6A.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S6A.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S6B.pdf",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "figure bytes unchanged Figure_S6B.png",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "source_v10_qa_sha256": "8436e151e2c5900ae0b7fcf8367e464bf5876a7ee3b011d7095577c316e75cd5",
+  "effective_plan_hashes": {
+    "effective_main_equation_plan": "f954161f392a56719c931b83b38f9ad8acd87f4fd8aa67aaadb8cee18fd2d204",
+    "effective_supplement_equation_plan": "ed01fc8730864f0d177eef877cb900b86b3dd59110aeda1c334345ea392e55dc"
+  },
+  "native_documents_pending": false,
+  "final_documents_pending": false,
+  "notes": [
+    "All26 intended mathematical definitions match the v10 audited plan blocks exactly. No threshold, denominator, risk definition, contrast, confidence-interval method, bootstrap rule, Kitagawa term or replay comparison was changed.",
+    "Native display rows were independently grouped by their final equation number and compared against separately generated upright-label TeX. Arithmetic operators, fraction numerator/denominator scopes, superscripts/subscripts, logical conditions and row order are checked structurally. Only authorized style/run-font properties, delimiter-property serialization order and sum-limit placement are excluded.",
+    "Count names TP/FP/TN/FN and endpoint labels H1/H2/H3 are single literal identifiers with their index attached to the whole name. Upright dev/std/CPU/archive and operator labels are presentation corrections, not new scientific variables.",
+    "S7 uses one logical OR symbol (∨) between the same fixed/equal zero conditions; it does not introduce an AND or alter the four-category frequency definitions.",
+    "The long inline benign/malignant set becomes ordinary prose naming the same two strata. All inline mathematical objects were independently checked against that equivalent representation.",
+    "All66 main tablecells, all878 supplementary tablecells, main abstract, Results through final declarations/references/captions, and original supplementary scientific material remain exact, apart from the standalone S6 filename v6→v7. S6 PDF bytes and all24 production figure files are unchanged.",
+    "Final documents: formal main23 pages, reading28, supplementary29 and S6six. The separate formula proof has9 pages.",
+    "Content verification does not substitute for the separate strict visual-layout review. Selected actual equation pages and the final S7 condition were spot-inspected here; complete visual approval is reported by the dedicated layout reviewer.",
+    "No model inference, patient resampling, new data collection or statistical reanalysis was performed for this typography revision."
+  ],
+  "checks_passed": 217,
+  "equations_verified": 26,
+  "equation_group_checks": [
+    {
+      "document": "main",
+      "label": "1",
+      "rows": 2,
+      "native_fragments": 4,
+      "pass": true,
+      "latex_definition": "\\begin{aligned}B_{0,i}&=\\operatorname{clip}_{\\Omega_i}(B_i+e_i),\\\\e_i&=(-0.10w_i,-0.10h_i,0.10w_i,0.10h_i).\\end{aligned}"
+    },
+    {
+      "document": "main",
+      "label": "2",
+      "rows": 3,
+      "native_fragments": 6,
+      "pass": true,
+      "latex_definition": "\\begin{aligned}B_{j,i}&=\\operatorname{clip}_{\\Omega_i}\\{B_{0,i}+(u_{j,i},v_{j,i},u_{j,i},v_{j,i})\\},\\\\(u_{j,i},v_{j,i})&\\in\\{(-\\delta_{x,i},0),(\\delta_{x,i},0),(0,-\\delta_{y,i}),(0,\\delta_{y,i})\\},\\\\\\delta_{x,i}&=0.05w_{0,i},\\qquad\\delta_{y,i}=0.05h_{0,i}.\\end{aligned}"
+    },
+    {
+      "document": "main",
+      "label": "3",
+      "rows": 1,
+      "native_fragments": 1,
+      "pass": true,
+      "latex_definition": "D(U,V)=\\begin{cases}\\dfrac{2\\lvert U\\cap V\\rvert}{\\lvert U\\rvert+\\lvert V\\rvert},&\\lvert U\\rvert+\\lvert V\\rvert>0,\\\\1,&\\lvert U\\rvert+\\lvert V\\rvert=0.\\end{cases}"
+    },
+    {
+      "document": "main",
+      "label": "4",
+      "rows": 1,
+      "native_fragments": 1,
+      "pass": true,
+      "latex_definition": "r_{A,i}=1-\\widehat q_i."
+    },
+    {
+      "document": "main",
+      "label": "5",
+      "rows": 1,
+      "native_fragments": 1,
+      "pass": true,
+      "latex_definition": "r_{B,i}=1-\\frac14\\sum_{j=1}^{4}D(P_{0,i},P_{j,i})."
+    },
+    {
+      "document": "main",
+      "label": "6",
+      "rows": 1,
+      "native_fragments": 1,
+      "pass": true,
+      "latex_definition": "Y_i=\\mathbf{1}\\{D(P_{0,i},G_i)<\\tau\\},\\qquad \\tau=0.70."
+    },
+    {
+      "document": "main",
+      "label": "7",
+      "rows": 2,
+      "native_fragments": 4,
+      "pass": true,
+      "latex_definition": "\\begin{aligned}a_{m,i}(t)&=\\mathbf{1}\\{r_{m,i}\\ge t\\},\\\\v_{m,\\mathrm{dev}}(t)&=\\frac{1}{N_{\\mathrm{dev}}}\\sum_{i\\in\\mathrm{dev}}a_{m,i}(t).\\end{aligned}"
+    },
+    {
+      "document": "main",
+      "label": "8",
+      "rows": 1,
+      "native_fragments": 1,
+      "pass": true,
+      "latex_definition": "t_m^*=\\underset{t\\in\\mathcal T_m}{\\operatorname{argmin}_{\\mathrm{lex}}}(\\lvert v_{m,\\mathrm{dev}}(t)-b\\rvert,\\ v_{m,\\mathrm{dev}}(t))."
+    },
+    {
+      "document": "main",
+      "label": "9",
+      "rows": 2,
+      "native_fragments": 4,
+      "pass": true,
+      "latex_definition": "\\begin{aligned}d_m&=\\frac{TP_m}{F},\\qquad v_m=\\frac{TP_m+FP_m}{N},\\\\M_m&=100\\frac{FN_m}{N},\\qquad F=TP_m+FN_m.\\end{aligned}"
+    },
+    {
+      "document": "main",
+      "label": "10",
+      "rows": 3,
+      "native_fragments": 6,
+      "pass": true,
+      "latex_definition": "\\begin{aligned}\\Delta_{H1}&=100(d_{A,E}-d_{A,I}),\\\\\\Delta_{H2}&=100(v_{A,E}-v_{A,I}),\\\\\\Delta_{H3}&=100(d_{B,E}-d_{A,E}).\\end{aligned}"
+    },
+    {
+      "document": "main",
+      "label": "11",
+      "rows": 2,
+      "native_fragments": 4,
+      "pass": true,
+      "latex_definition": "\\begin{aligned}K(b,N)&=\\min\\underset{k\\in\\{0,\\ldots,N\\}}{\\operatorname{argmin}}\\lvert k-bN\\rvert,\\\\a_{m,i}^{(K)}&=\\mathbf{1}\\{\\operatorname{rank}_m(i)\\le K(b,N)\\}.\\end{aligned}"
+    },
+    {
+      "document": "main",
+      "label": "12",
+      "rows": 3,
+      "native_fragments": 6,
+      "pass": true,
+      "latex_definition": "\\begin{aligned}\\operatorname{Specificity}_m&=\\frac{TN_m}{TN_m+FP_m},\\\\\\operatorname{PPV}_m&=\\frac{TP_m}{TP_m+FP_m},\\\\\\operatorname{NPV}_m&=\\frac{TN_m}{TN_m+FN_m}.\\end{aligned}"
+    },
+    {
+      "document": "main",
+      "label": "13",
+      "rows": 3,
+      "native_fragments": 6,
+      "pass": true,
+      "latex_definition": "\\begin{aligned}\\Delta_P=P_E-P_I&=C+W,\\\\C&=\\sum_s(w_{E,s}-w_{I,s})\\frac{p_{E,s}+p_{I,s}}{2},\\\\W&=\\sum_s(p_{E,s}-p_{I,s})\\frac{w_{E,s}+w_{I,s}}{2}.\\end{aligned}"
+    },
+    {
+      "document": "main",
+      "label": "14",
+      "rows": 2,
+      "native_fragments": 4,
+      "pass": true,
+      "latex_definition": "\\begin{aligned}w_s^*&=\\frac{w_{E,s}+w_{I,s}}{2},\\qquad P_c^{\\mathrm{std}}=\\sum_s w_s^*p_{c,s},\\\\P_E^{\\mathrm{std}}-P_I^{\\mathrm{std}}&=W.\\end{aligned}"
+    },
+    {
+      "document": "supplement",
+      "label": "S1",
+      "rows": 1,
+      "native_fragments": 1,
+      "pass": true,
+      "latex_definition": "(L,U)=\\frac{\\hat p+\\frac{z^2}{2n}\\ \\pm\\ z\\sqrt{\\frac{\\hat p(1-\\hat p)}{n}+\\frac{z^2}{4n^2}}}{1+\\frac{z^2}{n}}."
+    },
+    {
+      "document": "supplement",
+      "label": "S2",
+      "rows": 3,
+      "native_fragments": 6,
+      "pass": true,
+      "latex_definition": "\\begin{aligned}\\mathcal R(x,y;\\rho)&=\\sqrt{\\max(x^2+y^2-2\\rho xy,0)},\\\\L_{\\Delta}&=\\hat\\Delta-\\mathcal R(\\hat p_1-L_1,U_2-\\hat p_2;\\rho),\\\\U_{\\Delta}&=\\hat\\Delta+\\mathcal R(U_1-\\hat p_1,\\hat p_2-L_2;\\rho).\\end{aligned}"
+    },
+    {
+      "document": "supplement",
+      "label": "S3",
+      "rows": 1,
+      "native_fragments": 1,
+      "pass": true,
+      "latex_definition": "N=a+b+c+d,\\qquad T=ad-bc,\\qquad M=(a+b)(c+d)(a+c)(b+d)."
+    },
+    {
+      "document": "supplement",
+      "label": "S4",
+      "rows": 1,
+      "native_fragments": 1,
+      "pass": true,
+      "latex_definition": "T^{\\mathrm{corr}}=T-\\mathbf1\\{T>0\\}\\min(T,N/2),\\qquad \\rho=\\frac{T^{\\mathrm{corr}}}{\\sqrt M}\\quad(M>0)."
+    },
+    {
+      "document": "supplement",
+      "label": "S5",
+      "rows": 1,
+      "native_fragments": 1,
+      "pass": true,
+      "latex_definition": "\\mathrm{CI}_{95\\%}^{\\mathrm{boot}}=[Q_{0.025}\\{\\theta^{*(b)}:b\\in\\mathcal V\\},\\ Q_{0.975}\\{\\theta^{*(b)}:b\\in\\mathcal V\\}]."
+    },
+    {
+      "document": "supplement",
+      "label": "S6",
+      "rows": 2,
+      "native_fragments": 4,
+      "pass": true,
+      "latex_definition": "\\begin{aligned}\\hat f_{+,-}&=\\frac{1}{\\lvert\\mathcal V_J\\rvert}\\sum_{b\\in\\mathcal V_J}\\mathbf1\\{\\Delta_{\\mathrm{fixed}}^{*(b)}>0,\\ \\Delta_{\\mathrm{equal}}^{*(b)}<0\\},\\\\\\hat f_{-,+}&=\\frac{1}{\\lvert\\mathcal V_J\\rvert}\\sum_{b\\in\\mathcal V_J}\\mathbf1\\{\\Delta_{\\mathrm{fixed}}^{*(b)}<0,\\ \\Delta_{\\mathrm{equal}}^{*(b)}>0\\}.\\end{aligned}"
+    },
+    {
+      "document": "supplement",
+      "label": "S7",
+      "rows": 2,
+      "native_fragments": 4,
+      "pass": true,
+      "latex_definition": "\\begin{aligned}\\hat f_0&=\\frac{1}{\\lvert\\mathcal V_J\\rvert}\\sum_{b\\in\\mathcal V_J}\\mathbf1\\{\\Delta_{\\mathrm{fixed}}^{*(b)}=0\\quad\\mathrm{or}\\quad \\Delta_{\\mathrm{equal}}^{*(b)}=0\\},\\\\\\hat f_{\\mathrm{same}}&=\\frac{1}{\\lvert\\mathcal V_J\\rvert}\\sum_{b\\in\\mathcal V_J}\\mathbf1\\{\\Delta_{\\mathrm{fixed}}^{*(b)}\\Delta_{\\mathrm{equal}}^{*(b)}>0\\}.\\end{aligned}"
+    },
+    {
+      "document": "supplement",
+      "label": "S8",
+      "rows": 1,
+      "native_fragments": 1,
+      "pass": true,
+      "latex_definition": "p_{c,s}=\\frac{u_{c,s}}{d_{c,s}},\\qquad w_{c,s}=\\frac{d_{c,s}}{\\sum_t d_{c,t}},\\qquad P_c=\\frac{\\sum_s u_{c,s}}{\\sum_s d_{c,s}}."
+    },
+    {
+      "document": "supplement",
+      "label": "S9",
+      "rows": 1,
+      "native_fragments": 1,
+      "pass": true,
+      "latex_definition": "\\Delta_{EI}=P_E-P_I=C+W."
+    },
+    {
+      "document": "supplement",
+      "label": "S10",
+      "rows": 2,
+      "native_fragments": 4,
+      "pass": true,
+      "latex_definition": "\\begin{aligned}C&=\\sum_s(w_{E,s}-w_{I,s})\\frac{p_{E,s}+p_{I,s}}{2},\\\\W&=\\sum_s(p_{E,s}-p_{I,s})\\frac{w_{E,s}+w_{I,s}}{2}.\\end{aligned}"
+    },
+    {
+      "document": "supplement",
+      "label": "S11",
+      "rows": 2,
+      "native_fragments": 4,
+      "pass": true,
+      "latex_definition": "\\begin{aligned}w_s^*&=\\frac{w_{E,s}+w_{I,s}}{2},\\qquad P_c^{\\mathrm{std}}=\\sum_s w_s^*p_{c,s},\\\\P_E^{\\mathrm{std}}-P_I^{\\mathrm{std}}&=W.\\end{aligned}"
+    },
+    {
+      "document": "supplement",
+      "label": "S12",
+      "rows": 2,
+      "native_fragments": 4,
+      "pass": true,
+      "latex_definition": "\\begin{aligned}\\delta_{ij}&=v_{ij}^{\\mathrm{CPU}}-v_{ij}^{\\mathrm{archive}},\\qquad\\epsilon_j=\\max_{i\\in\\mathcal I_6}\\lvert\\delta_{ij}\\rvert,\\\\\\epsilon_{\\mathrm{all}}&=\\max_{i\\in\\mathcal I_6,\\ j\\in\\{1,\\ldots,8\\}}\\lvert\\delta_{ij}\\rvert.\\end{aligned}"
+    }
+  ],
+  "documents": {
+    "BMT_formula_layout_proof_v11.pdf": {
+      "sha256": "443764407b8d8becbfca5ee0cc3e006bf2f2469a9b466c6efe2df4a8cfad049f",
+      "bytes": 1082813,
+      "pages": 9
+    },
+    "BMT_main_manuscript_v11.docx": {
+      "sha256": "f3a7d18d79e497772179fee8f0dda48a728c0f674b1e21b6dd28de2aa3ef81df",
+      "bytes": 64021
+    },
+    "BMT_main_manuscript_v11_illustrated.docx": {
+      "sha256": "29296b8b86275f3ccf3a9ed17943c239bce627ad0aa0c67757268fbc5bfe8269",
+      "bytes": 3546534
+    },
+    "BMT_main_manuscript_v11_illustrated_preview.pdf": {
+      "sha256": "f53d1f98ed6382164d21ed31fcdb48953d4832ac86f6d3f9406870d3004599d8",
+      "bytes": 1518715,
+      "pages": 28
+    },
+    "BMT_main_manuscript_v11_preview.pdf": {
+      "sha256": "97593bcaccb509500ae972d8b5fe1a5341e1e43deeef66531e042d3f26e833c5",
+      "bytes": 275470,
+      "pages": 23
+    },
+    "BMT_supplementary_Figure_S6_v7.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "bytes": 1871819,
+      "pages": 6
+    },
+    "BMT_supplementary_material_v7.docx": {
+      "sha256": "2f6e5e97c430c9fc4606efd3d118170342af23c38a7d2695b89e2b294c3687b5",
+      "bytes": 1539783
+    },
+    "BMT_supplementary_material_v7_preview.pdf": {
+      "sha256": "7d72380e86f41a954298f7066371a719b0fab14ecc48e5993a753e356d79a13c",
+      "bytes": 1394974,
+      "pages": 29
+    }
+  },
+  "native_document_details": {
+    "BMT_main_manuscript_v11.docx": {
+      "sha256": "f3a7d18d79e497772179fee8f0dda48a728c0f674b1e21b6dd28de2aa3ef81df",
+      "bytes": 64021,
+      "display_equation_groups": 14
+    },
+    "BMT_supplementary_material_v7.docx": {
+      "sha256": "2f6e5e97c430c9fc4606efd3d118170342af23c38a7d2695b89e2b294c3687b5",
+      "bytes": 1539783,
+      "display_equation_groups": 12
+    },
+    "BMT_main_manuscript_v11_preview.pdf": {
+      "sha256": "97593bcaccb509500ae972d8b5fe1a5341e1e43deeef66531e042d3f26e833c5",
+      "bytes": 275470,
+      "pages": 23
+    },
+    "BMT_main_manuscript_v11_illustrated_preview.pdf": {
+      "sha256": "f53d1f98ed6382164d21ed31fcdb48953d4832ac86f6d3f9406870d3004599d8",
+      "bytes": 1518715,
+      "pages": 28
+    },
+    "BMT_supplementary_material_v7_preview.pdf": {
+      "sha256": "7d72380e86f41a954298f7066371a719b0fab14ecc48e5993a753e356d79a13c",
+      "bytes": 1394974,
+      "pages": 29
+    },
+    "BMT_supplementary_Figure_S6_v7.pdf": {
+      "sha256": "67dab4b8887bd242905fc4512d41e8457fe7cb7d205a20524ddb5fe8d40190cd",
+      "bytes": 1871819,
+      "pages": 6
+    }
+  },
+  "final_document_hash_manifest_sha256": "fc07c9190d342fd075a24d5965491ae02a496f7dd083b0fdbabe94bbe68c4850",
+  "unresolved_findings": 0
+}

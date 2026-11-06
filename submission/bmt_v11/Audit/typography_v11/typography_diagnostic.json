@@ -1,0 +1,313 @@
+{
+  "checked_utc": "2026-11-06T12:40:02.180243+00:00",
+  "status": "REVISION_REQUIRED",
+  "scope": "Read-only typographic diagnosis of final archived v10, not a mathematical-method revision",
+  "sources": [
+    {
+      "path": "/workspace/research_source/submission/bmt_v10/BMT_main_manuscript_v10.docx",
+      "sha256": "7c09377e4edb101f316c6b6bfe419fe1d39d8bda50185ebc837834e5e1edf95f"
+    },
+    {
+      "path": "/workspace/research_source/submission/bmt_v10/BMT_main_manuscript_v10_preview.pdf",
+      "sha256": "c22cfd6e30f7d85d6db500cb3ad604a902405722c5bf09cbf2a2732583b9fc50"
+    },
+    {
+      "path": "/workspace/research_source/submission/bmt_v10/BMT_supplementary_material_v6.docx",
+      "sha256": "6261492ff9b26200c35f75d30a30604021c4e6d3b67030c733b9a55a59d958a6"
+    },
+    {
+      "path": "/workspace/research_source/submission/bmt_v10/BMT_supplementary_material_v6_preview.pdf",
+      "sha256": "44926b7515d64d9eb3020ec8a9bb8336665fe38f46ed515991e261ea17b77ba0"
+    }
+  ],
+  "pages_reviewed": {
+    "main": [
+      5,
+      6,
+      7,
+      8,
+      10
+    ],
+    "supplement": [
+      2,
+      3,
+      4
+    ]
+  },
+  "high_resolution_render_scale": 1.8,
+  "prior_qa_limitation": "Earlier semantic equality, numbering and no-clipping checks were insufficient to certify typography. They did not test correct upright math text/operators, font substitution, relative sizing, matrix-column alignment, delimiter style or reading flow.",
+  "findings": [
+    {
+      "id": "T01",
+      "severity": "high",
+      "confirmed": true,
+      "issue": "Operators and descriptive mathematical labels are italic or visibly expanded into separate letters in final PDF",
+      "locations": [
+        "main p6 Eq7 dev and Eq8 argmin/lex",
+        "main p8 Eq11 min/argmin/rank and Eq12 Specificity",
+        "main p10 Eq14 std",
+        "supp p2 S2 max, S4 corr/min, S5 CI/boot",
+        "supp p3 S6-S7 fixed/equal/same/or",
+        "supp p4 S11 std and S12 CPU/archive/all/max"
+      ],
+      "evidence": "PDF page images show operator/label typography as italic letter sequences. Actual OOXML Specificity/argmin has m:sty=p, yet final PDF is italic, so the present style survives XML but not this renderer.",
+      "recommendation": "Use explicit upright identifiers and function-name/normal-text nodes, validate actual rendering. Test m:nor plus explicit w:i=false for textual runs; do not rely on font name or m:sty=p alone."
+    },
+    {
+      "id": "T02",
+      "severity": "high",
+      "confirmed": true,
+      "issue": "TP, FP, FN, TN are typeset as spaced italic mathematical letters rather than compact count abbreviations",
+      "locations": [
+        "main p7 count-definition paragraph and Eq9",
+        "main p8 Eq12",
+        "main p10 stratum definitions",
+        "supp p4 stratum definitions"
+      ],
+      "evidence": "Rendered TP reads T P, and all count labels are italic; source TeX also uses plain TP/FP/FN/TN as multiple mathematical variables.",
+      "recommendation": "Encode all four count identifiers as upright whole tokens, e.g. \\mathrm{TP}, while retaining the same counts and formulas."
+    },
+    {
+      "id": "T03",
+      "severity": "medium",
+      "confirmed": true,
+      "issue": "Supplementary formula base size does not match declared engine size and its surrounding prose/number",
+      "locations": [
+        "supp mathematical methods pp2-4"
+      ],
+      "evidence": "PDF body prose is 11pt and equation numbers 11pt, while ordinary equation/inline-math letters are mostly 12pt. Scripts are mostly7.2pt and nested symbols down to about5.13pt. This is a readability/style mismatch, not a claimed BMT minimum-font violation.",
+      "recommendation": "Choose and validate a consistent 11pt or12pt math base in the exported PDF; use legible script proportions and avoid unnecessary nested scripts."
+    },
+    {
+      "id": "T04",
+      "severity": "high",
+      "confirmed": true,
+      "issue": "Long prose labels placed in math objects disrupt normal text and cause letter spacing",
+      "locations": [
+        "supp p4 first paragraph: s in {benign,malignant}",
+        "supp p2/p3 descriptive superscripts boot/fixed/equal",
+        "supp p4 CPU/archive in replay definition"
+      ],
+      "evidence": "benign and malignant appear as large italic letter sequences in a set inside prose; similar descriptive labels become spread-out superscripts/subscripts.",
+      "recommendation": "Keep long verbal definitions in ordinary prose; use short mathematical indices and compact upright labels where genuinely needed."
+    },
+    {
+      "id": "T05",
+      "severity": "medium",
+      "confirmed": true,
+      "issue": "Dedicated math font setting is not reflected in final PDF fonts",
+      "locations": [
+        "all eight audited mathematical pages"
+      ],
+      "evidence": "Despite DOCX mathFont and run fonts being Latin Modern Math, inspected PDF spans/fonts are LiberationSerif, OpenSymbol and NimbusRoman; no Latin Modern Math is embedded on these pages.",
+      "recommendation": "For DOCX use a conventional Word math font such as Cambria Math and verify compatibility, then configure/verify a suitable available rendering font for PDF. Font fallback alone is not always wrong, but it cannot be treated as proof that desired math typography was preserved."
+    },
+    {
+      "id": "T06",
+      "severity": "medium",
+      "confirmed": true,
+      "issue": "All displayed equations are inline oMath plus tab stops; no oMathPara is present",
+      "locations": [
+        "main DOCX68 oMath and0 oMathPara",
+        "supp DOCX56 oMath and0 oMathPara"
+      ],
+      "evidence": "Inspected word/document.xml. The14/12 numbered groups use the same inline object type as prose, between tab runs. This is valid OOXML, but lacks a dedicated display-math container and is a compatibility/style risk.",
+      "recommendation": "Prototype proper display OMML, or a robust dedicated equation layout, keeping equation numbers at the right margin. Check native Word and exported PDF rather than only object count."
+    },
+    {
+      "id": "T07",
+      "severity": "medium",
+      "confirmed": false,
+      "issue": "Intended aligned-column justification may be lost during import due property ordering",
+      "locations": [
+        "main Eq1/2/7/9/10/12/13/14 and supplementary aligned groups"
+      ],
+      "evidence": "Pandoc m:mcPr writes mcJc before count. Standard examples put count before mcJc. Current multiline equations show uneven left-column placement and excessive gaps, particularly Eq14/S11. This is a testable root-cause hypothesis, not established causation.",
+      "recommendation": "Prototype schema-order normalization count then mcJc and confirm right/left column alignment in rendered output; alternatively use equation-array alignment at the relation sign."
+    },
+    {
+      "id": "T08",
+      "severity": "medium",
+      "confirmed": true,
+      "issue": "Automatic stretchy delimiters are visually oversized and thin in many short inline expressions",
+      "locations": [
+        "main p5 inline box coordinates and clipping ranges",
+        "main p6 a(t), indicators and Eq8 tuple",
+        "main p7/8 short argument parentheses",
+        "supp p2 Wilson-bound notation and p3 sign tuples"
+      ],
+      "evidence": "Short expressions show tall thin fences whose style differs from normal parentheses in surrounding text. They amplify the baseline/spacing mismatch.",
+      "recommendation": "Use fixed ordinary parentheses/brackets for short inline expressions; keep stretching for genuinely tall fractions/cases only."
+    },
+    {
+      "id": "T09",
+      "severity": "medium",
+      "confirmed": true,
+      "issue": "Long inline count formulas and multi-definition rows are too dense for smooth reading",
+      "locations": [
+        "main p7 TP/FP/FN/TN definition paragraph",
+        "main Eq14 and supp S11 first row"
+      ],
+      "evidence": "The count paragraph contains four long math fragments with changing inline height; Eq14/S11 puts two definitions on a row then a much longer lhs on the next row.",
+      "recommendation": "Use a compact separate aligned count definition or plain prose for the counts; put common weight, standardized rate and difference on three relation-aligned rows within the same equation group."
+    },
+    {
+      "id": "T10",
+      "severity": "low",
+      "confirmed": true,
+      "issue": "Number alignment is generally sound and formulas are not currently clipped",
+      "locations": [
+        "all26 numbered groups"
+      ],
+      "evidence": "All numbers are at the right margin; no red parser placeholders or missing perturbation direction was seen in current archived v10. Formula content is semantically intact on the reviewed pages.",
+      "recommendation": "Preserve number positions and mathematical content while rebuilding typography. Do not reintroduce the already-fixed Eq2 red-placeholder issue."
+    }
+  ],
+  "formula_by_formula": [
+    {
+      "document": "main",
+      "label": "1",
+      "note": "Needs upright clip and consistent compact delimiter style."
+    },
+    {
+      "document": "main",
+      "label": "2",
+      "note": "All four directions are present, but long coordinate row/brackets are crowded; preserve full geometry."
+    },
+    {
+      "document": "main",
+      "label": "3",
+      "note": "Dice cases is largely readable; avoid unnecessarily tall function parentheses."
+    },
+    {
+      "document": "main",
+      "label": "4",
+      "note": "Simple risk equation is readable; keep method label consistently upright."
+    },
+    {
+      "document": "main",
+      "label": "5",
+      "note": "Risk-B expression is readable; harmonize script size and function parentheses."
+    },
+    {
+      "document": "main",
+      "label": "6",
+      "note": "Indicator remains plain-looking1 and fences are tall; use a consistent indicator style."
+    },
+    {
+      "document": "main",
+      "label": "7",
+      "note": "dev is letter-spaced/italic and a(t) fences distract."
+    },
+    {
+      "document": "main",
+      "label": "8",
+      "note": "argmin/lex italic rather than compact upright operator/label."
+    },
+    {
+      "document": "main",
+      "label": "9",
+      "note": "TP/FP/FN/TN look like multiplied separate variables; count paragraph is dense."
+    },
+    {
+      "document": "main",
+      "label": "10",
+      "note": "Main contrast definitions are largely readable; hypothesis labels can be standardized."
+    },
+    {
+      "document": "main",
+      "label": "11",
+      "note": "min,argmin,rank appear italic; nested index is tiny."
+    },
+    {
+      "document": "main",
+      "label": "12",
+      "note": "Specificity and abbreviations are italic and count tokens split."
+    },
+    {
+      "document": "main",
+      "label": "13",
+      "note": "Definitions are mathematically intact; harmonize alignment and math text spacing."
+    },
+    {
+      "document": "main",
+      "label": "14",
+      "note": "std is separated italic letters; row layout is uneven and crowded."
+    },
+    {
+      "document": "supplement",
+      "label": "S1",
+      "note": "Wilson expression readable; math base12pt differs from prose/number11pt."
+    },
+    {
+      "document": "supplement",
+      "label": "S2",
+      "note": "max is italic; radius function loses intended script appearance; relation alignment needs polish."
+    },
+    {
+      "document": "supplement",
+      "label": "S3",
+      "note": "Paired-table definitions readable; compact spacing can improve."
+    },
+    {
+      "document": "supplement",
+      "label": "S4",
+      "note": "corr and min appear as italic letter sequences."
+    },
+    {
+      "document": "supplement",
+      "label": "S5",
+      "note": "CI and boot split/italic; overly small nested labels and tall brackets."
+    },
+    {
+      "document": "supplement",
+      "label": "S6",
+      "note": "fixed/equal labels split/italic; many nested superscripts/subscripts are visually busy."
+    },
+    {
+      "document": "supplement",
+      "label": "S7",
+      "note": "or is almost concatenated to adjacent zero/contrast; same label split/italic."
+    },
+    {
+      "document": "supplement",
+      "label": "S8",
+      "note": "Formula readable but preceding benign/malignant math text disruptive."
+    },
+    {
+      "document": "supplement",
+      "label": "S9",
+      "note": "Short identity is readable."
+    },
+    {
+      "document": "supplement",
+      "label": "S10",
+      "note": "Components readable; normalize alignment and delimiters."
+    },
+    {
+      "document": "supplement",
+      "label": "S11",
+      "note": "std split/italic; separate definitions into relation-aligned rows."
+    },
+    {
+      "document": "supplement",
+      "label": "S12",
+      "note": "CPU/archive/all split/italic; max operator should be upright."
+    }
+  ],
+  "acceptance_checks": [
+    "Actual rendered operators min,max,argmin,rank,clip and textual labels are upright and compact.",
+    "TP/FP/FN/TN are whole upright count identifiers.",
+    "Main and supplementary math base sizes match the chosen document styles; scripts remain readable.",
+    "Short inline math aligns with surrounding text and does not contain expanded word labels.",
+    "Multiline groups align at relation signs without arbitrary column gaps.",
+    "Equation numbers remain at the right edge, without overlap or loss of content.",
+    "No red/error/tofu glyphs, and all brackets, signs and perturbation directions are present.",
+    "Inspect the final DOCX with a word processor and final PDF; do not infer appearance from OMML counts alone."
+  ],
+  "limitations": [
+    "This audit directly observed the final PDFs and DOCX XML; it did not observe the user’s exact Microsoft Word/WPS environment.",
+    "The mcPr property-order explanation is a hypothesis for the rendering engine to test.",
+    "No scientific content, data, DOCX or build scripts were edited."
+  ]
+}

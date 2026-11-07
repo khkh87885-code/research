@@ -14,15 +14,11 @@
 
 论文：**Fixed-threshold transfer and equal-review ranking in breast ultrasound segmentation quality control**
 
-[主稿 Word](submission/Breast%20Ultrasound%20Quality%20Control/Breast%20Ultrasound%20Quality%20Control%20Manuscript.docx) · [主稿 PDF](submission/Breast%20Ultrasound%20Quality%20Control/Breast%20Ultrasound%20Quality%20Control%20Manuscript.pdf) · [补充材料 Word](submission/Breast%20Ultrasound%20Quality%20Control/Breast%20Ultrasound%20Quality%20Control%20Supplementary%20Material.docx) · [补充材料 PDF](submission/Breast%20Ultrasound%20Quality%20Control/Breast%20Ultrasound%20Quality%20Control%20Supplementary%20Material.pdf) · [六例图 S6](submission/Breast%20Ultrasound%20Quality%20Control/Breast%20Ultrasound%20Quality%20Control%20Supplementary%20Figure%20S6.pdf) · [同复核量计数CSV](submission/Breast%20Ultrasound%20Quality%20Control/Analysis/Table%20Data/Breast%20Ultrasound%20Quality%20Control%20Matched%20Review%20Counts.csv) · [上传清单](submission/Breast%20Ultrasound%20Quality%20Control/Breast%20Ultrasound%20Quality%20Control%20Submission%20Guide.md) · [完整投稿包](submission/Breast%20Ultrasound%20Quality%20Control%20Submission%20Files.zip)
+[主稿 Word](submission/Breast%20Ultrasound%20Quality%20Control/Breast%20Ultrasound%20Quality%20Control%20Manuscript.docx) · [主稿 PDF](submission/Breast%20Ultrasound%20Quality%20Control/Breast%20Ultrasound%20Quality%20Control%20Manuscript.pdf) · [补充材料 Word](submission/Breast%20Ultrasound%20Quality%20Control/Breast%20Ultrasound%20Quality%20Control%20Supplementary%20Material.docx) · [补充材料 PDF](submission/Breast%20Ultrasound%20Quality%20Control/Breast%20Ultrasound%20Quality%20Control%20Supplementary%20Material.pdf) · [六例图 S6](submission/Breast%20Ultrasound%20Quality%20Control/Breast%20Ultrasound%20Quality%20Control%20Supplementary%20Figure%20S6.pdf) · [上传清单](submission/Breast%20Ultrasound%20Quality%20Control/Breast%20Ultrasound%20Quality%20Control%20Submission%20Guide.md) · [完整投稿包](submission/Breast%20Ultrasound%20Quality%20Control%20Submission%20Files.zip)
 
-目标期刊为Biomedical Engineering / Biomedizinische Technik（BME–BMT），文章类型为Research Article，按常规新稿投稿。投稿文件、图件和CSV采用论文主题及空格名称。
+投稿文件及图件统一采用论文主题名称，文件名不使用内部版本标记。目标期刊为 Biomedical Engineering / Biomedizinische Technik（BME–BMT），文章类型为 Research Article，按常规新稿投稿。补充材料正文引用的CSV和S6文件名已与实际文件同步。
 
-相关工作明确已有置信度/提示扰动比较和固定10 %预算结果。论文增量聚焦固定阈值跨数据集迁移、相同复核数量及预算依赖的解释。Table S4与图4D并列呈现每方法各复核33、35、50例的计数；33/35为事后展示，50属于原方案已有的补充分析。原H1–H3、原K=50数字和区间、图4C原两组区间保留，没有新增33/35区间、检验、重采样或推理。
-
-主稿摘要188词（含结构标签），五图加三表共8项；三主表66个单元格保持。补充仍为19个数据表面板，S4扩至六个数据行，总计898个单元格。主稿三式、补充两式原生数学不变；作者、机构和现有声明事实沿用，外部低质量病例仍16/252。
-
-投稿包包含16件材料（含上传清单），新增同复核量计数CSV；两个补充文件需一同上传。任务脚本与计数资料在当前目录Analysis/Policy Clarity，简明证据和核验在Audit/Policy Clarity。既有历史资料保持原始范围，未执行期刊系统提交；当前环境未直接运行WPS或Microsoft Word。
+科研正文、数据、五主图和补充图、五个可编辑公式及作者声明保持。文件命名与内容保持记录见当前目录 Audit/file_naming；历史准备和检查记录保留其原始范围。尚未执行期刊系统提交。
 
 ## 历史版本：v12 精简正式公式稿
 
